@@ -1,5 +1,5 @@
 import React from "react";
-import belt from "../../assets/Mobile/belt.svg";
+import belt from "../../assets/Mobile/belt.png";
 import prize_money_background from "../../assets/Mobile/prize-money-mobile.svg";
 
 function PrizeMoney() {

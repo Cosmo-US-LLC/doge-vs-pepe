@@ -10,6 +10,7 @@ import coinsw5 from "../../assets/walletsec/coinsw (6).svg";
 import coinsw6 from "../../assets/walletsec/coinsw (4).svg";
 import ggicon from "../../assets/walletsec/gg.svg";
 import shodow from "../../assets/shodow.svg"
+import downShodow from "../../assets/Mobile/down-shodwo.svg"
 import arw from "../../assets/walletsec/arw.svg";
 
 const Buybuttons = [
@@ -84,7 +85,8 @@ function WalletSec() {
 
   return (
     <div className="relative w-[100%] bgwltsec w-[100%] pt-[107px] pb-[128px]">
-      <img src={shodow} alt="shodow" className="absolute top-0 left-0 right-0"/>
+      <img src={shodow} alt="shodow" className="absolute top-0 left-0 right-0 w-full"/>
+      <img src={downShodow} alt="shodow" className="absolute bottom-0 left-0 right-0 w-full"/>
       <div className="max-w-[922px] w-[100%] mx-auto ">
         <div className="flex justify-between">
           <div className="min-h-[596.83px] max-w-[404.01px] bg-[#F2B60F] w-[100%] space-y-[14px]  px-[16px] pb-[56px] pt-[24px] rounded-[24px] border border-[#fff]">

@@ -1,5 +1,5 @@
 import React from "react";
-import one_to_one from "../../assets/Mobile/one-to-one.svg";
+import one_to_one from "../../assets/Mobile/one-to-one.webp";
 
 function Tokenomics() {
   return (

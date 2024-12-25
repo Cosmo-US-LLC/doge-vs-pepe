@@ -2,7 +2,7 @@ import React from "react";
 import socialicn1 from "../../assets/footer/soclicn (3).svg";
 import socialicn2 from "../../assets/footer/soclicn (2).svg";
 import socialicn3 from "../../assets/footer/soclicn (1).svg";
-import dogevspepe from "../../assets/Mobile/dogevspepe.svg";
+import dogevspepe from "../../assets/Mobile/dogevspepe.png";
 
 function Footer() {
   return (

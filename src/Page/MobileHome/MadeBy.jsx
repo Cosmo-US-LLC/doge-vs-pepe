@@ -1,7 +1,7 @@
 import React from "react";
 import made_by_bg from "../../assets/Mobile/made_by_bg.png";
 import baby_dodge_pepe from "../../assets/Mobile/baby_doge_pepe.svg";
-import market_cap from "../../assets/Mobile/market_cap.svg";
+import market_cap from "../../assets/Mobile/market_cap.webp";
 
 function MadeBy() {
   return (

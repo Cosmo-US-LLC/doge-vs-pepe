@@ -1,5 +1,5 @@
 import React from "react";
-import do_not_wait_bg from "../../assets/Mobile/do_not_wait_bg.svg";
+import do_not_wait_bg from "../../assets/Mobile/do_not_wait_bg.webp";
 
 function DoNotWait() {
   return (

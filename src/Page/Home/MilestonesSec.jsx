@@ -1,9 +1,12 @@
-import React from "react";
-import mileimg from "../../assets/MilestonesSec/mileimg.png";
+import React, { useState } from "react";
+import chestImage from "../../assets/MilestonesSec/deal-box.webp";
+import groupImage from "../../assets/MilestonesSec/flag-line-trophy.png";
 
 function MilestonesSec() {
+  const [dogePercentage, setDogePercentage] = useState(18);
+  const [pepePercentage, setPepePercentage] = useState(24);
   return (
-    <div className="w-[100%] relative w-[100%] pt-[40px] overflow-hidden pb-[40px]">
+    <div className=" relative w-[100%] pt-[40px] overflow-hidden pb-[40px]">
       <div className="max-w-[1168px] space-y-[40px] w-[100%] mx-auto ">
         <div className="space-y-[50px]">
           <div>
@@ -25,27 +28,83 @@ function MilestonesSec() {
           </p>
         </div>
         <div>
-            <div className="bg-[#181818] rounded-[40.835px] w-[100%] h-[66.415px] border-[0.794px] border-[#EFAB00]">
-            <div className="m-1 w-[18%] h-[90%] rounded-[81px] flex items-center justify-center" 
-            style={{
-                background: "linear-gradient(66deg, #FFC676 25.98%, #FFBF00 65.48%)",
-                boxShadow: "0px 16px 30px 0px #615500",
-              }}>
-                <h4 className="text-[32.668px]  text-[#0B0101] font-[800]  leading-[80%]">18%</h4>
+          <div className="bg-[#181818] p-1 rounded-[40.835px] w-[100%] h-[66.415px] border-[0.794px] border-[#EFAB00]">
+            <div
+              className="flex items-center justify-center h-full rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600"
+              style={{ width: `${dogePercentage}%` }}
+            >
+              <span className="text-[32.668px] font-extrabold text-[#0B0101] leading-none font-[Inter]">
+                {dogePercentage}%
+              </span>
             </div>
+          </div>
+
+          <div className="relative flex min-h-[500px] justify-center items-center flex-col ">
+            <div className="absolute top-[6%] left-[23%] gap-[130px] flex ">
+              <div className="flex flex-col items-center justify-center">
+                <img src={chestImage} alt="Treasure Chest" className="mb-2 " />
+                <span className="text-white font-inter text-[22px] font-bold leading-normal">
+                  $250,000
+                </span>
+              </div>
+              <div>
+                <img src={chestImage} alt="Treasure Chest" className="mb-2 " />
+                <span className="text-white font-inter text-[22px] font-bold leading-normal opacity-30">
+                  $250,000
+                </span>
+              </div>
+              <div>
+                <img src={chestImage} alt="Treasure Chest" className="mb-2 " />
+                <span className="text-white font-inter text-[22px] font-bold leading-normal opacity-30">
+                  $250,000
+                </span>
+              </div>
             </div>
-            <div className="min-h-[500px] flex items-center">
-                <img className="absolute" src={mileimg} alt="" />
+            <div className="relative z-50 flex items-center justify-center">
+              <span className="text-white font-inter text-[36px] font-bold leading-normal absolute right-[3%] top-[-21%]">
+                $1,000,000
+              </span>
+
+              <img src={groupImage} alt="flag" className="" />
+              <span className="text-white font-inter text-[36px] font-bold leading-normal absolute right-[1%] bottom-[-20%]">
+                The Winner
+              </span>
             </div>
-            <div className="bg-[#181818] rounded-[40.835px] w-[100%] h-[66.415px] border-[0.794px] border-[#EFAB00]">
-            <div className="m-1 w-[24%] h-[90%] rounded-[81px] flex items-center justify-center" 
-            style={{
-                background: "linear-gradient(66deg, #79EC8F 25.98%, #09FC3C 65.48%)",
-                boxShadow: "0px 16px 30px 0px rgba(9, 252, 60, 0.35)",
-              }}>
-                <h4 className="text-[32.668px]  text-[#0B0101] font-[800]  leading-[80%]">24%</h4>
+            <div className="absolute bottom-[6%] left-[23%] gap-[130px] flex ">
+              <div className="flex flex-col items-center justify-center">
+                <span className="text-white font-inter text-[22px] font-bold leading-normal">
+                  $250,000
+                </span>
+                <img src={chestImage} alt="Treasure Chest" className="mt-2 " />
+              </div>
+              <div>
+                <span className="text-white font-inter text-[22px] font-bold leading-normal opacity-30">
+                  $250,000
+                </span>
+                <img src={chestImage} alt="Treasure Chest" className="mt-2 " />
+              </div>
+              <div>
+                <span className="text-white font-inter text-[22px] font-bold leading-normal opacity-30">
+                  $250,000
+                </span>
+                <img src={chestImage} alt="Treasure Chest" className="mt-2 " />
+              </div>
             </div>
+          </div>
+          <div className="bg-[#181818] p-1 rounded-[40.835px] w-[100%] h-[66.415px] border-[0.794px] border-[#09FC3C]">
+            <div
+              className="flex items-center justify-center h-full rounded-full bg-gradient-to-r"
+              style={{
+                width: `${pepePercentage}%`,
+                background:
+                  "linear-gradient(66deg, #79EC8F 25.98%, #09FC3C 65.48%)",
+              }}
+            >
+              <span className="text-[32.668px] font-extrabold text-[#0B0101] leading-none font-[Inter]">
+                {pepePercentage}%
+              </span>
             </div>
+          </div>
         </div>
       </div>
     </div>

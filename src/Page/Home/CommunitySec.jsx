@@ -1,8 +1,8 @@
 import React from "react";
-import cardimg2 from "../../assets/CommunitySec/cardimg (1).png";
-import cardimg1 from "../../assets/CommunitySec/cardimg (2).png";
-import vectcard2 from "../../assets/CommunitySec/Ellipse 80.png";
-import vectcard1 from "../../assets/CommunitySec/Ellipse 81.png";
+import cardimg2 from "../../assets/CommunitySec/cardimg (1).webp";
+import cardimg1 from "../../assets/CommunitySec/cardimg (2).webp";
+import vectcard2 from "../../assets/CommunitySec/Ellipse 80.webp";
+import vectcard1 from "../../assets/CommunitySec/Ellipse 81.webp";
 import arwl from "../../assets/herosec/Arrowlf.svg";
 import arwr from "../../assets/herosec/Arrowrght.svg";
 

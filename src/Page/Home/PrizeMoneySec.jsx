@@ -1,5 +1,5 @@
 import React from "react";
-import prizeimg from "../../assets/PrizeMoneySec/prize-belt.svg";
+import prizeimg from "../../assets/PrizeMoneySec/prize-belt.png";
 
 function PrizeMoneySec() {
   return (

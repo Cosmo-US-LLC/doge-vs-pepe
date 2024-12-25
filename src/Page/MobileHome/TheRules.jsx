@@ -1,13 +1,13 @@
 import React from "react";
-import rule_1 from "../../assets/Mobile/rule_1.svg";
-import rule_2 from "../../assets/Mobile/rule_2.svg";
-import rule_3 from "../../assets/Mobile/rule_3.svg";
-import rule_4 from "../../assets/Mobile/rule_4.svg";
-import rule_5 from "../../assets/Mobile/rule_5.svg";
-import rule_6 from "../../assets/Mobile/rule_6.svg";
-import rule_7 from "../../assets/Mobile/rule_7.svg";
-import side_dog from "../../assets/Mobile/side_dog.svg";
-import side_frog from "../../assets/Mobile/side_frog.svg";
+import rule_1 from "../../assets/Mobile/rule_1.webp";
+import rule_2 from "../../assets/Mobile/rule_2.webp";
+import rule_3 from "../../assets/Mobile/rule_3.webp";
+import rule_4 from "../../assets/Mobile/rule_4.webp";
+import rule_5 from "../../assets/Mobile/rule_5.webp";
+import rule_6 from "../../assets/Mobile/rule_6.webp";
+import rule_7 from "../../assets/Mobile/rule_7.webp";
+import side_dog from "../../assets/Mobile/doge-mobile.png";
+import side_frog from "../../assets/Mobile/pepe-mobile.png";
 import telegram_icon from "../../assets/Mobile/telegram_icon.svg";
 
 const Rule1 = () => {
@@ -80,7 +80,7 @@ const Rule2 = () => {
 const Rule3 = () => {
   return (
     <div className="relative flex flex-col items-center px-4 mt-2">
-      <img src={side_dog} className="absolute h-[306px] w-[169px] left-[-36px] top-[-32px]" alt="side_dog" />
+      <img src={side_dog} className="absolute h-[306px] w-[100px] left-[0px] top-[-62px]" alt="side_dog" />
       <div
         className="flex flex-col items-center bg-[#181818] rounded-[10px] w-full p-4 mt-4"
         style={{
@@ -176,7 +176,7 @@ const Rule5 = () => {
 const Rule6 = () => {
   return (
     <div className="relative flex flex-col items-center px-4 mt-2">
-      <img src={side_frog} className="absolute h-[286px] right-[0px] top-[-32px]" alt="side_frog" />
+      <img src={side_frog} className="absolute h-[286px] w-[100px] right-[0px] top-[-26px]" alt="side_frog" />
       <div
         className="flex flex-col items-center bg-[#181818] rounded-[10px] w-full p-4 mt-4"
         style={{

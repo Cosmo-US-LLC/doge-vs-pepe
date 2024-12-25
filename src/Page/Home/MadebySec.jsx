@@ -1,5 +1,5 @@
 import React from "react";
-import babeDoge from "../../assets/madebySec/baby-doge-logo.svg";
+import babeDoge from "../../assets/madebySec/baby-doge-logo.png";
 import babePepe from "../../assets/madebySec/baby-pepe.svg";
 import downShodow from "../../assets/madebySec/down-shodwo.svg";
 
@@ -44,26 +44,26 @@ function MadebySec() {
             </span>
           </h4>
           <div className="flex items-end justify-center w-full gap-8 pt-6">
-            <div className="w-[180px] h-[220px] bg-[#ECB214] rounded-[15px] shadow-md flex flex-col items-center justify-center p-4">
+            <div className="w-[208px] h-[266px] bg-[#ECB214] rounded-[15px] shadow-md flex flex-col items-center justify-center p-4 border-[3px] border-[#FFF]">
               <img
                 src={babeDoge}
                 alt="Dog"
-                className="w-[100px] h-[100px] object-contain"
+                className="w-[136px] h-[145px] object-contain"
               />
 
-              <div className="mt-4 text-center">
+              <div className="text-center ">
                 <h3 className="text-lg font-bold text-black">Market Cap</h3>
                 <p className="text-2xl font-extrabold text-white">$530M</p>
               </div>
             </div>
-            <div className="w-[180px] h-[220px] bg-[#ECB214] rounded-[15px] shadow-md flex flex-col items-center justify-center p-4">
+            <div className="w-[208px] h-[266px] bg-[#00FF2F] rounded-[15px] shadow-md flex flex-col items-center justify-center p-4 border-[3px] border-[#FFF]">
               <img
                 src={babePepe}
                 alt="Dog"
-                className="w-[100px] h-[100px] object-contain"
+                className="w-[136px] h-[145px] object-contain"
               />
 
-              <div className="mt-4 text-center">
+              <div className="text-center ">
                 <h3 className="text-lg font-bold text-black">Market Cap</h3>
                 <p className="text-2xl font-extrabold text-white">$6.93B</p>
               </div>

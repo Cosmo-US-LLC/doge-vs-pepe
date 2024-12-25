@@ -4,13 +4,15 @@ import arwr from "../../assets/herosec/Arrowrght.svg";
 import vsimg from "../../assets/herosec/vs.png";
 import vsimgr from "../../assets/herosec/vects (2).png";
 import vsimgl from "../../assets/herosec/vects (1).png";
+import downShodow from "../../assets/herosec/down-shodwo.svg"
 
 function HeroSection() {
   return (
-    <div className="w-[100%] bgherosec w-[100%] pt-[9rem] pb-[30px]">
+    <div className="relative w-[100%] bgherosec pt-[9rem] pb-[30px]">
+      <img src={downShodow} className="absolute bottom-0 left-0 right-0 w-full" alt="" />
       <div className="max-w-[1245px] w-[100%] mx-auto relative min-h-[700px]">
         <div className="max-w-[575px] w-[100%] mx-auto text-center">
-          <div className="flex items-center space-x-4 justify-center">
+          <div className="flex items-center justify-center space-x-4">
             <h1
               className="text-[#F2B60F] text-[83.305px] font-[700] "
               style={{ textShadow: "6.534px -0.817px 24.583px #F1AD03" }}

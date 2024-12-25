@@ -22,7 +22,7 @@ function Home() {
       <FirstEverSec />
       <TheRulesSec />
       <PrizeMoneySec />
-      <CommunitySec />
+      <CommunitySec /> 
       <MilestonesSec />
       <RoadmapSec />
       <MadebySec />
