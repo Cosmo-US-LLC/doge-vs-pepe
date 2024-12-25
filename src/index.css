@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "K2D", serif !important;
+}
+
+code {
+  font-family: "K2D", serif !important;
+
+}
+
+.bgherosec {
+  background-image: url('./assets/herosec/herosecbg.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bgheromobsec {
+  background-image: url(./assets/herosec/mobbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bgwltsec {
+  background-image: url(./assets/walletsec/bgwaltsec.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bgwltsecmob {
+  background-image: url(./assets/walletsec/mobbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bgeversec {
+  background-image: url(./assets/FirstEver/first-dec-bg.svg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bgeversecmob {
+  background-image: url(./assets/FirstEver/mobbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bgprizsec {
+  background-image: url(./assets/PrizeMoneySec//prixebg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bgMadebySec {
+  background-image: url(./assets/madebySec/EX-team-bg.svg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bgDontWaitSec {
+  background-image: url(./assets/DontWaitSec/Frame_1410116803.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.gradient-border {
+  position: relative;
+  padding: 3px;
+  /* Border thickness */
+  border-radius: 12px;
+  background: conic-gradient(from 45deg,
+      rgba(0, 0, 0, 0) 0deg,
+      /* Transparent at top-right */
+      #efab007d 25deg,
+      /* Gradient starts */
+      #4eb52a 50deg,
+      /* Gradient at bottom-right */
+      rgba(0, 0, 0, 0) 75deg,
+      /* Transparent at left-bottom */
+      #efab0087 100deg
+      /* Full cycle back to top-left */
+    );
+  /* mask-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff); */
+  mask-clip: padding-box, border-box;
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+
+.gradient-border>div {
+  background: #2a2a2a;
+  /* Solid background for inner content */
+  border-radius: 10px;
+  /* Match the outer border radius */
+  overflow: hidden;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: 'next';
+  display: none !important;
+}
+
+.answer span {
+  font-size: 30px;
+  line-height: 18px;
+  padding-left: 0.5rem;
+}
+
+.faqsbrder {
+  position: relative;
+  width: 100% !important;
+  box-sizing: border-box;
+  z-index: 1;
+  overflow: hidden;
+  border: none;
+}
+
+.faqsbrder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 1px;
+  background: linear-gradient(10deg, #4EB52A -53%, #fac000d8 -53%, transparent 46%, transparent 46%, #4EB52A 215%, #fac000d8 -53%, transparent 329%, transparent 329%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.roadborder {
+  position: relative;
+  width: 100% !important;
+  box-sizing: border-box;
+  z-index: 1;
+  border: none;
+}
+
+.roadborder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 1px;
+  background: linear-gradient(16deg, #fac000d8 -53%, transparent 46%, #fac000ad 215%, transparent 329%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.card2border {
+  position: relative;
+  width: 100% !important;
+  box-sizing: border-box;
+  z-index: 1;
+  border: none;
+}
+
+.card2border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 1px;
+  background: linear-gradient(16deg, #4EB52A -53%, transparent 46%, #4EB52A 215%, transparent 329%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.Rulesborder {
+  position: relative;
+  width: 100% !important;
+  box-sizing: border-box;
+  z-index: 1;
+  border: none;
+}
+
+.Rulesborder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  padding: 1px;
+  background: linear-gradient(16deg, #4EB52A -53%, #fac000d8 -53%, transparent 46%, transparent 46%, #4EB52A 215%, #fac000d8 -53%, transparent 329%, transparent 329%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.Rulesborder2 {
+  position: relative;
+  width: 100% !important;
+  box-sizing: border-box;
+  z-index: 1;
+  border: none;
+}
+
+.Rulesborder2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  padding: 1px;
+  background: linear-gradient(152deg, #4EB52A -53%, #fac000d8 -53%, transparent 46%, transparent 46%, #4EB52A 215%, #fac000d8 -53%, transparent 329%, transparent 329%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
