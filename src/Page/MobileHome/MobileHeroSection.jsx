@@ -10,7 +10,7 @@ function MobileHeroSection() {
     <div className="w-[100%] bgheromobsec w-[100%] pt-[5rem] pb-[40px]">
       <div className="max-w-[1245px] w-[90%] mx-auto relative">
         <div className="max-w-[575px] w-[100%] mx-auto text-center">
-          <div className="flex items-center space-x-4 justify-center">
+          <div className="flex items-center justify-center space-x-4">
             <h1
               className="text-[#F2B60F] text-[53.771px] font-[700] "
               style={{ textShadow: "6.534px -0.817px 24.583px #F1AD03" }}
@@ -37,7 +37,7 @@ function MobileHeroSection() {
             Who’s Raising <span className="text-[#00FF2F]">$1 Million</span>{" "}
             First?
           </h4>
-          <p className="text-[12px] max-w-[575px] w-[100%] pb-[24px] mx-auto font-[700] leading-[118.336%] text-[#FFF]  text-center">
+          <p className="text-[14px] max-w-[575px] w-[100%] pb-[24px] mx-auto font-[700] leading-[118.336%] text-[#FFF]  text-center">
             Only one coin will survive this fight, break out of the Matrix and
             launch. On  one side, we’ve got the OG meme king, Doge, and on the
             other, the meme  sensation, Pepe. The first to hit $1M wins and 
@@ -46,10 +46,10 @@ function MobileHeroSection() {
         </div>
        <div className="w-[100%]">
         <div className="">
-          <div className="flex justify-between items-center">
-          <img src={vsimgr} className=" h-[229px] -left-12 -top-9" alt="" />
+          <div className="flex items-center justify-between">
+          <img src={vsimgr} className=" h-[269px] w-[153px] -left-12 -top-9" alt="" />
               <img src={vsimg} className="max-h-[50px]" alt="" />
-          <img className=" -right-12 h-[229px] -top-9" src={vsimgl} alt="" />
+          <img className=" -right-12 h-[269px] w-[153px] -top-9" src={vsimgl} alt="" />
           </div>
           <div className="max-w-[618px] w-[100%] flex items-center justify-between mx-auto">
             <button
@@ -69,7 +69,7 @@ function MobileHeroSection() {
                 boxShadow: "0px 2px 0px 0px #FFF",
               }}
             >
-              BUY $PEPE <img className="ml-2 max-h-[12px]" src={arwl} alt="" />
+              BUY $PEGE <img className="ml-2 max-h-[12px]" src={arwl} alt="" />
             </button>
           </div>
         </div>
