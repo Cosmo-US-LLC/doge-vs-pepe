@@ -8,24 +8,24 @@ function MilestonesSec() {
   return (
     <div className=" relative w-[100%] pt-[40px] overflow-hidden pb-[40px]">
       <div className="max-w-[1168px] space-y-[40px] w-[100%] mx-auto ">
-        <div className="space-y-[50px]">
+        <div className="space-y-[40px] flex flex-col items-center justify-center">
           <div>
             <h3 className="text-[42px] text-[#FFFCFC] text-center font-[700]">
-              Milestones Mystery Reveals{" "}
+              Mystery Milestones Reveal{" "}
             </h3>
             <p className="text-[18px] font-[400] text-center text-[#FFF]">
               The race heats up with every milestone!{" "}
             </p>
           </div>
-          <p className="text-[18px] font-[400] text-center leading-[114%] text-[#FFF]">
-            When one project hits a milestone, it reveals a mystery feature for
-            the opposing project, keeping the <br /> competition alive and
-            rewarding both sides. With four key milestones—250k, 500k, 750k, and
-            900k—
-            <br />
-            each unlocks exciting surprises that drive both teams closer to the
-            finish line.
-          </p>
+          <div className="w-[902px] h-[103px] flex-shrink-0 rounded-[6px] border border-[#E9E9E9] flex items-center justify-center">
+            <p className="text-[18px] font-[400] text-center leading-[114%] text-[#FFF]">
+              When one project hits a milestone, it reveals a mystery feature
+              for the opposing team, keeping <br /> the competition alive and
+              rewarding both sides. With three key milestones—250k, 500k, and
+              <br /> 750k —each unlocks exciting surprises that drive both teams
+              closer to the finish line.
+            </p>
+          </div>
         </div>
         <div>
           <div className="bg-[#181818] p-1 rounded-[40.835px] w-[100%] h-[66.415px] border-[0.794px] border-[#EFAB00]">
