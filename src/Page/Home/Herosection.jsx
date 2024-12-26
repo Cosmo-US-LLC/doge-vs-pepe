@@ -8,7 +8,7 @@ import downShodow from "../../assets/herosec/down-shodwo.svg"
 
 function HeroSection() {
   return (
-    <div className="relative w-[100%] bgherosec pt-[9rem] pb-[30px]">
+    <div className="relative w-[100%] bgherosec pt-[9rem] pb-[30px]" id="what-is">
       <img src={downShodow} className="absolute bottom-0 left-0 right-0 w-full" alt="" />
       <div className="max-w-[1245px] w-[100%] mx-auto relative min-h-[700px]">
         <div className="max-w-[575px] w-[100%] mx-auto text-center">

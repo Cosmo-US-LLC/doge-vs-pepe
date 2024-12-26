@@ -42,7 +42,7 @@ const Doge = () => {
             <p className="text-[14px] font-[700] leading-[18px] text-[white] mt-2">
               $DOPE
             </p>
-            <p className="text-[12px] font-[400] leading-[16px] text-[white] mt-2 mr-1">
+            <p className="text-[12px] w-[174px] font-[400] leading-[16px] text-[white] mt-2 mr-1">
               Choosing me means backing the original meme coin king. I’ll lead
               the pack and prove there’s only ever been one true leader of the
               meme coin world.
@@ -92,7 +92,7 @@ const Pepe = () => {
             <p className="text-[14px] font-[700] leading-[18px] text-[white] mt-2">
               $PEGE
             </p>
-            <p className="text-[12px] font-[400] leading-[16px] text-[white] mt-2 mr-1">
+            <p className="text-[12px] font-[400] w-[174px] leading-[16px] text-[white] mt-2 mr-1">
               Picking me means backing the ultimate meme underdog. I’ll take
               risks, break rules, and show everyone just how high I can jump.
             </p>

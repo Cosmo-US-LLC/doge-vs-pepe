@@ -3,7 +3,7 @@ import one_to_one from "../../assets/Mobile/one-to-one.webp";
 
 function Tokenomics() {
   return (
-    <div className="flex flex-col items-center mt-4 bg-[black] mt-8">
+    <div className="flex flex-col items-center mt-4 bg-[black] mt-8" id="tokenomics">
       <div className="flex flex-row items-center justify-between w-full px-4">
         <div className="">
           <p className="font-[700] text-[24px] text-[white] leading-[24px]">$DOPE</p>

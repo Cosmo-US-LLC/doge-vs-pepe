@@ -18,7 +18,7 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
           }`}
       >
         <div
-          className="flex justify-between items-center px-4 py-3 gap-3 cursor-pointer"
+          className="flex items-center justify-between gap-3 px-4 py-3 cursor-pointer"
           onClick={handleClick}
         >
           <div className="flex items-center gap-2">
@@ -109,7 +109,7 @@ const FAQ = () => {
   return (
     <div className="relative" id="faq">
       <div className="w-[100%] pt-4 mx-auto pb-6 px-4">
-        <div className="text-center mb-4">
+        <div className="mb-4 text-center">
           <h2 className="text-[#fff] uppercase text-[24px] font-[700] leading-[142.857%] pb-2">
             Frequently Asked Questions
           </h2>

@@ -9,10 +9,8 @@ function DoNotWait() {
         backgroundImage: `url(${do_not_wait_bg})`,
       }}
     >
-  
       {/* <div className="absolute inset-0 z-0 bg-black opacity-50"></div> */}
 
-     
       <div className="relative z-10 flex flex-col items-center justify-center">
         <p className="text-[24px] font-[700] leading-[17px] text-[white] mt-6 text-center">
           Don’t Wait, The Fight Is On!
@@ -26,7 +24,7 @@ function DoNotWait() {
           Make your choice and support your favorite meme before it is too late!
         </p>
       </div>
-      
+   
     </div>
   );
 }

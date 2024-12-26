@@ -7,7 +7,7 @@ import vsimgl from "../../assets/herosec/vects (1).png";
 
 function MobileHeroSection() {
   return (
-    <div className="w-[100%] bgheromobsec w-[100%] pt-[5rem] pb-[40px]">
+    <div className="w-[100%] bgheromobsec pt-[5rem] pb-[40px]" id="what-is">
       <div className="max-w-[1245px] w-[90%] mx-auto relative">
         <div className="max-w-[575px] w-[100%] mx-auto text-center">
           <div className="flex items-center justify-center space-x-4">

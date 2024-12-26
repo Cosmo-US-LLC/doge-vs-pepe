@@ -84,7 +84,7 @@ function WalletSec() {
   };
 
   return (
-    <div className="relative w-[100%] bgwltsec w-[100%] pt-[107px] pb-[128px]">
+    <div className="relative w-[100%] bgwltsec pt-[107px] pb-[128px]" id="how-to-buy">
       <img src={shodow} alt="shodow" className="absolute top-0 left-0 right-0 w-full"/>
       <img src={downShodow} alt="shodow" className="absolute bottom-0 left-0 right-0 w-full"/>
       <div className="max-w-[922px] w-[100%] mx-auto ">

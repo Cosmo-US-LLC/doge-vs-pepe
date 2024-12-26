@@ -12,6 +12,9 @@ import DontWaitSec from "./DontWaitSec";
 import Navbar from "../../component/navbar";
 import FaqSec from "./FaqSec";
 import Footer from "../../component/footer";
+import TokenSec from "./TokenSec";
+
+
 function Home() {
   return (
     <div className="bg-[black] w-[100%]">
@@ -25,6 +28,7 @@ function Home() {
       <CommunitySec /> 
       <MilestonesSec />
       <RoadmapSec />
+      <TokenSec/>
       <MadebySec />
       <DontWaitSec />
       <FaqSec />

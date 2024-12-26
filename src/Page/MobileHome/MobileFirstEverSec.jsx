@@ -5,7 +5,7 @@ import greenShodow from "../../assets/Mobile/green-shodow.svg";
 import yellowShodow from "../../assets/Mobile/yellow-shodow.svg";
 function MobileFirstEverSec() {
   return (
-    <div className="w-[100%] bgeversecmob overflow-hidden relative pt-[60px] pb-[17px]">
+    <div className="w-[100%] bgeversecmob overflow-hidden relative pt-[60px] pb-[17px]" id="whitepaper">
       <div className=" space-y-[45px] w-[90%] mx-auto  ">
         <h3 className="text-[#fff] text-center text-[24px] leading-[24px] uppercase font-[700]">
           The First Ever <br /> Crypto Meme Fight

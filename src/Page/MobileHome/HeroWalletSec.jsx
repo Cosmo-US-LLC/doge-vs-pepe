@@ -85,7 +85,7 @@ function HeroWalletSec() {
       };
 
   return (
-    <div className="w-[100%] bgwltsecmob w-[100%] pt-[30px] pb-[50px]">
+    <div className="w-[100%] bgwltsecmob w-[100%] pt-[30px] pb-[50px]" id="how-to-buy">
       <div className="max-w-[922px] w-[90%] mx-auto ">
         <div className="block space-y-[5rem]">
       <div className="flex justify-end">
@@ -170,7 +170,7 @@ function HeroWalletSec() {
                     {options.map((option, index) => (
                       <div
                         key={index}
-                        className="flex items-center space-x-2 px-2 py-2 hover:bg-gray-800  cursor-pointer"
+                        className="flex items-center px-2 py-2 space-x-2 cursor-pointer hover:bg-gray-800"
                         onClick={() => handleSelect(option)}
                       >
                         <img
@@ -214,7 +214,7 @@ function HeroWalletSec() {
             </div>
             <div className=" space-y-[10px]">
               <h5 className="text-[#000] text-[9.832px] font-[700] text-center">Accepting</h5>
-              <div className="flex space-x-2 justify-center">
+              <div className="flex justify-center space-x-2">
                 {iconsData.map((item) => (
                   <img
                     key={item.id}
@@ -318,7 +318,7 @@ function HeroWalletSec() {
                     {options.map((option, index) => (
                       <div
                         key={index}
-                        className="flex items-center space-x-2 px-2 py-2 hover:bg-gray-800  cursor-pointer"
+                        className="flex items-center px-2 py-2 space-x-2 cursor-pointer hover:bg-gray-800"
                         onClick={() => handleSelectpepe(option)}
                       >
                         <img
@@ -362,7 +362,7 @@ function HeroWalletSec() {
             </div>
             <div className=" space-y-[10px]">
               <h5 className="text-[#000] text-[9.832px] font-[700] text-center">Accepting</h5>
-              <div className="flex space-x-2 justify-center">
+              <div className="flex justify-center space-x-2">
                 {iconsData.map((item) => (
                   <img
                     key={item.id}
