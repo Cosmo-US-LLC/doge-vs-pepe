@@ -1,6 +1,6 @@
 import React from "react";
-import cardimg2 from "../../assets/CommunitySec/cardimg (1).webp";
-import cardimg1 from "../../assets/CommunitySec/cardimg (2).webp";
+import cardimg2 from "../../assets/CommunitySec/Frame 1410116893.svg";
+import cardimg1 from "../../assets/CommunitySec/Frame 1410116892.svg";
 import vectcard2 from "../../assets/CommunitySec/Ellipse 80.webp";
 import vectcard1 from "../../assets/CommunitySec/Ellipse 81.webp";
 import arwl from "../../assets/herosec/Arrowlf.svg";

@@ -1,6 +1,4 @@
 import React from "react";
-// import prizeimg from "../../assets/PrizeMoneySec/prizeimg.png";
-// import imgr from "../../assets/FirstEver/img (1).png";
 function DontWaitSec() {
   return (
     <div className="w-[100%] bgDontWaitSec   overflow-hidden w-[100%] pt-[60px] pb-[80px]">
