@@ -6,13 +6,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import awr1 from "../../assets/RoadmapSec/Vector (2).svg";
 import line from "../../assets/RoadmapSec/Line 1.png";
-import imgrod from "../../assets/RoadmapSec/imgrd.png";
-import verc1 from "../../assets/RoadmapSec/Ellipse 80 (3).png";
-import verc2 from "../../assets/RoadmapSec/Ellipse 81 (1).png";
 
 function RoadmapSec() {
   return (
-    <div className="w-[100%] relative w-[100%] pt-[40px] overflow-hidden pb-[40px]">
+    <div className="w-[100%] relative pt-[40px] overflow-hidden pb-[40px]" id="roadmap">
       <div className="max-w-[1245px] space-y-[40px] w-[100%] mx-auto ">
         <div className="space-y-[50px]">
           <div>
@@ -343,49 +340,6 @@ function RoadmapSec() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="space-y-[83px]">
-        <div className=" max-w-[1245px] w-[100%] mx-auto flex justify-between">
-          <div className="max-w-[479.306px] relative space-y-[20px] w-[100%]">
-            <h3 className="text-[52.95px] leading-[102.804%] font-[700] text-[#FFF] uppercase">
-              $DOPE <br /> Tokenomics
-            </h3>
-            <div className="space-y-[11px]">
-              <h5 className="text-[26.475px] leading-normal font-[700] text-[#FFF] uppercase">
-                tOTAL sUPPLY $888 mILLION
-              </h5>
-              <p className="text-[22.062px] leading-normal font-[600] text-[#FFF] ">
-                Coin will be launched on Solana Blockchain
-              </p>
-            </div>
-            <img
-              src={verc1}
-              className="absolute top-[-55%] left-[-10%]"
-              alt=""
-            />
-          </div>
-          <div>
-            <div className="max-w-[479.306px] relative space-y-[20px] w-[100%]">
-              <h3 className="text-[52.95px] text-right leading-[102.804%] font-[700] text-[#FFF] uppercase">
-                $peGe <br /> Tokenomics
-              </h3>
-              <div className="space-y-[11px]">
-                <h5 className="text-[26.475px] text-right leading-normal font-[700] text-[#FFF] uppercase">
-                  tOTAL sUPPLY $879 mILLION
-                </h5>
-                <p className="text-[22.062px] text-right leading-normal font-[600] text-[#FFF] ">
-                  Coin will be launched on Solana Blockchain
-                </p>
-              </div>
-              <img
-                src={verc2}
-                className="absolute top-[-55%] right-[-10%]"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <img src={imgrod} className="w-[100%] max-w-[1440px] mx-auto" alt="" />
       </div>
     </div>
   );
