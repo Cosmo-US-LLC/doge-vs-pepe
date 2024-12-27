@@ -4,7 +4,7 @@ import imgr from "../../assets/FirstEver/img (1).webp";
 import shodow from "../../assets/FirstEver/shodow.svg"
 function FirstEverSec() {
   return (
-    <div className="relative w-[100%] bgeversec overflow-hidden pt-[60px] pb-[80px]">
+    <div className="relative w-[100%] bgeversec overflow-hidden pt-[60px] pb-[80px]" id="firstever">
       <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
       <img src={shodow} alt="shodow" className="absolute top-0 left-0 right-0 w-full"/>
       <div className="max-w-[1291.63px] space-y-[45px] w-[100%] mx-auto relative min-h-[500px]">
