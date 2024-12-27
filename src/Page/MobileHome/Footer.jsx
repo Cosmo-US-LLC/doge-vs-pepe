@@ -46,7 +46,7 @@ function Footer() {
             Don’t Wait – The Race is On!
           </a>
           <a href="https://example.com" className="text-[16px] text-[#fff] font-[400] block">
-            Frequently Asked Questions
+            FAQ
           </a>
           <a href="https://example.com" className="text-[16px] text-[#fff] font-[400] block">
             Need Help?
@@ -55,7 +55,7 @@ function Footer() {
 
         {/* Social Icons */}
         <div className="flex flex-col space-y-4">
-          <h4 className="text-[16px] text-[#fff] font-[400]">Get updated</h4>
+          <h4 className="text-[16px] text-[#fff] font-[400]">Join us now</h4>
           <div className="flex space-x-3">
             <img src={socialicn1} alt="social 1" className="w-[24px]" />
             <img src={socialicn2} alt="social 2" className="w-[24px]" />
