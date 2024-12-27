@@ -5,10 +5,10 @@ import downShodow from "../../assets/madebySec/down-shodwo.svg";
 
 function MadebySec() {
   return (
-    <div className="relative w-[100%] bgMadebySec   overflow-hidden w-[100%] pt-[60px] pb-[80px]">
-      <div className="max-w-[1291.63px] min-h-[80vh] flex items-center justify-center h-[100%] space-y-[45px] w-[100%] mx-auto relative ">
+    <div className="relative bgMadebySec   overflow-hidden w-[100%] pt-[60px] pb-[80px]">
+      <div className="max-w-[1291.63px]   flex items-center justify-center h-[100%] space-y-[45px] w-[100%] mx-auto relative ">
         <div className="space-y-[8px]">
-          <h3 className="text-[#fff] text-center text-[42px] leading-[104.377%] font-[700]">
+          <h3 className="text-[#fff] text-center text-[42px] leading-[74.377%] font-[700]">
             Made by Ex Team Members Of
           </h3>
           <h4 className="text-center space-x-3  text-[64px] pt-4">
@@ -53,7 +53,15 @@ function MadebySec() {
 
               <div className="text-center ">
                 <h3 className="text-lg font-bold text-black">Market Cap</h3>
-                <p className="text-2xl font-extrabold text-white">$530M</p>
+                <p
+                  className="text-[37px] font-bold text-white text-center font-k2d leading-normal"
+                  style={{
+                    WebkitTextStrokeWidth: "1.22px",
+                    WebkitTextStrokeColor: "#000",
+                  }}
+                >
+                  $530M
+                </p>
               </div>
             </div>
             <div className="w-[208px] h-[266px] bg-[#00FF2F] rounded-[15px] shadow-md flex flex-col items-center justify-center p-4 border-[3px] border-[#FFF]">
@@ -65,7 +73,15 @@ function MadebySec() {
 
               <div className="text-center ">
                 <h3 className="text-lg font-bold text-black">Market Cap</h3>
-                <p className="text-2xl font-extrabold text-white">$6.93B</p>
+                <p
+                  className="text-[37px] font-bold text-white text-center font-k2d leading-normal"
+                  style={{
+                    WebkitTextStrokeWidth: "1.22px",
+                    WebkitTextStrokeColor: "#000",
+                  }}
+                >
+                  $6.93B
+                </p>
               </div>
             </div>
           </div>

@@ -4,12 +4,33 @@ import arwr from "../../assets/herosec/Arrowrght.svg";
 import vsimg from "../../assets/herosec/vs.png";
 import vsimgr from "../../assets/herosec/vects (2).png";
 import vsimgl from "../../assets/herosec/vects (1).png";
-import downShodow from "../../assets/herosec/down-shodwo.svg"
+import downShodow from "../../assets/herosec/down-shodwo.svg";
+import downArrow from "../../assets/herosec/down-arrow.svg";
 
 function HeroSection() {
+  const handleScroll = (event, targetId, offset) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  
+  };
   return (
-    <div className="relative w-[100%] bgherosec pt-[9rem] pb-[30px]" id="what-is">
-      <img src={downShodow} className="absolute bottom-0 left-0 right-0 w-full" alt="" />
+    <div
+      className="relative w-[100%] bgherosec pt-[9rem] pb-[30px]"
+      id="what-is"
+    >
+      <img
+        src={downShodow}
+        className="absolute bottom-0 left-0 right-0 w-full"
+        alt=""
+      />
       <div className="max-w-[1245px] w-[100%] mx-auto relative min-h-[700px]">
         <div className="max-w-[575px] w-[100%] mx-auto text-center">
           <div className="flex items-center justify-center space-x-4">
@@ -41,39 +62,44 @@ function HeroSection() {
           </h4>
           <p className="text-[16px] max-w-[575px] w-[100%] pb-[24px] mx-auto font-[700] leading-[137.5%] text-[#FFF]  text-center">
             Only one coin will survive this fight, break out of the Matrix and
-            launch. On <br /> one side, we’ve got the OG meme king, Doge, and on the
-            other, the meme <br /> sensation, Pepe. The first to hit $1M wins and 
-            launches! <br /> The choice is yours!
+            launch. On <br /> one side, we’ve got the OG meme king, Doge, and on
+            the other, the meme <br /> sensation, Pepe. The first to hit $1M
+            wins and launches! <br /> The choice is yours!
           </p>
         </div>
-       <div className="absolute bottom-0 min-h-[490px] w-[100%]">
-        <div className="flex relative min-h-[490px]">
-          <img src={vsimgr} className="absolute -left-12 -top-9" alt="" />
-          <div className="max-w-[618px] pt-10 w-[100%] flex items-center justify-between mx-auto">
-            <button
-              className="rounded-[60px] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[700] text-[#000] space-x-2"
-              style={{
-                background: "linear-gradient(90deg, #FEC576 0%, #FFBF01 100%)",
-                boxShadow: "0px 2px 0px 0px #FFF",
-              }}
-            >
-              <img className="mr-2" src={arwr} alt="" />
-              BUY $DOGE
-            </button>
-            <img src={vsimg} className="max-h-[210px]" alt="" />
-            <button
-              className=" rounded-[60px] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[700] text-[#000] space-x-2"
-              style={{
-                background: "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)",
-                boxShadow: "0px 2px 0px 0px #FFF",
-              }}
-            >
-              BUY $PEPE <img className="ml-2" src={arwl} alt="" />
-            </button>
+        <div className="absolute bottom-0 min-h-[490px] w-[100%]">
+          <div className="flex relative min-h-[490px]">
+            <img src={vsimgr} className="absolute -left-12 -top-9" alt="" />
+            <div className="max-w-[618px] pt-10 w-[100%] flex items-center justify-between mx-auto">
+              <button
+                className="rounded-[60px] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[700] text-[#000] space-x-2"
+                style={{
+                  background:
+                    "linear-gradient(90deg, #FEC576 0%, #FFBF01 100%)",
+                  boxShadow: "0px 2px 0px 0px #FFF",
+                }}
+              >
+                <img className="mr-2" src={arwr} alt="" />
+                BUY $DOGE
+              </button>
+              <img src={vsimg} className="max-h-[210px]" alt="" />
+              <button
+                className=" rounded-[60px] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[700] text-[#000] space-x-2"
+                style={{
+                  background:
+                    "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)",
+                  boxShadow: "0px 2px 0px 0px #FFF",
+                }}
+              >
+                BUY $PEPE <img className="ml-2" src={arwl} alt="" />
+              </button>
+            </div>
+            <img className="absolute -right-12 -top-9" src={vsimgl} alt="" />
           </div>
-          <img className="absolute -right-12 -top-9" src={vsimgl} alt="" />
         </div>
-        </div>
+      </div>
+      <div className="absolute bottom-[-3%] left-0 right-0 flex items-center justify-center z-30">
+        <img className="" src={downArrow} alt="" onClick={(e) => handleScroll(e, "how-to-buy", 90)}/>
       </div>
     </div>
   );

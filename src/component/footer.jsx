@@ -9,7 +9,7 @@ function Footer() {
     <div className="w-[100%] z-[99] bg-[#181818] pt-[56px] pb-[36px] ">
       <div className="max-w-[1296px]  2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[90%] w-[100%]  mx-auto space-y-[64px]">
         <div className="flex justify-between">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col items-center justify-center gap-4">
             <img
               src={Logo}
               alt="footer logo"
@@ -87,7 +87,7 @@ function Footer() {
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
             >
-              frequently asked questions
+              FAQ
             </a>
             <a
               href="https://example.com"
@@ -98,7 +98,7 @@ function Footer() {
           </div>
           <div className="max-w-[110px] w-[100%] space-y-[10px]">
             <h4 className="text-[18px] text-[#fff] font-[400] leading-[119.856%]">
-              Get updated{" "}
+            Join us now{" "}
             </h4>
             <div className="flex space-x-2">
               <img src={socialicn1} alt="socialicn1" />

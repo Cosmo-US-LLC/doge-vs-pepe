@@ -6,12 +6,13 @@ import yellowShodow from "../../assets/Mobile/yellow-shodow.svg";
 function MobileFirstEverSec() {
   return (
     <div className="w-[100%] bgeversecmob overflow-hidden relative pt-[60px] pb-[17px]" id="whitepaper">
+       <div class="absolute inset-0 bg-black bg-opacity-10 z-10"></div>
       <div className=" space-y-[45px] w-[90%] mx-auto  ">
         <h3 className="text-[#fff] text-center text-[24px] leading-[24px] uppercase font-[700]">
           The First Ever <br /> Crypto Meme Fight
         </h3>
 
-        <div className="relative">
+        <div className="relative z-10">
           <div className="max-w-[264.314px] mx-auto w-[100%]">
             <p className="text-[#fff] text-[16px] text-center leading-[114%] font-[400]">
               Welcome to <span className="font-[700]">Team Doge</span> vs.{" "}
@@ -31,7 +32,7 @@ function MobileFirstEverSec() {
           </div>
         </div>
       </div>
-      <div className="min-h-[250px] flex justify-between">
+      <div className="min-h-[250px] flex justify-between z-10">
         <img
           src={firstDoge}
           alt="firstDoge"

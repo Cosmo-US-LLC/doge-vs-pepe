@@ -9,9 +9,10 @@ import coinsw4 from "../../assets/walletsec/coinsw (1).svg";
 import coinsw5 from "../../assets/walletsec/coinsw (6).svg";
 import coinsw6 from "../../assets/walletsec/coinsw (4).svg";
 import ggicon from "../../assets/walletsec/gg.svg";
-import shodow from "../../assets/shodow.svg"
-import downShodow from "../../assets/Mobile/down-shodwo.svg"
+import shodow from "../../assets/shodow.svg";
+import downShodow from "../../assets/Mobile/down-shodwo.svg";
 import arw from "../../assets/walletsec/arw.svg";
+import downArrow from "../../assets/herosec/down-arrow.svg";
 
 const Buybuttons = [
   { id: "Buy", label: "Buy", img: arwbtn1 },
@@ -83,13 +84,38 @@ function WalletSec() {
     setIsDropdownOpenpepe(false);
   };
 
+  const handleScroll = (event, targetId, offset) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  
+  };
+
   return (
-    <div className="relative w-[100%] bgwltsec pt-[107px] pb-[128px]" id="how-to-buy">
-      <img src={shodow} alt="shodow" className="absolute top-0 left-0 right-0 w-full"/>
-      <img src={downShodow} alt="shodow" className="absolute bottom-0 left-0 right-0 w-full"/>
+    <div
+      className="relative w-[100%] bgwltsec pt-[107px] pb-[128px]"
+      id="how-to-buy"
+    >
+      <img
+        src={shodow}
+        alt="shodow"
+        className="absolute top-0 left-0 right-0 w-full"
+      />
+      <img
+        src={downShodow}
+        alt="shodow"
+        className="absolute bottom-0 left-0 right-0 w-full"
+      />
       <div className="max-w-[922px] w-[100%] mx-auto ">
         <div className="flex justify-between">
-          <div className="min-h-[596.83px] max-w-[404.01px] bg-[#F2B60F] w-[100%] space-y-[14px]  px-[16px] pb-[56px] pt-[24px] rounded-[24px] border border-[#fff]">
+          <div className="min-h-[596.83px] max-w-[404.01px] bg-[#F2B60F] w-[100%] space-y-[14px]  px-[16px] pb-[26px] pt-[24px] rounded-[24px] border border-[#fff]">
             <div className="bg-[#00000040] flex justify-between p-1 rounded-[30px]">
               {Buybuttons.map((button) => (
                 <div
@@ -129,7 +155,7 @@ function WalletSec() {
                   USD Raised
                 </h4>
                 <h5 className="text-[18.364px] font-[600] text-[#000]">
-                  $1,252,523 / $2,000,000
+                  $252,523 / $1,000,000
                 </h5>
               </div>
             </div>
@@ -234,9 +260,14 @@ function WalletSec() {
                 Connect Wallet
               </button>
             </div>
+            <div className="flex items-center justify-center ">
+              <p className="text-[15px] font-normal text-black font-k2d capitalize leading-normal">
+                Max Buy-in $25,000
+              </p>
+            </div>
           </div>
           <div
-            className="min-h-[596.83px] max-w-[404.01px]  w-[100%] space-y-[14px]  px-[16px] pb-[56px] pt-[24px] rounded-[24px] border border-[#fff]"
+            className="min-h-[596.83px] max-w-[404.01px]  w-[100%] space-y-[14px]  px-[16px] pb-[26px] pt-[24px] rounded-[24px] border border-[#fff]"
             style={{
               background:
                 "linear-gradient(180deg, #4EB52A 64.5%, #4EB52A 100%)",
@@ -283,7 +314,7 @@ function WalletSec() {
                   USD Raised
                 </h4>
                 <h5 className="text-[18.364px] font-[600] text-[#000]">
-                  $1,252,523 / $2,000,000
+                  $252,523 / $1,000,000
                 </h5>
               </div>
             </div>
@@ -388,9 +419,17 @@ function WalletSec() {
                 Connect Wallet
               </button>
             </div>
+            <div className="flex items-center justify-center ">
+              <p className="text-[15px] font-normal text-black font-k2d capitalize leading-normal">
+                Max Buy-in: $25,000
+              </p>
+            </div>
           </div>
         </div>
       </div>
+            <div className="absolute bottom-[-3%] left-0 right-0 flex items-center justify-center z-30">
+              <img className="" src={downArrow} alt="" onClick={(e) => handleScroll(e, "firstever", 90)}/>
+            </div>
     </div>
   );
 }

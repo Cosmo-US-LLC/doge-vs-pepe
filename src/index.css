@@ -64,7 +64,7 @@ code {
 }
 
 .bgMadebySec {
-  background-image: url(./assets/madebySec/EX-team-bg.svg);
+  background-image: url(./assets/madebySec/baby-bg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -134,7 +134,7 @@ code {
   position: absolute;
   inset: 0;
   border-radius: 15px;
-  padding: 1px;
+  padding: 1.1px;
   background: linear-gradient(10deg, #4EB52A -53%, #fac000d8 -53%, transparent 46%, transparent 46%, #4EB52A 215%, #fac000d8 -53%, transparent 329%, transparent 329%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
