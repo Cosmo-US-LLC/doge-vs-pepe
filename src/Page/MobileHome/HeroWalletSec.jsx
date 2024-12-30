@@ -135,10 +135,10 @@ function HeroWalletSec() {
                 ))}
               </div>
               <div className="space-y-[8px]">
-                <h3 className="text-[20.484px] font-[700] text-center leading-[88%] text-[#00]">
+                <h3 className="text-[21.97px] font-[700] text-center leading-[88%] text-[#00]">
                   Buy $DOPE
                 </h3>
-                <h5 className="text-[#000] leading-[183.333%] text-[9.832px] font-[700] text-center">
+                <h5 className="text-[#000] leading-[183.333%] text-[10.545px] font-[700] text-center">
                   1 GG = $0.0005
                 </h5>
               </div>
@@ -147,10 +147,10 @@ function HeroWalletSec() {
                   <div className="bg-[#000] h-[8px] w-[60%] rounded-[30px]"></div>
                 </div>
                 <div className="flex justify-between">
-                  <h4 className="text-[9.832px] font-[600] text-[#000]">
+                  <h4 className="text-[10.54px] font-[600] text-[#000]">
                     USD Raised
                   </h4>
-                  <h5 className="text-[9.832px] font-[600] text-[#000]">
+                  <h5 className="text-[10.54px] font-[600] text-[#000]">
                   $252,523 / $1,000,000
                   </h5>
                 </div>
@@ -237,7 +237,7 @@ function HeroWalletSec() {
                 </div>
               </div>
               <div className=" space-y-[10px]">
-                <h5 className="text-[#000] text-[9.832px] font-[700] text-center">
+                <h5 className="text-[#000] text-[10.54px] font-[700] text-center">
                   Accepting
                 </h5>
                 <div className="flex justify-center space-x-2">
@@ -253,11 +253,11 @@ function HeroWalletSec() {
               </div>
               <div className="">
                 <div className="flex justify-center">
-                  <button className="bg-[#000] text-[#FFF] max-w-[166.331px] mx-auto w-[100%] h-[22.123px] text-[11.471px] font-[700] rounded-[50px]">
+                  <button className="bg-[#000] text-[#FFF] max-w-[166.331px] mx-auto w-[100%] h-[28.123px] text-[12.300px] font-[700] rounded-[50px]">
                     Connect Wallet
                   </button>
                 </div>
-                <p className="text-[8.031px] text-center">Max Buy-in $10'000</p>
+                <p className="text-[8.031px] font-[400] text-center">Max Buy-in $10'000</p>
               </div>
             </div>
           </div>
@@ -298,10 +298,10 @@ function HeroWalletSec() {
                 ))}
               </div>
               <div className="space-y-[8px]">
-                <h3 className="text-[20.484px] font-[700] text-center leading-[88%] text-[#00]">
-                  $PEGE
+                <h3 className="text-[21.484px] font-[700] text-center leading-[88%] text-[#00]">
+                Buy $PEPE
                 </h3>
-                <h5 className="text-[#000] leading-[183.333%] text-[9.832px] font-[700] text-center">
+                <h5 className="text-[#000] leading-[183.333%] text-[10.54px] font-[700] text-center">
                   1 GG = $0.0005
                 </h5>
               </div>
@@ -310,10 +310,10 @@ function HeroWalletSec() {
                   <div className="bg-[#000] h-[8px] w-[60%] rounded-[30px]"></div>
                 </div>
                 <div className="flex justify-between">
-                  <h4 className="text-[9.832px] font-[600] text-[#000]">
+                  <h4 className="text-[10.54px] font-[600] text-[#000]">
                     USD Raised
                   </h4>
-                  <h5 className="text-[9.832px] font-[600] text-[#000]">
+                  <h5 className="text-[10.54px] font-[600] text-[#000]">
                   252,523 / $1,000,000
                   </h5>
                 </div>
@@ -381,7 +381,7 @@ function HeroWalletSec() {
                   </h5>
                   <input
                     type="text"
-                    className="text-[#fff] text-[9.832px] font-[700] bg-[transparent] outline-none"
+                    className="text-[#fff] text-[10.32px] font-[700] bg-[transparent] outline-none"
                     defaultValue={`7,414,420`}
                   />
                 </div>
@@ -400,7 +400,7 @@ function HeroWalletSec() {
                 </div>
               </div>
               <div className=" space-y-[10px]">
-                <h5 className="text-[#000] text-[9.832px] font-[700] text-center">
+                <h5 className="text-[#000] text-[10.32px] font-[700] text-center">
                   Accepting
                 </h5>
                 <div className="flex justify-center space-x-2">
@@ -416,11 +416,11 @@ function HeroWalletSec() {
               </div>
               <div className="">
                 <div className="flex justify-center">
-                  <button className="bg-[#000] text-[#FFF] max-w-[166.331px] mx-auto w-[100%] h-[22.123px] text-[11.471px] font-[700] rounded-[50px]">
+                  <button className="bg-[#000] text-[#FFF] max-w-[166.331px] mx-auto w-[100%] h-[28.123px] text-[12.471px] font-[700] rounded-[50px]">
                     Connect Wallet
                   </button>
                 </div>
-                <p className="text-[8.031px] text-center">Max Buy-in $10'000</p>
+                <p className="text-[8.031px] font-[400] text-center">Max Buy-in $10'000</p>
               </div>
             </div>
           </div>

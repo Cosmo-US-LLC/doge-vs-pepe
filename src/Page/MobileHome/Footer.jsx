@@ -71,7 +71,7 @@ function Footer() {
             subject to capital gains or other taxes applicable in your
             jurisdiction.
           </p>
-          <p className="mt-4 text-[12px] font-[400] text-[#fff] leading-[18px] text-center">
+          <p className="mt-4 text-[14px] font-[400] text-[#fff] leading-[18px] text-center">
             Copyright 2024 DOGEVSPEPE | All rights reserved.
           </p>
         </div>

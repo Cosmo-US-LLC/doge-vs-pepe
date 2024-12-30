@@ -95,7 +95,6 @@ function WalletSec() {
         behavior: "smooth",
       });
     }
-  
   };
 
   return (
@@ -256,10 +255,11 @@ function WalletSec() {
               </div>
             </div>
             <div className="">
-              <button className="bg-[#000] text-[#FFF] w-[100%] h-[41.319px] text-[21.425px] font-[700] rounded-[50px]">
+              <button className="bg-[#000] text-[#FFF] w-[100%] h-[41.319px] text-[21.425px] font-[700] rounded-[50px] transition-all duration-300 hover:bg-[#0184E2] hover:text-[#FFFFFF] hover:opacity-90 cursor-pointer">
                 Connect Wallet
               </button>
             </div>
+
             <div className="flex items-center justify-center ">
               <p className="text-[15px] font-normal text-black font-k2d capitalize leading-normal">
                 Max Buy-in $25,000
@@ -415,10 +415,11 @@ function WalletSec() {
               </div>
             </div>
             <div className="">
-              <button className="bg-[#000] text-[#FFF] w-[100%] h-[41.319px] text-[21.425px] font-[700] rounded-[50px]">
+              <button className="bg-[#000] text-[#FFF] w-[100%] h-[41.319px] text-[21.425px] font-[700] rounded-[50px] transition-all duration-300 hover:bg-[#0184E2] hover:text-[#FFFFFF] hover:opacity-90 cursor-pointer">
                 Connect Wallet
               </button>
             </div>
+
             <div className="flex items-center justify-center ">
               <p className="text-[15px] font-normal text-black font-k2d capitalize leading-normal">
                 Max Buy-in: $25,000
@@ -427,9 +428,14 @@ function WalletSec() {
           </div>
         </div>
       </div>
-            <div className="absolute bottom-[-3%] left-0 right-0 flex items-center justify-center z-30">
-              <img className="" src={downArrow} alt="" onClick={(e) => handleScroll(e, "firstever", 90)}/>
-            </div>
+      <div className="absolute bottom-[-3%] left-0 right-0 flex items-center justify-center z-30">
+        <img
+          className="transition-all duration-300 cursor-pointer hover:animate-bounce hover:scale-110"
+          src={downArrow}
+          alt=""
+          onClick={(e) => handleScroll(e, "firstever", 90)}
+        />
+      </div>
     </div>
   );
 }

@@ -103,7 +103,7 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
           onClick={handleClick}
         >
           <div className="flex items-center justify-center gap-5 xs:pt-[14px]">
-            <div className="text-[22px] text-[#fff] font-[400] font-k2d">
+            <div className="text-[22px] text-[#fff] font-[600] font-k2d">
               {question}
             </div>
           </div>
@@ -119,7 +119,7 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
         <div style={contentStyles}>
           <div className="w-[100%] px-[34px] pb-[20px]">
             <p
-              className="pb-[10px] answer text-[22px] text-white leading-[150%] font-[400] font-k2d"
+              className="pb-[10px] answer text-[22px] text-white leading-[150%] font-[600] font-k2d"
               dangerouslySetInnerHTML={createMarkup()}
             />
           </div>

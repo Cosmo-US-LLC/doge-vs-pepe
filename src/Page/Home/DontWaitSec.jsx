@@ -1,7 +1,7 @@
 import React from "react";
 function DontWaitSec() {
   return (
-    <div className="w-[100%] bgDontWaitSec   overflow-hidden w-[100%] pt-[60px] pb-[80px]">
+    <div className=" bgDontWaitSec   overflow-hidden w-[100%] pt-[60px] pb-[80px]">
       <div className="max-w-[1291.63px]  h-[100%] space-y-[45px] w-[100%] mx-auto relative ">
      <div className="flex flex-col min-h-[80vh] justify-between">
      <div className="space-y-[20px]">

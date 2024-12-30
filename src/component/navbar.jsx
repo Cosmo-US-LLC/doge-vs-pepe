@@ -31,9 +31,10 @@ function Navbar() {
           </div>
 
           <img
-            className="2xl:max-w-[100%] xl:max-w-[100%] lg:max-w-[100%] md:max-w-[100%] sm:max-w-[100px] max-w-[130px]"
+            className="2xl:max-w-[100%] xl:max-w-[100%] lg:max-w-[100%] md:max-w-[100%] sm:max-w-[100px] max-w-[130px] cursor-pointer"
             src={Logo}
             alt="Logo"
+            onClick={(e) => handleScroll(e, "what-is", 90)}
           />
         </div>
 
@@ -41,35 +42,35 @@ function Navbar() {
         <div className="2xl:flex xl:flex lg:flex md:flex sm:hidden hidden justify-center items-center space-x-[30px]">
           <a
             href="#what-is"
-            className="text-[#fff] text-[16px] font-[700]"
+            className="text-[#fff] text-[16px] font-[600]"
             onClick={(e) => handleScroll(e, "what-is", 90)}
           >
             What is DOGEVSPEPE
           </a>
           <a
             href="#rules"
-            className="text-[#fff] text-[16px] font-[700]"
+            className="text-[#fff] text-[16px] font-[600]"
             onClick={(e) => handleScroll(e, "rules", 90)}
           >
             Rules
           </a>
           <a
             href="#how-to-buy"
-            className="text-[#fff] text-[16px] font-[700]"
+            className="text-[#fff] text-[16px] font-[600]"
             onClick={(e) => handleScroll(e, "how-to-buy", 90)}
           >
             How To Buy
           </a>
           <a
             href="#whitepaper"
-            className="text-[#fff] text-[16px] font-[700]"
+            className="text-[#fff] text-[16px] font-[600]"
             onClick={(e) => handleScroll(e, "whitepaper", 90)}
           >
             Whitepaper
           </a>
           <a
             href="#tokenomics"
-            className="text-[#fff] text-[16px] font-[700]"
+            className="text-[#fff] text-[16px] font-[600]"
             onClick={(e) => handleScroll(e, "tokenomics", 90)}
           >
             Tokenomics
@@ -148,7 +149,13 @@ function Navbar() {
         )}
 
         <div className="flex justify-between space-x-[24px]">
-          <button className="2xl:w-[173px] xl:w-[173px] lg:w-[173px] md:w-[173px] sm:w-[173px] w-[109px] 2xl:h-[40px] xl:h-[40px] lg:h-[40px] md:h-[40px] sm:h-[27px] h-[27px] rounded-[60px] bg-[#0184E2] text-[#fff] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[12px] text-[11.341px] font-[700]">
+          <button
+            className="2xl:w-[173px] xl:w-[173px] lg:w-[173px] md:w-[173px] sm:w-[173px] w-[109px] 
+                   2xl:h-[40px] xl:h-[40px] lg:h-[40px] md:h-[40px] sm:h-[27px] h-[27px] 
+                   rounded-[60px] bg-[#0184E2] text-[#fff] 
+                   2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[12px] text-[11.341px] 
+                   font-[700] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105"
+          >
             Connect Wallet
           </button>
         </div>

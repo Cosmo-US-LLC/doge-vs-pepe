@@ -13,7 +13,7 @@ function RoadmapSec() {
       <div className="max-w-[1245px] space-y-[40px] w-[100%] mx-auto ">
         <div className="space-y-[50px]">
           <div>
-            <h3 className="text-[42px] text-[#FFFCFC] text-center font-[700]">
+            <h3 className="text-[50px] text-[#FFFCFC] text-center font-[700]">
               Roadmap
             </h3>
           </div>
@@ -65,23 +65,23 @@ function RoadmapSec() {
                         Phase 1: The Battle Begins
                       </h4>
                       <ol className="pl-[1.5rem] list-disc">
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">
                             Concept Development:
                           </span>{" "}
                           Craft the vision for $DOPE, combining Doge’s charm
                           with a competitive presale.
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">Website Launch:</span>{" "}
                           Launch the $DOPE site with presale details, community
                           channels, and resources for supporters.
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">Community Setup: </span>
                           Create Telegram channels for rallying Team Doge fans.
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">Marketing Kickoff:</span>{" "}
                           Roll out social media campaigns, influencer promos,
                           and press releases to unite Doge fans globally.
@@ -104,18 +104,18 @@ function RoadmapSec() {
                         Phase 2: The Presale Showdown
                       </h4>
                       <ol className="pl-[1.5rem] list-disc">
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">Presale Launch: </span>
                           Team Doge enters as the Orange Coin, rallying
                           positivity and community spirit.
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">
                             Live Updates: Real-time funding stats drive $DOPE’s
                             climb.
                           </span>
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">
                             Community Challenges: Polls and contests energize
                             Doge supporters.
@@ -139,14 +139,14 @@ function RoadmapSec() {
                         Phase 3: Crowning the Champion
                       </h4>
                       <ol className="pl-[1.5rem] list-disc">
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">
                             Winner Announcement:{" "}
                           </span>
                           $DOPE is crowned the winning token, showcasing Team
                           Doge's dominance.
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">
                             <span className="font-[600]">
                               Liquidity Boost:{" "}
@@ -154,7 +154,7 @@ function RoadmapSec() {
                             Rival funds strengthen $DOPE’s liquidity pool.
                           </span>
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">Token Launch:</span>$DOPE
                           goes live within 24 hours.
                         </li>
@@ -227,20 +227,20 @@ function RoadmapSec() {
                         Phase 1: The Battle Begins
                       </h4>
                       <ol className="pl-[1.5rem] list-disc">
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           Concept Development: Craft the vision for $PEGE,
                           combining Pepe’s iconic status with a thrilling
                           presale.
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           Website Launch: Launch the $PEGE site with presale
                           details and community tools.
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           Community Setup: Create Telegram channels for rallying
                           Team Pepe believers..
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           Marketing Kickoff: Launch social media campaigns,
                           influencer shoutouts, and press releases to unite the
                           Pepe army..
@@ -263,17 +263,17 @@ function RoadmapSec() {
                         Phase 2: The Presale Showdown
                       </h4>
                       <ol className="pl-[1.5rem] list-disc">
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           Presale Launch: Team Pepe takes the lead as the Green
                           Coin, fueled by humor and resilience.
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">
                             Live Updates: Real-time stats highlight $PEGE’s
                             progress.
                           </span>
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">
                             Community Challenges: Polls and events energize the
                             Pepe army.
@@ -297,14 +297,14 @@ function RoadmapSec() {
                         Phase 3: Crowning the Champion
                       </h4>
                       <ol className="pl-[1.5rem] list-disc">
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">
                             Winner Announcement:{" "}
                           </span>
                           $PEGE is crowned the ultimate meme king, solidifying
                           Pepe’s legacy.
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">
                             <span className="font-[600]">
                               Liquidity Boost:{" "}
@@ -312,7 +312,7 @@ function RoadmapSec() {
                             Rival funds strengthen $PEGE’s market position.
                           </span>
                         </li>
-                        <li className="text-[18px] text-[#fff] font-[400] leading-[169.309%]">
+                        <li className="text-[18px] text-[#fff] font-[600] leading-[169.309%]">
                           <span className="font-[600]">Token Launch:</span>{" "}
                           $PEGE goes live for trading within 24 hours..
                         </li>

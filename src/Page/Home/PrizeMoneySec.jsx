@@ -6,7 +6,7 @@ function PrizeMoneySec() {
     <div className="w-[100%] bgprizsec overflow-hidden pt-[60px] pb-[80px]">
       <div className="max-w-[1291.63px] space-y-[45px] w-[100%] mx-auto relative min-h-[500px]">
         <div className="space-y-[20px]">
-          <h3 className="text-[#fff] text-center text-[42px] leading-[104.377%] font-[700]">
+          <h3 className="text-[#fff] text-center text-[50px] leading-[104.377%] font-[700]">
             Prize Money For The Winning Team{" "}
           </h3>
           <h4

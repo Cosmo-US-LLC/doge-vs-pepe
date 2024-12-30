@@ -96,14 +96,26 @@ function Footer() {
               Need Help?
             </a>
           </div>
-          <div className="max-w-[110px] w-[100%] space-y-[10px]">
+          <div className="max-w-[110px] w-[100%] space-y-[10px] flex flex-col  items-center">
             <h4 className="text-[18px] text-[#fff] font-[400] leading-[119.856%]">
-            Join us now{" "}
+              Join us now{" "}
             </h4>
             <div className="flex space-x-2">
-              <img src={socialicn1} alt="socialicn1" />
-              <img src={socialicn2} alt="socialicn2" />
-              <img src={socialicn3} alt="socialicn3" />
+              <img
+                src={socialicn1}
+                alt="socialicn1"
+                className="transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80"
+              />
+              <img
+                src={socialicn2}
+                alt="socialicn2"
+                className="transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80"
+              />
+              <img
+                src={socialicn3}
+                alt="socialicn3"
+                className="transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80 "
+              />
             </div>
           </div>
         </div>
