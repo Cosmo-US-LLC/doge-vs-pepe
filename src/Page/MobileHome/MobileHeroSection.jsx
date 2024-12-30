@@ -54,31 +54,31 @@ function MobileHeroSection() {
             Who’s Raising <span className="text-[#00FF2F]">$1 Million</span>{" "}
             First?
           </h4>
-          <p className="text-[14px] max-w-[575px] w-[100%] pb-[24px] mx-auto font-[700] leading-[118.336%] text-[#FFF]  text-center">
+          <p className="text-[14px] max-w-[311px] w-[100%] pb-[24px] mx-auto font-[700] leading-[118.336%] text-[#FFF]  text-center">
             Only one coin will survive this fight, break out of the Matrix and
             launch. On one side, we’ve got the OG meme king, Doge, and on the
-            other, the meme sensation, Pepe. The first to hit $1M wins and
-            launches! The choice is yours!
+            other, the meme sensation, Pepe. The first to hit $1M wins <br /> and
+            launches!   The choice is yours!
           </p>
         </div>
         <div className="w-[100%]">
           <div className="">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between ">
               <img
                 src={vsimgr}
-                className=" h-[269px] w-[153px] -left-12 -top-9"
+                className="h-[269px] w-[153px]  "
                 alt=""
               />
-              <img src={vsimg} className="max-h-[50px]" alt="" />
+              <img src={vsimg} className="max-h-[66px] h-[62px]" alt="" />
               <img
-                className=" -right-12 h-[269px] w-[153px] -top-9"
+                className="  h-[269px] w-[153px]  "
                 src={vsimgl}
                 alt=""
               />
             </div>
-            <div className="max-w-[618px] w-[100%] flex items-center justify-between mx-auto">
+            <div className="max-w-[618px] w-[100%] flex items-center justify-between mx-auto pb-6">
               <button
-                className="rounded-[60px] max-w-[112.957px] w-[100%] h-[25.819px] flex justify-center items-center text-[9.037px] font-[700] text-[#000] space-x-2"
+                className="rounded-[60px] max-w-[112.957px] w-[100%] h-[30.819px] flex justify-center items-center text-[9.037px] font-[800] text-[#000] space-x-2"
                 style={{
                   background:
                     "linear-gradient(90deg, #FEC576 0%, #FFBF01 100%)",
@@ -89,7 +89,7 @@ function MobileHeroSection() {
                 BUY $DOGE
               </button>
               <button
-                className=" rounded-[60px] max-w-[112.957px] w-[100%] h-[25.819px] flex justify-center items-center text-[9.037px] font-[700] text-[#000] space-x-2"
+                className=" rounded-[60px] max-w-[112.957px] w-[100%] h-[30.819px] flex justify-center items-center text-[9.037px] font-[800] text-[#000] space-x-2"
                 style={{
                   background:
                     "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)",
@@ -103,7 +103,7 @@ function MobileHeroSection() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-[0%] left-0 right-0 flex items-center justify-center z-30">
+      <div className="absolute bottom-[4%] left-0 right-0 flex items-center justify-center z-30">
         <img
           className="h-[32px] w-[32px]"
           src={downArrow}

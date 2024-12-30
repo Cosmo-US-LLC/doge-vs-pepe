@@ -5,18 +5,18 @@ import greenShodow from "../../assets/Mobile/green-shodow.svg";
 import yellowShodow from "../../assets/Mobile/yellow-shodow.svg";
 function MobileFirstEverSec() {
   return (
-    <div className="w-[100%] bgeversecmob overflow-hidden relative pt-[60px] pb-[17px]" id="whitepaper">
-       <div class="absolute inset-0 bg-black bg-opacity-10 z-10"></div>
-      <div className=" space-y-[45px] w-[90%] mx-auto  ">
-        <h3 className="text-[#fff] text-center text-[24px] leading-[24px] uppercase font-[700]">
+    <div className="w-[100%] bgeversecmob overflow-hidden relative pt-[60px] pb-[17px] " id="whitepaper">
+       <div class="absolute inset-0 bg-black bg-opacity-20 z-10"></div>
+      <div className=" space-y-[45px] w-[90%] mx-auto  mt-4">
+        <h3 className="text-[#fff] text-center text-[24px] leading-[24px] uppercase font-[700] relative z-10">
           The First Ever <br /> Crypto Meme Fight
         </h3>
 
-        <div className="relative z-10">
-          <div className="max-w-[264.314px] mx-auto w-[100%]">
-            <p className="text-[#fff] text-[16px] text-center leading-[114%] font-[400]">
-              Welcome to <span className="font-[700]">Team Doge</span> vs.{" "}
-              <span className="font-[700]">Team Pepe</span>, where you get to
+        <div className="relative ">
+          <div className=" max-w-[264.314px] mx-auto w-[100%]">
+            <p className="  text-[#fff] text-[14px] text-center leading-[114%] font-[700]">
+              Welcome to <span className="font-[700] relative z-10">Team Doge</span> vs.{" "}
+              <span className="font-[700] relative z-10">Team Pepe</span>, where you get to
               decide who wins! This isn’t just another crypto presale—it’s a
               fast, fun competition that lets the community decide. <br />{" "}
               <br />
@@ -36,22 +36,22 @@ function MobileFirstEverSec() {
         <img
           src={firstDoge}
           alt="firstDoge"
-          className="w-[302px] h-[196px] absolute left-[-17%] bottom-[6px]"
+          className="w-[302px] h-[196px] absolute left-[-17%] bottom-[6px] z-10"
         />
         <img
           src={yellowShodow}
           alt="firstDoge"
-          className="w-[202px] h-[156px] absolute left-[0%] bottom-[-3%]"
+          className="w-[202px] h-[156px] absolute left-[0%] bottom-[-3%] z-10"
         />
         <img
           src={firstPepe}
           alt="firstPepe"
-          className="w-[175px] h-[250px] absolute right-[-8%] bottom-[6px]"
+          className="w-[175px] h-[250px] absolute right-[-8%] bottom-[6px] z-10"
         />
         <img
           src={greenShodow}
           alt="firstPepe"
-          className="w-[175px] h-[250px] absolute right-[-8%] bottom-[-8%]"
+          className="w-[175px] h-[250px] absolute right-[-8%] bottom-[-8%] z-10"
         />
       </div>
     </div>

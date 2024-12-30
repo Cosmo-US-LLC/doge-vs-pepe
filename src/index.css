@@ -45,13 +45,12 @@ code {
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 90vh;
-  
+  min-height: 739px;
 }
 
 .bgeversecmob {
-  background-image: url(./assets/FirstEver/mobbg.png);
-  background-position: center;
+  background-image: url(./assets/FirstEver/first-ever-bg-mob.webp);
+  background-position: center; 
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

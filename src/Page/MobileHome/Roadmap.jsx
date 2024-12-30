@@ -14,16 +14,16 @@ function RoadmapMobile() {
   return (
     <div className="w-full pt-8 overflow-hidden bg-black" id="roadmap">
       <div className="mb-6 text-center">
-        <h3 className="text-[32px] text-white font-bold">Roadmap</h3>
+        <h3 className="text-[24px] text-white font-[700]">Roadmap</h3>
       </div>
       <div className="flex items-center justify-center gap-10">
         <div className="flex w-[149px] h-[18px] justify-center items-center rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600">
-          <span className="text-[#131212] font-inter text-[12px] font-bold leading-none">
+          <span className="text-[#131212] font-inter text-[12px] font-[700] leading-none">
             The $DOPE Roadmap
           </span>
         </div>
         <div className="flex w-[149px] h-[18px] justify-center items-center rounded-full bg-gradient-to-r from-green-400 to-green-600">
-          <span className="text-[#131212] font-inter text-[12px] font-bold leading-none">
+          <span className="text-[#131212] font-inter text-[12px] font-[700] leading-none">
             The $DOPE Roadmap
           </span>
         </div>
@@ -50,11 +50,11 @@ function RoadmapMobile() {
             className="!min-h-[422px]"
           >
             <SwiperSlide>
-              <div className="bg-[#181818] rounded-[16px] px-2 py-4  min-h-[390px] text-white relative">
-                <h4 className="text-yellow-400 text-[10px] font-semibold mb-4">
+              <div className="bg-[#181818] rounded-[16px] px-2 py-4  min-h-[510px] text-white relative">
+                <h4 className="text-yellow-400 text-[10px] font-[600] mb-4">
                   Phase 1: The Battle Begins
                 </h4>
-                <ul className="list-disc pl-5 space-y-2 text-[10px]">
+                <ul className="list-disc pl-5 space-y-2 text-[12px]">
                   <li>
                     <span className="font-bold">Concept Development:</span>{" "}
                     Craft the vision for $DOPE, combining Doge’s charm with a
@@ -78,11 +78,11 @@ function RoadmapMobile() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-[#181818] rounded-[16px] px-2 py-4  min-h-[390px] text-white relative">
+              <div className="bg-[#181818] rounded-[16px] px-2 py-4  min-h-[510px] text-white relative">
                 <h4 className="text-yellow-400 text-[10px] font-semibold mb-4">
                   Phase 2: The Presale Showdown
                 </h4>
-                <ul className="list-disc pl-5 space-y-2 text-[10px]">
+                <ul className="list-disc pl-5 space-y-2 text-[12px]">
                   <li>
                     <span className="font-bold">Presale Launch:</span> Team Doge
                     enters as the Orange Coin, rallying positivity and community
@@ -100,8 +100,8 @@ function RoadmapMobile() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-[#181818] rounded-[16px] min-h-[390px] px-2 py-4 text-white relative">
-                <h4 className="text-yellow-400 text-[10px] font-semibold mb-4">
+              <div className="bg-[#181818] rounded-[16px] min-h-[510px] px-2 py-4 text-white relative">
+                <h4 className="text-yellow-400 text-[12px] font-semibold mb-4">
                   Phase 3: Crowning the Champion
                 </h4>
                 <ul className="list-disc pl-5 space-y-2 text-[10px]">
@@ -154,11 +154,11 @@ function RoadmapMobile() {
             className="!min-h-[422px]"
           >
             <SwiperSlide>
-              <div className="bg-[#181818] rounded-[16px] px-2 py-4  min-h-[390px] text-white relative">
+              <div className="bg-[#181818] rounded-[16px] px-2 py-4  min-h-[510px] text-white relative">
                 <h4 className="text-green-400 text-[10px] font-semibold mb-4">
                   Phase 1: The Battle Begins
                 </h4>
-                <ul className="list-disc pl-5 space-y-2 text-[10px]">
+                <ul className="list-disc pl-5 space-y-2 text-[12px]">
                   <li>
                     <span className="font-bold">Concept Development:</span>{" "}
                     Craft the vision for $PEGE, combining Pepe’s iconic status
@@ -181,11 +181,11 @@ function RoadmapMobile() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-[#181818] rounded-[16px] px-2 py-4  min-h-[390px] text-white relative">
-                <h4 className="text-green-400 text-[10px] font-semibold mb-4">
+              <div className="bg-[#181818] rounded-[16px] px-2 py-4  min-h-[510px] text-white relative">
+                <h4 className="text-green-400 text-[10px] font-[600] mb-4">
                   Phase 2: The Presale Showdown
                 </h4>
-                <ul className="list-disc pl-5 space-y-2 text-[10px]">
+                <ul className="list-disc pl-5 space-y-2 text-[12px]">
                   <li>
                     <span className="font-bold">Presale Launch:</span> Team Pepe
                     takes the lead as the Green Coin, fueled by humor and
@@ -203,11 +203,11 @@ function RoadmapMobile() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-[#181818] rounded-[16px] px-2 py-4  min-h-[390px] text-white relative">
+              <div className="bg-[#181818] rounded-[16px] px-2 py-4  min-h-[510px] text-white relative">
                 <h4 className="text-green-400 text-[10px] font-semibold mb-4">
                   Phase 3: Crowning the Champion
                 </h4>
-                <ul className="list-disc pl-5 space-y-2 text-[10px]">
+                <ul className="list-disc pl-5 space-y-2 text-[12px]">
                   <li>
                     <span className="font-bold">Winner Announcement:</span>{" "}
                     $PEGE is crowned the ultimate meme king, solidifying Pepe’s

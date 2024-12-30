@@ -11,9 +11,9 @@ function MadebySec() {
           <h3 className="text-[#fff] text-center text-[42px] leading-[74.377%] font-[700]">
             Made by Ex Team Members Of
           </h3>
-          <h4 className="text-center space-x-3  text-[64px] pt-4">
+          <h4 className="pt-4 space-x-3 text-center">
             <span
-              className="text-[#EFAB00] leading-[100%] text-[58px] font-[900]"
+              className="text-[#EFAB00] leading-[100%] text-[64px] font-[700]"
               style={{
                 textShadow: "6.534px -0.817px 24.583px #F1AD03",
                 WebkitTextStrokeWidth: "2px",
@@ -23,7 +23,7 @@ function MadebySec() {
               Baby Doge
             </span>
             <span
-              className="text-[#fff] leading-[100%] text-[88px] font-[900] "
+              className="text-[#fff] leading-[100%] text-[88px] font-[700] "
               style={{
                 textShadow: "6.534px -0.817px 24.583px #F1AD03",
                 WebkitTextStrokeWidth: "2px",
@@ -33,7 +33,7 @@ function MadebySec() {
               &
             </span>
             <span
-              className="text-[#00FF2F] leading-[100%] text-[83.305px] font-[900]"
+              className="text-[#00FF2F] leading-[100%] text-[75px] font-[700]"
               style={{
                 textShadow: "6.534px -0.817px 24.583px #74FF60",
                 WebkitTextStrokeWidth: "2px",
@@ -52,9 +52,9 @@ function MadebySec() {
               />
 
               <div className="text-center ">
-                <h3 className="text-lg font-bold text-black">Market Cap</h3>
+                <h3 className="text-[22px] font-[700] text-black">Market Cap</h3>
                 <p
-                  className="text-[37px] font-bold text-white text-center font-k2d leading-normal"
+                  className="text-[39px] font-[700] text-white text-center font-k2d leading-normal"
                   style={{
                     WebkitTextStrokeWidth: "1.22px",
                     WebkitTextStrokeColor: "#000",
@@ -72,9 +72,9 @@ function MadebySec() {
               />
 
               <div className="text-center ">
-                <h3 className="text-lg font-bold text-black">Market Cap</h3>
+                <h3 className="text-[22px] font-[700] text-black">Market Cap</h3>
                 <p
-                  className="text-[37px] font-bold text-white text-center font-k2d leading-normal"
+                  className="text-[39px] font-[700] text-white text-center font-k2d leading-normal"
                   style={{
                     WebkitTextStrokeWidth: "1.22px",
                     WebkitTextStrokeColor: "#000",

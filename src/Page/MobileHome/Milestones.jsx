@@ -13,14 +13,14 @@ function Milestones() {
             Mystery <br /> Milestones Reveal
           </h3>
 
-          <p className="text-[#FFF] text-center font-k2d text-[12px] font-[400] leading-[114%]">
+          <p className="text-[#FFF] text-center font-k2d text-[14px] font-[400] leading-[114%]">
             The race heats up with every milestone!
           </p>
 
-          <p className="w-[331px] text-[#FFF] text-center font-k2d text-[12px] font-[400] leading-[114%]">
+          <p className="w-[353px] text-[#FFF] text-center font-k2d text-[14px] font-[400] leading-[114%]">
             When one project hits a milestone, it reveals a mystery feature for
-            the opposing project, keeping the competition <br/> alive and rewarding
-            both sides. With four key milestones<br/> —250k, 500k, 750k, and 900k—each
+            the opposing project, keeping the competition alive and rewarding
+            both sides. With four key milestones—250k, 500k, 750k, and 900k—each
             unlocks exciting surprises that drive both teams closer to the
             finish line.
           </p>
@@ -31,7 +31,7 @@ function Milestones() {
               className="flex items-center justify-center h-full rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600"
               style={{ width: `${dogePercentage}%` }}
             >
-              <span className="text-[12px] font-extrabold text-[#0B0101] leading-none font-[Inter]">
+              <span className="text-[16px] font-[900] text-[#0B0101] leading-none font-[Inter]">
                 {dogePercentage}%
               </span>
             </div>
@@ -122,7 +122,7 @@ function Milestones() {
                   "linear-gradient(66deg, #79EC8F 25.98%, #09FC3C 65.48%)",
               }}
             >
-              <span className="text-[12px] font-extrabold text-[#0B0101] leading-none font-[Inter]">
+              <span className="text-[16px] font-[900] text-[#0B0101] leading-none font-[Inter]">
                 {pepePercentage}%
               </span>
             </div>

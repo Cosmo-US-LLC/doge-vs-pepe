@@ -10,15 +10,15 @@ function MilestonesSec() {
       <div className="max-w-[1168px] space-y-[40px] w-[100%] mx-auto ">
         <div className="space-y-[40px] flex flex-col items-center justify-center">
           <div>
-            <h3 className="text-[42px] text-[#FFFCFC] text-center font-[700]">
+            <h3 className="text-[50px] text-[#FFFCFC] text-center font-[700]">
               Mystery Milestones Reveal{" "}
             </h3>
-            <p className="text-[18px] font-[400] text-center text-[#FFF]">
+            <p className="text-[28px] font-[400] text-center text-[#FFF]">
               The race heats up with every milestone!{" "}
             </p>
           </div>
           <div className="w-[902px] h-[103px] flex-shrink-0 rounded-[6px] border border-[#E9E9E9] flex items-center justify-center">
-            <p className="text-[18px] font-[400] text-center leading-[114%] text-[#FFF]">
+            <p className="text-[20px] font-[400] text-center leading-[114%] text-[#FFF]">
               When one project hits a milestone, it reveals a mystery feature
               for the opposing team, keeping <br /> the competition alive and
               rewarding both sides. With three key milestones—250k, 500k, and

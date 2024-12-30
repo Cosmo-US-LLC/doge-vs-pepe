@@ -19,7 +19,6 @@ function HeroSection() {
         behavior: "smooth",
       });
     }
-  
   };
   return (
     <div
@@ -41,7 +40,7 @@ function HeroSection() {
               DOGE
             </h1>
             <h4
-              className="text-[#fff] text-[31.852px] font-[700] "
+              className="text-[#fff] text-[31.852px] font-[400] "
               style={{ textShadow: "0px 0px 7.024px #74FF60" }}
             >
               VS
@@ -60,11 +59,11 @@ function HeroSection() {
             Who’s Raising <span className="text-[#00FF2F]">$1 Million</span>{" "}
             First?
           </h4>
-          <p className="text-[16px] max-w-[575px] w-[100%] pb-[24px] mx-auto font-[700] leading-[137.5%] text-[#FFF]  text-center">
+          <p className="text-[20px] max-w-[575px] w-[100%] pb-[24px] mx-auto font-[700] leading-[137.5%] text-[#FFF]  text-center">
             Only one coin will survive this fight, break out of the Matrix and
-            launch. On <br /> one side, we’ve got the OG meme king, Doge, and on
-            the other, the meme <br /> sensation, Pepe. The first to hit $1M
-            wins and launches! <br /> The choice is yours!
+            launch. On one side, we’ve got the OG meme king, Doge, and on the
+            other, the meme sensation, Pepe. The first to hit $1M wins and
+            launches! The choice is yours!
           </p>
         </div>
         <div className="absolute bottom-0 min-h-[490px] w-[100%]">
@@ -72,26 +71,52 @@ function HeroSection() {
             <img src={vsimgr} className="absolute -left-12 -top-9" alt="" />
             <div className="max-w-[618px] pt-10 w-[100%] flex items-center justify-between mx-auto">
               <button
-                className="rounded-[60px] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[700] text-[#000] space-x-2"
+                className="rounded-[60px] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[700] text-[#000] space-x-2 transition-all duration-300 hover:scale-105"
                 style={{
                   background:
                     "linear-gradient(90deg, #FEC576 0%, #FFBF01 100%)",
                   boxShadow: "0px 2px 0px 0px #FFF",
                 }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background =
+                    "linear-gradient(90deg, #FFBF01 0%, #FEC576 100%)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background =
+                    "linear-gradient(90deg, #FEC576 0%, #FFBF01 100%)";
+                }}
               >
-                <img className="mr-2" src={arwr} alt="" />
+                <img
+                  className="mr-2 transition-transform duration-300 hover:scale-110"
+                  src={arwr}
+                  alt=""
+                />
                 BUY $DOGE
               </button>
+
               <img src={vsimg} className="max-h-[210px]" alt="" />
               <button
-                className=" rounded-[60px] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[700] text-[#000] space-x-2"
+                className="rounded-[60px] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[700] text-[#000] space-x-2 transition-all duration-300 hover:scale-105"
                 style={{
                   background:
                     "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)",
                   boxShadow: "0px 2px 0px 0px #FFF",
                 }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background =
+                    "linear-gradient(90deg, #01FE37 0%, #7CEC91 100%)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background =
+                    "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)";
+                }}
               >
-                BUY $PEPE <img className="ml-2" src={arwl} alt="" />
+                BUY $PEPE{" "}
+                <img
+                  className="ml-2 transition-transform duration-300 hover:scale-110"
+                  src={arwl}
+                  alt=""
+                />
               </button>
             </div>
             <img className="absolute -right-12 -top-9" src={vsimgl} alt="" />
@@ -99,7 +124,12 @@ function HeroSection() {
         </div>
       </div>
       <div className="absolute bottom-[-3%] left-0 right-0 flex items-center justify-center z-30">
-        <img className="" src={downArrow} alt="" onClick={(e) => handleScroll(e, "how-to-buy", 90)}/>
+        <img
+          className="transition-all duration-300 cursor-pointer hover:animate-bounce hover:scale-110"
+          src={downArrow}
+          alt=""
+          onClick={(e) => handleScroll(e, "how-to-buy", 90)}
+        />
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ function MadeBy() {
       </p>
       <h4 className="  text-center space-x-1  text-[24px] pt-2">
         <span
-          className="text-[#F2B60F] text-right font-[700] text-[38.168px] leading-[24px] font-k2d"
+          className="text-[#F2B60F] text-right font-[700] text-[40.168px] leading-[24px] font-k2d"
           style={{
             textShadow: "2.511px -0.439px 13.211px #F1AD03",
             WebkitTextStrokeWidth: "1.049px",
@@ -58,7 +58,7 @@ function MadeBy() {
           <div className="text-center ">
             <h3 className="text-[14px] font-[700] text-black">Market Cap</h3>
             <p
-              className="text-[23.957px] font-bold text-white text-center font-k2d leading-normal"
+              className="text-[26.957px] font-[800] text-white text-center font-k2d leading-normal"
               style={{
                 WebkitTextStrokeWidth: "0.98px",
                 WebkitTextStrokeColor: "#000",
@@ -79,7 +79,7 @@ function MadeBy() {
           <div className="text-center ">
             <h3 className="text-[14px] font-[700] text-black">Market Cap</h3>
             <p
-              className="text-[23.957px] font-bold text-white text-center font-k2d leading-normal"
+              className="text-[26.957px] font-[800] text-white text-center font-k2d leading-normal"
               style={{
                 WebkitTextStrokeWidth: "0.98px",
                 WebkitTextStrokeColor: "#000",

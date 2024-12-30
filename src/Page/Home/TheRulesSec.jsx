@@ -15,7 +15,7 @@ function TheRulesSec() {
     <div className="relative overflow-hidden w-[100%] py-[36px]" id="rules">
       <div className="max-w-[1143px] space-y-[45px] w-[100%] mx-auto relative min-h-[500px]">
         <div>
-          <h3 className="text-[#fff] text-center text-[42px] leading-[104.377%] font-[700]">
+          <h3 className="text-[#fff] text-center text-[50px] leading-[104.377%] font-[700]">
             The Rules
           </h3>
         </div>
@@ -45,12 +45,12 @@ function TheRulesSec() {
                 </h2>
               </div>
               <ol className="flex flex-col gap-4 pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   <span className="font-[700]">Team Pepe ($PEGE) –</span> <br />{" "}
                   Join Pepe, the internet’s ultimate rebel. This if for the
                   people who value humor, resilience, and chaos.
                 </li>
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   <span className="font-[700]">Team Doge ($DOPE) –</span> <br />{" "}
                   Stand with Doge, the first Meme who started it all. This is
                   for the people who understand and respect the Doge legacy.
@@ -66,13 +66,13 @@ function TheRulesSec() {
                 </h2>
               </div>
               <ol className="flex flex-col pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   Buy tokens and support your favorite meme.
                 </li>
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   Every token purchased is a vote toward their victory.
                 </li>
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   Maximum Buy-In: Each wallet can buy for up to $10,000.
                 </li>
               </ol>
@@ -100,17 +100,17 @@ function TheRulesSec() {
                 </h2>
               </div>
               <ol className="flex flex-col pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   The fight is decided when the first team reaches $1 million.
                 </li>
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   Only the winner will remain and proceed to launch.
                 </li>
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   The launch date will be announced directly after the first
                   coin reaches $1M.
                 </li>
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   Until the launch date, only the winner coin can be purchased.
                 </li>
               </ol>
@@ -124,12 +124,12 @@ function TheRulesSec() {
                 </h2>
               </div>
               <ol className="flex flex-col gap-3 pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   The losing team’s funds aren’t wasted. They’re added to the
                   liquidity pool of the winning team, making the winner’s token
                   stronger and more valuable.
                 </li>
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   The winning token's launch date will be announced directly
                   after the pre-sale goal is reached. The launch is expected to
                   happen a few days later to secure a major CEX listing.
@@ -159,14 +159,14 @@ function TheRulesSec() {
                 </h2>
               </div>
               <ol className="flex flex-col pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   All participants receive the winning coin.
                 </li>
-                <li className="text-[18px] font-[700] text-[#FFF]">
+                <li className="text-[20px] font-[700] text-[#FFF]">
                   But only the winner team will receive exclusive Prize Money
                   (airdropped to their wallet), find more info below.
                 </li>
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   Winners can claim their coins 24 hours earlier.
                 </li>
               </ol>
@@ -180,12 +180,12 @@ function TheRulesSec() {
                 </h2>
               </div>
               <ol className="flex flex-col pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   <span className="font-[700]">Public Contracts:</span> Both
                   pre-sale contracts are fully visible to ensure complete
                   transparency.
                 </li>
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   <span className="font-[700]">Fair Play:</span> Each wallet is
                   limited to $10,000 to give everyone a chance to participate
                   equally.
@@ -218,23 +218,31 @@ function TheRulesSec() {
                 </p>
               </div>
               <ol className="flex flex-col pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
-                <li className="text-[18px] text-[#FFF] font-[400] ">
+                <li className="text-[20px] text-[#FFF] font-[400] ">
                   General Channel: For updates and discussions.
                 </li>
-                <li className="text-[18px] font-[400] text-[#FFF]">
+                <li className="text-[20px] font-[400] text-[#FFF]">
                   Team Pepe Channel: For Pepe supporters.
                 </li>
-                <li className="text-[18px] text-[#FFF] font-[400]">
+                <li className="text-[20px] text-[#FFF] font-[400]">
                   Team Doge Channel: For Doge believers.
                 </li>
               </ol>
               <div className="pt-[10px]">
-                <button className="bg-[#00B7FF]  max-w-[252px] flex justify-center space-x-2 items-center w-[100%] ml-[6rem] rounded-[5px] h-[39px] uppercase text-[18px] text-[#fff] font-[400]">
-                  {" "}
-                  Join Telegram{" "}
-                  <img src={telicn} className="ml-4" alt="card_image_10" />
-                </button>
-              </div>
+  <button
+    className="bg-[#00B7FF] max-w-[252px] flex justify-center space-x-2 items-center w-[100%] ml-[6rem] rounded-[5px] h-[39px] uppercase text-[18px] text-[#fff] font-[600] transition-all duration-300 hover:bg-[#F2B60F] hover:text-[#fff]"
+  >
+    Join Telegram
+    <img
+      src={telicn}
+      className="ml-4 transition-transform duration-300 hover:scale-110"
+      alt="card_image_10"
+    />
+  </button>
+</div>
+
+
+
             </div>
           </div>
         </div>
