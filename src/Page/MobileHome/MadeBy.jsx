@@ -12,7 +12,7 @@ function MadeBy() {
       }}
       className="relative flex flex-col items-center mt-4 bg-[black] min-h-[339px] bg-cover bg-center"
     >
-      <p className="text-[24px] font-[700] leading-[22px] text-[white] mt-6 text-center">
+      <p className="text-[26px] font-[700] leading-[22px] text-[white] mt-6 text-center">
         Made by Ex Team Members Of
       </p>
       <h4 className="  text-center space-x-1  text-[24px] pt-2">
@@ -52,13 +52,13 @@ function MadeBy() {
           <img
             src={babeDoge}
             alt="Dog"
-            className="w-[84px] h-[89px] object-contain"
+            className="w-[84px] h-[85px] object-contain"
           />
 
           <div className="text-center ">
-            <h3 className="text-[14px] font-[700] text-black">Market Cap</h3>
+            <h3 className="text-[16px] font-[700] text-black">Market Cap</h3>
             <p
-              className="text-[26.957px] font-[800] text-white text-center font-k2d leading-normal"
+              className="text-[28.957px] font-[800] text-white text-center font-k2d leading-normal"
               style={{
                 WebkitTextStrokeWidth: "0.98px",
                 WebkitTextStrokeColor: "#000",
@@ -77,9 +77,9 @@ function MadeBy() {
           />
 
           <div className="text-center ">
-            <h3 className="text-[14px] font-[700] text-black">Market Cap</h3>
+            <h3 className="text-[16px] font-[700] text-black">Market Cap</h3>
             <p
-              className="text-[26.957px] font-[800] text-white text-center font-k2d leading-normal"
+              className="text-[28.957px] font-[800] text-white text-center font-k2d leading-normal"
               style={{
                 WebkitTextStrokeWidth: "0.98px",
                 WebkitTextStrokeColor: "#000",

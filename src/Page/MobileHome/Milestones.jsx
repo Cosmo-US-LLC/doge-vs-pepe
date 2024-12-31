@@ -9,15 +9,15 @@ function Milestones() {
     <div className=" relative w-[100%] pt-[40px] overflow-hidden pb-[40px]">
       <div className="flex flex-col">
         <div className="flex flex-col items-center justify-center gap-4 mb-4">
-          <h3 className="w-[360px] text-[#FFFCFC] text-center font-k2d text-[24px] font-[700] leading-normal uppercase">
+          <h3 className="w-[360px] text-[#FFFCFC] text-center font-k2d text-[26px] font-[700] leading-normal uppercase">
             Mystery <br /> Milestones Reveal
           </h3>
 
-          <p className="text-[#FFF] text-center font-k2d text-[14px] font-[400] leading-[114%]">
+          <p className="text-[#FFF] text-center font-k2d text-[16px] font-[400] leading-[114%]">
             The race heats up with every milestone!
           </p>
 
-          <p className="w-[353px] text-[#FFF] text-center font-k2d text-[14px] font-[400] leading-[114%]">
+          <p className="w-[353px] text-[#FFF] text-center font-k2d text-[16px] font-[400] leading-[114%]">
             When one project hits a milestone, it reveals a mystery feature for
             the opposing project, keeping the competition alive and rewarding
             both sides. With four key milestones—250k, 500k, 750k, and 900k—each
@@ -31,21 +31,21 @@ function Milestones() {
               className="flex items-center justify-center h-full rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600"
               style={{ width: `${dogePercentage}%` }}
             >
-              <span className="text-[16px] font-[900] text-[#0B0101] leading-none font-[Inter]">
+              <span className="text-[18px] font-[900] text-[#0B0101] leading-none font-[Inter]">
                 {dogePercentage}%
               </span>
             </div>
           </div>
 
           <div className="relative flex min-h-[200px] justify-center items-center flex-col ">
-            <div className="absolute top-[9%] left-[22%] flex gap-[20px]">
+            <div className="absolute top-[9%] left-[21%] flex gap-[20px]">
               <div className="flex flex-col items-center justify-center">
                 <img
                   src={chestImage}
                   alt="Treasure Chest"
                   className="w-[32px] h-[28px] "
                 />
-                <span className="text-white font-inter text-[10px] font-[700] leading-normal">
+                <span className="text-white font-inter text-[11px] font-[700] leading-normal">
                   $250,000
                 </span>
               </div>
@@ -55,7 +55,7 @@ function Milestones() {
                   alt="Treasure Chest"
                   className=" w-[32px] h-[28px] "
                 />
-                <span className="text-white font-inter text-[10px] font-[700] leading-normal opacity-30">
+                <span className="text-white font-inter text-[11px] font-[700] leading-normal opacity-30">
                   $250,000
                 </span>
               </div>
@@ -65,7 +65,7 @@ function Milestones() {
                   alt="Treasure Chest"
                   className=" w-[32px] h-[28px]"
                 />
-                <span className="text-white font-inter text-[10px] font-[700] leading-normal opacity-30">
+                <span className="text-white font-inter text-[11px] font-[700] leading-normal opacity-30">
                   $250,000
                 </span>
               </div>
@@ -80,9 +80,9 @@ function Milestones() {
                 The Winner
               </span>
             </div>
-            <div className="absolute bottom-[9%] left-[22%] flex gap-[20px]">
+            <div className="absolute bottom-[9%] left-[21%] flex gap-[20px]">
               <div className="flex flex-col items-center justify-center">
-                <span className="text-white font-inter text-[10px] font-bold leading-normal">
+                <span className="text-white font-inter text-[11px] font-bold leading-normal">
                   $250,000
                 </span>
                 <img
@@ -92,7 +92,7 @@ function Milestones() {
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <span className="text-white font-inter text-[10px] font-bold leading-normal opacity-30">
+                <span className="text-white font-inter text-[11px] font-bold leading-normal opacity-30">
                   $250,000
                 </span>
                 <img
@@ -102,7 +102,7 @@ function Milestones() {
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <span className="text-white font-inter text-[10px] font-bold leading-normal opacity-30">
+                <span className="text-white font-inter text-[11px] font-bold leading-normal opacity-30">
                   $250,000
                 </span>
                 <img
@@ -122,7 +122,7 @@ function Milestones() {
                   "linear-gradient(66deg, #79EC8F 25.98%, #09FC3C 65.48%)",
               }}
             >
-              <span className="text-[16px] font-[900] text-[#0B0101] leading-none font-[Inter]">
+              <span className="text-[18px] font-[900] text-[#0B0101] leading-none font-[Inter]">
                 {pepePercentage}%
               </span>
             </div>

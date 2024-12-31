@@ -13,7 +13,7 @@ import telegram_icon from "../../assets/Mobile/telegram_icon.svg";
 const Rule1 = () => {
   return (
     <div className="flex flex-col items-center px-4 mt-4">
-      <p className="text-[24px] font-[700] leading-[31px] text-[white] mt-4">
+      <p className="text-[26px] font-[700] leading-[31px] text-[white] mt-4 mb-4">
         The Rules
       </p>
       <div
@@ -24,28 +24,28 @@ const Rule1 = () => {
         }}
       >
         <div className="flex flex-col items-center justify-center bg-[#181818] rounded-[10px] w-full p-4">
-          <img src={rule_1} className="h-[131px] w-[144px] mt-2" alt="rule_1" />
+          <img src={rule_1} className="h-[135px] w-[144px] mt-2" alt="rule_1" />
           <div className="flex flex-col items-start justify-center w-[300px] mt-4">
-            <p className="text-[16px] font-[700] leading-[20px] text-[white]">
+            <p className="text-[18px] font-[700] leading-[20px] text-[white]">
               1. Choose Your Champion
             </p>
             <ol className="flex flex-col gap-4 pl-6 mt-4 text-base leading-relaxed text-gray-200 list-disc">
               <li className="text-[#FFF]">
-                <span className="text-[14px] text-[#FFF] font-[700]">
+                <span className="text-[16px] text-[#FFF] font-[700]">
                   Team Pepe ($PEGE) –
                 </span>{" "}
                 <br />{" "}
-                <p className="text-[14px] text-[#FFF] font-[400]">
+                <p className="text-[16px] text-[#FFF] font-[400]">
                   Join Pepe, the internet’s ultimate rebel. This if for the
                   people who value humor, resilience, and chaos.
                 </p>
               </li>
               <li className="text-[#FFF]">
-                <span className="text-[14px] text-[#FFF] font-[700]">
+                <span className="text-[16px] text-[#FFF] font-[700]">
                   Team Doge ($DOPE) –
                 </span>{" "}
                 <br />{" "}
-                <p className="text-[14px] text-[#FFF] font-[400]">
+                <p className="text-[16px] text-[#FFF] font-[400]">
                   Stand with Doge, the first Meme who started it all. This is
                   for the people who understand and respect the Doge legacy.
                 </p>
@@ -69,19 +69,19 @@ const Rule2 = () => {
         }}
       >
         <div className="flex flex-col items-center justify-center bg-[#181818] rounded-[10px] w-full p-4">
-          <img src={rule_2} className="h-[131px] w-[144px] mt-2" alt="rule_2" />
+          <img src={rule_2} className="h-[135px] w-[144px] mt-2" alt="rule_2" />
           <div className="flex flex-col items-start justify-center w-[300px] mt-4">
-            <p className="text-[16px] font-[700] leading-[20px] text-[white]">
+            <p className="text-[18px] font-[700] leading-[20px] text-[white]">
               2. Buy To Support Your Team
             </p>
             <ol className="w-[294px] flex flex-col gap-1 pl-6 mt-4 text-base leading-relaxed text-gray-200 list-disc">
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 Buy tokens and support your favorite meme.
               </li>
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 Every token purchased is a vote toward their victory.
               </li>
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 Maximum Buy-In: Each wallet can buy for up to $10,000.
               </li>
             </ol>
@@ -109,23 +109,23 @@ const Rule3 = () => {
         }}
       >
         <div className="flex flex-col items-center justify-center bg-[#181818] rounded-[10px] w-full p-4">
-          <img src={rule_3} className="h-[131px] w-[144px] mt-2" alt="rule_3" />
+          <img src={rule_3} className="h-[135px] w-[144px] mt-2" alt="rule_3" />
           <div className="flex flex-col items-start w-[300px] mt-4">
-            <p className="text-[16px] font-[700] leading-[20px] text-[white]">
+            <p className="text-[18px] font-[700] leading-[20px] text-[white]">
               3. The Race To $1 Million
             </p>
             <ol className="flex flex-col gap-1 pl-6 mt-4 text-base leading-relaxed text-gray-200 list-disc">
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 The fight is decided when the first team reaches $1 million.
               </li>
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 Only the winner will remain and proceed to launch.
               </li>
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 The launch date will be announced directly after the first coin
                 reaches $1M.
               </li>
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 Until the launch date, only the winner coin can be purchased.
               </li>
             </ol>
@@ -147,18 +147,18 @@ const Rule4 = () => {
         }}
       >
         <div className="flex flex-col items-center justify-center bg-[#181818] rounded-[10px] w-full p-4">
-          <img src={rule_4} className="h-[131px] w-[144px] mt-2" alt="rule_4" />
+          <img src={rule_4} className="h-[135px] w-[144px] mt-2" alt="rule_4" />
           <div className="flex flex-col items-start w-[300px] mt-4 ">
-            <p className="text-[16px] font-[700] leading-[20px] text-[white]">
+            <p className="text-[18px] font-[700] leading-[20px] text-[white]">
               4. The Winner Takes It All
             </p>
             <ol className="flex flex-col gap-4 pl-6 mt-4 text-base leading-relaxed text-gray-200 list-disc">
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 The losing team’s funds aren’t wasted. They’re added to the
                 liquidity pool of the winning team, making the winner’s token
                 stronger and more valuable.
               </li>
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 The winning token's launch date will be announced directly after
                 the pre-sale goal is reached. The launch is expected to happen a
                 few days later to secure a major CEX listing.
@@ -184,18 +184,18 @@ const Rule5 = () => {
         <div className="flex flex-col items-center justify-center bg-[#181818] rounded-[10px] w-full p-4">
           <img src={rule_5} className="h-[131px] w-[144px] mt-2" alt="rule_5" />
           <div className="flex flex-col items-start w-[300px] mt-4">
-            <p className="text-[16px] font-[700] leading-[20px] text-[white]">
+            <p className="text-[18px] font-[700] leading-[20px] text-[white]">
               5. Rewards For Picking The Winner
             </p>
             <ol className="flex flex-col gap-1 pl-6 mt-4 text-base leading-relaxed text-gray-200 list-disc">
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 All participants receive the winning coin.
               </li>
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 But only the winner team will receive exclusive Prize Money
                 (airdropped to their wallet), find more info below.
               </li>
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 Winners can claim their coins 24 hours earlier.
               </li>
             </ol>
@@ -223,17 +223,17 @@ const Rule6 = () => {
         }}
       >
         <div className="flex flex-col items-center justify-center bg-[#181818] rounded-[10px] w-full p-4">
-          <img src={rule_6} className="h-[131px] w-[144px] mt-2" alt="rule_6" />
+          <img src={rule_6} className="h-[135px] w-[144px] mt-2" alt="rule_6" />
           <div className="flex flex-col items-start w-[300px] mt-4 ">
-            <p className="text-[16px] font-[700] leading-[20px] text-[white]">
+            <p className="text-[18px] font-[700] leading-[20px] text-[white]">
               6. Transparency And Fairness
             </p>
             <ol className="w-[310px] flex flex-col gap-1 pl-6 mt-4 text-base leading-relaxed text-gray-200 list-disc">
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 <b>Public Contracts:</b> Both pre-sale contracts are fully
                 visible to ensure complete transparency.
               </li>
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 <b>Fair Play:</b> Each wallet is limited to $25,000 to give
                 everyone a chance to participate equally
               </li>
@@ -256,17 +256,17 @@ const Rule7 = () => {
         }}
       >
         <div className="flex flex-col items-center justify-center bg-[#181818] rounded-[10px] w-full p-4">
-          <img src={rule_7} className="h-[131px] w-[144px] mt-2" alt="rule_7" />
+          <img src={rule_7} className="h-[135px] w-[144px] mt-2" alt="rule_7" />
           <div className="flex flex-col items-start w-[300px] mt-4 ">
-            <p className="text-[16px] font-[700] leading-[20px] text-[white]">
+            <p className="text-[18px] font-[700] leading-[20px] text-[white]">
               7. Join The Community
             </p>
-            <p className="mt-2 ml-4 text-[14px] font-[500] leading-[16px] text-[white]">
+            <p className="mt-2 ml-4 text-[16px] font-[500] leading-[16px] text-[white]">
               Connect with other participants in our
               <br /> Telegram channels:
             </p>
             <ol className="flex flex-col gap-1 pl-6 mt-4 text-base leading-relaxed text-gray-200 list-disc">
-              <li className="text-[14px] text-[#FFF] font-[500]">
+              <li className="text-[16px] text-[#FFF] font-[500]">
                 <b>General Channel:</b> For updates and discussions. <br />
                 <b>Team Pepe Channel:</b> For Pepe supporters.
                 <br />
@@ -275,7 +275,7 @@ const Rule7 = () => {
             </ol>
           </div>
           <div className="py-8">
-            <button className="bg-[#00B7FF] px-8 flex justify-center space-x-2 items-center w-[100%] rounded-[5px] h-[42px] uppercase text-[18px] text-[#fff] font-[600]">
+            <button className="bg-[#00B7FF] px-8 flex justify-center space-x-2 items-center w-[100%] rounded-[5px] h-[48px] uppercase text-[20px] text-[#fff] font-[600]">
               Join Telegram <img src={telegram_icon} className="ml-4" alt="" />
             </button>
           </div>
