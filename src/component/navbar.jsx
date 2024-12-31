@@ -93,7 +93,7 @@ function Navbar() {
 
         {/* Mobile Navigation Menu */}
         {menuOpen && (
-          <div className="absolute top-[65px] left-[20px] w-[230px] bg-[#000000] text-[#FFFFFF] z-[100]">
+          <div className="absolute top-[73px] left-[20px] w-[230px] bg-[#000000] text-[#FFFFFF] z-[100]">
             <div className="border-[2px] border-white rounded-[4px] px-2 py-4">
               <a
                 href="#what-is"
