@@ -23,13 +23,13 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
           onClick={handleClick}
         >
           <div className="flex items-center gap-2">
-            <div className={`text-[14px] text-[#fff] font-[600]`}>
+            <div className={`text-[16px] text-[#fff] font-[600]`}>
               {question}
             </div>
           </div>
 
           <div
-            className={`text-[12px] w-[20px] h-[20px] flex items-center justify-center ${!isOpen ? "rotate-0" : "rotate-[-180deg]"
+            className={`text-[14px] w-[20px] h-[20px] flex items-center justify-center ${!isOpen ? "rotate-0" : "rotate-[-180deg]"
               } transition-transform`}
           >
             <img src={arw} alt="" />
@@ -59,7 +59,7 @@ const FAQ = () => {
     <div className="relative" id="faq">
       <div className="w-[100%] pt-4 mx-auto pb-6 px-4">
         <div className="mb-4 text-center">
-          <h2 className="text-[#fff] uppercase text-[24px] font-[700] leading-[142.857%] pb-2">
+          <h2 className="text-[#fff] uppercase text-[26px] font-[700] leading-[142.857%] pb-2">
             Frequently Asked Questions
           </h2>
         </div>

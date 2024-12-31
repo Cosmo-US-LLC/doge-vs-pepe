@@ -15,40 +15,40 @@ function Footer() {
 
         {/* Links */}
         <div className="flex flex-col gap-2">
-          <a href="https://example.com" className="text-[16px] text-[#fff] font-[400] block">
+          <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             DOGEvsPEPE
           </a>
-          <a href="https://example.com" className="text-[16px] text-[#fff] font-[400] block">
+          <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             The First Ever Crypto Meme Fight
           </a>
-          <a href="https://example.com" className="text-[16px] text-[#fff] font-[400] block">
+          <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             The Rules
           </a>
-          <a href="https://example.com" className="text-[16px] text-[#fff] font-[400] block">
+          <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             Milestones Mystery Reveals
           </a>
-          <a href="https://example.com" className="text-[16px] text-[#fff] font-[400] block">
+          <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             The Community Decides
           </a>
-          <a href="https://example.com" className="text-[16px] text-[#fff] font-[400] block">
+          <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             Roadmap
           </a>
-          <a href="https://example.com" className="mt-4 text-[16px] text-[#fff] font-[400] block">
+          <a href="https://example.com" className="mt-4 text-[18px] text-[#fff] font-[400] block">
             $DOPE Tokenomics
           </a>
-          <a href="https://example.com" className="text-[16px] text-[#fff] font-[400] block">
+          <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             $PEPE Tokenomics
           </a>
-          <a href="https://example.com" className="text-[16px] text-[#fff] font-[400] block">
+          <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             Join And Support Your Team On Telegram
           </a>
-          <a href="https://example.com" className="text-[16px] text-[#fff] font-[400] block">
+          <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             Don’t Wait – The Race is On!
           </a>
-          <a href="https://example.com" className="text-[16px] text-[#fff] font-[400] block">
+          <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             FAQ
           </a>
-          <a href="https://example.com" className="text-[16px] text-[#fff] font-[400] block">
+          <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             Need Help?
           </a>
         </div>
@@ -65,13 +65,13 @@ function Footer() {
 
         {/* Footer Text */}
         <div className="mt-16">
-          <p className="text-[14px] font-[400] text-[#B4A5A5] leading-[18px] text-center">
+          <p className="text-[16px] font-[400] text-[#B4A5A5] leading-[18px] text-center">
             Cryptocurrency may be unregulated in your jurisdiction. The value
             of cryptocurrencies may go up as well as down. Profits may be
             subject to capital gains or other taxes applicable in your
             jurisdiction.
           </p>
-          <p className="mt-4 text-[14px] font-[400] text-[#fff] leading-[18px] text-center">
+          <p className="mt-4 text-[16px] font-[400] text-[#fff] leading-[18px] text-center">
             Copyright 2024 DOGEVSPEPE | All rights reserved.
           </p>
         </div>

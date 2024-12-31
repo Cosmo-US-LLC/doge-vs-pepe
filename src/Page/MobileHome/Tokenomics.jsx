@@ -6,16 +6,16 @@ function Tokenomics() {
     <div className="flex flex-col items-center bg-[black] mt-8" id="tokenomics">
       <div className="flex flex-row items-center justify-between w-full px-4">
         <div className="">
-          <p className="font-[700] text-[24px] text-[white] leading-[24px]">$DOPE</p>
-          <p className="font-[700] text-[24px] text-[white] leading-[24px] mb-2">TOKENOMICS</p>
-          <p className="font-[700] text-[14px] text-[white] leading-[13px]">TOTAL SUPPLY <br /> $888 MILLION</p>
-          <p className="font-[600] text-[14px] text-[white] leading-[13px]">Coin will be launched on <br /> Solana Blockchain</p>
+          <p className="font-[700] text-[26px] text-[white] leading-[24px]">$DOPE</p>
+          <p className="font-[700] text-[26px] text-[white] leading-[24px] mb-2">TOKENOMICS</p>
+          <p className="font-[700] text-[18px] text-[white] leading-[20px]">TOTAL SUPPLY <br /> $888 MILLION</p>
+          <p className="font-[600] text-[18px] text-[white] leading-[20px]">Coin will be launched on <br /> Solana Blockchain</p>
         </div>
         <div className="">
-          <p className="font-[700] text-[24px] text-[white] leading-[24px] text-right">$PEGE</p>
-          <p className="font-[700] text-[24px] text-[white] leading-[24px] mb-2 text-right">TOKENOMICS</p>
-          <p className="font-[700] text-[14px] text-[white] leading-[13px] text-right">TOTAL SUPPLY <br /> $879 MILLION</p>
-          <p className="font-[600] text-[14px] text-[white] leading-[13px] text-right">Coin will be launched<br /> on  Solana Blockchain</p>
+          <p className="font-[700] text-[26px] text-[white] leading-[24px] text-right">$PEGE</p>
+          <p className="font-[700] text-[26px] text-[white] leading-[24px] mb-2 text-right">TOKENOMICS</p>
+          <p className="font-[700] text-[18px] text-[white] leading-[20px] text-right">TOTAL SUPPLY <br /> $879 MILLION</p>
+          <p className="font-[600] text-[18px] text-[white] leading-[20px] text-right">Coin will be launched<br /> on  Solana Blockchain</p>
         </div>
       </div>
       <img
