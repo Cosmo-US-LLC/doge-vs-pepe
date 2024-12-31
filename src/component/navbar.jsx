@@ -21,7 +21,7 @@ function Navbar() {
 
   return (
     <div className="fixed w-[100%]  z-[99] bg-[#000000]">
-      <div className="max-w-[1296px] relative 2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[90%] w-[100%] mx-auto 2xl:h-[112px] xl:h-[112px] lg:h-[112px] md:h-[112px] sm:h-[62px] h-[62px] flex justify-between items-center px-[17px]">
+      <div className="max-w-[1296px] relative 2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[90%] w-[100%] mx-auto 2xl:h-[112px] xl:h-[112px] lg:h-[112px] md:h-[112px] sm:h-[62px] h-[72px] flex justify-between items-center px-[17px]">
         <div className="flex items-center">
           <div
             className="2xl:hidden xl:hidden lg:hidden md:hidden sm:block block mr-[12px] cursor-pointer"
@@ -31,7 +31,7 @@ function Navbar() {
           </div>
 
           <img
-            className="2xl:max-w-[100%] xl:max-w-[100%] lg:max-w-[100%] md:max-w-[100%] sm:max-w-[100px] max-w-[130px] cursor-pointer"
+            className="2xl:max-w-[100%] xl:max-w-[100%] lg:max-w-[100%] md:max-w-[100%] sm:max-w-[100px] max-w-[140px] cursor-pointer"
             src={Logo}
             alt="Logo"
             onClick={(e) => handleScroll(e, "what-is", 90)}
