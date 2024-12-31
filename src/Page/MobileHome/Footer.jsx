@@ -57,9 +57,9 @@ function Footer() {
         <div className="flex flex-col space-y-4">
           <h4 className="text-[16px] text-[#fff] font-[400]">Join us now</h4>
           <div className="flex space-x-3">
-            <img src={socialicn1} alt="social 1" className="w-[24px]" />
-            <img src={socialicn2} alt="social 2" className="w-[24px]" />
-            <img src={socialicn3} alt="social 3" className="w-[24px]" />
+            <img src={socialicn1} alt="social 1" className="w-[32px]" />
+            <img src={socialicn2} alt="social 2" className="w-[32px]" />
+            <img src={socialicn3} alt="social 3" className="w-[32px]" />
           </div>
         </div>
 
