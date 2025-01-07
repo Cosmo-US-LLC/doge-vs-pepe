@@ -21,7 +21,7 @@ export const walletConnectConnector = walletConnect({
 	name: "Doge vs Pepe",
 	metadata,
 	qrModalOptions: {
-		themeMode: "light",
+		themeMode: "dark",
 		desktopWallets: [],
 	},
 	showQrModal: false
@@ -50,7 +50,7 @@ export const walletConnectModal = createAppKit({
 	projectId: WALLET_CONNECT_PROJECT_ID,
 	networks: [mainnet, bsc],
 	metadata,
-	themeMode: "light"
+	themeMode: "dark"
 })
 
 export const config = wagmiAdapter.wagmiConfig

@@ -1,17 +1,19 @@
-/**
- * @typedef {object} ApiContextValue
- * @property {import("nanostores").MapStore<import("../stores/api.store").ApiStateValue>} $apiState,
- * @property {import("nanostores").MapStore<import("../stores/user.store").UserStoreValue>} $userState,
- */
-
 import { createContext, useState } from "react"
 import { $dogeApiState, $pepeApiState } from "../stores/api.store"
 import { $dogeUserState, $pepeUserState } from "../stores/user.store"
 
+/**
+ * @typedef {object} ApiContextValue
+ * @property {import("nanostores").MapStore<import("../stores/api.store").ApiStateValue>} $apiState,
+ * @property {import("nanostores").MapStore<import("../stores/user.store").UserStoreValue>} $userState,
+ * @property {string} ApiContextValue.symbol
+ */
+
 /** @type {ApiContextValue} */
 const defaultState = {
 	$apiState: null,
-	$userState: null
+	$userState: null,
+	symbol: ""
 }
 
 export const ApiContext = createContext(defaultState)
@@ -20,17 +22,20 @@ export const ApiContext = createContext(defaultState)
  * @param {object} props
  * @param {"doge" | "pepe"} props.project
  * @param {import("react").JSX.Element | import("react").JSX.Element[]} props.children
+ * @param {string} props.symbol
  */
-export const ApiContextWrapper = ({ project, children }) => {
+export const ApiContextWrapper = ({ project, children, symbol }) => {
 	/** @type {Record<"doge" | "pepe", ApiContextValue>} */
 	const value = {
 		doge: {
 			$apiState: $dogeApiState,
-			$userState: $dogeUserState
+			$userState: $dogeUserState,
+			symbol
 		},
 		pepe: {
 			$apiState: $pepeApiState,
-			$userState: $pepeUserState
+			$userState: $pepeUserState,
+			symbol
 		}
 	}
 

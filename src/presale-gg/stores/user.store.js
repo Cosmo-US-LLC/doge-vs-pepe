@@ -18,7 +18,6 @@ import { getConfig } from "../web3"
  * @property {Token | null} UserStoreValue.token
  * @property {LeaderboardRank | null} UserStoreValue.leaderboardRank
  * @property {BonusCode | null} UserStoreValue.appliedBonusCode
- * @property {UserRankData | null} UserStoreValue.rankData
  * @property {string} UserStoreValue.project
 */
 
@@ -29,23 +28,25 @@ export const defaultUserState = {
 	token: null,
 	leaderboardRank: null,
 	appliedBonusCode: null,
-	rankData: null,
 	project: ""
 }
 
 export const $pepeUserState = map({...defaultUserState, project: api.PEPE_PROJECT})
 export const $dogeUserState = map({...defaultUserState, project: api.DOGE_PROJECT})
+const userStates = [$pepeUserState, $dogeUserState]
 
 document.addEventListener("wagmi-loaded", async () => {
 	const { config } = await getConfig()
 	watchAccount(config, {
 		onChange: (account) => {
-			const address = account.address
-			if (!address) return $userState.set({...defaultUserState})
-			api.getUser(address).then((res) => $userState.setKey("user", res.data))
-			api.getUserStakeData(address).then((res) => $userState.setKey("userStakeData", res.data))
-			api.getUserLeaderboardRank(address).then((res) => $userState.setKey("leaderboardRank", res.data))
-			api.getUserRanks(address).then((res) => $userState.setKey("rankData", res.data))
+			userStates.forEach(($userState) => {
+				const { project } = $userState.get()
+				const address = account.address
+				if (!address) return $userState.set({...defaultUserState, project})
+				api.getUser(project, address).then((res) => $userState.setKey("user", res.data))
+				api.getUserStakeData(project, address).then((res) => $userState.setKey("userStakeData", res.data))
+				api.getUserLeaderboardRank(project, address).then((res) => $userState.setKey("leaderboardRank", res.data))
+			})
 		}
 	})
 })

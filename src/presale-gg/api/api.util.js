@@ -1,6 +1,7 @@
 import axios, { AxiosError } from "axios"
 
-export const baseUrl = "https://api.presale.gg"
+// TODO: Make sure correct
+export const baseUrl = "https://api.presale.gg/v1"
 export const DOGE_PROJECT = "doge-vs"
 export const PEPE_PROJECT = "pepe-vs"
 

@@ -38,11 +38,25 @@ const stores = [$pepeApiState, $dogeApiState]
 
 stores.forEach((store) => {
 	const { project } = store.get()
+
+	store.setKey("stageLoading", true)
 	api.getActiveStage(project).then((res) => {
-		if (res.data === null) return setPresaleEnded(true)
-		setStage(res.data)
+		if (res.data === null) return store.setKey("presaleEnded", true)
+		store.setKey("stage", res.data)
+		store.setKey("stageLoading", false)
 	}).catch(() => {})
-	api.getPrices(project).then((res) => setPaymentTokens(res.data))
-	api.getLeaderboard(project).then((res) => setLeaderboard(res.data)).catch(() => {})
-	api.getProjectInfo(project).then((res) => setApiInfo(res.data))
+
+	store.setKey("paymentTokensLoading", true)
+	api.getPrices(project).then((res) => {
+		store.setKey("paymentTokens", res.data)
+		store.setKey("paymentTokensLoading", false)
+	})
+
+	api.getLeaderboard(project).then((res) => {
+		store.setKey("leaderboard", res.data)
+	}).catch(() => {})
+
+	api.getProjectInfo(project).then((res) => {
+		store.setKey("info", res.data)
+	})
 })

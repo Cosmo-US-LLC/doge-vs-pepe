@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Home from "./Page/Home/Home";
 import MobileHome from "./Page/MobileHome/MobileHome";
+import ConnectWalletModal from "./component/ConnectWalletModal"
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
@@ -19,6 +21,8 @@ function App() {
     <div className="bg-[black] w-[100%]">
       <div>
         <div>{isMobile ? <MobileHome /> : <Home />}</div>
+        <Toaster position="bottom-center" />
+        <ConnectWalletModal />
       </div>
     </div>
   );
