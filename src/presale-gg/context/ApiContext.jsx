@@ -13,7 +13,7 @@ import { $dogeUserState, $pepeUserState } from "../stores/user.store"
 const defaultState = {
 	$apiState: null,
 	$userState: null,
-	symbol: ""
+	symbol: "",
 }
 
 export const ApiContext = createContext(defaultState)

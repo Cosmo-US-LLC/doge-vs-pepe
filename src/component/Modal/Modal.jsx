@@ -15,7 +15,7 @@ const Modal = ({ open, onClose, title, children, ...others }) => {
 		createPortal((
 			<div className={clsx(classes["modal-container"], {[classes["open"]]: open})}>
 				<div className={classes["backdrop"]} onClick={onClose} />
-				<div {...others} className={clsx(classes["modal"], "Rulesborder2", others.className)}>
+				<div {...others} className={clsx(classes["modal"], others.className)}>
 					{title && <h1 className={classes["title"]}>{title}</h1>}
 					{children}
 				</div>				

@@ -38,18 +38,15 @@ const TokenInput = ({ label, onChange, onTokenChange, selectedToken, defaultValu
 		if (!typed) setValStr(defaultValue.toString())
 	}, [defaultValue])
 
-	const partialNumRegexp = /^\d*(\.\d*)?$/
+	const partialNumRegexp = /^((\d+(\.\d*)?)|\d*)$/
 
 	const handleChange = (newVal) => {
-		console.log("Handling change", newVal)
 		if (!partialNumRegexp.test(newVal)) {
 			newVal = valStr
 		}
-		console.log("Handling change 2", newVal)
 		setValStr(newVal)
 		if (!typed) setTyped(true)
 		const valNum = roundToDP(parseNum(newVal || "0"), decimals)
-		console.log("Handling change 3", valNum)
 		onChange(valNum)
 	}
 
@@ -65,14 +62,14 @@ const TokenInput = ({ label, onChange, onTokenChange, selectedToken, defaultValu
 	}, [inputRef])
 
 	return (
-		<div {...others} className="bg-[#00000078] px-5 flex relative z-[9] justify-between items-center py-3 rounded-[14px] isolate">
-			<div className="">
+		<div {...others} className="bg-[#00000078] px-5 gap-2 flex relative z-[9] justify-between items-center py-3 rounded-[14px] isolate">
+			<div className="flex-1 flex flex-col">
 				<h5 className="text-[#fff] text-[15.303px] font-[600]">
 					{label}
 				</h5>
 				<input
 					type="text"
-					className="text-[#fff] w-[155px] text-[18.364px] font-[700] bg-[transparent] outline-none"
+					className="text-[#fff] text-[18.364px] font-[700] bg-[transparent] outline-none flex-1"
 					value={valStr}
 					size={1}
 					onFocus={(e) => {
@@ -86,7 +83,7 @@ const TokenInput = ({ label, onChange, onTokenChange, selectedToken, defaultValu
 			</div>
 
 			{selectedToken && (
-				<div className="relative inline-block text-left z-[9]">
+				<div className="relative inline-block text-left z-[9] flex-shrink-0">
 					<div
 						className={clsx(
 							"flex items-center justify-between space-x-2 p-2 rounded-full border-[0.8px] border-[#8ED0FF3A] bg-[#0077D64A]",

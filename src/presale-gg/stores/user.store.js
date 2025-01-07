@@ -53,9 +53,11 @@ document.addEventListener("wagmi-loaded", async () => {
 
 /**
  * @param {import("nanostores").MapStore<UserStoreValue>} $store
+ * @param {object} [options]
+ * @param {boolean} [options.noToast]
  * @returns {Promise<Token>}
  */
-export const getUserToken = async ($store) => {
+export const getUserToken = async ($store, options = {}) => {
 	const { config } = await getConfig()
 	const userData = $store.get()
 	if (userData.token && new Date(userData.token.expires).getTime() >= Date.now()) return userData.token
@@ -63,15 +65,21 @@ export const getUserToken = async ($store) => {
 	if (!address || !isConnected) throw "Please connect your wallet"
 	const { project } = $store.get()
 	const messageRes = await api.getSiweMessage(project, address)
-	const signedMessage = await toast.promise(signMessage(config, {
+	const promise = signMessage(config, {
 		message: messageRes.data.message
-	}), {
-		loading: "Confirm the message signature in your wallet",
-		success: "Successfully signed wallet message",
-		error: (err) => api.getApiErrorMessage(err, "Error signing message")
-	}).catch(() => {
-		throw "Error confirming user"
 	})
+	let signedMessage
+	if (options.noToast) {
+		signedMessage = await promise;
+	} else {
+		signedMessage = await toast.promise(promise, {
+			loading: "Confirm the message signature in your wallet",
+			success: "Successfully signed wallet message",
+			error: (err) => api.getApiErrorMessage(err, "Error signing message")
+		}).catch(() => {
+			throw "Error confirming user"
+		})
+	}
 	const validRes = await api.verifySiweMessage(project, address, messageRes.data.message, signedMessage)
 	const token = validRes.data.access
 	$store.setKey("token", token)

@@ -26,7 +26,7 @@ function WalletSec() {
       <img
         src={shodow}
         alt="shodow"
-        className="absolute top-0 left-0 right-0 w-full"
+        className="absolute top-0 left-0 right-0 w-full pointer-events-none"
       />
       <img
         src={downShodow}

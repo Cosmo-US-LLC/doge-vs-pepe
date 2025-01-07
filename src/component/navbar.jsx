@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import Logo from "../assets/navbar/navLogo.svg";
 import menuIcon from "../assets/navbar/Group 1410124892.svg";
+import { getConfig, useAccount } from "../presale-gg/web3";
+import { disconnect } from "@wagmi/core";
+import { showConnectionModal } from "../presale-gg/stores/modal.store";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const accountData = useAccount()
 
   const handleScroll = (event, targetId, offset) => {
     event.preventDefault();
@@ -155,8 +159,16 @@ function Navbar() {
                    rounded-[60px] bg-[#0184E2] text-[#fff] 
                    2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[12px] text-[12px] 
                    font-[700] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105"
-          >
-            Connect Wallet
+			onClick={async () => {
+				if (accountData.isConnected) {
+					const { config } = await getConfig()
+					disconnect(config)
+				} else {
+					showConnectionModal()
+				}
+			}}
+		  >
+            {!accountData.isConnected ? "Connect Wallet" : "Disconnect Wallet"}
           </button>
         </div>
       </div>

@@ -2,13 +2,28 @@ import { useContext, useEffect, useMemo, useState } from "react";
 import dollarIcon from "../../../assets/walletsec/btnicns (3).svg";
 import placeholderImg from "../../../assets/walletsec/gg.svg"
 import { ApiContext } from "../../../presale-gg/context/ApiContext";
+import { getConfig, getAbi, getChainIdFromLabel, getContractAddress, getDecimals, isCurrencyNative, sendGenericTransaction } from "../../../presale-gg/web3";
 import { useStore } from "@nanostores/react";
 import { tokenImageMap } from "../../../presale-gg/assets/img/tokens"
+import toast from "react-hot-toast"
 
 import { formatDollar, minMax, parseNum } from "../../../presale-gg/util"
 import TokenInput from "../../TokenInput";
 import { useAccount } from "../../../presale-gg/web3";
 import { showConnectionModal } from "../../../presale-gg/stores/modal.store";
+import TransactionModal from "../../TransactionModal";
+import { api } from "../../../presale-gg/api";
+import { PAYMENT_WALLET_ADDRESS } from "../../../presale-gg/constants";
+import clsx from "clsx";
+
+
+const walletBuyTokens = new Set([
+	"ETH-ERC-20",
+	"USDT-ERC-20",
+	"BNB-BEP-20",
+	"BUSD-BEP-20",
+	"USDT-BEP-20"
+])
 
 /** 
  * @template T
@@ -38,7 +53,7 @@ const BuyTab = () => {
 	}, [apiState.paymentTokens])
 
 	useEffect(() => {
-		const receiveAmount = paymentTokenValue * parseNum(selectedPaymentToken?.price) / parseNum(apiState.stage?.token_price)
+		const receiveAmount = paymentTokenValue * parseNum(selectedPaymentToken?.price) / (parseNum(apiState.stage?.token_price) || 1)
 		receiveTokenRef?.setVal(receiveAmount)
 	}, [selectedPaymentToken, receiveTokenRef])
 
@@ -56,8 +71,72 @@ const BuyTab = () => {
 
 	const accountData = useAccount()
 
-	const buy = () => {
-		
+	const minimum = (() => {
+		const currency = selectedPaymentToken
+		if (!currency || !currency.nowpayments_minimum) return null
+		return Math.ceil((parseNum(currency.nowpayments_minimum) / parseNum(currency.price)) * 10**6) / 10**6
+	})()
+
+	const [ createdTransaction, setCreatedTransaction ] = useState(null)
+	const [ transactionModalVisible, setTransactionModalVisible ] = useState(false)
+	const [ transactionLoading, setTransactionLoading ] = useState(false)
+
+	const buy = async () => {
+		const { config } = await getConfig()
+		const currency = selectedPaymentToken
+		if (!currency) return
+		const min = minimum
+		if (paymentTokenValue === 0) return toast.error(`Must pay more than 0 ${currency.symbol.toUpperCase()}`)
+		if (min !== null && paymentTokenValue < min) return toast.error(`Cannot pay less than ${min} ${currency.symbol}`)
+		const address = accountData.address
+		if (!address) return
+		try {
+			setTransactionLoading(true)
+			await toast.promise((async () => {
+				const walletTransfer = walletBuyTokens.has(currency.symbol.toUpperCase() + "-" + currency.chain.toUpperCase())
+				if (walletTransfer) {
+					const chainId = getChainIdFromLabel(currency.chain)
+					if (!chainId) return toast.error(`Invalid chain id for chain ${currency.chain}`)
+					const abi = getAbi(chainId)
+					if (!abi) return toast.error(`Invalid ABI for chain id ${chainId}`)
+					const native = isCurrencyNative(currency.symbol, chainId)
+					const contractAddress = getContractAddress(chainId, currency.symbol) ?? undefined
+					const decimals = currency.symbol ? getDecimals(chainId, currency.symbol) : 18
+					if (!native && !contractAddress) return toast.error(`Invalid contract address for token ${currency.symbol}`)
+					toast("Confirm in your wallet")
+					const transactionHash = await sendGenericTransaction(config, {
+						to: PAYMENT_WALLET_ADDRESS,
+						value: paymentTokenValue,
+						abi,
+						chainId,
+						contractAddress,
+						decimals: decimals,
+						native
+					})
+					toast.success("Transaction successfully completed", {duration: 10000})
+					api.createTransactionMetadata(apiState.project, address ?? "", transactionHash)
+					return "submitted"
+				} else {
+					const res = await api.createTransaction(apiState.project, {
+						payment_token_id: currency.id,
+						usd_amount: (paymentTokenValue * parseNum(currency.price)).toString(),
+						wallet_address: address ?? "",
+						token_amount: paymentTokenValue.toString()
+					})
+					setCreatedTransaction(res.data)
+					setTimeout(() => {
+						setTransactionModalVisible(true)
+						setTransactionLoading(false)
+					}, 100)
+					return "created"
+				}
+			})(), {
+				loading: "Processing transaction",
+				error: (err) => api.getApiErrorMessage(err, "Transaction errored"),
+				success: (res) => `Successfully ${res} transaction`
+			})
+		} catch (_) {}
+		setTransactionLoading(false)
 	}
 
 	return (
@@ -98,7 +177,7 @@ const BuyTab = () => {
 				onChange={(newVal) => {
 					setPaymentTokenValue(newVal)
 					const receiveTokenNum = newVal * parseNum(selectedPaymentToken?.price) / (parseNum(apiState.stage?.token_price) || 1)
-					receiveTokenRef.setVal(receiveTokenNum)
+					receiveTokenRef?.setVal(receiveTokenNum)
 				}}
 				onTokenChange={(token) => setSelectedPaymentToken(apiState.paymentTokens.find((currToken) => currToken.id === token.id) ?? null)}
 				tokenOptions={(apiState.paymentTokens ?? []).map((token) => ({
@@ -144,7 +223,10 @@ const BuyTab = () => {
 			</div>
 
 			<button
-				className="bg-[#000] text-[#FFF] w-[100%] h-[41.319px] text-[21.425px] font-[700] rounded-[50px] transition-all duration-300 hover:bg-[#0184E2] hover:text-[#FFFFFF] hover:opacity-90 cursor-pointer"
+				className={clsx(
+					"bg-[#000] text-[#FFF] w-[100%] h-[41.319px] text-[21.425px] font-[700] rounded-[50px] transition-all duration-300 hover:bg-[#0184E2] hover:text-[#FFFFFF] hover:opacity-90 cursor-pointer",
+					{"bg-[#888]": transactionLoading}
+				)}
 				onClick={() => {
 					if (!accountData.isConnected) showConnectionModal()
 					else buy()
@@ -157,6 +239,13 @@ const BuyTab = () => {
 					Max Buy-in $25,000
 				</p>
 			</div>
+			{createdTransaction && (
+				<TransactionModal
+					open={transactionModalVisible}
+					onClose={(() => setTransactionModalVisible(false))}
+					transaction={createdTransaction}
+				/>
+			)}
 		</>
 	)
 }

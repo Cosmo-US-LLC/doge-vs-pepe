@@ -23,7 +23,7 @@ const Widget = ({ project, theme, symbol }) => {
 	return (
 		<ApiContextWrapper project={project} symbol={symbol}>
 			<div
-				className="min-h-[596.83px] max-w-[404.01px] bg-[var(--bg)] w-[100%] space-y-[14px]  px-[16px] pb-[26px] pt-[24px] rounded-[24px] border border-[#fff]"
+				className="min-h-[596.83px] max-w-[404.01px] bg-[var(--bg)] w-[100%] flex flex-col gap-[14px] px-[16px] pb-[26px] pt-[24px] rounded-[24px] border border-[#fff]"
 				style={{
 					"--bg": theme.bg
 				}}

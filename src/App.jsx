@@ -3,9 +3,16 @@ import Home from "./Page/Home/Home";
 import MobileHome from "./Page/MobileHome/MobileHome";
 import ConnectWalletModal from "./component/ConnectWalletModal"
 import { Toaster } from "react-hot-toast";
+import { loadStoredConnection } from "./presale-gg/web3/connections";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
+
+  useEffect(() => {
+	if (localStorage.getItem("connect-wallet-id-v2")) {
+		loadStoredConnection()
+	}
+  })
 
   useEffect(() => {
     const handleResize = () => {
