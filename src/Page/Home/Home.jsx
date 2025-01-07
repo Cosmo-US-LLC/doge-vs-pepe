@@ -20,7 +20,7 @@ function Home() {
     <div className="bg-[black] w-[100%]">
     <div>
       <Navbar />
-      {/* <HeroSection /> */}
+      <HeroSection />
       <WalletSec />
       <FirstEverSec />
       <TheRulesSec />
