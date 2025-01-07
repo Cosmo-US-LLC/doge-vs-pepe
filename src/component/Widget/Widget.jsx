@@ -3,8 +3,9 @@ import { ApiContextWrapper } from "../../presale-gg/context/ApiContext"
 import BuyTab from "./Tabs/BuyTab"
 import StakeTab from "./Tabs/StakeTab"
 import HistoryTab from "./Tabs/HistoryTab"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import clsx from "clsx"
+import { useAccount } from "../../presale-gg/web3"
 
 const tabs = [BuyTab, StakeTab, HistoryTab]
 
@@ -19,6 +20,12 @@ const tabs = [BuyTab, StakeTab, HistoryTab]
 const Widget = ({ project, theme, symbol }) => {
 	const [ selectedTabIndex, setSelectedTabIndex ] = useState(0)
 	const Comp = tabs[selectedTabIndex].component
+	const accountData = useAccount()
+
+	useEffect(() => {
+		const disabled = tabs[selectedTabIndex].disabled?.({connected: accountData.isConnected}) ?? false
+		if (disabled) setSelectedTabIndex(0)
+	}, [selectedTabIndex, accountData.isConnected])
 
 	return (
 		<ApiContextWrapper project={project} symbol={symbol}>
@@ -31,18 +38,21 @@ const Widget = ({ project, theme, symbol }) => {
 				<div className="bg-[#00000040] flex justify-between p-1 rounded-[30px]">
 					{tabs.map((tab, i) => {
 						const selected = i === selectedTabIndex
+						const disabled = tab.disabled?.({connected: accountData.isConnected}) ?? false
 						return (
 							<button
 								className={clsx(
-									"w-[104.8px] rounded-[30px] py-[2px] space-x-2 flex justify-center items-center cursor-pointer border",
+									"w-[104.8px] rounded-[30px] py-[2px] space-x-2 flex justify-center items-center cursor-pointer border text-[#000]",
 									{"border-transparent": !selected},
-									{"bg-[var(--bg)] border-black": selected}
+									{"bg-[var(--bg)] border-black": selected},
+									{"text-[#333] cursor-not-allowed": disabled}
 								)}
 								onClick={() => setSelectedTabIndex(i)}
 								key={i}
+								title={disabled ? "Connect your wallet" : undefined}
 							>
 								<img src={tab.icon} alt="" aria-hidden />
-								<p className={clsx("text-[18.364px] font-[700] text-[#000]")}>
+								<p className={clsx("text-[18.364px] font-[700]")}>
 									{tab.label}
 								</p>
 							</button>

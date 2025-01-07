@@ -45,6 +45,15 @@ export namespace API {
 		created_at: string
 	}
 
+	export type BonusTransactionHistoryItem = {
+		id: number,
+		transaction_id: Number,
+		wallet_address: string,
+		bonus_token_amount: string,
+		type: "rank" | "referral" | "referrer" | "bonus_code",
+		identifier: string
+	}
+
 	export type SweResponse = {
 		message: string
 	}

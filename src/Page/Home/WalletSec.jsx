@@ -31,7 +31,7 @@ function WalletSec() {
       <img
         src={downShodow}
         alt="shodow"
-        className="absolute bottom-0 left-0 right-0 w-full"
+        className="absolute bottom-0 left-0 right-0 w-full pointer-events-none"
       />
       <div className="max-w-[922px] w-[100%] mx-auto ">
         <div className="flex justify-between">

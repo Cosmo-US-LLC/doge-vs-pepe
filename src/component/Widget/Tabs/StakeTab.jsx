@@ -143,5 +143,6 @@ const StakeTab = () => {
 export default {
 	component: StakeTab,
 	label: "Stake",
-	icon: stakeIcon
+	icon: stakeIcon,
+	disabled: ({connected}) => !connected
 }

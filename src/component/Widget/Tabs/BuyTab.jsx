@@ -82,6 +82,7 @@ const BuyTab = () => {
 	const [ transactionLoading, setTransactionLoading ] = useState(false)
 
 	const buy = async () => {
+		if (apiState.presaleEnded) return toast.error("Presale has ended")
 		const { config } = await getConfig()
 		const currency = selectedPaymentToken
 		if (!currency) return
@@ -143,7 +144,7 @@ const BuyTab = () => {
 		<>
 			<div className="space-y-[8px]">
 				<h3 className="text-[38.258px] font-[700] text-center leading-[88%] text-[#00]">
-					Buy ${projectData.symbol}
+					{apiState.presaleEnded ? "Presale Ended" : `Buy $${projectData.symbol}`}
 				</h3>
 				<h5 className="text-[#000] leading-[133.333%] text-[18.364px] font-[700] text-center">
 					1 {projectData.symbol} = {formatDollar(parseNum(apiState.stage?.token_price))}
@@ -232,7 +233,7 @@ const BuyTab = () => {
 					else buy()
 				}}
 			>
-				{accountData.isConnected ? "Buy" : "Connect Wallet"}
+				{accountData.isConnected ? (apiState.presaleEnded ? "Presale Ended" : "Buy") : "Connect Wallet"}
 			</button>
 			<div className="flex items-center justify-center ">
 				<p className="text-[15px] font-normal text-black font-k2d capitalize leading-normal">
