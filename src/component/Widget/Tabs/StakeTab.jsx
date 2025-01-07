@@ -64,8 +64,7 @@ const StakeTab = () => {
 
 	return (
 		<>
-			<div className="h-5" />
-			<h3 className="text-[38.258px] font-[700] text-center leading-[88%] text-[#00] mb-auto">
+			<h3 className="text-[38.258px] font-[700] text-center leading-[88%] text-[#00] my-auto">
 				Stake ${projectData.symbol}
 			</h3>
 			<div className="grid grid-cols-2 gap-2 my-auto" style={{gridTemplateAreas: '"one two" "three three"'}}>
@@ -117,7 +116,7 @@ const StakeTab = () => {
 					Max ({formatNumber(parseNum(userData.user?.total_tokens), 0, 2)})
 				</button>
 			</div>
-			<div className="flex gap-2 mt-auto">
+			<div className="flex gap-2 my-auto">
 				<button
 					className={clsx(
 						"bg-[#000] text-[#FFF] w-[100%] h-[41.319px] text-[21.425px] font-[700] rounded-[50px] transition-all duration-300 hover:bg-[#0184E2] hover:text-[#FFFFFF] hover:opacity-90 cursor-pointer",
@@ -137,7 +136,6 @@ const StakeTab = () => {
 					Unstake
 				</button>
 			</div>
-			<div className="h-0" />
 		</>
 	)
 }

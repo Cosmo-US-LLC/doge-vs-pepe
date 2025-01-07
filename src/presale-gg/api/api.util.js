@@ -162,7 +162,7 @@ export const createTransaction = (project, args) => {
  * @param {string} address 
  * @param {number} page 
  * @param {number} [limit=12] 
- * @returns {Promise<AxiosResponse<API.TransactionHistoryItem>>}
+ * @returns {Promise<AxiosResponse<import("../api/api.types.d.ts").API.TransactionHistoryItem[]>>}
  */
 export const getTransactionHistory = (project, address, page, limit = 12) => {
 	return apiFetch(`/projects/${project}/wallet/${address}/transactions`, {
