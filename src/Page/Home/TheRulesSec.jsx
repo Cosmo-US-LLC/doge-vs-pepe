@@ -1,46 +1,46 @@
 import React from "react";
-import rule1 from "../../assets/RuleSec/rule_1.webp";
-import rule2 from "../../assets/RuleSec/rule_2.webp";
-import rule3 from "../../assets/RuleSec/rule_3.webp";
-import rule4 from "../../assets/RuleSec/rule_4.webp";
-import rule5 from "../../assets/RuleSec/rule_5.webp";
-import rule6 from "../../assets/RuleSec/rule_6.webp";
-import rule7 from "../../assets/RuleSec/rule_7.webp";
+import rule1 from "../../assets/RuleSec/rule_1.png";
+import rule2 from "../../assets/RuleSec/rule_2.png";
+import rule3 from "../../assets/RuleSec/rule_3.png";
+import rule4 from "../../assets/RuleSec/rule_4.png";
+import rule5 from "../../assets/RuleSec/rule_5.png";
+import rule6 from "../../assets/RuleSec/rule_6.png";
+import rule7 from "../../assets/RuleSec/rule_7.png";
 import telicn from "../../assets/RuleSec/logos_telegram.svg";
 import leftMan from "../../assets/RuleSec/left-crdimg.png";
 import rightMan from "../../assets/RuleSec/right-crdimg.png";
 
 function TheRulesSec() {
   return (
-    <div className="relative overflow-hidden w-[100%] py-[36px]" id="rules">
+    <div className="relative bgrule overflow-hidden w-[100%] py-[36px]" id="rules">
       <div className="max-w-[1143px] space-y-[45px] w-[100%] mx-auto relative min-h-[500px]">
         <div>
-          <h3 className="text-[#fff] text-center text-[50px] leading-[104.377%] font-[700]">
-            The Rules
+          <h3 className="text-[#FFFCFC] font-HiJack uppercase text-center text-[50px] leading-[104.377%] font-[400]">
+          The 7 Rules
           </h3>
         </div>
         <div className="relative space-y-[30px]">
           <img
             src={leftMan}
             alt="card_image_1"
-            className="min-h-[220px] absolute left-[-10%] top-[37%] z-20"
+            className="min-h-[220px] absolute left-[-12%] top-[35%] z-20"
           />
           <img
             src={rightMan}
             alt="card_image_2"
-            className="min-h-[220px] absolute right-[-14%] top-[62%] z-20"
+            className="min-h-[220px] absolute right-[-14%] top-[65%] z-20"
           />
           <div className="flex Rulesborder justify-between px-[90px] pt-[35px] pb-[25px] items-center w-full bg-[#181818] rounded-[30px] overflow-hidden">
             <div className="w-[40%] flex justify-start">
               <img
                 src={rule1}
                 alt="card_image_3"
-                className="min-h-[220px] w-[250px]"
+                className="min-h-[220px] w-[250px] rounded-[30px]"
               />
             </div>
             <div className="max-w-[727.98px] w-[100%] flex flex-col gap-6">
               <div className="flex items-center gap-3">
-                <h2 className="text-[32px] font-[700] text-[#fff]">
+                <h2 className="text-[32px] font-HiJack font-[400] text-[#fff]">
                   1. Choose Your Champion
                 </h2>
               </div>
@@ -61,7 +61,7 @@ function TheRulesSec() {
           <div className="flex justify-between Rulesborder2 px-[90px] pt-[35px] pb-[25px] items-center w-full bg-[#181818] rounded-[30px] overflow-hidden">
             <div className="max-w-[727.98px] w-[100%] flex flex-col gap-6">
               <div className="flex items-center gap-3">
-                <h2 className="text-[32px] font-[700] text-[#fff]">
+                <h2 className="text-[32px] font-HiJack font-[400] text-[#fff]">
                   2. Buy To Support Your Team
                 </h2>
               </div>
@@ -81,7 +81,7 @@ function TheRulesSec() {
               <img
                 src={rule2}
                 alt="card_image_4"
-                className="min-h-[220px] w-[250px]"
+                className="min-h-[220px] w-[250px] rounded-[30px]"
               />
             </div>
           </div>
@@ -90,12 +90,12 @@ function TheRulesSec() {
               <img
                 src={rule3}
                 alt="card_image_5"
-                className="min-h-[220px] w-[250px]"
+                className="min-h-[220px] w-[250px] rounded-[30px]"
               />
             </div>
             <div className="max-w-[655.31px] w-[100%] flex flex-col gap-6">
               <div className="flex items-center gap-3">
-                <h2 className="text-[32px] font-[700] text-[#fff]">
+                <h2 className="text-[32px] font-HiJack font-[400] text-[#fff]">
                   3. The Race To $1 Million
                 </h2>
               </div>
@@ -119,7 +119,7 @@ function TheRulesSec() {
           <div className="flex  Rulesborder2 justify-between px-[90px] pt-[35px] pb-[25px] items-center w-full bg-[#181818] rounded-[30px] overflow-hidden">
             <div className="max-w-[655.31px] w-[100%] flex flex-col gap-6">
               <div className="flex items-center gap-3">
-                <h2 className="text-[32px] font-[700] text-[#fff]">
+                <h2 className="text-[32px] font-HiJack font-[400] text-[#fff]">
                   4. The Winner Takes It All
                 </h2>
               </div>
@@ -140,7 +140,7 @@ function TheRulesSec() {
               <img
                 src={rule4}
                 alt="card_image_6"
-                className="min-h-[220px] w-[250px]"
+                className="min-h-[220px] w-[250px] rounded-[30px]"
               />
             </div>
           </div>
@@ -149,12 +149,12 @@ function TheRulesSec() {
               <img
                 src={rule5}
                 alt="card_image_7"
-                className="min-h-[220px] w-[250px]"
+                className="min-h-[220px] w-[250px] rounded-[30px]"
               />
             </div>
             <div className="max-w-[655.98px] w-[100%] flex flex-col gap-6">
               <div className="flex items-center gap-3">
-                <h2 className="text-[32px] font-[700] text-[#fff]">
+                <h2 className="text-[32px] font-HiJack font-[400] text-[#fff]">
                   5. Rewards For Picking The Winner
                 </h2>
               </div>
@@ -175,7 +175,7 @@ function TheRulesSec() {
           <div className="flex justify-between Rulesborder2 px-[90px] pt-[35px] pb-[25px] items-center w-full bg-[#181818] rounded-[30px] overflow-hidden">
             <div className="max-w-[755.98px] w-[100%] flex flex-col gap-6">
               <div className="flex items-center gap-3">
-                <h2 className="text-[32px] font-[700] text-[#fff]">
+                <h2 className="text-[32px] font-HiJack font-[400] text-[#fff]">
                   6. Transparency And Fairness
                 </h2>
               </div>
@@ -192,11 +192,11 @@ function TheRulesSec() {
                 </li>
               </ol>
             </div>
-            <div className="w-[40%] flex justify-end">
+            <div className="w-[40%] flex justify-end rounded-[30px]">
               <img
                 src={rule6}
                 alt="card_image_8"
-                className="min-h-[195px] w-[250px]"
+                className="min-h-[195px] w-[250px] rounded-[30px]"
               />
             </div>
           </div>
@@ -205,12 +205,12 @@ function TheRulesSec() {
               <img
                 src={rule7}
                 alt="card_image_9"
-                className="min-h-[190px] w-[250px]"
+                className="min-h-[190px] w-[250px] rounded-[30px]"
               />
             </div>
             <div className="max-w-[655.98px] w-[100%] flex flex-col gap-6">
               <div className="">
-                <h2 className="text-[32px] font-[700] text-[#fff]">
+                <h2 className="text-[32px] font-HiJack font-[400] text-[#fff]">
                   7. Join The Community
                 </h2>
                 <p className="pl-[2.9rem] text-[18px] pb-[15px] text-[#FFF] ">
