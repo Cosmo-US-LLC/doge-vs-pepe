@@ -13,7 +13,6 @@ import { useAccount } from "../../../presale-gg/web3";
 import { showConnectionModal } from "../../../presale-gg/stores/modal.store";
 import TransactionModal from "../../TransactionModal";
 import { api } from "../../../presale-gg/api";
-import { PAYMENT_WALLET_ADDRESS } from "../../../presale-gg/constants";
 import clsx from "clsx";
 
 
@@ -106,7 +105,7 @@ const BuyTab = () => {
 					if (!native && !contractAddress) return toast.error(`Invalid contract address for token ${currency.symbol}`)
 					toast("Confirm in your wallet")
 					const transactionHash = await sendGenericTransaction(config, {
-						to: PAYMENT_WALLET_ADDRESS,
+						to: apiState.info.main_payment_wallet_address,
 						value: paymentTokenValue,
 						abi,
 						chainId,

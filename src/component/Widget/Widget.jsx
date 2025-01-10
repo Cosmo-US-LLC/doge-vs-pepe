@@ -17,7 +17,7 @@ const tabs = [BuyTab, StakeTab, HistoryTab]
  * @param {string} props.symbol
  * @returns 
  */
-const Widget = ({ project, theme, symbol }) => {
+const Widget = ({ project, theme, symbol, ...others }) => {
 	const [ selectedTabIndex, setSelectedTabIndex ] = useState(0)
 	const Comp = tabs[selectedTabIndex].component
 	const accountData = useAccount()
@@ -30,9 +30,11 @@ const Widget = ({ project, theme, symbol }) => {
 	return (
 		<ApiContextWrapper project={project} symbol={symbol}>
 			<div
-				className="h-[608px] max-w-[404.01px] bg-[var(--bg)] w-[100%] flex flex-col gap-[14px] px-[16px] pb-[26px] pt-[24px] rounded-[24px] border border-[#fff]"
+				{...others}
+				className={clsx("h-[608px] max-w-[404.01px] bg-[var(--bg)] w-[100%] flex flex-col gap-[14px] px-[16px] pb-[26px] pt-[24px] rounded-[24px] border border-[#fff]", others.className)}
 				style={{
-					"--bg": theme.bg
+					"--bg": theme.bg,
+					...others.style
 				}}
 			>
 				<div className="bg-[#00000040] flex justify-between p-1 rounded-[30px]">
@@ -42,14 +44,19 @@ const Widget = ({ project, theme, symbol }) => {
 						return (
 							<button
 								className={clsx(
-									"w-[104.8px] rounded-[30px] py-[2px] space-x-2 flex justify-center items-center cursor-pointer border text-[#000]",
+									"w-[104.8px] rounded-[30px] py-[2px] space-x-2 flex justify-center items-center border text-[#000]",
 									{"border-transparent": !selected},
 									{"bg-[var(--bg)] border-black": selected},
+									{"cursor-pointer": !disabled},
 									{"text-[#333] cursor-not-allowed": disabled}
 								)}
-								onClick={() => setSelectedTabIndex(i)}
+								onClick={() => {
+									if (disabled) return
+									setSelectedTabIndex(i)
+								}}
 								key={i}
 								title={disabled ? "Connect your wallet" : undefined}
+								disabled={disabled}
 							>
 								<img src={tab.icon} alt="" aria-hidden />
 								<p className={clsx("text-[18.364px] font-[700]")}>

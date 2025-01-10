@@ -17,7 +17,8 @@ export namespace API {
 
 	export interface Info {
 		holders: string,
-		transactions: string
+		transactions: string,
+		main_payment_wallet_address: string
 	}
 
 	export interface PaymentToken {

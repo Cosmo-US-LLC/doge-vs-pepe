@@ -106,15 +106,26 @@ const StakeTab = () => {
 						setInputVal(new Decimal(newVal))
 					}}
 				/>
-				<button
-					className="bg-[#00000078] text-[#fff] text-[12px] py-1 px-2 rounded-lg self-end transition-colors hover:bg-[#00000099]"
-					onClick={() => {
-						setInputValStr(userData.user?.total_tokens ?? "0")
-						setInputVal(new Decimal(userData.user?.total_tokens ?? "0"))
-					}}
-				>
-					Max ({formatNumber(parseNum(userData.user?.total_tokens), 0, 2)})
-				</button>
+				<div className="flex justify-between">
+					<button
+						className="bg-[#00000078] text-[#fff] text-[12px] py-1 px-2 rounded-lg self-end transition-colors hover:bg-[#00000099]"
+						onClick={() => {
+							setInputValStr(userData.userStakeData?.total_can_stake ?? "0")
+							setInputVal(new Decimal(userData.userStakeData?.total_can_stake ?? "0"))
+						}}
+					>
+						Max Stake ({formatNumber(parseNum(userData.user?.total_tokens), 0, 2)})
+					</button>
+					<button
+						className="bg-[#00000078] text-[#fff] text-[12px] py-1 px-2 rounded-lg self-end transition-colors hover:bg-[#00000099]"
+						onClick={() => {
+							setInputValStr(userData.userStakeData?.total_staked ?? "0")
+							setInputVal(new Decimal(userData.userStakeData?.total_staked ?? "0"))
+						}}
+					>
+						Max Unstake ({formatNumber(parseNum(userData.user?.total_tokens), 0, 2)})
+					</button>
+				</div>
 			</div>
 			<div className="flex gap-2 my-auto">
 				<button
