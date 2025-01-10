@@ -11,6 +11,7 @@ import coinsw6 from "../../assets/walletsec/coinsw (4).svg";
 import ggicon from "../../assets/walletsec/gg.svg";
 import arw from "../../assets/walletsec/arw.svg";
 import downArrow from "../../assets/herosec/down-arrow.svg";
+import Widget from "../../component/Widget/Widget";
 
 const Buybuttons = [
   { id: "Buy", label: "Buy", img: arwbtn1 },
@@ -105,324 +106,30 @@ function HeroWalletSec() {
       <div className="max-w-[922px] w-[90%] mx-auto ">
         <div className="block space-y-[5rem]">
           <div className="flex justify-center">
-            <div className=" max-w-[272.31px] bg-[#F2B60F] w-[100%] space-y-[10px]  px-[13px] pb-[15px] pt-[15px] rounded-[24px] border border-[#fff]">
-              <div className="bg-[#00000040] flex justify-between p-1 rounded-[30px]">
-                {Buybuttons.map((button) => (
-                  <div
-                    key={button.id}
-                    onClick={() => setActiveButton(button.id)}
-                    className={`w-[63.8px] rounded-[30px] py-[1px] space-x-[4px] flex justify-center items-center cursor-pointer ${
-                      activeButton === button.id
-                        ? "bg-[#EFAB00] border border-black"
-                        : "text-[#000]"
-                    }`}
-                  >
-                    <img
-                      src={button.img}
-                      className="h-[12px]"
-                      alt={button.label}
-                    />
-                    <p
-                      className={`text-[14px] font-[800] ${
-                        activeButton === button.id
-                          ? "text-[#000]"
-                          : "text-[#000]"
-                      }`}
-                    >
-                      {button.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
-              <div className="space-y-[8px]">
-                <h3 className="text-[23px] font-[700] text-center leading-[88%] text-[#00]">
-                  Buy $DOPE
-                </h3>
-                <h5 className="text-[#000] leading-[183.333%] text-[12px] font-[700] text-center">
-                  1 GG = $0.0005
-                </h5>
-              </div>
-              <div className=" pb-1 space-y-[4px]">
-                <div className="bg-[#FFFFFF47] w-[100%] h-[8px] rounded-[30px]">
-                  <div className="bg-[#000] h-[8px] w-[60%] rounded-[30px]"></div>
-                </div>
-                <div className="flex justify-between">
-                  <h4 className="text-[13px] font-[600] text-[#000]">
-                    USD Raised
-                  </h4>
-                  <h5 className="text-[13px] font-[600] text-[#000]">
-                  $252,523 / $1,000,000
-                  </h5>
-                </div>
-              </div>
-              <div className="bg-[#00000078] px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[8px]">
-                <div className="">
-                  <h5 className="text-[#fff] text-[12px] leading-[5px] font-[600]">
-                    You pay
-                  </h5>
-                  <input
-                    type="text"
-                    className="text-[#fff] w-[73px] text-[12px] font-[700] bg-[transparent] outline-none"
-                    defaultValue={1}
-                  />
-                </div>
-
-                <div className="relative max-w-[205px] w-[100%] inline-block text-left">
-                  <div
-                    className="flex items-center justify-between space-x-1 cursor-pointer  p-1 rounded-full border-[0.8px] border-[#8ED0FF3A] bg-[#0077D64A]"
-                    onClick={() => setIsDropdownOpen((prev) => !prev)}
-                  >
-                    <div className="flex items-center space-x-2">
-                      <img
-                        src={selectedItem.img}
-                        className="w-[12px] h-[12px]"
-                        alt="Selected Icon"
-                      />
-                      <h5 className="text-[12px] text-[#fff] leading-[80%] font-[400]">
-                        {selectedItem.text}
-                      </h5>
-                    </div>
-                    <img
-                      src={arw}
-                      className="w-[9px] h-[9px]"
-                      alt="Arrow Icon"
-                    />
-                  </div>
-
-                  {isDropdownOpen && (
-                    <div className="absolute mt-2 w-full bg-[#191F1F] rounded-md shadow-lg">
-                      {options.map((option, index) => (
-                        <div
-                          key={index}
-                          className="flex items-center px-2 py-2 space-x-2 cursor-pointer hover:bg-gray-800"
-                          onClick={() => handleSelect(option)}
-                        >
-                          <img
-                            src={option.img}
-                            className="w-[12px] h-[12px]"
-                            alt={`Option ${index + 1}`}
-                          />
-                          <h5 className="text-[12px] text-[#fff] font-[400]">
-                            {option.text}
-                          </h5>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div>
-              <div className="bg-[#00000078] relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[8px]">
-                <div className="w-[50%]">
-                  <h5 className="text-[#fff] text-[12px] leading-[5px] font-[600]">
-                    You receive
-                  </h5>
-                  <input
-                    type="text"
-                    className="text-[#fff] text-[12px] font-[700] bg-[transparent] outline-none"
-                    defaultValue={`7,414,420`}
-                  />
-                </div>
-
-                <div className="relative max-w-[203px] w-[100%] inline-block text-left">
-                  <div className="flex items-center justify-center space-x-1 cursor-pointer  p-1 rounded-full border-[0.8px] border-[#8ED0FF3A] bg-[#0077D64A] w-[100%]">
-                    <img
-                      src={ggicon}
-                      className="w-[12px] h-[12px]"
-                      alt="Selected Icon"
-                    />
-                    <h5 className="text-[12px] text-[#fff] font-[600]">
-                      GG (ERC-20)
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div className=" space-y-[10px]">
-                <h5 className="text-[#000] text-[14px] font-[700] text-center">
-                  Accepting
-                </h5>
-                <div className="flex justify-center space-x-2">
-                  {iconsData.map((item) => (
-                    <img
-                      key={item.id}
-                      src={item.img}
-                      className="h-[12px] w-[12px]"
-                      alt={`Icon`}
-                    />
-                  ))}
-                </div>
-              </div>
-              <div className="">
-                <div className="flex justify-center">
-                  <button className="bg-[#000] text-[#FFF] max-w-[166.331px] mx-auto w-[100%] h-[32px] text-[14px] font-[700] rounded-[50px]">
-                    Connect Wallet
-                  </button>
-                </div>
-                <p className="text-[12px] font-[400] text-center">Max Buy-in $10'000</p>
-              </div>
-            </div>
+            <Widget
+              project="doge"
+              symbol="DOPE"
+              theme={{bg: "#f2b60f"}}
+              style={{
+                transform: "scale(0.7)",
+                marginBlock: "-4rem",
+                marginInline: "-4rem",
+                width: "calc(100% + 7.5rem)"
+              }}
+            />
           </div>
           <div className="flex justify-center">
-            <div
-              className=" max-w-[272.31px] bg-[#F2B60F] w-[100%] space-y-[10px]  px-[13px] pb-[15px] pt-[15px] rounded-[24px] border border-[#fff]"
+            <Widget
+              project="pepe"
+              symbol="PEGE"
+              theme={{bg: "#4eb52a"}}
               style={{
-                background:
-                  "linear-gradient(180deg, #4EB52A 64.5%, #4EB52A 100%)",
+                transform: "scale(0.7)",
+                marginBlock: "-4rem",
+                marginInline: "-4rem",
+                width: "calc(100% + 7.5rem)"
               }}
-            >
-              <div className="bg-[#00000040] flex justify-between p-1 rounded-[30px]">
-                {Buybuttons.map((button) => (
-                  <div
-                    key={button.id}
-                    onClick={() => setActiveButtonpepe(button.id)}
-                    className={`w-[63.8px] rounded-[30px] py-[1px] space-x-[4px] flex justify-center items-center cursor-pointer ${
-                      activeButtonpepe === button.id
-                        ? "bg-[#4EB52A] border border-black"
-                        : "text-[#000]"
-                    }`}
-                  >
-                    <img
-                      src={button.img}
-                      className="h-[12px]"
-                      alt={button.label}
-                    />
-                    <p
-                      className={`text-[14px] font-[700] ${
-                        activeButtonpepe === button.id
-                          ? "text-[#000]"
-                          : "text-[#000]"
-                      }`}
-                    >
-                      {button.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
-              <div className="space-y-[8px]">
-                <h3 className="text-[23px] font-[700] text-center leading-[88%] text-[#00]">
-                Buy $PEPE
-                </h3>
-                <h5 className="text-[#000] leading-[183.333%] text-[12px] font-[700] text-center">
-                  1 GG = $0.0005
-                </h5>
-              </div>
-              <div className=" pb-1 space-y-[4px]">
-                <div className="bg-[#FFFFFF47] w-[100%] h-[8px] rounded-[30px]">
-                  <div className="bg-[#000] h-[8px] w-[60%] rounded-[30px]"></div>
-                </div>
-                <div className="flex justify-between">
-                  <h4 className="text-[13px] font-[600] text-[#000]">
-                    USD Raised
-                  </h4>
-                  <h5 className="text-[13px] font-[600] text-[#000]">
-                  252,523 / $1,000,000
-                  </h5>
-                </div>
-              </div>
-              <div className="bg-[#00000078] px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[8px]">
-                <div className="">
-                  <h5 className="text-[#fff] text-[12px] leading-[5px] font-[600]">
-                    You pay
-                  </h5>
-                  <input
-                    type="text"
-                    className="text-[#fff] w-[73px] text-[12px] font-[700] bg-[transparent] outline-none"
-                    defaultValue={1}
-                  />
-                </div>
-
-                <div className="relative max-w-[205px] w-[100%] inline-block text-left">
-                  <div
-                    className="flex items-center justify-between space-x-1 cursor-pointer  p-1 rounded-full border-[0.8px] border-[#8ED0FF3A] bg-[#0077D64A]"
-                    onClick={() => setIsDropdownOpenpepe((prev) => !prev)}
-                  >
-                    <div className="flex items-center space-x-2">
-                      <img
-                        src={selectedItempepe.img}
-                        className="w-[12px] h-[12px]"
-                        alt="Selected Icon"
-                      />
-                      <h5 className="text-[12px] text-[#fff] leading-[80%] font-[400]">
-                        {selectedItempepe.text}
-                      </h5>
-                    </div>
-                    <img
-                      src={arw}
-                      className="w-[9px] h-[9px]"
-                      alt="Arrow Icon"
-                    />
-                  </div>
-
-                  {isDropdownOpenpepe && (
-                    <div className="absolute mt-2 w-full bg-[#191F1F] rounded-md shadow-lg">
-                      {options.map((option, index) => (
-                        <div
-                          key={index}
-                          className="flex items-center px-2 py-2 space-x-2 cursor-pointer hover:bg-gray-800"
-                          onClick={() => handleSelectpepe(option)}
-                        >
-                          <img
-                            src={option.img}
-                            className="w-[12px] h-[12px]"
-                            alt={`Option ${index + 1}`}
-                          />
-                          <h5 className="text-[12px] text-[#fff] font-[400]">
-                            {option.text}
-                          </h5>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div>
-              <div className="bg-[#00000078] relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[8px]">
-                <div className="w-[50%]">
-                  <h5 className="text-[#fff] text-[12px] leading-[5px] font-[600]">
-                    You receive
-                  </h5>
-                  <input
-                    type="text"
-                    className="text-[#fff] text-[12px] font-[700] bg-[transparent] outline-none"
-                    defaultValue={`7,414,420`}
-                  />
-                </div>
-
-                <div className="relative max-w-[203px] w-[100%] inline-block text-left">
-                  <div className="flex items-center justify-center space-x-1 cursor-pointer  p-1 rounded-full border-[0.8px] border-[#8ED0FF3A] bg-[#0077D64A] w-[100%]">
-                    <img
-                      src={ggicon}
-                      className="w-[12px] h-[12px]"
-                      alt="Selected Icon"
-                    />
-                    <h5 className="text-[12px] text-[#fff] font-[600]">
-                      GG (ERC-20)
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div className=" space-y-[10px]">
-                <h5 className="text-[#000] text-[14px] font-[700] text-center">
-                  Accepting
-                </h5>
-                <div className="flex justify-center space-x-2">
-                  {iconsData.map((item) => (
-                    <img
-                      key={item.id}
-                      src={item.img}
-                      className="h-[12px] w-[12px]"
-                      alt={`Icon`}
-                    />
-                  ))}
-                </div>
-              </div>
-              <div className="">
-                <div className="flex justify-center">
-                  <button className="bg-[#000] text-[#FFF] max-w-[166.331px] mx-auto w-[100%] h-[34px] text-[14px] font-[700] rounded-[50px]">
-                    Connect Wallet
-                  </button>
-                </div>
-                <p className="text-[12px] font-[400] text-center">Max Buy-in $10'000</p>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
