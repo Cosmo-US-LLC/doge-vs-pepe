@@ -4,29 +4,25 @@ import prizeimg from "../../assets/PrizeMoneySec/prize-belt.png";
 function PrizeMoneySec() {
   return (
     <div className="w-[100%] bgprizsec overflow-hidden pt-[60px] pb-[80px]">
-      <div className="max-w-[1291.63px] space-y-[45px] w-[100%] mx-auto relative min-h-[500px]">
+      <div className="max-w-[992px] p-[22px] rounded-[26.9px] space-y-[45px] w-[100%] mx-auto relative min-h-[500px] border boredr-[#fff] bg-[#01010182]">
         <div className="space-y-[20px]">
-          <h3 className="text-[#fff] text-center text-[50px] leading-[104.377%] font-[700]">
-            Prize Money For The Winning Team{" "}
+          <h3 className="text-[#FFFCFC] font-HiJack text-center text-[50px] leading-[104.377%] font-[400]">
+          Prize Money For The Winning Team 
           </h3>
           <h4
-            className="text-center text-[#EFAB00] text-[64px] font-[800]"
-            style={{ textShadow: "6.534px -0.817px 24.583px #F1AD03" }}
+            className="text-center font-HiJack text-[#fff] text-[96px] font-[400]"
           >
-            100’000 USD*{" "}
+           250’000 USD*
           </h4>
           <div className="flex justify-center">
             <img src={prizeimg} alt="" />
           </div>
           <div className="space-y-[10px]">
             <h4 className="text-center leading-normal text-[32px] text-[#fff] font-[700] max">
-              For every $100k raised another $15’000 <br /> will be added to the
-              Prize Pool
+            The prize money will be airdropped and shared <br /> by all token holders of the winning coin.
             </h4>
             <p className="text-center text-[16px] text-[#FFFCFC] font-[700]">
-              *The prize money will be airdropped to all token holders of the
-              winning coin, distributed proportionally based on the number of
-              tokens they hold.
+            *The prize money equivalent will be airdropped in the winning token
             </p>
           </div>
         </div>

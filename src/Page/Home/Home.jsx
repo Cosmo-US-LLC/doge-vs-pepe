@@ -13,6 +13,9 @@ import Navbar from "../../component/navbar";
 import FaqSec from "./FaqSec";
 import Footer from "../../component/footer";
 import TokenSec from "./TokenSec";
+import BannerSec from "./BannerSec";
+import VIPTicketSec from "./VIPTicketSec";
+import HowItSec from "./HowItSec";
 
 
 function Home() {
@@ -21,12 +24,15 @@ function Home() {
     <div>
       <Navbar />
       <HeroSection />
+      <BannerSec />
       <WalletSec />
+      <VIPTicketSec />
       <FirstEverSec />
       <TheRulesSec />
-      <PrizeMoneySec />
-      <CommunitySec /> 
       <MilestonesSec />
+      <PrizeMoneySec />
+      <HowItSec />
+      <CommunitySec /> 
       <RoadmapSec />
       <TokenSec/>
       <MadebySec />
