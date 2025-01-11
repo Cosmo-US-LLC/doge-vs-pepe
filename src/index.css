@@ -11,7 +11,41 @@ code {
   font-family: "K2D", serif !important;
 
 }
+.font-HiJack{
+  font-family: 'Hi Jack', sans-serif;
+                                                
+}
 
+.bgmainvip{
+  background-image: url(../src/assets/Vipticketsec/bg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bgmainvipcard{
+  background-image: url(../src/assets/Vipticketsec/cardbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Mysterybg{
+  background-image: url(../src/assets/MilestonesSec/bgmile.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bgrule{
+  background-image: url(../src/assets/RuleSec/rulebg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bgmainvipcardbox{
+  background-image: url(../src/assets/Vipticketsec/boxxx.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 .bgherosec {
   background-image: url('./assets/herosec/herosecbg.png');
   background-position: center;
@@ -41,7 +75,7 @@ code {
 }
 
 .bgeversec {
-  background-image: url(./assets/FirstEver/first-ever-bg.webp);
+  background-image: url(./assets/FirstEver/first-ever-bg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -57,6 +91,12 @@ code {
 
 .bgprizsec {
   background-image: url(./assets/PrizeMoneySec//prixebg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.howitbg{
+  background-image: url(./assets/HowItSec/howbg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -156,6 +196,47 @@ code {
   border-radius: 15px;
   padding: 1px;
   background: linear-gradient(16deg, #fac000d8 -53%, transparent 46%, #fac000ad 215%, transparent 329%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.howitborder {
+  position: relative;
+  width: 100% !important;
+  box-sizing: border-box;
+  z-index: 1;
+  border: none;
+}
+
+.howitborder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 2px;
+  background: linear-gradient(16deg, #fac000d8 -53%, transparent 46%, #01FE37 215%, transparent 329%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+.Mysteryborder {
+  position: relative;
+  width: 100% !important;
+  box-sizing: border-box;
+  z-index: 1;
+  border: none;
+}
+
+.Mysteryborder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 2px;
+  background: linear-gradient(16deg, #fac000d8 -53%, transparent 46%, #01FE37 215%, transparent 329%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
