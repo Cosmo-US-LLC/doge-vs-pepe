@@ -10,7 +10,7 @@ function PrizeMoney() {
                 backgroundImage: `url(${prize_money_background})`,
             }}
         >
-            <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
             <p className=" relative text-[26px] font-[700] text-[#FFFCFC] text-center font-k2d uppercase leading-normal mt-2 z-20">
   Prize Money For<br />
   The <span className="font-[700] text-[26px] filter blur-[0.5px]">

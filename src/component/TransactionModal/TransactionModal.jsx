@@ -18,14 +18,14 @@ const TransactionModal = ({ transaction, ...others }) => {
 	}, [transaction.pay_address, qrCode, qrRef])
 	
 	return (
-		<Modal {...others} title="Transaction" class={classes["transaction-modal"]}>
-			<div class={classes["payment-details"]}>
+		<Modal {...others} title="Transaction" className={classes["transaction-modal"]}>
+			<div className={classes["payment-details"]}>
 				<canvas
 					ref={(el) => setQrRef(el)}
-					class={classes["qr"]}
+					className={classes["qr"]}
 					value={transaction.pay_address}
 				/>
-				<div class={classes["payment-values"]}>
+				<div className={classes["payment-values"]}>
 					<NumberValue
 						value={transaction.pay_amount}
 						label={`Pay amount (${transaction.pay_currency})`}
@@ -41,21 +41,21 @@ const TransactionModal = ({ transaction, ...others }) => {
 					value={transaction.payin_extra_id}
 					label="Destination Tag"
 				/>
-				<p class={classes["hint-text"]}>
-					You <span class={classes["bold"]}>must include</span> the destination tag in the transaction or you will not receive your tokens
+				<p className={classes["hint-text"]}>
+					You <span className={classes["bold"]}>must include</span> the destination tag in the transaction or you will not receive your tokens
 				</p>
 			</>}
 			<NumberValue
 				value={transaction.pay_address}
 				label={`Payment address`}
 			/>
-			<p class={classes["hint-text"]}>
-				Pay <span class={classes["bold"]}>{transaction.pay_amount}</span> of <span class={classes["bold"]}>{transaction.pay_currency.toUpperCase()}</span> on the <span class={classes["bold"]}>{transaction.network.toUpperCase()}</span> network{transaction.payin_extra_id ? <>, with the destination tag of <span class={classes["bold"]}>{transaction.payin_extra_id}</span></> : ""} to the address above to confirm the payment.
+			<p className={classes["hint-text"]}>
+				Pay <span className={classes["bold"]}>{transaction.pay_amount}</span> of <span className={classes["bold"]}>{transaction.pay_currency.toUpperCase()}</span> on the <span className={classes["bold"]}>{transaction.network.toUpperCase()}</span> network{transaction.payin_extra_id ? <>, with the destination tag of <span className={classes["bold"]}>{transaction.payin_extra_id}</span></> : ""} to the address above to confirm the payment.
 			</p>
-			<p class={classes["hint-text"]}>
+			<p className={classes["hint-text"]}>
 				The tokens will automatically be deposited upon received payment. Note that it can take between 10 minutes and 1 hour for transactions to go through.
 			</p>
-			<p class={classes["hint-text"]}>
+			<p className={classes["hint-text"]}>
 				Refresh the page to check your balance.
 			</p>
 		</Modal>
@@ -81,16 +81,16 @@ export const NumberValue = (props) => {
 		}
 	}
 	return (
-		<div class={classes["number-value-container"]}>
-			<p class={classes["number-value-label"]}>{props.label}</p>
+		<div className={classes["number-value-container"]}>
+			<p className={classes["number-value-label"]}>{props.label}</p>
 			<input
 				size={0}
-				class={classes["number-value-value"]}
+				className={classes["number-value-value"]}
 				value={props.value}
 				onInput={(e) => e.currentTarget.value = props.value.toString()}
-				readonly
+				readOnly
 			/>
-			<button class={classes["number-value-copy"]} onClick={copy}>
+			<button className={classes["number-value-copy"]} onClick={copy}>
 				Copy
 			</button>
 		</div>

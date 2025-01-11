@@ -282,7 +282,7 @@ const ShareLabel = () => {
 				<p className="text-sm leading-3">You Referral Code</p>
 				<input
 					readOnly
-					value={userData.user?.referral_code}
+					value={userData.user?.referral_code ?? ""}
 					size={0}
 					className=" p-0 bg-transparent rounded-lg text-lg font-bold"
 				/>

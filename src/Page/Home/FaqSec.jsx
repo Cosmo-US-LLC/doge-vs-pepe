@@ -9,7 +9,7 @@ const faqData = [
   {
     question: "How does the presale work?",
     answer: `
-      <ul class="list-disc pl-8 text-white">
+      <ul className="list-disc pl-8 text-white">
         <li>Choose your champion: Team Doge (Orange Coin) or Team Pepe (Green Coin).</li>
         <li>Buy tokens to support your chosen team(s).</li>
         <li>When the combined presale total hits $1 million, the team with the most funds raised is declared the winner.</li>
@@ -52,11 +52,11 @@ const faqData = [
   {
     question: " How do I join the community?",
     answer: `
-<div class="w-[900px]">
-  <ul class="list-decimal pl-5 text-white">
+<div className="w-[900px]">
+  <ul className="list-decimal pl-5 text-white">
     <li>
       We have Telegram channels to keep you updated and engaged:
-      <ul class="list-disc pl-8 text-white">
+      <ul className="list-disc pl-8 text-white">
         <li>General Channel: For overall updates and discussions.</li>
         <li>Team Pepe Channel: For Green Coin supporters</li>
          <li>Team Doge Channel: For Orange Coin fans.</li>

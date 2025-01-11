@@ -69,11 +69,11 @@ const HistoryTab = () => {
 					}}
 				/>
 			</div>
-			<div className="flex flex-col gap-2 overflow-y-auto">
-				{!isBonus ? transactions.map((/** @type {TransactionHistoryItem} */trx) => {
+			<div className="flex flex-col gap-2 overflow-y-auto flex-1 pr-2 -mr-2">
+				{!isBonus ? transactions.map((/** @type {TransactionHistoryItem} */trx, i) => {
 					const statusCols = statusColMap[trx.status]
 					return (
-						<div className="flex items-center bg-[#00000078] text-[#fff] px-2 py-[0.375rem] rounded-lg text-[0.8125rem]">
+						<div className="flex items-center bg-[#00000078] text-[#fff] px-2 py-[0.375rem] rounded-lg text-[0.8125rem]" key={i}>
 							<p className="text-[#bbb] flex justify-center flex-1">-{formatDollar(trx.payment_usd_amount)}</p>
 							<p className="flex justify-center flex-1">+{formatLargeNumber(trx.tokens_bought, 0, 2)} {projectData.symbol}</p>
 							<p className="text-[0.625rem] leading-[1] w-[7em] py-[0.375rem] flex-0 flex items-center justify-center rounded-lg" style={{background: statusCols?.[0], color: statusCols?.[1]}}>{capitalize(trx.status ?? "")}</p>
@@ -82,7 +82,7 @@ const HistoryTab = () => {
 				}) : transactions.map((/** @type {BonusTransactionHistoryItem} */trx) => {
 					const statusCols = statusColMap[trx.type]
 					return (
-						<div className="flex items-center bg-[#00000078] text-[#fff] px-2 py-[0.375rem] rounded-lg text-[0.8125rem]">
+						<div className="flex items-center bg-[#00000078] text-[#fff] px-2 py-[0.375rem] rounded-lg text-[0.8125rem]" key={i}>
 							<p className="flex justify-center flex-1">+{formatLargeNumber(trx.bonus_token_amount, 0, 2)} {projectData.symbol}</p>
 							<p className="text-[0.625rem] leading-[1] w-[7em] py-[0.375rem] flex-0 flex items-center justify-center rounded-lg" style={{background: statusCols?.[0], color: statusCols?.[1]}}>{capitalize(trx.type ?? "")}</p>
 						</div>

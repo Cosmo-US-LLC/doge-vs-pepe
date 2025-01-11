@@ -7,7 +7,7 @@ import shodow from "../../assets/FirstEver/shodow.svg"
 function FirstEverSec() {
   return (
     <div className="relative w-[100%] bgeversec overflow-hidden  flex justify-center items-center" id="firstever">
-      <div class="absolute inset-0 bg-black bg-opacity-30 z-10"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-30 z-10"></div>
       <img src={shodow} alt="shodow" className="absolute top-0 left-0 right-0 w-full"/>
       <div className="max-w-[1291.63px] space-y-[45px] w-[100%] mx-auto relative min-h-[500px]">
        <div className="relative z-20">

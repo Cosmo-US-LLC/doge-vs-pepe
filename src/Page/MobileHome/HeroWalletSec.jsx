@@ -110,12 +110,7 @@ function HeroWalletSec() {
               project="doge"
               symbol="DOPE"
               theme={{bg: "#f2b60f"}}
-              style={{
-                transform: "scale(0.7)",
-                marginBlock: "-4rem",
-                marginInline: "-4rem",
-                width: "calc(100% + 7.5rem)"
-              }}
+              className="scale-[0.7] -m-16 w-[calc(100%+7.5rem)] xs:transform-none xs:m-auto xs:w-full"
             />
           </div>
           <div className="flex justify-center">
@@ -123,12 +118,7 @@ function HeroWalletSec() {
               project="pepe"
               symbol="PEGE"
               theme={{bg: "#4eb52a"}}
-              style={{
-                transform: "scale(0.7)",
-                marginBlock: "-4rem",
-                marginInline: "-4rem",
-                width: "calc(100% + 7.5rem)"
-              }}
+              className="scale-[0.7] -m-16 w-[calc(100%+7.5rem)] xs:transform-none xs:m-auto xs:w-full"
             />
           </div>
         </div>

@@ -9,7 +9,7 @@ function DoNotWait() {
         backgroundImage: `url(${do_not_wait_bg})`,
       }}
     >
-      <div class="absolute inset-0 bg-black bg-opacity-20 z-10"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-20 z-10"></div>
 
       <div className="relative flex flex-col items-center justify-center">
         <p className="text-[26px] font-[700] leading-[17px] text-[white] mt-6 text-center z-10">
