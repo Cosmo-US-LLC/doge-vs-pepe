@@ -62,7 +62,7 @@ const TokenInput = ({ label, onChange, onTokenChange, selectedToken, defaultValu
 	}, [inputRef])
 
 	return (
-		<div {...others} className="bg-[#00000078] px-5 gap-2 flex relative z-[9] justify-between items-center py-3 rounded-[14px] isolate">
+		<div {...others} className="bg-[#00000078] px-4 gap-2 flex relative z-[9] justify-between items-center py-2 rounded-[14px] isolate">
 			<div className="flex-1 flex flex-col">
 				<h5 className="text-[#fff] text-[15.303px] font-[600]">
 					{label}

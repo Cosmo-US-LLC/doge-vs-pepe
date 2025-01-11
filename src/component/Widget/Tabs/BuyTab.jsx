@@ -14,6 +14,7 @@ import { showConnectionModal } from "../../../presale-gg/stores/modal.store";
 import TransactionModal from "../../TransactionModal";
 import { api } from "../../../presale-gg/api";
 import clsx from "clsx";
+import { resetUserBonusCode, userApplyBonusCode, userResetReferralCode, userUpdateReferralCode } from "../../../presale-gg/stores";
 
 
 const walletBuyTokens = new Set([
@@ -206,7 +207,9 @@ const BuyTab = () => {
 				}}
 				inputRef={setReceiveTokenRef}
 			/>
-			<div className="pb-[10px] space-y-[10px]">
+			{accountData.isConnected && <ShareLabel />}
+			<CodeInputs />
+			<div className="pb-[10px] space-y-[5px] -my-1">
 				<h5 className="text-[#000] text-[18.364px] font-[700] text-center">
 					Accepting
 				</h5>
@@ -254,4 +257,173 @@ export default {
 	component: BuyTab,
 	label: "Buy",
 	icon: dollarIcon
+}
+
+const ShareLabel = () => {
+	const projectData = useContext(ApiContext)
+	const userData = useStore(projectData.$userState)
+
+	const share = () => {
+		const text = `Use my referral code for bonus tokens on ${projectData.project.toUpperCase()}`
+		const url = `${window.location.origin}?referral_code=${userData.user.referral_code}&project=${projectData.project}`
+		try {
+			navigator.share({
+				text,
+				url
+			})
+		} catch (err) {
+			window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, "_blank")
+		}
+	}
+
+	return (
+		<div className="flex px-4 py-2 gap-4 text-sm font-bold bg-[#00000078] text-[#fff] rounded-[14px]">
+			<div className="flex w-0 flex-1 flex-col">
+				<p className="text-sm leading-3">You Referral Code</p>
+				<input
+					readOnly
+					value={userData.user?.referral_code}
+					size={0}
+					className=" p-0 bg-transparent rounded-lg text-lg font-bold"
+				/>
+			</div>
+			<button
+				className="flex self-center items-center justify-between space-x-2 py-1 px-3 rounded-full border-[0.8px] border-[#8ED0FF3A] bg-[#0077D64A] hover:brightness-110"
+				onClick={share}
+			>
+				Share
+			</button>
+			<div className="relative self-center group cursor-pointer">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#fff" d="m13.683 10.08.63.407zM9.25 9a.75.75 0 0 0 1.5 0zm2 4.5a.75.75 0 0 0 1.5 0zm1.5 2.5a.75.75 0 0 0-1.5 0zm-1.5 1a.75.75 0 0 0 1.5 0zm10-5A9.25 9.25 0 0 1 12 21.25v1.5c5.937 0 10.75-4.813 10.75-10.75zM12 21.25A9.25 9.25 0 0 1 2.75 12h-1.5c0 5.937 4.813 10.75 10.75 10.75zM2.75 12A9.25 9.25 0 0 1 12 2.75v-1.5C6.063 1.25 1.25 6.063 1.25 12zM12 2.75A9.25 9.25 0 0 1 21.25 12h1.5c0-5.937-4.813-10.75-10.75-10.75zM13.25 9c0 .25-.073.48-.198.675l1.262.812A2.74 2.74 0 0 0 14.75 9zm-2.5 0c0-.69.56-1.25 1.25-1.25v-1.5A2.75 2.75 0 0 0 9.25 9zM12 7.75c.69 0 1.25.56 1.25 1.25h1.5A2.75 2.75 0 0 0 12 6.25zM11.25 13v.5h1.5V13zm1.802-3.325a8 8 0 0 1-.468.628c-.178.22-.386.473-.573.73-.369.507-.761 1.168-.761 1.967h1.5c0-.305.15-.64.474-1.084.159-.219.334-.43.528-.672.187-.232.389-.489.562-.757zM11.25 16v1h1.5v-1z"/></svg>
+				<div className="transition-opacity pointer-events-none group-hover:pointer-events-auto opacity-0 group-hover:opacity-100 bg-[#191f1f] p-2 absolute top-full right-0 text-[#fff] w-48 sm:w-56 text-sm leading-4 rounded-lg z-[10]">
+					If people buy using your referral code, both you and the purchaser get bonus tokens.
+				</div>
+			</div>
+		</div>
+	)
+}
+
+let loaded = false
+
+const CodeInputs = () => {
+	const projectData = useContext(ApiContext)
+	const userData = useStore(projectData.$userState)
+	const [ defaultBonusCode, setDefaultBonusCode ] = useState("")
+	const [ defaultReferralCode, setDefaultReferralCode ] = useState("")
+	const [ codeInputRef, setCodeInputRef ] = useState(null)
+
+	useEffect(() => {
+		const url = new URL(window.location.href)
+		const referralProject = url.searchParams.get("project")
+		if (!referralProject || referralProject !== projectData.project) return
+		const bonusCode = url.searchParams.get("bonus_code")
+		if (bonusCode) setDefaultBonusCode(bonusCode)
+		const referralCode = url.searchParams.get("referral_code")
+		if (referralCode) setDefaultReferralCode(referralCode)
+
+		const timeout = setTimeout(() => {
+			if ((bonusCode || referralCode) && !loaded) {
+				const el = codeInputRef
+				el?.scrollIntoView({behavior: "smooth", block: "center"})
+			}
+			loaded = true
+		}, 500)
+		return () => clearTimeout(timeout)
+	}, [codeInputRef])
+
+	return (
+		<div ref={setCodeInputRef} className="flex gap-3">
+			<CodeInput
+				label="Bonus Code"
+				onApply={(code) => userApplyBonusCode(projectData.$userState, code, {noToast: true})}
+				onReset={() => resetUserBonusCode(projectData.$userState)}
+				applied={userData.appliedBonusCode}
+				appliedText={`Applied (+${userData.appliedBonusCode?.percentage.toFixed(0)}%)`}
+				defaultValue={defaultBonusCode}
+			/>
+			<CodeInput
+				label="Referral Code"
+				onApply={(code) => userUpdateReferralCode(projectData.$userState, code, {noToast: true})}
+				onReset={() => {
+					userResetReferralCode(projectData.$userState)
+				}}
+				applied={!!userData.user?.referred_by}
+				defaultValue={defaultReferralCode}
+			/>
+		</div>
+	)
+}
+
+/**
+ * @param {object} props
+ * @param {string} props.label
+ * @param {boolean} props.applied
+ * @param {string} [props.appliedText]
+ * @param {string} [props.defaultValue]
+ * @param {(code: string) => Promise<unknown} props.onApply
+ * @param {() => unknown} props.onReset
+ * @returns 
+ */
+const CodeInput = ({ label, applied, defaultValue, appliedText, onApply, onReset }) => {
+	const [ code, setCode ] = useState(defaultValue ?? "")
+	const [ applying, setApplying ] = useState(false)
+
+	useEffect(() => {
+		if (!code) setCode(defaultValue)
+	}, [defaultValue])
+
+	const apply = () => {
+		if (!code) return toast.error("No code provided")
+		if (applying) return
+		setApplying(true)
+		toast.promise(onApply(code), {
+			loading: `Applying ${label.toLowerCase()}`,
+			error: (err) => api.getApiErrorMessage(err, `Error applying ${label.toLowerCase()}`),
+			success: `Successfully applied ${label.toLowerCase()}`
+		})
+			.finally(() => setApplying(false))
+	}
+
+	const hasDefault = !!defaultValue
+
+	return (
+		<div className="flex items-center flex-1 gap-1 h-10">
+			<div className="relative group cursor-pointer">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#000" d="m13.683 10.08.63.407zM9.25 9a.75.75 0 0 0 1.5 0zm2 4.5a.75.75 0 0 0 1.5 0zm1.5 2.5a.75.75 0 0 0-1.5 0zm-1.5 1a.75.75 0 0 0 1.5 0zm10-5A9.25 9.25 0 0 1 12 21.25v1.5c5.937 0 10.75-4.813 10.75-10.75zM12 21.25A9.25 9.25 0 0 1 2.75 12h-1.5c0 5.937 4.813 10.75 10.75 10.75zM2.75 12A9.25 9.25 0 0 1 12 2.75v-1.5C6.063 1.25 1.25 6.063 1.25 12zM12 2.75A9.25 9.25 0 0 1 21.25 12h1.5c0-5.937-4.813-10.75-10.75-10.75zM13.25 9c0 .25-.073.48-.198.675l1.262.812A2.74 2.74 0 0 0 14.75 9zm-2.5 0c0-.69.56-1.25 1.25-1.25v-1.5A2.75 2.75 0 0 0 9.25 9zM12 7.75c.69 0 1.25.56 1.25 1.25h1.5A2.75 2.75 0 0 0 12 6.25zM11.25 13v.5h1.5V13zm1.802-3.325a8 8 0 0 1-.468.628c-.178.22-.386.473-.573.73-.369.507-.761 1.168-.761 1.967h1.5c0-.305.15-.64.474-1.084.159-.219.334-.43.528-.672.187-.232.389-.489.562-.757zM11.25 16v1h1.5v-1z"/></svg>
+				<div className="transition-opacity pointer-events-none group-hover:pointer-events-auto opacity-0 group-hover:opacity-100 bg-[#191f1f] p-2 absolute top-full -left-4 md:left-0 text-[#fff] w-40 md:w-56 text-sm leading-4 rounded-lg">
+					To successfully apply the {label.toLowerCase()}, input the {label.toLowerCase()} you wish to use, click on the submit button and confirm the message with your wallet.
+				</div>
+			</div>
+			<div className="flex-1 gap-2 font-bold flex items-center self-stretch bg-[#00000078] rounded-lg text-[0.875rem]">
+				{applied ? (
+					<p className="flex-1 pl-2 text-[#30b047]">{appliedText ?? "Applied Code"}</p>
+				) : (
+					<input
+						className="bg-transparent self-stretch pl-2 w-0 flex-1 placeholder:text-[#ddd] text-[#fff] rounded-lg"
+						placeholder={label}
+						size={0}
+						value={code}
+						onInput={(e) => {
+							setCode(e.currentTarget.value)
+						}}
+					/>
+				)}
+				<button
+					className={clsx(
+						"text-[0.75rem] h-[1.75rem] min-w-[1.75rem] items-center justify-center flex-shrink-0 px-1.5 py-1.5 mr-1 bg-[#000] text-[#fff] flex self-center rounded-lg hover:bg-[#111] transition-colors",
+						{"animate-pulse": hasDefault}
+					)}
+					onClick={() => {
+						if (!applied) apply()
+						else onReset?.()
+					}}
+					style={{animationIterationCount: "4"}}
+				>
+					{!applied ? "Apply" : (
+						<svg className="w-[1em] h-[1rem] flex-shrink-0" strokeWidth="2" color="currentColor" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" aria-label="Reset" xmlns="http://www.w3.org/2000/svg"><path d="M23 4 23 10 17 10"></path><path d="M1 20 1 14 7 14"></path><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+					)}
+				</button>
+			</div>
+		</div>
+	)
 }

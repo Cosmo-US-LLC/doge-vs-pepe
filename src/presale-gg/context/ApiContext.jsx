@@ -7,6 +7,7 @@ import { $dogeUserState, $pepeUserState } from "../stores/user.store"
  * @property {import("nanostores").MapStore<import("../stores/api.store").ApiStateValue>} $apiState,
  * @property {import("nanostores").MapStore<import("../stores/user.store").UserStoreValue>} $userState,
  * @property {string} ApiContextValue.symbol
+ * @property {string} ApiContextValue.project
  */
 
 /** @type {ApiContextValue} */
@@ -14,6 +15,7 @@ const defaultState = {
 	$apiState: null,
 	$userState: null,
 	symbol: "",
+	project: ""
 }
 
 export const ApiContext = createContext(defaultState)
@@ -30,12 +32,14 @@ export const ApiContextWrapper = ({ project, children, symbol }) => {
 		doge: {
 			$apiState: $dogeApiState,
 			$userState: $dogeUserState,
-			symbol
+			symbol,
+			project
 		},
 		pepe: {
 			$apiState: $pepeApiState,
 			$userState: $pepeUserState,
-			symbol
+			symbol,
+			project
 		}
 	}
 

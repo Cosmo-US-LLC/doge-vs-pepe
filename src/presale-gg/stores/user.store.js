@@ -102,14 +102,16 @@ export const refetchUserStakeData = async ($store) => {
 /**
  * @param {import("nanostores").MapStore<UserStoreValue>} $store
  * @param {string} newCode 
+ * @param {object} [options]
+ * @param {boolean} [options.noToast]
  * @returns {Promise<void>}
  */
-export const userUpdateReferralCode = async ($store, newCode) => {
+export const userUpdateReferralCode = async ($store, newCode, options) => {
 	const { config } = await getConfig()
 	const { address, isConnected } = getAccount(config)
 	if (!address || !isConnected) throw "Please connect your wallet"
 	const { project } = $store.get()
-	const token = await getUserToken($store)
+	const token = await getUserToken($store, options)
 	await api.updateReferralCode(project, token.token, address, newCode)
 	const res = await api.getUser(project, address)
 	$store.setKey("user", res.data)
@@ -121,6 +123,7 @@ export const userUpdateReferralCode = async ($store, newCode) => {
  */
 export const userResetReferralCode = async ($store) => {
 	const oldUser = $store.get().user
+	console.log("OLD USER", oldUser, $store.get())
 	if (!oldUser) return
 	$store.setKey("user", {
 		...oldUser,
@@ -131,14 +134,16 @@ export const userResetReferralCode = async ($store) => {
 /**
  * @param {import("nanostores").MapStore<UserStoreValue>} $store
  * @param {string} code
+ * @param {object} [options]
+ * @param {boolean} [options.noToast]
  * @returns {Promise<void>}
 */
-export const userApplyBonusCode = async ($store, code) => {
+export const userApplyBonusCode = async ($store, code, options) => {
 	const { config } = await getConfig()
 	const { address, isConnected } = getAccount(config)
 	if (!address || !isConnected) throw "Please connect your wallet"
 	const { project } = $store.get()
-	const token = await getUserToken($store)
+	const token = await getUserToken($store, options)
 	const res = await api.applyBonusCode(project, address, code, token.token)
 	$store.setKey("appliedBonusCode", res.data)
 }
