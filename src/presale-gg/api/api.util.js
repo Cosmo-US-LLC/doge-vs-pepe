@@ -119,10 +119,9 @@ export const verifySiweMessage = (project, address, message, signature) => {
  */
 
 /**
- * @param {string} project
  * @returns {UtmArgs}
  */
-export const getUtmArgs = (project) => {
+export const getUtmArgs = () => {
 	const url = new URL(location.href)
 	return {
 		referrer: document.referrer || undefined,

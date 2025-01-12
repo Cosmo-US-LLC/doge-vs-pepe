@@ -263,9 +263,10 @@ const ShareLabel = () => {
 	const projectData = useContext(ApiContext)
 	const userData = useStore(projectData.$userState)
 
+	const fullCode = `${projectData.project.toUpperCase()}-${userData.user?.referral_code}`
 	const share = () => {
 		const text = `Use my referral code for bonus tokens on ${projectData.project.toUpperCase()}`
-		const url = `${window.location.origin}?referral_code=${userData.user.referral_code}&project=${projectData.project}`
+		const url = `${window.location.origin}?referral_code=${fullCode}`
 		try {
 			navigator.share({
 				text,
@@ -282,7 +283,7 @@ const ShareLabel = () => {
 				<p className="text-sm leading-3">You Referral Code</p>
 				<input
 					readOnly
-					value={userData.user?.referral_code ?? ""}
+					value={fullCode ?? ""}
 					size={0}
 					className=" p-0 bg-transparent rounded-lg text-lg font-bold"
 				/>
@@ -314,12 +315,13 @@ const CodeInputs = () => {
 
 	useEffect(() => {
 		const url = new URL(window.location.href)
-		const referralProject = url.searchParams.get("project")
-		if (!referralProject || referralProject !== projectData.project) return
 		const bonusCode = url.searchParams.get("bonus_code")
 		if (bonusCode) setDefaultBonusCode(bonusCode)
 		const referralCode = url.searchParams.get("referral_code")
-		if (referralCode) setDefaultReferralCode(referralCode)
+		const projectPrefix = projectData.project.toUpperCase() + "-"
+		if (referralCode && referralCode.startsWith(projectPrefix)) {
+			setDefaultReferralCode(referralCode)
+		} else if (!bonusCode) return
 
 		const timeout = setTimeout(() => {
 			if ((bonusCode || referralCode) && !loaded) {
@@ -343,7 +345,16 @@ const CodeInputs = () => {
 			/>
 			<CodeInput
 				label="Referral Code"
-				onApply={(code) => userUpdateReferralCode(projectData.$userState, code, {noToast: true})}
+				errorGetter={(fullCode) => {
+					const projectPrefix = projectData.project.toUpperCase() + "-"
+					if (!fullCode.startsWith(projectPrefix)) return `Invalid code, must start with ${projectPrefix}`
+					return null
+				}}
+				onApply={async (fullCode) => {
+					const projectPrefix = projectData.project.toUpperCase() + "-"
+					const code = fullCode.split(projectPrefix)[1] ?? ""
+					await userUpdateReferralCode(projectData.$userState, code, {noToast: true})
+				}}
 				onReset={() => {
 					userResetReferralCode(projectData.$userState)
 				}}
@@ -362,9 +373,10 @@ const CodeInputs = () => {
  * @param {string} [props.defaultValue]
  * @param {(code: string) => Promise<unknown} props.onApply
  * @param {() => unknown} props.onReset
+ * @param {(code) => string | null} [props.errorGetter]
  * @returns 
  */
-const CodeInput = ({ label, applied, defaultValue, appliedText, onApply, onReset }) => {
+const CodeInput = ({ label, applied, defaultValue, appliedText, onApply, onReset, errorGetter }) => {
 	const [ code, setCode ] = useState(defaultValue ?? "")
 	const [ applying, setApplying ] = useState(false)
 
@@ -374,6 +386,8 @@ const CodeInput = ({ label, applied, defaultValue, appliedText, onApply, onReset
 
 	const apply = () => {
 		if (!code) return toast.error("No code provided")
+		const error = errorGetter(code)
+		if (error) return toast.error(error)
 		if (applying) return
 		setApplying(true)
 		toast.promise(onApply(code), {
