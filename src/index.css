@@ -12,8 +12,13 @@ code {
 
 }
 .font-HiJack{
-  font-family: 'Hi Jack', sans-serif;
-                                                
+  font-family: 'Hi Jack', sans-serif;                                           
+}
+.font-Lato{
+  font-family: 'Lato', sans-serif;                                           
+}
+.font-Inter{
+  font-family: 'Lato', sans-serif;                                           
 }
 
 .bgmainvip{
@@ -54,7 +59,8 @@ code {
 }
 
 .bgheromobsec {
-  background-image: url(./assets/herosec/mobbg.png);
+  /* background-image: url(./assets/herosec/mobbg.png); */
+  background-image: url(./assets/Mobile/hero-bg-2.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -74,6 +80,26 @@ code {
   background-repeat: no-repeat;
 }
 
+.bgwltsecmobUp {
+  background-image: url(./assets/Mobile/wallet-1.png);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bgwltsecmobDn {
+  background-image: url(./assets/Mobile/walled-2.png);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ticketBgMob {
+  background-image: url(./assets/Mobile/ticket-bg.png);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .bgeversec {
   background-image: url(./assets/FirstEver/first-ever-bg.png);
   background-position: center;
@@ -83,7 +109,15 @@ code {
 }
 
 .bgeversecmob {
-  background-image: url(./assets/FirstEver/first-ever-bg-mob.webp);
+  background-image: url(./assets/Mobile/century-ring.png);
+  /* background-image: url(./assets/FirstEver/first-ever-bg-mob.webp); */
+  background-position: center; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bgRulesmob {
+  background-image: url(./assets/Mobile/rules-bg.png);
+  /* background-image: url(./assets/FirstEver/first-ever-bg-mob.webp); */
   background-position: center; 
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -304,4 +338,13 @@ code {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   z-index: -1;
+}
+
+.text-stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.text-stroke-2 {
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: black;
 }
