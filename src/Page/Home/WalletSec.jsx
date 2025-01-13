@@ -192,7 +192,7 @@ function WalletSec() {
             </div>
             <div className="space-y-[8px]">
               <h3 className="text-[38.258px] font-[700] text-center leading-[88%] text-[#00]">
-                Buy $DOPE
+                Buy $DOGE
               </h3>
               <h5 className="text-[#000] leading-[133.333%] text-[18.364px] font-[700] text-center">
                 1 GG = $0.0005
@@ -352,7 +352,7 @@ function WalletSec() {
             </div>
             <div className="space-y-[8px]">
               <h3 className="text-[38.258px] font-[700] text-center leading-[88%] text-[#00]">
-                Buy $PEGE
+                Buy $PEPE
               </h3>
               <h5 className="text-[#000] leading-[133.333%] text-[18.364px] font-[700] text-center">
                 1 GG = $0.0005

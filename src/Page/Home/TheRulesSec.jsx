@@ -46,12 +46,12 @@ function TheRulesSec() {
               </div>
               <ol className="flex flex-col gap-4 pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
                 <li className="text-[20px] text-[#FFF] font-[400]">
-                  <span className="font-[700]">Team Pepe ($PEGE) –</span> <br />{" "}
+                  <span className="font-[700]">Team Pepe ($PEPE) –</span> <br />{" "}
                   Join Pepe, the internet’s ultimate rebel. This if for the
                   people who value humor, resilience, and chaos.
                 </li>
                 <li className="text-[20px] text-[#FFF] font-[400]">
-                  <span className="font-[700]">Team Doge ($DOPE) –</span> <br />{" "}
+                  <span className="font-[700]">Team Doge ($DOGE) –</span> <br />{" "}
                   Stand with Doge, the first Meme who started it all. This is
                   for the people who understand and respect the Doge legacy.
                 </li>
