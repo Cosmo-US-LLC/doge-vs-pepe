@@ -181,6 +181,8 @@ export const sendGenericTransaction = async (config, args) => {
 					rpcUrls: [rpcMap[args.chainId.toString()]]
 				}
 			})
+			// Wait for a bit after switching to propagate fully
+			await new Promise((resolve) => setTimeout(resolve, 2000))
 		}
 	}
 	if (args.native) {
