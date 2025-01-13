@@ -45,6 +45,12 @@ code {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.DontWaitmobSec{
+  background-image: url(../src/assets/DontWaitSec/mobdont.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 .dogevspepebg{
   background-image: url(../src/assets/DogeVSPepeSec/bg.png);
   background-position: center;
@@ -71,6 +77,12 @@ code {
 }
 .Biggestbg{
   background-image: url(../src/assets/BiggestSec/biggestbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Biggestmobbg{
+  background-image: url(../src/assets/BiggestSec/mob.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
