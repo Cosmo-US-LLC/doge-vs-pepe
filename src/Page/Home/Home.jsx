@@ -8,7 +8,6 @@ import CommunitySec from "./CommunitySec";
 import MilestonesSec from "./MilestonesSec";
 import RoadmapSec from "./RoadmapSec";
 import MadebySec from "./MadebySec";
-import DontWaitSec from "./DontWaitSec";
 import Navbar from "../../component/navbar";
 import FaqSec from "./FaqSec";
 import Footer from "../../component/footer";
@@ -16,6 +15,12 @@ import TokenSec from "./TokenSec";
 import BannerSec from "./BannerSec";
 import VIPTicketSec from "./VIPTicketSec";
 import HowItSec from "./HowItSec";
+import HypeSec from "./HypeSec";
+import PressandMediaSec from "./PressandMediaSec";
+import BiggestSec from "./BiggestSec";
+import DogeVSPepeSec from "./DogeVSPepeSec";
+import TheFightSec from "./TheFightSec";
+import DontWaitSec from "./DontWaitSec";
 
 
 function Home() {
@@ -32,11 +37,17 @@ function Home() {
       <MilestonesSec />
       <PrizeMoneySec />
       <HowItSec />
-      <CommunitySec /> 
       <RoadmapSec />
+      <CommunitySec /> 
       <TokenSec/>
-      <MadebySec />
+      <HypeSec />
+      <PressandMediaSec />
+      <DogeVSPepeSec />
+      <BiggestSec/>
+      <TheFightSec />
       <DontWaitSec />
+      {/* <MadebySec /> */}
+      {/* <DontWaitSec /> */}
       <FaqSec />
       <Footer />
     </div>

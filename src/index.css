@@ -27,6 +27,84 @@ code {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.Communitybg{
+  background-image: url(../src/assets/CommunitySec/Communitybg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Tokenomicsbg{
+  background-image: url(../src/assets/tokenomics/tokobg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.DontWaitSec{
+  background-image: url(../src/assets/DontWaitSec/dontbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.dogevspepebg{
+  background-image: url(../src/assets/DogeVSPepeSec/bg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.crypbg{
+  background-image: url(../src/assets/DogeVSPepeSec/card1.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.crypbg2{
+  background-image: url(../src/assets/DogeVSPepeSec/card2.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.crypbg3{
+  background-image: url(../src/assets/DogeVSPepeSec/card3.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Biggestbg{
+  background-image: url(../src/assets/BiggestSec/biggestbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Biggestbgcard{
+  background-image: url(../src/assets/BiggestSec/cardbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Biggestcardgr{
+  background-image: url(../src/assets/BiggestSec/cardgr.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Hypebg{
+  background-image: url(../src/assets/Hype/hypebg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Pressbg{
+  background-image: url(../src/assets/PressSec/pressbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bgroadmap{
+  background-image: url(../src/assets/RoadmapSec/roadbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 .bgmainvipcard{
   background-image: url(../src/assets/Vipticketsec/cardbg.png);
   background-position: center;
@@ -292,6 +370,27 @@ code {
   border-radius: 15px;
   padding: 1px;
   background: linear-gradient(16deg, #4EB52A -53%, transparent 46%, #4EB52A 215%, transparent 329%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.Pressborder {
+  position: relative;
+  width: 100% !important;
+  box-sizing: border-box;
+  z-index: 1;
+  border: none;
+}
+
+.Pressborder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 1px;
+  background: linear-gradient(16deg, #fac000d8 -40%, transparent 46%, #4EB52A 200%, transparent 329%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
