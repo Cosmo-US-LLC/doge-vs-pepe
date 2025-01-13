@@ -57,9 +57,9 @@ const FAQ = () => {
 
   return (
     <div className="relative" id="faq">
-      <div className="w-[100%] pt-4 mx-auto pb-6 px-4">
+      <div className="w-[100%] pt-12 mx-auto pb-6 px-4">
         <div className="mb-4 text-center">
-          <h2 className="text-[#fff] uppercase text-[26px] font-[700] leading-[142.857%] pb-2">
+          <h2 className="text-[#fff] uppercase text-[22px] font-HiJack font-[400] leading-[142.857%] pb-2">
             Frequently Asked Questions
           </h2>
         </div>

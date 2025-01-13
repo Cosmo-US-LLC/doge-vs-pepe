@@ -1,5 +1,5 @@
 import React from "react"
-import Navbar from "../../component/navbar";
+import Navbar from "../../component/mobile/navbar";
 import MobileHeroSection from "./MobileHeroSection";
 import HeroWalletSec from "./HeroWalletSec";
 import MobileFirstEverSec from "./MobileFirstEverSec";
@@ -9,10 +9,14 @@ import Community from "./Community";
 import Milestones from "./Milestones";
 import Roadmap from "./Roadmap";
 import Tokenomics from "./Tokenomics";
-import MadeBy from "./MadeBy";
+import TheFightSecMob from "./TheFightSecMob";
 import DoNotWait from "./DoNotWait";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
+import MobileTicket from "./MobileTicket";
+import BiggestMobSec from "./BiggestMobSec";
+import DogeVSPepeMobSec from "./DogeVSPepeMobSec";
+
 
 function MobileHome() {
   return (
@@ -21,6 +25,7 @@ function MobileHome() {
         <Navbar />
         <MobileHeroSection />
         <HeroWalletSec />
+        <MobileTicket />
         <MobileFirstEverSec />
         <TheRules />
         <PrizeMoney />
@@ -28,7 +33,10 @@ function MobileHome() {
         <Milestones />
         <Roadmap />
         <Tokenomics />
-        <MadeBy />
+        <DogeVSPepeMobSec />
+        <BiggestMobSec />
+        {/* <MadeBy /> */}
+        <TheFightSecMob />
         <DoNotWait />
         <FAQ />
         <Footer />

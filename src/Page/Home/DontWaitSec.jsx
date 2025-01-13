@@ -1,9 +1,4 @@
 import React from "react";
-import howitimg from "../../assets/HowItSec/how-it-img.png";
-import telicon1 from "../../assets/HowItSec/logos_telegram.svg";
-import telicon2 from "../../assets/HowItSec/logos_telegram (1).svg";
-import vecleft from "../../assets/HowItSec/P (43).png"
-import vecright from "../../assets/HowItSec/P (43) (1).png"
 function DontWaitSec() {
   return (
     <div className="w-[100%] s DontWaitSec overflow-hidden pt-[200px] pb-[100px]">
