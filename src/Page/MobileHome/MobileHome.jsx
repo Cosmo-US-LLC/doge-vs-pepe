@@ -1,5 +1,5 @@
 import React from "react"
-import Navbar from "../../component/navbar";
+import Navbar from "../../component/mobile/navbar";
 import MobileHeroSection from "./MobileHeroSection";
 import HeroWalletSec from "./HeroWalletSec";
 import MobileFirstEverSec from "./MobileFirstEverSec";
@@ -13,6 +13,7 @@ import MadeBy from "./MadeBy";
 import DoNotWait from "./DoNotWait";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
+import MobileTicket from "./MobileTicket";
 
 function MobileHome() {
   return (
@@ -21,6 +22,7 @@ function MobileHome() {
         <Navbar />
         <MobileHeroSection />
         <HeroWalletSec />
+        <MobileTicket />
         <MobileFirstEverSec />
         <TheRules />
         <PrizeMoney />

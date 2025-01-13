@@ -6,6 +6,13 @@ import rule_4 from "../../assets/Mobile/rule_4.webp";
 import rule_5 from "../../assets/Mobile/rule_5.webp";
 import rule_6 from "../../assets/Mobile/rule_6.webp";
 import rule_7 from "../../assets/Mobile/rule_7.webp";
+import rule1 from "../../assets/Mobile/rule-1.png";
+import rule2 from "../../assets/Mobile/rule-2.png";
+import rule3 from "../../assets/Mobile/rule-3.png";
+import rule4 from "../../assets/Mobile/rule-4.png";
+import rule5 from "../../assets/Mobile/rule-5.png";
+import rule6 from "../../assets/Mobile/rule-6.png";
+import rule7 from "../../assets/Mobile/rule-7.png";
 import side_dog from "../../assets/Mobile/doge-mobile.png";
 import side_frog from "../../assets/Mobile/pepe-mobile.png";
 import telegram_icon from "../../assets/Mobile/telegram_icon.svg";
@@ -287,7 +294,11 @@ const Rule7 = () => {
 
 function TheRules() {
   return (
-    <div id="rules">
+    <div id="rules" className="bgRulesmob border-t border-transparent flex flex-col items-center px-4 pt-4">
+      <p className="text-[22px] leading-[31px] text-[white] mt-4 mb-4 font-HiJack">
+        THE 7 RULES
+      </p>
+      <RuleCard img={rule1} title="1. PICK YOUR CHAMPION" body="" />
       <Rule1 />
       <Rule2 />
       <Rule3 />
@@ -295,6 +306,45 @@ function TheRules() {
       <Rule5 />
       <Rule6 />
       <Rule7 />
+    </div>
+  );
+}
+
+function RuleCard({img, title, body}) {
+  return (
+    <div
+      className="relative flex flex-col items-center w-full rounded-[10px]"
+    >
+      <div className="flex flex-col items-center justify-center bg-[#181818] rounded-[10px] w-full px-4 py-1">
+        <img src={img} className="h-[135px] w-full mt-2 object-contain" alt="rule_1" />
+        <div className="flex flex-col items-start justify-center w-[300px] mt-4">
+          <p className="text-[22px] leading-[20px] text-[white] font-HiJack">
+            {title}
+          </p>
+          <ol className="flex flex-col gap-4 pl-6 mt-4 text-base leading-relaxed text-gray-200 list-disc">
+            <li className="text-[#FFF]">
+              <span className="text-[16px] text-[#FFF] font-[700]">
+                Team Pepe ($PEGE) –
+              </span>{" "}
+              <br />{" "}
+              <p className="text-[16px] text-[#FFF] font-[400]">
+                Join Pepe, the internet’s ultimate rebel. This if for the people
+                who value humor, resilience, and chaos.
+              </p>
+            </li>
+            <li className="text-[#FFF]">
+              <span className="text-[16px] text-[#FFF] font-[700]">
+                Team Doge ($DOPE) –
+              </span>{" "}
+              <br />{" "}
+              <p className="text-[16px] text-[#FFF] font-[400]">
+                Stand with Doge, the first Meme who started it all. This is for
+                the people who understand and respect the Doge legacy.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
     </div>
   );
 }
