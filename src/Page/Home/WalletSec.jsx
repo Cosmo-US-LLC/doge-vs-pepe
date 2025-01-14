@@ -23,7 +23,7 @@ function WalletSec() {
       className="relative w-[100%] bgwltsec pt-[107px] pb-[128px]"
       id="how-to-buy"
     >
-      {/* <div className="h-[100%] bg-[#000000cf] flex justify-center items-center z-[60] absolute w-[100%] top-0 ">
+      <div className="h-[100%] bg-[#000000cf] flex justify-center items-center z-[60] absolute w-[100%] top-0 ">
         <div className="max-w-[700px] mx-auto space-y-[5px]">
           <h3
             className="text-[#FFFCFC] text-[61.623px] text-center font-[400] uppercase font-HiJack"
@@ -75,7 +75,7 @@ function WalletSec() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <img
         src={shodow}
         alt="shodow"

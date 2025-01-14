@@ -42,6 +42,7 @@ export const wagmiAdapter = new WagmiAdapter({
 	},
 	connectors,
 	networks: [mainnet, bsc],
+	chains: [mainnet, bsc],
 	projectId: WALLET_CONNECT_PROJECT_ID,
 })
 
