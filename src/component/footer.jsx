@@ -104,17 +104,17 @@ function Footer() {
               <img
                 src={socialicn1}
                 alt="socialicn1"
-                className="transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80"
+                className="transition-all w-[30.137px] h-[30.137px] duration-300 cursor-pointer hover:scale-110 hover:opacity-80"
               />
               <img
                 src={socialicn2}
                 alt="socialicn2"
-                className="transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80"
+                className="transition-all w-[30.137px] h-[30.137px] duration-300 cursor-pointer hover:scale-110 hover:opacity-80"
               />
               <img
                 src={socialicn3}
                 alt="socialicn3"
-                className="transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80 "
+                className="transition-all w-[30.137px] h-[30.137px] duration-300 cursor-pointer hover:scale-110 hover:opacity-80 "
               />
             </div>
           </div>
