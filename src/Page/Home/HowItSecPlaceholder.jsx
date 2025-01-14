@@ -34,10 +34,10 @@ function HowItSecPlaceholder() {
             MOON, the city’s hottest nightclub. Things escalated quickly,
             turning into a big fight with serious consequences.
           </p>
-          <div className="flex justify-center gradient-box-black-2 rounded-[48px] w-fit mx-auto p-3 px-5">
+          <div className="flex justify-center gradient-box-black-3 lg:gradient-box-black-2 rounded-[48px] w-fit mx-auto p-1 px-2 lg:p-3 lg:px-5">
             <img src={howitimg2} alt="" className="h-[156px] lg:h-[355px] 2xl:h-[449px] w-auto" />
           </div>
-          <div className="flex justify-center max-lg:flex-col pt-2 2xl:pt-3  pb-20 lg:pb-8 2xl:pb-10 gap-y-2 gap-x-8">
+          <div className="flex justify-center max-lg:flex-col pt-2 2xl:pt-3  pb-40 lg:pb-8 2xl:pb-10 gap-y-2 gap-x-8">
             <h4 className="hidden lg:block text-[#fff] leading-[114%] font-HiJack text-[21px] lg:text-[37px] 2xl:text-[50px] text-center">
               MORE INFO
               <br />

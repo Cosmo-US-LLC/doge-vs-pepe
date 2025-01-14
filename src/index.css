@@ -479,3 +479,9 @@ code {
               border-radius: 48px;
   border: 1px solid transparent;
 }
+.gradient-box-black-3 {
+  background: linear-gradient(black, black) padding-box,
+              linear-gradient(45deg, #FFBF01, #004df400, #01FE37) border-box;
+              border-radius: 18px;
+  border: 1px solid transparent;
+}
