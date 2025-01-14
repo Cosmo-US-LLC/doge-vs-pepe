@@ -117,6 +117,17 @@ function Footer() {
                 className="transition-all w-[30.137px] h-[30.137px] duration-300 cursor-pointer hover:scale-110 hover:opacity-80 "
               />
             </div>
+            <div className="w-full">
+              <h4 className="text-[18px] text-[#fff] font-[400] leading-[119.856%] text-left mb-1">
+                E-mail
+              </h4>
+              <a 
+                href="mailto:Support@dogevspepe.io"
+                className="cursor-pointer text-[18px] text-[#fff] font-[400] leading-[119.856%] hover:opacity-80 text-left"
+              >
+                Support@dogevspepe.io
+              </a>
+            </div>
           </div>
         </div>
         <div className="max-w-[1031px] w-[100%] mx-auto space-y-[27px]">
