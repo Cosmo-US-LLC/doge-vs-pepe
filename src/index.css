@@ -466,3 +466,16 @@ code {
   -webkit-text-stroke-width: 1.8px;
   -webkit-text-stroke-color: black;
 }
+
+.gradient-box-black {
+  background: linear-gradient(black, black) padding-box,
+              linear-gradient(65deg, #FFBF01, #004df400 67%, #01FE37) border-box;
+              border-radius: 18px;
+  border: 1px solid transparent;
+}
+.gradient-box-black-2 {
+  background: linear-gradient(black, black) padding-box,
+              linear-gradient(45deg, #FFBF01, #004df400, #01FE37) border-box;
+              border-radius: 48px;
+  border: 1px solid transparent;
+}

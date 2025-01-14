@@ -1,69 +1,70 @@
 import React from "react";
 import Logo from "../../assets/navbar/navLogo.svg";
 import howitimg from "../../assets/HowItSec/how-it-img.png";
+import howitimg2 from "../../assets/HowItSec/newsImage.png";
 import telicon1 from "../../assets/HowItSec/logos_telegram.svg";
 import telicon2 from "../../assets/HowItSec/logos_telegram (1).svg";
+import pepePlace from "../../assets/HowItSec/pepePlace.png";
+import dogePlace from "../../assets/HowItSec/dogePlace.png";
+import topLogo from "../../assets/HowItSec/topLogo.png";
 import vecleft from "../../assets/HowItSec/P (43).png";
 import vecright from "../../assets/HowItSec/P (43) (1).png";
 function HowItSecPlaceholder() {
   return (
-    <div className="w-[100%] h-[100vh] bg-black overflow-hidden pt-[60px] pb-[80px]">
-      <div className="max-w-[992px] px-[22px] py-[10px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative min-h-[500px] bg-[#01010182]">
-        <div className="space-y-[20px]">
+    <div className="w-[100%] h-[100vh] bg-black overflow-hidden max-2xl:pt-[60px] pt-[30px] pb-[80px]">
+      <div className="max-w-[992px] 2xl:max-w-[1440px] px-[22px] pb-[10px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative min-h-[500px] bg-[#01010182]">
           <img
-            className="w-[340px] h-auto mx-auto cursor-pointer"
-            src={Logo}
+            className="w-[328px] 2xl:w-[340px] h-auto mx-auto cursor-pointer"
+            src={topLogo}
             alt="Logo"
             onClick={(e) => handleScroll(e, "what-is", 90)}
           />
-          <p className="text-[#fff] leading-[114%] font-[400] text-[20px] text-center">
+        <div className="space-y-[20px] gradient-box-black">
+          <p className="text-[#fff] leading-[114%] font-[400] text-[20px] 2xl:text-[30px] text-center">
             Chapter I
           </p>
-          <h3 className="text-[#FFFCFC] font-HiJack text-center text-[50px] leading-[104.377%] font-[400]">
+          <h3 className="text-[#FFFCFC] font-HiJack text-center text-[37px] 2xl:text-[50px] leading-[80.377%] font-[400]">
             How It All Began
           </h3>
-          <p className="max-w-[535px] w-[100%] font-[400] mx-auto text-[#fff] leading-[114%] text-[20px] text-center">
-            Doge has been the undefeated meme heavyweight champion for years.
-            But now, Pepe, the rising star in the meme world, has made it to the
-            top 3 and is ready to challenge him. These two have a long history
-            and an Intense rivalry.
+          <p className="w-[100%] font-[400] px-2 mx-auto text-[#fff] leading-[114%] text-[20px] 2xl:text-[30px] text-center">
+            The rivalry started when Pepe, the rising star, climbed to #3 among
+            all meme heavyweight champions and called out Doge, the undefeated
+            champion. Doge couldn’t let this slide. After months of
+            back-of-forth insults on social media, they ran into each other at
+            MOON, the city’s hottest nightclub. Things escalated quickly,
+            turning into a big fight with serious consequences.
           </p>
-          <div className="flex justify-center">
-            <img src={howitimg} alt="" />
+          <div className="flex justify-center gradient-box-black-2 rounded-[48px] w-fit mx-auto p-3 px-5">
+            <img src={howitimg2} alt="" className="h-[355px] 2xl:h-[449px] w-auto" />
           </div>
-          <div className="space-y-[23px]">
-            <h4 className="text-[#fff] leading-[114%] font-[400] text-[20px] text-center">
-              Follow us on social media to keep up with the story!
+          <div className="flex justify-center pt-2 2xl:pt-3 pb-8 2xl:pb-10 gap-8">
+            <h4 className="text-[#fff] leading-[114%] font-HiJack text-[37px] 2xl:text-[50px] text-center">
+              MORE INFO
+              <br />
+              COMING SOON
             </h4>
-            <div className="flex justify-center space-x-[4rem]">
-              <div className="flex justify-center items-center space-x-2">
-                <p className="text-[18px] font-[600] text-[#fff] uppercase">
-                  {" "}
-                  Join X
-                </p>
-                <img className="cursor-pointer" src={telicon1} alt="" />
-              </div>
-              <div className="flex justify-center items-center space-x-2">
-                <p className="text-[18px] font-[600] text-[#fff] uppercase">
-                  {" "}
-                  Join Telegram
-                </p>
-                <img className="cursor-pointer" src={telicon2} alt="" />
+            <div className="">
+              <p className="text-[22px] text-[#fff]">
+                Get updates on
+              </p>
+              <div className="flex justify-center items-center space-x-2 pt-1">
+                <img className="cursor-pointer w-[45px] h-[45px]" src={telicon1} alt="" />
+                <img className="cursor-pointer w-[45px] h-[45px]" src={telicon2} alt="" />
               </div>
             </div>
           </div>
         </div>
-        <img
-          src={vecleft}
-          className="absolute bottom-[-10%] left-[-32%]"
-          alt=""
-        />
-        <img
-          src={vecright}
-          className="absolute bottom-[-10%] right-[-35%]"
-          alt=""
-        />
       </div>
+      <img
+        src={dogePlace}
+        className="absolute bottom-0 left-0 h-[540px] 2xl:h-[736px]"
+        alt=""
+      />
+      <img
+        src={pepePlace}
+        className="absolute bottom-0 right-0 h-[552px] 2xl:h-[700px]"
+        alt=""
+      />
     </div>
   );
 }
