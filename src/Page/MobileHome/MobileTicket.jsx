@@ -28,7 +28,7 @@ function MobileTicket() {
                    from-[#FFBF01] to-[#01FE37] 
                    font-[700] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105"
       >
-        Join theWhitelist Now
+        Join the Whitelist Now
       </button>
     </div>
   );

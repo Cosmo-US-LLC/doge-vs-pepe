@@ -102,7 +102,7 @@ function WalletSec() {
       className="relative w-[100%] bgwltsec pt-[107px] pb-[128px]"
       id="how-to-buy"
     >
-      <div className="h-[100%] bg-[#000000cf] flex justify-center items-center z-[60] absolute w-[100%] top-0 ">
+      <div className="h-[100%] hidden bg-[#000000cf] flex justify-center items-center z-[-1] absolute w-[100%] top-0 ">
         <div className="max-w-[700px] mx-auto space-y-[5px]">
           <h3
             className="text-[#FFFCFC] text-[61.623px] text-center font-[400] uppercase font-HiJack"
@@ -158,14 +158,14 @@ function WalletSec() {
       <img
         src={shodow}
         alt="shodow"
-        className="absolute top-0 left-0 right-0 w-full"
+        className="absolute top-0 z-[1] left-0 right-0 w-full"
       />
       <img
         src={downShodow}
         alt="shodow"
         className="absolute bottom-0 left-0 right-0 w-full"
       />
-      <div className="max-w-[922px] w-[100%] mx-auto ">
+      <div className="max-w-[922px] w-[100%] mx-auto relative z-[9]">
         <div className="flex justify-between">
           <div className="min-h-[596.83px] max-w-[404.01px] bg-[#F2B60F] w-[100%] space-y-[14px]  px-[16px] pb-[26px] pt-[24px] rounded-[24px] border border-[#fff]">
             <div className="bg-[#00000040] flex justify-between p-1 rounded-[30px]">

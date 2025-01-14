@@ -3,7 +3,7 @@ import hypeimg1 from "../../assets/Hype/hypeimg (6).png";
 import hypeimg2 from "../../assets/Hype/hypeimg (5).png";
 import hypeimg3 from "../../assets/Hype/hypeimg (4).png";
 import hypeimg4 from "../../assets/Hype/hypeimg (3).png";
-import hypeimg5 from "../../assets/Hype/hypeimg (2).png";
+import hypeimg5 from "../../assets/Hype/hypmob.png";
 import hypeimg6 from "../../assets/Hype/hypeimg (1).png";
 
 function HypeMobSec() {
@@ -37,8 +37,8 @@ function HypeMobSec() {
           </div>
           <div className="">
             <div className="w-[100%] space-x-[1rem] flex justify-between">
-              <img className="w-[50%]" src={hypeimg5} alt="" />
-              <img className="w-[46%]" src={hypeimg6} alt="" />
+              <img className="w-[45%] rounded-[13px]" src={hypeimg5} alt="" />
+              <img className="w-[55%]" src={hypeimg6} alt="" />
             </div>
           </div>
         </div>

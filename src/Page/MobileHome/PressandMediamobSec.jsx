@@ -13,7 +13,7 @@ import awr1 from "../../assets/RoadmapSec/Vector (2).svg";
 
 function PressandMediamobSec() {
   return (
-    <div className=" w-[100%] pt-[60px] pb-[60px] Pressbg overflow-hidden">
+    <div className=" w-[100%] pt-[60px] pb-[60px] Pressbgmob overflow-hidden">
       <div className="relative max-w-[1139px] w-[100%] space-y-[50px] mx-auto ">
         <div className=" w-[100%]">
           <h3 className="text-[25px] text-center font-HiJack leading-[102.804%] font-[400] text-[#FFF] uppercase">
@@ -50,8 +50,8 @@ function PressandMediamobSec() {
                 <div
             className="bg-[#28649721] p-4 relative rounded-[21.168px]"
             style={{
-              backdropFilter: "blur(25.049999237060547px)",
-              background: "rgba(0, 0, 0, 0.47)",
+              backdropFilter: "blur(17.731342315673828px)",
+              background: "rgba(0, 0, 0, 0.48)",
               borderRadius: "21.168px",
             }}
           >
@@ -70,8 +70,8 @@ function PressandMediamobSec() {
                 <div
             className="bg-[#28649721] p-4 relative rounded-[21.168px]"
             style={{
-              backdropFilter: "blur(25.049999237060547px)",
-              background: "rgba(0, 0, 0, 0.47)",
+              backdropFilter: "blur(17.731342315673828px)",
+              background: "rgba(0, 0, 0, 0.48)",
               borderRadius: "21.168px",
             }}
           >
@@ -90,8 +90,8 @@ function PressandMediamobSec() {
                 <div
             className="bg-[#28649721] p-4 relative rounded-[21.168px]"
             style={{
-              backdropFilter: "blur(25.049999237060547px)",
-              background: "rgba(0, 0, 0, 0.47)",
+              backdropFilter: "blur(17.731342315673828px)",
+              background: "rgba(0, 0, 0, 0.48)",
               borderRadius: "21.168px",
             }}
           >

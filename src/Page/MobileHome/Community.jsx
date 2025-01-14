@@ -34,16 +34,16 @@ function CommunitySec() {
           <div
             className="bg-[#28649721] p-2 relative rounded-[21.168px]"
             style={{
-              backdropFilter: "blur(25.049999237060547px)",
+              backdropFilter: "blur(15.208927154541016px)",
               background: "rgba(0, 0, 0, 0.47)",
               borderRadius: "21.168px",
             }}
           >
-            <img
+            {/* <img
               src={vectcard1}
               className="absolute -left-[18%] top-[6%] z-[10]"
               alt=""
-            />
+            /> */}
             <div className="flex roadborder  relative max-w-[588px] space-x-[2rem]  w-[100%]  px-5 pt-5 pb-8 justify-between ">
               <div className="w-[38%] min-h-[110px] max-h-[110px]">
                 <img src={cardimg1} className="min-h-[110px] max-h-[110px] absolute left-8 top-8" alt="" />
@@ -87,16 +87,16 @@ function CommunitySec() {
           <div
             className="bg-[#28649721] p-2 relative rounded-[21.168px]"
             style={{
-              backdropFilter: "blur(25.049999237060547px)",
+              backdropFilter: "blur(15.208927154541016px)",
               background: "rgba(0, 0, 0, 0.47)",
               borderRadius: "21.168px",
             }}
           >
-            <img
+            {/* <img
               src={vectcard2}
               className="absolute -right-[40%] -top-[60%]"
               alt=""
-            />
+            /> */}
             <div className="flex card2border  max-w-[588px] space-x-[2rem]  w-[100%]  px-5 pt-5 pb-8 justify-between ">
               <div className="w-[38%] min-h-[110px] max-h-[110px]">
                 <img src={cardimg2} className="absolute min-h-[110px] max-h-[110px] left-8 top-8" alt="" />

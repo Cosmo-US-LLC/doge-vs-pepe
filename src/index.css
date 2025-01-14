@@ -118,6 +118,12 @@ code {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.Pressbgmob{
+  background-image: url(../src/assets/PressSec/pressbgmob.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 .bgroadmap{
   background-image: url(../src/assets/RoadmapSec/roadbg.png);
   background-position: center;
@@ -132,6 +138,12 @@ code {
 }
 .Mysterybg{
   background-image: url(../src/assets/MilestonesSec/bgmile.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Mysterymobbg{
+  background-image: url(../src/assets/MilestonesSec/bgmilemob.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
