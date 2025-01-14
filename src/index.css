@@ -472,6 +472,7 @@ code {
               linear-gradient(65deg, #FFBF01, #004df400 67%, #01FE37) border-box;
               border-radius: 18px;
   border: 1px solid transparent;
+  border-bottom: 0px;
 }
 .gradient-box-black-2 {
   background: linear-gradient(black, black) padding-box,
@@ -484,4 +485,20 @@ code {
               linear-gradient(45deg, #FFBF01, #004df400, #01FE37) border-box;
               border-radius: 18px;
   border: 1px solid transparent;
+}
+
+.leftManagedDoge {
+  right: 0px;
+}
+.rightManagedPepe {
+  right: 0px;
+}
+
+@media screen and (min-height: 600px) {
+  .leftManagedDoge {
+    right: -10px;
+  }
+  .rightManagedPepe {
+    right: -10px;
+  }
 }
