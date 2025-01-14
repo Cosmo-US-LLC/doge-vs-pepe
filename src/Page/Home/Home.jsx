@@ -21,23 +21,24 @@ import BiggestSec from "./BiggestSec";
 import DogeVSPepeSec from "./DogeVSPepeSec";
 import TheFightSec from "./TheFightSec";
 import DontWaitSec from "./DontWaitSec";
+import HowItSecPlaceholder from "./HowItSecPlaceholder";
 
 
 function Home() {
   return (
     <div className="bg-[black] w-[100%]">
     <div>
-      <Navbar />
-      <HeroSection />
+      {/* <Navbar /> */}
+      {/* <HeroSection />
       <BannerSec />
       <WalletSec />
       <VIPTicketSec />
       <FirstEverSec />
       <TheRulesSec />
       <MilestonesSec />
-      <PrizeMoneySec />
-      <HowItSec />
-      <RoadmapSec />
+      <PrizeMoneySec /> */}
+      <HowItSecPlaceholder />
+      {/* <RoadmapSec />
       <CommunitySec /> 
       <TokenSec/>
       <HypeSec />
@@ -45,11 +46,11 @@ function Home() {
       <DogeVSPepeSec />
       <BiggestSec/>
       <TheFightSec />
-      <DontWaitSec />
+      <DontWaitSec /> */}
       {/* <MadebySec /> */}
       {/* <DontWaitSec /> */}
-      <FaqSec />
-      <Footer />
+      {/* <FaqSec /> */}
+      {/* <Footer /> */}
     </div>
     </div>
   );
