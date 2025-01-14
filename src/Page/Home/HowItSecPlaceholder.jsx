@@ -11,7 +11,7 @@ import vecleft from "../../assets/HowItSec/P (43).png";
 import vecright from "../../assets/HowItSec/P (43) (1).png";
 function HowItSecPlaceholder() {
   return (
-    <div className="w-[100%] h-[100vh] bg-black overflow-hidden max-2xl:pt-[60px] pt-[30px] pb-[80px]">
+    <div className="w-[100%] min-h-screen bg-black max-2xl:pt-[60px] pt-[30px] pb-[80px]">
       <div className="max-w-[992px] 2xl:max-w-[1440px] px-[22px] pb-[10px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative min-h-[500px] bg-[#01010182]">
           <img
             className="w-[237px] lg:w-[328px] 2xl:w-[340px] h-auto mx-auto cursor-pointer"
