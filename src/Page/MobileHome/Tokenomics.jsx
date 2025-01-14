@@ -1,32 +1,62 @@
 import React from "react";
-import one_to_one from "../../assets/Mobile/one-to-one.webp";
+import dogePepeScale from "../../assets/tokenomics/imgrdmob.png";
+import verc1 from "../../assets/RoadmapSec/Ellipse 80 (3).png";
+import verc2 from "../../assets/RoadmapSec/Ellipse 81 (1).png";
 
-function Tokenomics() {
+function TokenmobSec() {
   return (
-    <div className="flex flex-col items-center bg-[black] mt-8" id="tokenomics">
-      <div className="flex flex-row items-center justify-between w-full px-4">
-        <div className="">
-          <p className="font-[700] text-[26px] text-[white] leading-[24px]">$DOPE</p>
-          <p className="font-[700] text-[26px] text-[white] leading-[24px] mb-2">TOKENOMICS</p>
-          <p className="font-[700] text-[18px] text-[white] leading-[20px]">TOTAL SUPPLY <br /> $888 MILLION</p>
-          <p className="font-[600] text-[16px] text-[white] leading-[20px]">Coin will be launched<br /> on  Solana Blockchain</p>
+    <div className="relative w-[100%] pt-[50px] Tokenomicsbg overflow-hidden" id="tokenomics">
+      <div className="w-[90%] mx-auto flex justify-between">
+        <div className="max-w-[479.306px] relative space-y-[10px] w-[100%]">
+          <h3
+          style={{
+            WebkitTextStrokeWidth: "0.8px",
+            WebkitTextStrokeColor: "#000",
+          }}
+          className="text-[22px] font-HiJack leading-[102.804%] font-[400] text-[#FFF] uppercase">
+            $DGPE <br /> Tokenomics
+          </h3>
+          <div className="space-y-[8px]">
+            <h5 className="text-[14px] leading-normal font-[700] text-[#FFF] uppercase">
+            tOTAL sUPPLY <br /> $8.88 BILLION
+            </h5>
+            <p className="text-[10px] leading-normal font-[600] text-[#FFF] ">
+            Coin will be launched on <br /> Ethereum Blockchain
+            </p>
+          </div>
+          <img src={verc1} className="absolute top-[-55%] left-[-10%]" alt="" />
         </div>
-        <div className="">
-          <p className="font-[700] text-[26px] text-[white] leading-[24px] text-right">$PEGE</p>
-          <p className="font-[700] text-[26px] text-[white] leading-[24px] mb-2 text-right">TOKENOMICS</p>
-          <p className="font-[700] text-[18px] text-[white] leading-[20px] text-right">TOTAL SUPPLY <br /> $879 MILLION</p>
-          <p className="font-[600] text-[16px] text-[white] leading-[20px] text-right">Coin will be launched<br /> on  Solana Blockchain</p>
+        <div>
+          <div className="max-w-[479.306px] relative space-y-[10px] w-[100%]">
+            <h3
+             style={{
+              WebkitTextStrokeWidth: "0.8px",
+              WebkitTextStrokeColor: "#000",
+            }}
+            className="text-[22px] font-HiJack text-right leading-[102.804%] font-[400] text-[#FFF] uppercase">
+              $pepe <br /> Tokenomics
+            </h3>
+            <div className="space-y-[8px]">
+              <h5 className="text-[14px] text-right leading-normal font-[700] text-[#FFF] uppercase">
+              tOTAL sUPPLY <br /> $8.79 BILLION
+              </h5>
+              <p className="text-[10px] text-right leading-normal font-[600] text-[#FFF] ">
+              Coin will be launched on <br /> Ethereum Blockchain
+              </p>
+            </div>
+            <img
+              src={verc2}
+              className="absolute top-[-55%] right-[-10%]"
+              alt=""
+            />
+          </div>
         </div>
       </div>
-      <img
-        src={one_to_one}
-        className="mt-8"
-        alt="one_to_one"
-      />
-    </div >
-  )
+      <div class="w-full mt-6 ">
+        <img src={dogePepeScale} alt="Your Image" class="w-full object-cover" />
+      </div>
+    </div>
+  );
 }
 
-export default Tokenomics;
-
-
+export default TokenmobSec;
