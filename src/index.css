@@ -489,16 +489,20 @@ code {
 
 .leftManagedDoge {
   left: 0px;
+    height: 37dvh;
 }
 .rightManagedPepe {
   right: 0px;
+    height: 37dvh;
 }
 
-@media screen and (max-height: 710px) {
+@media screen and (max-height: 815px) {
   .leftManagedDoge {
-    left: -44px;
+    left: -4px;
+  height: 270px;
   }
   .rightManagedPepe {
-    right: -44px;
+    right: -4px;
+  height: 270px;
   }
 }

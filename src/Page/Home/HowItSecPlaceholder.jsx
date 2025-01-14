@@ -6,6 +6,8 @@ import telicon1 from "../../assets/HowItSec/logos_telegram.svg";
 import telicon2 from "../../assets/HowItSec/logos_telegram (1).svg";
 import pepePlace from "../../assets/HowItSec/pepePlace.png";
 import dogePlace from "../../assets/HowItSec/dogePlace.png";
+import pepePlaceMob from "../../assets/HowItSec/pepePlaceMob.png";
+import dogePlaceMob from "../../assets/HowItSec/dogePlaceMob.png";
 import topLogo from "../../assets/HowItSec/topLogo.png";
 import vecleft from "../../assets/HowItSec/P (43).png";
 import vecright from "../../assets/HowItSec/P (43) (1).png";
@@ -19,7 +21,7 @@ function HowItSecPlaceholder() {
           alt="Logo"
           onClick={(e) => handleScroll(e, "what-is", 90)}
         />
-        <div className="space-y-[20px] gradient-box-black pb-6">
+        <div className="space-y-[20px] gradient-box-black pb-3">
           <p className="text-[#fff] leading-[114%] font-[400] text-[12px] lg:text-[18px] 3xl:text-[25px] text-center">
             Chapter I
           </p>
@@ -41,31 +43,31 @@ function HowItSecPlaceholder() {
               className="h-[156px] lg:h-[280px] 3xl:h-[400px] w-auto"
             />
           </div>
-          <div className="flex justify-center max-lg:flex-col gap-y-2 gap-x-8">
-            <h4 className="hidden lg:block text-[#fff] font-HiJack leading-[42px] text-[21px] lg:text-[37px] 3xl:text-[50px] text-center">
-              MORE INFO
-              <br />
-              COMING SOON
-            </h4>
-            <h4 className="lg:hidden text-[#fff] leading-[114%] font-HiJack text-[21px] lg:text-[37px] 3xl:text-[50px] text-center">
-              MORE INFO COMING SOON
-            </h4>
-            <div className="space-y-1">
-              <p className="text-center text-[12px] lg:text-[22px] 3xl:text-[30px] leading-[28px] text-[#fff]">
-                Get updates on
-              </p>
-              <div className="flex justify-center items-center space-x-2 pt-1">
-                <img
-                  className="cursor-pointer w-[22px] lg:w-[45px] h-[22px] lg:h-[45px]"
-                  src={telicon1}
-                  alt=""
-                />
-                <img
-                  className="cursor-pointer w-[22px] lg:w-[45px] h-[22px] lg:h-[45px]"
-                  src={telicon2}
-                  alt=""
-                />
-              </div>
+        </div>
+        <div className="flex justify-center max-lg:flex-col gap-y-2 gap-x-8">
+          <h4 className="hidden lg:block text-[#fff] font-HiJack leading-[42px] text-[21px] lg:text-[37px] 3xl:text-[50px] text-center">
+            MORE INFO
+            <br />
+            COMING SOON
+          </h4>
+          <h4 className="lg:hidden text-[#fff] leading-[114%] font-HiJack text-[18px] lg:text-[37px] 3xl:text-[50px] text-center">
+            MORE INFO COMING SOON
+          </h4>
+          <div className="lg:space-y-1">
+            <p className="text-center text-[12px] lg:text-[22px] 3xl:text-[30px] leading-[28px] text-[#fff]">
+              Get updates on
+            </p>
+            <div className="flex justify-center items-center space-x-2 lg:pt-1">
+              <img
+                className="cursor-pointer w-[22px] lg:w-[45px] h-[22px] lg:h-[45px]"
+                src={telicon1}
+                alt=""
+              />
+              <img
+                className="cursor-pointer w-[22px] lg:w-[45px] h-[22px] lg:h-[45px]"
+                src={telicon2}
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -83,13 +85,13 @@ function HowItSecPlaceholder() {
         />
         
         <img
-          src={dogePlace}
-          className="lg:hidden leftManagedDoge absolute -bottom-10 lg:bottom-0 h-[35%]"
+          src={dogePlaceMob}
+          className="lg:hidden leftManagedDoge absolute bottom-0"
           alt=""
         />
         <img
-          src={pepePlace}
-          className="lg:hidden rightManagedPepe absolute -bottom-10 lg:bottom-0 h-[35%]"
+          src={pepePlaceMob}
+          className="lg:hidden rightManagedPepe absolute bottom-0"
           alt=""
         />
       </div>
