@@ -294,55 +294,136 @@ const Rule7 = () => {
 
 function TheRules() {
   return (
-    <div id="rules" className="bgRulesmob border-t border-transparent flex flex-col items-center px-4 pt-4">
+    <div id="rules" className="bgRulesmob border-t border-transparent flex flex-col items-center px-4 p-4">
       <p className="text-[22px] leading-[31px] text-[white] mt-4 mb-4 font-HiJack">
         THE 7 RULES
       </p>
-      <RuleCard img={rule1} title="1. PICK YOUR CHAMPION" body="" />
-      <Rule1 />
-      <Rule2 />
-      <Rule3 />
-      <Rule4 />
-      <Rule5 />
-      <Rule6 />
-      <Rule7 />
+
+      <div className="flex flex-col gap-y-2.5 pb-14">
+        <RuleCard img={rule1} title="1. PICK YOUR CHAMPION">
+          <ol className="flex flex-col gap-4 pl-6 mt-2 text-base leading-relaxed text-gray-200 list-disc">
+            <li className="text-[#FFF]">
+              <span className="text-[15px] text-[#FFF] font-[700]">
+              Team Doge ($DOGE)
+              </span>{" "}
+              <br />{" "}
+              <p className="text-[15px] text-[#FFF] font-[400] leading-snug">
+              The undisputed and undefeated Meme Heavyweight Champions who pave the way for all others. If you stand for legacy and greatness, this is your corner!
+              </p>
+            </li>
+            <li className="text-[#FFF]">
+              <span className="text-[15px] text-[#FFF] font-[700]">
+              Team Pepe ($PEPE)
+              </span>{" "}
+              <br />{" "}
+              <p className="text-[15px] text-[#FFF] font-[400] leading-snug">
+              No one has shaken up the Meme Heavyweight scene in recent years like this maverick. If you stand for bold moves and fresh energy, this is your corner!
+              </p>
+            </li>
+          </ol>
+        </RuleCard>
+        
+        <RuleCard img={rule2} title="2. BUY TO SUPPORT YOUR TEAM">
+          <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-disc">
+            <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
+              Buy tokens and support your favorite meme.
+            </li>
+            <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
+              Every token purchased is a vote toward their victory.
+            </li>
+          </ol>
+        </RuleCard>
+        
+        <RuleCard img={rule3} title="3. THE RACE TO 1$ MILLION">
+          <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-disc">
+            <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
+            The fight is decided when the first team reaches $1 million.
+            </li>
+            <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
+            Only the winner will remain and launch.
+            </li>
+            <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
+            The launch date will be announced directly after the first coin reaches $1M.
+            </li>
+            <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
+            Until the launch date, only the winner coin can be purchased.
+            </li>
+          </ol>
+        </RuleCard>
+        
+        <RuleCard img={rule4} title="4. THE WINNER TAKES IT ALL">
+          <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-disc">
+            <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
+            The losing team’s funds aren’t wasted. They’re added to the liquidity pool of the winning team, making the winner’s token stronger and more valuable.
+            </li>
+            <br />
+            <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
+            The launch is taking place shortly after the winner is announced. The time in between will be used to secure CEX listings and ensure the best possible launch.
+            </li>
+          </ol>
+        </RuleCard>
+        
+        <RuleCard img={rule5} title="5. REWARDS FOR PICKING THE WINNER">
+          <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-disc">
+            <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
+            All participants receive the winning coin.
+            </li>
+            <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
+            But only the winner team will receive the Prize Money (airdropped to their wallet), find more info below.
+            </li>
+            <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
+            Winners can claim their coins 24 hours earlier.
+            </li>
+          </ol>
+        </RuleCard>
+        
+        <RuleCard img={rule6} title="6. TRANSPARENCY AND FAIRNESS">
+          <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-disc">
+            <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
+            <strong>Public Contracts:</strong> Both pre-sale contracts are fully visible to ensure complete transparency.
+            </li>
+            <br />
+            <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
+            <strong>Fair Play:</strong> Each wallet is limited to $25,000 to give everyone a fair chance to participate.
+            </li>
+          </ol>
+        </RuleCard>
+        
+        <RuleCard img={rule7} title="7. JOIN THE COMMUNITY">
+          <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-none">
+            <p className="text-[15px] text-[#FFF] font-[700] leading-snug">
+            Connect with others in the community
+            </p>
+          </ol>
+          <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-disc">
+            <li className="text-[15px] text-[#FFF] font-[700] leading-snug">
+            General Channel: For updates and discussions.
+            </li>
+            <li className="text-[15px] text-[#FFF] font-[700] leading-snug">
+            Team Pepe Channel: For Pepe supporters.
+            </li>
+            <li className="text-[15px] text-[#FFF] font-[700] leading-snug">
+            Team Doge Channel: For Doge believers.
+            </li>
+          </ol>
+        </RuleCard>
+      </div>
     </div>
   );
 }
 
-function RuleCard({img, title, body}) {
+function RuleCard({img, title, children}) {
   return (
     <div
       className="relative flex flex-col items-center w-full rounded-[10px]"
     >
-      <div className="flex flex-col items-center justify-center bg-[#181818] rounded-[10px] w-full px-4 py-1">
-        <img src={img} className="h-[135px] w-full mt-2 object-contain" alt="rule_1" />
+      <div className="flex flex-col items-center justify-center bg-[#181818] rounded-[10px] w-full p-4 pt-1">
+        <img src={img} className="h-auto w-full mt-2 object-contain" alt="rule_1" />
         <div className="flex flex-col items-start justify-center w-[300px] mt-4">
-          <p className="text-[22px] leading-[20px] text-[white] font-HiJack">
+          <p className="text-[22px] leading-[26px] text-[white] font-HiJack">
             {title}
           </p>
-          <ol className="flex flex-col gap-4 pl-6 mt-4 text-base leading-relaxed text-gray-200 list-disc">
-            <li className="text-[#FFF]">
-              <span className="text-[16px] text-[#FFF] font-[700]">
-                Team Pepe ($PEGE) –
-              </span>{" "}
-              <br />{" "}
-              <p className="text-[16px] text-[#FFF] font-[400]">
-                Join Pepe, the internet’s ultimate rebel. This if for the people
-                who value humor, resilience, and chaos.
-              </p>
-            </li>
-            <li className="text-[#FFF]">
-              <span className="text-[16px] text-[#FFF] font-[700]">
-                Team Doge ($DOPE) –
-              </span>{" "}
-              <br />{" "}
-              <p className="text-[16px] text-[#FFF] font-[400]">
-                Stand with Doge, the first Meme who started it all. This is for
-                the people who understand and respect the Doge legacy.
-              </p>
-            </li>
-          </ol>
+          {children}
         </div>
       </div>
     </div>
