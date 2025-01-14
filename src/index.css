@@ -466,3 +466,22 @@ code {
   -webkit-text-stroke-width: 1.8px;
   -webkit-text-stroke-color: black;
 }
+
+.gradient-box {
+  /* content: ''; */
+  /* position: absolute; */
+  /* top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin: -5; /* !importanté */
+  /* border-radius: inherit; /* !importanté */
+  /* background: linear-gradient(to right, red, orange); */ 
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+  /* border-radius: 50em; */
+  border: 4px solid transparent;
+}
+.gradient-box-black {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+  border: 4px solid transparent;
+}
