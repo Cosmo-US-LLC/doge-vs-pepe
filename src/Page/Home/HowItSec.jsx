@@ -15,7 +15,7 @@ function HowItSec() {
           <h3 className="text-[#FFFCFC] font-HiJack text-center text-[50px] leading-[104.377%] font-[400]">
           How It All Began
           </h3>
-          <p className="max-w-[535px] w-[100%] font-[400] mx-auto text-[#fff] leading-[114%] text-[20px] text-center">Doge has been the undefeated meme heavyweight champion for years. But now, Pepe, the rising star in the meme world, has made it to the top 3 and is ready to challenge him. These two have a long history and an Intense rivalry.</p>
+          <p className="max-w-[535px] w-[100%] font-[400] mx-auto text-[#fff] leading-[114%] text-[20px] text-center">The heated rivalry began when Pepe, the rising star, reached #3 among all meme heavyweights and started calling out Doge, the undefeated champ. Doge couldn’t let this slide, and after months of back-and-forth insults on social media, the two meme icons bumped into each other at MOON, one of the hottest nightclubs in the city. Things escalated quickly, turning into a massive brawl with serious consequences. </p>
           <div className="flex justify-center">
             <img src={howitimg} alt="" />
           </div>

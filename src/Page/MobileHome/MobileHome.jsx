@@ -16,7 +16,9 @@ import Footer from "./Footer";
 import MobileTicket from "./MobileTicket";
 import BiggestMobSec from "./BiggestMobSec";
 import DogeVSPepeMobSec from "./DogeVSPepeMobSec";
-import MystryMilestones from "./MystryMilestones";
+import PressandMediamobSec from "./PressandMediamobSec";
+import HypeMobSec from "./HypeMobSec";
+import HowItmobSec from "./HowItmobSec";
 
 
 function MobileHome() {
@@ -30,10 +32,13 @@ function MobileHome() {
         <MobileFirstEverSec />
         <TheRules />
         <Milestones />
-        <PrizeMoney />
-        <Community />
+        <PrizeMoney /> 
+        <HowItmobSec />
         <Roadmap />
+        <Community />
         <Tokenomics />
+        <HypeMobSec />
+        <PressandMediamobSec />
         <DogeVSPepeMobSec />
         <BiggestMobSec />
         {/* <MadeBy /> */}

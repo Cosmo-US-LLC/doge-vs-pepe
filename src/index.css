@@ -33,6 +33,12 @@ code {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.Communitymobbg{
+  background-image: url(../src/assets/CommunitySec/Commobbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 .Tokenomicsbg{
   background-image: url(../src/assets/tokenomics/tokobg.png);
   background-position: center;
@@ -222,6 +228,12 @@ code {
 
 .bgprizsec {
   background-image: url(./assets/PrizeMoneySec//prixebg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bgmobprizsec {
+  background-image: url(./assets/PrizeMoneySec/mobbg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
