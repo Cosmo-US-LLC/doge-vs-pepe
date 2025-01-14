@@ -4,11 +4,11 @@ import howitimg from "../../assets/HowItSec/how-it-img.png";
 import howitimg2 from "../../assets/HowItSec/newsImage.png";
 import telicon1 from "../../assets/HowItSec/logos_telegram.svg";
 import telicon2 from "../../assets/HowItSec/logos_telegram (1).svg";
-import pepePlace from "../../assets/HowItSec/pepePlace.png";
-import dogePlace from "../../assets/HowItSec/dogePlace.png";
-import pepePlaceMob from "../../assets/HowItSec/pepePlaceMob.png";
-import dogePlaceMob from "../../assets/HowItSec/dogePlaceMob.png";
-import topLogo from "../../assets/HowItSec/topLogo.png";
+import pepePlace from "../../assets/HowItSec/pepePlace.webp";
+import dogePlace from "../../assets/HowItSec/dogePlace.webp";
+import pepePlaceMob from "../../assets/HowItSec/pepePlaceMob.webp";
+import dogePlaceMob from "../../assets/HowItSec/dogePlaceMob.webp";
+import topLogo from "../../assets/HowItSec/topLogo.webp";
 import vecleft from "../../assets/HowItSec/P (43).png";
 import vecright from "../../assets/HowItSec/P (43) (1).png";
 function HowItSecPlaceholder() {
