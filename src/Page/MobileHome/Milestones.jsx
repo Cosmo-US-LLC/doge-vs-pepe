@@ -9,7 +9,7 @@ function Milestones() {
   const [dogePercentage, setDogePercentage] = useState(18);
   const [pepePercentage, setPepePercentage] = useState(24);
   return (
-    <div className="Mysterybg relative w-[100%] pt-[50px] overflow-hidden pb-[50px]">
+    <div className="Mysterymobbg relative w-[100%] pt-[50px] overflow-hidden pb-[50px]">
       <div className="space-y-[15px] w-[90%] mx-auto ">
         <div className="flex flex-col items-center justify-center">
           <div className="Mysteryborder p-[20px]">

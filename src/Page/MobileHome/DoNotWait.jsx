@@ -1,7 +1,7 @@
 import React from "react";
 function DoNotWait() {
   return (
-    <div className="w-[100%] DontWaitmobSec overflow-hidden pt-[50px] pb-[150px]">
+    <div className="w-[100%] DontWaitmobSec overflow-hidden  pb-[150px]">
     <div className="space-y-[20px]">
     <div className="max-w-[341px] relative px-[22px] py-[40px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative  howitborder bg-[#01010182]" 
     style={{backdropFilter:"blur(9.899999618530273px)"}}

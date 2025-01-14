@@ -40,19 +40,19 @@ function MobileHeroSection() {
         <div className="max-w-[575px] w-full flex flex-col justify-center items-center mx-auto">
           <div className="flex items-end justify-center space-x-[15px] text-stroke">
             <h1
-              className="text-[#ffbf0c] text-[50px] font-black font-HiJack"
+              className="text-[#ffbf0c] text-[50px] font-[400] font-HiJack"
               style={{ textShadow: "6px -1px 24px #F1AD03" }}
             >
               DOGE
             </h1>
             <h4
-              className="text-[#fff] text-[20px] h-[48px] font-black font-Lato text-stroke-2"
+              className="text-[#fff] text-[20px] h-[48px] font-[400] font-Lato text-stroke-2"
               style={{ textShadow: "0px 0px 7px #74FF60" }}
             >
               VS.
             </h4>
             <h1
-              className="text-[#00FF2F] text-[50px] font-extrabold font-HiJack"
+              className="text-[#00FF2F] text-[50px] font-[400] font-HiJack"
               style={{ textShadow: "6px -1px 24px #74FF60" }}
             >
               PEPE

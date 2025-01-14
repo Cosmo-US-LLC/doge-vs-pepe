@@ -9,7 +9,7 @@ import vsimgl from "../../assets/FightSec/Arrowlf.svg";
 function TheFightSecMob() {
 
   return (
-    <div className="relative w-[100%] pt-[90px] pb-[40px] overflow-hidden">
+    <div className="relative w-[100%] pt-[90px] pb-[60px] overflow-hidden">
       <div className=" w-[90%] mx-auto space-y-[20px] ">
         <div className="space-y-[12px]">
           <h3 className="text-[25px] text-center font-HiJack leading-[102.804%] font-[400] text-[#FFF] uppercase">
@@ -70,8 +70,8 @@ function TheFightSecMob() {
                   </div>
         </div>
         <div className="space-y-[20px]">
-          <img className="w-[100%]" src={mobimg} alt="" />
-          <img className="w-[100%]" src={mobicons} alt="" />
+          <img className="min-w-[357px] max-w-[357px] h-[275.78px] mx-auto" src={mobimg} alt="" />
+          <img className="h-[382.29px] min-w-[357px] max-w-[357px] mx-auto" src={mobicons} alt="" />
         </div>
       </div>
     </div>

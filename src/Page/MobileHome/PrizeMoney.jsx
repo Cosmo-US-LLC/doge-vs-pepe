@@ -22,7 +22,7 @@ function PrizeMoney() {
             The prize money will be airdropped and shared by all token holders of the winning coin.
             </h4>
             <p className="text-center text-[12px] text-[#FFFCFC] font-[700]">
-            *The prize money equivalent will be airdropped in the winning token
+            *The prize money will be distributed <br /> in the winning token based on your holdings
             </p>
           </div>
         </div>

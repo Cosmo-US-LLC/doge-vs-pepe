@@ -14,7 +14,7 @@ function TokenmobSec() {
             WebkitTextStrokeColor: "#000",
           }}
           className="text-[22px] font-HiJack leading-[102.804%] font-[400] text-[#FFF] uppercase">
-            $DGPE <br /> Tokenomics
+            $DOGE <br /> Tokenomics
           </h3>
           <div className="space-y-[8px]">
             <h5 className="text-[14px] leading-normal font-[700] text-[#FFF] uppercase">

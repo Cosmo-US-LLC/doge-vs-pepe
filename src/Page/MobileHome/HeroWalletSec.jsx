@@ -100,7 +100,7 @@ function HeroWalletSec() {
   };
 
   const renderer = ({ days, hours, minutes, seconds }) => (
-    <div className="flex text-white justify-center">
+    <div className="text-white justify-center">
       <div className="bg-black border border-neutral-400 w-[94px] h-[94px] rounded-[15px] flex flex-col justify-center items-center font-Inter">
         <span className="text-[44px] font-semibold leading-none">{zeroPad(days)}</span>
         <span className="text-[16px] font-bold">days</span>
@@ -437,7 +437,7 @@ function HeroWalletSec() {
           </div>
         </div>
       </div>
-      <div className="w-full h-full absolute top-0 left-0 z-20 bg-[#000000c6] flex flex-col justify-center gap-y-[15px]">
+      <div className="w-full hidden h-full absolute top-0 left-0 z-20 bg-[#000000c6] flex flex-col justify-center gap-y-[15px]">
         <h4 className="font-HiJack uppercase text-white text-[22px] text-center">
           THE FIGHT STARTS IN
         </h4>

@@ -92,7 +92,7 @@ function Footer() {
               Need Help?
             </a>
           </div>
-          <div className="max-w-[110px] w-[100%] space-y-[10px] flex flex-col  items-center">
+          <div className="max-w-[110px] w-[100%] space-y-[10px] flex flex-col  items-start">
             <h4 className="text-[18px] text-[#fff] font-[400] leading-[119.856%]">
               Join us now{" "}
             </h4>

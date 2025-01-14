@@ -13,7 +13,7 @@ function BiggestMobSec() {
           </h3>
         </div>
         <div className="flex gap-[1rem] justify-between items-center max-w-[1320px]  w-[100%]  2xl:!m-auto xl:ml-auto">
-        <div className="w-[518.39px] min-h-[328.21px] rounded-[22px] Biggestbgcard">
+        <div className="w-[518.39px] min-h-[348.873px] max-h-[368.873px] rounded-[22px] Biggestbgcard">
             <div className="px-[35px] pt-[80px] pb-[30px] space-y-[10px]">
                 <div className="w-[100%]">
                 <img className="rounded-[8px] w-[100%]" src={cardimg} alt="" />
