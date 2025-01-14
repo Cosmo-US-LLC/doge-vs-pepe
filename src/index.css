@@ -212,6 +212,13 @@ code {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.bgMystrymob {
+  background-image: url(./assets/Mobile/mystry-milestone.png);
+  /* background-image: url(./assets/FirstEver/first-ever-bg-mob.webp); */
+  background-position: center; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 
 .bgprizsec {
   background-image: url(./assets/PrizeMoneySec//prixebg.png);

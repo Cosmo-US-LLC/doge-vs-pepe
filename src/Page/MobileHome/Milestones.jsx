@@ -6,10 +6,10 @@ function Milestones() {
   const [dogePercentage, setDogePercentage] = useState(18);
   const [pepePercentage, setPepePercentage] = useState(24);
   return (
-    <div className=" relative w-[100%] pt-[40px] overflow-hidden pb-[40px]">
+    <div className="bgMystrymob relative w-[100%] pt-[40px] overflow-hidden pb-[40px]">
       <div className="flex flex-col">
         <div className="flex flex-col items-center justify-center gap-4 mb-4">
-          <h3 className="w-[360px] text-[#FFFCFC] text-center font-k2d text-[26px] font-[700] leading-normal uppercase">
+          <h3 className="w-[360px] text-[#FFFCFC] text-center font-k2d text-[26px] font-HiJack leading-tight uppercase">
             Mystery <br /> Milestones Reveal
           </h3>
 

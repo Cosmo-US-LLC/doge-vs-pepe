@@ -16,6 +16,7 @@ import Footer from "./Footer";
 import MobileTicket from "./MobileTicket";
 import BiggestMobSec from "./BiggestMobSec";
 import DogeVSPepeMobSec from "./DogeVSPepeMobSec";
+import MystryMilestones from "./MystryMilestones";
 
 
 function MobileHome() {
@@ -28,9 +29,9 @@ function MobileHome() {
         <MobileTicket />
         <MobileFirstEverSec />
         <TheRules />
+        <Milestones />
         <PrizeMoney />
         <Community />
-        <Milestones />
         <Roadmap />
         <Tokenomics />
         <DogeVSPepeMobSec />
