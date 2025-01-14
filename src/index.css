@@ -472,6 +472,7 @@ code {
               linear-gradient(65deg, #FFBF01, #004df400 67%, #01FE37) border-box;
               border-radius: 18px;
   border: 1px solid transparent;
+  border-bottom: 0px;
 }
 .gradient-box-black-2 {
   background: linear-gradient(black, black) padding-box,
@@ -484,4 +485,37 @@ code {
               linear-gradient(45deg, #FFBF01, #004df400, #01FE37) border-box;
               border-radius: 18px;
   border: 1px solid transparent;
+}
+
+.leftManagedDoge {
+  left: 0px;
+    height: 37dvh;
+}
+.rightManagedPepe {
+  right: 0px;
+    height: 37dvh;
+}
+
+
+@media screen and (max-height: 815px) {
+  .leftManagedDoge {
+    left: -4px;
+  height: 270px;
+  }
+  .rightManagedPepe {
+    right: -4px;
+  height: 270px;
+  }
+}
+@media screen and (max-height: 690px) {
+  .leftManagedDoge {
+    left: -20px;
+    bottom: -40px;
+  height: 270px;
+  }
+  .rightManagedPepe {
+    right: -20px;
+    bottom: -40px;
+  height: 270px;
+  }
 }
