@@ -37,7 +37,7 @@ function HeroSection() {
               className="text-[#F2B60F]  font-HiJack   text-[83.305px] font-[700] "
               style={{
                 textShadow: "6.534px -0.817px 24.583px #F1AD03",
-                WebkitTextStrokeWidth: "2.8px",
+                WebkitTextStrokeWidth: "1.5px",
                 WebkitTextStrokeColor: "#000",
               }}
             >
@@ -51,13 +51,13 @@ function HeroSection() {
                 WebkitTextStrokeColor: "#000",
               }}
             >
-              VS
+             <img className="max-w-[83px]" src={vsimg} alt="" />
             </h4>
             <h1
               className="text-[#00FF2F] font-HiJack text-[83.305px] font-[700] "
               style={{
                 textShadow: "6.534px -0.817px 24.583px #74FF60",
-                WebkitTextStrokeWidth: "2.8px",
+                WebkitTextStrokeWidth: "1.5px",
                 WebkitTextStrokeColor: "#000",
               }}
             >

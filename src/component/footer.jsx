@@ -13,12 +13,8 @@ function Footer() {
             <img
               src={Logo}
               alt="footer logo"
-              className="w-[120.996px] h-[117.093px]"
+              className=""
             />
-            <h3 className="w-[266px] h-[34px] text-[42px] font-[800] leading-[92.019%] tracking-[-2.453px] text-[#FFF]">
-              <span className="text-[#ECB214]">DOGE</span>VS
-              <span className="text-[#00FF2F]">PEPE</span>{" "}
-            </h3>
           </div>
           <div className="space-y-[10px]">
             <a
