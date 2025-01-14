@@ -17,13 +17,14 @@ import MobileTicket from "./MobileTicket";
 import BiggestMobSec from "./BiggestMobSec";
 import DogeVSPepeMobSec from "./DogeVSPepeMobSec";
 import MystryMilestones from "./MystryMilestones";
+import HowItSecPlaceholder from "../Home/HowItSecPlaceholder";
 
 
 function MobileHome() {
   return (
     <div className="bg-[black] w-[100%]">
       <div>
-        <Navbar />
+        {/* <Navbar />
         <MobileHeroSection />
         <HeroWalletSec />
         <MobileTicket />
@@ -36,11 +37,11 @@ function MobileHome() {
         <Tokenomics />
         <DogeVSPepeMobSec />
         <BiggestMobSec />
-        {/* <MadeBy /> */}
         <TheFightSecMob />
         <DoNotWait />
         <FAQ />
-        <Footer />
+        <Footer /> */}
+        <HowItSecPlaceholder />
       </div>
     </div>
   );
