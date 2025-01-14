@@ -488,17 +488,17 @@ code {
 }
 
 .leftManagedDoge {
-  right: 0px;
+  left: 0px;
 }
 .rightManagedPepe {
   right: 0px;
 }
 
-@media screen and (min-height: 600px) {
+@media screen and (max-height: 710px) {
   .leftManagedDoge {
-    right: -10px;
+    left: -44px;
   }
   .rightManagedPepe {
-    right: -10px;
+    right: -44px;
   }
 }

@@ -73,12 +73,23 @@ function HowItSecPlaceholder() {
       <div className="absolute top-0 left-0 w-[100vw] h-[100dvh] overflow-hidden">
         <img
           src={dogePlace}
-          className="absolute -bottom-10 lg:bottom-0 max-sm:-left-11 -left-9 lg:left-0 h-[35%] lg:h-[440px] xl:h-[63%] 3xl:h-[65%]"
+          className="hidden lg:block absolute -bottom-10 lg:bottom-0 max-sm:-left-11 -left-9 lg:left-0 h-[35%] lg:h-[440px] xl:h-[63%] 3xl:h-[65%]"
           alt=""
         />
         <img
           src={pepePlace}
-          className="absolute -bottom-10 lg:bottom-0 max-sm:-right-11 -right-9 lg:right-0 h-[35%] lg:h-[452px] xl:h-[63%] 3xl:h-[65%]"
+          className="hidden lg:block absolute -bottom-10 lg:bottom-0 max-sm:-right-11 -right-9 lg:right-0 h-[35%] lg:h-[452px] xl:h-[63%] 3xl:h-[65%]"
+          alt=""
+        />
+        
+        <img
+          src={dogePlace}
+          className="lg:hidden leftManagedDoge absolute -bottom-10 lg:bottom-0 h-[35%]"
+          alt=""
+        />
+        <img
+          src={pepePlace}
+          className="lg:hidden rightManagedPepe absolute -bottom-10 lg:bottom-0 h-[35%]"
           alt=""
         />
       </div>
