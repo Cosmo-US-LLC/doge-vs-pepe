@@ -25,7 +25,7 @@ import TokenmobSec from "../MobileHome/Tokenomics";
 function Home() {
   return (
     <div className="bg-[black] w-[100%]">
-    <div>
+    <div className="overflow-x-hidden">
       <Navbar />
       <HeroSection />
       <BannerSec />

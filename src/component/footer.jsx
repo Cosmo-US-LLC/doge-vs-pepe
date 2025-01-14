@@ -6,9 +6,9 @@ import socialicn3 from "../assets/footer/soclicn (1).svg";
 
 function Footer() {
   return (
-    <div className="w-[100%] z-[99] bg-[#181818] pt-[56px] pb-[36px] ">
+    <div className="w-[100%] z-[99] bg-[#181818] pt-[56px] pb-[36px] overflow-hidden">
       <div className="max-w-[1296px]  2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[90%] w-[100%]  mx-auto space-y-[64px]">
-        <div className="flex justify-between">
+        <div className="flex justify-between px-4">
           <div className="flex flex-col items-center justify-center gap-4">
             <img
               src={Logo}
@@ -71,7 +71,7 @@ function Footer() {
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
             >
-              Join And Support Your Team On Telegram
+              Support Your Team On Telegram
             </a>
             <a
               href="https://example.com"
@@ -92,7 +92,7 @@ function Footer() {
               Need Help?
             </a>
           </div>
-          <div className="max-w-[110px] w-[100%] space-y-[10px] flex flex-col  items-start">
+          <div className="max-w-fit w-[100%] space-y-[10px] flex flex-col  items-start">
             <h4 className="text-[18px] text-[#fff] font-[400] leading-[119.856%]">
               Join us now{" "}
             </h4>
@@ -126,7 +126,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="max-w-[1031px] w-[100%] mx-auto space-y-[27px]">
+        <div className="max-w-[90%] xl:max-w-[1031px] w-[100%] mx-auto space-y-[27px]">
           <p className="text-[18px] font-[400] text-center leading-[119.856%] text-[#fff]">
             Cryptocurrency may be unregulated in your jurisdiction. The value of
             cryptocurrencies may go up as well as down. Profits may be subject
