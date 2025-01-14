@@ -481,7 +481,7 @@ function WalletSec() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-[-3%] left-0 right-0 flex items-center justify-center z-[99]">
+      <div className="absolute bottom-[-3%] left-0 right-0 flex items-center justify-center z-30">
         <img
           className="transition-all duration-300 cursor-pointer hover:animate-bounce hover:scale-110"
           src={downArrow}
