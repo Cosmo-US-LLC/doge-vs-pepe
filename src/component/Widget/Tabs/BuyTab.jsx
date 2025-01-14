@@ -25,22 +25,22 @@ const walletBuyTokens = new Set([
 	"USDT-BEP-20"
 ])
 
-/** 
+/**
  * @template T
- * @typedef {[T, import("react").Dispatch<import("react").SetStateAction<T>>]} State 
+ * @typedef {[T, import("react").Dispatch<import("react").SetStateAction<T>>]} State
  */
 
 const BuyTab = () => {
 	const projectData = useContext(ApiContext)
 	const apiState = useStore(projectData.$apiState)
-	
+
 	const stageCurrent = parseNum(apiState.stage?.cumulative_usd_raised)
 	const stageTarget = parseNum(apiState.stage?.next_stage_target_usd)
 
 	/** @type {State<import("../../TokenInput").InputRef>} */
 	const [ paymentTokenRef, setPaymentTokenRef ] = useState(null)
 	const [ paymentTokenValue, setPaymentTokenValue ] = useState(1)
-	
+
 	/** @type {State<import("../../TokenInput").InputRef>} */
 	const [ receiveTokenRef, setReceiveTokenRef ] = useState(null)
 	const [ receiveTokenValue, setReceiveTokenValue ] = useState(1)
@@ -263,7 +263,7 @@ const ShareLabel = () => {
 	const projectData = useContext(ApiContext)
 	const userData = useStore(projectData.$userState)
 
-	const fullCode = `${projectData.project.toUpperCase()}-${userData.user?.referral_code}`
+	const fullCode = userData.user?.referral_code ? `${projectData.project.toUpperCase()}-${userData.user?.referral_code}` : ""
 	const share = () => {
 		const text = `Use my referral code for bonus tokens on ${projectData.project.toUpperCase()}`
 		const url = `${window.location.origin}?referral_code=${fullCode}`
@@ -280,7 +280,7 @@ const ShareLabel = () => {
 	return (
 		<div className="flex px-4 py-2 gap-4 text-sm font-bold bg-[#00000078] text-[#fff] rounded-[14px]">
 			<div className="flex w-0 flex-1 flex-col">
-				<p className="text-sm leading-3">You Referral Code</p>
+				<p className="text-sm leading-3">Your Referral Code</p>
 				<input
 					readOnly
 					value={fullCode ?? ""}
@@ -374,7 +374,7 @@ const CodeInputs = () => {
  * @param {(code: string) => Promise<unknown} props.onApply
  * @param {() => unknown} props.onReset
  * @param {(code) => string | null} [props.errorGetter]
- * @returns 
+ * @returns
  */
 const CodeInput = ({ label, applied, defaultValue, appliedText, onApply, onReset, errorGetter }) => {
 	const [ code, setCode ] = useState(defaultValue ?? "")
