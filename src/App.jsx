@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import Home from "./Page/Home/Home";
+// import MobileHome from "./Page/MobileHome/MobileHome";
+// import Home from "./page/Home/Home";
 
 function App() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
+  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 700);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsMobile(window.innerWidth <= 700);
+  //   };
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
+  
   return (
-    <div className="bg-[black] w-[100%]">
+    <div className="bg-[black] w-[100%] overflow-hidden">
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -27,15 +29,16 @@ function App() {
           }}
         />
       </head>
-      <div>
-        <noscript
+      <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRQ324V5"
     height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
         />
-        <div><Home /></div>
-      </div>
+      <Home />
+      {/* <div>{isMobile ? <MobileHome /> : }</div> */}
+      {/* <div>
+      </div> */}
     </div>
   );
 }
