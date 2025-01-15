@@ -3,11 +3,19 @@ import chestImage from "../../assets/MilestonesSec/deal-box.webp";
 import groupImage from "../../assets/MilestonesSec/flag-line-trophy.png";
 import pepeicon from "../../assets/MilestonesSec/Mask group (5).png";
 import dogeicon from "../../assets/MilestonesSec/Mask group (4).png";
+import { useStore } from "@nanostores/react";
+import { $dogeApiState, $pepeApiState } from "../../presale-gg/stores";
+import { formatNumber, parseNum } from "../../presale-gg/util";
 
 
 function Milestones() {
-  const [dogePercentage, setDogePercentage] = useState(18);
-  const [pepePercentage, setPepePercentage] = useState(24);
+  const dogeApiData = useStore($dogeApiState)
+  const pepeApiData = useStore($pepeApiState)
+
+  const MAX = 1000000
+  const dogeFraction = parseNum(dogeApiData.stage?.cumulative_usd_raised) / MAX
+  const pepeFraction = parseNum(pepeApiData.stage?.cumulative_usd_raised) / MAX
+
   return (
     <div className="Mysterymobbg relative w-[100%] pt-[50px] overflow-hidden pb-[50px]">
       <div className="space-y-[15px] w-[90%] mx-auto ">
@@ -30,10 +38,13 @@ function Milestones() {
           <div className="bg-[#181818] rounded-[40.835px] w-[100%] h-[14.862px] border-[0.794px] border-[#EFAB00]">
             <div
               className="flex items-center justify-center h-full rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600"
-              style={{ width: `${dogePercentage}%` }}
+              style={{
+                width: `${dogeFraction * 100}%`,
+                minWidth: "1rem",
+              }}
             >
               <span className="text-[9.233px] font-[400] font-HiJack text-[#0B0101] leading-none font-[Inter]">
-                {dogePercentage}%
+                {formatNumber(dogeFraction * 100, 0, 0)}%
               </span>
             </div>
           </div>
@@ -95,13 +106,14 @@ function Milestones() {
             <div
               className="flex items-center justify-center h-full rounded-full bg-gradient-to-r"
               style={{
-                width: `${pepePercentage}%`,
+                width: `${pepeFraction * 100}%`,
+                minWidth: "1rem",
                 background:
                   "linear-gradient(66deg, #79EC8F 25.98%, #09FC3C 65.48%)",
               }}
             >
               <span className="text-[9.233px] font-HiJack font-[400] text-[#0B0101] leading-none font-[Inter]">
-                {pepePercentage}%
+                {formatNumber(pepeFraction * 100, 0, 0)}%
               </span>
             </div>
           </div>

@@ -9,10 +9,10 @@ function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
 
   useEffect(() => {
-	if (localStorage.getItem("connect-wallet-id-v2")) {
-		loadStoredConnection()
-	}
-  })
+    if (localStorage.getItem("connect-wallet-id-v2")) {
+      loadStoredConnection()
+    }
+  }, [])
 
   useEffect(() => {
     const handleResize = () => {
