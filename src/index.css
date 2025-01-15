@@ -12,12 +12,120 @@ code {
 
 }
 .font-HiJack{
-  font-family: 'Hi Jack', sans-serif;
-                                                
+  font-family: 'Hi Jack', sans-serif;                                           
+}
+.font-Lato{
+  font-family: 'Lato', sans-serif;                                           
+}
+.font-Inter{
+  font-family: 'Lato', sans-serif;                                           
 }
 
 .bgmainvip{
   background-image: url(../src/assets/Vipticketsec/bg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Communitybg{
+  background-image: url(../src/assets/CommunitySec/Communitybg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Communitymobbg{
+  background-image: url(../src/assets/CommunitySec/Commobbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Tokenomicsbg{
+  background-image: url(../src/assets/tokenomics/tokobg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.DontWaitSec{
+  background-image: url(../src/assets/DontWaitSec/dontbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.DontWaitmobSec{
+  background-image: url(../src/assets/DontWaitSec/mobdont.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.dogevspepebg{
+  background-image: url(../src/assets/DogeVSPepeSec/bg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.crypbg{
+  background-image: url(../src/assets/DogeVSPepeSec/card1.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.crypbg2{
+  background-image: url(../src/assets/DogeVSPepeSec/card2.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.crypbg3{
+  background-image: url(../src/assets/DogeVSPepeSec/card3.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Biggestbg{
+  background-image: url(../src/assets/BiggestSec/biggestbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Biggestmobbg{
+  background-image: url(../src/assets/BiggestSec/mob.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Biggestbgcard{
+  background-image: url(../src/assets/BiggestSec/cardbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+.Biggestcardgr{
+  background-image: url(../src/assets/BiggestSec/cardgr.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Hypebg{
+  background-image: url(../src/assets/Hype/hypebg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Pressbg{
+  background-image: url(../src/assets/PressSec/pressbg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Pressbgmob{
+  background-image: url(../src/assets/PressSec/pressbgmob.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bgroadmap{
+  background-image: url(../src/assets/RoadmapSec/roadbg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -30,6 +138,12 @@ code {
 }
 .Mysterybg{
   background-image: url(../src/assets/MilestonesSec/bgmile.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Mysterymobbg{
+  background-image: url(../src/assets/MilestonesSec/bgmilemob.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -54,7 +168,8 @@ code {
 }
 
 .bgheromobsec {
-  background-image: url(./assets/herosec/mobbg.png);
+  /* background-image: url(./assets/herosec/mobbg.png); */
+  background-image: url(./assets/Mobile/hero-bg-2.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -74,6 +189,26 @@ code {
   background-repeat: no-repeat;
 }
 
+.bgwltsecmobUp {
+  background-image: url(./assets/Mobile/wallet-1.png);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bgwltsecmobDn {
+  background-image: url(./assets/Mobile/walled-2.png);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ticketBgMob {
+  background-image: url(./assets/Mobile/ticket-bg.png);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .bgeversec {
   background-image: url(./assets/FirstEver/first-ever-bg.png);
   background-position: center;
@@ -83,7 +218,22 @@ code {
 }
 
 .bgeversecmob {
-  background-image: url(./assets/FirstEver/first-ever-bg-mob.webp);
+  background-image: url(./assets/Mobile/century-ring.png);
+  /* background-image: url(./assets/FirstEver/first-ever-bg-mob.webp); */
+  background-position: center; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bgRulesmob {
+  background-image: url(./assets/Mobile/rules-bg.png);
+  /* background-image: url(./assets/FirstEver/first-ever-bg-mob.webp); */
+  background-position: center; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bgMystrymob {
+  background-image: url(./assets/Mobile/mystry-milestone.png);
+  /* background-image: url(./assets/FirstEver/first-ever-bg-mob.webp); */
   background-position: center; 
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -91,6 +241,12 @@ code {
 
 .bgprizsec {
   background-image: url(./assets/PrizeMoneySec//prixebg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bgmobprizsec {
+  background-image: url(./assets/PrizeMoneySec/mobbg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -264,6 +420,27 @@ code {
   z-index: -1;
 }
 
+.Pressborder {
+  position: relative;
+  width: 100% !important;
+  box-sizing: border-box;
+  z-index: 1;
+  border: none;
+}
+
+.Pressborder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 1px;
+  background: linear-gradient(16deg, #fac000d8 -40%, transparent 46%, #4EB52A 200%, transparent 329%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
 .Rulesborder {
   position: relative;
   width: 100% !important;
@@ -304,4 +481,32 @@ code {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   z-index: -1;
+}
+
+.text-stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.text-stroke-2 {
+  -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: black;
+}
+
+.gradient-box {
+  /* content: ''; */
+  /* position: absolute; */
+  /* top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin: -5; /* !importanté */
+  /* border-radius: inherit; /* !importanté */
+  /* background: linear-gradient(to right, red, orange); */ 
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+  /* border-radius: 50em; */
+  border: 4px solid transparent;
+}
+.gradient-box-black {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+  border: 4px solid transparent;
 }

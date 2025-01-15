@@ -1,17 +1,31 @@
 import React from "react";
 function DontWaitSec() {
   return (
-    <div className=" bgDontWaitSec   overflow-hidden w-[100%] pt-[60px] pb-[80px]">
-      <div className="max-w-[1291.63px]  h-[100%] space-y-[45px] w-[100%] mx-auto relative ">
-     <div className="flex flex-col min-h-[80vh] justify-between">
-     <div className="space-y-[20px]">
-      <h3 className="text-[42px] text-center text-[#fff] font-[700] leading-[95.238%]">Don’t Wait, The Fight Is On!</h3>
-      <p className="text-[18px] text-center text-[#fff] font-[600] max-w-[473px] w-[100%] mx-auto">DogevsPepe is fast-paced and competitive. Once the $1 million goal is reached, it’s game over. Will your champion rise to the challenge, or will they stay in the Matrix forever?</p>
+    <div className="w-[100%] s DontWaitSec overflow-hidden pt-[200px] pb-[100px]">
+      <div className="space-y-[35px]">
+      <div className="max-w-[593px] relative px-[22px] py-[40px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative  howitborder bg-[#01010182]" 
+      style={{backdropFilter:"blur(9.899999618530273px)"}}
+      >
+        <div className="space-y-[27px]">
+          <h3 className="text-[#FFFCFC] font-HiJack text-center text-[50px] leading-[104.377%] font-[400]">
+          Don’t Wait, <br /> The Fight Is On!
+          </h3>
+          <p className="max-w-[535px] w-[100%] font-[400] mx-auto text-[#fff] leading-[114%] text-[18px] text-center">DogevsPepe is fast-paced and competitive. Once the $1 million goal is reached, the winner is decided. Will your meme champion rise and win this epic fight. </p>
+            <h4 className="text-[#fff] leading-[130%] font-[700] text-[30px] text-center">
+            Make your choice and support your  favorite meme before it is too late!
+            </h4>
+        </div>
       </div>
-      <div>
-      <h4 className="text-[32px] font-[700] text-[#fff] leading-normal text-center max-w-[440px] w-[100%] mx-auto">Make your choice and support your favorite meme before <br /> it is too late!</h4>
-      </div>
-     </div>
+        <div className="flex justify-center">
+          <button
+          style={{
+            background:"linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)"
+
+          }}
+          className="w-[457px] w-[100%] leading-[100%] mx-auto h-[94px] text-[32px] font-[700] rounded-[60px]">Join the Whitelist Now
+          </button>
+        </div>
+
       </div>
     </div>
   );

@@ -140,7 +140,7 @@ const FaqSec = () => {
     <div className="relative font-k2d" id="faq">
       <div className="w-[100%] max-w-[1143px] pt-[73px] mx-auto pb-[63px] flex flex-col gap-4">
         <div className="text-center">
-          <h2 className="text-[#fff] uppercase text-[42px] font-[700] leading-[142.857%] pb-[10px] font-k2d">
+          <h2 className="text-[#fff] font-HiJack uppercase text-[42px] font-[400] leading-[142.857%] pb-[10px] font-k2d">
             Frequently Asked Questions
           </h2>
         </div>

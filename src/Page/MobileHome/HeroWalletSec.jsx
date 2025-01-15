@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Countdown, { zeroPad, calcTimeDelta, formatTimeDelta } from "react-countdown";
 import arwbtn1 from "../../assets/walletsec/btnicns (3).svg";
 import arwbtn2 from "../../assets/walletsec/btnicns (1).svg";
 import arwbtn3 from "../../assets/walletsec/btnicns (2).svg";
@@ -85,18 +86,39 @@ function HeroWalletSec() {
   const handleScroll = (event, targetId, offset = 0) => {
     event.preventDefault();
     const targetElement = document.getElementById(targetId);
-  
+
     if (targetElement) {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
-      const elementPosition = targetElement.getBoundingClientRect().top + scrollY;
+      const elementPosition =
+        targetElement.getBoundingClientRect().top + scrollY;
       const offsetPosition = elementPosition - offset;
-  
+
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth",
       });
     }
   };
+
+  const renderer = ({ days, hours, minutes, seconds }) => (
+    <div className="text-white justify-center">
+      <div className="bg-black border border-neutral-400 w-[94px] h-[94px] rounded-[15px] flex flex-col justify-center items-center font-Inter">
+        <span className="text-[44px] font-semibold leading-none">{zeroPad(days)}</span>
+        <span className="text-[16px] font-bold">days</span>
+      </div>
+      <span className="text-[50px] px-1">:</span>
+      <div className="bg-black border border-neutral-400 w-[94px] h-[94px] rounded-[15px] flex flex-col justify-center items-center font-Inter">
+        <span className="text-[44px] font-semibold leading-none">{zeroPad(hours)}</span>
+        <span className="text-[16px] font-bold">days</span>
+      </div>
+      <span className="text-[50px] px-1">:</span>
+      <div className="bg-black border border-neutral-400 w-[94px] h-[94px] rounded-[15px] flex flex-col justify-center items-center font-Inter">
+        <span className="text-[44px] font-semibold leading-none">{zeroPad(minutes)}</span>
+        <span className="text-[16px] font-bold">days</span>
+      </div>
+      {/* :{zeroPad(seconds)} */}
+    </div>
+  );  
 
   return (
     <div
@@ -123,13 +145,18 @@ function HeroWalletSec() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-[-3%] left-0 right-0 flex items-center justify-center z-50">
-        <img
-          className="h-[32px] w-[32px]"
-          src={downArrow}
-          alt=""
-          onClick={(e) => handleScroll(e, "whitepaper", 90)}
-        />
+      <div className="w-full hidden h-full absolute top-0 left-0 z-20 bg-[#000000c6] flex flex-col justify-center gap-y-[15px]">
+        <h4 className="font-HiJack uppercase text-white text-[22px] text-center">
+          THE FIGHT STARTS IN
+        </h4>
+        <div>
+          <Countdown
+            date={new Date("1/31/2025")}
+            intervalDelay={0}
+            precision={3}
+            renderer={renderer}
+          />
+        </div>
       </div>
     </div>
   );

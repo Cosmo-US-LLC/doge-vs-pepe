@@ -1,60 +1,60 @@
 export const faqData = [
     {
       question: "What is DogevsPepe?",
-      answer: `DogevsPepe is a crypto presale with a twist. It’s a competition between two iconic memes, Doge and Pepe, to determine which one escapes the matrix and launches as a live cryptocurrency. Investors choose their side by purchasing tokens for either team (or both!), and the team with the most funds raised wins.`,
+      answer: `DogevsPepe is the first-ever crypto presale showdown where Doge and Pepe face off in a battle to raise $1 million. The first meme to hit the $1M mark wins, and the launch date will be announced shortly after.`,
     },
     {
       question: "How does the presale work?",
       answer: `
-        <ul className="list-disc pl-5 md:pl-8 text-white space-y-2">
-          <li>Choose your champion: Team Doge (Orange Coin) or Team Pepe (Green Coin).</li>
-          <li>Buy tokens to support your chosen team(s).</li>
-          <li>When the combined presale total hits $1 million, the team with the most funds raised is declared the winner.</li>
+        <ul class="list-disc pl-5 md:pl-8 text-white space-y-2">
+          <li>Pick your team: Doge ($DOGE) or Pepe ($PEPE).</li>
+          <li>Buy tokens to support your chosen champion(s).</li>
+          <li>Once the combined total hits $1 million, the team with the most funds raised is declared the winner.</li>
         </ul>
       `,
     },
     {
-      question: "What happens to the losing team’s funds?",
-      answer:
-        "The losing team’s funds are added to the liquidity pool of the winning token, boosting its value and ensuring a strong market launch. This means even if your team doesn’t win, your investment contributes to the success of the overall project.",
-    },
-    {
-      question: "How Many Times Can I Buy?",
-      answer:
-        "You can buy as many times as you like, however each singular purchase is capped at a maximum of $10,000 to ensure fair participation and prevent any one person from dominating the presale.",
-    },
-    {
       question: "Can I invest in both teams?",
       answer:
-        "Yes! You can support both Doge and Pepe by purchasing tokens for both teams. However, only one will win, so choose wisely!",
+        "Yes, you can support both teams by purchasing tokens for Doge and Pepe. However, only one will win, so choose your strategy wisely!",
+    },
+    {
+      question: "How many times can I buy tokens?",
+      answer:
+        "You can purchase as many times as you like, but each wallet is capped at $25,000 to attract whales while maintaining fairness and equal participation.",
     },
     {
       question: "Is the presale fair and secure?",
       answer:
-        "Absolutely. Both presale contracts are public and fully transparent, so you can see how funds are being allocated.",
+        "Yes, both presale contracts are fully public and transparent, allowing everyone to see where the funds are going.",
     },
     {
-      question: "When does the winning token launch?",
-      answer:
-        "The winning token launches within 24 hours of the presale goal being reached. This means no long waits—your investment goes to work almost immediately.",
+      question: "What happens after I make a purchase?",
+      answer:`
+        <div class="w-full md:w-[900px]">
+          <ul class="list-disc pl-6 md:pl-8 text-white space-y-2">
+                <li>Everyone who purchases tokens will receive the winning coin, regardless of which team they supported.</li>
+                <li>However, those who backed the winning team will receive extra rewards (see answer below).</li>
+              </ul>
+        </div>
+      `,
     },
     {
-      question: "How do I track the progress of the presale?",
-      answer:
-        "Live stats will be displayed on the website, showing how much each team has raised. Stay connected to see if your team is leading the charge!",
-    },
-    {
-      question: "How do I join the community?",
-      answer: `
-        <div className="w-full md:w-[900px]">
-          <ul className="list-decimal pl-4 md:pl-5 text-white space-y-3">
+      question: "What are the rewards for picking the correct team?",
+      answer:`
+        <div class="w-full md:w-[900px]">
+          <ul class="list-decimal pl-4 md:pl-5 text-white space-y-3">
             <li>
-              We have Telegram channels to keep you updated and engaged:
-              <ul className="list-disc pl-6 md:pl-8 text-white space-y-2">
-                <li>General Channel: For overall updates and discussions.</li>
-                <li>Team Pepe Channel: For Green Coin supporters</li>
-                <li>Team Doge Channel: For Orange Coin fans.</li>
-                <li>After the presale ends, all channels merge into one unified community supporting the winning project.</li>
+             Daily Bonus Coins:
+              <ul class="list-disc pl-6 md:pl-8 text-white space-y-2">
+                <li>1M coins are added to the winner pool daily while the fight is ongoing.</li>
+                <li>These coins are airdropped proportionally based on the number of tokens you hold. </li>
+              </ul>
+            </li>
+             <li>
+            Early Claim Access:
+              <ul class="list-disc pl-6 md:pl-8 text-white space-y-2">
+                <li>Winners can claim their airdropped coins 24 hours earlier than participants who supported the losing team.</li>
               </ul>
             </li>
           </ul>
@@ -63,13 +63,28 @@ export const faqData = [
     },
     {
       question: "What happens if my team loses?",
-      answer:
-        "Even if your team doesn’t win, the funds raised by the losing team are added to the liquidity pool of the winning token. This helps boost its value and ensures a strong start for the winner.",
+      answer:`
+        <div class="w-full md:w-[900px]">
+          <ul class=" pl-4 md:pl-5 text-white space-y-3">
+            <li>
+             Even if your team loses:
+              <ul class="list-disc pl-6 md:pl-8 text-white space-y-2">
+                <li>You will still receive the winning coin based on the amount of tokens you purchased.</li>
+                <li>Your purchase will contribute to strengthening the liquidity pool of the winning token.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      `,
     },
     {
-      question: "Why should I join DogevsPepe?",
+      question: "How do I track the progress of the presale?",
+      answer: "Real-time stats showing how much each team has raised will be displayed on the website, so you can stay updated and cheer your team to victory.",
+    },
+    {
+      question: "When does the winning token launch?",
       answer:
-        "DogevsPepe isn’t just a presale—it’s a movement. You’re not only investing in a meme token but also participating in an exciting, competitive, and transparent process that redefines crypto presales. Plus, you’ll be part of a passionate community working to take the winning token to the moon.",
+        "The launch date will be announced as soon as $1M is raised. The winning token will launch within a few days of reaching the $1 million presale goal, with no long waits.",
     },
   ];
   

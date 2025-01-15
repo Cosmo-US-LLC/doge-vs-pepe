@@ -46,14 +46,12 @@ function TheRulesSec() {
               </div>
               <ol className="flex flex-col gap-4 pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
                 <li className="text-[20px] text-[#FFF] font-[400]">
-                  <span className="font-[700]">Team Pepe ($PEGE) –</span> <br />{" "}
-                  Join Pepe, the internet’s ultimate rebel. This if for the
-                  people who value humor, resilience, and chaos.
+                  <span className="font-[700]">Team Doge ($DOGE)</span> <br />{" "}
+                  The undisputed and undefeated Meme Heavyweight Champions who pave the way for all others. If you stand for greatness and legacy, this is your corner!
                 </li>
                 <li className="text-[20px] text-[#FFF] font-[400]">
-                  <span className="font-[700]">Team Doge ($DOPE) –</span> <br />{" "}
-                  Stand with Doge, the first Meme who started it all. This is
-                  for the people who understand and respect the Doge legacy.
+                  <span className="font-[700]">Team Pepe ($PEPE)</span> <br />{" "}
+                  No one has shaken up the Meme Heavyweight scene in recent years like this maverick. If you stand for bold moves and fresh energy, this is your corner!
                 </li>
               </ol>
             </div>
@@ -67,14 +65,14 @@ function TheRulesSec() {
               </div>
               <ol className="flex flex-col pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
                 <li className="text-[20px] text-[#FFF] font-[400]">
-                  Buy tokens and support your favorite meme.
+                Buy tokens and support your favorite meme.
                 </li>
                 <li className="text-[20px] text-[#FFF] font-[400]">
-                  Every token purchased is a vote toward their victory.
+                Every token purchased is a vote toward their victory.
                 </li>
-                <li className="text-[20px] text-[#FFF] font-[400]">
+                {/* <li className="text-[20px] text-[#FFF] font-[400]">
                   Maximum Buy-In: Each wallet can buy for up to $10,000.
-                </li>
+                </li> */}
               </ol>
             </div>
             <div className="w-[40%] flex justify-end">
@@ -104,7 +102,7 @@ function TheRulesSec() {
                   The fight is decided when the first team reaches $1 million.
                 </li>
                 <li className="text-[20px] text-[#FFF] font-[400]">
-                  Only the winner will remain and proceed to launch.
+                  Only the winner will remain and launch.
                 </li>
                 <li className="text-[20px] text-[#FFF] font-[400]">
                   The launch date will be announced directly after the first
@@ -125,14 +123,10 @@ function TheRulesSec() {
               </div>
               <ol className="flex flex-col gap-3 pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
                 <li className="text-[20px] text-[#FFF] font-[400]">
-                  The losing team’s funds aren’t wasted. They’re added to the
-                  liquidity pool of the winning team, making the winner’s token
-                  stronger and more valuable.
+                The losing team’s funds aren’t wasted. They’re added to the liquidity pool of the winning team, making the winner’s token stronger and more valuable.
                 </li>
                 <li className="text-[20px] text-[#FFF] font-[400]">
-                  The winning token's launch date will be announced directly
-                  after the pre-sale goal is reached. The launch is expected to
-                  happen a few days later to secure a major CEX listing.
+                The launch is taking place shortly after the winner is announced. The time in between will be used to secure CEX listings and ensure the best possible launch.
                 </li>
               </ol>
             </div>
@@ -163,8 +157,10 @@ function TheRulesSec() {
                   All participants receive the winning coin.
                 </li>
                 <li className="text-[20px] font-[700] text-[#FFF]">
-                  But only the winner team will receive exclusive Prize Money
-                  (airdropped to their wallet), find more info below.
+                  <strong>
+                    But only the winner team will receive exclusive Prize Money
+                    (airdropped to their wallet), find more info below.
+                  </strong>
                 </li>
                 <li className="text-[20px] text-[#FFF] font-[400]">
                   Winners can claim their coins 24 hours earlier.
@@ -187,8 +183,7 @@ function TheRulesSec() {
                 </li>
                 <li className="text-[20px] text-[#FFF] font-[400]">
                   <span className="font-[700]">Fair Play:</span> Each wallet is
-                  limited to $10,000 to give everyone a chance to participate
-                  equally.
+                  limited to $25,000 to give everyone a chance to participate.
                 </li>
               </ol>
             </div>
@@ -213,8 +208,8 @@ function TheRulesSec() {
                 <h2 className="text-[32px] font-HiJack font-[400] text-[#fff]">
                   7. Join The Community
                 </h2>
-                <p className="pl-[2.9rem] text-[18px] pb-[15px] text-[#FFF] ">
-                  Connect with other participants in our Telegram channels:
+                <p className="pl-[2.0rem] text-[18px] pb-[0px] text-[#FFF] ">
+                  Share and connect with others in the community
                 </p>
               </div>
               <ol className="flex flex-col pl-[52px] text-base leading-relaxed text-gray-200 list-disc">

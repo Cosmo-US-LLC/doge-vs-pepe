@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import Home from "./Page/Home/Home";
+import Home from "./Page/Home/Home";
 import MobileHome from "./Page/MobileHome/MobileHome";
 import ConnectWalletModal from "./component/ConnectWalletModal"
 import { Toaster } from "react-hot-toast";
