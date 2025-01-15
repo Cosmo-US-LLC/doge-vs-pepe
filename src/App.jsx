@@ -4,7 +4,6 @@ import MobileHome from "./Page/MobileHome/MobileHome";
 import ConnectWalletModal from "./component/ConnectWalletModal"
 import { Toaster } from "react-hot-toast";
 import { loadStoredConnection } from "./presale-gg/web3/connections";
-import Home from "./Page/Home/Home";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
