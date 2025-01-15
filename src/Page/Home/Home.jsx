@@ -26,8 +26,9 @@ import HowItSecPlaceholder from "./HowItSecPlaceholder";
 
 function Home() {
   return (
-    <div className="bg-[black] w-[100%]">
-    <div>
+    <div className="bg-[black] w-[100%] overflow-hidden">
+    <HowItSecPlaceholder />
+    {/* <div> */}
       {/* <Navbar /> */}
       {/* <HeroSection />
       <BannerSec />
@@ -37,7 +38,6 @@ function Home() {
       <TheRulesSec />
       <MilestonesSec />
       <PrizeMoneySec /> */}
-      <HowItSecPlaceholder />
       {/* <RoadmapSec />
       <CommunitySec /> 
       <TokenSec/>
@@ -51,7 +51,7 @@ function Home() {
       {/* <DontWaitSec /> */}
       {/* <FaqSec /> */}
       {/* <Footer /> */}
-    </div>
+    {/* </div> */}
     </div>
   );
 }
