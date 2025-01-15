@@ -1,7 +1,5 @@
 import React from "react";
-import Logo from "../../assets/navbar/navLogo.svg";
-import howitimg from "../../assets/HowItSec/how-it-img.png";
-import howitimg2 from "../../assets/HowItSec/newsImage.png";
+import howitimg2 from "../../assets/HowItSec/newsImage.webp";
 import telicon1 from "../../assets/HowItSec/logos_telegram.svg";
 import telicon2 from "../../assets/HowItSec/logos_telegram (1).svg";
 import pepePlace from "../../assets/HowItSec/pepePlace.webp";
@@ -9,8 +7,7 @@ import dogePlace from "../../assets/HowItSec/dogePlace.webp";
 import pepePlaceMob from "../../assets/HowItSec/pepePlaceMob.webp";
 import dogePlaceMob from "../../assets/HowItSec/dogePlaceMob.webp";
 import topLogo from "../../assets/HowItSec/topLogo.webp";
-import vecleft from "../../assets/HowItSec/P (43).png";
-import vecright from "../../assets/HowItSec/P (43) (1).png";
+
 function HowItSecPlaceholder() {
   return (
     <div className="flex flex-col lg:justify-center max-lg:pt-[5dvh] w-[100%] h-[100vh] bg-black overflow-hidden">
@@ -94,13 +91,6 @@ function HowItSecPlaceholder() {
           className="lg:hidden rightManagedPepe absolute bottom-0"
           alt=""
         />
-      </div>
-
-      <div className="fixed bottom-5 right-5 bg-white text-black">
-        <span className="hidden lg:block">lg</span>
-        <span className="hidden xl:block">xl</span>
-        <span className="hidden 2xl:block">2xl</span>
-        <span className="hidden 3xl:block">3xl</span>
       </div>
     </div>
   );
