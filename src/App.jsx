@@ -1,21 +1,6 @@
-// import React, { useEffect, useState } from "react";
-import Home from "./Page/Home/Home";
-// import MobileHome from "./Page/MobileHome/MobileHome";
-// import Home from "./page/Home/Home";
+import HowItSecPlaceholder from "./Page/Home/HowItSecPlaceholder";
 
 function App() {
-  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsMobile(window.innerWidth <= 700);
-  //   };
-  //   window.addEventListener("resize", handleResize);
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
-  
   return (
     <div className="bg-[black] w-[100%] overflow-hidden">
       <head>
@@ -30,15 +15,12 @@ function App() {
         />
       </head>
       <noscript
-          dangerouslySetInnerHTML={{
-            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRQ324V5"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-          }}
-        />
-      <Home />
-      {/* <div>{isMobile ? <MobileHome /> : }</div> */}
-      {/* <div>
-      </div> */}
+        dangerouslySetInnerHTML={{
+          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRQ324V5"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+        }}
+      />
+      <HowItSecPlaceholder />
     </div>
   );
 }
