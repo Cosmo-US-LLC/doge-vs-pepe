@@ -1,10 +1,19 @@
 import React, { useEffect, useState } from "react";
 import Home from "./Page/Home/Home";
 import MobileHome from "./Page/MobileHome/MobileHome";
-// import Home from "./page/Home/Home";
+import ConnectWalletModal from "./component/ConnectWalletModal"
+import { Toaster } from "react-hot-toast";
+import { loadStoredConnection } from "./presale-gg/web3/connections";
+// import Home from "./Page/Home/Home";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
+
+  useEffect(() => {
+	if (localStorage.getItem("connect-wallet-id-v2")) {
+		loadStoredConnection()
+	}
+  })
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,6 +29,8 @@ function App() {
     <div className="bg-[black] w-[100%]">
       <div>
         <div>{isMobile ? <MobileHome /> : <Home />}</div>
+        <Toaster position="bottom-center" />
+        <ConnectWalletModal />
       </div>
     </div>
   );

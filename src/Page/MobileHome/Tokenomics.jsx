@@ -52,8 +52,8 @@ function TokenmobSec() {
           </div>
         </div>
       </div>
-      <div class="w-full mt-6 ">
-        <img src={dogePepeScale} alt="Your Image" class="w-full object-cover" />
+      <div className="w-full mt-6 ">
+        <img src={dogePepeScale} alt="Your Image" className="w-full object-cover" />
       </div>
     </div>
   );

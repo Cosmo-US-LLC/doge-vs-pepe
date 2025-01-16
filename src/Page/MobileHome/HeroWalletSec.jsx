@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import Countdown, { zeroPad, calcTimeDelta, formatTimeDelta } from "react-countdown";
+import Countdown, {
+  zeroPad,
+  calcTimeDelta,
+  formatTimeDelta,
+} from "react-countdown";
 import arwbtn1 from "../../assets/walletsec/btnicns (3).svg";
 import arwbtn2 from "../../assets/walletsec/btnicns (1).svg";
 import arwbtn3 from "../../assets/walletsec/btnicns (2).svg";
@@ -12,6 +16,7 @@ import coinsw6 from "../../assets/walletsec/coinsw (4).svg";
 import ggicon from "../../assets/walletsec/gg.svg";
 import arw from "../../assets/walletsec/arw.svg";
 import downArrow from "../../assets/herosec/down-arrow.svg";
+import WidgetMob from "../../component/Widget/WidgetMob";
 
 const Buybuttons = [
   { id: "Buy", label: "Buy", img: arwbtn1 },
@@ -102,28 +107,40 @@ function HeroWalletSec() {
   const renderer = ({ days, hours, minutes, seconds }) => (
     <div className="text-white justify-center">
       <div className="bg-black border border-neutral-400 w-[94px] h-[94px] rounded-[15px] flex flex-col justify-center items-center font-Inter">
-        <span className="text-[44px] font-semibold leading-none">{zeroPad(days)}</span>
+        <span className="text-[44px] font-semibold leading-none">
+          {zeroPad(days)}
+        </span>
         <span className="text-[16px] font-bold">days</span>
       </div>
       <span className="text-[50px] px-1">:</span>
       <div className="bg-black border border-neutral-400 w-[94px] h-[94px] rounded-[15px] flex flex-col justify-center items-center font-Inter">
-        <span className="text-[44px] font-semibold leading-none">{zeroPad(hours)}</span>
+        <span className="text-[44px] font-semibold leading-none">
+          {zeroPad(hours)}
+        </span>
         <span className="text-[16px] font-bold">days</span>
       </div>
       <span className="text-[50px] px-1">:</span>
       <div className="bg-black border border-neutral-400 w-[94px] h-[94px] rounded-[15px] flex flex-col justify-center items-center font-Inter">
-        <span className="text-[44px] font-semibold leading-none">{zeroPad(minutes)}</span>
+        <span className="text-[44px] font-semibold leading-none">
+          {zeroPad(minutes)}
+        </span>
         <span className="text-[16px] font-bold">days</span>
       </div>
       {/* :{zeroPad(seconds)} */}
     </div>
-  );  
+  );
 
   return (
     <div className="w-[100%] relative" id="how-to-buy">
       <div className="max-w-[922px] space-y-2">
         <div className="flex justify-center py-6 pt-9 bgwltsecmobUp">
-          <div className=" max-w-[272.31px] bg-[#F2B60F] w-[100%] space-y-[10px]  px-[13px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
+          <WidgetMob
+            project="doge"
+            symbol="DOGE"
+            theme={{ bg: "#F2B60F" }}
+            className="scale-[0.7] -m-16 w-[calc(100%+7.5rem)] xs:transform-none xs:m-auto xs:w-full"
+          />
+          {/* <div className=" max-w-[272.31px] bg-[#F2B60F] w-[100%] space-y-[10px]  px-[13px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
             <div className="bg-[#00000040] flex justify-between p-1 rounded-[30px]">
               {Buybuttons.map((button) => (
                 <div
@@ -273,10 +290,16 @@ function HeroWalletSec() {
                 Max Buy-in $10'000
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex justify-center py-6 pb-9 bgwltsecmobDn">
-          <div
+          <WidgetMob
+            project="pepe"
+            symbol="PEPE"
+            theme={{ bg: "#4eb52a" }}
+            className="scale-[0.7] -m-16 w-[calc(100%+7.5rem)] xs:transform-none xs:m-auto xs:w-full"
+          />
+          {/* <div
             className=" max-w-[272.31px] bg-[#F2B60F] w-[100%] space-y-[10px]  px-[13px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]"
             style={{
               background:
@@ -434,7 +457,7 @@ function HeroWalletSec() {
                 Max Buy-in $10'000
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="w-full hidden h-full absolute top-0 left-0 z-20 bg-[#000000c6] flex flex-col justify-center gap-y-[15px]">
@@ -455,3 +478,24 @@ function HeroWalletSec() {
 }
 
 export default HeroWalletSec;
+
+{
+  /*
+  <div className="block space-y-[5rem]">
+    <div className="flex justify-center">
+      <Widget
+      project="doge"
+      symbol="DOPE"
+      theme={{ bg: "#f2b60f" }}
+      className="scale-[0.7] -m-16 w-[calc(100%+7.5rem)] xs:transform-none xs:m-auto xs:w-full"
+    />; */
+}
+
+{
+  /* <Widget
+  project="pepe"
+  symbol="PEGE"
+  theme={{ bg: "#4eb52a" }}
+  className="scale-[0.7] -m-16 w-[calc(100%+7.5rem)] xs:transform-none xs:m-auto xs:w-full"
+/>; */
+}

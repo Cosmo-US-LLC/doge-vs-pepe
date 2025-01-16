@@ -27,7 +27,7 @@ function HeroSection() {
     >
       <img
         src={downShodow}
-        className="absolute bottom-0 left-0 right-0 w-full"
+        className="absolute bottom-0 left-0 right-0 w-full pointer-events-none"
         alt=""
       />
       <div className="max-w-[1245px] w-[100%] mx-auto relative min-h-[700px]">

@@ -13,6 +13,7 @@ import shodow from "../../assets/shodow.svg";
 import downShodow from "../../assets/Mobile/down-shodwo.svg";
 import arw from "../../assets/walletsec/arw.svg";
 import downArrow from "../../assets/herosec/down-arrow.svg";
+import Widget from "../../component/Widget/Widget";
 
 const Buybuttons = [
   { id: "Buy", label: "Buy", img: arwbtn1 },
@@ -163,10 +164,10 @@ function WalletSec() {
       <img
         src={downShodow}
         alt="shodow"
-        className="absolute bottom-0 left-0 right-0 w-full"
+        className="absolute bottom-0 left-0 right-0 w-full pointer-events-none"
       />
       <div className="max-w-[922px] w-[100%] mx-auto relative z-[9]">
-        <div className="flex justify-between">
+        {/* <div className="flex justify-between">
           <div className="min-h-[596.83px] max-w-[404.01px] bg-[#F2B60F] w-[100%] space-y-[14px]  px-[16px] pb-[26px] pt-[24px] rounded-[24px] border border-[#fff]">
             <div className="bg-[#00000040] flex justify-between p-1 rounded-[30px]">
               {Buybuttons.map((button) => (
@@ -478,7 +479,18 @@ function WalletSec() {
                 Max Buy-in: $25,000
               </p>
             </div>
-          </div>
+          </div> */}
+          <div className="flex justify-between">
+          <Widget
+            project="doge"
+            symbol="DOPE"
+            theme={{bg: "#f2b60f"}}
+          />
+          <Widget
+            project="pepe"
+            symbol="PEGE"
+            theme={{bg: "#4eb52a"}}
+          />
         </div>
       </div>
       <div className="absolute bottom-[-3%] left-0 right-0 flex items-center justify-center z-30">
