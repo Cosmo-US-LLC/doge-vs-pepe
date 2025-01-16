@@ -50,13 +50,13 @@ function MilestonesSec() {
               <div>
                 <img src={chestImage} alt="Treasure Chest" className="mb-2 " />
                 <span className="text-white font-inter text-[22px] font-bold leading-normal opacity-30">
-                  $250,000
+                  $500,000
                 </span>
               </div>
               <div>
                 <img src={chestImage} alt="Treasure Chest" className="mb-2 " />
                 <span className="text-white font-inter text-[22px] font-bold leading-normal opacity-30">
-                  $250,000
+                  $750,000
                 </span>
               </div>
             </div>
@@ -77,13 +77,13 @@ function MilestonesSec() {
               </div>
               <div>
                 <span className="text-white font-inter text-[22px] font-bold leading-normal opacity-30">
-                  $250,000
+                  $500,000
                 </span>
                 <img src={chestImage} alt="Treasure Chest" className="mt-2 " />
               </div>
               <div>
                 <span className="text-white font-inter text-[22px] font-bold leading-normal opacity-30">
-                  $250,000
+                  $750,000
                 </span>
                 <img src={chestImage} alt="Treasure Chest" className="mt-2 " />
               </div>

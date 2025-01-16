@@ -38,22 +38,30 @@ function MobileHeroSection() {
     >
       <div className="w-[90%] relative mx-auto px-3">
         <div className="max-w-[575px] w-full flex flex-col justify-center items-center mx-auto">
-          <div className="flex items-end justify-center space-x-[15px] text-stroke">
+          <div className="flex items-end justify-center space-x-[15px] text-stroke-2">
             <h1
               className="text-[#ffbf0c] text-[50px] font-[400] font-HiJack"
-              style={{ textShadow: "6px -1px 24px #F1AD03" }}
+              style={{
+                textShadow: "6px -1px 14px #F1AD036a",
+                // WebkitTextStrokeWidth: "1px",
+                // WebkitTextStrokeColor: "#000",
+              }}
             >
               DOGE
             </h1>
             <h4
-              className="text-[#fff] text-[20px] h-[48px] font-[400] font-Lato text-stroke-2"
-              style={{ textShadow: "0px 0px 7px #74FF60" }}
+              className="text-[#fff] text-[20px] h-[48px] font-[800] font-Lato text-stroke"
+              style={{ textShadow: "0px 0px 7px #74FF606a" }}
             >
               VS.
             </h4>
             <h1
               className="text-[#00FF2F] text-[50px] font-[400] font-HiJack"
-              style={{ textShadow: "6px -1px 24px #74FF60" }}
+              style={{
+                textShadow: "6px -1px 14px #74FF606a",
+                // WebkitTextStrokeWidth: "1px",
+                // WebkitTextStrokeColor: "#000",
+              }}
             >
               PEPE
             </h1>
@@ -62,9 +70,10 @@ function MobileHeroSection() {
           <h3 className="w-[340px] text-[23px] font-HiJack drop-shadow-[0px_0px_15px_rgba(0,0,0)] uppercase leading-[1.13] text-[#FFF] text-center ">
             THE ULTIMATE showdown
           </h3>
-          <h4 className="w-[340px] text-[20px] font-medium pb-4 leading-[1.3] text-[#FFF] text-center">
-            Who’s Raising <span className="text-[#00FF2F]">$1 Million</span>
-            &nbsp; First?
+          <h4 className="w-[340px] text-[20px] font-semibold drop-shadow-[0px_0px_15px_rgba(0,0,0)] pb-4 leading-[1.3] text-[#FFF] text-center">
+            Who’s Raising $1 Million First?
+            {/* Who’s Raising <span className="text-[#00FF2F]">$1 Million</span> */}
+            {/* &nbsp; First? */}
           </h4>
           <p className="text-[14px] max-w-[320px] w-full pb-4 mx-auto font-[700] leading-[1.2] rounded-[15px] px-2 py-4 text-[#FFF] border border-white bg-[#0000009f] text-center drop-shadow-xl shadow-md shadow-neutral-800">
             Only one will win this epic fight and launch!

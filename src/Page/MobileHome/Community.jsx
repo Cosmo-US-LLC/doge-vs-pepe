@@ -1,6 +1,8 @@
 import React from "react";
-import cardimg2 from "../../assets/CommunitySec/Frame 1410116893.svg";
-import cardimg1 from "../../assets/CommunitySec/Frame 1410116892.svg";
+import cardimg2 from "../../assets/CommunitySec/pepeTeam.png";
+// import cardimg2 from "../../assets/CommunitySec/Frame 1410116893.svg";
+import cardimg1 from "../../assets/CommunitySec/dogeTeam.png";
+// import cardimg1 from "../../assets/CommunitySec/Frame 1410116892.svg";
 import vectcard2 from "../../assets/CommunitySec/Ellipse 80.webp";
 import vectcard1 from "../../assets/CommunitySec/Ellipse 81.webp";
 import arwl from "../../assets/herosec/Arrowlf.svg";
@@ -34,11 +36,23 @@ function CommunitySec() {
           <div
             className="bg-[#28649721] p-2 relative rounded-[21.168px]"
             style={{
-              backdropFilter: "blur(15.208927154541016px)",
-              background: "rgba(0, 0, 0, 0.47)",
               borderRadius: "21.168px",
             }}
           >
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backdropFilter: "blur(15px)", // Apply blur here
+                WebkitBackdropFilter: "blur(15px)",
+                backgroundColor: "rgba(0, 0, 0, 0.47)", // Semi-transparent background
+                borderRadius: "21.168px",
+                zIndex: 1,
+              }}
+            ></div>
             {/* <img
               src={vectcard1}
               className="absolute -left-[18%] top-[6%] z-[10]"
@@ -87,11 +101,23 @@ function CommunitySec() {
           <div
             className="bg-[#28649721] p-2 relative rounded-[21.168px]"
             style={{
-              backdropFilter: "blur(15.208927154541016px)",
-              background: "rgba(0, 0, 0, 0.47)",
               borderRadius: "21.168px",
             }}
           >
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backdropFilter: "blur(15px)", // Apply blur here
+                WebkitBackdropFilter: "blur(15px)",
+                backgroundColor: "rgba(0, 0, 0, 0.47)", // Semi-transparent background
+                borderRadius: "21.168px",
+                zIndex: 1,
+              }}
+            ></div>
             {/* <img
               src={vectcard2}
               className="absolute -right-[40%] -top-[60%]"

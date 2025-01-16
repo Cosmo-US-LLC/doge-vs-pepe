@@ -7,7 +7,7 @@ function PrizeMoney() {
       <div className="p-[22px] rounded-[26.9px] space-y-[45px] w-[90%] mx-auto relative min-h-[500px] border boredr-[#fff] bg-[#01010182]">
         <div className="space-y-[20px]">
           <h3 className="text-[#FFFCFC] font-HiJack text-center text-[22px] leading-[104.377%] font-[400]">
-          Prize Money For The Winning Team 
+          Prize Money For The<br />Winning Team 
           </h3>
           <h4
             className="text-center font-HiJack text-[#fff] text-[46.799px] font-[400]"

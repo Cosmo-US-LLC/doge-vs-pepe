@@ -52,9 +52,9 @@ code {
   background-repeat: no-repeat;
 }
 .DontWaitmobSec{
-  background-image: url(../src/assets/DontWaitSec/mobdont.png);
+  background-image: url(../src/assets/DontWaitSec/dontbg2.png);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .dogevspepebg{
