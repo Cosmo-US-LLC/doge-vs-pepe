@@ -18,20 +18,20 @@ function HowItmobSec() {
           </h3>
           <p className="max-w-[535px] w-[100%] font-[400] mx-auto text-[#fff] leading-[114%] text-[15px] text-center">The heated rivalry began when Pepe, the rising star, reached #3 among all meme heavyweights and started calling out Doge, the undefeated champ. Doge couldn’t let this slide, and after months of back-and-forth insults on social media, the two bumped into each other at MOON, one of the hottest nightclubs in the city. Things escalated quickly, turning into a massive brawl with serious consequences. </p>
           <div className="flex justify-center">
-            <img src={howitimg} alt="" />
+            <img src={howitimg} alt="" className="max-w-[240px]" />
           </div>
           <div className="space-y-[10px]">
-            <h4 className="text-[#fff] leading-[114%] font-[400] text-[10px] text-center">
+            <h4 className="text-[#fff] leading-[114%] font-[400] text-[12px] text-center">
             Follow us on social media to keep up with the story!
             </h4>
           <div className="flex justify-center space-x-[1rem]">
-            <div className="flex justify-center items-center space-x-1">
-                <p className="text-[10px] font-[600] text-[#fff] uppercase"> Join X</p>
-                <img className="cursor-pointer w-[15px] h-[15px]" src={telicon1} alt="" />
+            <div className="flex justify-center items-center space-x-1 gap-1">
+                <p className="text-[12px] font-[600] text-[#fff] leading-3 uppercase"> Join X</p>
+                <img className="cursor-pointer w-[18px] h-[18px]" src={telicon1} alt="" />
             </div>
-            <div className="flex justify-center items-center space-x-1">
-                <p className="text-[10px] font-[600] text-[#fff] uppercase"> Join Telegram</p>
-                <img className="cursor-pointer w-[15px] h-[15px]" src={telicon2} alt="" />
+            <div className="flex justify-center items-center space-x-1 gap-1">
+                <p className="text-[12px] font-[600] text-[#fff] leading-3 uppercase"> Join Telegram</p>
+                <img className="cursor-pointer w-[18px] h-[18px]" src={telicon2} alt="" />
             </div>
           </div>
           </div>

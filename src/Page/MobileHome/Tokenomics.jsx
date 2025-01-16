@@ -1,5 +1,5 @@
 import React from "react";
-import dogePepeScale from "../../assets/tokenomics/imgrdmob.png";
+import dogePepeScale from "../../assets/tokenomics/doge-pepe-scale.png";
 import verc1 from "../../assets/RoadmapSec/Ellipse 80 (3).png";
 import verc2 from "../../assets/RoadmapSec/Ellipse 81 (1).png";
 
