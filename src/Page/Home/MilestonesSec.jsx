@@ -6,8 +6,8 @@ import dogeicon from "../../assets/MilestonesSec/Mask group (4).png";
 
 
 function MilestonesSec() {
-  const [dogePercentage, setDogePercentage] = useState(18);
-  const [pepePercentage, setPepePercentage] = useState(24);
+  const [dogePercentage, setDogePercentage] = useState(0);
+  const [pepePercentage, setPepePercentage] = useState(0);
   return (
     <div className="Mysterybg relative w-[100%] pt-[90px] overflow-hidden pb-[90px]">
       <div className="max-w-[1168px] space-y-[40px] w-[100%] mx-auto ">
@@ -30,7 +30,7 @@ function MilestonesSec() {
           <div className="bg-[#181818] p-1 rounded-[40.835px] w-[100%] h-[66.415px] border-[0.794px] border-[#EFAB00]">
             <div
               className="flex items-center justify-center h-full rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600"
-              style={{ width: `${dogePercentage}%` }}
+              style={{ width: `${dogePercentage}%`, minWidth: '80px' }}
             >
               <span className="text-[32.668px] font-[400] font-HiJack text-[#0B0101] leading-none font-[Inter]">
                 {dogePercentage}%
@@ -96,6 +96,7 @@ function MilestonesSec() {
               className="flex items-center justify-center h-full rounded-full bg-gradient-to-r"
               style={{
                 width: `${pepePercentage}%`,
+                minWidth: '80px',
                 background:
                   "linear-gradient(66deg, #79EC8F 25.98%, #09FC3C 65.48%)",
               }}

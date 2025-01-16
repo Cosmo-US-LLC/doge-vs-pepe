@@ -48,9 +48,9 @@ function Navbar() {
         {/* Desktop Navigation Links */}
         <div className="2xl:flex xl:flex lg:flex md:flex max-md:hidden justify-center items-center space-x-[30px]">
           <a
-            href="#what-is"
+            href="#firstever"
             className="text-[#fff] text-[16px] font-[600]"
-            onClick={(e) => handleScroll(e, "what-is", 90)}
+            onClick={(e) => handleScroll(e, "firstever", 90)}
           >
             What is DOGEVSPEPE
           </a>
@@ -96,9 +96,9 @@ function Navbar() {
           <div className="absolute top-[73px] left-[20px] w-[230px] bg-[#000000] text-[#FFFFFF] z-[100]">
             <div className="border-[2px] border-white rounded-[4px] px-2 py-4">
               <a
-                href="#what-is"
+                href="#firstever"
                 className="block py-[8px] px-[12px] text-[#FFF] font-k2d font-semibold text-[15px] leading-[15.657px] border-b border-[#fff]"
-                onClick={(e) => handleScroll(e, "what-is", 90)}
+                onClick={(e) => handleScroll(e, "firstever", 90)}
               >
                 What is DOGEVSPEPE
               </a>

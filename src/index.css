@@ -46,7 +46,7 @@ code {
   background-repeat: no-repeat;
 }
 .DontWaitSec{
-  background-image: url(../src/assets/DontWaitSec/dontbg.png);
+  background-image: url(../src/assets/DontWaitSec/dontbgnew.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -126,8 +126,14 @@ code {
 }
 .bgroadmap{
   background-image: url(../src/assets/RoadmapSec/roadbg.png);
+  background-position: 0px -20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bgroadmapMob{
+  background-image: url(../src/assets/RoadmapSec/roadbg.png);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .bgmainvipcard{

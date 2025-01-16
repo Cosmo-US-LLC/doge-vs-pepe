@@ -17,7 +17,7 @@ function RoadmapSec() {
             </h3>
           </div>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between pt-24">
           <div className="space-y-[5rem] max-w-[560px] w-[100%]">
             <div className="max-w-[510px] mx-auto w-[100%]">
               <button
