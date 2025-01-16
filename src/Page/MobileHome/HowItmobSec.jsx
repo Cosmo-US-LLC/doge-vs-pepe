@@ -1,5 +1,5 @@
 import React from "react";
-import howitimg from "../../assets/HowItSec/how-it-img.png";
+import howitimg from "../../assets/HowItSec/how-it-img4.png";
 import telicon1 from "../../assets/HowItSec/logos_telegram.svg";
 import telicon2 from "../../assets/HowItSec/logos_telegram (1).svg";
 import vecleft from "../../assets/HowItSec/P (43).png"
