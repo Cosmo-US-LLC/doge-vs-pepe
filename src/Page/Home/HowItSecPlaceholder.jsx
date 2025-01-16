@@ -25,7 +25,7 @@ function HowItSecPlaceholder() {
           <h3 className="text-[#FFFCFC] font-HiJack text-center text-[21px] xl:pt-3 lg:text-[30px] xl:text-[37px] 3xl:text-[50px] leading-[80.377%] font-[400]">
             How It All Began
           </h3>
-          <p className="w-[100%] font-[400] px-2 mx-auto text-[#fff] leading-[114%] text-[12px] lg:text-[15px] xl:text-[18px] 3xl:text-[25px] text-center">
+          <p className="lg:w-[80%] font-[400] px-2 mx-auto text-[#fff] leading-[114%] text-[12px] lg:text-[15px] xl:text-[18px] 3xl:text-[25px] text-center">
             The rivalry started when Pepe, the rising star, reached #3 among
             meme heavyweights and began calling out Doge, the undefeated champ.
             Doge couldn’t let this slide, and after months of trading insults on
