@@ -16,7 +16,7 @@ import coinsw6 from "../../assets/walletsec/coinsw (4).svg";
 import ggicon from "../../assets/walletsec/gg.svg";
 import arw from "../../assets/walletsec/arw.svg";
 import downArrow from "../../assets/herosec/down-arrow.svg";
-import Widget from "../../component/Widget/Widget";
+import WidgetMob from "../../component/Widget/WidgetMob";
 
 const Buybuttons = [
   { id: "Buy", label: "Buy", img: arwbtn1 },
@@ -134,7 +134,13 @@ function HeroWalletSec() {
     <div className="w-[100%] relative" id="how-to-buy">
       <div className="max-w-[922px] space-y-2">
         <div className="flex justify-center py-6 pt-9 bgwltsecmobUp">
-          <div className=" max-w-[272.31px] bg-[#F2B60F] w-[100%] space-y-[10px]  px-[13px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
+          <WidgetMob
+            project="doge"
+            symbol="DOGE"
+            theme={{ bg: "#F2B60F" }}
+            className="scale-[0.7] -m-16 w-[calc(100%+7.5rem)] xs:transform-none xs:m-auto xs:w-full"
+          />
+          {/* <div className=" max-w-[272.31px] bg-[#F2B60F] w-[100%] space-y-[10px]  px-[13px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
             <div className="bg-[#00000040] flex justify-between p-1 rounded-[30px]">
               {Buybuttons.map((button) => (
                 <div
@@ -284,10 +290,16 @@ function HeroWalletSec() {
                 Max Buy-in $10'000
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex justify-center py-6 pb-9 bgwltsecmobDn">
-          <div
+          <WidgetMob
+            project="pepe"
+            symbol="PEPE"
+            theme={{ bg: "#4eb52a" }}
+            className="scale-[0.7] -m-16 w-[calc(100%+7.5rem)] xs:transform-none xs:m-auto xs:w-full"
+          />
+          {/* <div
             className=" max-w-[272.31px] bg-[#F2B60F] w-[100%] space-y-[10px]  px-[13px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]"
             style={{
               background:
@@ -445,7 +457,7 @@ function HeroWalletSec() {
                 Max Buy-in $10'000
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="w-full hidden h-full absolute top-0 left-0 z-20 bg-[#000000c6] flex flex-col justify-center gap-y-[15px]">

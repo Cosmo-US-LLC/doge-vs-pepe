@@ -2,9 +2,15 @@ import React, { useState } from "react";
 // import Logo from "../../assets/navbar/navLogo.svg";
 import Logo from "../../assets/Mobile/nav-logo.webp";
 import menuIcon from "../../assets/navbar/Group 1410124892.svg";
+import { getConfig, useAccount } from "../../presale-gg/web3";
+// import { getConfig, useAccount } from "../presale-gg/web3";
+// import { getConfig, useAccount } from "../../component/"
+import { disconnect } from "@wagmi/core";
+import { showConnectionModal } from "../../presale-gg/stores/modal.store";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+    const accountData = useAccount();
 
   const handleScroll = (event, targetId, offset) => {
     event.preventDefault();
@@ -155,8 +161,17 @@ function Navbar() {
                    rounded-[32px] bg-[#0184E2] text-black text-[10px]
                    from-[#FFBF01] to-[#01FE37] 
                    font-[700] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105"
+              onClick={async () => {
+                            if (accountData.isConnected) {
+                              const { config } = await getConfig();
+                              disconnect(config);
+                            } else {
+                              showConnectionModal();
+                            }
+                          }}
           >
-            Get Early Access
+            {/* Connect Wallet */}
+            {!accountData.isConnected ? "Get Early Access" : "Disconnect Wallet"}
           </button>
           {/* <button
             className="2xl:w-[173px] xl:w-[173px] lg:w-[173px] md:w-[173px] sm:w-[173px] w-[109px] 
