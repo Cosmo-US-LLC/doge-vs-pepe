@@ -1,57 +1,51 @@
 import React from "react";
-import firstDoge from "../../assets/Mobile/first-doge.webp";
-import firstPepe from "../../assets/Mobile/first-pepe.webp";
+import firstDoge from "../../assets/Mobile/century-doge.png";
+import firstPepe from "../../assets/Mobile/century-pepe.png";
+import dogePepe from "../../assets/Mobile/century-fighters.png";
 import greenShodow from "../../assets/Mobile/green-shodow.svg";
 import yellowShodow from "../../assets/Mobile/yellow-shodow.svg";
 function MobileFirstEverSec() {
   return (
-    <div className="w-[100%] bgeversecmob overflow-hidden relative pt-[60px] pb-[17px] " id="whitepaper">
-       <div className="absolute inset-0 bg-black bg-opacity-20 z-10"></div>
-      <div className=" space-y-[45px] w-[90%] mx-auto  mt-4">
-        <h3 className="text-[#fff] text-center text-[26px] leading-[24px] uppercase font-[700] relative z-10">
-          The First Ever <br /> Crypto Meme Fight
+    <div
+      className="w-[100%] bgeversecmob overflow-hidden relative pt-[50px] pb-[10px] "
+      id="whitepaper"
+    >
+      <div className=" space-y-[15px] w-[90%] mx-auto">
+        <h3 className="text-[#fff] text-center text-[22px] font-HiJack">
+          THE FIGHT OF THE CENTURY
         </h3>
 
-        <div className="relative ">
-          <div className=" max-w-[264.314px] mx-auto w-[100%]">
-            <p className="  text-[#fff] text-[15px] text-center leading-[114%] font-[700]">
-              Welcome to <span className="font-[700] relative z-10">Team Doge</span> vs.{" "}
-              <span className="font-[700] relative z-10">Team Pepe</span>, where you get to
-              decide who wins! This isn’t just another crypto presale—it’s a
-              fast, fun competition that lets the community decide. <br />{" "}
-              <br />
-              Your mission is simple:
-              <br /> <br /> 1. Pick your favorite meme by buying the coin you
-              prefer. 
-              <br /> <br /> 2. The first to hit $1M raised wins
-              <br /> <br /> 3. Launch Date will be announced immediately after
-              <br /> <br /> 4. Winner Launches on DEX and CEX <br /> <br />
-              So, who will it be? Will you back Doge, the iconic Shiba?
-              Or will you choose Pepe, the internet’s rebellious frog?
-            </p>
-          </div>
+        <div className="relative">
+          <p className="text-[14px] w-full pb-4 mx-auto font-[600] leading-[1.2] rounded-[15px] px-2 py-4 text-[#FFF] border border-white bg-[#00000057] text-center drop-shadow-xl shadow-md shadow-neutral-800">
+            Welcome to Team Doge vs. Team Pepe, where the community decides
+            who wins! This isn’t just another crypto pre-sale, it’s the
+            ultimate showdown between two meme heavyweights as only one token
+            will launch in the end! <br /> <br />
+            Your mission is simple:
+            <br /> <br /> 1. Pick your favorite meme by buying the coin you prefer.
+            <br /> <br /> 2. The first to hit $1M raised wins
+            <br /> <br /> 3. Launch Date will be announced
+            <br /> <br /> 4. Winner Launches on DEX and CEX<br />
+            So, who will it be?<br /><br />
+            Will you back Doge, the iconic Shiba? Or will you choose Pepe, the rebellious frog?
+          </p>
         </div>
       </div>
-      <div className="min-h-[250px] flex justify-between z-10">
-        <img
+      <div className="min-h-[250px] flex justify-center items-end">
+        {/* <img
           src={firstDoge}
           alt="firstDoge"
-          className="w-[302px] h-[196px] absolute left-[-17%] bottom-[6px] z-10"
-        />
-        <img
-          src={yellowShodow}
-          alt="firstDoge"
-          className="w-[202px] h-[156px] absolute left-[0%] bottom-[-3%] z-10"
-        />
-        <img
+          className="w-auto h-[190px] object-cover"
+        /> */}
+        {/* <img
           src={firstPepe}
           alt="firstPepe"
-          className="w-[175px] h-[250px] absolute right-[-8%] bottom-[6px] z-10"
-        />
+          className="w-auto h-[237px] object-contain"
+        /> */}
         <img
-          src={greenShodow}
+          src={dogePepe}
           alt="firstPepe"
-          className="w-[175px] h-[250px] absolute right-[-8%] bottom-[-8%] z-10"
+          className="w-auto min-h-[250px] h-full object-contain"
         />
       </div>
     </div>

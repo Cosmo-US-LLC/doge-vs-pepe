@@ -34,7 +34,7 @@ function Footer() {
             Roadmap
           </a>
           <a href="https://example.com" className="mt-4 text-[18px] text-[#fff] font-[400] block">
-            $DOPE Tokenomics
+            $DOGE Tokenomics
           </a>
           <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             $PEPE Tokenomics

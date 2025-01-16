@@ -7,7 +7,7 @@ import { showConnectionModal } from "../presale-gg/stores/modal.store";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const accountData = useAccount()
+  const accountData = useAccount();
 
   const handleScroll = (event, targetId, offset) => {
     event.preventDefault();
@@ -31,7 +31,7 @@ function Navbar() {
             className="2xl:hidden xl:hidden lg:hidden md:hidden sm:block block mr-[12px] cursor-pointer"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            <img src={menuIcon} alt="Menu " className=" w-[29px] h-[29px]"/>
+            <img src={menuIcon} alt="Menu " className=" w-[29px] h-[29px]" />
           </div>
 
           <img
@@ -64,13 +64,6 @@ function Navbar() {
             onClick={(e) => handleScroll(e, "how-to-buy", 90)}
           >
             How To Buy
-          </a>
-          <a
-            href="#whitepaper"
-            className="text-[#fff] text-[16px] font-[600]"
-            onClick={(e) => handleScroll(e, "whitepaper", 90)}
-          >
-            Whitepaper
           </a>
           <a
             href="#tokenomics"
@@ -154,20 +147,24 @@ function Navbar() {
 
         <div className="flex justify-between space-x-[24px]">
           <button
+            style={{
+              background: "linear-gradient(90deg, #FFBF01 0%, #01FE37 134.57%)",
+              boxShadow: "adow: 0px 2px 0px 0px #FFF",
+            }}
             className="2xl:w-[173px] xl:w-[173px] lg:w-[173px] md:w-[173px] sm:w-[173px] w-[109px] 
                    2xl:h-[40px] xl:h-[40px] lg:h-[40px] md:h-[40px] sm:h-[27px] h-[36px] 
-                   rounded-[60px] bg-[#0184E2] text-[#fff] 
+                   rounded-[60px]  text-[#000] 
                    2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[12px] text-[12px] 
                    font-[700] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105"
-			onClick={async () => {
-				if (accountData.isConnected) {
-					const { config } = await getConfig()
-					disconnect(config)
-				} else {
-					showConnectionModal()
-				}
-			}}
-		  >
+            onClick={async () => {
+              if (accountData.isConnected) {
+                const { config } = await getConfig();
+                disconnect(config);
+              } else {
+                showConnectionModal();
+              }
+            }}
+          >
             {!accountData.isConnected ? "Connect Wallet" : "Disconnect Wallet"}
           </button>
         </div>

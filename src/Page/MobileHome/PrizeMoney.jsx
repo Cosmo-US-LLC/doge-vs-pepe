@@ -1,31 +1,34 @@
 import React from "react";
-import belt from "../../assets/Mobile/belt.png";
-import prize_money_background from "../../assets/Mobile/prize-money-mobile.svg";
+import prizeimg from "../../assets/PrizeMoneySec/prize-belt.png";
 
 function PrizeMoney() {
-    return (
-        <div
-            className="flex flex-col items-center px-4 mt-8 relative h-[511px] bg-cover bg-center"
-            style={{
-                backgroundImage: `url(${prize_money_background})`,
-            }}
-        >
-            <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-            <p className=" relative text-[26px] font-[700] text-[#FFFCFC] text-center font-k2d uppercase leading-normal mt-2 z-20">
-  Prize Money For<br />
-  The <span className="font-[700] text-[26px] filter blur-[0.5px]">
-    Winning Team
-  </span>
-</p>
-
-<p className="text-[38px] font-[700] text-[#EFAB00] font-k2d leading-normal text-center mt-2 z-20">
-  100’000 USD*
-</p>
-            <img src={belt} className="z-20 mt-4" alt="belt" />
-            <p className="text-[17px] font-[700] leading-[20px] text-[white] mt-4 text-center z-20">For every $100k raised another $10’000 will be added to the Prize Pool</p>
-            <p className="text-[12px] font-[600] leading-[15px] text-[white] mt-4 text-center z-20">*The prize money will be airdropped to all token holders of the winning coin, distributed proportionally based on the number of tokens they hold.</p>
+  return (
+    <div className="w-[100%] bgmobprizsec overflow-hidden pt-[60px] pb-[80px]">
+      <div className="p-[22px] rounded-[26.9px] space-y-[45px] w-[90%] mx-auto relative min-h-[500px] border boredr-[#fff] bg-[#01010182]">
+        <div className="space-y-[20px]">
+          <h3 className="text-[#FFFCFC] font-HiJack text-center text-[22px] leading-[104.377%] font-[400]">
+          Prize Money For The Winning Team 
+          </h3>
+          <h4
+            className="text-center font-HiJack text-[#fff] text-[46.799px] font-[400]"
+          >
+           250’000 USD*
+          </h4>
+          <div className="flex justify-center">
+            <img src={prizeimg} alt="" />
+          </div>
+          <div className="space-y-[20px]">
+            <h4 className="text-center leading-normal text-[18px] text-[#fff] font-[700] max">
+            The prize money will be airdropped and shared by all token holders of the winning coin.
+            </h4>
+            <p className="text-center text-[12px] text-[#FFFCFC] font-[700]">
+            *The prize money will be distributed <br /> in the winning token based on your holdings
+            </p>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
-      
+
 export default PrizeMoney;
