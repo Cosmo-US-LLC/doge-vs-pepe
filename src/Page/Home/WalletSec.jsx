@@ -100,7 +100,7 @@ function WalletSec() {
 
   return (
     <div
-      className="relative w-[100%] bgwltsec pt-[107px] pb-[128px]"
+      className="relative w-[100%] h-[810px] bgwltsec pt-[107px] pb-[128px] "
       id="how-to-buy"
     >
       <div className="h-[100%] hidden bg-[#000000cf] flex justify-center items-center z-[-1] absolute w-[100%] top-0 ">

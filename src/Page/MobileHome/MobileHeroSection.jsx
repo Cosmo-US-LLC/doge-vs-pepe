@@ -142,13 +142,25 @@ function MobileHeroSection() {
           onClick={(e) => handleScroll(e, "how-to-buy", 50)}
         />
       </div> */}
-      <div className="bg-black p-3 grid grid-cols-3 gap-y-1 gap-x-4">
-        <img src={coinMarketCop} alt="Coin market cop" className="h-[20px]" />
-        <img src={ambCrypto} alt="Coin market cop" className="h-[20px]" />
-        <img src={cryptoNews} alt="Coin market cop" className="h-[20px]" />
-        <img src={bitCoinist} alt="Coin market cop" className="h-[20px]" />
-        <img src={newsBit} alt="Coin market cop" className="h-[20px]" />
-        <img src={ambCrypto} alt="Coin market cop" className="h-[20px]" />
+      <div className="w-full py-4 bg-black">
+        <h2 className="text-[#FFFCFC] text-center text-[22px] font-HiJack font-[400] uppercase mb-2">
+          As Seen On
+        </h2>
+
+        <div className="flex items-center justify-start overflow-hidden whitespace-nowrap">
+          <div className="flex animate-marquee">
+            <img
+              src={coinMarketCop}
+              alt="Coin market cop"
+              className="h-[20px] mx-4"
+            />
+            <img src={ambCrypto} alt="AMB Crypto" className="h-[20px] mx-4" />
+            <img src={cryptoNews} alt="Crypto News" className="h-[20px] mx-4" />
+            <img src={bitCoinist} alt="Bitcoinist" className="h-[20px] mx-4" />
+            <img src={newsBit} alt="NewsBit" className="h-[20px] mx-4" />
+            <img src={ambCrypto} alt="AMB Crypto" className="h-[20px] mx-4" />
+          </div>
+        </div>
       </div>
     </div>
   );

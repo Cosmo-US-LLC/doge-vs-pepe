@@ -1,22 +1,33 @@
 import React from "react";
-import rule1 from "../../assets/RuleSec/rule_1.png";
-import rule2 from "../../assets/RuleSec/rule_2.png";
-import rule3 from "../../assets/RuleSec/rule_3.png";
-import rule4 from "../../assets/RuleSec/rule_4.png";
-import rule5 from "../../assets/RuleSec/rule_5.png";
-import rule6 from "../../assets/RuleSec/rule_6.png";
-import rule7 from "../../assets/RuleSec/rule_7.png";
+import rule1 from "../../assets/RuleSec/rule1.webp";
+import rule2 from "../../assets/RuleSec/rule2.webp";
+import rule3 from "../../assets/RuleSec/rule3.webp";
+import rule4 from "../../assets/RuleSec/rule4.webp";
+import rule5 from "../../assets/RuleSec/rule5.webp";
+import rule6 from "../../assets/RuleSec/rule6.webp";
+import rule7 from "../../assets/RuleSec/mask_group (6).webp";
 import telicn from "../../assets/RuleSec/logos_telegram.svg";
 import leftMan from "../../assets/RuleSec/left-crdimg.png";
 import rightMan from "../../assets/RuleSec/right-crdimg.png";
+import topShodow from "../../assets/RuleSec/rectangle_287.webp";
+import bottomShodow from "../../assets/RuleSec/rectangle_288.webp";
 
 function TheRulesSec() {
   return (
-    <div className="relative bgrule overflow-hidden w-[100%] py-[36px]" id="rules">
+    <div
+      className="relative bgrule overflow-hidden w-[100%] py-[36px]"
+      id="rules"
+    >
+      <div className="absolute top-0 left-0 right-0 w-full h-full">
+        <img className="w-full h-full" src={topShodow} alt="" />
+      </div>
+      <div className="absolute bottom-0 left-0 right-0 w-full h-full">
+        <img className="w-full h-full" src={bottomShodow} alt="" />
+      </div>
       <div className="max-w-[1143px] space-y-[45px] w-[100%] mx-auto relative min-h-[500px]">
         <div>
           <h3 className="text-[#FFFCFC] font-HiJack uppercase text-center text-[50px] leading-[104.377%] font-[400]">
-          The 7 Rules
+            The 7 Rules
           </h3>
         </div>
         <div className="relative space-y-[30px]">
@@ -47,11 +58,15 @@ function TheRulesSec() {
               <ol className="flex flex-col gap-4 pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
                 <li className="text-[20px] text-[#FFF] font-[400]">
                   <span className="font-[700]">Team Doge ($DOGE)</span> <br />{" "}
-                  The undisputed and undefeated Meme Heavyweight Champions who pave the way for all others. If you stand for greatness and legacy, this is your corner!
+                  The undisputed and undefeated Meme Heavyweight Champions who
+                  pave the way for all others. If you stand for greatness and
+                  legacy, this is your corner!
                 </li>
                 <li className="text-[20px] text-[#FFF] font-[400]">
                   <span className="font-[700]">Team Pepe ($PEPE)</span> <br />{" "}
-                  No one has shaken up the Meme Heavyweight scene in recent years like this maverick. If you stand for bold moves and fresh energy, this is your corner!
+                  No one has shaken up the Meme Heavyweight scene in recent
+                  years like this maverick. If you stand for bold moves and
+                  fresh energy, this is your corner!
                 </li>
               </ol>
             </div>
@@ -65,10 +80,10 @@ function TheRulesSec() {
               </div>
               <ol className="flex flex-col pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
                 <li className="text-[20px] text-[#FFF] font-[400]">
-                Buy tokens and support your favorite meme.
+                  Buy tokens and support your favorite meme.
                 </li>
                 <li className="text-[20px] text-[#FFF] font-[400]">
-                Every token purchased is a vote toward their victory.
+                  Every token purchased is a vote toward their victory.
                 </li>
                 {/* <li className="text-[20px] text-[#FFF] font-[400]">
                   Maximum Buy-In: Each wallet can buy for up to $10,000.
@@ -123,10 +138,14 @@ function TheRulesSec() {
               </div>
               <ol className="flex flex-col gap-3 pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
                 <li className="text-[20px] text-[#FFF] font-[400]">
-                The losing team’s funds aren’t wasted. They’re added to the liquidity pool of the winning team, making the winner’s token stronger and more valuable.
+                  The losing team’s funds aren’t wasted. They’re added to the
+                  liquidity pool of the winning team, making the winner’s token
+                  stronger and more valuable.
                 </li>
                 <li className="text-[20px] text-[#FFF] font-[400]">
-                The launch is taking place shortly after the winner is announced. The time in between will be used to secure CEX listings and ensure the best possible launch.
+                  The launch is taking place shortly after the winner is
+                  announced. The time in between will be used to secure CEX
+                  listings and ensure the best possible launch.
                 </li>
               </ol>
             </div>
@@ -224,20 +243,15 @@ function TheRulesSec() {
                 </li>
               </ol>
               <div className="pt-[10px]">
-  <button
-    className="bg-[#00B7FF] max-w-[252px] flex justify-center space-x-2 items-center w-[100%] ml-[6rem] rounded-[5px] h-[39px] uppercase text-[18px] text-[#fff] font-[600] transition-all duration-300 hover:bg-[#F2B60F] hover:text-[#fff]"
-  >
-    Join Telegram
-    <img
-      src={telicn}
-      className="ml-4 transition-transform duration-300 hover:scale-110"
-      alt="card_image_10"
-    />
-  </button>
-</div>
-
-
-
+                <button className="bg-[#00B7FF] max-w-[252px] flex justify-center space-x-2 items-center w-[100%] ml-[6rem] rounded-[5px] h-[39px] uppercase text-[18px] text-[#fff] font-[600] transition-all duration-300 hover:bg-[#F2B60F] hover:text-[#fff]">
+                  Join Telegram
+                  <img
+                    src={telicn}
+                    className="ml-4 transition-transform duration-300 hover:scale-110"
+                    alt="card_image_10"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>

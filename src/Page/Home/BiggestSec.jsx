@@ -9,7 +9,7 @@ function BiggestSec() {
       <div className="max-w-[1440px] w-[100%] space-y-[100px] mx-auto ">
         <div className=" w-[100%]">
           <h3 className="pb-[130px] text-[50px] text-center font-HiJack leading-[102.804%] font-[400] text-[#FFF] uppercase">
-          Biggest Crypto Event in 2025
+          The Biggest Crypto Event in 2025
           </h3>
         </div>
         <div className="flex gap-[1rem] justify-between items-center max-w-[1320px]  w-[100%]  2xl:!m-auto xl:ml-auto">
