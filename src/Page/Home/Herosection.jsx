@@ -2,8 +2,8 @@ import React from "react";
 import arwl from "../../assets/herosec/Arrowlf.svg";
 import arwr from "../../assets/herosec/Arrowrght.svg";
 import vsimg from "../../assets/herosec/vs.png";
-import vsimgr from "../../assets/herosec/vects (2).png";
-import vsimgl from "../../assets/herosec/vects (1).png";
+import doge from "../../assets/herosec/doge.webp";
+import pepe from "../../assets/herosec/pepe.webp";
 import downShodow from "../../assets/herosec/down-shodwo.svg";
 import downArrow from "../../assets/herosec/down-arrow.svg";
 
@@ -22,7 +22,7 @@ function HeroSection() {
   };
   return (
     <div
-      className="relative w-[100%] bgherosec pt-[9rem] pb-[30px]"
+      className="relative w-[100%] bgherosec pt-[9rem] pb-[30px] h-[800px]"
       id="what-is"
     >
       <img
@@ -140,8 +140,8 @@ function HeroSection() {
           </button>
         </div>
 
-        <img src={vsimgr} className="absolute -left-[3%] -top-8" alt="" />
-        <img className="absolute -right-3 -top-10" src={vsimgl} alt="" />
+        <img src={doge} className="absolute -left-[3%] -top-8" alt="" />
+        <img className="absolute -right-3 -top-10" src={pepe} alt="" />
       </div>
       <div className=" bottom-[-3%]  absolute left-0 right-0 flex items-center justify-center z-30">
         <img

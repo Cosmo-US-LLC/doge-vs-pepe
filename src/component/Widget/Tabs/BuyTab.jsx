@@ -279,13 +279,13 @@ const ShareLabel = () => {
 
 	return (
 		<div className="flex px-4 py-2 gap-4 text-sm font-bold bg-[#00000078] text-[#fff] rounded-[14px]">
-			<div className="flex w-0 flex-1 flex-col">
+			<div className="flex flex-col flex-1 w-0">
 				<p className="text-sm leading-3">Your Referral Code</p>
 				<input
 					readOnly
 					value={fullCode ?? ""}
 					size={0}
-					className=" p-0 bg-transparent rounded-lg text-lg font-bold"
+					className="p-0 text-lg font-bold bg-transparent rounded-lg "
 				/>
 			</div>
 			<button
@@ -294,7 +294,7 @@ const ShareLabel = () => {
 			>
 				Share
 			</button>
-			<div className="relative self-center group cursor-pointer">
+			<div className="relative self-center cursor-pointer group">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#fff" d="m13.683 10.08.63.407zM9.25 9a.75.75 0 0 0 1.5 0zm2 4.5a.75.75 0 0 0 1.5 0zm1.5 2.5a.75.75 0 0 0-1.5 0zm-1.5 1a.75.75 0 0 0 1.5 0zm10-5A9.25 9.25 0 0 1 12 21.25v1.5c5.937 0 10.75-4.813 10.75-10.75zM12 21.25A9.25 9.25 0 0 1 2.75 12h-1.5c0 5.937 4.813 10.75 10.75 10.75zM2.75 12A9.25 9.25 0 0 1 12 2.75v-1.5C6.063 1.25 1.25 6.063 1.25 12zM12 2.75A9.25 9.25 0 0 1 21.25 12h1.5c0-5.937-4.813-10.75-10.75-10.75zM13.25 9c0 .25-.073.48-.198.675l1.262.812A2.74 2.74 0 0 0 14.75 9zm-2.5 0c0-.69.56-1.25 1.25-1.25v-1.5A2.75 2.75 0 0 0 9.25 9zM12 7.75c.69 0 1.25.56 1.25 1.25h1.5A2.75 2.75 0 0 0 12 6.25zM11.25 13v.5h1.5V13zm1.802-3.325a8 8 0 0 1-.468.628c-.178.22-.386.473-.573.73-.369.507-.761 1.168-.761 1.967h1.5c0-.305.15-.64.474-1.084.159-.219.334-.43.528-.672.187-.232.389-.489.562-.757zM11.25 16v1h1.5v-1z"/></svg>
 				<div className="transition-opacity pointer-events-none group-hover:pointer-events-auto opacity-0 group-hover:opacity-100 bg-[#191f1f] p-2 absolute top-full right-0 text-[#fff] w-48 sm:w-56 text-sm leading-4 rounded-lg z-[10]">
 					If people buy using your referral code, both you and the purchaser get bonus tokens.
@@ -401,8 +401,8 @@ const CodeInput = ({ label, applied, defaultValue, appliedText, onApply, onReset
 	const hasDefault = !!defaultValue
 
 	return (
-		<div className="flex items-center flex-1 gap-1 h-10">
-			<div className="relative group cursor-pointer">
+		<div className="flex items-center flex-1 h-10 gap-1">
+			<div className="relative cursor-pointer group">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#000" d="m13.683 10.08.63.407zM9.25 9a.75.75 0 0 0 1.5 0zm2 4.5a.75.75 0 0 0 1.5 0zm1.5 2.5a.75.75 0 0 0-1.5 0zm-1.5 1a.75.75 0 0 0 1.5 0zm10-5A9.25 9.25 0 0 1 12 21.25v1.5c5.937 0 10.75-4.813 10.75-10.75zM12 21.25A9.25 9.25 0 0 1 2.75 12h-1.5c0 5.937 4.813 10.75 10.75 10.75zM2.75 12A9.25 9.25 0 0 1 12 2.75v-1.5C6.063 1.25 1.25 6.063 1.25 12zM12 2.75A9.25 9.25 0 0 1 21.25 12h1.5c0-5.937-4.813-10.75-10.75-10.75zM13.25 9c0 .25-.073.48-.198.675l1.262.812A2.74 2.74 0 0 0 14.75 9zm-2.5 0c0-.69.56-1.25 1.25-1.25v-1.5A2.75 2.75 0 0 0 9.25 9zM12 7.75c.69 0 1.25.56 1.25 1.25h1.5A2.75 2.75 0 0 0 12 6.25zM11.25 13v.5h1.5V13zm1.802-3.325a8 8 0 0 1-.468.628c-.178.22-.386.473-.573.73-.369.507-.761 1.168-.761 1.967h1.5c0-.305.15-.64.474-1.084.159-.219.334-.43.528-.672.187-.232.389-.489.562-.757zM11.25 16v1h1.5v-1z"/></svg>
 				<div className="transition-opacity pointer-events-none group-hover:pointer-events-auto opacity-0 group-hover:opacity-100 bg-[#191f1f] p-2 absolute top-full -left-4 md:left-0 text-[#fff] w-40 md:w-56 text-sm leading-4 rounded-lg">
 					To successfully apply the {label.toLowerCase()}, input the {label.toLowerCase()} you wish to use, click on the submit button and confirm the message with your wallet.

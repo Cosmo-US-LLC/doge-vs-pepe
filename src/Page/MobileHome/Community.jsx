@@ -13,7 +13,7 @@ function CommunitySec() {
     <div className="w-[100%] py-[40px] Communitymobbg overflow-hidden ">
       <div className="space-y-[25px] w-[90%] mx-auto "
       >
-        <div>
+        <div className="flex flex-col items-center justify-center gap-2">
           <h3
             style={{
               textShadow: "0px 0px 26.2px #000, 0px 0px 14.5px #000",
@@ -26,10 +26,10 @@ function CommunitySec() {
             style={{
               textShadow: "0px 0px 26.2px #000, 0px 0px 14.5px #000",
             }}
-            className="text-[15px] font-[400] text-center text-[#FFF]"
+            className="w-[271px] text-[15px] font-[400] text-center text-[#FFF]"
           >
-            This isn’t just about picking a meme <br /> it’s about choosing a
-            winner that you are proud to represent.{" "}
+
+            This isn’t just about picking a memeit’s about joining a movement that you are proud to represent. 
           </p>
         </div>
         <div className="flex flex-col justify-between space-y-[30px]">

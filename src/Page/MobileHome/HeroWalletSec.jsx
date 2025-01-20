@@ -105,7 +105,7 @@ function HeroWalletSec() {
   };
 
   const renderer = ({ days, hours, minutes, seconds }) => (
-    <div className="text-white justify-center">
+    <div className="justify-center text-white">
       <div className="bg-black border border-neutral-400 w-[94px] h-[94px] rounded-[15px] flex flex-col justify-center items-center font-Inter">
         <span className="text-[44px] font-semibold leading-none">
           {zeroPad(days)}

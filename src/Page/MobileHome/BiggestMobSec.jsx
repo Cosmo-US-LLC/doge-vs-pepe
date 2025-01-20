@@ -9,7 +9,7 @@ function BiggestMobSec() {
       <div className="w-[90%] space-y-[34px] mx-auto ">
         <div className=" w-[100%]">
           <h3 className="text-[22px] text-center font-HiJack leading-[102.804%] font-[400] text-[#FFF] uppercase">
-          Biggest Crypto <br /> Event in 2025
+          The Biggest Crypto <br /> Event in 2025
           </h3>
         </div>
         <div className="flex gap-[1rem] justify-between items-center max-w-[1320px]  w-[100%]  2xl:!m-auto xl:ml-auto">
