@@ -12,11 +12,11 @@ import imgrod from "../../assets/RoadmapSec/imgrd.png";
 
 function RoadmapMobile() {
   return (
-    <div className="w-full bgroadmap py-[40px] overflow-hidden bg-black" id="roadmap">
+    <div className="w-full bgroadmapMob pt-[40px] overflow-hidden bg-black" id="roadmap">
       <div className="mb-6 text-center">
         <h3 className="text-[22px] text-white font-HiJack font-[400]">Roadmap</h3>
       </div>
-      <div className="flex items-center justify-center gap-14 pb-[1rem]">
+      <div className="flex items-center justify-center gap-11 pb-[1rem]">
         <div className="flex w-[152px] h-[28px] justify-center items-center rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600">
           <span className="text-[#131212] font-inter text-[12px] font-[700] leading-none">
           The  $DOGE Roadmap
@@ -29,8 +29,8 @@ function RoadmapMobile() {
         </div>
       </div>
 
-      <div className="relative flex py-2">
-        <div className="w-[45%] mx-auto max-w-[150px] h-[100%]">
+      <div className="relative grid grid-cols-2 gap-10 p-2 px-4">
+        <div className="w-[100%] mx-auto h-[100%]">
           <Swiper
             modules={[Navigation]}
             spaceBetween={20}
@@ -50,7 +50,7 @@ function RoadmapMobile() {
             className="!min-h-[600px]"
           >
             <SwiperSlide>
-              <div className="bg-[#181818] !min-h-[600px] !max-h-[600px] rounded-[16px] px-2 py-4   text-white relative">
+              <div className="bg-[#181818] !min-h-[547px] !max-h-[600px] rounded-[6px] p-2   text-white relative">
                 <h4 className="text-yellow-400 text-[10px] font-[600] mb-4">
                 The Battle Begins
                 </h4>
@@ -85,7 +85,7 @@ function RoadmapMobile() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-[#181818] rounded-[16px] px-2 py-4  !min-h-[600px] !max-h-[600px] text-white relative">
+              <div className="bg-[#181818] rounded-[6px] p-2  !min-h-[547px] !max-h-[600px] text-white relative">
                 <h4 className="text-yellow-400 text-[10px] font-semibold mb-4">
                   The Presale Showdown
                 </h4>
@@ -114,7 +114,7 @@ function RoadmapMobile() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-[#181818] rounded-[16px] !min-h-[600px] !max-h-[600px] px-2 py-4 text-white relative">
+              <div className="bg-[#181818] rounded-[6px] !min-h-[547px] !max-h-[600px] p-2 text-white relative">
                 <h4 className="text-yellow-400 text-[10px] font-semibold mb-4">
                   Crowning the Champion
                 </h4>
@@ -151,7 +151,7 @@ function RoadmapMobile() {
           </div>
         </div>
 
-        <div className="w-[45%] mx-auto max-w-[150px] h-[100%]">
+        <div className="w-[100%] mx-auto h-[100%]">
           <Swiper
             modules={[Navigation]}
             spaceBetween={20}
@@ -171,7 +171,7 @@ function RoadmapMobile() {
             className="!min-h-[600px]"
           >
             <SwiperSlide>
-              <div className="bg-[#181818] rounded-[16px] px-2 py-4  !min-h-[600px] !max-h-[600px] text-white relative">
+              <div className="bg-[#181818] rounded-[6px] p-2  !min-h-[547px] !max-h-[600px] text-white relative">
                 <h4 className="text-green-400 text-[10px] font-semibold mb-4">
                 The Battle Begins
                 </h4>
@@ -205,7 +205,7 @@ function RoadmapMobile() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-[#181818] rounded-[16px] px-2 py-4  !min-h-[600px] !max-h-[600px] text-white relative">
+              <div className="bg-[#181818] rounded-[6px] p-2  !min-h-[547px] !max-h-[600px] text-white relative">
                 <h4 className="text-green-400 text-[10px] font-[600] mb-4">
                   The Presale Showdown
                 </h4>
@@ -234,7 +234,7 @@ function RoadmapMobile() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-[#181818] rounded-[16px] px-2 py-4  !min-h-[600px] !max-h-[600px] text-white relative">
+              <div className="bg-[#181818] rounded-[6px] p-2  !min-h-[547px] !max-h-[600px] text-white relative">
                 <h4 className="text-green-400 text-[10px] font-semibold mb-4">
                   Crowning the Champion
                 </h4>

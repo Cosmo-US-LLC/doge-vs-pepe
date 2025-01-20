@@ -46,15 +46,15 @@ code {
   background-repeat: no-repeat;
 }
 .DontWaitSec{
-  background-image: url(../src/assets/DontWaitSec/dontbg.png);
+  background-image: url(../src/assets/DontWaitSec/dontbgnew.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .DontWaitmobSec{
-  background-image: url(../src/assets/DontWaitSec/mobdont.png);
+  background-image: url(../src/assets/DontWaitSec/dontbg2.png);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .dogevspepebg{
@@ -64,22 +64,24 @@ code {
   background-repeat: no-repeat;
 }
 .crypbg{
-  background-image: url(../src/assets/DogeVSPepeSec/card1.png);
+  background-image: url(../src/assets/DogeVSPepeSec/doge-vs-pepe.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .crypbg2{
-  background-image: url(../src/assets/DogeVSPepeSec/card2.png);
+  background-image: url(../src/assets/DogeVSPepeSec/card-2.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  height: 150px;
 }
 .crypbg3{
-  background-image: url(../src/assets/DogeVSPepeSec/card3.png);
+  background-image: url(../src/assets/DogeVSPepeSec/card-3.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  height: 150px;
 }
 .Biggestbg{
   background-image: url(../src/assets/BiggestSec/biggestbg.png);
@@ -126,8 +128,14 @@ code {
 }
 .bgroadmap{
   background-image: url(../src/assets/RoadmapSec/roadbg.png);
+  background-position: 0px -20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bgroadmapMob{
+  background-image: url(../src/assets/RoadmapSec/roadbg.png);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .bgmainvipcard{
@@ -161,7 +169,7 @@ code {
   background-repeat: no-repeat;
 }
 .bgherosec {
-  background-image: url('./assets/herosec/herosecbg.png');
+  background-image: url('./assets/herosec/hero-sec-bg.webp');
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -210,7 +218,7 @@ code {
 }
 
 .bgeversec {
-  background-image: url(./assets/FirstEver/first-ever-bg.png);
+  background-image: url(./assets/FirstEver/back-frame.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;

@@ -17,7 +17,7 @@ function MilestonesSec() {
   const pepeFraction = parseNum(pepeApiData.stage?.cumulative_usd_raised) / MAX
   
   return (
-    <div className="Mysterybg relative w-[100%] pt-[90px] overflow-hidden pb-[90px]">
+    <div className="Mysterybg relative w-[100%] h-[1100px]  pt-[90px] overflow-hidden pb-[60px]">
       <div className="max-w-[1168px] space-y-[40px] w-[100%] mx-auto ">
         <div className="space-y-[40px] flex flex-col items-center justify-center">
           <div className="Mysteryborder p-[15px]">
@@ -35,7 +35,7 @@ function MilestonesSec() {
         <div className="pt-[80px] pb-[30px]">
          <div className="relative">
          <img className="absolute top-[-150%] left-[0%]" src={dogeicon} alt="" />
-          <div className="bg-[#181818] p-1 rounded-[40.835px] w-[100%] h-[66.415px] border-[0.794px] border-[#EFAB00]">
+          <div className="bg-[#181818] p-1 rounded-[40.835px] w-[100%] h-[40.415px] border-[0.794px] border-[#EFAB00]">
             <div
               className="flex items-center justify-center h-full rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600"
               style={{
@@ -53,21 +53,21 @@ function MilestonesSec() {
           <div className="relative flex min-h-[480px] justify-center items-center flex-col ">
             <div className="absolute top-[4%] left-[21%] gap-[115px] flex ">
               <div className="flex flex-col items-center justify-center">
-                <img src={chestImage} alt="Treasure Chest" className="mb-2 " />
-                <span className="text-white font-inter text-[22px] font-bold leading-normal">
+                <img src={chestImage} alt="Treasure Chest" className="mb-2 w-[59] h-[57px]" />
+                <span className="text-white font-inter text-[16px] font-bold leading-normal">
                   $250,000
                 </span>
               </div>
               <div>
-                <img src={chestImage} alt="Treasure Chest" className="mb-2 " />
-                <span className="text-white font-inter text-[22px] font-bold leading-normal opacity-30">
-                  $250,000
+                <img src={chestImage} alt="Treasure Chest" className="mb-2 w-[59] h-[57px]" />
+                <span className="text-white font-inter text-[16px] font-bold leading-normal opacity-30">
+                  $500,000
                 </span>
               </div>
               <div>
-                <img src={chestImage} alt="Treasure Chest" className="mb-2 " />
-                <span className="text-white font-inter text-[22px] font-bold leading-normal opacity-30">
-                  $250,000
+                <img src={chestImage} alt="Treasure Chest" className="mb-2 w-[59] h-[57px]" />
+                <span className="text-white font-inter text-[16px] font-bold leading-normal opacity-30">
+                  $750,000
                 </span>
               </div>
             </div>
@@ -81,28 +81,28 @@ function MilestonesSec() {
             </div>
             <div className="absolute bottom-[4%] left-[21%] gap-[115px] flex ">
               <div className="flex flex-col items-center justify-center">
-                <span className="text-white font-inter text-[22px] font-bold leading-normal">
+                <span className="text-white font-inter text-[16px] font-bold leading-normal">
                   $250,000
                 </span>
-                <img src={chestImage} alt="Treasure Chest" className="mt-2 " />
+                <img src={chestImage} alt="Treasure Chest" className="mt-2 w-[59] h-[57px]" />
               </div>
               <div>
-                <span className="text-white font-inter text-[22px] font-bold leading-normal opacity-30">
-                  $250,000
+                <span className="text-white font-inter text-[16px] font-bold leading-normal opacity-30">
+                  $500,000
                 </span>
-                <img src={chestImage} alt="Treasure Chest" className="mt-2 " />
+                <img src={chestImage} alt="Treasure Chest" className="mt-2 w-[59] h-[57px]" />
               </div>
               <div>
-                <span className="text-white font-inter text-[22px] font-bold leading-normal opacity-30">
-                  $250,000
+                <span className="text-white font-inter text-[16px] font-bold leading-normal opacity-30">
+                  $750,000
                 </span>
-                <img src={chestImage} alt="Treasure Chest" className="mt-2 " />
+                <img src={chestImage} alt="Treasure Chest" className="mt-2 w-[59] h-[57px]" />
               </div>
             </div>
           </div>
           <div className="relative">
-          <img src={pepeicon} className="absolute top-[-150%] left-[0%]" alt="" />
-          <div className="bg-[#181818] p-1 rounded-[40.835px] w-[100%] h-[66.415px] border-[0.794px] border-[#09FC3C]">
+          <img src={pepeicon} className="absolute top-[-150%] left-[0%] w-[76px] h-[71px]" alt="" />
+          <div className="bg-[#181818] p-1 rounded-[40.835px] w-[100%] h-[40.415px] border-[0.794px] border-[#09FC3C]">
             <div
               className="flex items-center justify-center h-full rounded-full bg-gradient-to-r"
               style={{

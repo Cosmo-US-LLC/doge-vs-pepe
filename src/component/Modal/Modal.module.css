@@ -55,3 +55,18 @@
 	font-size: 2rem;
 	font-weight: bold;
 }
+
+
+@media screen and (max-width: 700px) {
+	.title {
+		text-align: center;
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	.modal {
+		width: 70%;
+		gap: 0.5rem;
+		padding: 1rem;
+		border-radius: 15px;
+	}
+}

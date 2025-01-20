@@ -20,6 +20,8 @@ import DogeVSPepeSec from "./DogeVSPepeSec";
 import TheFightSec from "./TheFightSec";
 import DontWaitSec from "./DontWaitSec";
 import TokenmobSec from "../MobileHome/Tokenomics";
+// import TokenmobSec from "../MobileHome/Tokenomics";
+import TokenSec from "./TokenSec";
 
 
 function Home() {
@@ -38,7 +40,7 @@ function Home() {
       <HowItSec />
       <RoadmapSec />
       <CommunitySec /> 
-      <TokenmobSec/>
+      <TokenSec/>
       <HypeSec />
       <PressandMediaSec />
       <DogeVSPepeSec />

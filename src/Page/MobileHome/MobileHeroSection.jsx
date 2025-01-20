@@ -38,22 +38,30 @@ function MobileHeroSection() {
     >
       <div className="w-[90%] relative mx-auto px-3">
         <div className="max-w-[575px] w-full flex flex-col justify-center items-center mx-auto">
-          <div className="flex items-end justify-center space-x-[15px] text-stroke">
+          <div className="flex items-end justify-center space-x-[15px] text-stroke-2">
             <h1
               className="text-[#ffbf0c] text-[50px] font-[400] font-HiJack"
-              style={{ textShadow: "6px -1px 24px #F1AD03" }}
+              style={{
+                textShadow: "6px -1px 14px #F1AD036a",
+                // WebkitTextStrokeWidth: "1px",
+                // WebkitTextStrokeColor: "#000",
+              }}
             >
               DOGE
             </h1>
             <h4
-              className="text-[#fff] text-[20px] h-[48px] font-[400] font-Lato text-stroke-2"
-              style={{ textShadow: "0px 0px 7px #74FF60" }}
+              className="text-[#fff] text-[20px] h-[48px] font-[800] font-Lato text-stroke"
+              style={{ textShadow: "0px 0px 7px #74FF606a" }}
             >
               VS.
             </h4>
             <h1
               className="text-[#00FF2F] text-[50px] font-[400] font-HiJack"
-              style={{ textShadow: "6px -1px 24px #74FF60" }}
+              style={{
+                textShadow: "6px -1px 14px #74FF606a",
+                // WebkitTextStrokeWidth: "1px",
+                // WebkitTextStrokeColor: "#000",
+              }}
             >
               PEPE
             </h1>
@@ -62,9 +70,10 @@ function MobileHeroSection() {
           <h3 className="w-[340px] text-[23px] font-HiJack drop-shadow-[0px_0px_15px_rgba(0,0,0)] uppercase leading-[1.13] text-[#FFF] text-center ">
             THE ULTIMATE showdown
           </h3>
-          <h4 className="w-[340px] text-[20px] font-medium pb-4 leading-[1.3] text-[#FFF] text-center">
-            Who’s Raising <span className="text-[#00FF2F]">$1 Million</span>
-            &nbsp; First?
+          <h4 className="w-[340px] text-[20px] font-semibold drop-shadow-[0px_0px_15px_rgba(0,0,0)] pb-4 leading-[1.3] text-[#FFF] text-center">
+            Who’s Raising $1 Million First?
+            {/* Who’s Raising <span className="text-[#00FF2F]">$1 Million</span> */}
+            {/* &nbsp; First? */}
           </h4>
           <p className="text-[14px] max-w-[320px] w-full pb-4 mx-auto font-[700] leading-[1.2] rounded-[15px] px-2 py-4 text-[#FFF] border border-white bg-[#0000009f] text-center drop-shadow-xl shadow-md shadow-neutral-800">
             Only one will win this epic fight and launch!
@@ -133,13 +142,25 @@ function MobileHeroSection() {
           onClick={(e) => handleScroll(e, "how-to-buy", 50)}
         />
       </div> */}
-      <div className="bg-black p-3 grid grid-cols-3 gap-y-1 gap-x-4">
-        <img src={coinMarketCop} alt="Coin market cop" className="h-[20px]" />
-        <img src={ambCrypto} alt="Coin market cop" className="h-[20px]" />
-        <img src={cryptoNews} alt="Coin market cop" className="h-[20px]" />
-        <img src={bitCoinist} alt="Coin market cop" className="h-[20px]" />
-        <img src={newsBit} alt="Coin market cop" className="h-[20px]" />
-        <img src={ambCrypto} alt="Coin market cop" className="h-[20px]" />
+      <div className="w-full py-4 bg-black">
+        <h2 className="text-[#FFFCFC] text-center text-[22px] font-HiJack font-[400] uppercase mb-2">
+          As Seen On
+        </h2>
+
+        <div className="flex items-center justify-start overflow-hidden whitespace-nowrap">
+          <div className="flex animate-marquee">
+            <img
+              src={coinMarketCop}
+              alt="Coin market cop"
+              className="h-[20px] mx-4"
+            />
+            <img src={ambCrypto} alt="AMB Crypto" className="h-[20px] mx-4" />
+            <img src={cryptoNews} alt="Crypto News" className="h-[20px] mx-4" />
+            <img src={bitCoinist} alt="Bitcoinist" className="h-[20px] mx-4" />
+            <img src={newsBit} alt="NewsBit" className="h-[20px] mx-4" />
+            <img src={ambCrypto} alt="AMB Crypto" className="h-[20px] mx-4" />
+          </div>
+        </div>
       </div>
     </div>
   );

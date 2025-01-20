@@ -1,10 +1,90 @@
 import React, { useState } from "react";
+import arwbtn1 from "../../assets/walletsec/btnicns (3).svg";
+import arwbtn2 from "../../assets/walletsec/btnicns (1).svg";
+import arwbtn3 from "../../assets/walletsec/btnicns (2).svg";
+import coinsw1 from "../../assets/walletsec/coinsw (5).svg";
+import coinsw2 from "../../assets/walletsec/coinsw (2).svg";
+import coinsw3 from "../../assets/walletsec/coinsw (3).svg";
+import coinsw4 from "../../assets/walletsec/coinsw (1).svg";
+import coinsw5 from "../../assets/walletsec/coinsw (6).svg";
+import coinsw6 from "../../assets/walletsec/coinsw (4).svg";
+import ggicon from "../../assets/walletsec/gg.svg";
 import shodow from "../../assets/shodow.svg";
 import downShodow from "../../assets/Mobile/down-shodwo.svg";
+import arw from "../../assets/walletsec/arw.svg";
 import downArrow from "../../assets/herosec/down-arrow.svg";
 import Widget from "../../component/Widget/Widget";
 
+const Buybuttons = [
+  { id: "Buy", label: "Buy", img: arwbtn1 },
+  { id: "Stake", label: "Stake", img: arwbtn2 },
+  { id: "History", label: "History", img: arwbtn3 },
+];
+
+const options = [
+  {
+    img: coinsw2,
+    text: "ETH (ERC-20)",
+  },
+  {
+    img: coinsw1,
+    text: "Option 2",
+  },
+  {
+    img: coinsw3,
+    text: "Option 3",
+  },
+  {
+    img: coinsw4,
+    text: "Option 4",
+  },
+  {
+    img: coinsw5,
+    text: "Option 5",
+  },
+  {
+    img: coinsw6,
+    text: "Option 5",
+  },
+];
+const iconsData = [
+  {
+    img: coinsw1,
+  },
+  {
+    img: coinsw2,
+  },
+  {
+    img: coinsw3,
+  },
+  {
+    img: coinsw4,
+  },
+  {
+    img: coinsw5,
+  },
+  {
+    img: coinsw6,
+  },
+];
+
 function WalletSec() {
+  const [selectedItem, setSelectedItem] = useState(options[0]);
+  const [selectedItempepe, setSelectedItempepe] = useState(options[0]);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpenpepe, setIsDropdownOpenpepe] = useState(false);
+  const [activeButton, setActiveButton] = useState("Buy");
+  const [activeButtonpepe, setActiveButtonpepe] = useState("Buy");
+
+  const handleSelect = (option) => {
+    setSelectedItem(option);
+    setIsDropdownOpen(false);
+  };
+  const handleSelectpepe = (option) => {
+    setSelectedItempepe(option);
+    setIsDropdownOpenpepe(false);
+  };
+
   const handleScroll = (event, targetId, offset) => {
     event.preventDefault();
     const targetElement = document.getElementById(targetId);
@@ -20,7 +100,7 @@ function WalletSec() {
 
   return (
     <div
-      className="relative w-[100%] bgwltsec pt-[107px] pb-[128px]"
+      className="relative w-[100%] h-[810px] bgwltsec pt-[107px] pb-[128px] "
       id="how-to-buy"
     >
       <div className="h-[100%] bg-[#000000cf] flex justify-center items-center z-[60] absolute w-[100%] top-0 ">

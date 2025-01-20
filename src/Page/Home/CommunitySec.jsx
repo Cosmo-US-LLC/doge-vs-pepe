@@ -36,13 +36,27 @@ function CommunitySec() {
         </div>
         <div className="flex justify-between space-x-[15px]">
           <div
-            className="bg-[#28649721] p-4 relative rounded-[21.168px]"
-            style={{
-              backdropFilter: "blur(25.049999237060547px)",
-              background: "rgba(0, 0, 0, 0.47)",
-              borderRadius: "21.168px",
-            }}
+            className="p-4 relative rounded-[21.168px]"
+            // style={{
+            //   backdropFilter: "blur(25.049999237060547px)",
+            //   background: "rgba(0, 0, 0, 0.47)",
+            //   borderRadius: "21.168px",
+            // }}
           >
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backdropFilter: "blur(15px)", // Apply blur here
+                WebkitBackdropFilter: "blur(15px)",
+                backgroundColor: "rgba(0, 0, 0, 0.47)", // Semi-transparent background
+                borderRadius: "21.168px",
+                zIndex: 1,
+              }}
+            ></div>
             <img
               src={vectcard1}
               className="absolute -left-[18%] top-[6%] z-[10]"
@@ -89,13 +103,27 @@ function CommunitySec() {
             </div>
           </div>
           <div
-            className="bg-[#28649721] p-4 relative rounded-[21.168px]"
+            className="p-4 relative rounded-[21.168px]"
             style={{
-              backdropFilter: "blur(25.049999237060547px)",
-              background: "rgba(0, 0, 0, 0.47)",
-              borderRadius: "21.168px",
+              // backdropFilter: "blur(25.049999237060547px)",
+              // background: "rgba(0, 0, 0, 0.47)",
+              // borderRadius: "21.168px",
             }}
-          >
+          > 
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backdropFilter: "blur(15px)", // Apply blur here
+                WebkitBackdropFilter: "blur(15px)",
+                backgroundColor: "rgba(0, 0, 0, 0.47)", // Semi-transparent background
+                borderRadius: "21.168px",
+                zIndex: 1,
+              }}
+            ></div>
             <img
               src={vectcard2}
               className="absolute -right-[40%] -top-[60%]"

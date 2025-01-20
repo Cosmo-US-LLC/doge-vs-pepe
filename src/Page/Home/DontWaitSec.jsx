@@ -1,10 +1,10 @@
 import React from "react";
 function DontWaitSec() {
   return (
-    <div className="w-[100%] s DontWaitSec overflow-hidden pt-[200px] pb-[100px]">
+    <div className="w-[100%] s DontWaitSec aspect-video overflow-hidden pt-[200px] pb-[100px]">
       <div className="space-y-[35px]">
-      <div className="max-w-[593px] relative px-[22px] py-[40px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative  howitborder bg-[#01010182]" 
-      style={{backdropFilter:"blur(9.899999618530273px)"}}
+      <div className="max-w-[593px] relative px-[22px] py-[40px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative border border-neutral-400 bg-[#0101019f]" 
+      style={{backdropFilter:"blur(0px)"}}
       >
         <div className="space-y-[27px]">
           <h3 className="text-[#FFFCFC] font-HiJack text-center text-[50px] leading-[104.377%] font-[400]">

@@ -1,6 +1,8 @@
 import React from "react";
-import cardimg2 from "../../assets/CommunitySec/Frame 1410116893.svg";
-import cardimg1 from "../../assets/CommunitySec/Frame 1410116892.svg";
+import cardimg2 from "../../assets/CommunitySec/pepeTeam.png";
+// import cardimg2 from "../../assets/CommunitySec/Frame 1410116893.svg";
+import cardimg1 from "../../assets/CommunitySec/dogeTeam.png";
+// import cardimg1 from "../../assets/CommunitySec/Frame 1410116892.svg";
 import vectcard2 from "../../assets/CommunitySec/Ellipse 80.webp";
 import vectcard1 from "../../assets/CommunitySec/Ellipse 81.webp";
 import arwl from "../../assets/herosec/Arrowlf.svg";
@@ -11,7 +13,7 @@ function CommunitySec() {
     <div className="w-[100%] py-[40px] Communitymobbg overflow-hidden ">
       <div className="space-y-[25px] w-[90%] mx-auto "
       >
-        <div>
+        <div className="flex flex-col items-center justify-center gap-2">
           <h3
             style={{
               textShadow: "0px 0px 26.2px #000, 0px 0px 14.5px #000",
@@ -24,21 +26,33 @@ function CommunitySec() {
             style={{
               textShadow: "0px 0px 26.2px #000, 0px 0px 14.5px #000",
             }}
-            className="text-[15px] font-[400] text-center text-[#FFF]"
+            className="w-[271px] text-[15px] font-[400] text-center text-[#FFF]"
           >
-            This isn’t just about picking a meme <br /> it’s about choosing a
-            winner that you are proud to represent.{" "}
+
+            This isn’t just about picking a memeit’s about joining a movement that you are proud to represent. 
           </p>
         </div>
         <div className="flex flex-col justify-between space-y-[30px]">
           <div
             className="bg-[#28649721] p-2 relative rounded-[21.168px]"
             style={{
-              backdropFilter: "blur(15.208927154541016px)",
-              background: "rgba(0, 0, 0, 0.47)",
               borderRadius: "21.168px",
             }}
           >
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backdropFilter: "blur(15px)", // Apply blur here
+                WebkitBackdropFilter: "blur(15px)",
+                backgroundColor: "rgba(0, 0, 0, 0.47)", // Semi-transparent background
+                borderRadius: "21.168px",
+                zIndex: 1,
+              }}
+            ></div>
             {/* <img
               src={vectcard1}
               className="absolute -left-[18%] top-[6%] z-[10]"
@@ -87,11 +101,23 @@ function CommunitySec() {
           <div
             className="bg-[#28649721] p-2 relative rounded-[21.168px]"
             style={{
-              backdropFilter: "blur(15.208927154541016px)",
-              background: "rgba(0, 0, 0, 0.47)",
               borderRadius: "21.168px",
             }}
           >
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backdropFilter: "blur(15px)", // Apply blur here
+                WebkitBackdropFilter: "blur(15px)",
+                backgroundColor: "rgba(0, 0, 0, 0.47)", // Semi-transparent background
+                borderRadius: "21.168px",
+                zIndex: 1,
+              }}
+            ></div>
             {/* <img
               src={vectcard2}
               className="absolute -right-[40%] -top-[60%]"
