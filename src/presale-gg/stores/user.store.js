@@ -39,6 +39,10 @@ document.addEventListener("wagmi-loaded", async () => {
 	const { config } = await getConfig()
 	watchAccount(config, {
 		onChange: (account) => {
+			if (account.isConnected) {
+				window.gtag?.("event", "wallet")
+				window.fbq?.("track", "Lead")
+			}
 			userStates.forEach(($userState) => {
 				const { project } = $userState.get()
 				const address = account.address
@@ -123,7 +127,6 @@ export const userUpdateReferralCode = async ($store, newCode, options) => {
  */
 export const userResetReferralCode = async ($store) => {
 	const oldUser = $store.get().user
-	console.log("OLD USER", oldUser, $store.get())
 	if (!oldUser) return
 	$store.setKey("user", {
 		...oldUser,

@@ -116,6 +116,13 @@ const BuyTab = () => {
 					})
 					toast.success("Transaction successfully completed", {duration: 10000})
 					api.createTransactionMetadata(apiState.project, address ?? "", transactionHash)
+					window.gtag?.("event", "purchase", {
+						value: paymentTokenValue * parseNum(currency.price),
+						currency: "USD"
+					})
+					window.fbq?.("track", "Purchase", {
+						value: paymentTokenValue * parseNum(currency.price)
+					})
 					return "submitted"
 				} else {
 					const res = await api.createTransaction(apiState.project, {
@@ -125,6 +132,10 @@ const BuyTab = () => {
 						token_amount: paymentTokenValue.toString()
 					})
 					setCreatedTransaction(res.data)
+					window.gtag?.("event", "purchase", {
+						value: paymentTokenValue * parseNum(currency.price),
+						currency: "USD"
+					})
 					setTimeout(() => {
 						setTransactionModalVisible(true)
 						setTransactionLoading(false)
