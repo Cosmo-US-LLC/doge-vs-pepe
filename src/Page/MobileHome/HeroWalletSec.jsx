@@ -133,7 +133,7 @@ function HeroWalletSec() {
   return (
     <div className="w-[100%] relative" id="how-to-buy">
       <div className="max-w-[922px] space-y-2">
-        <div className="flex justify-center py-6 pt-9 bgwltsecmobUp">
+        <div className="flex justify-center py-6 pt-9 bgwltsecmobUp h-[342px]">
           <WidgetMob
             project="doge"
             symbol="DOGE"
@@ -292,7 +292,7 @@ function HeroWalletSec() {
             </div>
           </div> */}
         </div>
-        <div className="flex justify-center py-6 pb-9 bgwltsecmobDn">
+        <div className="flex justify-center py-6 pb-9 bgwltsecmobDn h-[342px]">
           <WidgetMob
             project="pepe"
             symbol="PEPE"

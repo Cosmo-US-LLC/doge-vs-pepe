@@ -17,17 +17,20 @@ function MobileFirstEverSec() {
 
         <div className="relative">
           <p className="text-[14px] w-full pb-4 mx-auto font-[600] leading-[1.2] rounded-[15px] px-2 py-4 text-[#FFF] border border-white bg-[#00000057] text-center drop-shadow-xl shadow-md shadow-neutral-800">
-            Welcome to Team Doge vs. Team Pepe, where the community decides
-            who wins! This isn’t just another crypto pre-sale, it’s the
-            ultimate showdown between two meme heavyweights as only one token
-            will launch in the end! <br /> <br />
+            Welcome to Team Doge vs. Team Pepe, where the community decides who
+            wins! This isn’t just another crypto pre-sale, it’s the ultimate
+            showdown between two meme heavyweights as only one token will launch
+            in the end! <br /> <br />
             Your mission is simple:
-            <br /> <br /> 1. Pick your favorite meme by buying the coin you prefer.
+            <br /> <br /> 1. Pick your favorite meme by buying the coin you
+            prefer.
             <br /> <br /> 2. The first to hit $1M raised wins
             <br /> <br /> 3. Launch Date will be announced
-            <br /> <br /> 4. Winner Launches on DEX and CEX<br />
-            So, who will it be?<br /><br />
-            Will you back Doge, the iconic Shiba? Or will you choose Pepe, the rebellious frog?
+            <br /> <br /> 4. Winner Launches on DEX and CEX
+            <br /> <br />
+            So, who will it be? Will you back Doge,
+            <br /> the iconic Shiba? Or will you choose
+            <br /> Pepe, the rebellious frog?
           </p>
         </div>
       </div>

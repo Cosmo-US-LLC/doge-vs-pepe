@@ -6,7 +6,7 @@ import vecleft from "../../assets/HowItSec/P (43).png"
 import vecright from "../../assets/HowItSec/P (43) (1).png"
 function HowItmobSec() {
   return (
-    <div className="w-[100%] howitbg overflow-hidden pt-[60px] pb-[50px]">
+    <div className="w-[100%] howitbg overflow-hidden pt-[60px] pb-[50px]" id="how-it-all-began">
       <div className="relative  rounded-[20.9px] w-[90%] mx-auto relative min-h-[480px]  bg-[#01010182]" 
       style={{backdropFilter:"blur(9.899999618530273px)"}}
       >
@@ -25,11 +25,11 @@ function HowItmobSec() {
             Follow us on social media to keep up with the story!
             </h4>
           <div className="flex justify-center space-x-[1rem]">
-            <div className="flex justify-center items-center space-x-1 gap-1">
+            <div className="flex items-center justify-center gap-1 space-x-1">
                 <p className="text-[12px] font-[600] text-[#fff] leading-3 uppercase"> Join X</p>
                 <img className="cursor-pointer w-[18px] h-[18px]" src={telicon1} alt="" />
             </div>
-            <div className="flex justify-center items-center space-x-1 gap-1">
+            <div className="flex items-center justify-center gap-1 space-x-1">
                 <p className="text-[12px] font-[600] text-[#fff] leading-3 uppercase"> Join Telegram</p>
                 <img className="cursor-pointer w-[18px] h-[18px]" src={telicon2} alt="" />
             </div>
@@ -37,8 +37,8 @@ function HowItmobSec() {
           </div>
         </div>
         </div>
-        <img src={vecleft} className="absolute z-[99] bottom-[-10%] max-h-[200px] left-[-20%]" alt="" />
-        <img src={vecright} className="absolute z-[99] bottom-[-10%] max-h-[200px] right-[-23%]" alt="" />
+        <img src={vecleft} className="absolute z-10 bottom-[-10%] max-h-[200px] left-[-20%]" alt="" />
+        <img src={vecright} className="absolute z-10 bottom-[-10%] max-h-[200px] right-[-23%]" alt="" />
       </div>
     </div>
   );

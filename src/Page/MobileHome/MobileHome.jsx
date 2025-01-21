@@ -19,6 +19,7 @@ import DogeVSPepeMobSec from "./DogeVSPepeMobSec";
 import PressandMediamobSec from "./PressandMediamobSec";
 import HypeMobSec from "./HypeMobSec";
 import HowItmobSec from "./HowItmobSec";
+import MadeBy from "./MadeBy";
 
 
 function MobileHome() {

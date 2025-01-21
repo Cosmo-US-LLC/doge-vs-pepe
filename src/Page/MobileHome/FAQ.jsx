@@ -14,37 +14,41 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
 
   return (
     <div className="">
+    <div
+      className={`border faqsbrder flex-col rounded-[10px] border-solid bg-[#181818] ${
+        isOpen ? "border-[#fff]" : "border-[#fff]"
+      }`}
+    >
       <div
-        className={`border faqsbrder flex-col rounded-[10px] border-solid bg-[#181818] ${isOpen ? "border-[#fff]" : "border-[#fff]"
-          }`}
+        className="flex items-center justify-between gap-3 px-4 py-3 cursor-pointer"
+        onClick={handleClick}
       >
-        <div
-          className="flex items-center justify-between gap-3 px-4 py-3 cursor-pointer"
-          onClick={handleClick}
-        >
-          <div className="flex items-center gap-2">
-            <div className={`text-[16px] text-[#fff] font-[600]`}>
-              {question}
-            </div>
-          </div>
-
+        <div className="flex items-center gap-2">
           <div
-            className={`text-[14px] w-[20px] h-[20px] flex items-center justify-center ${!isOpen ? "rotate-0" : "rotate-[-180deg]"
-              } transition-transform`}
-          >
-            <img src={arw} alt="" />
-          </div>
+            dangerouslySetInnerHTML={{ __html: question }}
+            className={`text-[16px] text-[#fff] font-[600]`}
+          />
         </div>
-        <div style={contentStyles}>
-          <div className="w-[100%] px-4 pb-3">
-            <p
-              className="text-[14px] text-[#fff] leading-[150%] font-[600]"
-              dangerouslySetInnerHTML={createMarkup()}
-            />
-          </div>
+  
+        <div
+          className={`text-[14px] w-[20px] h-[20px] flex items-center justify-center ${
+            !isOpen ? "rotate-0" : "rotate-[-180deg]"
+          } transition-transform`}
+        >
+          <img src={arw} alt="" />
+        </div>
+      </div>
+      <div style={contentStyles}>
+        <div className="w-[100%] px-4 pb-3">
+          <p
+            className="text-[14px] text-[#fff] leading-[150%] font-[600]"
+            dangerouslySetInnerHTML={createMarkup()}
+          />
         </div>
       </div>
     </div>
+  </div>
+  
   );
 };
 

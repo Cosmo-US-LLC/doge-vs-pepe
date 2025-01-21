@@ -21,7 +21,7 @@ function TheRules() {
   return (
     <div
       id="rules"
-      className="bgRulesmob border-t border-transparent flex flex-col items-center px-4 p-4"
+      className="flex flex-col items-center p-4 px-4 border-t border-transparent bgRulesmob"
     >
       <p className="text-[22px] leading-[31px] text-[white] mt-4 mb-4 font-HiJack">
         THE 7 RULES
@@ -55,7 +55,11 @@ function TheRules() {
           </ol>
         </RuleCard>
 
-        <RuleCard img={rule2} number="2." title="BUY TO SUPPORT YOUR TEAM">
+        <RuleCard
+          img={rule2}
+          number="2."
+          title="BUY TO SUPPORT <br /> YOUR TEAM"
+        >
           <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-disc">
             <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
               Buy tokens and support your favorite meme.
@@ -66,7 +70,7 @@ function TheRules() {
           </ol>
         </RuleCard>
 
-        <RuleCard img={rule3} number="3." title="THE RACE TO 1$ MILLION">
+        <RuleCard img={rule3} number="3." title="THE RACE TO $1 MILLION">
           <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-disc">
             <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
               The fight is decided when the first team reaches $1 million.
@@ -100,7 +104,11 @@ function TheRules() {
           </ol>
         </RuleCard>
 
-        <RuleCard img={rule5} number="5." title=" REWARDS FOR PICKING THE WINNER">
+        <RuleCard
+          img={rule5}
+          number="5."
+          title="REWARDS FOR <br /> PICKING THE WINNER"
+        >
           <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-disc">
             <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
               All participants receive the winning coin.
@@ -115,7 +123,11 @@ function TheRules() {
           </ol>
         </RuleCard>
 
-        <RuleCard img={rule6} number="6. " title="TRANSPARENCY AND FAIRNESS">
+        <RuleCard
+          img={rule6}
+          number="6. "
+          title="TRANSPARENCY <br /> AND FAIRNESS"
+        >
           <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-disc">
             <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
               <strong>Public Contracts:</strong> Both pre-sale contracts are
@@ -158,17 +170,18 @@ function RuleCard({ img, title, children, number }) {
       <div className="flex flex-col items-center justify-center bg-[#181818] rounded-[10px] w-full p-4 pt-1">
         <img
           src={img}
-          className="h-auto w-full mt-2 object-contain"
+          className="object-contain w-full h-auto mt-2"
           alt="rule_1"
         />
         <div className="flex flex-col items-start justify-center w-[300px] mt-4">
-          <div className="flex items-start space-x-1 ">
+          <div className="flex items-start space-x-1">
             <span className="text-[22px] leading-[26px] text-[white] font-HiJack">
               {number}
             </span>
-            <p className="text-[22px] leading-[26px] text-[white] font-HiJack">
-              {title}
-            </p>
+            <p
+              className="text-[22px] leading-[26px] text-[white] font-HiJack"
+              dangerouslySetInnerHTML={{ __html: title }}
+            />
           </div>
           {children}
         </div>

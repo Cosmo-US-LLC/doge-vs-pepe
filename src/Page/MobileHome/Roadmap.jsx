@@ -12,11 +12,12 @@ import imgrod from "../../assets/RoadmapSec/imgrd.png";
 
 function RoadmapMobile() {
   return (
-    <div className="w-full bgroadmapMob pt-[40px] overflow-hidden bg-black" id="roadmap">
-      <div className="mb-6 text-center">
+    <div className="w-full bgroadmapMob pt-[40px] overflow-hidden bg-black relative" id="roadmap">
+       <div className="absolute inset-0 bg-black pointer-events-none opacity-10"></div>
+      <div className="relative z-10 mb-6 text-center">
         <h3 className="text-[22px] text-white font-HiJack font-[400]">Roadmap</h3>
       </div>
-      <div className="flex items-center justify-center gap-11 pb-[1rem]">
+      <div className="flex items-center justify-center gap-11 pb-[1rem] relative z-10">
         <div className="flex w-[152px] h-[28px] justify-center items-center rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600">
           <span className="text-[#131212] font-inter text-[12px] font-[700] leading-none">
           The  $DOGE Roadmap
@@ -29,7 +30,7 @@ function RoadmapMobile() {
         </div>
       </div>
 
-      <div className="relative grid grid-cols-2 gap-10 p-2 px-4">
+      <div className="relative z-10 grid grid-cols-2 gap-10 p-2 px-4">
         <div className="w-[100%] mx-auto h-[100%]">
           <Swiper
             modules={[Navigation]}
