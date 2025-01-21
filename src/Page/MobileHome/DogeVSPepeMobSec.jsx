@@ -47,50 +47,16 @@ function DogeVSPepeMobSec() {
               </div>
             </div>
           </div>
-          <div className="flex gap-4">
-            {/* <div className="relative overflow-hidden rounded-[15.016px] border border-[#fff] flex flex-col">
-              <div className="bg-[#fff] h-[35px] flex justify-start items-center px-3">
-                <img src={coin} alt=""  className="h-[10px]"/>
-              </div>
-              <div className="relative">
-                <div className="absolute inset-0">
-                  <img alt="doge" src={pepeFight} className="absolute inset-0 w-full h-full" />
-                </div>
-                <div className="relative z-10 ">
-                  <h3 className="text-[11.03px] font-[400] text-[#fff] uppercase font-HiJack">
-                    <span className="text-[#FFBF01]">Doge</span> vs{" "}
-                    <span className="text-[#00FF2F]">Pepe</span>
-                  </h3>
-                  <h4 className="text-[7.273px] font-[400] text-[#fff]">
-                    Popular Memes Are Fighting for the #1 Spot
-                  </h4>
-                  <p className="text-[4.364px] pt-[10px] font-[400]  text-[#fff]">
-                    Get ready for a showdown like no other! The much-anticipated
-                    Doge vs. Pepe boxing pre-sale event has launched, and it’s
-                    already creating waves in the crypto community. These two
-                    iconic internet legends are stepping into the virtual ring,
-                    offering fans an exclusive opportunity to secure pre-sale
-                    tokens tied to this one-of-a-kind event. With Doge’s loyal
-                    following and Pepe’s cult-like status,.
-                  </p>
-                </div>
-                <div className="relative z-10 flex space-x-2">
-                  <h4 className="text-[4.364px] font-[700] text-[#fff]">
-                    Find out more
-                  </h4>
-                  <img src={arw} alt="" />
-                </div>
-              </div>
-            </div> */}
-            <div className="relative overflow-hidden rounded-[15.016px] border border-[#fff]">
+          <div className="flex gap-2">         
+            <div className="relative overflow-hidden rounded-[15.016px] border border-[#fff]   w-[174px] min-h-[194px]">
               <div className="py-[13px] px-[15px] bg-[#fff] rounded-t-[15.016px]">
-                <img src={coin} alt="" className="w-[100px]"/>
+                <img src={coin} alt="" className="w-[100px]" />
               </div>
-              <div className="relative px-[12px] pt-[20px] space-y-[10px]  pb-[10px] overflow-hidden">
-                <div className="absolute inset-0 -top-4 -bottom-1">
+              <div className="relative flex flex-col justify-center w-full h-full px-2 pt-8 overflow-hidden">
+                <div className="absolute inset-0 -top-8">
                   <img alt="doge" src={pepeFight} className="w-full h-full" />
                 </div>
-                <div className="relative z-10 ">
+                <div className="relative z-10 flex flex-col w-full">
                   <h3 className="text-[11.03px] font-[400] text-[#fff] uppercase font-HiJack">
                     <span className="text-[#FFBF01]">Doge</span> vs{" "}
                     <span className="text-[#00FF2F]">Pepe</span>
@@ -98,7 +64,7 @@ function DogeVSPepeMobSec() {
                   <h4 className="text-[7.273px] font-[400] text-[#fff]">
                     Battle of the Meme Icons!
                   </h4>
-                  <p className="pt-[10px] text-[4.364px] font-[400]  text-[#fff]">
+                  <p className="pt-[6px] text-[4.364px] font-[400]  text-[#fff]">
                     Doge and Pepe are more than just memes—they represent the
                     power of the internet to connect, inspire, and entertain.
                     This pre-sale event encapsulates that spirit, offering
@@ -108,7 +74,7 @@ function DogeVSPepeMobSec() {
                     Pepe boxing event promises to deliver a knockout.{" "}
                   </p>
                 </div>
-                <div className="relative z-10 flex items-center justify-start gap-3">
+                <div className="relative z-10 flex items-center justify-start gap-2">
                   <h4 className="text-[4.364px] font-[700] text-[#fff]">
                     Find out more
                   </h4>
@@ -116,7 +82,41 @@ function DogeVSPepeMobSec() {
                 </div>
               </div>
             </div>
-            <div className="relative overflow-hidden rounded-[15.016px] border border-[#fff]">
+            <div className="relative overflow-hidden rounded-[15.016px] border border-[#fff] w-[174px] min-h-[194px]">
+              <div className="py-[13px] px-[15px] bg-[#fff] rounded-t-[15.016px]">
+                <img src={bit} alt="" className="w-[100px]" />
+              </div>
+              <div className="relative flex flex-col justify-center w-full h-full px-2 pt-6 overflow-hidden">
+                <div className="absolute inset-0 -top-8">
+                  <img alt="doge" src={dogeFight} className="w-full h-full" />
+                </div>
+                <div className="relative z-10 flex flex-col w-full">
+                  <h3 className="text-[11.03px] font-[400] text-[#fff] uppercase font-HiJack">
+                    <span className="text-[#FFBF01]">Doge</span> vs{" "}
+                    <span className="text-[#00FF2F]">Pepe</span>
+                  </h3>
+                  <h4 className="text-[7.273px] font-[400] text-[#fff]">
+                    Battle of the Meme Icons!
+                  </h4>
+                  <p className="pt-[6px] text-[4.364px] font-[400]  text-[#fff]">
+                    Doge and Pepe are more than just memes—they represent the
+                    power of the internet to connect, inspire, and entertain.
+                    This pre-sale event encapsulates that spirit, offering
+                    something for everyone: excitement for fight fans,
+                    opportunity for crypto enthusiasts, and fun for meme lovers.
+                    As the countdown to the big showdown continues, the Doge vs.
+                    Pepe boxing event promises to deliver a knockout.{" "}
+                  </p>
+                </div>
+                <div className="relative z-10 flex items-center justify-start gap-2">
+                  <h4 className="text-[4.364px] font-[700] text-[#fff]">
+                    Find out more
+                  </h4>
+                  <img src={arw} alt="" />
+                </div>
+              </div>
+            </div>
+            {/* <div className="relative overflow-hidden rounded-[15.016px] border border-[#fff] w-[50%]">
               <div className="py-[10px] px-[15px] bg-[#fff] rounded-t-[15.016px]">
                 <img src={bit} alt="" />
               </div>
@@ -149,7 +149,7 @@ function DogeVSPepeMobSec() {
                   <img src={arw} alt="" />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

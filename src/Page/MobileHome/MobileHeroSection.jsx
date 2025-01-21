@@ -11,7 +11,7 @@ import ambCrypto from "../../assets/Mobile/amb-crypto.webp";
 import cryptoNews from "../../assets/Mobile/cryptonews.webp";
 import bitCoinist from "../../assets/Mobile/bitcoinist.webp";
 import newsBit from "../../assets/Mobile/newsbit.webp";
-// import coinMarketCop from "../../assets/Mobile/coin-market-cop.webp";
+ 
 
 function MobileHeroSection() {
   const handleScroll = (event, targetId, offset = 0) => {
@@ -40,27 +40,31 @@ function MobileHeroSection() {
         <div className="max-w-[575px] w-full flex flex-col justify-center items-center mx-auto">
           <div className="flex items-end justify-center space-x-[15px] text-stroke-2">
             <h1
-              className="text-[#ffbf0c] text-[50px] font-[400] font-HiJack"
+              className="text-[#ffbf0c] text-[50px] font-[400] font-HiJack text-shadow-doge"
               style={{
-                textShadow: "6px -1px 14px #F1AD036a",
-                // WebkitTextStrokeWidth: "1px",
-                // WebkitTextStrokeColor: "#000",
+                WebkitTextStrokeWidth: "2.301823854446411",
+                WebkitTextStrokeColor: "#000",
               }}
             >
               DOGE
             </h1>
             <h4
-              className="text-[#fff] text-[20px] h-[48px] font-[800] font-Lato text-stroke"
-              style={{ textShadow: "0px 0px 7px #74FF606a" }}
+              className="text-[#FFF] text-[22.559px] font-[400] font-Lato h-[48px]"
+              style={{
+                textShadow: "0px 0px 4.534px #74FF60",  
+                WebkitTextStrokeWidth: "1.2px",  
+                WebkitTextStrokeColor: "#000",  
+              }}
             >
               VS.
             </h4>
+
             <h1
               className="text-[#00FF2F] text-[50px] font-[400] font-HiJack"
               style={{
-                textShadow: "6px -1px 14px #74FF606a",
-                // WebkitTextStrokeWidth: "1px",
-                // WebkitTextStrokeColor: "#000",
+                textShadow: "3.76px -0.47px 14.147px #74FF60",
+                WebkitTextStrokeWidth: "2.301823854446411",
+                WebkitTextStrokeColor: "#000",
               }}
             >
               PEPE
@@ -102,11 +106,11 @@ function MobileHeroSection() {
           />
           <img
             src={vsimg}
-            className="w-[63px] h-[55px] object-contain mb-20"
+            className="w-[63px] h-[55px] object-contain mb-8"
             alt=""
           />
           <img
-            className="h-[283px] w-[131px] object-contain"
+            className="h-[283px] w-[131px] object-contain rotate-1 mb-3"
             src={vsimgl}
             alt=""
           />

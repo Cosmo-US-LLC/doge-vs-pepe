@@ -1,7 +1,7 @@
 import React from "react";
-import socialicn1 from "../../assets/footer/teligram.svg";
-import socialicn2 from "../../assets/footer/insta.svg";
-import socialicn3 from "../../assets/footer/twiter.svg";
+import socialicn1 from "../../assets/footer/telegram.svg";
+import socialicn2 from "../../assets/footer/instagram.svg";
+import socialicn3 from "../../assets/footer/twitter.svg";
 import dogevspepe from "../../assets/Mobile/dogevspepe.png";
 
 function Footer() {
@@ -75,14 +75,14 @@ function Footer() {
         <div className="flex flex-col space-y-4">
           <h4 className="text-[16px] text-[#fff] font-[400]">Join us now</h4>
           <div className="flex space-x-3 ">
-            <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full">
-              <img src={socialicn1} alt="social 1" className="w-full h-full" />
+            <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative">
+              <img src={socialicn1} alt="social 1" className="absolute w-full h-full bottom-[2px]" />
             </div>
-            <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full">
-              <img src={socialicn2} alt="social 1" className="w-full h-full" />
+            <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative">
+              <img src={socialicn2} alt="social 1" className="absolute w-full h-full bottom-[2px]" />
             </div>
-            <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full">
-              <img src={socialicn3} alt="social 1" className="w-full h-full" />
+            <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative">
+              <img src={socialicn3} alt="social 1" className="absolute w-full h-full bottom-[2px]" />
             </div>
           </div>
         </div>

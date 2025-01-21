@@ -52,9 +52,9 @@ code {
   background-repeat: no-repeat;
 }
 .DontWaitmobSec{
-  background-image: url(../src/assets/DontWaitSec/dontbg2.png);
+  background-image: url(../src/assets/DontWaitSec/dont-wait-bg.webp);
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .dogevspepebg{
@@ -68,6 +68,7 @@ code {
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 .crypbg2{
   background-image: url(../src/assets/DogeVSPepeSec/card-2.webp);

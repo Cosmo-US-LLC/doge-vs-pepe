@@ -13,7 +13,7 @@ function TheFightSecMob() {
       <div className=" w-[90%] mx-auto space-y-[20px] ">
         <div className="space-y-[12px]">
           <h3 className="text-[25px] text-center font-HiJack leading-[102.804%] font-[400] text-[#FFF] uppercase">
-            The Fight is Made Possible By
+            The Fight is <br  /> Made Possible By
           </h3>
           <p className="text-[15px] max-w-[869px] w-[100%] mx-auto text-center font-[400] text-[#fff]">
             A huge thank you to the incredible technology partners and service
@@ -69,9 +69,11 @@ function TheFightSecMob() {
                     </button>
                   </div>
         </div>
-        <div className="space-y-[20px]">
-          <img className="min-w-[357px] max-w-[357px] h-[275.78px] mx-auto" src={mobimg} alt="" />
-          <img className="h-[382.29px] min-w-[357px] max-w-[357px] mx-auto" src={mobicons} alt="" />
+        <div className="space-y-[20px] relative">
+        <div className="absolute inset-0 bg-black opacity-10 rounded-[10px] pointer-events-none"></div>
+
+          <img className="  h-[275.78px] mx-auto" src={mobimg} alt="" />
+          <img className="h-[382.29px]   mx-auto" src={mobicons} alt="" />
         </div>
       </div>
     </div>

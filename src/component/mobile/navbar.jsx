@@ -50,7 +50,7 @@ function Navbar() {
           <a
             href="#what-is"
             className="text-[#fff] text-[16px] font-[600]"
-            onClick={(e) => handleScroll(e, "what-is", 90)}
+            onClick={(e) => handleScroll(e, "how-it-all-began", 90)}
           >
             What is DOGEVSPEPE
           </a>
@@ -105,7 +105,7 @@ function Navbar() {
               <a
                 href="#what-is"
                 className="block py-[8px] px-[12px] text-[#FFF] font-k2d font-semibold text-[15px] leading-[15.657px] border-b border-[#fff]"
-                onClick={(e) => handleScroll(e, "what-is", 90)}
+                onClick={(e) => handleScroll(e, "how-it-all-began", 90)}
               >
                 What is DOGEVSPEPE
               </a>
