@@ -29,7 +29,7 @@ function CommunitySec() {
             className="w-[271px] text-[15px] font-[400] text-center text-[#FFF]"
           >
 
-            This isn’t just about picking a memeit’s about joining a movement that you are proud to represent. 
+            This isn’t just about picking a meme<br /> it’s about joining a movement that you are proud to represent. 
           </p>
         </div>
         <div className="flex flex-col justify-between space-y-[30px]">

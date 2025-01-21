@@ -208,7 +208,7 @@ const BuyTab = () => {
 				inputRef={setReceiveTokenRef}
 			/>
 			{accountData.isConnected && <ShareLabel />}
-			<CodeInputs />
+			{/* <CodeInputs /> */}
 			<div className="pb-[10px] space-y-[5px] -my-1">
 				<h5 className="text-[#000] text-[18.364px] font-[700] text-center">
 					Accepting

@@ -38,7 +38,7 @@ function HypeMobSec() {
           <div className="">
             <div className="w-[100%] space-x-[1rem] flex justify-between">
               <div className="relative w-[45%] rounded-[13px] overflow-hidden">
-                <div className="absolute inset-0 bg-black pointer-events-none opacity-20"></div>
+                {/* <div className="absolute inset-0 bg-black pointer-events-none opacity-20"></div> */}
                 <img className="w-[100%] h-full" src={hypeimg5} alt="" />
               </div>
               <img className="w-[55%]" src={hypeimg6} alt="" />

@@ -70,7 +70,7 @@ function TheFightSecMob() {
                   </div>
         </div>
         <div className="space-y-[20px] relative">
-        <div className="absolute inset-0 bg-black opacity-10 rounded-[10px] pointer-events-none"></div>
+        {/* <div className="absolute inset-0 bg-black opacity-10 rounded-[10px] pointer-events-none"></div> */}
 
           <img className="  h-[275.78px] mx-auto" src={mobimg} alt="" />
           <img className="h-[382.29px]   mx-auto" src={mobicons} alt="" />
