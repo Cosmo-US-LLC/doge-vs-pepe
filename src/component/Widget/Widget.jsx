@@ -31,7 +31,7 @@ const Widget = ({ project, theme, symbol, ...others }) => {
 		<ApiContextWrapper project={project} symbol={symbol}>
 			<div
 				{...others}
-				className={clsx("h-[660px] max-w-[404.01px] bg-[var(--bg)] w-[100%] flex flex-col justify-between gap-[9px] px-[16px] pb-[26px] pt-[24px] rounded-[24px] border border-[#fff]", others.className)}
+				className={clsx("h-[596px] max-w-[404.01px] bg-[var(--bg)] w-[100%] flex flex-col justify-between gap-[9px] px-[16px] pb-[26px] pt-[24px] rounded-[24px] border border-[#fff]", others.className)}
 				style={{
 					"--bg": theme.bg,
 					...others.style

@@ -2,8 +2,8 @@ import React from "react";
 import arwl from "../../assets/herosec/Arrowlf.svg";
 import arwr from "../../assets/herosec/Arrowrght.svg";
 import vsimg from "../../assets/herosec/vs.png";
-import doge from "../../assets/herosec/doge.webp";
-import pepe from "../../assets/herosec/pepe.webp";
+import doge from "../../assets/herosec/hero-doge.webp";
+import pepe from "../../assets/herosec/hero-pepe.webp";
 import downShodow from "../../assets/herosec/down-shodwo.svg";
 import downArrow from "../../assets/herosec/down-arrow.svg";
 
@@ -22,7 +22,7 @@ function HeroSection() {
   };
   return (
     <div
-      className="relative w-[100%] bgherosec pt-[9rem] pb-[30px] h-[800px]"
+      className="relative w-[100%] bgherosec pt-[9rem] pb-[30px] h-[770px]"
       id="what-is"
     >
       <img
@@ -31,7 +31,7 @@ function HeroSection() {
         alt=""
       />
       <div className="max-w-[1245px] w-[100%] mx-auto relative min-h-[700px]">
-        <div className="max-w-[575px] w-[100%] mx-auto text-center">
+        <div className="max-w-[575px] w-[100%] mx-auto text-center flex flex-col gap-2">
           <div className="flex items-center justify-center space-x-4">
             <h1
               className="text-[#F2B60F]  font-HiJack   text-[83.305px] font-[700] "
@@ -51,7 +51,7 @@ function HeroSection() {
                 WebkitTextStrokeColor: "#000",
               }}
             >
-             <img className="max-w-[83px]" src={vsimg} alt="" />
+              <img className="max-w-[83px]" src={vsimg} alt="" />
             </h4>
             <h1
               className="text-[#00FF2F] font-HiJack text-[83.305px] font-[700] "
@@ -64,14 +64,14 @@ function HeroSection() {
               PEPE
             </h1>
           </div>
-          <h3 className="text-[39px] font-[400] font-HiJack  pb-[3px] uppercase leading-[112.406%] text-[#FFF]  text-center">
+          <h3 className="text-[39px] font-[400] font-HiJack uppercase leading-[43.838px] text-[#FFF]  text-center">
             THE ULTIMATE showdown
           </h3>
-          <h4 className="text-[34px] font-[700] pb-[22px] leading-[134.19%] text-[#FFF] text-center">
+          <h4 className="text-[34px] font-[700] leading-[43.838px] text-[#FFF] text-center">
             Who’s Raising $1 Million First?
           </h4>
           <div
-            className="border rounded-[26px] p-2 max-w-[593px] w-[100%]"
+            className="border rounded-[26.9px] px-4 max-w-[593px] w-[100%] py-6"
             style={{
               boxShadow: "0px 8px 13.3px 0px rgba(0, 0, 0, 0.49",
               backgroundColor: "#242424c9",
@@ -80,16 +80,17 @@ function HeroSection() {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <p className="text-[20px] max-w-[575px] w-[100%] pb-2 mx-auto font-[700] leading-[137.5%] text-[#FFF]  text-center">
-              On one side, we have Doge, the undefeated OG Meme Heavyweight
-              Champion who has dominated the meme world for years. <br />
-              <br /> On the other side is Pepe, the fearless contender and
-              rising star, already ranked in the top 3 of meme heavyweights and
-              celebrated for his knockout performances. <br />
+            <p className="text-[20px] max-w-[536px] w-[100%] mx-auto font-[700] leading-[22px] text-[#FFF]">
+              Only one will win this epic fight and launch! <br /> <br /> On one
+              side, we have Doge, the undefeated OG Meme Heavyweight Champion,
+              dominating the meme world
+              <br /> for years with his unpredictable style.
+              <br /> <br /> On the other side, we have Pepe, the fearless rising
+              star, already ranked in the top 3 meme heavyweights and famous for
+              his brutal knockouts. <br />
               <br />
-              The first to hit $1M takes the championship and launches. <br />
-              <br />
-              The choice is yours!
+              The first to hit $1M wins the championship and launches. The
+              choice is yours!
             </p>
           </div>
         </div>
@@ -139,9 +140,12 @@ function HeroSection() {
             />
           </button>
         </div>
-
-        <img src={doge} className="absolute -left-[3%] -top-8" alt="" />
-        <img className="absolute -right-3 -top-10" src={pepe} alt="" />
+        <div className="absolute -left-[3%] bottom-[2%] w-[370px] h-[690px]">
+          <img src={doge} className="w-full h-full" alt="" />
+        </div>
+        <div className="absolute -right-3 bottom-[5%] w-[335px] h-[690px]">
+          <img className="w-full h-full" src={pepe} alt="" />
+        </div>
       </div>
       <div className=" bottom-[-3%]  absolute left-0 right-0 flex items-center justify-center z-30">
         <img
