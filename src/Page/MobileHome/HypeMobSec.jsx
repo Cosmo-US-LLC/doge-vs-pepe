@@ -3,7 +3,7 @@ import hypeimg1 from "../../assets/Hype/hypeimg (6).png";
 import hypeimg2 from "../../assets/Hype/hypeimg (5).png";
 import hypeimg3 from "../../assets/Hype/hypeimg (4).png";
 import hypeimg4 from "../../assets/Hype/hypeimg (3).png";
-import hypeimg5 from "../../assets/Hype/hypmob.png";
+import hypeimg5 from "../../assets/Hype/hype-bus.webp";
 import hypeimg6 from "../../assets/Hype/hypeimg (1).png";
 
 function HypeMobSec() {
