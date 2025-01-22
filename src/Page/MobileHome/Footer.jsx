@@ -76,14 +76,33 @@ function Footer() {
           <h4 className="text-[16px] text-[#fff] font-[400]">Join us now</h4>
           <div className="flex space-x-3 ">
             <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative">
-              <img src={socialicn1} alt="social 1" className="absolute w-full h-full bottom-[2px]" />
+              <img
+                src={socialicn1}
+                alt="social 1"
+                className="absolute w-full h-full bottom-[2px]"
+              />
             </div>
             <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative">
-              <img src={socialicn2} alt="social 1" className="absolute w-full h-full bottom-[2px]" />
+              <img
+                src={socialicn2}
+                alt="social 1"
+                className="absolute w-full h-full bottom-[2px]"
+              />
             </div>
-            <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative">
-              <img src={socialicn3} alt="social 1" className="absolute w-full h-full bottom-[2px]" />
-            </div>
+            <a
+              href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative cursor-pointer hover:opacity-80 hover:scale-110 transition-all duration-300">
+                <img
+                  src={socialicn3}
+                  alt="social 1"
+                  className="absolute w-full h-full bottom-[2px]"
+                />
+              </div>
+            </a>
           </div>
         </div>
 

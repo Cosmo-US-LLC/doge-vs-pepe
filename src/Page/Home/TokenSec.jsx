@@ -2,18 +2,18 @@ import React from "react";
 import dogePepeScale from "../../assets/tokenomics/token-doge-pepe-frame.webp";
 import verc1 from "../../assets/RoadmapSec/Ellipse 80 (3).png";
 import verc2 from "../../assets/RoadmapSec/Ellipse 81 (1).png";
-import topShadow from "../../assets/tokenomics/rectangle_306.webp";
-import bottomShadow from "../../assets/tokenomics/rectangle_307.webp";
+import topShadow from "../../assets/tokenomics/rectangle_307.webp";
+import bottomShadow from "../../assets/tokenomics/rectangle_306.webp";
 
 function TokenSec() {
   return (
     <div className="relative w-[100%] h-[1068px]  Tokenomicsbg   overflow-hidden" id="tokenomics">
-       <div className="absolute top-0 left-0 right-0 w-full h-full">
-                    <img className="w-full h-full" src={topShadow} alt="" />
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 w-full h-full">
-                    <img className="w-full h-full" src={bottomShadow} alt="" />
-                  </div>
+        <div className="absolute top-0 left-0 right-0">
+        <img className="" src={topShadow} alt="" />
+      </div>
+      <div className="absolute bottom-0 left-0 right-0">
+        <img className="" src={bottomShadow} alt="" />
+      </div>
       <div className=" max-w-[1245px] w-[100%] mx-auto flex justify-between pt-[20px] ">
         <div className="max-w-[479.306px] relative space-y-[20px] w-[100%] ">
           <h3
