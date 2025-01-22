@@ -1,9 +1,25 @@
 import React from "react";
+import topShadow from "../../assets/DontWaitSec/rectangle_285.webp";
+import bottomShadow from "../../assets/DontWaitSec/rectangle_297.webp";
+import doge from "../../assets/DontWaitSec/doge-d.webp";
+import pepe from "../../assets/DontWaitSec/pepe-d.webp";
 function DontWaitSec() {
   return (
-    <div className="w-[100%] s DontWaitSec aspect-video overflow-hidden pt-[200px] pb-[100px]">
+    <div className="w-[100%] h-[900px] relative DontWaitSec flex justify-center items-start pt-[120px] aspect-video overflow-hidden">
+           <div className="absolute top-0 left-0 right-0 w-full h-full">
+              <img className="w-full h-full" src={topShadow} alt="" />
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 z-10 w-full h-full">
+              <img className="w-full h-full" src={bottomShadow} alt="" />
+            </div>
+                 <div className="w-[562px] h-[545px] absolute bottom-0 left-[-23px]">
+                    <img src={doge} alt="doge-image" className="w-full h-full"/>
+                  </div>
+                  <div className="w-[507px] h-[545px] absolute bottom-0 right-[-10px]">
+                    <img src={pepe} alt="pepe-image" className="w-full h-full"/>
+                  </div>
       <div className="space-y-[35px]">
-      <div className="max-w-[593px] relative px-[22px] py-[40px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative border border-neutral-400 bg-[#0101019f]" 
+      <div className="max-w-[593px] px-[22px] py-[40px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative border border-neutral-400 bg-[#0101019f]" 
       style={{backdropFilter:"blur(0px)"}}
       >
         <div className="space-y-[27px]">

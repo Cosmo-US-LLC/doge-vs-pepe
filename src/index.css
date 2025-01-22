@@ -40,13 +40,13 @@ code {
   background-repeat: no-repeat;
 }
 .Tokenomicsbg{
-  background-image: url(../src/assets/tokenomics/tokobg.png);
+  background-image: url(../src/assets/tokenomics/token-bg.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .DontWaitSec{
-  background-image: url(../src/assets/DontWaitSec/dontbgnew.png);
+  background-image: url(../src/assets/DontWaitSec/dont-wait-d-bg.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ code {
   background-repeat: no-repeat;
 }
 .dogevspepebg{
-  background-image: url(../src/assets/DogeVSPepeSec/bg.png);
+  background-image: url(../src/assets/DogeVSPepeSec/doge-vs-pepe-bg.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -85,7 +85,7 @@ code {
   height: 150px;
 }
 .Biggestbg{
-  background-image: url(../src/assets/BiggestSec/biggestbg.png);
+  background-image: url(../src/assets/BiggestSec/bigest-crypto-bg.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -116,7 +116,7 @@ code {
   background-repeat: no-repeat;
 }
 .Pressbg{
-  background-image: url(../src/assets/PressSec/pressbg.png);
+  background-image: url(../src/assets/PressSec/press-and-media-bg.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -261,7 +261,7 @@ code {
   background-repeat: no-repeat;
 }
 .howitbg{
-  background-image: url(./assets/HowItSec/howbg.png);
+  background-image: url(./assets/HowItSec/how-it-began-bg.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;

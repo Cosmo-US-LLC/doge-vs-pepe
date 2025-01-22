@@ -8,18 +8,18 @@ import topShadow from "../../assets/HowItSec/rectangle_288.webp";
 import bottomShadow from "../../assets/HowItSec/rectangle_289.webp";
 function HowItSec() {
   return (
-    <div className="w-[100%] h-[900px] howitbg relative overflow-hidden py-[20px]">
+    <div className="w-[100%] h-[900px] flex justify-center items-center howitbg relative overflow-hidden  ">
       <div className="absolute top-0 left-0 right-0 w-full h-full">
         <img className="w-full h-full" src={topShadow} alt="" />
       </div>
-      <div className="absolute bottom-0 left-0 right-0 z-20 w-full h-full">
+      <div className="absolute bottom-0 left-0 right-0 z-10 ">
         <img className="w-full h-full" src={bottomShadow} alt="" />
       </div>
       <div
-        className="max-w-[992px] px-[22px] py-[40px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative min-h-[500px] howitborder bg-[#01010182]"
+        className="max-w-[992px] px-[22px] py-[26px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative min-h-[500px] howitborder bg-[#01010182]"
         style={{ backdropFilter: "blur(9.899999618530273px)" }}
       >
-        <div className="space-y-[20px] flex flex-col justify-center items-center w-[855px] relative z-10">
+        <div className="space-y-[16px] flex flex-col justify-center items-center ">
           <p className="text-[#fff] leading-[114%] font-[400] text-[20px] text-center">
             Chapter I
           </p>
@@ -35,14 +35,14 @@ function HowItSec() {
             Things escalated quickly, turning into a massive brawl with serious
             consequences.
           </p>
-          <div className="flex justify-center w-[469px]">
+          <div className="flex justify-center w-[469px] relative z-20">
             <img src={howitimg} alt="" />
           </div>
-          <div className="space-y-[23px]">
-            <h4 className="text-[#fff] leading-[114%] font-[400] text-[20px] text-center">
+          <div className="space-y-[23px]  ">
+            <h4 className="text-[#fff] leading-[114%] font-[400] text-[20px] text-center  ">
               Follow us on social media to keep up with the story!
             </h4>
-            <div className="flex justify-center space-x-[4rem]">
+            <div className="flex justify-center space-x-[4rem] ">
               <div className="flex items-center justify-center space-x-2">
                 <p className="text-[18px] font-[600] text-[#fff] uppercase">
                   {" "}
@@ -50,7 +50,7 @@ function HowItSec() {
                 </p>
                 <img className="cursor-pointer" src={telicon1} alt="" />
               </div>
-              <div className="flex items-center justify-center space-x-2">
+              <div className="z-10 flex items-center justify-center space-x-2">
                 <p className="text-[18px] font-[600] text-[#fff] uppercase">
                   {" "}
                   Join Telegram
@@ -61,10 +61,10 @@ function HowItSec() {
           </div>
         </div>
 
-        <div className="absolute top-[100px] left-[-38%] h-[646px] w-[528px]">
+        <div className="absolute top-[100px] left-[-32%] h-[646px] w-[528px]">
           <img src={vecleft} className="w-full" alt="" />
         </div>
-        <div className="absolute top-[100px] right-[-42%] h-[646px] w-[599px]">
+        <div className="absolute top-[100px] right-[-40%] h-[646px] w-[599px]">
           <img src={vecright} className="w-full" alt="" />
         </div>
       </div>

@@ -6,27 +6,27 @@ import dogeicon from "../../assets/MilestonesSec/Mask group (4).png";
 
 
 function MilestonesSec() {
-  const [dogePercentage, setDogePercentage] = useState(0);
-  const [pepePercentage, setPepePercentage] = useState(0);
+  const [dogePercentage, setDogePercentage] = useState(18);
+  const [pepePercentage, setPepePercentage] = useState(24);
   return (
-    <div className="Mysterybg relative w-[100%] h-[1100px]  pt-[90px] overflow-hidden pb-[60px]">
-      <div className="max-w-[1168px] space-y-[40px] w-[100%] mx-auto ">
+    <div className="Mysterybg relative w-[100%] h-[900px] flex justify-center items-center overflow-hidden">
+      <div className="max-w-[1168px] space-y-[20px] w-[100%] mx-auto ">
         <div className="space-y-[40px] flex flex-col items-center justify-center">
-          <div className="Mysteryborder p-[15px]">
+          <div className="px-4 py-4 Mysteryborder">
             <h3 className="text-[50px] text-[#FFFCFC] font-HiJack uppercase text-center font-[400]">
             Mystery Milestones Reveal
             </h3>
-            <p className="text-[20px] font-[400] pt-[8px] pb-[22px] leading-[114%] text-center text-[#FFF]">
+            <p className="text-[20px] font-[400] pb-[18px] leading-[96%] text-center text-[#FFF]">
             The fight heats up with every milestone! 
             </p>
-            <p className="max-w-[707px] mx-auto leading-[114%] text-[20px] font-[400] text-center text-[#FFF]">
+            <p className="max-w-[707px] mx-auto leading-[96%] text-[20px] font-[400] text-center text-[#FFF]">
             When one side hits a milestone, it reveals a mystery feature for the opposing team, keeping the competition alive and rewarding both sides. With three key milestones: 250k, 500k, and 750k, each unlocks exciting surprises that drive both teams closer to the finish line.
             </p>
           </div>
         </div>
-        <div className="pt-[80px] pb-[30px]">
-         <div className="relative">
-         <img className="absolute top-[-150%] left-[0%]" src={dogeicon} alt="" />
+        <div className="pt-[60px] pb-[30px]">
+         <div className="relative px-16">
+         <img className="absolute top-[-160%] left-[6%] h-[62px]" src={dogeicon} alt="" />
           <div className="bg-[#181818] p-1 rounded-[40.835px] w-[100%] h-[40.415px] border-[0.794px] border-[#EFAB00]">
             <div
               className="flex items-center justify-center h-full rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600"
@@ -39,8 +39,8 @@ function MilestonesSec() {
           </div>
          </div>
 
-          <div className="relative flex min-h-[480px] justify-center items-center flex-col ">
-            <div className="absolute top-[4%] left-[21%] gap-[115px] flex ">
+          <div className="relative flex min-h-[330px] justify-center items-center flex-col ">
+            <div className="absolute top-[4%] left-[23%] gap-[140px] flex">
               <div className="flex flex-col items-center justify-center">
                 <img src={chestImage} alt="Treasure Chest" className="mb-2 w-[59] h-[57px]" />
                 <span className="text-white font-inter text-[16px] font-bold leading-normal">
@@ -68,7 +68,7 @@ function MilestonesSec() {
               <img src={groupImage} alt="flag" className="" />
               
             </div>
-            <div className="absolute bottom-[4%] left-[21%] gap-[115px] flex ">
+            <div className="absolute bottom-[8%] left-[23%] gap-[140px] flex ">
               <div className="flex flex-col items-center justify-center">
                 <span className="text-white font-inter text-[16px] font-bold leading-normal">
                   $250,000
@@ -89,8 +89,8 @@ function MilestonesSec() {
               </div>
             </div>
           </div>
-          <div className="relative">
-          <img src={pepeicon} className="absolute top-[-150%] left-[0%] w-[76px] h-[71px]" alt="" />
+          <div className="relative px-16">
+          <img src={pepeicon} className="absolute top-[-200%] left-[5%] w-[76px] h-[71px]" alt="" />
           <div className="bg-[#181818] p-1 rounded-[40.835px] w-[100%] h-[40.415px] border-[0.794px] border-[#09FC3C]">
             <div
               className="flex items-center justify-center h-full rounded-full bg-gradient-to-r"

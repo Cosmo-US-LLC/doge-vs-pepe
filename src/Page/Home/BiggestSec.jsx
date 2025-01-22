@@ -5,10 +5,10 @@ import user from "../../assets/BiggestSec/user.png";
 
 function BiggestSec() {
   return (
-    <div className="relative w-[100%] pt-[100px] pb-[60px] Biggestbg overflow-hidden">
+    <div className="relative w-[100%] h-[900px] flex justify-center items-center mx-auto  Biggestbg overflow-hidden">
       <div className="max-w-[1440px] w-[100%] space-y-[100px] mx-auto ">
         <div className=" w-[100%]">
-          <h3 className="pb-[130px] text-[50px] text-center font-HiJack leading-[102.804%] font-[400] text-[#FFF] uppercase">
+          <h3 className="pb-[40px] text-[50px] text-center font-HiJack leading-[102.804%] font-[400] text-[#FFF] uppercase">
           The Biggest Crypto Event in 2025
           </h3>
         </div>

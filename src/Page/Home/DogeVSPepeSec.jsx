@@ -3,11 +3,19 @@ import bit from "../../assets/DogeVSPepeSec/bit.svg";
 import coin from "../../assets/DogeVSPepeSec/coin.svg";
 import tioicn from "../../assets/DogeVSPepeSec/crypto.svg";
 import arw from "../../assets/DogeVSPepeSec/arw.svg";
+import topShadow from "../../assets/DogeVSPepeSec/top-shadow.webp";
+import bottomShadow from "../../assets/DogeVSPepeSec/bottom-shadow.webp";
 
 function DogeVSPepeSec() {
   return (
-    <div className="relative w-[100%] pt-[90px] pb-[80px] dogevspepebg overflow-hidden">
-      <div className="max-w-[1038px] w-[100%] space-y-[50px] mx-auto ">
+    <div className="relative w-[100%] h-[900px] flex justify-center items-center dogevspepebg overflow-hidden">
+       <div className="absolute top-0 left-0 right-0 w-full h-full">
+                    <img className="w-full h-full" src={topShadow} alt="" />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 w-full h-full">
+                    <img className="w-full h-full" src={bottomShadow} alt="" />
+                  </div>
+      <div className="max-w-[1038px] w-[100%] space-y-[50px] mx-auto relative z-10">
         <div className=" w-[100%]">
           <h3 className="text-[50px] text-center font-HiJack leading-[102.804%] font-[400] text-[#FFF] uppercase">
           DOGE VS PEPE IS MAKING HEADLINES
