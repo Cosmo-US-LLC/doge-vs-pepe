@@ -5,11 +5,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import awr1 from "../../assets/RoadmapSec/Vector (2).svg";
+import topShadow from "../../assets/RoadmapSec/rectangle_289.webp";
+import bottomShadow from "../../assets/RoadmapSec/rectangle_333.webp";
 
 function RoadmapSec() {
   return (
-    <div className="w-[100%] relative pt-[40px] bgroadmap  overflow-hidden pb-[90px]" id="roadmap">
-      <div className="max-w-[1245px] space-y-[40px] w-[100%] mx-auto ">
+    <div className="w-[100%] h-[1039px]  relative flex justify-center items-center  bgroadmap  overflow-hidden pb-[90px]" id="roadmap">
+       <div className="absolute top-0 left-0 right-0 w-full h-full">
+                    <img className="w-full h-full" src={topShadow} alt="" />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 w-full h-full">
+                    <img className="w-full h-full" src={bottomShadow} alt="" />
+                  </div>
+      <div className="max-w-[1245px] space-y-[40px] w-[100%] mx-auto relative z-10">
         <div className="space-y-[50px]">
           <div>
             <h3 className="text-[50px] font-HiJack text-[#FFFCFC] text-center font-[400]">
@@ -17,8 +25,8 @@ function RoadmapSec() {
             </h3>
           </div>
         </div>
-        <div className="flex items-center justify-between pt-24">
-          <div className="space-y-[5rem] max-w-[560px] w-[100%]">
+        <div className="flex items-center justify-between pt-20">
+          <div className="space-y-[3rem] max-w-[560px] w-[100%]">
             <div className="max-w-[510px] mx-auto w-[100%]">
               <button
                 className=" rounded-[60px] mx-auto ml-[2.9rem] max-w-[353px] w-[100%] h-[59px] flex justify-center items-center text-[25px] font-[700] text-[#131212] "
@@ -177,7 +185,7 @@ function RoadmapSec() {
               </div>
             </div>
           </div>
-          <div className="space-y-[5rem] max-w-[560px] w-[100%]">
+          <div className="space-y-[3rem] max-w-[560px] w-[100%]">
             <div className="max-w-[510px] ml-[0.6rem] mx-auto w-[100%]">
               <button
                 className=" rounded-[60px] mx-auto max-w-[353px] w-[100%] h-[59px] flex justify-center items-center text-[25px] font-[700] text-[#131212] "

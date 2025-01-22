@@ -7,7 +7,7 @@ import vsimgl from "../../assets/FightSec/Arrowlf.svg";
 function TheFightSec() {
 
   return (
-    <div className="relative w-[100%] pt-[90px] pb-[80px] overflow-hidden">
+    <div className="relative w-[100%] h-[900px] flex justify-center items-center   overflow-hidden">
       <div className="max-w-[1150px] w-[100%] space-y-[50px] mx-auto ">
         <div className="space-y-[20px]">
           <h3 className="text-[50px] text-center font-HiJack leading-[102.804%] font-[400] text-[#FFF] uppercase">

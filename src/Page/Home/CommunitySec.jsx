@@ -5,11 +5,19 @@ import vectcard2 from "../../assets/CommunitySec/Ellipse 80.webp";
 import vectcard1 from "../../assets/CommunitySec/Ellipse 81.webp";
 import arwl from "../../assets/herosec/Arrowlf.svg";
 import arwr from "../../assets/herosec/Arrowrght.svg";
+import topShadow from "../../assets/CommunitySec/rectangle_290.webp";
+import bottomShadow from "../../assets/CommunitySec/rectangle_294.webp";
 
 function CommunitySec() {
   return (
-    <div className="w-[100%] py-[100px] Communitybg overflow-hidden ">
-      <div className="max-w-[1312px] px-[30px] py-[80px] space-y-[40px] w-[100%] mx-auto "
+    <div className="w-[100%] flex justify-center items-center  h-[900px] Communitybg overflow-hidden relative">
+       <div className="absolute top-0 left-0 right-0 w-full h-full">
+              <img className="w-full h-full" src={topShadow} alt="" />
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 w-full h-full">
+              <img className="w-full h-full" src={bottomShadow} alt="" />
+            </div>
+      <div className="max-w-[1312px] px-[30px] py-[80px] space-y-[40px] w-[100%] mx-auto z-10 relative"
        style={{backdropFilter:"blur(9.899999618530273px)",
         background: "rgba(0, 0, 0, 0.47)",
         borderRadius: "21.168px",

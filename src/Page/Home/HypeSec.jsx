@@ -5,12 +5,20 @@ import hypeimg3 from "../../assets/Hype/hypeimg (4).png";
 import hypeimg4 from "../../assets/Hype/hypeimg (3).png";
 import hypeimg5 from "../../assets/Hype/hypeimg (2).png";
 import hypeimg6 from "../../assets/Hype/hypeimg (1).png";
+import topShadow from "../../assets/Hype/rectangle_303.webp";
+import bottomShadow from "../../assets/Hype/rectangle_295.webp";
 
 
 function HypeSec() {
   return (
-    <div className="relative w-[100%] pt-[80px] pb-[100px] Hypebg overflow-hidden">
-      <div className="max-w-[1139px] w-[100%] space-y-[50px] mx-auto ">
+    <div className="relative w-[100%] h-[1242px] flex justify-center items-center  Hypebg  overflow-hidden">
+           <div className="absolute top-0 left-0 right-0 w-full h-full">
+              <img className="w-full h-full" src={topShadow} alt="" />
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 w-full h-full">
+              <img className="w-full h-full" src={bottomShadow} alt="" />
+            </div>
+      <div className="max-w-[1139px] w-[100%] space-y-[50px] mx-auto z-10">
         <div className=" w-[100%]">
           <h3
           style={{
