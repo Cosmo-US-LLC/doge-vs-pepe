@@ -54,8 +54,8 @@ function HowItSecPlaceholder() {
             <p className="text-center text-[12px] lg:text-[15px] xl:text-[22px] 3xl:text-[30px] leading-[22px] xl:leading-[28px] text-[#fff]">
               Get updates on
             </p>
-            <div className="flex justify-center items-center space-x-2 relative z-30 lg:pt-1">
-              <a href="https://x.com/DogevsPepe_io" target="_blank">
+            <div className="relative z-30 flex items-center justify-center space-x-2 lg:pt-1">
+              <a href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09" target="_blank">
                 <img
                   className="cursor-pointer w-[22px] lg:w-[34px] xl:w-[45px] h-[22px] lg:h-[34px] xl:h-[45px]"
                   src={telicon1}
@@ -87,17 +87,17 @@ function HowItSecPlaceholder() {
 
         <img
           src={dogePlaceMob}
-          className="lg:hidden leftManagedDoge absolute bottom-0"
+          className="absolute bottom-0 lg:hidden leftManagedDoge"
           alt=""
         />
         <img
           src={pepePlaceMob}
-          className="lg:hidden rightManagedPepe absolute bottom-0"
+          className="absolute bottom-0 lg:hidden rightManagedPepe"
           alt=""
         />
       </div>
 
-      <div className="fixed bottom-5 right-5 bg-white text-black">
+      <div className="fixed text-black bg-white bottom-5 right-5">
         <span className="hidden md:block lg:hidden">md</span>
         <span className="hidden lg:block xl:hidden">lg</span>
         <span className="hidden xl:block 2xl:hidden">xl</span>
