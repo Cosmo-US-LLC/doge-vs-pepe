@@ -1,7 +1,7 @@
 import React from "react";
 import fightimg from "../../assets/FightSec/fight.png";
-import mobimg from "../../assets/FightSec/mobimg (1).png";
-import mobicons from "../../assets/FightSec/mobicns.png";
+import mobimg from "../../assets/FightSec/doge-vs-pepe.webp";
+import mobicons from "../../assets/FightSec/d-p-suppoter.webp";
 
 import vsimgr from "../../assets/FightSec/Arrowrght.svg";
 import vsimgl from "../../assets/FightSec/Arrowlf.svg";
