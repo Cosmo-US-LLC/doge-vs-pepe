@@ -4,19 +4,21 @@ import telicon1 from "../../assets/HowItSec/logos_telegram.svg";
 import telicon2 from "../../assets/HowItSec/logos_telegram (1).svg";
 import vecleft from "../../assets/HowItSec/P (43).png";
 import vecright from "../../assets/HowItSec/P (43) (1).png";
-import topShadow from "../../assets/HowItSec/rectangle_288.webp";
-import bottomShadow from "../../assets/HowItSec/rectangle_289.webp";
+// import topShadow from "../../assets/HowItSec/rectangle_289.webp";
+// import bottomShadow from "../../assets/HowItSec/rectangle_288.webp";
+import topShadow from "../../assets/tokenomics/rectangle_306.webp";
+import bottomShadow from "../../assets/tokenomics/rectangle_307.webp";
 function HowItSec() {
   return (
-    <div className="w-[100%] h-[900px] flex justify-center items-center howitbg relative overflow-hidden  ">
+    <div className="w-[100%] h-[900px] pt-[60px] flex justify-center items-start howitbg relative overflow-hidden  ">
       <div className="absolute top-0 left-0 right-0 w-full h-full">
         <img className="w-full h-full" src={topShadow} alt="" />
       </div>
-      <div className="absolute bottom-0 left-0 right-0 z-10 ">
-        <img className="w-full h-full" src={bottomShadow} alt="" />
+      <div className="absolute bottom-0 left-0 right-0 ">
+        <img className="w-full h-auto" src={bottomShadow} alt="" />
       </div>
       <div
-        className="max-w-[992px] px-[22px] py-[26px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative min-h-[500px] howitborder bg-[#01010182]"
+        className="max-w-[992px]  px-[22px] py-[26px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative min-h-[500px] howitborder bg-[#01010182]"
         style={{ backdropFilter: "blur(9.899999618530273px)" }}
       >
         <div className="space-y-[16px] flex flex-col justify-center items-center ">
@@ -42,17 +44,23 @@ function HowItSec() {
             <h4 className="text-[#fff] leading-[114%] font-[400] text-[20px] text-center  ">
               Follow us on social media to keep up with the story!
             </h4>
-            <div className="flex justify-center space-x-[4rem] ">
-              <div className="flex items-center justify-center space-x-2">
-                <p className="text-[18px] font-[600] text-[#fff] uppercase">
-                  {" "}
-                  Join X
-                </p>
-                <img className="cursor-pointer" src={telicon1} alt="" />
+            <div className="flex justify-center space-x-[4rem] relative">
+              <div className="flex items-center justify-center space-x-2 relative z-[99]">
+                <a
+                  href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2"
+                >
+                  <p className="text-[18px] font-[600] text-[#fff] uppercase cursor-pointer">
+                    Join X
+                  </p>
+                  <img className="cursor-pointer" src={telicon1} alt="X Icon" />
+                </a>
               </div>
-              <div className="z-10 flex items-center justify-center space-x-2">
+
+              <div className="relative z-10 flex items-center justify-center space-x-2">
                 <p className="text-[18px] font-[600] text-[#fff] uppercase">
-                  {" "}
                   Join Telegram
                 </p>
                 <img className="cursor-pointer" src={telicon2} alt="" />

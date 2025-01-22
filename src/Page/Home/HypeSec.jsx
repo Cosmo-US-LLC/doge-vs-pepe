@@ -5,8 +5,8 @@ import hypeimg3 from "../../assets/Hype/hypeimg (4).png";
 import hypeimg4 from "../../assets/Hype/hypeimg (3).png";
 import hypeimg5 from "../../assets/Hype/hypeimg (2).png";
 import hypeimg6 from "../../assets/Hype/hypeimg (1).png";
-import topShadow from "../../assets/Hype/rectangle_303.webp";
-import bottomShadow from "../../assets/Hype/rectangle_295.webp";
+import topShadow from "../../assets/tokenomics/rectangle_307.webp";
+import bottomShadow from "../../assets/tokenomics/rectangle_306.webp";
 
 
 function HypeSec() {

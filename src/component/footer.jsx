@@ -10,11 +10,7 @@ function Footer() {
       <div className="max-w-[1296px]  2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[90%] w-[100%]  mx-auto space-y-[64px]">
         <div className="flex justify-between px-4">
           <div className="flex flex-col items-center justify-center gap-4">
-            <img
-              src={Logo}
-              alt="footer logo"
-              className=""
-            />
+            <img src={Logo} alt="footer logo" className="" />
           </div>
           <div className="space-y-[10px]">
             <a
@@ -107,17 +103,23 @@ function Footer() {
                 alt="socialicn2"
                 className="transition-all w-[30.137px] h-[30.137px] duration-300 cursor-pointer hover:scale-110 hover:opacity-80"
               />
-              <img
-                src={socialicn3}
-                alt="socialicn3"
-                className="transition-all w-[30.137px] h-[30.137px] duration-300 cursor-pointer hover:scale-110 hover:opacity-80 "
-              />
+              <a
+                href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={socialicn3}
+                  alt="socialicn3"
+                  className="transition-all w-[30.137px] h-[30.137px] duration-300 cursor-pointer hover:scale-110 hover:opacity-80"
+                />
+              </a>
             </div>
             <div className="w-full">
               <h4 className="text-[18px] text-[#fff] font-[400] leading-[119.856%] text-left mb-1">
                 E-mail
               </h4>
-              <a 
+              <a
                 href="mailto:Support@dogevspepe.io"
                 className="cursor-pointer text-[18px] text-[#fff] font-[400] leading-[119.856%] hover:opacity-80 text-left"
               >

@@ -50,9 +50,9 @@ function PressandMediamobSec() {
               <div
                 className="bg-[#28649721] p-4 relative rounded-[21.168px] z-10"
                 style={{
-                  WebkitBackdropFilter: "blur(17.731342315673828px)", // Safari-specific
+                  WebkitBackdropFilter: "blur(17.731342315673828px)",  
                   backdropFilter: "blur(17.731342315673828px)",
-                  background: "rgba(0, 0, 0, 0.48)", // Consistent format
+                  background: "rgba(0, 0, 0, 0.48)",  
                   borderRadius: "18.168px",
                 }}
               >
@@ -75,6 +75,7 @@ function PressandMediamobSec() {
               <div
                 className="bg-[#28649721] p-4 relative rounded-[18.168px]"
                 style={{
+                  WebkitBackdropFilter: "blur(17.731342315673828px)",
                   backdropFilter: "blur(17.731342315673828px)",
                   background: "rgba(0, 0, 0, 0.48)",
                   borderRadius: "18.168px",
@@ -98,6 +99,7 @@ function PressandMediamobSec() {
               <div
                 className="bg-[#28649721] p-4 relative rounded-[18.168px]"
                 style={{
+                  WebkitBackdropFilter: "blur(17.731342315673828px)",
                   backdropFilter: "blur(17.731342315673828px)",
                   background: "rgba(0, 0, 0, 0.48)",
                   borderRadius: "18.168px",

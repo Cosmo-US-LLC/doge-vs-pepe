@@ -13,7 +13,7 @@ import imgrod from "../../assets/RoadmapSec/imgrd.png";
 function RoadmapMobile() {
   return (
     <div className="w-full bgroadmapMob pt-[40px] overflow-hidden bg-black relative" id="roadmap">
-       <div className="absolute inset-0 bg-black pointer-events-none opacity-20"></div>
+       {/* <div className="absolute inset-0 bg-black pointer-events-none opacity-30"></div> */}
       <div className="relative z-10 mb-6 text-center">
         <h3 className="text-[22px] text-white font-HiJack font-[400]">Roadmap</h3>
       </div>
