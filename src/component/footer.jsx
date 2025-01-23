@@ -71,12 +71,14 @@ function Footer() {
             <a
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+              onClick={(e) => handleScroll(e, "tokenomics", 90)}
             >
               $DOGE Tokenomics
             </a>
             <a
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+              onClick={(e) => handleScroll(e, "tokenomics", 90)}
             >
               $PEPE Tokenomics
             </a>
@@ -95,12 +97,14 @@ function Footer() {
             <a
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+              onClick={(e) => handleScroll(e, "faq", 90)}
             >
               Need Help?
             </a>
             <a
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+              onClick={(e) => handleScroll(e, "faq", 90)}
             >
               FAQ
             </a>
