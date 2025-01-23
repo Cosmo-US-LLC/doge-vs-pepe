@@ -63,26 +63,30 @@ code {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.crypbg{
-  background-image: url(../src/assets/DogeVSPepeSec/doge-vs-pepe.webp);
+.crypbg {
+  background-image: url(../src/assets/DogeVSPepeSec/doge-vs-pepe-headline.webp);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover; 
   background-repeat: no-repeat;
+  -webkit-background-size: cover; 
   object-fit: cover;
 }
-.crypbg2{
+.crypbg2 {
   background-image: url(../src/assets/DogeVSPepeSec/card-2.webp);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover; 
   background-repeat: no-repeat;
   height: 150px;
+  -webkit-background-size: cover; 
 }
-.crypbg3{
+
+.crypbg3 {
   background-image: url(../src/assets/DogeVSPepeSec/card-3.webp);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover; 
   background-repeat: no-repeat;
   height: 150px;
+  -webkit-background-size: cover; 
 }
 .Biggestbg{
   background-image: url(../src/assets/BiggestSec/bigest-crypto-bg.webp);

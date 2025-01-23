@@ -9,7 +9,7 @@ function Milestones() {
   const [dogePercentage, setDogePercentage] = useState(0);
   const [pepePercentage, setPepePercentage] = useState(0);
   return (
-    <div className="Mysterymobbg relative w-[100%] pt-[50px] overflow-hidden pb-[50px]">
+    <div className="Mysterymobbg relative w-[100%] pt-[50px] overflow-hidden pb-[50px]" id="milestones">
       <div className="space-y-[15px] w-[90%] mx-auto ">
         <div className="flex flex-col items-center justify-center">
           <div className="Mysteryborder p-[20px]" style={{backdropFilter:"blur(9px)", WebkitBackdropFilter: "blur(9px)"}}>

@@ -5,6 +5,19 @@ import socialicn3 from "../../assets/footer/twitter.svg";
 import dogevspepe from "../../assets/Mobile/dogevspepe.png";
 
 function Footer() {
+  const handleScroll = (event, targetId, offset) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+    setMenuOpen(false);
+  };
   return (
     <div className="w-full z-[99] bg-[black] pt-[40px] pb-[20px]">
       <div className="max-w-[1296px] w-[90%] mx-auto space-y-[32px]">
@@ -18,6 +31,7 @@ function Footer() {
           <a
             href="https://example.com"
             className="text-[18px] text-[#fff] font-[400] block"
+            onClick={(e) => handleScroll(e, "how-it-all-began", 90)}
           >
             DOGEvsPEPE
           </a>
@@ -27,12 +41,14 @@ function Footer() {
           <a
             href="https://example.com"
             className="text-[18px] text-[#fff] font-[400] block"
+            onClick={(e) => handleScroll(e, "rules", 90)}
           >
             The Rules
           </a>
           <a
             href="https://example.com"
             className="text-[18px] text-[#fff] font-[400] block"
+            onClick={(e) => handleScroll(e, "milestones", 90)}
           >
             Milestones Mystery Reveals
           </a>
@@ -42,6 +58,7 @@ function Footer() {
           <a
             href="https://example.com"
             className="text-[18px] text-[#fff] font-[400] block"
+            onClick={(e) => handleScroll(e, "roadmap", 90)}
           >
             Roadmap
           </a>
@@ -60,12 +77,14 @@ function Footer() {
           <a
             href="https://example.com"
             className="text-[18px] text-[#fff] font-[400] block"
+            onClick={(e) => handleScroll(e, "faq", 90)}
           >
             FAQ
           </a>
           <a
             href="https://example.com"
             className="text-[18px] text-[#fff] font-[400] block"
+            onClick={(e) => handleScroll(e, "faq", 90)}
           >
             Need Help?
           </a>

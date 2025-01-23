@@ -1,10 +1,23 @@
 import React from "react";
 import Logo from "../assets/footer/logo.svg";
-import socialicn1 from "../assets/footer/soclicn (3).svg";
-import socialicn2 from "../assets/footer/soclicn (2).svg";
-import socialicn3 from "../assets/footer/soclicn (1).svg";
+import socialicn1 from "../assets/footer/telegram.svg";
+import socialicn2 from "../assets/footer/instagram.svg";
+import socialicn3 from "../assets/footer/twitter.svg";
 
 function Footer() {
+  const handleScroll = (event, targetId, offset) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+    setMenuOpen(false);
+  };
   return (
     <div className="w-[100%] z-[99] bg-[#181818] pt-[56px] pb-[36px] overflow-hidden">
       <div className="max-w-[1296px]  2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[90%] w-[100%]  mx-auto space-y-[64px]">
@@ -16,36 +29,40 @@ function Footer() {
             <a
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+              onClick={(e) => handleScroll(e, "firstever", 90)}
             >
-              DOGEvsPEPE
+              What is DOGE vs PEPE?
             </a>
-            <a
+            {/* <a
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
             >
               The First Ever Crypto Meme Fight
-            </a>
+            </a> */}
             <a
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+              onClick={(e) => handleScroll(e, "rules", 90)}
             >
               The Rules
             </a>
             <a
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+              onClick={(e) => handleScroll(e, "milestones", 90)}
             >
               Milestones Mystery Reveals
             </a>
-            <a
+            {/* <a
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
             >
               The Community Decides{" "}
-            </a>
+            </a> */}
             <a
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+              onClick={(e) => handleScroll(e, "roadmap", 90)}
             >
               Roadmap
             </a>
@@ -63,17 +80,23 @@ function Footer() {
             >
               $PEPE Tokenomics
             </a>
-            <a
+            {/* <a
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
             >
               Support Your Team On Telegram
-            </a>
-            <a
+            </a> */}
+            {/* <a
               href="https://example.com"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
             >
               Don’t Wait – The Race is On!
+            </a> */}
+            <a
+              href="https://example.com"
+              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+            >
+              Need Help?
             </a>
             <a
               href="https://example.com"
@@ -81,28 +104,27 @@ function Footer() {
             >
               FAQ
             </a>
-            <a
-              href="https://example.com"
-              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-            >
-              Need Help?
-            </a>
           </div>
           <div className="max-w-fit w-[100%] space-y-[10px] flex flex-col  items-start">
             <h4 className="text-[18px] text-[#fff] font-[400] leading-[119.856%]">
               Join us now{" "}
             </h4>
             <div className="flex space-x-2">
-              <img
-                src={socialicn1}
-                alt="socialicn1"
-                className="transition-all w-[30.137px] h-[30.137px] duration-300 cursor-pointer hover:scale-110 hover:opacity-80"
-              />
-              <img
-                src={socialicn2}
-                alt="socialicn2"
-                className="transition-all w-[30.137px] h-[30.137px] duration-300 cursor-pointer hover:scale-110 hover:opacity-80"
-              />
+              <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80">
+                <img
+                  src={socialicn1}
+                  alt="social 1"
+                  className="absolute w-full h-full bottom-[2px] "
+                />
+              </div>
+              <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80">
+                <img
+                  src={socialicn2}
+                  alt="social 1"
+                  className="absolute w-full h-full bottom-[2px] "
+                />
+              </div>
+              <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80">
               <a
                 href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
                 target="_blank"
@@ -110,10 +132,12 @@ function Footer() {
               >
                 <img
                   src={socialicn3}
-                  alt="socialicn3"
-                  className="transition-all w-[30.137px] h-[30.137px] duration-300 cursor-pointer hover:scale-110 hover:opacity-80"
+                  alt="social 1"
+                  className="absolute w-full h-full bottom-[2px] "
                 />
               </a>
+              </div>
+               
             </div>
             <div className="w-full">
               <h4 className="text-[18px] text-[#fff] font-[400] leading-[119.856%] text-left mb-1">
