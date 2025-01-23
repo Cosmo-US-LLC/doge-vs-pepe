@@ -62,7 +62,7 @@ function HowItSecPlaceholder() {
                   alt=""
                 />
               </a>
-              <a href="https://t.me/dogevpepe" target="_blank">
+              <a href="https://t.me/DogevsPepe_io" target="_blank">
                 <img
                   className="cursor-pointer w-[22px] lg:w-[34px] xl:w-[45px] h-[22px] lg:h-[34px] xl:h-[45px]"
                   src={telicon2}
