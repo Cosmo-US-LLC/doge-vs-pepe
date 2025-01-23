@@ -64,7 +64,7 @@ function MobileHeroSection() {
               className="text-[#00FF2F] text-[50px] font-[400] font-HiJack"
               style={{
                 textShadow: "3.76px -0.47px 14.147px #74FF60",
-                WebkitTextStrokeWidth: "2.301823854446411",
+                WebkitTextStrokeWidth: "2.301823854446411px",
                 WebkitTextStrokeColor: "#000",
               }}
             >

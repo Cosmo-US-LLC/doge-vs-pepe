@@ -1,7 +1,7 @@
 import React from "react";
-import pressicn1 from "../../assets/PressSec/press (1).svg";
-import pressicn2 from "../../assets/PressSec/press (3).svg";
-import pressicn3 from "../../assets/PressSec/press (2).svg";
+import pressicn1 from "../../assets/PressSec/coin-market-cap.webp";
+import pressicn2 from "../../assets/PressSec/coin-pedia.webp";
+import pressicn3 from "../../assets/PressSec/updates-thecrypto.webp";
 import topShadow from "../../assets/PressSec/rectangle_298.webp";
 import bottomShadow from "../../assets/PressSec/rectangle_301.webp";
 
@@ -31,7 +31,7 @@ function PressandMediaSec() {
           >
             <div className="Pressborder  flex justify-between flex-col min-h-[402px] max-w-[333px] h-[100%] px-2 pt-10 space-y-[30px] w-[100%]">
               <div className="min-h-[150px] flex justify-center items-center">
-                <img src={pressicn1} alt="" />
+                <img src={pressicn1} alt="" className="w-[204px] h-[140px]"/>
               </div>
               <div className="flex items-start h-[100%]">
                 <p className="text-[18px] text-[#fff] text-center font-[400]">
@@ -52,7 +52,7 @@ function PressandMediaSec() {
           >
             <div className="Pressborder  flex justify-between flex-col min-h-[402px] max-w-[333px] h-[100%] px-2 pt-10 space-y-[30px] w-[100%]">
               <div className="min-h-[150px] flex justify-center items-center">
-                <img src={pressicn2} alt="" />
+                <img src={pressicn2} alt="" className="w-[256px] h-[61px]"/>
               </div>
               <div className="flex items-start h-[100%]">
                 <p className="text-[18px] text-[#fff] text-center font-[400]">
@@ -73,7 +73,7 @@ function PressandMediaSec() {
           >
             <div className="Pressborder  flex justify-between flex-col min-h-[402px] max-w-[333px] h-[100%] px-2 pt-10 space-y-[30px] w-[100%]">
               <div className="min-h-[150px] flex justify-center items-center">
-                <img src={pressicn3} alt="" />
+                <img src={pressicn3} alt="" className="w-[230px] h-[86px]"/>
               </div>
               <div className="flex items-start h-[100%]">
                 <p className="text-[18px] text-[#fff] text-center font-[400]">
