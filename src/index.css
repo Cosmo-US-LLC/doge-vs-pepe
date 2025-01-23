@@ -72,7 +72,7 @@ code {
   object-fit: cover;
 }
 .crypbg2 {
-  background-image: url(../src/assets/DogeVSPepeSec/card-2.webp);
+  background-image: url(../src/assets/DogeVSPepeSec/pepe-headline.webp);
   background-position: center;
   background-size: cover; 
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@ code {
 }
 
 .crypbg3 {
-  background-image: url(../src/assets/DogeVSPepeSec/card-3.webp);
+  background-image: url(../src/assets/DogeVSPepeSec/doge-headline.webp);
   background-position: center;
   background-size: cover; 
   background-repeat: no-repeat;
