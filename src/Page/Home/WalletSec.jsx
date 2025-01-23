@@ -483,12 +483,12 @@ function WalletSec() {
           <div className="flex justify-between">
           <Widget
             project="doge"
-            symbol="DOPE"
+            symbol="DOGE"
             theme={{bg: "#f2b60f"}}
           />
           <Widget
             project="pepe"
-            symbol="PEGE"
+            symbol="PEPE"
             theme={{bg: "#4eb52a"}}
           />
         </div>
