@@ -13,11 +13,11 @@ function BannerSec() {
         <h4 className="text-[#FFFCFC] text-[50px] font-HiJack font-[400] uppercase">As seen on</h4>
         </div>
         <div className="flex justify-center space-x-[30px] items-center">
-            <img src={bnicon1} alt="" />
-            <img src={bnicon2} alt="" />
-            <img className="h-[40px]" src={bnicon3} alt="" />
-            <img src={bnicon4} className="h-[70px]" alt="" />
-            <img src={bnicon5} alt="" />
+            <img src={bnicon1} className="w-[188px] h-[32pxpx]" alt="" />
+            <img src={bnicon2} className="w-[148px] h-[33pxpx]" alt="" />
+            <img   src={bnicon3} className="w-[148px] h-[33pxpx]" alt="" />
+            <img src={bnicon4} className="w-[160px] h-[40pxpx]" alt="" />
+            <img src={bnicon5} className="w-[150px] h-[38pxpx]" alt="" />
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@ function Footer() {
           </div>
           <div className="space-y-[10px]">
             <a
-              href="https://example.com"
+              href="firstever"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
               onClick={(e) => handleScroll(e, "firstever", 90)}
             >
@@ -40,14 +40,14 @@ function Footer() {
               The First Ever Crypto Meme Fight
             </a> */}
             <a
-              href="https://example.com"
+              href="rules"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
               onClick={(e) => handleScroll(e, "rules", 90)}
             >
               The Rules
             </a>
             <a
-              href="https://example.com"
+              href="milestones"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
               onClick={(e) => handleScroll(e, "milestones", 90)}
             >
@@ -60,7 +60,7 @@ function Footer() {
               The Community Decides{" "}
             </a> */}
             <a
-              href="https://example.com"
+              href="roadmap"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
               onClick={(e) => handleScroll(e, "roadmap", 90)}
             >
@@ -69,14 +69,14 @@ function Footer() {
           </div>
           <div className="space-y-[10px]">
             <a
-              href="https://example.com"
+              href="tokenomics"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
               onClick={(e) => handleScroll(e, "tokenomics", 90)}
             >
               $DOGE Tokenomics
             </a>
             <a
-              href="https://example.com"
+              href="tokenomics"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
               onClick={(e) => handleScroll(e, "tokenomics", 90)}
             >
@@ -95,14 +95,14 @@ function Footer() {
               Don’t Wait – The Race is On!
             </a> */}
             <a
-              href="https://example.com"
+              href="need-help"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
               onClick={(e) => handleScroll(e, "faq", 90)}
             >
               Need Help?
             </a>
             <a
-              href="https://example.com"
+              href="faq"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
               onClick={(e) => handleScroll(e, "faq", 90)}
             >
@@ -129,27 +129,26 @@ function Footer() {
                 />
               </div>
               <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80">
-              <a
-                href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={socialicn3}
-                  alt="social 1"
-                  className="absolute w-full h-full bottom-[2px] "
-                />
-              </a>
+                <a
+                  href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={socialicn3}
+                    alt="social 1"
+                    className="absolute w-full h-full bottom-[2px] "
+                  />
+                </a>
               </div>
-               
             </div>
-            <div className="w-full">
+            <div className="w-full pt-6">
               <h4 className="text-[18px] text-[#fff] font-[400] leading-[119.856%] text-left mb-1">
                 E-mail
               </h4>
               <a
                 href="mailto:Support@dogevspepe.io"
-                className="cursor-pointer text-[18px] text-[#fff] font-[400] leading-[119.856%] hover:opacity-80 text-left"
+                className="cursor-pointer text-[18px] text-[#fff] font-[400] leading-[119.856%] hover:opacity-80 text-left underline underline-offset-2 decoration-white"
               >
                 Support@dogevspepe.io
               </a>
