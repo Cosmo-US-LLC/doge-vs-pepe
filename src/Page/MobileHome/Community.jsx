@@ -1,7 +1,7 @@
 import React from "react";
-import cardimg2 from "../../assets/CommunitySec/pepeTeam.png";
+import cardimg2 from "../../assets/CommunitySec/pepe-icon.webp";
 // import cardimg2 from "../../assets/CommunitySec/Frame 1410116893.svg";
-import cardimg1 from "../../assets/CommunitySec/dogeTeam.png";
+import cardimg1 from "../../assets/CommunitySec/doge-icon.webp";
 // import cardimg1 from "../../assets/CommunitySec/Frame 1410116892.svg";
 import vectcard2 from "../../assets/CommunitySec/Ellipse 80.webp";
 import vectcard1 from "../../assets/CommunitySec/Ellipse 81.webp";
@@ -60,7 +60,7 @@ function CommunitySec() {
             /> */}
             <div className="flex roadborder  relative max-w-[588px] space-x-[2rem]  w-[100%]  px-5 pt-5 pb-8 justify-between ">
               <div className="w-[38%] min-h-[110px] max-h-[110px]">
-                <img src={cardimg1} className="min-h-[110px] max-h-[110px] absolute left-8 top-8" alt="" />
+                <img src={cardimg1} className="min-h-[110px] max-h-[110px] absolute left-2 top-4" alt="" />
               </div>
               <div className="w-[62%] space-y-[10px]">
                 <div>
@@ -125,7 +125,7 @@ function CommunitySec() {
             /> */}
             <div className="flex card2border  max-w-[588px] space-x-[2rem]  w-[100%]  px-5 pt-5 pb-8 justify-between ">
               <div className="w-[38%] min-h-[110px] max-h-[110px]">
-                <img src={cardimg2} className="absolute min-h-[110px] max-h-[110px] left-8 top-8" alt="" />
+                <img src={cardimg2} className="absolute min-h-[110px] max-h-[110px] left-2 top-4" alt="" />
               </div>
               <div className="w-[62%] space-y-[10px]">
                 <div>

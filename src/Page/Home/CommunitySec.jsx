@@ -1,6 +1,6 @@
 import React from "react";
-import cardimg2 from "../../assets/CommunitySec/Frame 1410116893.svg";
-import cardimg1 from "../../assets/CommunitySec/Frame 1410116892.svg";
+import cardimg2 from "../../assets/CommunitySec/pepe-icon.webp";
+import cardimg1 from "../../assets/CommunitySec/doge-icon.webp";
 import vectcard2 from "../../assets/CommunitySec/Ellipse 80.webp";
 import vectcard1 from "../../assets/CommunitySec/Ellipse 81.webp";
 import arwl from "../../assets/herosec/Arrowlf.svg";
@@ -72,7 +72,7 @@ function CommunitySec() {
             />
             <div className="flex roadborder  relative max-w-[588px] space-x-[2rem]  w-[100%]  px-5 py-11 justify-between ">
               <div className="w-[38%] min-h-[220px]">
-                <img src={cardimg1} className="absolute left-8 top-8" alt="" />
+                <img src={cardimg1} className="h-[220px] absolute left-2 top-2" alt="" />
               </div>
               <div className="w-[62%] space-y-[10px]">
                 <div>
@@ -139,7 +139,7 @@ function CommunitySec() {
             />
             <div className="flex card2border  max-w-[588px] space-x-[2rem]  w-[100%]  px-5 py-11 justify-between ">
               <div className="w-[38%] min-h-[220px]">
-                <img src={cardimg2} className="absolute left-8 top-8" alt="" />
+                <img src={cardimg2} className="h-[220px] absolute left-2 top-2" alt="" />
               </div>
               <div className="w-[62%] space-y-[10px]">
                 <div>

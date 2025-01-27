@@ -1,9 +1,9 @@
 import React from "react";
-import fightTicket from "../../assets/Mobile/fight-ticket.png";
+import fightTicket from "../../assets/Vipticketsec/vip-doge-vs-pepe.png";
 
 function MobileTicket() {
   return (
-    <div className="flex flex-col justify-center items-center text-white text-center ticketBgMob">
+    <div className="flex flex-col items-center justify-center text-center text-white ticketBgMob">
       <h2 className="font-HiJack text-[22px] mt-14 leading-tight">
         GET YOUR VIP TICKET
         <br />

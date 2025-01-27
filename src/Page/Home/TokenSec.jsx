@@ -29,7 +29,7 @@ function TokenSec() {
             tOTAL sUPPLY $8.88 BILLION
             </h5>
             <p className="text-[22.062px] leading-normal font-[600] text-[#FFF] ">
-            Coin will be launched on Ethereum Blockchain
+            Coin will be launched on Solana Blockchain
             </p>
           </div>
           {/* <img src={verc1} className="absolute top-[-55%] left-[-10%]" alt="" /> */}
@@ -49,7 +49,7 @@ function TokenSec() {
               tOTAL sUPPLY $8.79 BILLION
               </h5>
               <p className="text-[22.062px] text-right leading-normal font-[600] text-[#FFF] ">
-              Coin will be launched on Ethereum Blockchain
+              Coin will be launched on Solana Blockchain
               </p>
             </div>
             {/* <img

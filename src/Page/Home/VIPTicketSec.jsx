@@ -91,7 +91,7 @@ function VIPTicketSec() {
                   textShadow: "0px 0px 26.2px #000, 0px 0px 14.5px #000",
                 }}
               >
-                31 January at 3 pm UTC
+                9 February at 5 pm UTC
               </p>
             </div>
             <div className="flex justify-between items-end px-[50px]">

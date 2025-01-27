@@ -4,6 +4,9 @@ import menuIcon from "../assets/navbar/Group 1410124892.svg";
 import { getConfig, useAccount } from "../presale-gg/web3";
 import { disconnect } from "@wagmi/core";
 import { showConnectionModal } from "../presale-gg/stores/modal.store";
+import xIcon from "../assets/navbar/X-app.svg";   
+import telegramIcon from "../assets/navbar/telegram.svg";  
+import copyIcon from "../assets/navbar/copy.svg"; 
 // import React, { useState } from "react";
 // import Logo from "../assets/navbar/navLogo.svg";
 // import menuIcon from "../assets/navbar/Group 1410124892.svg";
@@ -24,6 +27,16 @@ function Navbar() {
       });
     }
     setMenuOpen(false);
+  };
+
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyLink = () => {
+    const linkToCopy = "https://example.com"; // Replace with your desired link
+    navigator.clipboard.writeText(linkToCopy).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000); // Reset tooltip after 2 seconds
+    });
   };
 
   return (
@@ -52,22 +65,22 @@ function Navbar() {
             className="text-[#fff] text-[16px] font-[600]"
             onClick={(e) => handleScroll(e, "firstever", 90)}
           >
-            What is DOGEVSPEPE
+            What is DogevsPepe?
           </a>
           <a
             href="#rules"
             className="text-[#fff] text-[16px] font-[600]"
             onClick={(e) => handleScroll(e, "rules", 90)}
           >
-            Rules
+            The 7 Rules
           </a>
-          <a
+          {/* <a
             href="#how-to-buy"
             className="text-[#fff] text-[16px] font-[600]"
             onClick={(e) => handleScroll(e, "how-to-buy", 90)}
           >
             How To Buy
-          </a>
+          </a> */}
           <a
             href="#tokenomics"
             className="text-[#fff] text-[16px] font-[600]"
@@ -147,6 +160,44 @@ function Navbar() {
             </div>
           </div>
         )}
+        
+
+       {/* icon start */}
+       <div className="flex items-center justify-center space-x-4">
+      
+      <a
+        href="https://x.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center w-8 h-8 transition duration-300 bg-white rounded-full cursor-pointer hover:bg-gray-200"
+      >
+        <img src={xIcon} alt="X Icon" className="w-4 h-4" />
+      </a>
+
+ 
+      <a
+        href="https://telegram.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center w-8 h-8 transition duration-300 bg-white rounded-full cursor-pointer hover:bg-gray-200"
+      >
+        <img src={telegramIcon} alt="Telegram Icon" className="w-4 h-4" />
+      </a>
+
+      
+      <div
+        onClick={handleCopyLink}
+        className="relative flex items-center justify-center w-12 h-12 transition duration-300 rounded-full cursor-pointer "
+      >
+        <img src={copyIcon} alt="Copy Icon" className="w-6 h-6" />
+        {copied && (
+          <span className="absolute bottom-[-20px] text-xs text-white bg-black rounded-md px-2 py-1">
+            Copied!
+          </span>
+        )}
+      </div>
+    </div>
+       {/* icon end */}
 
         <div className="flex justify-between space-x-[24px]">
           <button

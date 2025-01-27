@@ -31,7 +31,7 @@ function Footer() {
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
               onClick={(e) => handleScroll(e, "firstever", 90)}
             >
-              What is DOGE vs PEPE?
+              What is DogevsPepe?
             </a>
             {/* <a
               href="https://example.com"
@@ -44,14 +44,14 @@ function Footer() {
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
               onClick={(e) => handleScroll(e, "rules", 90)}
             >
-              The Rules
+              The 7 Rules
             </a>
             <a
               href="milestones"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
               onClick={(e) => handleScroll(e, "milestones", 90)}
             >
-              Milestones Mystery Reveals
+              Milestones
             </a>
             {/* <a
               href="https://example.com"
@@ -121,13 +121,13 @@ function Footer() {
                   className="absolute w-full h-full bottom-[2px] "
                 />
               </div>
-              <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80">
+              {/* <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80">
                 <img
                   src={socialicn2}
                   alt="social 1"
                   className="absolute w-full h-full bottom-[2px] "
                 />
-              </div>
+              </div> */}
               <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80">
                 <a
                   href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
@@ -162,7 +162,7 @@ function Footer() {
             to capital gains or other taxes applicable in your jurisdiction.
           </p>
           <p className="text-[18px] font-[400] text-center leading-[119.856%] text-[#fff]">
-            Copyright 2024 DOGEVSPEPE | All rights reserved.
+            Copyright 2025 DogevsPepe | All rights reserved.
           </p>
         </div>
       </div>

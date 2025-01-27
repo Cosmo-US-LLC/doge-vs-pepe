@@ -21,7 +21,7 @@ function TokenmobSec() {
             tOTAL sUPPLY <br /> $8.88 BILLION
             </h5>
             <p className="text-[10px] leading-normal font-[600] text-[#FFF] ">
-            Coin will be launched on <br /> Ethereum Blockchain
+            Coin will be launched on <br /> Solana Blockchain
             </p>
           </div>
           <img src={verc1} className="absolute top-[-55%] left-[-10%]" alt="" />
@@ -41,7 +41,7 @@ function TokenmobSec() {
               tOTAL sUPPLY <br /> $8.79 BILLION
               </h5>
               <p className="text-[10px] text-right leading-normal font-[600] text-[#FFF] ">
-              Coin will be launched on <br /> Ethereum Blockchain
+              Coin will be launched on <br /> Solana Blockchain
               </p>
             </div>
             <img
@@ -53,7 +53,7 @@ function TokenmobSec() {
         </div>
       </div>
       <div className="w-full mt-6 ">
-        <img src={dogePepeScale} alt="Your Image" className="w-full object-cover" />
+        <img src={dogePepeScale} alt="Your Image" className="object-cover w-full" />
       </div>
     </div>
   );
