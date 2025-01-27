@@ -21,7 +21,7 @@ function Footer() {
   return (
     <div className="w-full z-[99] bg-[black] pt-[40px] pb-[20px]">
       <div className="max-w-[1296px] w-[90%] mx-auto space-y-[32px]">
-        {/* Logo and Title */}
+         
         <div className="flex flex-col space-y-4">
           <img src={dogevspepe} alt="dogevspepe" className="w-[173px]" />
         </div>
@@ -33,7 +33,7 @@ function Footer() {
             className="text-[18px] text-[#fff] font-[400] block"
             onClick={(e) => handleScroll(e, "how-it-all-began", 90)}
           >
-            DOGEvsPEPE
+            What is DogevsPepe?
           </a>
           {/* <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             The First Ever Crypto Meme Fight
@@ -43,14 +43,14 @@ function Footer() {
             className="text-[18px] text-[#fff] font-[400] block"
             onClick={(e) => handleScroll(e, "rules", 90)}
           >
-            The Rules
+            The 7 Rules
           </a>
           <a
             href="https://example.com"
             className="text-[18px] text-[#fff] font-[400] block"
             onClick={(e) => handleScroll(e, "milestones", 90)}
           >
-            Milestones Mystery Reveals
+            Milestones
           </a>
           {/* <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
             The Community Decides
@@ -101,13 +101,13 @@ function Footer() {
                 className="absolute w-full h-full bottom-[2px]"
               />
             </div>
-            <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative">
+            {/* <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative">
               <img
                 src={socialicn2}
                 alt="social 1"
                 className="absolute w-full h-full bottom-[2px]"
               />
-            </div>
+            </div> */}
             <a
               href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
               target="_blank"
@@ -133,7 +133,7 @@ function Footer() {
             to capital gains or other taxes applicable in your jurisdiction.
           </p>
           <p className="mt-4 text-[16px] font-[400] text-[#fff] leading-[18px] text-center">
-            Copyright 2024 DOGEVSPEPE | All rights reserved.
+            Copyright 2025 DogevsPepe | All rights reserved.
           </p>
         </div>
       </div>

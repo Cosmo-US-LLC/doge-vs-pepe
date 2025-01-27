@@ -4,30 +4,29 @@ import arw from "../../assets/footer/Group 1410124940.svg";
 const faqData = [
   {
     question: "What is DogevsPepe?",
-    answer: `DogevsPepe is a crypto presale with a twist. It’s a competition between two iconic memes, Doge and Pepe, to determine which one escapes the matrix and launches as a live cryptocurrency. Investors choose their side by purchasing tokens for either team (or both!), and the team with the most funds raised wins.`,
+    answer: `DogevsPepe is a crypto presale with a twist. It’s a competition between two iconic memes, Doge and Pepe, to determine which one escapes the matrix and launches as a live cryptocurrency. Investors choose your side by purchasing tokens for either team (which raises $1M first wins), and the team with the most funds raised wins.`,
   },
   {
     question: "How does the presale work?",
     answer: `
-      <ul className="list-disc pl-8 text-white">
-        <li>Choose your champion: Team Doge (Orange Coin) or Team Pepe (Green Coin).</li>
-        <li>Buy tokens to support your chosen team(s).</li>
-        <li>When the combined presale total hits $1 million, the team with the most funds raised is declared the winner.</li>
+      <ul className="pl-8 text-white list-disc">
+        <li>Choose your champion: Team Doge (DODE) or Team Pepe (PEPE).</li>
+        <li>Buy tokens to support your chosen team(s). When the combined presale total hits $1 million, the team with the most funds raised is declared the winner.</li>
       </ul>
     `,
   },
   {
     question: "What happens to the losing team’s funds?",
     answer:
-      "The losing team’s funds are added to the liquidity pool of the winning token, boosting its value and ensuring a strong market launch. This means even if your team doesn’t win, your investment contributes to the success of the overall project.",
+      "The losing team’s funds are added to the winning token’s liquidity pool, increasing its value and ensuring a strong launch. If your team loses, you’ll still get the same amount in the winning coin but won’t receive prize money.",
   },
   {
-    question: "How Many Times Can I Buy?",
+    question: "How many times can i buy?",
     answer:
-      "You can buy as many times as you like, however each singular purchase is capped at a maximum of $10,000 to ensure fair participation and prevent any one person from dominating the presale.",
+      "You can buy as many times as you like, but the total purchase is capped at $25,000 to ensure fair participation and prevent whales from dominating the presale and holding too much of the total supply.",
   },
   {
-    question: "Can I invest in both teams?",
+    question: "Can I buy into both teams?",
     answer:
       "Yes! You can support both Doge and Pepe by purchasing tokens for both teams. However, only one will win, so choose wisely!",
   },
@@ -40,27 +39,27 @@ const faqData = [
   {
     question: "When does the winning token launch?",
     answer: `
-    The winning token launches within 24 hours of the presale goal being reached. This means no long waits—your investment goes to work almost immediately.
+   The launch date for the winning token will be announced within 24 hours of reaching the $1M target and determining the winner. The winning token will be launched on the Solana blockchain and available on Raydium. We recommend using a Phantom Wallet.
       
     `,
   },
   {
     question: "How do I track the progress of the presale?",
     answer:
-      "Live stats will be displayed on the website, showing how much each team has raised. Stay connected to see if your team is leading the charge!",
+      "Live stats for the Fight will be displayed on the website, showing how much each team has raised. Stay connected to see if your team is winning!",
   },
   {
     question: " How do I join the community?",
     answer: `
 <div className="w-[900px]">
-  <ul className="list-decimal pl-5 text-white">
+  <ul className="pl-5 text-white list-decimal">
     <li>
-      We have Telegram channels to keep you updated and engaged:
-      <ul className="list-disc pl-8 text-white">
+      You can join our community on X and Telegram at the footer to connect and support your team. Don’t wait, join now!
+      <ul className="pl-8 text-white list-disc">
         <li>General Channel: For overall updates and discussions.</li>
         <li>Team Pepe Channel: For Green Coin supporters</li>
          <li>Team Doge Channel: For Orange Coin fans.</li>
-          <li>After the presale ends, all channels merge into one unified community supporting the winning project.</li>
+          <li>After the Fight ends, all channels merge into one unified community supporting the winning project.</li>
       </ul>
     </li>
    
@@ -73,12 +72,12 @@ const faqData = [
   {
     question: "What happens if my team loses?",
     answer:
-      "Even if your team doesn’t win, the funds raised by the losing team are added to the liquidity pool of the winning token. This helps boost its value and ensures a strong start for the winner.",
+      "If your team loses, you’ll still get the same amount in the winning coin but won’t receive prize money.",
   },
   {
     question: "Why should I join DogevsPepe?",
     answer:
-      "DogevsPepe isn’t just a presale—it’s a movement. You’re not only investing in a meme token but also participating in an exciting, competitive, and transparent process that redefines crypto presales. Plus, you’ll be part of a passionate community working to take the winning token to the moon.",
+      "DogeVsPepe isn’t just another meme battle but a movement to crown the true Meme Heavyweight Champion. By joining, you are not just supporting your favorite meme coin but becoming part of an exciting and competitive event reshaping crypto history.",
   },
 ];
 

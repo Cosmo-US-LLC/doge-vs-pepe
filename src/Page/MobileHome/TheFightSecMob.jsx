@@ -16,7 +16,7 @@ function TheFightSecMob() {
             The Fight is <br  /> Made Possible By
           </h3>
           <p className="text-[15px] max-w-[869px] w-[100%] mx-auto text-center font-[400] text-[#fff]">
-            A huge thank you to the incredible technology partners and service
+            A huge thank you to the incredible service
             providers who have made the  Doge vs. Pepe boxing event a reality! <br /><br />
             This groundbreaking showdown wouldn’t be possible without the
             support of the innovative platforms, software, and database

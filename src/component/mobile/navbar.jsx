@@ -52,22 +52,22 @@ function Navbar() {
             className="text-[#fff] text-[16px] font-[600]"
             onClick={(e) => handleScroll(e, "how-it-all-began", 90)}
           >
-            What is DOGEVSPEPE
+            What is DogevsPepe?
           </a>
           <a
             href="#rules"
             className="text-[#fff] text-[16px] font-[600]"
             onClick={(e) => handleScroll(e, "rules", 90)}
           >
-            Rules
+            The 7 Rules
           </a>
-          <a
+          {/* <a
             href="#how-to-buy"
             className="text-[#fff] text-[16px] font-[600]"
             onClick={(e) => handleScroll(e, "how-to-buy", 90)}
           >
             How To Buy
-          </a>
+          </a> */}
           <a
             href="#whitepaper"
             className="text-[#fff] text-[16px] font-[600]"
@@ -107,22 +107,22 @@ function Navbar() {
                 className="block py-[8px] px-[12px] text-[#FFF] font-k2d font-semibold text-[15px] leading-[15.657px] border-b border-[#fff]"
                 onClick={(e) => handleScroll(e, "whitepaper", 90)}
               >
-                What is DOGEVSPEPE
+                What is DogevsPepe?
               </a>
               <a
                 href="#rules"
                 className="block py-[8px] px-[12px] text-[#FFF] font-k2d font-semibold text-[15px] leading-[15.657px] border-b border-[#fff]"
                 onClick={(e) => handleScroll(e, "rules", 90)}
               >
-                Rules
+                The 7 Rules
               </a>
-              <a
+              {/* <a
                 href="#how-to-buy"
                 className="block py-[8px] px-[12px] text-[#FFF] font-k2d font-semibold text-[15px] leading-[15.657px] border-b border-[#fff]"
                 onClick={(e) => handleScroll(e, "how-to-buy", 90)}
               >
                 How To Buy
-              </a>
+              </a> */}
               <a
                 href="#whitepaper"
                 className="block py-[8px] px-[12px] text-[#FFF] font-k2d font-semibold text-[15px] leading-[15.657px] border-b border-[#fff]"
