@@ -4,6 +4,7 @@ import telicon1 from "../../assets/HowItSec/logos_telegram.svg";
 import telicon2 from "../../assets/HowItSec/logos_telegram (1).svg";
 import vecleft from "../../assets/HowItSec/P (43).png";
 import vecright from "../../assets/HowItSec/P (43) (1).png";
+import awr1 from "../../assets/RoadmapSec/Vector (2).svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -54,13 +55,10 @@ function HowItmobSec() {
                 modules={[Navigation]}
                 spaceBetween={20}
                 slidesPerView={1}
+                loop={false}
                 navigation={{
-                  prevEl: prevRef.current,
-                  nextEl: nextRef.current,
-                }}
-                onBeforeInit={(swiper) => {
-                  swiper.params.navigation.prevEl = prevRef.current;
-                  swiper.params.navigation.nextEl = nextRef.current;
+                  nextEl: ".swiper-button-next1",
+                  prevEl: ".swiper-button-prev1",
                 }}
                 className="max-w-[240px]"
               >
@@ -86,19 +84,16 @@ function HowItmobSec() {
                 ))}
               </Swiper>
 
-              <button
-                ref={prevRef}
-                className="absolute z-30 flex items-center justify-center w-6 h-6 text-white transition -translate-y-1/2 rounded-full text-1xl -left-0 top-1/2 "
-              >
-                ❮
-              </button>
-
-              <button
-                ref={nextRef}
-                className="absolute z-30 flex items-center justify-center w-6 h-6 text-white transition -translate-y-1/2 rounded-full text-1xl -right-0 top-1/2 "
-              >
-                ❯
-              </button>
+              <div className="!h-[25px] !w-[25px] swiper-button-prev1   cursor-pointer  absolute !left-[-1%] !top-[45%] rotate-180">
+                <img
+                  src={awr1}
+                  className="!h-[20px] !w-[20px]"
+                  alt="Previous"
+                />
+              </div>
+              <div className="!h-[25px] !w-[25px] swiper-button-next1   cursor-pointer  absolute !right-[-1%] !top-[45%] ">
+                <img src={awr1} className="!h-[20px] !w-[20px]" alt="Next" />
+              </div>
             </div>
 
             <div className="space-y-[10px]">
