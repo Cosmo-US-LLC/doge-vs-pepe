@@ -39,7 +39,7 @@ function MobileHome() {
         <Community />
         <Tokenomics />
         <HypeMobSec />
-        <PressandMediamobSec />
+        {/* <PressandMediamobSec /> */}
         <DogeVSPepeMobSec />
         <BiggestMobSec />
         {/* <MadeBy /> */}

@@ -21,35 +21,29 @@ function DogeVSPepeSec() {
             DOGE VS PEPE IS MAKING HEADLINES
           </h3>
         </div>
-        <div className="flex justify-between space-x-[30px]">
+        <div className="flex justify-center space-x-[30px]">
           <div className="crypbg rounded-[15.016px] border min-h-[614.73px] max-w-[675.732px]  border-[#fff]">
             <div className="py-[20px] px-[35px] bg-[#fff] rounded-t-[15.016px]">
               <img src={tioicn} alt="" />
             </div>
-            <div className="px-[35px] space-y-[20px] pt-[260px] pb-[20px]">
-              <div className="space-y-[0px]">
+            <div className="px-[35px] space-y-[20px] pt-[290px] pb-[20px]">
+              <div className="relative space-y-0">
                 <h3 className="text-[42.703px] font-[400] text-[#fff] leading-[100%]  uppercase font-HiJack">
                   <span className="text-[#FFBF01]">Doge</span> vs{" "}
-                  <span className="text-[#00FF2F]">Pepe</span>
+                  <span className="text-[#00FF2F]">Pepe ?</span>
                 </h3>
-                <h4 className="text-[28.156px] pb-[10px] font-[400] leading-[132.8%] text-[#fff]">
-                  The Most Anticipated Crypto Event!
-                </h4>
-                <p className="text-[16.893px] font-[400] leading-[22.434px] text-[#fff]">
-                  The crypto world is abuzz with the rivalry between Dogecoin
-                  (DOGE) and the emerging meme coin, Pepe (PEPE). Once the
-                  undisputed leader in the meme coin space, Dogecoin faces stiff
-                  competition as Pepe rapidly gains traction. This lighthearted
-                  battle between two internet-fueled icons underscores the
-                  unpredictable and community-driven nature of cryptocurrency
-                  markets.
+                
+                <p className="w-[500.806px] h-[131.076px] rotate-[-0.081deg] flex-shrink-0 text-[#FFF] font-[K2D] text-[25px] font-[400] leading-[33.2px]">
+                  Doge or Pepe? Fans are rallying to decide who has the
+                  strongest community. Will Doge stay on top, or is Pepe set to
+                  dethrone him? The battle is on!
                 </p>
               </div>
               <div className="flex space-x-2">
-                <h4 className="text-[16.893px] font-[700] text-[#fff]">
+                <h4 className=" text-[16.893px] font-[700] text-[#fff]">
                   Find out more
                 </h4>
-                <img src={arw} alt="" />
+                <img src={arw} alt="" className="mt-[5px]" />
               </div>
             </div>
           </div>
@@ -61,23 +55,17 @@ function DogeVSPepeSec() {
               <div className="px-[15px] pt-[120px] space-y-[10px]  pb-[20px]">
                 <div className="">
                   <h3 className="text-[20.907px] leading-[100%] font-[400] text-[#fff] uppercase font-HiJack">
-                    <span className="text-[#FFBF01]">Doge</span> vs{" "}
-                    <span className="text-[#00FF2F]">Pepe</span>
+                    <span className="text-[#FFBF01]">legendary</span>
+                    <span className="text-[#00FF2F]">memes face off</span>
                   </h3>
-                  <h4 className="text-[13.785px] font-[400] text-[#fff]">
-                    Popular Memes Are Fighting for the #1 Spot
-                  </h4>
-                  <p className="text-[8.271px] pt-[10px] font-[400]  text-[#fff]">
-                    Get ready for a showdown like no other! The much-anticipated
-                    Doge vs. Pepe boxing pre-sale event has launched, and it’s
-                    already creating waves in the crypto community. These two
-                    iconic internet legends are stepping into the virtual ring,
-                    offering fans an exclusive opportunity to secure pre-sale
-                    tokens tied to this one-of-a-kind event. With Doge’s loyal
-                    following and Pepe’s cult-like status,.
+                 
+                  <p className="w-[305.664px] h-[67.998px] rotate-[-0.081deg] flex-shrink-0 text-[#FFF] font-[K2D] text-[14px] font-[400] leading-[18.592px] pt-[10px]">
+                    Two legendary memes face off in an exciting presale, with
+                    rumors of well-known crypto developers behind the project.
+                    This could be the next big thing!
                   </p>
                 </div>
-                <div className="flex space-x-2">
+                <div className="flex pt-4 space-x-2">
                   <h4 className="text-[8.271px] font-[700] text-[#fff]">
                     Find out more
                   </h4>
@@ -92,23 +80,18 @@ function DogeVSPepeSec() {
               <div className="px-[15px] pt-[100px] space-y-[10px]  pb-[20px]">
                 <div className="">
                   <h3 className="text-[20.907px] leading-[100%] font-[400] text-[#fff] uppercase font-HiJack">
-                    <span className="text-[#FFBF01]">Doge</span> vs{" "}
-                    <span className="text-[#00FF2F]">Pepe</span>
+                    <span className="text-[#FFBF01]">Who will</span>
+                    <span className="text-[#00FF2F]">be the Winner</span>
                   </h3>
-                  <h4 className="text-[13.785px] font-[400] text-[#fff]">
-                    Battle of the Meme Icons!
-                  </h4>
-                  <p className="pt-[5px] text-[8.271px] font-[400]  text-[#fff]">
-                    Doge and Pepe are more than just memes—they represent the
-                    power of the internet to connect, inspire, and entertain.
-                    This pre-sale event encapsulates that spirit, offering
-                    something for everyone: excitement for fight fans,
-                    opportunity for crypto enthusiasts, and fun for meme lovers.
-                    As the countdown to the big showdown continues, the Doge vs.
-                    Pepe boxing event promises to deliver a knockout.{" "}
+                  
+                  <p className="w-[309.443px] h-[69.514px] rotate-[-0.081deg] flex-shrink-0 text-[#FFF] font-[K2D] text-[14px] font-[400] leading-[18.592px] pt-[5px]">
+                    Finding the next winning narrative is the key to hitting big
+                    with memes. Two presales, but only one will win and launch!
+                    Backed by two of the most iconic meme coins, this might just
+                    be it.
                   </p>
                 </div>
-                <div className="flex space-x-2">
+                <div className="flex pt-5 space-x-2">
                   <h4 className="text-[8.271px] font-[700] text-[#fff]">
                     Find out more
                   </h4>

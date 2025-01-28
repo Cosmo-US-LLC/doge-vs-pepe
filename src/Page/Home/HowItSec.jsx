@@ -8,7 +8,29 @@ import vecright from "../../assets/HowItSec/P (43) (1).png";
 // import bottomShadow from "../../assets/HowItSec/rectangle_288.webp";
 import topShadow from "../../assets/tokenomics/rectangle_306.webp";
 import bottomShadow from "../../assets/tokenomics/rectangle_307.webp";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { useRef } from "react";
+
+import img1 from "../../assets/HowItSec/slide1.webp";
+import img2 from "../../assets/HowItSec/slide2.webp";
+import img3 from "../../assets/HowItSec/slide3.webp";
+import img4 from "../../assets/HowItSec/slide4.webp";
+import img5 from "../../assets/HowItSec/slide5.webp";
+import img6 from "../../assets/HowItSec/slide6.webp";
+import img7 from "../../assets/HowItSec/slide7.webp";
+import img8 from "../../assets/HowItSec/slide8.webp";
+import img9 from "../../assets/HowItSec/slide9.webp";
+import img10 from "../../assets/HowItSec/slide10.webp";
 function HowItSec() {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
+  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
   return (
     <div className="w-[100%] h-[900px] pt-[60px] flex justify-center items-start howitbg relative overflow-hidden  ">
       <div className="absolute top-0 left-0 right-0 w-full h-full">
@@ -29,17 +51,66 @@ function HowItSec() {
             How It All Began
           </h3>
           <p className="w-[650px]   font-[400] mx-auto text-[#fff] leading-[114%] text-[20px] text-center">
-            The heated rivalry began when Pepe, the rising star, reached #3
-            among all meme heavyweights and started calling out Doge, the
-            undefeated champ. Doge couldn’t let this slide, and after months of
-            back-and-forth insults on social media, the two meme icons bumped
-            into each other at MOON, one of the hottest nightclubs in the city.
-            Things escalated quickly, turning into a massive brawl with serious
-            consequences.
+            The rivalry started when Pepe, the rising star, climbed to #3 among
+            all meme heavyweight champions and called out Doge, the undefeated
+            champion. Doge couldn’t let this slide. After months of
+            back-of-forth insults on social media, they ran into each other at
+            MOON, the <br /> city’s hottest nightclub. Things escalated quickly,
+            turning into a big fight with serious consequences.
           </p>
-          <div className="flex justify-center w-[469px] relative z-20">
-            <img src={howitimg} alt="" />
+
+          <div className="relative flex justify-center w-[469px] z-20">
+            <Swiper
+              modules={[Navigation]}
+              spaceBetween={10}
+              slidesPerView={1}
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
+              onBeforeInit={(swiper) => {
+                swiper.params.navigation.prevEl = prevRef.current;
+                swiper.params.navigation.nextEl = nextRef.current;
+              }}
+              className="w-full"
+            >
+              {[
+                img1,
+                img2,
+                img3,
+                img4,
+                img5,
+                img6,
+                img7,
+                img8,
+                img9,
+                img10,
+              ].map((img, index) => (
+                <SwiperSlide key={index}>
+                  <img
+                    src={img}
+                    alt={`Slide ${index + 1}`}
+                    className="w-full h-auto"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            <button
+              ref={prevRef}
+              className="absolute z-30 flex text-3xl text-white transition -translate-y-1/2 w-14 h-14 -left-8 top-1/2 "
+            >
+              ❮
+            </button>
+
+            <button
+              ref={nextRef}
+              className="absolute z-30 text-3xl text-white transition -translate-y-1/2 w-14 h-14 -right-12 top-1/2 "
+            >
+              ❯
+            </button>
           </div>
+          {/* slide end */}
           <div className="space-y-[23px]  ">
             <h4 className="text-[#fff] leading-[114%] font-[400] text-[20px] text-center  ">
               Follow us on social media to keep up with the story!

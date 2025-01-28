@@ -4,9 +4,12 @@ import menuIcon from "../assets/navbar/Group 1410124892.svg";
 import { getConfig, useAccount } from "../presale-gg/web3";
 import { disconnect } from "@wagmi/core";
 import { showConnectionModal } from "../presale-gg/stores/modal.store";
-import xIcon from "../assets/navbar/X-app.svg";   
-import telegramIcon from "../assets/navbar/telegram.svg";  
-import copyIcon from "../assets/navbar/copy.svg"; 
+// import xIcon from "../assets/navbar/X-app.svg";
+// import telegramIcon from "../assets/navbar/telegram.svg";
+// import copyIcon from "../assets/navbar/copy.svg";
+import twitterIcon from "../assets/navbar/X-copy.svg";
+import telegramIcon from "../assets/navbar/tele-copy.svg";
+
 // import React, { useState } from "react";
 // import Logo from "../assets/navbar/navLogo.svg";
 // import menuIcon from "../assets/navbar/Group 1410124892.svg";
@@ -31,11 +34,11 @@ function Navbar() {
 
   const [copied, setCopied] = useState(false);
 
-  const handleCopyLink = () => {
-    const linkToCopy = "https://example.com"; // Replace with your desired link
-    navigator.clipboard.writeText(linkToCopy).then(() => {
+  // Function to copy link to clipboard
+  const copyToClipboard = (link) => {
+    navigator.clipboard.writeText(link).then(() => {
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000); // Reset tooltip after 2 seconds
+      setTimeout(() => setCopied(false), 1000); // Reset after 2 seconds
     });
   };
 
@@ -47,7 +50,7 @@ function Navbar() {
             className="max-md:block hidden mr-[12px] cursor-pointer"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            <img src={menuIcon} alt="Menu " className=" w-[29px] h-[29px]"/>
+            <img src={menuIcon} alt="Menu " className=" w-[29px] h-[29px]" />
           </div>
 
           <img
@@ -160,52 +163,56 @@ function Navbar() {
             </div>
           </div>
         )}
-        
 
-       {/* icon start */}
-       <div className="flex items-center justify-center space-x-4">
-      
-      <a
-        href="https://x.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center justify-center w-8 h-8 transition duration-300 bg-white rounded-full cursor-pointer hover:bg-gray-200"
-      >
-        <img src={xIcon} alt="X Icon" className="w-4 h-4" />
-      </a>
+        <div className="relative flex p-4 space-x-4 bg-black">
+          <div
+            className="flex items-center justify-center cursor-pointer h-9 w-18"
+            onClick={() =>
+              copyToClipboard(
+                "https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
+              )
+            }
+          >
+            <img src={twitterIcon} alt="Twitter" className="w-full h-full" />
+          </div>
 
- 
-      <a
-        href="https://telegram.org"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center justify-center w-8 h-8 transition duration-300 bg-white rounded-full cursor-pointer hover:bg-gray-200"
-      >
-        <img src={telegramIcon} alt="Telegram Icon" className="w-4 h-4" />
-      </a>
+          <div
+            className="flex items-center justify-center cursor-pointer h-9 w-18"
+            onClick={() => copyToClipboard("https://t.me/your-link")}
+          >
+            <img src={telegramIcon} alt="Telegram" className="w-full h-full" />
+          </div>
 
-      
-      <div
-        onClick={handleCopyLink}
-        className="relative flex items-center justify-center w-12 h-12 transition duration-300 rounded-full cursor-pointer "
-      >
-        <img src={copyIcon} alt="Copy Icon" className="w-6 h-6" />
-        {copied && (
-          <span className="absolute bottom-[-20px] text-xs text-white bg-black rounded-md px-2 py-1">
-            Copied!
-          </span>
-        )}
-      </div>
-    </div>
-       {/* icon end */}
+          {copied && (
+            <div className="absolute top-0 px-4 py-1 mt-2 text-sm text-white transform -translate-x-1/2 bg-gray-800 rounded-md left-1/2">
+              Link Copied!
+            </div>
+          )}
+        </div>
 
         <div className="flex justify-between space-x-[24px]">
           <button
             style={{
               background: "linear-gradient(90deg, #FFBF01 0%, #01FE37 134.57%)",
+            }}
+            className="w-[237px] sm:w-[173px] max-sm:w-[109px] 
+             h-[40px] sm:h-[27px] max-sm:h-[36px] 
+             rounded-[60px]  text-[#000] 
+             max-md:text-[12px] text-[20px]
+             font-[700] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105"
+            onClick={() => {
+              window.location.href = "https://forms.gle/J11hnTDHwJVfhY348";
+            }}
+          >
+            Join The Whitelist Now
+          </button>
+
+          {/* <button
+            style={{
+              background: "linear-gradient(90deg, #FFBF01 0%, #01FE37 134.57%)",
               boxShadow: "adow: 0px 2px 0px 0px #FFF",
             }}
-            className="w-[173px] sm:w-[173px] max-sm:w-[109px] 
+            className="w-[237px] sm:w-[173px] max-sm:w-[109px] 
                    h-[40px] sm:h-[27px] max-sm:h-[36px] 
                    rounded-[60px]  text-[#000] 
                    max-md:text-[12px] text-[20px]
@@ -219,8 +226,9 @@ function Navbar() {
               }
             }}
           >
+           
             {!accountData.isConnected ? "Connect Wallet" : "Disconnect Wallet"}
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
