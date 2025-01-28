@@ -7,7 +7,8 @@ import { useEffect, useState } from "react"
 import clsx from "clsx"
 import { useAccount } from "../../presale-gg/web3"
 
-const tabs = [BuyTabMob, StakeTabMob, HistoryTabMob]
+const tabs = [BuyTabMob, HistoryTabMob]
+// const tabs = [BuyTabMob, StakeTabMob, HistoryTabMob]
 // const tabs = [BuyTab, StakeTab, HistoryTab]
 
 /**
@@ -45,7 +46,7 @@ const WidgetMob = ({ project, theme, symbol, ...others }) => {
 						return (
 							<button
 								className={clsx(
-									"w-[63.8px] rounded-[30px] py-[2px] space-x-2 flex justify-center items-center border text-[#000]",
+									"w-[163.8px] rounded-[30px] py-[2px] space-x-2 flex justify-center items-center border text-[#000]",
 									{"border-transparent": !selected},
 									{"bg-[var(--bg)] border-black": selected},
 									{"cursor-pointer": !disabled},
