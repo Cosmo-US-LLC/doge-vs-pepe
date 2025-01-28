@@ -8,7 +8,27 @@ import pepePlaceMob from "../../assets/HowItSec/pepePlaceMob.webp";
 import dogePlaceMob from "../../assets/HowItSec/dogePlaceMob.webp";
 import topLogo from "../../assets/HowItSec/topLogo.webp";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import { useRef } from "react";
+
+// Import your images
+import img1 from "../../assets/HowItSec/slide1.webp";
+import img2 from "../../assets/HowItSec/slide2.webp";
+import img3 from "../../assets/HowItSec/slide3.webp";
+import img4 from "../../assets/HowItSec/slide4.webp";
+import img5 from "../../assets/HowItSec/slide5.webp";
+import img6 from "../../assets/HowItSec/slide6.webp";
+import img7 from "../../assets/HowItSec/slide7.webp";
+import img8 from "../../assets/HowItSec/slide8.webp";
+import img9 from "../../assets/HowItSec/slide9.webp";
+import img10 from "../../assets/HowItSec/slide10.webp";
+
 function HowItSecPlaceholder() {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
   return (
     <div className="flex flex-col lg:justify-center max-lg:pt-[5dvh] w-[100%] h-[100dvh] bg-black overflow-hidden">
       <div className="flex flex-col justify-center max-w-[900px] xl:max-w-[1089px] 3xl:max-w-[1440px] px-[22px] space-y-[23px] w-[100%] mx-auto relative min-h-[500px] overflow-hidden">
@@ -18,7 +38,7 @@ function HowItSecPlaceholder() {
           alt="Logo"
           onClick={(e) => handleScroll(e, "what-is", 90)}
         />
-        <div className="space-y-[20px] gradient-box-black max-lg:pb-3">
+        <div className="space-y-[16px] gradient-box-black max-lg:pb-3 flex flex-col items-center">
           <p className="text-[#fff] -mt-1.5 xl:-mt-2 leading-[10px] bg-gradient-to-r from-transparent via-black to-transparent font-[400] text-[12px] lg:text-[15px] xl:text-[18px] 3xl:text-[25px] text-center">
             Chapter I
           </p>
@@ -33,12 +53,56 @@ function HowItSecPlaceholder() {
             one of the city’s hottest nightclubs. Things quickly escalated,
             turning into a massive brawl with serious consequences.
           </p>
-          <div className="flex justify-center gradient-box-black-3 lg:gradient-box-black-2 rounded-[48px] w-fit mx-auto p-1 px-2 lg:pt-3 lg:px-5">
-            <img
-              src={howitimg2}
-              alt=""
-              className="h-[156px] lg:h-[200px] xl:h-[280px] 3xl:h-[400px] w-auto"
-            />
+          <div className="relative flex justify-center w-[469px] z-20">
+            <Swiper
+              modules={[Navigation]}
+              spaceBetween={10}
+              slidesPerView={1}
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
+              onBeforeInit={(swiper) => {
+                swiper.params.navigation.prevEl = prevRef.current;
+                swiper.params.navigation.nextEl = nextRef.current;
+              }}
+              className="w-full"
+            >
+              {[
+                img1,
+                img2,
+                img3,
+                img4,
+                img5,
+                img6,
+                img7,
+                img8,
+                img9,
+                img10,
+              ].map((img, index) => (
+                <SwiperSlide key={index}>
+                  <img
+                    src={img}
+                    alt={`Slide ${index + 1}`}
+                    className="w-full h-auto"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            <button
+              ref={prevRef}
+              className="absolute z-30 flex text-3xl text-white transition -translate-y-1/2 w-14 h-14 -left-8 top-1/2 "
+            >
+              ❮
+            </button>
+
+            <button
+              ref={nextRef}
+              className="absolute z-30 text-3xl text-white transition -translate-y-1/2 w-14 h-14 -right-12 top-1/2 "
+            >
+              ❯
+            </button>
           </div>
         </div>
         <div className="flex justify-center max-lg:flex-col gap-y-2 gap-x-8">
