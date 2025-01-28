@@ -59,7 +59,7 @@ function HowItSec() {
             turning into a big fight with serious consequences.
           </p>
 
-          <div className="relative flex justify-center w-[469px] z-20">
+          <div className="relative flex justify-center w-[469px] z-40">
             <Swiper
               modules={[Navigation]}
               spaceBetween={10}

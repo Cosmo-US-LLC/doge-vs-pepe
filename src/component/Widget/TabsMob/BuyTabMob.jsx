@@ -189,7 +189,8 @@ const BuyTabMob = () => {
 						USD Raised
 					</h4>
 					<h5 className="text-[11px] font-[600] text-[#000]">
-						{formatDollar(stageCurrent, true, 0, 0)} / {formatDollar(stageTarget, true, 0, 0)}
+						$0
+						{/* {formatDollar(stageCurrent, true, 0, 0)} / {formatDollar(stageTarget, true, 0, 0)} */}
 					</h5>
 				</div>
 			</div>

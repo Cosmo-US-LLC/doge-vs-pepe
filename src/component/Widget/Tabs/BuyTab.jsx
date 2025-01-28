@@ -246,8 +246,9 @@ const BuyTab = () => {
         <div className="flex justify-between">
           <h4 className="text-[18.364px] font-[600] text-[#000]">USD Raised</h4>
           <h5 className="text-[18.364px] font-[600] text-[#000]">
-            {formatDollar(stageCurrent, true, 0, 0)} /{" "}
-            {formatDollar(stageTarget, true, 0, 0)}
+			$0
+            {/* {formatDollar(stageCurrent, true, 0, 0)} /{" "}
+            {formatDollar(stageTarget, true, 0, 0)} */}
           </h5>
         </div>
       </div>
