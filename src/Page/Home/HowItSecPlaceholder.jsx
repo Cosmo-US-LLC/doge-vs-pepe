@@ -7,6 +7,7 @@ import dogePlace from "../../assets/HowItSec/dogePlace.webp";
 import pepePlaceMob from "../../assets/HowItSec/pepePlaceMob.webp";
 import dogePlaceMob from "../../assets/HowItSec/dogePlaceMob.webp";
 import topLogo from "../../assets/HowItSec/topLogo.webp";
+import awr1 from "../../assets/HowItSec/Vector (2).svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -53,18 +54,15 @@ function HowItSecPlaceholder() {
             one of the city’s hottest nightclubs. Things quickly escalated,
             turning into a massive brawl with serious consequences.
           </p>
-          <div className="relative flex justify-center w-[469px] z-20">
+          <div className="relative flex justify-center w-[469px] z-40">
             <Swiper
               modules={[Navigation]}
               spaceBetween={10}
               slidesPerView={1}
+              loop={false}
               navigation={{
-                prevEl: prevRef.current,
-                nextEl: nextRef.current,
-              }}
-              onBeforeInit={(swiper) => {
-                swiper.params.navigation.prevEl = prevRef.current;
-                swiper.params.navigation.nextEl = nextRef.current;
+                nextEl: ".swiper-button-next1",
+                prevEl: ".swiper-button-prev1",
               }}
               className="w-full"
             >
@@ -90,19 +88,13 @@ function HowItSecPlaceholder() {
               ))}
             </Swiper>
 
-            <button
-              ref={prevRef}
-              className="absolute z-30 flex text-3xl text-white transition -translate-y-1/2 w-14 h-14 -left-8 top-1/2 "
-            >
-              ❮
-            </button>
-
-            <button
-              ref={nextRef}
-              className="absolute z-30 text-3xl text-white transition -translate-y-1/2 w-14 h-14 -right-12 top-1/2 "
-            >
-              ❯
-            </button>
+            <div className="!h-[35px] !w-[35px] swiper-button-prev1   cursor-pointer  absolute !left-[-10%] !top-[48%] rotate-180">
+              <img src={awr1} className="!h-[25px] !w-[25px]" alt="Previous" />
+            </div>
+            <div className="!h-[35px] !w-[35px] swiper-button-next1   cursor-pointer  absolute !right-[-10%] !top-[48%] ">
+              <img src={awr1} className="!h-[25px] !w-[25px]" alt="Next" />
+            </div>
+ 
           </div>
         </div>
         <div className="flex justify-center max-lg:flex-col gap-y-2 gap-x-8">
