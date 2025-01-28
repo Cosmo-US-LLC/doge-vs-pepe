@@ -8,6 +8,7 @@ import vecright from "../../assets/HowItSec/P (43) (1).png";
 // import bottomShadow from "../../assets/HowItSec/rectangle_288.webp";
 import topShadow from "../../assets/tokenomics/rectangle_306.webp";
 import bottomShadow from "../../assets/tokenomics/rectangle_307.webp";
+import awr1 from "../../assets/RoadmapSec/Vector (2).svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -64,13 +65,10 @@ function HowItSec() {
               modules={[Navigation]}
               spaceBetween={10}
               slidesPerView={1}
+              loop={false}
               navigation={{
-                prevEl: prevRef.current,
-                nextEl: nextRef.current,
-              }}
-              onBeforeInit={(swiper) => {
-                swiper.params.navigation.prevEl = prevRef.current;
-                swiper.params.navigation.nextEl = nextRef.current;
+                nextEl: ".swiper-button-next1",
+                prevEl: ".swiper-button-prev1",
               }}
               className="w-full"
             >
@@ -96,7 +94,13 @@ function HowItSec() {
               ))}
             </Swiper>
 
-            <button
+            <div className="!h-[35px] !w-[35px] swiper-button-prev1   cursor-pointer  absolute !left-[-10%] !top-[48%] rotate-180">
+              <img src={awr1} className="!h-[25px] !w-[25px]" alt="Previous" />
+            </div>
+            <div className="!h-[35px] !w-[35px] swiper-button-next1   cursor-pointer  absolute !right-[-10%] !top-[48%] ">
+              <img src={awr1} className="!h-[25px] !w-[25px]" alt="Next" />
+            </div>
+            {/* <button
               ref={prevRef}
               className="absolute z-30 flex text-3xl text-white transition -translate-y-1/2 w-14 h-14 -left-8 top-1/2 "
             >
@@ -108,7 +112,7 @@ function HowItSec() {
               className="absolute z-30 text-3xl text-white transition -translate-y-1/2 w-14 h-14 -right-12 top-1/2 "
             >
               ❯
-            </button>
+            </button> */}
           </div>
           {/* slide end */}
           <div className="space-y-[23px]  ">
