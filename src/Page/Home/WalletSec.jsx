@@ -14,6 +14,8 @@ import downShodow from "../../assets/Mobile/down-shodwo.svg";
 import arw from "../../assets/walletsec/arw.svg";
 import downArrow from "../../assets/herosec/down-arrow.svg";
 import Widget from "../../component/Widget/Widget";
+import coinsultIcon from "../../assets/walletsec/coinsult.webp";
+import solidIcon from "../../assets/walletsec/solid-proof.webp";
 
 const Buybuttons = [
   { id: "Buy", label: "Buy", img: arwbtn1 },
@@ -485,6 +487,7 @@ function WalletSec() {
             project="doge"
             symbol="DOGE"
             theme={{bg: "#f2b60f"}}
+            image={coinsultIcon}
           />
           <Widget
             project="pepe"

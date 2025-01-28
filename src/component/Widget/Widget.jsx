@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 import clsx from "clsx"
 import { useAccount } from "../../presale-gg/web3"
 
-const tabs = [BuyTab, StakeTab, HistoryTab]
+const tabs = [BuyTab, HistoryTab]
 
 /**
  * @param {object} props 
@@ -44,7 +44,7 @@ const Widget = ({ project, theme, symbol, ...others }) => {
 						return (
 							<button
 								className={clsx(
-									"w-[104.8px] rounded-[30px] py-[2px] space-x-2 flex justify-center items-center border text-[#000]",
+									"w-[204.8px] rounded-[30px] py-[2px] space-x-2 flex justify-center items-center border text-[#000]",
 									{"border-transparent": !selected},
 									{"bg-[var(--bg)] border-black": selected},
 									{"cursor-pointer": !disabled},

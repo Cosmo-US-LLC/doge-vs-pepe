@@ -15,7 +15,7 @@ import TransactionModal from "../../TransactionModal";
 import { api } from "../../../presale-gg/api";
 import clsx from "clsx";
 import { resetUserBonusCode, userApplyBonusCode, userResetReferralCode, userUpdateReferralCode } from "../../../presale-gg/stores";
-
+import infoIcon from "../../../assets/walletsec/info.webp";
 
 const walletBuyTokens = new Set([
 	"ETH-ERC-20",
@@ -80,6 +80,11 @@ const BuyTabMob = () => {
 	const [ createdTransaction, setCreatedTransaction ] = useState(null)
 	const [ transactionModalVisible, setTransactionModalVisible ] = useState(false)
 	const [ transactionLoading, setTransactionLoading ] = useState(false)
+	const [showInfo, setShowInfo] = useState(false);
+
+	const handleIconClick = () => {
+	  setShowInfo(!showInfo);
+	};
 
 	const buy = async () => {
 		if (apiState.presaleEnded) return toast.error("Presale has ended")
@@ -144,19 +149,41 @@ const BuyTabMob = () => {
 		<>
 			<div className="space-y-[10px] pt-1">
 				<h3 className="text-[22px] font-[700] text-center leading-[88%] text-[#00]">
-					{apiState.presaleEnded ? "Presale Ended" : `Buy $${projectData.symbol}`}
+					{apiState.presaleEnded ? "Presale Ended" : `TEAM ${projectData.symbol}`}
 				</h3>
 				<h5 className="text-[#000] leading-[133.333%] text-[11px] font-[700] text-center">
 					1 {projectData.symbol} = {formatDollar(parseNum(apiState.stage?.token_price))}
 				</h5>
 			</div>
-			<div className="py-2 space-y-[4px]">
-				<div className="bg-[#FFFFFF47] w-[100%] h-[8px] rounded-[30px]">
+			<div className="py-2 space-y-[6px]">
+						<div className="relative flex items-center justify-between w-full px-4 py-1 bg-[#FFFFFF47] rounded-full">
+						  <div className="w-4"></div>
+						  <span className="text-[12px] font-[400] text-black">
+							Token Price Increases
+						  </span>
+				
+						  
+						  <div
+							className="flex items-center justify-center w-4 h-4 rounded-full cursor-pointer"
+							onClick={handleIconClick}
+						  >
+							<img src={infoIcon} alt="Info Icon" className="" />
+						  </div>
+				
+						   
+						  {showInfo && (
+							<div className="w-[156px] h-[60px] absolute p-[6px] text-[8px] text-white bg-black rounded-md shadow-lg top-6 right-4 z-10">
+							  Price increases at $250k, $500k, and $750k. The first to hit $1M
+							  wins and launches.
+							</div>
+						  )}
+						</div>
+				{/* <div className="bg-[#FFFFFF47] w-[100%] h-[8px] rounded-[30px]">
 					<div
 						className="bg-[#000] h-[16px] rounded-[30px]"
 						style={{width: `${minMax(stageCurrent / (stageTarget || 1), 0, 1) * 100}%`}}
 					/>
-				</div>
+				</div> */}
 				<div className="flex justify-between">
 					<h4 className="text-[11px] font-[600] text-[#000]">
 						USD Raised
