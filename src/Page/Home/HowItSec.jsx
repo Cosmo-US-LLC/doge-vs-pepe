@@ -4,8 +4,6 @@ import telicon1 from "../../assets/HowItSec/logos_telegram.svg";
 import telicon2 from "../../assets/HowItSec/logos_telegram (1).svg";
 import vecleft from "../../assets/HowItSec/P (43).png";
 import vecright from "../../assets/HowItSec/P (43) (1).png";
-// import topShadow from "../../assets/HowItSec/rectangle_289.webp";
-// import bottomShadow from "../../assets/HowItSec/rectangle_288.webp";
 import topShadow from "../../assets/tokenomics/rectangle_306.webp";
 import bottomShadow from "../../assets/tokenomics/rectangle_307.webp";
 import awr1 from "../../assets/RoadmapSec/Vector (2).svg";
@@ -100,21 +98,9 @@ function HowItSec() {
             <div className="!h-[35px] !w-[35px] swiper-button-next1   cursor-pointer  absolute !right-[-10%] !top-[48%] ">
               <img src={awr1} className="!h-[25px] !w-[25px]" alt="Next" />
             </div>
-            {/* <button
-              ref={prevRef}
-              className="absolute z-30 flex text-3xl text-white transition -translate-y-1/2 w-14 h-14 -left-8 top-1/2 "
-            >
-              ❮
-            </button>
-
-            <button
-              ref={nextRef}
-              className="absolute z-30 text-3xl text-white transition -translate-y-1/2 w-14 h-14 -right-12 top-1/2 "
-            >
-              ❯
-            </button> */}
+ 
           </div>
-          {/* slide end */}
+           
           <div className="space-y-[23px]  ">
             <h4 className="text-[#fff] leading-[114%] font-[400] text-[20px] text-center  ">
               Follow us on social media to keep up with the story!
