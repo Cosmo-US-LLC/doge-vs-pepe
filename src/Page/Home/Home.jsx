@@ -42,7 +42,7 @@ function Home() {
       <CommunitySec /> 
       <TokenSec/>
       <HypeSec />
-      <PressandMediaSec />
+      {/* <PressandMediaSec /> */}
       <DogeVSPepeSec />
       <BiggestSec/>
       <TheFightSec />

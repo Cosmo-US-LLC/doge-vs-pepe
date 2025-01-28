@@ -111,14 +111,15 @@ function TheRules() {
         >
           <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-disc">
             <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
-              All participants receive the winning coin.
+              All participants will receive the winning coin.
             </li>
             <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
-              But only the winner team will receive the Prize Money (airdropped
-              to their wallet), find more info below.
+              However, only the winning team will receive the exclusive prize
+              money, which will be airdropped to their wallets.
             </li>
             <li className="text-[15px] text-[#FFF] font-[400] leading-snug">
-              Winners can claim their coins 24 hours earlier.
+              Find more details below. Winners can claim their coins 24 hours
+              earlier.
             </li>
           </ol>
         </RuleCard>
@@ -141,10 +142,12 @@ function TheRules() {
           </ol>
         </RuleCard>
 
-        <RuleCard img={rule7} number="7." title="JOIN THE COMMUNITY">
+        <RuleCard img={rule7} number="7." title="SUPPORT YOUR TEAM">
           <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-none">
             <p className="text-[15px] text-[#FFF] font-[700] leading-snug">
-              Connect with others in the community
+              Join the community on X and Telegram to stay updated with the
+              latest news and be part of the story. Do not forget to share Doge
+              vs Pepe with your friends, as they will not want to miss out!
             </p>
           </ol>
           <ol className="flex flex-col pl-6 mt-2 text-base leading-relaxed text-gray-200 list-disc">

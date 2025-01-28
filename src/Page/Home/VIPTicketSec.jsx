@@ -147,8 +147,11 @@ function VIPTicketSec() {
               background: "linear-gradient(90deg, #FFBF01 0%, #01FE37 134.57%)",
               boxShadow: "0px 2px 0px 0px #FFF",
             }}
+            onClick={() => {
+              window.location.href = "https://forms.gle/J11hnTDHwJVfhY348";
+            }}
           >
-            Join the Whitelist Now
+            Join The Whitelist Now
           </button>
         </div>
       </div>

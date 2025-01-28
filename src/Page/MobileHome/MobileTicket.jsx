@@ -22,14 +22,15 @@ function MobileTicket() {
         className="w-full max-w-[90%] h-auto"
       />
 
-      <button
-        className="my-5 w-[165px] h-[36px] bg-gradient-to-r
-                   rounded-[16px] bg-[#0184E2] text-black text-[12px]
-                   from-[#FFBF01] to-[#01FE37] 
-                   font-[700] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105"
+      <a
+        href="https://forms.gle/J11hnTDHwJVfhY348"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        Join the Whitelist Now
-      </button>
+        <button className="my-5 w-[165px] h-[36px] bg-gradient-to-r rounded-[16px] bg-[#0184E2] text-black text-[12px] from-[#FFBF01] to-[#01FE37] font-[700] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105">
+          Join the Whitelist Now
+        </button>
+      </a>
     </div>
   );
 }

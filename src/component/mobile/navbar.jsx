@@ -10,7 +10,7 @@ import { showConnectionModal } from "../../presale-gg/stores/modal.store";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-    const accountData = useAccount();
+  const accountData = useAccount();
 
   const handleScroll = (event, targetId, offset) => {
     event.preventDefault();
@@ -34,7 +34,7 @@ function Navbar() {
             className="2xl:hidden xl:hidden lg:hidden md:hidden sm:block block mr-[12px] cursor-pointer"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            <img src={menuIcon} alt="Menu " className=" w-[19px] h-[19px]"/>
+            <img src={menuIcon} alt="Menu " className=" w-[19px] h-[19px]" />
           </div>
 
           <img
@@ -156,7 +156,7 @@ function Navbar() {
         )}
 
         <div className="flex justify-between space-x-[24px]">
-          <button
+          {/* <button
             className="w-[93px] h-[21px] bg-gradient-to-r
                    rounded-[32px] bg-[#0184E2] text-black text-[10px]
                    from-[#FFBF01] to-[#01FE37] 
@@ -170,18 +170,18 @@ function Navbar() {
                             }
                           }}
           >
-            {/* Connect Wallet */}
+         
             {!accountData.isConnected ? "Get Early Access" : "Disconnect Wallet"}
-          </button>
-          {/* <button
-            className="2xl:w-[173px] xl:w-[173px] lg:w-[173px] md:w-[173px] sm:w-[173px] w-[109px] 
-                   2xl:h-[40px] xl:h-[40px] lg:h-[40px] md:h-[40px] sm:h-[27px] h-[36px] 
-                   rounded-[60px] bg-[#0184E2] text-[#fff] 
-                   2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[12px] text-[12px] 
-                   font-[700] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105"
-          >
-            Connect Wallet
           </button> */}
+          <a
+            href="https://forms.gle/J11hnTDHwJVfhY348"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="w-[123px] h-[21px] bg-gradient-to-r rounded-[32px] bg-[#0184E2] text-black text-[10px] from-[#FFBF01] to-[#01FE37] font-[700] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105">
+              Join the Whitelist Now
+            </button>
+          </a>
         </div>
       </div>
     </div>

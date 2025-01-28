@@ -230,7 +230,10 @@ function TheRulesSec() {
                   7. SUPPORT YOUR TEAM
                 </h2>
                 <p className="pl-[2.0rem] text-[18px] pb-[0px] text-[#FFF] ">
-                Join the community on X and Telegram to stay updated with the latest news and be part of the story. Do not forget to share Doge vs Pepe with your friends, as they will not want to miss out!
+                  Join the community on X and Telegram to stay updated with the
+                  latest news and be part of the story. Do not forget to share
+                  Doge vs Pepe with your friends, as they will not want to miss
+                  out!
                 </p>
               </div>
               <ol className="flex flex-col pl-[52px] text-base leading-relaxed text-gray-200 list-disc">
@@ -245,16 +248,22 @@ function TheRulesSec() {
                 </li>
               </ol>
               <div className="pt-[10px] flex gap-4 pl-8">
-              <button className="bg-[#00B7FF] max-w-[152px] flex justify-center space-x-2 items-center w-[100%]   rounded-full h-[39px] uppercase text-[18px] text-[#fff] font-[600] transition-all duration-300 hover:bg-[#F2B60F] hover:text-[#fff]">
+                <a
+                  href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#00B7FF] max-w-[152px] flex justify-center space-x-2 items-center w-[100%] rounded-full h-[39px] uppercase text-[18px] text-[#fff] font-[600] transition-all duration-300 hover:bg-[#F2B60F] hover:text-[#fff]"
+                >
                   Join X
                   <div className="bg-[white] w-7 h-7 rounded-full ml-4 flex justify-center items-center">
-                  <img
-                    src={xicn}
-                    className="w-3 h-3 transition-transform duration-300 hover:scale-110"
-                    alt="card_image_10"
-                  />
+                    <img
+                      src={xicn}
+                      className="w-3 h-3 transition-transform duration-300 hover:scale-110"
+                      alt="card_image_10"
+                    />
                   </div>
-                </button>
+                </a>
+
                 <button className="bg-[#00B7FF] max-w-[252px] flex justify-center space-x-2 items-center w-[100%]   rounded-full h-[39px] uppercase text-[18px] text-[#fff] font-[600] transition-all duration-300 hover:bg-[#F2B60F] hover:text-[#fff]">
                   Join Telegram
                   <img
