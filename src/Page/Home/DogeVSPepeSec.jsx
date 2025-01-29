@@ -56,7 +56,7 @@ function DogeVSPepeSec() {
               <div className="py-[10px] px-[15px] bg-[#fff] rounded-t-[15.016px]">
                 <img src={coin} alt="" />
               </div>
-              <div className="px-[15px] pt-[120px] space-y-[10px]  pb-[20px]">
+              <div className="px-[15px] pt-[126px] space-y-[10px]  pb-[20px]">
                 <div className="">
                   <h3 className="text-[20.907px] leading-[100%] font-[400] text-[#fff] uppercase font-HiJack">
                     <span className="text-[#FFBF01]">legendary</span>
@@ -81,7 +81,7 @@ function DogeVSPepeSec() {
               <div className="py-[10px] px-[15px] bg-[#fff] rounded-t-[15.016px]">
                 <img src={bit} alt="" />
               </div>
-              <div className="px-[15px] pt-[100px] space-y-[10px]  pb-[20px]">
+              <div className="px-[15px] pt-[112px] space-y-[10px]  pb-[20px]">
                 <div className="">
                   <h3 className="text-[20.907px] leading-[100%] font-[400] text-[#fff] uppercase font-HiJack">
                     <span className="text-[#FFBF01]">Who will</span>
