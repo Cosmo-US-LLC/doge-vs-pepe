@@ -487,7 +487,6 @@ function WalletSec() {
             project="doge"
             symbol="DOGE"
             theme={{bg: "#f2b60f"}}
-            image={coinsultIcon}
           />
           <Widget
             project="pepe"

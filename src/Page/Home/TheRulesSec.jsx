@@ -252,7 +252,7 @@ function TheRulesSec() {
                   href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#00B7FF] max-w-[152px] flex justify-center space-x-2 items-center w-[100%] rounded-full h-[39px] uppercase text-[18px] text-[#fff] font-[600] transition-all duration-300 hover:bg-[#F2B60F] hover:text-[#fff]"
+                  className="bg-[#00B7FF] max-w-[130px] flex justify-center space-x-2 items-center w-[100%] rounded-full h-[39px] uppercase text-[18px] text-[#fff] font-[600] transition-all duration-300 hover:bg-[#F2B60F] hover:text-[#fff]"
                 >
                   Join X
                   <div className="bg-[white] w-7 h-7 rounded-full ml-4 flex justify-center items-center">
@@ -264,7 +264,7 @@ function TheRulesSec() {
                   </div>
                 </a>
 
-                <button className="bg-[#00B7FF] max-w-[252px] flex justify-center space-x-2 items-center w-[100%]   rounded-full h-[39px] uppercase text-[18px] text-[#fff] font-[600] transition-all duration-300 hover:bg-[#F2B60F] hover:text-[#fff]">
+                <button className="bg-[#00B7FF] max-w-[210px] flex justify-center space-x-2 items-center w-[100%]   rounded-full h-[39px] uppercase text-[18px] text-[#fff] font-[600] transition-all duration-300 hover:bg-[#F2B60F] hover:text-[#fff]">
                   Join Telegram
                   <img
                     src={telicn}
