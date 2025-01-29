@@ -65,8 +65,8 @@ function HowItSec() {
               slidesPerView={1}
               loop={false}
               navigation={{
-                nextEl: ".swiper-button-next1",
-                prevEl: ".swiper-button-prev1",
+                nextEl: ".swiper-button-next3",
+                prevEl: ".swiper-button-prev3",
               }}
               className="w-full"
             >
@@ -92,10 +92,10 @@ function HowItSec() {
               ))}
             </Swiper>
 
-            <div className="!h-[35px] !w-[35px] swiper-button-prev1   cursor-pointer  absolute !left-[-10%] !top-[48%] rotate-180">
+            <div className="!h-[35px] !w-[35px] swiper-button-prev3   cursor-pointer  absolute !left-[-10%] !top-[48%] rotate-180">
               <img src={awr1} className="!h-[25px] !w-[25px]" alt="Previous" />
             </div>
-            <div className="!h-[35px] !w-[35px] swiper-button-next1   cursor-pointer  absolute !right-[-10%] !top-[48%] ">
+            <div className="!h-[35px] !w-[35px] swiper-button-next3   cursor-pointer  absolute !right-[-10%] !top-[48%] ">
               <img src={awr1} className="!h-[25px] !w-[25px]" alt="Next" />
             </div>
  

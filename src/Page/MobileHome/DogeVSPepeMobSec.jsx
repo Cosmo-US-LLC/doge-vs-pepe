@@ -5,6 +5,7 @@ import tioicn from "../../assets/DogeVSPepeSec/crypto.svg";
 import arw from "../../assets/DogeVSPepeSec/arw.svg";
 import dogeFight from "../../assets/DogeVSPepeSec/card-3.webp";
 import pepeFight from "../../assets/DogeVSPepeSec/card-2.webp";
+import cryShadow from "../../assets/DogeVSPepeSec/cry-shadow.png";
 
 function DogeVSPepeMobSec() {
   return (
@@ -20,8 +21,8 @@ function DogeVSPepeMobSec() {
             <div className="py-[14px] px-[20px] bg-[#fff] rounded-t-[15.016px]">
               <img className=" max-w-[100px]" src={tioicn} alt="" />
             </div>
-            <div className="px-[20px] space-y-[10px] pt-[100px] pb-[20px]">
-              <div className="space-y-[10px]">
+            <div className="px-[20px] space-y-[10px] pt-[100px] pb-[20px] relative">
+              <div className="space-y-[10px] relative z-10">
                 <h3 className="text-[22.529px] font-[400] text-[#fff] uppercase font-HiJack pt-2">
                   <span className="text-[#FFBF01]">Doge</span> vs{" "}
                   <span className="text-[#00FF2F]">Pepe ?</span>
@@ -33,11 +34,14 @@ function DogeVSPepeMobSec() {
                   dethrone him? The battle is on!
                 </p>
               </div>
-              <div className="flex space-x-2">
+              <div className="relative z-10 flex space-x-2">
                 <h4 className="text-[8.913px] font-[700] text-[#fff]">
                   Find out more
                 </h4>
                 <img src={arw} alt="" />
+              </div>
+              <div className="absolute bottom-[0px] left-0 right-0">
+                <img className="rounded-b-[15.016px]" src={cryShadow} alt="" />
               </div>
             </div>
           </div>
@@ -70,6 +74,13 @@ function DogeVSPepeMobSec() {
                   </h4>
                   <img src={arw} alt="" />
                 </div>
+                <div className="absolute bottom-[0px] left-0 right-0">
+                  <img
+                    className="rounded-b-[15.016px]"
+                    src={cryShadow}
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
             <div className="relative overflow-hidden rounded-[15.016px] border border-[#fff] w-[174px] min-h-[194px]">
@@ -85,7 +96,7 @@ function DogeVSPepeMobSec() {
                     <span className="text-[#FFBF01]">Who will</span>
                     <span className="text-[#00FF2F]">be the Winner</span>
                   </h3>
- 
+
                   <p className="pt-[6px] text-[6px] font-[400]  text-[#fff]">
                     Finding the next winning narrative is the key to hitting big
                     with memes. Two presales, but only one will win and launch!
@@ -99,42 +110,15 @@ function DogeVSPepeMobSec() {
                   </h4>
                   <img src={arw} alt="" />
                 </div>
+                <div className="absolute bottom-[0px] left-0 right-0">
+                  <img
+                    className="rounded-b-[15.016px]"
+                    src={cryShadow}
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
-            {/* <div className="relative overflow-hidden rounded-[15.016px] border border-[#fff] w-[50%]">
-              <div className="py-[10px] px-[15px] bg-[#fff] rounded-t-[15.016px]">
-                <img src={bit} alt="" />
-              </div>
-              <div className="relative px-[12px] pt-[20px] space-y-[10px]  pb-[10px] overflow-hidden">
-                <div className="absolute inset-0">
-                  <img alt="doge" src={dogeFight} className="w-full h-full" />
-                </div>
-                <div className="relative z-10 ">
-                  <h3 className="text-[11.03px] font-[400] text-[#fff] uppercase font-HiJack">
-                    <span className="text-[#FFBF01]">Doge</span> vs{" "}
-                    <span className="text-[#00FF2F]">Pepe</span>
-                  </h3>
-                  <h4 className="text-[7.273px] font-[400] text-[#fff]">
-                    Battle of the Meme Icons!
-                  </h4>
-                  <p className="pt-[10px] text-[4.364px] font-[400]  text-[#fff]">
-                    Doge and Pepe are more than just memes—they represent the
-                    power of the internet to connect, inspire, and entertain.
-                    This pre-sale event encapsulates that spirit, offering
-                    something for everyone: excitement for fight fans,
-                    opportunity for crypto enthusiasts, and fun for meme lovers.
-                    As the countdown to the big showdown continues, the Doge vs.
-                    Pepe boxing event promises to deliver a knockout.{" "}
-                  </p>
-                </div>
-                <div className="relative z-10 flex items-center justify-start gap-3">
-                  <h4 className="text-[4.364px] font-[700] text-[#fff]">
-                    Find out more
-                  </h4>
-                  <img src={arw} alt="" />
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import tioicn from "../../assets/DogeVSPepeSec/crypto.svg";
 import arw from "../../assets/DogeVSPepeSec/arw.svg";
 import topShadow from "../../assets/DogeVSPepeSec/top-shadow.webp";
 import bottomShadow from "../../assets/DogeVSPepeSec/bottom-shadow.webp";
+import cryShadow from "../../assets/DogeVSPepeSec/cry-shadow.png";
 
 function DogeVSPepeSec() {
   return (
@@ -26,24 +27,27 @@ function DogeVSPepeSec() {
             <div className="py-[20px] px-[35px] bg-[#fff] rounded-t-[15.016px]">
               <img src={tioicn} alt="" />
             </div>
-            <div className="px-[35px] space-y-[20px] pt-[290px] pb-[20px]">
-              <div className="relative space-y-0">
+            <div className="px-[35px] space-y-[20px] pt-[290px] pb-[20px] relative overflow-hidden">
+              <div className="relative z-10 space-y-0">
                 <h3 className="text-[42.703px] font-[400] text-[#fff] leading-[100%]  uppercase font-HiJack">
                   <span className="text-[#FFBF01]">Doge</span> vs{" "}
                   <span className="text-[#00FF2F]">Pepe ?</span>
                 </h3>
-                
+
                 <p className="w-[500.806px] h-[131.076px] rotate-[-0.081deg] flex-shrink-0 text-[#FFF] font-[K2D] text-[25px] font-[400] leading-[33.2px]">
                   Doge or Pepe? Fans are rallying to decide who has the
                   strongest community. Will Doge stay on top, or is Pepe set to
                   dethrone him? The battle is on!
                 </p>
               </div>
-              <div className="flex space-x-2">
+              <div className="relative z-10 flex space-x-2">
                 <h4 className=" text-[16.893px] font-[700] text-[#fff]">
                   Find out more
                 </h4>
                 <img src={arw} alt="" className="mt-[5px]" />
+              </div>
+              <div className="absolute bottom-[0px] left-0 right-0">
+                <img className="rounded-b-[15.016px]" src={cryShadow} alt="" />
               </div>
             </div>
           </div>
@@ -52,13 +56,13 @@ function DogeVSPepeSec() {
               <div className="py-[10px] px-[15px] bg-[#fff] rounded-t-[15.016px]">
                 <img src={coin} alt="" />
               </div>
-              <div className="px-[15px] pt-[120px] space-y-[10px]  pb-[20px]">
+              <div className="px-[15px] pt-[126px] space-y-[10px]  pb-[20px]">
                 <div className="">
                   <h3 className="text-[20.907px] leading-[100%] font-[400] text-[#fff] uppercase font-HiJack">
                     <span className="text-[#FFBF01]">legendary</span>
                     <span className="text-[#00FF2F]">memes face off</span>
                   </h3>
-                 
+
                   <p className="w-[305.664px] h-[67.998px] rotate-[-0.081deg] flex-shrink-0 text-[#FFF] font-[K2D] text-[14px] font-[400] leading-[18.592px] pt-[10px]">
                     Two legendary memes face off in an exciting presale, with
                     rumors of well-known crypto developers behind the project.
@@ -77,13 +81,13 @@ function DogeVSPepeSec() {
               <div className="py-[10px] px-[15px] bg-[#fff] rounded-t-[15.016px]">
                 <img src={bit} alt="" />
               </div>
-              <div className="px-[15px] pt-[100px] space-y-[10px]  pb-[20px]">
+              <div className="px-[15px] pt-[112px] space-y-[10px]  pb-[20px]">
                 <div className="">
                   <h3 className="text-[20.907px] leading-[100%] font-[400] text-[#fff] uppercase font-HiJack">
                     <span className="text-[#FFBF01]">Who will</span>
                     <span className="text-[#00FF2F]">be the Winner</span>
                   </h3>
-                  
+
                   <p className="w-[309.443px] h-[69.514px] rotate-[-0.081deg] flex-shrink-0 text-[#FFF] font-[K2D] text-[14px] font-[400] leading-[18.592px] pt-[5px]">
                     Finding the next winning narrative is the key to hitting big
                     with memes. Two presales, but only one will win and launch!
