@@ -32,16 +32,17 @@ function DontWaitSec() {
             </h4>
         </div>
       </div>
-        <div className="flex justify-center">
-          <button
-          style={{
-            background:"linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)"
-
-          }}
-          className="w-[457px] w-[100%] leading-[100%] mx-auto h-[94px] text-[32px] font-[700] rounded-[60px]">Join the Whitelist Now
-          </button>
-        </div>
-
+      <div className="flex justify-center">
+      <button
+  style={{
+    background: "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
+  }}
+  className="w-[457px] w-[100%] leading-[100%] mx-auto h-[94px] text-[32px] font-[700] rounded-[60px] cursor-pointer relative z-10"
+  onClick={() => window.location.href = "https://forms.gle/J11hnTDHwJVfhY348"}
+>
+  Join the Whitelist Now
+</button>
+</div>
       </div>
     </div>
   );

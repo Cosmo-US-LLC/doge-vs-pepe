@@ -57,8 +57,8 @@ function HowItmobSec() {
                 slidesPerView={1}
                 loop={false}
                 navigation={{
-                  nextEl: ".swiper-button-next1",
-                  prevEl: ".swiper-button-prev1",
+                  nextEl: ".swiper-button-next4",
+                  prevEl: ".swiper-button-prev4",
                 }}
                 className="max-w-[240px]"
               >
@@ -84,14 +84,14 @@ function HowItmobSec() {
                 ))}
               </Swiper>
 
-              <div className="!h-[25px] !w-[25px] swiper-button-prev1   cursor-pointer  absolute !left-[-1%] !top-[45%] rotate-180">
+              <div className="!h-[25px] !w-[25px] swiper-button-prev4   cursor-pointer  absolute !left-[-1%] !top-[45%] rotate-180">
                 <img
                   src={awr1}
                   className="!h-[20px] !w-[20px]"
                   alt="Previous"
                 />
               </div>
-              <div className="!h-[25px] !w-[25px] swiper-button-next1   cursor-pointer  absolute !right-[-1%] !top-[45%] ">
+              <div className="!h-[25px] !w-[25px] swiper-button-next4   cursor-pointer  absolute !right-[-1%] !top-[45%] ">
                 <img src={awr1} className="!h-[20px] !w-[20px]" alt="Next" />
               </div>
             </div>

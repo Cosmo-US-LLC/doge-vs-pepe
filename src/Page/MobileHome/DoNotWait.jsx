@@ -1,14 +1,14 @@
 import React from "react";
-import dogeImage from "../../assets/DontWaitSec/doge.webp"
-import pepeImage from "../../assets/DontWaitSec/pepe.webp"
+import dogeImage from "../../assets/DontWaitSec/doge.webp";
+import pepeImage from "../../assets/DontWaitSec/pepe.webp";
 function DoNotWait() {
   return (
     <div className="w-[100%] relative DontWaitmobSec overflow-hidden  pb-[150px]">
       <div className="w-[168px] h-[175px] absolute bottom-0 left-[-23px]">
-        <img src={dogeImage} alt="doge-image" className="w-full h-full"/>
+        <img src={dogeImage} alt="doge-image" className="w-full h-full" />
       </div>
       <div className="w-[155px] h-[175px] absolute bottom-0 right-[-10px]">
-        <img src={pepeImage} alt="pepe-image" className="w-full h-full"/>
+        <img src={pepeImage} alt="pepe-image" className="w-full h-full" />
       </div>
       <div className="space-y-[20px]">
         <div
@@ -37,6 +37,9 @@ function DoNotWait() {
                 "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
             }}
             className="w-[165px] w-[100%] text-[12px] leading-[100%] mx-auto h-[36px] font-[400] rounded-[60px]"
+            onClick={() =>
+              (window.location.href = "https://forms.gle/J11hnTDHwJVfhY348")
+            }
           >
             Join the Whitelist Now
           </button>
