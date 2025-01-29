@@ -111,20 +111,20 @@ function HowItSecPlaceholder() {
               Get updates on
             </p>
             <div className="relative z-30 flex items-center justify-center space-x-2 lg:pt-1">
-              <a href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09" target="_blank">
+              {/* <a href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09" target="_blank">
                 <img
                   className="cursor-pointer w-[22px] lg:w-[34px] xl:w-[45px] h-[22px] lg:h-[34px] xl:h-[45px]"
                   src={telicon1}
                   alt=""
                 />
-              </a>
-              {/* <a href="https://t.me/DogevsPepe_io" target="_blank">
+              </a> */}
+              <a href="https://t.me/DogevsPepe_io" target="_blank">
                 <img
                   className="cursor-pointer w-[22px] lg:w-[34px] xl:w-[45px] h-[22px] lg:h-[34px] xl:h-[45px]"
                   src={telicon2}
                   alt=""
                 />
-              </a> */}
+              </a>
             </div>
           </div>
         </div>
