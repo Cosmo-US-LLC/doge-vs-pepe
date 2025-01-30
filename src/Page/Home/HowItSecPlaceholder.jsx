@@ -156,7 +156,7 @@ function HowItSecPlaceholder() {
           <p className="min-h-[90px] lg:w-[80%] font-[400] px-2 mx-auto text-[#fff] leading-[114%] text-[12px] lg:text-[15px] xl:text-[18px] 3xl:text-[25px] text-center">
             {getText()}
           </p>
-          <div className="relative flex justify-center w-[325px] sm:w-[469px] z-40">
+          <div className="relative flex justify-center w-[88%] sm:w-[469px] z-40">
             <Swiper
               modules={[Navigation]}
               spaceBetween={10}
@@ -179,10 +179,10 @@ function HowItSecPlaceholder() {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className="!h-[35px] !w-[35px] swiper-button-prev1   cursor-pointer  absolute !left-[-10%] !top-[48%] rotate-180">
+            <div className="!h-[35px] !w-[35px] swiper-button-prev1 cursor-pointer  absolute !left-[-10%] !top-[48%] rotate-180">
               <img src={awr1} className="!h-[25px] !w-[25px]" alt="Previous" />
             </div>
-            <div className="!h-[35px] !w-[35px] swiper-button-next1   cursor-pointer  absolute !right-[-10%] !top-[48%] ">
+            <div className="!h-[35px] !w-[35px] swiper-button-next1 cursor-pointer  absolute !right-[-10%] !top-[48%] ">
               <img src={awr1} className="!h-[25px] !w-[25px]" alt="Next" />
             </div>
           </div>
