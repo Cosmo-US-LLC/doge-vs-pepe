@@ -187,13 +187,27 @@ function HowItSecPlaceholder() {
             </div>
           </div>
         </div>
+        <button
+          className="cursor-pointer text-[#000] text-[20px] md:text-[32px] font-[700] text-center mx-auto rounded-[60px] px-12 max-w-[457px] w-[100%] h-[54px] md:h-[94px]"
+          style={{
+            zIndex: 9999,
+            background: "linear-gradient(90deg, #FFBF01 0%, #01FE37 134.57%)",
+            boxShadow: "0px 2px 0px 0px #FFF",
+          }}
+          onClick={() => {
+            window.location.href = "https://forms.gle/PKesG7M7QKKDssLc8";
+          }}
+        >
+          Join The Whitelist Now
+        </button>
+
         <div className="flex justify-center max-lg:flex-col gap-y-2 gap-x-8">
           <h4 className="hidden lg:block lg:-mt-2 text-[#fff] font-HiJack leading-[35px] xl:leading-[42px] text-[21px] lg:text-[30px] xl:text-[37px] 3xl:text-[50px] text-center">
             MORE INFO
             <br />
             COMING SOON
           </h4>
-          <h4 className="lg:hidden text-[#fff] leading-[114%] font-HiJack text-[18px] lg:text-[37px] 3xl:text-[50px] text-center">
+          <h4 className="z-[99] lg:hidden text-[#fff] leading-[114%] font-HiJack text-[18px] lg:text-[37px] 3xl:text-[50px] text-center">
             MORE INFO COMING SOON
           </h4>
           <div className="lg:space-y-1 lg:-mt-2">
