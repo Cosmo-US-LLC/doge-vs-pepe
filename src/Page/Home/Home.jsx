@@ -25,6 +25,7 @@ import TokenSec from "./TokenSec";
 import TwoLegends from "./TwoLegends";
 import FightRules from "./FightRules";
 import HowToBuy from "./HowToBuy";
+import DogeVsPepeNews from "./DogeVsPepeNews";
 
 function Home() {
   return (
@@ -36,7 +37,7 @@ function Home() {
         <TwoLegends />
         <FightRules />
         <WalletSec />
-        <HowToBuy/>
+        <HowToBuy />
         {/* <VIPTicketSec /> */}
         {/* <FirstEverSec /> */}
         {/* <TheRulesSec /> */}
@@ -54,6 +55,7 @@ function Home() {
         <TheFightSec />
         <DontWaitSec />
         <FaqSec />
+        <DogeVsPepeNews />
         <Footer />
       </div>
     </div>
