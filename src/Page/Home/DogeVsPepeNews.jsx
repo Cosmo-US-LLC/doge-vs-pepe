@@ -41,18 +41,16 @@ function DogeVsPepeNews() {
 
   return (
     <section className="w-full">
-      <div className="max-w-[1400px] mx-auto">
-        <div className="flex flex-wrap justify-center">
-          {newsPanels.map((panel) => (
-            <div key={panel.id} className="relative flex-1">
-              <img
-                src={panel.image}
-                alt={panel.alt}
-                className="object-cover w-full h-64 border-gray-700 transition-all duration-300 hover:border-yellow-400 hover:scale-105"
-              />
-            </div>
-          ))}
-        </div>
+      <div className="flex flex-wrap justify-center">
+        {newsPanels.map((panel) => (
+          <div key={panel.id} className="relative flex-1">
+            <img
+              src={panel.image}
+              alt={panel.alt}
+              className="object-cover w-full h-64 border-gray-700 transition-all duration-300 hover:border-yellow-400 hover:scale-105"
+            />
+          </div>
+        ))}
       </div>
     </section>
   );
