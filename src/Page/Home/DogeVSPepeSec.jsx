@@ -9,11 +9,11 @@ import cryShadow from "../../assets/DogeVSPepeSec/cry-shadow.png";
 
 function DogeVSPepeSec() {
   return (
-    <div className="relative w-[100%] h-[900px] flex justify-center items-center dogevspepebg overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 w-full h-full">
+    <div className="relative w-[100%] h-[900px] flex justify-center items-center dogeVsPepeBG overflow-hidden">
+      <div className="absolute top-0 right-0 left-0 w-full h-full">
         <img className="w-full h-full" src={topShadow} alt="" />
       </div>
-      <div className="absolute bottom-0 left-0 right-0 w-full h-full">
+      <div className="absolute right-0 bottom-0 left-0 w-full h-full">
         <img className="w-full h-full" src={bottomShadow} alt="" />
       </div>
       <div className="max-w-[1038px] w-[100%] space-y-[50px] mx-auto relative z-10">
@@ -40,7 +40,7 @@ function DogeVSPepeSec() {
                   dethrone him? The battle is on!
                 </p>
               </div>
-              <div className="relative z-10 flex space-x-2">
+              <div className="flex relative z-10 space-x-2">
                 <h4 className=" text-[16.893px] font-[700] text-[#fff]">
                   Find out more
                 </h4>

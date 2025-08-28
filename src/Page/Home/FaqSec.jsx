@@ -3,15 +3,17 @@ import arw from "../../assets/footer/Group 1410124940.svg";
 
 const faqData = [
   {
-    question: "What is DogevsPepe?",
-    answer: `DogevsPepe is a crypto presale with a twist. It’s a competition between two iconic memes, Doge and Pepe, to determine which one escapes the matrix and launches as a live cryptocurrency. Investors choose your side by purchasing tokens for either team (which raises $1M first wins), and the team with the most funds raised wins.`,
+    question: "What is DogeVsPepe?",
+    answer: `Doge vs Pepe is the ultimate showdown between two legendary memes battling for crypto supremacy.Only one will launch. Only one will be crowned number one. Supporters pick a side by buying tokens, the first team to raise $1 million wins. Your choice decides who takes the throne.`,
   },
   {
     question: "How does the presale work?",
+
     answer: `
-      <ul className="pl-8 text-white list-disc">
-        <li>Choose your champion: Team Doge (DODE) or Team Pepe (PEPE).</li>
-        <li>Buy tokens to support your chosen team(s). When the combined presale total hits $1 million, the team with the most funds raised is declared the winner.</li>
+      <ul className="pl-8 list-disc text-white">
+        <li> Pick your team: Doge ($DOGE) or Pepe ($PEPE).</li>
+        <li> Buy tokens to support your chosen champion(s).</li>
+        <li>Once the combined total hits $1 million, the team with the most funds raised is declared the winner.</li>
       </ul>
     `,
   },
@@ -52,10 +54,10 @@ const faqData = [
     question: " How do I join the community?",
     answer: `
 <div className="w-[900px]">
-  <ul className="pl-5 text-white list-decimal">
+  <ul className="pl-5 list-decimal text-white">
     <li>
       You can join our community on X and Telegram at the footer to connect and support your team. Don’t wait, join now!
-      <ul className="pl-8 text-white list-disc">
+      <ul className="pl-8 list-disc text-white">
         <li>General Channel: For overall updates and discussions.</li>
         <li>Team Pepe Channel: For Green Coin supporters</li>
          <li>Team Doge Channel: For Orange Coin fans.</li>
@@ -68,7 +70,7 @@ const faqData = [
 
     `,
   },
- 
+
   {
     question: "What happens if my team loses?",
     answer:
@@ -102,7 +104,7 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
           onClick={handleClick}
         >
           <div className="flex items-center justify-center gap-5 xs:pt-[14px]">
-            <div className="text-[22px] text-[#fff] font-[600] font-k2d">
+            <div className="text-[22px] text-[#fff] font-[600] font-k2d  uppercase">
               {question}
             </div>
           </div>

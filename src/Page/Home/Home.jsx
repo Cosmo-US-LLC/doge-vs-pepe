@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import HeroSection from "./Herosection";
 import WalletSec from "./WalletSec";
 import FirstEverSec from "./FirstEverSec";
@@ -22,36 +22,40 @@ import DontWaitSec from "./DontWaitSec";
 import TokenmobSec from "../MobileHome/Tokenomics";
 // import TokenmobSec from "../MobileHome/Tokenomics";
 import TokenSec from "./TokenSec";
-
+import TwoLegends from "./TwoLegends";
+import FightRules from "./FightRules";
+import HowToBuy from "./HowToBuy";
 
 function Home() {
   return (
     <div className="bg-[black] w-[100%]">
-    <div className="overflow-x-hidden">
-      <Navbar />
-      <HeroSection />
-      <BannerSec />
-      <WalletSec />
-      <VIPTicketSec />
-      <FirstEverSec />
-      <TheRulesSec />
-      <MilestonesSec />
-      <PrizeMoneySec />
-      <HowItSec />
-      <RoadmapSec />
-      <CommunitySec /> 
-      <TokenSec/>
-      <HypeSec />
-      {/* <PressandMediaSec /> */}
-      <DogeVSPepeSec />
-      <BiggestSec/>
-      <TheFightSec />
-      <DontWaitSec />
-      {/* <MadebySec /> */}
-      {/* <DontWaitSec /> */}
-      <FaqSec />
-      <Footer />
-    </div>
+      <div className="overflow-x-hidden">
+        <Navbar />
+        <HeroSection />
+        <BannerSec />
+        <TwoLegends />
+        <FightRules />
+        <WalletSec />
+        <HowToBuy/>
+        {/* <VIPTicketSec /> */}
+        {/* <FirstEverSec /> */}
+        {/* <TheRulesSec /> */}
+        {/* <MilestonesSec /> */}
+
+        <PrizeMoneySec />
+        {/* <RoadmapSec /> */}
+        <CommunitySec />
+        <HowItSec />
+        <TokenSec />
+        {/* <HypeSec /> */}
+        {/* <PressandMediaSec /> */}
+        <DogeVSPepeSec />
+        {/* <BiggestSec /> */}
+        <TheFightSec />
+        <DontWaitSec />
+        <FaqSec />
+        <Footer />
+      </div>
     </div>
   );
 }
