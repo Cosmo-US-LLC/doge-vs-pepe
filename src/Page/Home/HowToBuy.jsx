@@ -38,12 +38,12 @@ export default function HowToBuy({ backgroundUrl = "", onCta }) {
       <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_140px_60px_rgba(0,0,0,0.75)]" />
       <div className="relative px-8 pb-24 mx-auto max-w-7xl">
         {/* Title */}
-        <h2 className="text-center text-6xl font-extrabold tracking-[0.12em] text-white drop-shadow-md">
+        <h2 className="text-center section_heading">
           HOW TO BUY
         </h2>
 
         {/* Steps flex container */}
-        <div className="flex flex-row gap-6 justify-center mt-14">
+        <div className="flex flex-row justify-center gap-6 mt-14">
           {steps.map((s, i) => (
             <article
               key={i}
@@ -51,12 +51,12 @@ export default function HowToBuy({ backgroundUrl = "", onCta }) {
             >
               <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-b from-lime-400/0 via-lime-400/0 to-lime-400/0 opacity-0 group-hover:opacity-100 blur-[2px] transition-opacity" />
 
-              <div className="flex relative flex-col h-full">
-                <p className="text-sm text-neutral-300">{s.step}</p>
-                <h3 className="mt-3 text-xl font-extrabold tracking-wide">
+              <div className="relative flex flex-col h-full">
+                <p className="text-[18px] font-helvetica font-[400] leading-[22px]">{s.step}</p>
+                <h3 className="mt-3 font-anton text-[24px] leading-[28px] uppercase">
                   {s.title}
                 </h3>
-                <p className="flex-grow mt-4 text-sm leading-relaxed text-neutral-300">
+                <p className="flex-grow mt-4 text-[16px] font-helvetica font-[400] leading-[20px]">
                   {s.body}
                 </p>
               </div>
@@ -65,15 +65,16 @@ export default function HowToBuy({ backgroundUrl = "", onCta }) {
         </div>
 
         {/* CTA */}
-        <div className="flex justify-center mt-14">
+         <div className="flex justify-center mt-9">
           <button
-            type="button"
-            onClick={onCta}
-            className="rounded-full px-12 py-4 text-2xl font-extrabold uppercase tracking-wide text-black shadow-[0_12px_30px_rgba(0,0,0,0.45)] transition-transform active:scale-[.98]"
             style={{
-              backgroundImage:
-                "linear-gradient(90deg, rgba(251,224,74,1) 0%, rgba(169,255,82,1) 100%)",
+              background:
+                "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
             }}
+            className="w-[457px] leading-normal mx-auto h-[65px] text-anton text-[30px] font-[400] rounded-[60px] cursor-pointer relative z-10"
+            onClick={() =>
+              (window.location.href = "https://forms.gle/J11hnTDHwJVfhY348")
+            }
           >
             JOIN THE PRESALE
           </button>

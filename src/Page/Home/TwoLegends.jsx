@@ -23,8 +23,8 @@ function TwoLegends() {
             </p>
           </div>
         </div>
-        <div className="w-[50%] flex justify-center items-end">
-          <p className="text-[56px] font-anton text-[#fff] font-[400] leading-[64px] uppercase">
+        <div className="w-[50%] flex justify-center items-end pb-10">
+          <p className="text-center section_heading">
             Two Legends.
             <br /> One Crown.
           </p>

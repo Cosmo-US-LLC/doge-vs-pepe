@@ -9,10 +9,10 @@ function TheFightSec() {
     <div className="relative w-[100%] h-[900px] TheFightSecBG flex justify-center items-center   overflow-hidden">
       <div className="max-w-[1150px] w-[100%] space-y-[50px] mx-auto ">
         <div className="space-y-[20px]">
-          <h3 className="text-[50px] text-center font-HiJack leading-[102.804%] font-[400] text-[#FFF] uppercase">
+          <h3 className="text-center section_heading">
             The Fight is Made Possible By
           </h3>
-          <p className="text-[18px] max-w-[869px] w-[100%] mx-auto text-center font-[400] text-[#fff]">
+          <p className="text-[24px] max-w-[1120px] w-[100%] mx-auto text-center font-helvetica leading-[32px] font-[400] text-[#fff]">
             A huge thank you to the incredible technology partners and service
             providers who have made the Doge vs. Pepe boxing event a reality!
             This groundbreaking showdown wouldn’t be possible without the

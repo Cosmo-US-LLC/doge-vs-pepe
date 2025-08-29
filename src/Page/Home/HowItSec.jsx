@@ -43,18 +43,16 @@ function HowItSec() {
         style={{ backdropFilter: "blur(9.899999618530273px)" }}
       >
         <div className="space-y-[16px] flex flex-col justify-center items-center ">
-          <p className="text-[#fff] leading-[114%] font-[400] text-[20px] text-center">
-            Chapter I
-          </p>
-          <h3 className="text-[#FFFCFC] font-HiJack text-center text-[50px] leading-[104.377%] font-[400]">
+          
+          <h3 className="text-center section_heading">
             How It All Began
           </h3>
-          <p className="w-[650px]   font-[400] mx-auto text-[#fff] leading-[114%] text-[20px] text-center">
+          <p className="w-[824px] font-[400] mx-auto text-[#fff] leading-[32px] text-[24px] font-helvetica text-center">
             The rivalry started when Pepe, the rising star, climbed to #3 among
             all meme heavyweight champions and called out Doge, the undefeated
             champion. Doge couldn’t let this slide. After months of
             back-of-forth insults on social media, they ran into each other at
-            MOON, the <br /> city’s hottest nightclub. Things escalated quickly,
+            MOON, the city’s hottest nightclub. Things escalated quickly,
             turning into a big fight with serious consequences.
           </p>
 
@@ -100,34 +98,23 @@ function HowItSec() {
             </div>
  
           </div>
-           
-          <div className="space-y-[23px]  ">
-            <h4 className="text-[#fff] leading-[114%] font-[400] text-[20px] text-center  ">
-              Follow us on social media to keep up with the story!
-            </h4>
-            <div className="flex justify-center space-x-[4rem] relative">
-              <div className="flex items-center justify-center space-x-2 relative z-[99]">
-                <a
-                  href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2"
-                >
-                  <p className="text-[18px] font-[600] text-[#fff] uppercase cursor-pointer">
-                    Join X
-                  </p>
-                  <img className="cursor-pointer" src={telicon1} alt="X Icon" />
-                </a>
-              </div>
 
-              <div className="relative z-10 flex items-center justify-center space-x-2">
-                <p className="text-[18px] font-[600] text-[#fff] uppercase">
-                  Join Telegram
-                </p>
-                <img className="cursor-pointer" src={telicon2} alt="" />
-              </div>
-            </div>
-          </div>
+  <div className="flex justify-center">
+          <button
+            style={{
+              background:
+                "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
+            }}
+            className="w-[457px] leading-normal mx-auto h-[61px] text-anton text-[30px] font-[400] rounded-[60px] cursor-pointer relative z-10"
+            onClick={() =>
+              (window.location.href = "https://forms.gle/J11hnTDHwJVfhY348")
+            }
+          >
+            JOIN THE PRESALE
+          </button>
+        </div>
+           
+         
         </div>
 
         <div className="absolute top-[100px] left-[-32%] h-[646px] w-[528px]">

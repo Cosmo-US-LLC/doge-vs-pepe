@@ -10,76 +10,113 @@ const faqData = [
     question: "How does the presale work?",
 
     answer: `
-      <ul className="pl-8 list-disc text-white">
+      <ul className="pl-8 text-white list-disc">
         <li> Pick your team: Doge ($DOGE) or Pepe ($PEPE).</li>
         <li> Buy tokens to support your chosen champion(s).</li>
         <li>Once the combined total hits $1 million, the team with the most funds raised is declared the winner.</li>
       </ul>
     `,
   },
+
   {
-    question: "What happens to the losing team’s funds?",
+    question: "Can I invest in both teams?",
     answer:
-      "The losing team’s funds are added to the winning token’s liquidity pool, increasing its value and ensuring a strong launch. If your team loses, you’ll still get the same amount in the winning coin but won’t receive prize money.",
-  },
-  {
-    question: "How many times can i buy?",
-    answer:
-      "You can buy as many times as you like, but the total purchase is capped at $25,000 to ensure fair participation and prevent whales from dominating the presale and holding too much of the total supply.",
-  },
-  {
-    question: "Can I buy into both teams?",
-    answer:
-      "Yes! You can support both Doge and Pepe by purchasing tokens for both teams. However, only one will win, so choose wisely!",
+      "Yes, you can support both teams by purchasing tokens for Doge and Pepe. However, only one will win, so choose your strategy wisely!",
   },
 
   {
-    question: "Is the presale fair and secure?",
+    question: "How many times can I buy tokens?",
     answer:
-      "Absolutely. Both presale contracts are public and fully transparent, so you can see how funds are being allocated.",
+      "You can purchase as many times as you like, but each wallet is capped at $25,000 to attract whales while maintaining fairness and equal participation.",
   },
   {
-    question: "When does the winning token launch?",
+    question: "Is the presale fair and secure?",
     answer: `
-   The launch date for the winning token will be announced within 24 hours of reaching the $1M target and determining the winner. The winning token will be launched on the Solana blockchain and available on Raydium. We recommend using a Phantom Wallet.
+   Yes, both presale contracts are fully public and transparent, allowing everyone to see where the funds are going.
       
     `,
   },
   {
     question: "How do I track the progress of the presale?",
-    answer:
-      "Live stats for the Fight will be displayed on the website, showing how much each team has raised. Stay connected to see if your team is winning!",
+    answer: `<div className="w-[900px]">
+  <ul className="pl-5 text-white list-decimal">
+    <li>
+   
+      <ul className="pl-8 text-white list-disc">
+       
+        <li>Everyone who purchases tokens will receive the winning coin, regardless of which team they supported.</li>
+         <li>However, those who backed the winning team will receive extra rewards (see answer below).</li>
+          
+      </ul>
+    </li>
+ 
+
+  </ul>
+</div>`,
   },
   {
-    question: " How do I join the community?",
+    question: "What are the rewards for picking the correct team?",
     answer: `
 <div className="w-[900px]">
-  <ul className="pl-5 list-decimal text-white">
+  <ul className="pl-5 text-white list-decimal">
     <li>
-      You can join our community on X and Telegram at the footer to connect and support your team. Don’t wait, join now!
-      <ul className="pl-8 list-disc text-white">
-        <li>General Channel: For overall updates and discussions.</li>
-        <li>Team Pepe Channel: For Green Coin supporters</li>
-         <li>Team Doge Channel: For Orange Coin fans.</li>
-          <li>After the Fight ends, all channels merge into one unified community supporting the winning project.</li>
+   
+      <ul className="pl-8 text-white list-disc">
+        <li>1. Daily Bonus Coins:</li>
+        <li>1M coins are added to the winner pool daily while the fight is ongoing.</li>
+         <li>These coins are airdropped proportionally based on the number of tokens you hold.</li>
+          
+      </ul>
+
+      <ul className="pl-8 text-white list-disc">
+        <li>2.Early Claim Access:</li>
+        <li>Winners can claim their airdropped coins 24 hours earlier than participants who supported the losing team.</li>
+          
+          
       </ul>
     </li>
    
   </ul>
 </div>
 
+ 
+
+    `,
+  },
+  {
+    question: "What happens if my team loses?",
+    answer: `
+<div className="w-[900px]">
+  <ul className="pl-5 text-white list-decimal">
+    <li>
+   
+      <ul className="pl-8 text-white list-disc">
+        <li>Even if your team loses:</li>
+        <li>You will still receive the winning coin based on the amount of tokens you purchased.</li>
+         <li>Your purchase will contribute to strengthening the liquidity pool of the winning token.</li>
+          
+      </ul>
+    </li>
+   
+  </ul>
+</div>
+
+ 
+
+
+
     `,
   },
 
   {
-    question: "What happens if my team loses?",
+    question: "How do I track the progress of the presale?",
     answer:
-      "If your team loses, you’ll still get the same amount in the winning coin but won’t receive prize money.",
+      "Real-time stats showing how much each team has raised will be displayed on the website, so you can stay updated and cheer your team to victory.",
   },
   {
-    question: "Why should I join DogevsPepe?",
+    question: "When does the winning token launch?",
     answer:
-      "DogeVsPepe isn’t just another meme battle but a movement to crown the true Meme Heavyweight Champion. By joining, you are not just supporting your favorite meme coin but becoming part of an exciting and competitive event reshaping crypto history.",
+      "The launch date will be announced as soon as $1M is raised. The winning token will launch within a few days of reaching the $1 million presale goal, with no long waits.",
   },
 ];
 
@@ -104,7 +141,7 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
           onClick={handleClick}
         >
           <div className="flex items-center justify-center gap-5 xs:pt-[14px]">
-            <div className="text-[22px] text-[#fff] font-[600] font-k2d  uppercase">
+            <div className="text-[24px] leading-[64px] text-[#fff] font-[400] font-anton uppercase">
               {question}
             </div>
           </div>
@@ -120,7 +157,7 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
         <div style={contentStyles}>
           <div className="w-[100%] px-[34px] pb-[20px]">
             <p
-              className="pb-[10px] answer text-[22px] text-white leading-[150%] font-[600] font-k2d"
+              className="pb-[10px] answer text-[16px] text-[#fff] font-helvetica leading-[22px] font-[400]"
               dangerouslySetInnerHTML={createMarkup()}
             />
           </div>
@@ -138,10 +175,10 @@ const FaqSec = () => {
   };
 
   return (
-    <div className="relative font-k2d" id="faq">
+    <div className="relative" id="faq">
       <div className="w-[100%] max-w-[1143px] pt-[73px] mx-auto pb-[63px] flex flex-col gap-4">
         <div className="text-center">
-          <h2 className="text-[#fff] font-HiJack uppercase text-[42px] font-[400] leading-[142.857%] pb-[10px] font-k2d">
+          <h2 className="section_heading pb-[10px]">
             Frequently Asked Questions
           </h2>
         </div>

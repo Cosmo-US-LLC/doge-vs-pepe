@@ -4,8 +4,8 @@ function HeroSection() {
   return (
     <div className="w-[100%] h-[791px] hero_bg pb-[40px]">
       <div className="max-w-[1280px] mx-auto px-8 w-[100%] h-full flex item-end relative">
-        <div className="flex justify-between items-end w-full h-full">
-          <h1 className="text-[#fff] text-[74px] font-HiJack font-[400] leading-[84px] uppercase">
+        <div className="flex items-end justify-between w-full h-full">
+          <h1 className="text-[#fff] text-[74px] font-anton font-[400] leading-[84px] uppercase">
             THE MEME FIGHT <br /> OF THE CENTURY
           </h1>
 

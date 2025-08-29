@@ -11,10 +11,10 @@ function TokenSec() {
       className="relative w-[100%] h-[1068px]  TokenBG   overflow-hidden"
       id="tokenomics"
     >
-      <div className="absolute top-0 right-0 left-0">
+      <div className="absolute top-0 left-0 right-0">
         <img className="" src={topShadow} alt="" />
       </div>
-      <div className="absolute right-0 bottom-0 left-0">
+      <div className="absolute bottom-0 left-0 right-0">
         <img className="" src={bottomShadow} alt="" />
       </div>
       <div className=" max-w-[1245px] w-[100%] mx-auto flex justify-between pt-[20px] ">
@@ -24,16 +24,16 @@ function TokenSec() {
               WebkitTextStrokeWidth: "2.8px",
               WebkitTextStrokeColor: "#000",
             }}
-            className="text-[52.95px] font-HiJack leading-[102.804%] font-[400] text-[#FFF] uppercase relative  "
+            className="relative section_heading"
           >
-            $DGPE <br /> Tokenomics
+            TEAM DOGE
           </h3>
           <div className="space-y-[8px]">
-            <h5 className="text-[26.475px] leading-normal font-[700] text-[#FFF] uppercase">
-              tOTAL sUPPLY $8.88 BILLION
+            <h5 className="text-[24px] leading-normal font-[700] font-helvetica text-[#FFF] uppercase">
+              tOTAL sUPPLY: 8.88 billion
             </h5>
-            <p className="text-[22.062px] leading-normal font-[600] text-[#FFF] ">
-              Coin will be launched on Solana Blockchain
+            <p className="text-[20px] leading-normal font-[400] font-helvetica text-[#FFF] ">
+              Coin will be launched on Ethereum Blockchain
             </p>
           </div>
           {/* <img src={verc1} className="absolute top-[-55%] left-[-10%]" alt="" /> */}
@@ -45,16 +45,16 @@ function TokenSec() {
                 WebkitTextStrokeWidth: "2.8px",
                 WebkitTextStrokeColor: "#000",
               }}
-              className="text-[52.95px] font-HiJack text-right leading-[102.804%] font-[400] text-[#FFF] uppercase"
+              className="text-right section_heading"
             >
-              $pepe <br /> Tokenomics
+              TEAM pePe
             </h3>
             <div className="space-y-[8px]">
-              <h5 className="text-[26.475px] text-right leading-normal font-[700] text-[#FFF] uppercase">
-                tOTAL sUPPLY $8.79 BILLION
+              <h5 className="text-[24px] font-helvetica text-right leading-normal font-[700] text-[#FFF] uppercase">
+                tOTAL sUPPLY: 7.89 Billion
               </h5>
-              <p className="text-[22.062px] text-right leading-normal font-[600] text-[#FFF] ">
-                Coin will be launched on Solana Blockchain
+              <p className="text-[20px] font-helvetica text-right leading-normal font-[400] text-[#FFF] ">
+                Coin will be launched on Ethereum Blockchain
               </p>
             </div>
             {/* <img

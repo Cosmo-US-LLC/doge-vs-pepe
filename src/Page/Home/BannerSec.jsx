@@ -10,7 +10,7 @@ function BannerSec() {
     <div className="w-[100%] h-[109px] overflow-hidden flex items-end">
       <div className="flex justify-center items-center space-x-[40px] max-w-[1390px] w-[100%] mx-auto relative">
         <div>
-          <h4 className="text-[#FFFCFC] text-[50px] font-anton font-[400] uppercase">
+          <h4 className="section_heading ">
             As seen on
           </h4>
         </div>

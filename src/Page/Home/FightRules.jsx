@@ -40,12 +40,16 @@ export default function FightRules({ backgroundUrl }) {
     >
       <div className="flex w-full gap-10 max-w-[1280px] mx-auto px-8 flex-row">
         {/* Left side - Empty space for visual balance */}
-        <div className="w-[50%]" />
+         <div className="w-[50%] flex justify-center items-end pb-10">
+          <p className="text-center section_heading">
+            GLORY OR DEFEAT. <br/>Pick your Legend.
+          </p>
+        </div>
 
         {/* Right side - Rules content */}
         <div className="w-[50%]">
           <div className="border-2 border-white/25 px-8 py-8 m-4 rounded-lg bg-black/90 flex flex-col gap-4 shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
-            <h2 className="text-[56px] font-[400] leading-[64px] tracking-wide text-center text-[#fff] uppercase font-anton md:text-left">
+            <h2 className="text-center section_heading">
               THE FIGHT RULES
             </h2>
 

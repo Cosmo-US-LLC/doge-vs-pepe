@@ -33,7 +33,7 @@ function CommunitySec() {
     {
       title: "Concept Development",
       description:
-        "Craft the vision for $PEPE, combining Pepe's iconic status with a thrilling presale.",
+        "Craft the vision for $PEPE, combining Pepe’s iconic status with a thrilling presale.",
     },
     {
       title: "Website Launch",
@@ -53,10 +53,10 @@ function CommunitySec() {
 
   return (
     <div className="w-[100%] flex justify-center items-center  h-full Communitybg overflow-hidden relative">
-      <div className="absolute top-0 right-0 left-0 w-full h-full">
+      <div className="absolute top-0 left-0 right-0 w-full h-full">
         <img className="w-full h-full" src={topShadow} alt="" />
       </div>
-      <div className="absolute right-0 bottom-0 left-0 w-full h-full">
+      <div className="absolute bottom-0 left-0 right-0 w-full h-full">
         <img className="w-full h-full" src={bottomShadow} alt="" />
       </div>
       <div
@@ -72,19 +72,10 @@ function CommunitySec() {
             style={{
               textShadow: "0px 0px 26.2px #000, 0px 0px 14.5px #000",
             }}
-            className="text-[50px] text-[#FFFCFC] font-HiJack text-center font-[400]"
+            className="mb-3 text-center section_heading"
           >
-            The Community Decides{" "}
+            Roadmap
           </h3>
-          <p
-            style={{
-              textShadow: "0px 0px 26.2px #000, 0px 0px 14.5px #000",
-            }}
-            className="text-[20px] font-[400] text-center text-[#FFF]"
-          >
-            This isn&apos;t just about picking a meme <br /> it&apos;s about
-            choosing a winner that you are proud to represent.{" "}
-          </p>
         </div>
         <div className="flex justify-between space-x-[15px]">
           <div className="p-4 relative rounded-[21.168px]">
@@ -117,15 +108,15 @@ function CommunitySec() {
               </div>
               <div className="w-[62%] space-y-[10px]">
                 <div>
-                  <h3 className="text-[22px] text-[#FFF] font-HiJack font-[400]">
+                  <h3 className="text-[22px] text-[#FFF] font-anton font-[400]">
                     TEAM DOGE
                   </h3>
                   <hr className="bg-[#F1A900] h-[5px] border-none w-[68px] rounded-full" />
                 </div>
-                <h4 className="text-[20px] text-[#FFF] font-HiJack font-[400]">
+                <h4 className="text-[20px] text-[#FFF] font-anton font-[400]">
                   $DOGE
                 </h4>
-                <p className="text-[18px] text-[#FFF] font-[400] leading-[130%]">
+                <p className="text-[18px] text-[#FFF] font-helvetica font-[400] leading-[136%]">
                   &ldquo;Pepe, you&apos;re just a hyped up fair-weather fighter.
                   This will be my easiest payday. I&apos;ll show you why
                   I&apos;m the undisputed champ!&rdquo;
@@ -163,15 +154,15 @@ function CommunitySec() {
               </div>
               <div className="w-[62%] space-y-[10px]">
                 <div>
-                  <h3 className="text-[22px] font-HiJack text-[#FFF] font-[400]">
+                  <h3 className="text-[22px] font-anton text-[#FFF] font-[400]">
                     TEAM PEPE
                   </h3>
                   <hr className="bg-[#4EB52A] h-[5px] border-none w-[68px] rounded-full" />
                 </div>
-                <h4 className="text-[20px] font-HiJack text-[#FFF] font-[400]">
+                <h4 className="text-[20px] font-anton text-[#FFF] font-[400]">
                   $PEPE
                 </h4>
-                <p className="text-[18px] text-[#FFF] font-[400] leading-[130%]">
+                <p className="text-[18px] text-[#FFF] font-[400] font-helvetica leading-[136%]">
                   &ldquo;Doge, your time is up. You&apos;re just an old dog now.
                   One punch, and I&apos;ll have you chasing your tail! This will
                   be your retirement party!&rdquo;
@@ -182,19 +173,19 @@ function CommunitySec() {
         </div>
         <div className="flex justify-between space-x-[15px]">
           {/* Left Div - Team Doge Roadmap */}
-          <div className="w-[46%] p-6 rounded-[21.168px] border border-white/20 bg-black/40 backdrop-blur-sm">
-            <h2 className="text-[32px] font-bold text-white text-center mb-8 tracking-wide">
+          <div className="w-[50%] p-6 rounded-[21.168px] border border-[#FFBF00]/80 bg-black/40 backdrop-blur-sm">
+            <h2 className="text-[24px] font-[700] text-[#FFBF00] font-helvetica text-center mb-8">
               TEAM DOGE ROADMAP
             </h2>
             <div className="space-y-6">
               {dogeRoadmapPhases.map((phase, index) => (
                 <div key={index} className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-[#F1A900] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-3 h-3 bg-[#FFF] rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h3 className="text-[20px] font-bold text-white mb-2">
+                    <h3 className="text-[24px] font-[700] font-helvetica text-[#fff] mb-2">
                       {phase.title}
                     </h3>
-                    <p className="text-[16px] text-gray-300 leading-relaxed">
+                    <p className="text-[20px] text-[#fff] font-[400] font-helvetica leading-relaxed">
                       {phase.description}
                     </p>
                   </div>
@@ -204,19 +195,19 @@ function CommunitySec() {
           </div>
 
           {/* Right Div - Team Pepe Roadmap */}
-          <div className="w-[50%] p-6 rounded-[21.168px] border border-[#4EB52A]/30 bg-black/40 backdrop-blur-sm">
-            <h2 className="text-[32px] font-bold text-white text-center mb-8 tracking-wide">
+          <div className="w-[50%] p-6 rounded-[21.168px] border border-[#4EB52A]/80 bg-black/40 backdrop-blur-sm">
+            <h2 className="text-[24px] font-[700] text-[#4EB52A] font-helvetica text-center mb-8  ">
               TEAM PEPE ROADMAP
             </h2>
             <div className="space-y-6">
               {pepeRoadmapPhases.map((phase, index) => (
                 <div key={index} className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-[#4EB52A] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-3 h-3 bg-[#fff] rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h3 className="text-[20px] font-bold text-white mb-2">
+                    <h3 className="text-[24px] font-[700] font-helvetica text-[#fff] mb-2">
                       {phase.title}
                     </h3>
-                    <p className="text-[16px] text-gray-300 leading-relaxed">
+                    <p className="text-[20px] text-[#fff] font-[400] font-helvetica leading-relaxed">
                       {phase.description}
                     </p>
                   </div>

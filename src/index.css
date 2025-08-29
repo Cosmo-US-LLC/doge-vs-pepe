@@ -60,6 +60,15 @@ body {
   font-family: "Anton", serif !important;
 }
 
+.section_heading {
+  font-family: "Anton", serif !important;
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 /* code {
   font-family: "K2D", serif !important;
 } */
