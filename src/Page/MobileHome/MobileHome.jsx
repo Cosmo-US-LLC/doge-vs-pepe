@@ -20,6 +20,10 @@ import PressandMediamobSec from "./PressandMediamobSec";
 import HypeMobSec from "./HypeMobSec";
 import HowItmobSec from "./HowItmobSec";
 import MadeBy from "./MadeBy";
+import MobileTwoLegends from "./MobileTwoLegends";
+import MobileFightRules from "./MobileFightRules";
+import MobileHowTowBuy from "./MobileHowTowBuy";
+import RoadmapMob from "./Roadmap";
 
 
 function MobileHome() {
@@ -28,23 +32,29 @@ function MobileHome() {
       <div>
         <Navbar />
         <MobileHeroSection />
+        <MobileTwoLegends />
+        <MobileFightRules />
+        <MobileHowTowBuy />
         <HeroWalletSec />
-        <MobileTicket />
+        <PrizeMoney /> 
+        <RoadmapMob/>
+        <HowItmobSec />
+        <Tokenomics />
+        <DogeVSPepeMobSec />
+        {/* <MobileTicket />
         <MobileFirstEverSec />
         <TheRules />
-        <Milestones />
-        <PrizeMoney /> 
-        <HowItmobSec />
-        <Roadmap />
-        <Community />
-        <Tokenomics />
-        <HypeMobSec />
+        <Milestones /> */}
+        {/* <Community /> */}
+        {/* <HypeMobSec /> */}
         {/* <PressandMediamobSec /> */}
-        <DogeVSPepeMobSec />
-        <BiggestMobSec />
+        {/* <DogeVSPepeMobSec />
+        <BiggestMobSec /> */}
         {/* <MadeBy /> */}
+        {/* <TheFightSecMob />
+         */}
         <TheFightSecMob />
-        <DoNotWait />
+         <DoNotWait />
         <FAQ />
         <Footer />
       </div>

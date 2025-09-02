@@ -95,6 +95,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.DontWaitSecmob {
+  background-image: url(../src/assets/mobile_assets/dont_mob_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .TheFightSecBG {
   background-image: url(../src/assets/FightSec/doge_vs_pepe_bg.webp);
   background-position: center;
@@ -103,6 +109,12 @@ body {
 }
 .dogeVsPepeBG {
   background-image: url(../src/assets/DogeVSPepeSec/d_v_p_bg.webp);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.fight_mob_bg{
+   background-image: url(../src/assets/mobile_assets/fight_mob_bg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -120,6 +132,11 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.two_legends_mobile {
+  background-image: url(../src/assets/mobile_assets/mob_two_led_sec.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 /* new use end */
 
 .bgmainvip {
@@ -130,6 +147,12 @@ body {
 }
 .Communitybg {
   background-image: url(../src/assets/CommunitySec/Communitybg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Communitybgmob {
+  background-image: url(../src/assets/mobile_assets/rd_bg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -167,6 +190,30 @@ body {
 
 .crypbg3 {
   background-image: url(../src/assets/DogeVSPepeSec/doge-headline.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  -webkit-background-size: cover;
+}
+.crypbgmob {
+  background-image: url(../src/assets/mobile_assets//card_dvp_1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  object-fit: cover;
+}
+.crypbg2mob {
+    background-image: url(../src/assets/mobile_assets//card_dvp_2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  -webkit-background-size: cover;
+}
+.crypbg3mob {
+    background-image: url(../src/assets/mobile_assets//card_dvp_3.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -261,7 +308,7 @@ body {
 
 .bgheromobsec {
   /* background-image: url(./assets/herosec/mobbg.png); */
-  background-image: url(./assets/herosec/hero-sec-bg-mob.webp);
+  background-image: url(./assets/mobile_assets/mob_hero_bg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -282,13 +329,13 @@ body {
 }
 
 .bgwltsecmobUp {
-  background-image: url(./assets/Mobile/wallet-1.png);
+  background-image: url(./assets/mobile_assets/mobile_walt_first.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .bgwltsecmobDn {
-  background-image: url(./assets/Mobile/walled-2.png);
+  background-image: url(./assets/mobile_assets/mobile_walt_scnd.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -338,7 +385,7 @@ body {
   background-repeat: no-repeat;
 }
 .bgmobprizsec {
-  background-image: url(./assets/PrizeMoneySec/mobbg.png);
+  background-image: url(./assets/mobile_assets/prizmobbg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -349,6 +396,19 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.howitbgmob {
+  background-image: url(./assets/mobile_assets/how_it_all.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Tokenomicsbgmob{
+ background-image: url(./assets/mobile_assets/tetsom_bg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 
 .bgMadebySec {
   background-image: url(./assets/madebySec/baby-bg.png);

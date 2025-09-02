@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 import arw from "../../assets/footer/Group 1410124940.svg";
+import break_img from "../../assets/mobile_assets/breaking_img.png";
+
 import { faqData } from "../Utils/FAQs";
 
 const FaqItem = ({ question, answer, isOpen, handleClick }) => {
@@ -26,7 +28,7 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
         <div className="flex items-center gap-2">
           <div
             dangerouslySetInnerHTML={{ __html: question }}
-            className={`text-[16px] text-[#fff] font-[600]`}
+            className={`text-[16px] font-[Anton] text-[#fff] font-[400]`}
           />
         </div>
   
@@ -41,7 +43,7 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
       <div style={contentStyles}>
         <div className="w-[100%] px-4 pb-3">
           <p
-            className="text-[14px] text-[#fff] leading-[150%] font-[600]"
+            className="text-[16px] font-[Helvetica] text-[#fff] leading-[150%] font-[400]"
             dangerouslySetInnerHTML={createMarkup()}
           />
         </div>
@@ -63,8 +65,8 @@ const FAQ = () => {
     <div className="relative" id="faq">
       <div className="w-[100%] pt-12 mx-auto pb-6 px-4">
         <div className="mb-4 text-center">
-          <h2 className="text-[#fff] uppercase text-[22px] font-HiJack font-[400] leading-[142.857%] pb-2">
-            Frequently Asked Questions
+          <h2 className="text-[#fff] uppercase text-[32px] font-[Anton] font-[400] leading-[142.857%] pb-2">
+            Frequently <br /> Asked Questions
           </h2>
         </div>
         <div className="w-full mx-auto">
@@ -81,6 +83,7 @@ const FAQ = () => {
           </div>
         </div>
       </div>
+        <img src={break_img} alt="" className="w-[100%] pt-[60px]" />
     </div>
   );
 };

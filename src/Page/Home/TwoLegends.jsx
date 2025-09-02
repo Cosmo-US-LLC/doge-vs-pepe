@@ -2,10 +2,10 @@ import React from "react";
 
 function TwoLegends() {
   return (
-    <div className="w-[100%] h-[725px] two_legends flex flex-col justify-center items-center">
+    <div className="w-[100%] h-[725px] relative flex flex-col justify-center items-center">
       <div className="flex w-[100%] max-w-[1280px] mx-auto px-8 flex-row">
-        <div className=" w-[50%]">
-          <div className="border-2 border-[#fff] px-8 py-8 m-4 rounded-lg bg-black/20 flex flex-col gap-4">
+        <div className=" w-[50%] relative z-[99]">
+          <div className="border-2  border-[#fff] px-8 py-8 m-4 rounded-lg bg-black/20 flex flex-col gap-4">
             <p className="font-helvetica text-[22px] font-[700] leading-[32px] text-center text-[#fff]">
               Only one will win this epic fight and launch! <br />
               <br /> This is the first crypto meme battle where you back your
@@ -24,7 +24,8 @@ function TwoLegends() {
           </div>
         </div>
         <div className="w-[50%] flex justify-center items-end pb-10">
-          <p className="text-center section_heading">
+          <div className="two_legends absolute -z-1 w-[100%] max-w-[905px] top-4 h-[708px]"></div>
+          <p className="text-center relative z-9 section_heading">
             Two Legends.
             <br /> One Crown.
           </p>

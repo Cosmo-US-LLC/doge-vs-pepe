@@ -27,28 +27,26 @@ function HowItmobSec() {
   const nextRef = useRef(null);
   return (
     <div
-      className="w-[100%] howitbg overflow-hidden pt-[60px] pb-[50px]"
+      className="w-[100%] howitbgmob min-h-[994px] flex items-end  overflow-hidden pt-[60px] pb-[100px]"
       id="how-it-all-began"
     >
       <div
         className="relative  rounded-[20.9px] w-[90%] mx-auto relative min-h-[480px]  bg-[#01010182]"
         style={{ backdropFilter: "blur(9.899999618530273px)" }}
       >
-        <div className="howitborder px-[22px] pt-[20px] pb-[80px]">
+        <div className="howitborder px-[22px] pt-[20px] pb-[40px]">
           <div className="space-y-[20px]">
-            <p className="text-[#fff] leading-[114%] font-[400] text-[12px] text-center">
-              Chapter I
-            </p>
-            <h3 className="text-[#FFFCFC] font-HiJack text-center text-[22px] leading-[104.377%] font-[400]">
+            <h3 className="text-[#FFFCFC] font-[Anton]  text-center text-[32px] leading-[104.377%] font-[400]">
               How It All Began
             </h3>
-            <p className="max-w-[317px] w-[100%] font-[400] mx-auto text-[#fff] leading-[114%] text-[15px] text-center">
-              The rivalry started when Pepe, the rising star, climbed to #3
-              among all meme heavyweight champions and called out Doge, the
-              undefeated champion. Doge couldn’t let this slide. After months of
-              back-of-forth insults on social media, they ran into each other at
-              MOON, the city’s hottest nightclub. Things escalated quickly,
-              turning into a big fight with serious consequences.
+            <p className="max-w-[317px] font-[Helvetica] w-[100%] font-[400] mx-auto text-[#fff] leading-[157%] text-[15px] text-center">
+              The heated rivalry began when Pepe, the rising star, reached #3
+              among all meme heavyweights and started calling out Doge, the
+              undefeated champ. Doge couldn’t let this slide, and after months
+              of back-and-forth insults on social media, the two meme icons
+              bumped into each other at MOON, one of the hottest nightclubs in
+              the city. Things escalated quickly, turning into a massive brawl
+              with serious consequences.
             </p>
             <div className="relative flex justify-center w-full">
               <Swiper
@@ -84,7 +82,7 @@ function HowItmobSec() {
                 ))}
               </Swiper>
 
-              <div className="!h-[25px] !w-[25px] swiper-button-prev4   cursor-pointer  absolute !left-[-1%] !top-[45%] rotate-180">
+               <div className="!h-[25px] !w-[25px] swiper-button-prev4   cursor-pointer  absolute !left-[-1%] !top-[45%] rotate-180">
                 <img
                   src={awr1}
                   className="!h-[20px] !w-[20px]"
@@ -94,52 +92,25 @@ function HowItmobSec() {
               <div className="!h-[25px] !w-[25px] swiper-button-next4   cursor-pointer  absolute !right-[-1%] !top-[45%] ">
                 <img src={awr1} className="!h-[20px] !w-[20px]" alt="Next" />
               </div>
+
             </div>
-
-            <div className="space-y-[10px]">
-              <h3 className="text-[#FFFCFC] font-HiJack text-center text-[22px] leading-[104.377%] font-[400]">
-                More info coming soon
-              </h3>
-
-              <div className="flex flex-col justify-center space-y-2">
-                <div
-                  className="flex items-center justify-center gap-1 space-x-1 cursor-pointer"
-                  onClick={() => {
-                    window.location.href =
-                      "https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09";
+              <div className="w-[100%] mt-6 flex justify-center items-center">
+                <button
+                  style={{
+                    background:
+                      "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
                   }}
+                  className="max-w-[324px] w-[100%] leading-normal !text-[16px] mx-auto h-[60px] text-anton font-[400] rounded-[60px] cursor-pointer relative z-10"
+                  onClick={() =>
+                    (window.location.href =
+                      "https://forms.gle/J11hnTDHwJVfhY348")
+                  }
                 >
-                  <p className="text-[12px] font-[600] text-[#fff] leading-3 uppercase">
-                    Join X
-                  </p>
-                  <img className="w-[18px] h-[18px]" src={telicon1} alt="" />
-                </div>
-
-                <div className="flex items-center justify-center gap-1 space-x-1">
-                  <p className="text-[12px] font-[600] text-[#fff] leading-3 uppercase">
-                    {" "}
-                    Join Telegram
-                  </p>
-                  <img
-                    className="cursor-pointer w-[18px] h-[18px]"
-                    src={telicon2}
-                    alt=""
-                  />
-                </div>
+                  JOIN THE PRESALE
+                </button>
               </div>
-            </div>
           </div>
         </div>
-        <img
-          src={vecleft}
-          className="absolute z-10 bottom-[-10%] max-h-[200px] left-[-20%]"
-          alt=""
-        />
-        <img
-          src={vecright}
-          className="absolute z-10 bottom-[-10%] max-h-[200px] right-[-23%]"
-          alt=""
-        />
       </div>
     </div>
   );

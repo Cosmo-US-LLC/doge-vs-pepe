@@ -33,7 +33,7 @@ const WidgetMob = ({ project, theme, symbol, ...others }) => {
 		<ApiContextWrapper project={project} symbol={symbol}>
 			<div
 				{...others}
-			className={clsx("max-w-[272.31px] bg-[var(--bg)] w-[100%] flex flex-col justify-between gap-[4px] px-[13px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]", others.className)}
+			className={clsx(" bg-[var(--bg)]  flex flex-col justify-between gap-[4px] px-[13px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]", others.className)}
 				style={{
 					"--bg": theme.bg,
 					...others.style
@@ -46,7 +46,7 @@ const WidgetMob = ({ project, theme, symbol, ...others }) => {
 						return (
 							<button
 								className={clsx(
-									"w-[163.8px] rounded-[30px] py-[2px] space-x-2 flex justify-center items-center border text-[#000]",
+									"w-[100%] rounded-[30px] py-[2px] space-x-2 flex justify-center items-center border text-[#000]",
 									{"border-transparent": !selected},
 									{"bg-[var(--bg)] border-black": selected},
 									{"cursor-pointer": !disabled},
