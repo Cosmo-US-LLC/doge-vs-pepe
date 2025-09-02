@@ -15,13 +15,13 @@ function Navbar() {
             href="#rules"
             className="text-[#fff] text-[16px] font-bold font-helvetica leading-[18.72px]"
           >
-            Rules
+            Fight Rules
           </a>
           <a
             href="#how-to-buy"
             className="text-[#fff] text-[16px] font-bold font-helvetica leading-[18.72px]"
           >
-            How To Buy
+            Prize Money
           </a>
           <div className="flex items-center">
             <img className="max-w-full" src={Logo} alt="DOGEVSPEPE Logo" />
@@ -30,7 +30,7 @@ function Navbar() {
             href="#whitepaper"
             className="text-[#fff] text-[16px] font-bold font-helvetica leading-[18.72px]"
           >
-            Whitepaper
+            How to Buy
           </a>
           <a
             href="#tokenomics"
