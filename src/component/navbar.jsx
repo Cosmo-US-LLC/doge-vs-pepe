@@ -36,7 +36,7 @@ function Navbar() {
           </button>
 
           <div className="flex items-center">
-            <img className="max-w-full" src={Logo} alt="DOGEVSPEPE Logo" />
+            <a href="/"><img className="max-w-full" src={Logo} alt="DOGEVSPEPE Logo" /></a>
           </div>
 
           <button
