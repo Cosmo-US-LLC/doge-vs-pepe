@@ -17,7 +17,8 @@ function TokenSec() {
       <div className="absolute bottom-0 left-0 right-0">
         <img className="" src={bottomShadow} alt="" />
       </div>
-      <div className=" max-w-[1245px] w-[100%] mx-auto flex justify-between pt-[20px] ">
+      <div className=" max-w-[1245px] relative w-[100%] mx-auto flex justify-between pt-[20px] ">
+          <h3 className="section_heading max-w-[300px] mx-auto absolute left-[40%] top-[50px]">Tokenomics</h3>
         <div className="max-w-[479.306px] relative space-y-[20px] w-[100%] ">
           <h3
             style={{

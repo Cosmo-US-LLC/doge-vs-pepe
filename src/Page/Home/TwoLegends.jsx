@@ -25,10 +25,12 @@ function TwoLegends() {
         </div>
         <div className="w-[50%] flex justify-center items-end pb-10">
           <div className="two_legends absolute -z-1 w-[100%] max-w-[905px] top-4 h-[708px]"></div>
-          <p className="text-center relative z-9 section_heading">
+         <div className="flex justify-end w-full">
+           <p className="text-center relative z-9 section_heading pl-6">
             Two Legends.
             <br /> One Crown.
           </p>
+         </div>
         </div>
       </div>
     </div>
