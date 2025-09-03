@@ -5,7 +5,9 @@ import bottomShadow from "../../assets/PrizeMoneySec/rectangle_289.webp";
 
 function PrizeMoneySec() {
   return (
-    <div className="w-[100%] bgprizsec h-[900px] flex justify-center items-center overflow-hidden relative">
+    <div className="w-[100%] bgprizsec h-[900px] flex justify-center items-center overflow-hidden relative"
+    id="prize_money"
+    >
       <div className="absolute top-0 left-0 right-0 w-full h-full">
         <img className="w-full h-full" src={topShadow} alt="" />
       </div>

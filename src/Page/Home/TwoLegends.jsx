@@ -2,7 +2,7 @@ import React from "react";
 
 function TwoLegends() {
   return (
-    <div className="w-[100%] h-[725px] relative flex flex-col justify-center items-center">
+    <div className="w-[100%] h-[725px] relative flex flex-col justify-center items-center" id="what_is">
       <div className="flex w-[100%] max-w-[1280px] mx-auto px-8 flex-row">
         <div className=" w-[50%] relative z-[99]">
           <div className="border-2  border-[#fff] px-[22px] py-[29px] m-4 rounded-[24px] bg-black/20 flex flex-col gap-4">

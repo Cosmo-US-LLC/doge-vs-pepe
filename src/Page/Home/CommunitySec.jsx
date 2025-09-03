@@ -46,7 +46,9 @@ function CommunitySec() {
   ];
 
   return (
-    <div className="w-[100%] flex justify-center items-center  h-full Communitybg overflow-hidden relative">
+    <div className="w-[100%] flex justify-center items-center  h-full Communitybg overflow-hidden relative"
+    id="roadmap"
+    >
       <div className="absolute top-0 left-0 right-0 w-full h-full">
         <img className="w-full h-full" src={topShadow} alt="" />
       </div>

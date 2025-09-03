@@ -29,6 +29,7 @@ export default function HowToBuy({ backgroundUrl = "", onCta }) {
     <section
       className="relative isolate w-full h-[700px] flex items-end"
       aria-label="How to buy section"
+      id="how_to_buy"
       style={{
         backgroundImage: `url(${backgroundUrl || bgImage})`,
         backgroundSize: "cover",

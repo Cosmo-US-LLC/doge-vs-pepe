@@ -38,7 +38,8 @@ export default function FightRules({ backgroundUrl }) {
   return (
     <section
       className="relative w-full max-w-[1440px]  mx-auto flex flex-col justify-center items-center"
-      aria-label="Fight rules"
+      aria-label="fight_rules"
+      id="fight_rules"
       style={{
         backgroundImage: `url(${backgroundUrl || bgImage})`,
         backgroundSize: "100% 100%",
