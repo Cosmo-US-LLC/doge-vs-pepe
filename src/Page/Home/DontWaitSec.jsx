@@ -45,9 +45,11 @@ function DontWaitSec() {
                 "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
             }}
             className="w-[457px] leading-normal mx-auto h-[65px] text-anton text-[30px] font-[400] rounded-[60px] cursor-pointer relative z-10"
-            onClick={() =>
-              (window.location.href = "https://forms.gle/J11hnTDHwJVfhY348")
-            }
+            onClick={() => {
+              document.getElementById("wallet")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
           >
             JOIN THE PRESALE
           </button>
