@@ -38,9 +38,7 @@ export default function HowToBuy({ backgroundUrl = "", onCta }) {
       <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_140px_60px_rgba(0,0,0,0.75)]" />
       <div className="relative px-8 pb-24 mx-auto max-w-7xl">
         {/* Title */}
-        <h2 className="text-center section_heading">
-          HOW TO BUY
-        </h2>
+        <h2 className="text-center section_heading">HOW TO BUY</h2>
 
         {/* Steps flex container */}
         <div className="flex flex-row justify-center gap-6 mt-14">
@@ -52,7 +50,9 @@ export default function HowToBuy({ backgroundUrl = "", onCta }) {
               <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-b from-lime-400/0 via-lime-400/0 to-lime-400/0 opacity-0 group-hover:opacity-100 blur-[2px] transition-opacity" />
 
               <div className="relative flex flex-col h-full">
-                <p className="text-[18px] font-helvetica font-[400] leading-[22px]">{s.step}</p>
+                <p className="text-[18px] font-helvetica font-[400] leading-[22px]">
+                  {s.step}
+                </p>
                 <h3 className="mt-3 font-anton text-[24px] leading-[28px] uppercase">
                   {s.title}
                 </h3>
@@ -64,17 +64,17 @@ export default function HowToBuy({ backgroundUrl = "", onCta }) {
           ))}
         </div>
 
-        {/* CTA */}
-         <div className="flex justify-center mt-9">
+        <div className="flex justify-center mt-9">
           <button
-            style={{
-              background:
-                "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
+            onClick={() => {
+              document.getElementById("wallet")?.scrollIntoView({
+                behavior: "smooth",
+              });
             }}
-            className="w-[457px] leading-normal mx-auto h-[65px] text-anton text-[30px] font-[400] rounded-[60px] cursor-pointer relative z-10"
-            onClick={() =>
-              (window.location.href = "https://forms.gle/J11hnTDHwJVfhY348")
-            }
+            className="w-[457px] h-[65px] mx-auto flex items-center justify-center 
+             text-anton text-[30px] font-normal leading-normal 
+             rounded-[60px] cursor-pointer relative z-10 
+             bg-gradient-to-r from-[#FFBF01] to-[#01FE37]"
           >
             JOIN THE PRESALE
           </button>

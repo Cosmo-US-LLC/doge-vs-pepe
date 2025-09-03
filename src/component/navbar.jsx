@@ -2,7 +2,7 @@ import Logo from "../assets/navbar/navLogo.svg";
 
 function Navbar() {
   return (
-    <div className="fixed w-full z-[99] top-6">
+    <div className="fixed w-full z-[9999] top-6">
       <div className="max-w-[1280px] rounded-[18px] bg-black/10 backdrop-blur-[16px] relative w-full mx-auto h-[86px] flex justify-center items-center px-8">
         <div className="flex gap-12 justify-center items-center">
           <a
