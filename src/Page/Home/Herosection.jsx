@@ -11,6 +11,11 @@ function HeroSection() {
 
           <div>
             <button
+              onClick={() => {
+              document.getElementById("wallet")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
               style={{
                 background:
                   "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
