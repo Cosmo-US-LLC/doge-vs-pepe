@@ -37,16 +37,17 @@ export default function FightRules({ backgroundUrl }) {
 
   return (
     <section
-      className="relative w-full max-w-[1440px] mx-auto flex flex-col justify-center items-center"
-      aria-label="Fight rules"
+      className="relative w-full max-w-[1440px]  mx-auto flex flex-col justify-center items-center"
+      aria-label="fight_rules"
+      id="fight_rules"
       style={{
         backgroundImage: `url(${backgroundUrl || bgImage})`,
         backgroundSize: "100% 100%",
         backgroundPosition: "100% 100%",
+        minHeight: "900px",
       }}
     >
-      <div className="flex w-full gap-10 max-w-[1280px] mx-auto px-8 flex-row">
-        {/* Left side - Empty space for visual balance */}
+      <div className="flex w-full gap-10 max-w-[1280px]  mx-auto px-8 flex-row">
         <div className="w-[50%] flex justify-center items-end pb-10">
           <p className="text-center section_heading">
             GLORY OR DEFEAT. <br />
@@ -54,8 +55,7 @@ export default function FightRules({ backgroundUrl }) {
           </p>
         </div>
 
-        {/* Right side - Rules content */}
-        <div className="w-[50%]">
+        <div className="h-[800px] flex justify-center items-end w-[50%]">
           <div
             className="border-2 border-white/25 px-8 py-8 m-4 rounded-lg bg-black/90 flex flex-col gap-4 shadow-[0_20px_60px_rgba(0,0,0,0.6)]"
            

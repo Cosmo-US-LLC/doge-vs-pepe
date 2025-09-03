@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
-import howitimg from "../../assets/HowItSec/how-it-img4.png";
-import telicon1 from "../../assets/HowItSec/logos_telegram.svg";
-import telicon2 from "../../assets/HowItSec/logos_telegram (1).svg";
-import vecleft from "../../assets/HowItSec/P (43).png";
-import vecright from "../../assets/HowItSec/P (43) (1).png";
+// import howitimg from "../../assets/HowItSec/how-it-img4.png";
+// import telicon1 from "../../assets/HowItSec/logos_telegram.svg";
+// import telicon2 from "../../assets/HowItSec/logos_telegram (1).svg";
+// import vecleft from "../../assets/HowItSec/P (43).png";
+// import vecright from "../../assets/HowItSec/P (43) (1).png";
 import awr1 from "../../assets/RoadmapSec/Vector (2).svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
