@@ -279,7 +279,6 @@
 
 // export default RoadmapMobile;
 
-
 import cardimg2 from "../../assets/mobile_assets/pepe_rd_mob.png";
 import cardimg1 from "../../assets/mobile_assets/doge_mob.png";
 import vectcard2 from "../../assets/CommunitySec/Ellipse 80.webp";
@@ -328,8 +327,9 @@ function RoadmapMob() {
   ];
 
   return (
-    <div className="w-[100%] flex justify-center items-center  h-full Communitybgmob overflow-hidden relative"
-    id="roadmap"
+    <div
+      className="w-[100%] flex justify-center items-center  h-full Communitybgmob overflow-hidden relative"
+      id="roadmap"
     >
       {/* <div className="absolute top-0 left-0 right-0 w-full h-full">
         <img className="w-full h-full" src={topShadow} alt="" />
@@ -337,10 +337,7 @@ function RoadmapMob() {
       <div className="absolute bottom-0 left-0 right-0 w-full h-full">
         <img className="w-full h-full" src={bottomShadow} alt="" />
       </div> */}
-      <div
-        className="max-w-[1312px] px-4 py-[30px] space-y-[40px] w-[100%] mx-auto z-10 relative"
-     
-      >
+      <div className="max-w-[1312px] px-4 py-[30px] space-y-[40px] w-[100%] mx-auto z-10 relative">
         <div>
           <h3
             style={{
@@ -351,7 +348,7 @@ function RoadmapMob() {
             Roadmap
           </h3>
         </div>
-        <div className="flex flex-col justify-between"> 
+        <div className="flex flex-col justify-between">
           <div className="p-4 relative rounded-[21.168px]">
             <div
               style={{
@@ -373,12 +370,8 @@ function RoadmapMob() {
               alt=""
             />
             <div className="flex flex-col items-center roadborder  relative w-[100%]  px-4 py-11  ">
-              <div className="w-[100%] flex justify-center min-h-[220px] pb-3">
-                <img
-                  src={cardimg1}
-                  className="h-[220px]"
-                  alt=""
-                />
+              <div className="w-[100%] flex justify-center min-h-[220px] pr-6 pb-3">
+                <img src={cardimg1} className="h-[220px]" alt="" />
               </div>
               <div className=" space-y-[10px]">
                 <div>
@@ -388,7 +381,7 @@ function RoadmapMob() {
                   <hr className="bg-[#F1A900] h-[5px] border-none w-[68px] mx-auto rounded-full" />
                 </div>
                 <h4 className="text-[16px] text-center text-[#FFF] font-[Anton] font-[400]">
-                 REPRESENTING TEAM DOGE
+                  REPRESENTING TEAM DOGE
                 </h4>
                 <p className="text-[14px] text-center text-[#FFF] font-helvetica font-[400] leading-[136%]">
                   &ldquo;Pepe, you&apos;re just a hyped up fair-weather fighter.
@@ -396,40 +389,47 @@ function RoadmapMob() {
                   I&apos;m the undisputed champ!&rdquo;
                 </p>
               </div>
-                <button
-                                className="rounded-[60px] font-[Anton] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[400] text-[#000] space-x-2 absolute bottom-[-17px] left-[24%] transition-all duration-300 hover:scale-105"
-                                style={{
-                                  background:
-                                    "linear-gradient(90deg, #FEC576 0%, #FFBF01 100%)",
-                                  boxShadow: "0px 2px 0px 0px #FFF",
-                                }}
-                                onMouseEnter={(e) => {
-                                  e.currentTarget.style.background =
-                                    "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)";
-                                  e.currentTarget.style.boxShadow =
-                                    "0px 4px 8px rgba(0, 0, 0, 0.25)";
-                                }}
-                                onMouseLeave={(e) => {
-                                  e.currentTarget.style.background =
-                                    "linear-gradient(90deg, #FEC576 0%, #FFBF01 100%)";
-                                  e.currentTarget.style.boxShadow = "0px 2px 0px 0px #FFF";
-                                }}
-                              >
-                                <img className="mr-2" src={arwr} alt="" />
-                                BUY NOW
-                              </button>
+              <button
+                className="rounded-[60px] font-[Anton] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[400] text-[#000] space-x-2 absolute bottom-[-17px] left-[24%] transition-all duration-300 hover:scale-105"
+                style={{
+                  background:
+                    "linear-gradient(90deg, #FEC576 0%, #FFBF01 100%)",
+                  boxShadow: "0px 2px 0px 0px #FFF",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background =
+                    "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)";
+                  e.currentTarget.style.boxShadow =
+                    "0px 4px 8px rgba(0, 0, 0, 0.25)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background =
+                    "linear-gradient(90deg, #FEC576 0%, #FFBF01 100%)";
+                  e.currentTarget.style.boxShadow = "0px 2px 0px 0px #FFF";
+                }}
+                onClick={() => {
+                  const el = document.getElementById("wallet");
+                  if (el) {
+                    const y =
+                      el.getBoundingClientRect().top + window.scrollY - 80;
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                  }
+                }}
+              >
+                <img className="mr-2" src={arwr} alt="" />
+                BUY NOW
+              </button>
             </div>
           </div>
-       
         </div>
         <div className="flex flex-col justify-between gap-6">
-         
-          <div className=" p-6 rounded-[21.168px] border border-[#FFBF00]/80 "
-          style={{
-            background:"rgba(118, 93, 19, 0.32)",
-            boxShadow:"6.534px -0.817px 32.1px 0 rgba(241, 173, 3, 0.32)",
-            backdropFilter:"blur(16.210472106933594px)"
-          }}
+          <div
+            className=" p-6 rounded-[21.168px] border border-[#FFBF00]/80 "
+            style={{
+              background: "rgba(118, 93, 19, 0.32)",
+              boxShadow: "6.534px -0.817px 32.1px 0 rgba(241, 173, 3, 0.32)",
+              backdropFilter: "blur(16.210472106933594px)",
+            }}
           >
             <h2 className="text-[20px] font-[700] text-[#FFBF00] font-helvetica text-center mb-8">
               TEAM DOGE ROADMAP
@@ -439,17 +439,17 @@ function RoadmapMob() {
                 <div key={index} className="flex items-start space-x-4">
                   <div className="w-2 h-2 bg-[#FFF] rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <p className="text-[16px] text-[#fff] font-[400] font-helvetica leading-relaxed"
-                     dangerouslySetInnerHTML={{ __html: phase.description }}
-                    >
-                    </p>
+                    <p
+                      className="text-[16px] text-[#fff] font-[400] font-helvetica leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: phase.description }}
+                    ></p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-             <div className="p-4 relative rounded-[21.168px]">
+          <div className="p-4 relative rounded-[21.168px]">
             <div
               style={{
                 position: "absolute",
@@ -471,11 +471,7 @@ function RoadmapMob() {
             />
             <div className="flex flex-col card2border  w-[100%]  px-4 py-11 justify-between ">
               <div className="flex justify-center min-h-[220px]">
-                <img
-                  src={cardimg2}
-                  className="h-[220px]"
-                  alt=""
-                />
+                <img src={cardimg2} className="h-[220px] pr-6" alt="" />
               </div>
               <div className=" space-y-[10px]">
                 <div>
@@ -485,7 +481,7 @@ function RoadmapMob() {
                   <hr className="bg-[#4EB52A] h-[5px] mx-auto border-none w-[68px] rounded-full" />
                 </div>
                 <h4 className="text-[16px] text-center font-[Anton] text-[#FFF] font-[400]">
-                REPRESENTING TEAM PEPE
+                  REPRESENTING TEAM PEPE
                 </h4>
                 <p className="text-[14px] text-[#FFF] text-center font-[400] font-helvetica leading-[136%]">
                   &ldquo;Doge, your time is up. You&apos;re just an old dog now.
@@ -493,37 +489,46 @@ function RoadmapMob() {
                   be your retirement party!&rdquo;
                 </p>
               </div>
-                 <button
-                                className="rounded-[60px] font-[Anton] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[400] text-[#000] space-x-2 absolute bottom-[-17px] left-[24%] transition-all duration-300  hover:scale-105"
-                                style={{
-                                  background:
-                                    "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)",
-                                  boxShadow: "0px 2px 0px 0px #FFF",
-                                }}
-                                onMouseEnter={(e) => {
-                                  e.currentTarget.style.background =
-                                    "linear-gradient(90deg, #F2B60F 0%, #F7D635 100%)";
-                                  e.currentTarget.style.boxShadow =
-                                    "0px 4px 8px rgba(0, 0, 0, 0.25)";
-                                }}
-                                onMouseLeave={(e) => {
-                                  e.currentTarget.style.background =
-                                    "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)";
-                                  e.currentTarget.style.boxShadow = "0px 2px 0px 0px #FFF";
-                                }}
-                              >
-                                BUY NOW <img className="ml-2 " src={arwl} alt="" />
-                              </button>
+              <button
+                className="rounded-[60px] font-[Anton] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[400] text-[#000] space-x-2 absolute bottom-[-17px] left-[24%] transition-all duration-300  hover:scale-105"
+                style={{
+                  background:
+                    "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)",
+                  boxShadow: "0px 2px 0px 0px #FFF",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background =
+                    "linear-gradient(90deg, #F2B60F 0%, #F7D635 100%)";
+                  e.currentTarget.style.boxShadow =
+                    "0px 4px 8px rgba(0, 0, 0, 0.25)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background =
+                    "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)";
+                  e.currentTarget.style.boxShadow = "0px 2px 0px 0px #FFF";
+                }}
+                onClick={() => {
+                  const el = document.getElementById("wallet");
+                  if (el) {
+                    const y =
+                      el.getBoundingClientRect().top + window.scrollY - 80;
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                  }
+                }}
+              >
+                BUY NOW <img className="ml-2 " src={arwl} alt="" />
+              </button>
             </div>
           </div>
 
           {/* Right Div - Team Pepe Roadmap */}
-          <div className=" p-6 rounded-[21.168px] border border-[#4EB52A]/80 "
-           style={{
-            background:"rgba(29, 114, 0, 0.32)",
-            boxShadow:"6.534px -0.817px 32px 0 rgba(116, 255, 96, 0.16)",
-            backdropFilter:"blur(16.210472106933594px)"
-          }}
+          <div
+            className=" p-6 rounded-[21.168px] border border-[#4EB52A]/80 "
+            style={{
+              background: "rgba(29, 114, 0, 0.32)",
+              boxShadow: "6.534px -0.817px 32px 0 rgba(116, 255, 96, 0.16)",
+              backdropFilter: "blur(16.210472106933594px)",
+            }}
           >
             <h2 className="text-[20px] font-[700] text-[#4EB52A] font-helvetica text-center mb-8  ">
               TEAM PEPE ROADMAP
@@ -533,10 +538,10 @@ function RoadmapMob() {
                 <div key={index} className="flex items-start space-x-4">
                   <div className="w-2 h-2 bg-[#fff] rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <p className="text-[16px] text-[#fff] font-[400] font-helvetica leading-relaxed"
-                     dangerouslySetInnerHTML={{ __html: phase.description }}
-                    >
-                    </p>
+                    <p
+                      className="text-[16px] text-[#fff] font-[400] font-helvetica leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: phase.description }}
+                    ></p>
                   </div>
                 </div>
               ))}

@@ -54,6 +54,13 @@ function MobileTwoLegends() {
                   "linear-gradient(90deg, #FFBF01 134.56%, #01FE37 134.57%)",
                 boxShadow: "0 1.395px 0 0 #FFF",
               }}
+               onClick={() => {
+              const el = document.getElementById("wallet");
+              if (el) {
+                const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }
+            }}
             >
               BUY NOW
             </button>
@@ -94,6 +101,13 @@ function MobileTwoLegends() {
               </div>
             </div>
             <button
+             onClick={() => {
+              const el = document.getElementById("wallet");
+              if (el) {
+                const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }
+            }}
               className="text-[16px] font-[400] text-[#000] font-[Anton] px-[26px] py-[6px] rounded-[41.842px]"
               style={{
                 background:
