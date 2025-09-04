@@ -37,14 +37,16 @@ export default function MobileFightRules({ backgroundUrl }) {
   };
 
   return (
-    <section className="relative w-full " aria-label="Fight rules" id="rules">
-      <div
-        className="flex justify-center items-end pb-12 min-h-[500px]"
-        style={{
+    <section className="relative w-full pb-[20px]" aria-label="Fight rules" id="rules"
+     style={{
           backgroundImage: `url(${backgroundUrl || bgImage})`,
           backgroundSize: "100% 100%",
           backgroundPosition: "100% 100%",
         }}
+    >
+      <div
+        className="flex justify-center items-end pb-12 min-h-[500px]"
+       
       >
         <p className="text-center text-[32px] text-[#fff] font-[400] font-[Anton] leading-[125%] uppercase">
           GLORY OR DEFEAT. <br />
