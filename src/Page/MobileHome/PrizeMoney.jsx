@@ -3,7 +3,7 @@ import prizeimg from "../../assets/PrizeMoneySec/prize-belt.png";
 
 function PrizeMoney() {
   return (
-    <div className="w-[100%] bgmobprizsec overflow-hidden pt-[60px] pb-[80px] px-4">
+    <div className="w-[100%] bgmobprizsec overflow-hidden pt-[60px] pb-[80px] px-4" id="prize-money">
       <div className="py-6 rounded-[26.9px] space-y-[45px] w-[100%] mx-auto relative min-h-[500px] border boredr-[#fff] bg-[#01010182] px-2" 
       style={{
         backdropFilter:"blur(2px)"

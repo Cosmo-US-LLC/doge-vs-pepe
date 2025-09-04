@@ -97,9 +97,9 @@ function HowItmobSec() {
               >
                 {sliderData.map((item, index) => (
                   <SwiperSlide key={index}>
-                      <p className="font-[Helvetica] pb-4 w-[100%] font-[400] mx-auto text-[#fff] leading-[157%] text-[15px] text-center">
-                         {item.text}
-            </p>
+                    <p className="font-[Helvetica] pb-4 w-[100%] font-[400] mx-auto text-[#fff] leading-[157%] text-[15px] text-center">
+                      {item.text}
+                    </p>
                     <img
                       src={item.img}
                       alt={`Slide ${index + 1}`}
@@ -109,7 +109,7 @@ function HowItmobSec() {
                 ))}
               </Swiper>
 
-               <div className="!h-[25px] !w-[25px] swiper-button-prev4   cursor-pointer  absolute !left-[-8%] !top-[45%] rotate-180">
+              <div className="!h-[25px] !w-[25px] swiper-button-prev4   cursor-pointer  absolute !left-[-8%] !top-[45%] rotate-180">
                 <img
                   src={awr1}
                   className="!h-[20px] !w-[20px]"
@@ -119,24 +119,26 @@ function HowItmobSec() {
               <div className="!h-[25px] !w-[25px] swiper-button-next4   cursor-pointer  absolute !right-[-8%] !top-[45%] ">
                 <img src={awr1} className="!h-[20px] !w-[20px]" alt="Next" />
               </div>
-
             </div>
-              <div className="w-[100%] mt-6 flex justify-center items-center">
-                <button
-                  style={{
-                    background:
-                      "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
-                  }}
-                  className="max-w-[324px] w-[100%] leading-normal !text-[16px] mx-auto h-[60px] text-anton font-[400] rounded-[60px] cursor-pointer relative z-10"
-                   onClick={() => {
-              document.getElementById("wallet")?.scrollIntoView({
-                behavior: "smooth",
-              });
-            }}
-                >
-                  JOIN THE PRESALE
-                </button>
-              </div>
+            <div className="w-[100%] mt-6 flex justify-center items-center">
+              <button
+                style={{
+                  background:
+                    "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
+                }}
+                className="max-w-[324px] w-[100%] leading-normal !text-[16px] mx-auto h-[60px] text-anton font-[400] rounded-[60px] cursor-pointer relative z-10"
+                onClick={() => {
+                  const el = document.getElementById("wallet");
+                  if (el) {
+                    const y =
+                      el.getBoundingClientRect().top + window.scrollY - 80;
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                  }
+                }}
+              >
+                JOIN THE PRESALE
+              </button>
+            </div>
           </div>
         </div>
       </div>

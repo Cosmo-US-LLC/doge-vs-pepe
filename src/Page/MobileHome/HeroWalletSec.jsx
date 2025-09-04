@@ -134,7 +134,7 @@ function HeroWalletSec() {
   );
 
   return (
-    <div className="w-[100%] relative" id="how-to-buy">
+    <div className="w-[100%] relative" id="wallet">
       <div className="max-w-[922px] ">
         <div className="flex flex-col justify-end relative pt-10 pb-[4rem] space-y-[20px] px-4 min-h-[990px] bgwltsecmobUp ">
           <div className="absolute bottom-0 left-0 w-full h-[4rem] bg-gradient-to-t from-black to-black/70"></div>
@@ -523,7 +523,7 @@ function HeroWalletSec() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-end py-10 space-y-[20px] px-4 min-h-[1060px] bgwltsecmobDn ">
+        <div className="flex flex-col justify-end py-10 space-y-[20px] px-4 min-h-[1090px] bgwltsecmobDn ">
           <div>
             <h3
               className="text-center text-[48px] leading-[116.667%] text-[#00FF2F] font-[Anton] font-[400]"

@@ -37,7 +37,7 @@ export default function MobileFightRules({ backgroundUrl }) {
   };
 
   return (
-    <section className="relative w-full " aria-label="Fight rules">
+    <section className="relative w-full " aria-label="Fight rules" id="rules">
       <div
         className="flex justify-center items-end pb-12 min-h-[500px]"
         style={{
