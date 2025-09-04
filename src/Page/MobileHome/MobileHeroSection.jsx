@@ -36,45 +36,37 @@ function MobileHeroSection() {
       id="what-is"
     >
       <div className=" relative mx-auto px-3">
-        <div className="w-full flex flex-col min-h-[60vh] justify-between items-center">
+        <div className="w-full flex flex-col min-h-[70vh] justify-between items-center">
           <div className="flex justify-center">
-            <h1
-              className="text-[#fff] !text-[50px] font-[400] leading-[110%]"
-            
-            >
+            <h1 className="text-[#fff] !text-[50px] font-[400] leading-[110%]">
               THE MEME FIGHT <br /> OF THE CENTURY
             </h1>
-
           </div>
-            <button
-              style={{
-                background:
-                  "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
-              }}
-              className="px-[38px] py-[18px] font-anton leading-normal mx-auto h-[65px] text-[16px] font-[400] rounded-[60px] cursor-pointer relative z-10"
-              onClick={() => {
-  const el = document.getElementById("wallet");
-  if (el) {
-    const y = el.getBoundingClientRect().top + window.scrollY - 80; 
-    window.scrollTo({ top: y, behavior: "smooth" });
-  }
-}}
-            >
-              JOIN THE PRESALE
-            </button>
-
+          <button
+            style={{
+              background:
+                "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
+            }}
+            className="px-[38px] py-[18px] font-anton leading-normal mx-auto h-[65px] text-[16px] font-[400] rounded-[60px] cursor-pointer relative z-10"
+            onClick={() => {
+              const el = document.getElementById("wallet");
+              if (el) {
+                const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }
+            }}
+          >
+            JOIN THE PRESALE
+          </button>
         </div>
-
-     
       </div>
-    
-      <div className="w-full py-4 flex items-center">
-       <div className="min-w-[120px]">
-         <h2 className="text-[#FFFCFC] font-[Anton] text-center text-[22px] font-[400] uppercase ">
-          As Seen On
-        </h2>
 
-       </div>
+      <div className="w-full py-4 flex items-center">
+        <div className="min-w-[120px]">
+          <h2 className="text-[#FFFCFC] font-[Anton] text-center text-[22px] font-[400] uppercase ">
+            As Seen On
+          </h2>
+        </div>
         <div className="flex items-center justify-start overflow-hidden whitespace-nowrap">
           <div className="flex animate-marquee">
             <img
