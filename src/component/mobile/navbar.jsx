@@ -187,7 +187,7 @@ function Navbar() {
                   window.scrollTo({ top: y, behavior: "smooth" });
                 }
               }}
-              className="w-[123px] h-[21px] font-[Anton] bg-gradient-to-r rounded-[32px] bg-[#0184E2] text-black text-[10px] from-[#FFBF01] to-[#01FE37] font-[400] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105"
+              className="w-[123px] py-[6px] font-[Anton] bg-gradient-to-r rounded-[32px] bg-[#0184E2] text-black text-[14px] from-[#FFBF01] to-[#01FE37] font-[400] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105 uppercase"
             >
               Join the Presale
             </button>

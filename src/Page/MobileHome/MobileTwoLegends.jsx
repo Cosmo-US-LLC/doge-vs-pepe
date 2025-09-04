@@ -3,13 +3,13 @@ import React from "react";
 import doge_icn from "../../assets/mobile_assets/coins (2).png"
 import pepe_icn from "../../assets/mobile_assets/coins (1).png"
 import vd_icn from "../../assets/mobile_assets/vs_icn.png"
-
+import two_leg_img from "../../assets/mobile_assets/mob_two_led_sec.png"
 function MobileTwoLegends() {
   return (
-    <div className="w-[100%]  flex flex-col justify-center items-center" id="what-is-dogevsPepe">
-      <div className=" w-[100%] two_legends_mobile mx-auto px-[8px]">
+    <div className="w-[100%] relative flex flex-col justify-center items-center" id="what-is-dogevsPepe">
+      <div className=" w-[100%]  mx-auto px-[8px]">
         <div
-          className="w-[100%] flex justify-between items-center border-[1px]  border-[#fff] rounded-[24px] p-[13px]"
+          className="w-[100%] relative z-[9] flex justify-between items-center border-[1px]  border-[#fff] rounded-[24px] p-[13px]"
           style={{
             background: "rgba(0, 0, 0, 0.50)",
             backdropFilter: "blur(40px)",
@@ -105,13 +105,16 @@ function MobileTwoLegends() {
             </button>
           </div>
         </div>
-        <div className="w-[100%]  min-h-[320px] h-[100%] px-[8px]  flex justify-center items-end pb-[2rem]">
+        <div className="  z-[1] absolute left-0 top-[5%] h-[100%] w-[100%]">
+          <img src={two_leg_img} alt="" />
+        </div>
+        <div className="w-[100%] relative z-[9] min-h-[320px] h-[100%] px-[8px]  flex justify-center items-end pb-[2rem]">
           <p className="text-center text-[#FFFCFC] leading-[125%] text-[32px] font-[Anton]">
             Two Legends.
             <br /> One Crown.
           </p>
         </div>
-        <div className=" w-[100%]">
+        <div className=" w-[100%] relative z-[9]">
           <div
             className="border-[1px] border-[#fff] px-1 py-5 !rounded-[24px]  flex flex-col gap-4"
             style={{
