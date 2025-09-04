@@ -16,7 +16,9 @@ function MobileTwoLegends() {
           }}
         >
           <div className="flex flex-col space-y-[5px] justify-center ">
-            <h3
+           <div className="flex items-center space-x-1 justify-center">
+            <img src={doge_icn} alt="" />
+             <h3
               className="text-[#FFBF0C] text-center text-[20px] font-[Anton]"
               style={{
                 textShadow: "4.556px -0.57px 17.144px #F1AD03",
@@ -26,12 +28,13 @@ function MobileTwoLegends() {
             >
               TEAM DOGE
             </h3>
+           </div>
             <h4 className="text-[25px] text-center text-[#fff] font-[400] font-[Anton]">
               $180,492.39
             </h4>
-            <div className='flex items-center space-x-1'>
-              <img src={doge_icn} alt="" />
-              <div className="w-[95.227px] h-[29px] flex items-center rounded-[24px] pl-[2px] border-[#EFAB00] border-[1px]">
+              
+            <div className='flex items-center '>
+              <div className="w-[100%] h-[29px] flex items-center rounded-[24px] pl-[2px] border-[#EFAB00] border-[1px]">
                 <div
                   className="w-[55.092px] h-[24.408px] flex items-center justify-center text-[#0B0101] text-[14px] font-[Anton] rounded-[43.445px]"
                   style={{
@@ -59,6 +62,8 @@ function MobileTwoLegends() {
             <img src={vd_icn} alt="" />
           </div>
           <div className="flex flex-col space-y-[5px] justify-center ">
+            <div className="flex items-center space-x-1 justify-center">
+               <img src={pepe_icn} alt="" />
             <h3
               className="text-[#00FF2F] text-center text-[20px] font-[Anton]"
               style={{
@@ -69,12 +74,13 @@ function MobileTwoLegends() {
             >
               TEAM PEPE
             </h3>
+            </div>
             <h4 className="text-[25px] text-center text-[#fff] font-[400] font-[Anton]">
             $240,492.39
             </h4>
-            <div className='flex items-center space-x-1'>
-              <img src={pepe_icn} alt="" />
-              <div className="w-[95.227px] h-[29px] border-[#09FC3C] border-[1px] flex items-center rounded-[24px] !pl-[1px]">
+            <div className='flex items-center'>
+             
+              <div className="w-[100%] h-[29px] border-[#09FC3C] border-[1px] flex items-center rounded-[24px] !pl-[1px]">
                 <div
                   className="w-[55.092px] flex items-center justify-center h-[24.408px] text-[#0B0101] text-[14px] font-[Anton] rounded-[43.445px]"
                   style={{
