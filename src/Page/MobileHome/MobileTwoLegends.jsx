@@ -6,10 +6,10 @@ import vd_icn from "../../assets/mobile_assets/vs_icn.png"
 
 function MobileTwoLegends() {
   return (
-    <div className="w-[100%]  flex flex-col justify-center items-center">
+    <div className="w-[100%]  flex flex-col justify-center items-center" id="what-is-dogevsPepe">
       <div className=" w-[100%] two_legends_mobile mx-auto px-[8px]">
         <div
-          className="w-[100%] flex justify-between items-center border-[1px] space-y-[10px] border-[#fff] rounded-[24px] p-[13px]"
+          className="w-[100%] flex justify-between items-center border-[1px]  border-[#fff] rounded-[24px] p-[13px]"
           style={{
             background: "rgba(0, 0, 0, 0.50)",
             backdropFilter: "blur(40px)",

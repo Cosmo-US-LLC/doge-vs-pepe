@@ -2,7 +2,8 @@ import React from "react";
 import socialicn1 from "../../assets/footer/telegram.svg";
 import socialicn2 from "../../assets/footer/instagram.svg";
 import socialicn3 from "../../assets/footer/twitter.svg";
-import dogevspepe from "../../assets/Mobile/dogevspepe.png";
+import dogevspepe from "../../assets/Mobile/nav-logo.webp";
+
 
 function Footer() {
   const handleScroll = (event, targetId, offset) => {

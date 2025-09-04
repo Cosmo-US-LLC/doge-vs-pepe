@@ -7,7 +7,7 @@ function TokenmobSec() {
   return (
     <div className="relative w-[100%] Tokenomicsbgmob overflow-hidden" id="tokenomics">
 
-      <h3 className="text-[32px] font-[Anton] text-right leading-[125%] uppercase font-[400] text-[#FFF] uppercase">Tokenomics</h3>
+      <h3 className="text-[32px] pb-[30px] font-[Anton] text-center leading-[125%] uppercase font-[400] text-[#FFF] uppercase">Tokenomics</h3>
       <div className="">
        <div>
          <div className="relative space-y-[5px] w-[100%] px-4">

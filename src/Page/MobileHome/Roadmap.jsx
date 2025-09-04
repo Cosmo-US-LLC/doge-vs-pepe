@@ -291,51 +291,46 @@ import arwr from "../../assets/herosec/Arrowrght.svg";
 function RoadmapMob() {
   const dogeRoadmapPhases = [
     {
-      title: "Preparation",
       description:
-        "Prove once again why Doge is the undefeated champion. Rally millions of loyal fans and build the strongest Doge Army in meme history.",
+        "<strong>Preparation:</strong> Prove once again why Doge is the undefeated champion. Rally millions of loyal fans and build the strongest Doge Army in meme history.",
     },
     {
-      title: "The Fight",
       description:
-        "Take on Pepe head-to-head. Show the world that an OG Meme Heavyweight never backs down and secure the crown.",
+        "<strong>The Fight:</strong> Take on Pepe head-to-head. Show the world that an OG Meme Heavyweight never backs down and secure the crown.",
     },
     {
-      title: "Victory Launch",
       description:
-        "Celebrate the triumph with a massive launch event and CEX listings, powered by global hype and top industry support.",
+        "<strong>Victory Launch:</strong> Celebrate the triumph with a massive launch event and CEX listings, powered by global hype and top industry support.",
     },
     {
-      title: "Domination",
       description:
-        "Lead the Doge movement to the next level. Become the fastest growing meme by market cap with millions of Doge holders driving the legacy forward.",
+        "<strong>Domination:</strong>  Lead the Doge movement to the next level. Become the fastest growing meme by market cap with millions of Doge holders driving the legacy forward.",
     },
   ];
 
   const pepeRoadmapPhases = [
     {
-      title: "Concept Development",
       description:
-        "Craft the vision for $PEPE, combining Pepe’s iconic status with a thrilling presale.",
+        "<strong>Concept Development:</strong>  Craft the vision for $PEPE, combining Pepe’s iconic status with a thrilling presale.",
     },
     {
-      title: "Website Launch",
       description:
-        "Launch the $PEPE site with presale details and community tools.",
+        "<strong>Website Launch:</strong>  Launch the $PEPE site with presale details and community tools.",
     },
     {
-      title: "Community Setup",
-      description: "Create Telegram channel and invite Team Pepe fans to join.",
+      description:
+        "<strong>Community Setup:</strong>  Create Telegram channel and invite Team Pepe fans to join.",
     },
     {
-      title: "Marketing Kickoff",
       description:
-        "Launch social media campaigns, influencer shoutouts, and press releases to unite the Pepe army.",
+        "<strong>Marketing Kickoff:</strong>  Launch social media campaigns, influencer shoutouts, and press releases to unite the Pepe army.",
     },
   ];
 
   return (
-    <div className="w-[100%] flex justify-center items-center  h-full Communitybgmob overflow-hidden relative">
+    <div className="w-[100%] flex justify-center items-center  h-full Communitybgmob overflow-hidden relative"
+    id="roadmap"
+    >
       {/* <div className="absolute top-0 left-0 right-0 w-full h-full">
         <img className="w-full h-full" src={topShadow} alt="" />
       </div>
@@ -421,7 +416,7 @@ function RoadmapMob() {
                                 }}
                               >
                                 <img className="mr-2" src={arwr} alt="" />
-                                BUY $DOGE
+                                BUY NOW
                               </button>
             </div>
           </div>
@@ -442,13 +437,11 @@ function RoadmapMob() {
             <div className="space-y-6">
               {dogeRoadmapPhases.map((phase, index) => (
                 <div key={index} className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-[#FFF] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#FFF] rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h3 className="text-[16px] font-[700] font-helvetica text-[#fff] mb-2">
-                      {phase.title}
-                    </h3>
-                    <p className="text-[16px] text-[#fff] font-[400] font-helvetica leading-relaxed">
-                      {phase.description}
+                    <p className="text-[16px] text-[#fff] font-[400] font-helvetica leading-relaxed"
+                     dangerouslySetInnerHTML={{ __html: phase.description }}
+                    >
                     </p>
                   </div>
                 </div>
@@ -492,7 +485,7 @@ function RoadmapMob() {
                   <hr className="bg-[#4EB52A] h-[5px] mx-auto border-none w-[68px] rounded-full" />
                 </div>
                 <h4 className="text-[16px] text-center font-[Anton] text-[#FFF] font-[400]">
-                  $PEPE
+                REPRESENTING TEAM PEPE
                 </h4>
                 <p className="text-[14px] text-[#FFF] text-center font-[400] font-helvetica leading-[136%]">
                   &ldquo;Doge, your time is up. You&apos;re just an old dog now.
@@ -519,7 +512,7 @@ function RoadmapMob() {
                                   e.currentTarget.style.boxShadow = "0px 2px 0px 0px #FFF";
                                 }}
                               >
-                                BUY $PEPE <img className="ml-2 " src={arwl} alt="" />
+                                BUY NOW <img className="ml-2 " src={arwl} alt="" />
                               </button>
             </div>
           </div>
@@ -538,13 +531,11 @@ function RoadmapMob() {
             <div className="space-y-6">
               {pepeRoadmapPhases.map((phase, index) => (
                 <div key={index} className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-[#fff] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#fff] rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h3 className="text-[16px] font-[700] font-helvetica text-[#fff] mb-2">
-                      {phase.title}
-                    </h3>
-                    <p className="text-[16px] text-[#fff] font-[400] font-helvetica leading-relaxed">
-                      {phase.description}
+                    <p className="text-[16px] text-[#fff] font-[400] font-helvetica leading-relaxed"
+                     dangerouslySetInnerHTML={{ __html: phase.description }}
+                    >
                     </p>
                   </div>
                 </div>
