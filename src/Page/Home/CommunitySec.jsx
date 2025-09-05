@@ -240,7 +240,7 @@ function CommunitySec() {
                     <div className="w-2 h-2 bg-[#FFF] rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <p
-                        className="text-[20px] text-[#fff] font-[400] font-[Helvetica] leading-relaxed"
+                        className="text-[24px] text-[#fff] font-[400] font-[Helvetica] leading-relaxed"
                         dangerouslySetInnerHTML={{ __html: phase.description }}
                       ></p>
                     </div>
@@ -274,7 +274,7 @@ function CommunitySec() {
                     <div className="w-3 h-3 bg-[#fff] rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <p
-                        className="text-[20px] text-[#fff] font-[400] font-helvetica leading-relaxed"
+                        className="text-[24px] text-[#fff] font-[400] font-helvetica leading-relaxed"
                         dangerouslySetInnerHTML={{ __html: phase.description }}
                       ></p>
                     </div>
