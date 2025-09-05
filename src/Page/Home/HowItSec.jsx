@@ -98,7 +98,7 @@ function HowItSec() {
             >
               {sliderData.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <p className=" font-[400]  text-[#fff] leading-[20px] text-[16px] font-helvetica text-center mb-6">
+                  <p className=" font-[400] font-helvetica text-[#fff] leading-[28px] text-[24px]  text-center mb-6">
                     {item.text}
                   </p>
                  <div className="mx-auto max-w-[450px]">

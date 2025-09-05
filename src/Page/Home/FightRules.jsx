@@ -1,5 +1,6 @@
 import { useState } from "react";
 import bgImage from "../../assets/fightRule/Fight-rules.webp";
+import { Plus, Minus } from "lucide-react";
 
 export default function FightRules({ backgroundUrl }) {
   const rules = [
@@ -56,22 +57,26 @@ export default function FightRules({ backgroundUrl }) {
         </div>
 
         <div className="h-[800px] flex justify-center items-end w-[50%]">
-          <div
-            className="border-2 border-white/25 px-8 py-8 m-4 rounded-lg bg-black/90 flex flex-col gap-4 shadow-[0_20px_60px_rgba(0,0,0,0.6)]"
-           
-          >
+          <div className="border-2 border-white/25 px-8 py-8 m-4 rounded-lg bg-black/90 flex flex-col gap-4 shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
             <h2 className="text-center section_heading">THE FIGHT RULES</h2>
 
             <div className="flex flex-col gap-4">
               {rules.map((rule, index) => (
                 <div
                   key={index}
-                  className="py-4 border-b border-white/20 last:border-b-0"
-                   onClick={() => toggleAccordion(index)}
+                  className="py-4 border-b border-white/20 last:border-b-0 "
+                  onClick={() => toggleAccordion(index)}
                 >
-                  <p className="text-[32px] font-[400] leading-[40px] tracking-wide text-[#fff] uppercase font-anton">
+                 <div children className="flex justify-between space-x-2 items-center cursor-pointer">
+                   <p className="text-[32px] font-[400] leading-[40px] tracking-wide text-[#fff] uppercase font-anton">
                     {rule.title}
                   </p>
+                  {activeIndex === index ? (
+                    <Minus className="text-white w-6 h-6" />
+                  ) : (
+                    <Plus className="text-white w-6 h-6" />
+                  )}
+                 </div>
                   <div
                     className={`overflow-hidden max-w-[360px] transition-all duration-500 ease-in-out ${
                       activeIndex === index
