@@ -30,9 +30,9 @@ function Footer() {
         {/* Links */}
         <div className="flex flex-col gap-2">
           <a
-            href="https://example.com"
+            href="what-is-dogevsPepe"
             className="text-[18px] text-[#fff] font-[400] block"
-            onClick={(e) => handleScroll(e, "how-it-all-began", 90)}
+            onClick={(e) => handleScroll(e, "what-is-dogevsPepe", 90)}
           >
             What is DogevsPepe?
           </a>
@@ -40,50 +40,37 @@ function Footer() {
             The First Ever Crypto Meme Fight
           </a> */}
           <a
-            href="https://example.com"
+            href="#rules"
             className="text-[18px] text-[#fff] font-[400] block"
             onClick={(e) => handleScroll(e, "rules", 90)}
           >
-            The 7 Rules
+            Fight Rules
           </a>
           <a
-            href="https://example.com"
+            href="#prize-money"
             className="text-[18px] text-[#fff] font-[400] block"
-            onClick={(e) => handleScroll(e, "milestones", 90)}
+            onClick={(e) => handleScroll(e, "prize-money", 90)}
           >
-            Milestones
+            Prize Money
           </a>
-          {/* <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
-            The Community Decides
-          </a> */}
+         
           <a
-            href="https://example.com"
+            href="#roadmap"
             className="text-[18px] text-[#fff] font-[400] block"
             onClick={(e) => handleScroll(e, "roadmap", 90)}
           >
             Roadmap
           </a>
-          {/* <a href="https://example.com" className="mt-4 text-[18px] text-[#fff] font-[400] block">
-            $DOGE Tokenomics
-          </a> */}
-          {/* <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
-            $PEPE Tokenomics
-          </a> */}
-          {/* <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
-            Join And Support Your Team On Telegram
-          </a> */}
-          {/* <a href="https://example.com" className="text-[18px] text-[#fff] font-[400] block">
-            Don’t Wait – The Race is On!
-          </a> */}
+        
           <a
-            href="https://example.com"
+            href="#faq"
             className="text-[18px] text-[#fff] font-[400] block"
             onClick={(e) => handleScroll(e, "faq", 90)}
           >
             FAQ
           </a>
           <a
-            href="https://example.com"
+            href="#faq"
             className="text-[18px] text-[#fff] font-[400] block"
             onClick={(e) => handleScroll(e, "faq", 90)}
           >

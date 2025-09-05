@@ -27,9 +27,9 @@ function Footer() {
           </div>
           <div className="space-y-[10px]">
             <a
-              href="firstever"
+              href="what_is"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-              onClick={(e) => handleScroll(e, "firstever", 90)}
+              onClick={(e) => handleScroll(e, "what_is", 90)}
             >
               What is DogevsPepe?
             </a>
@@ -40,9 +40,9 @@ function Footer() {
               The First Ever Crypto Meme Fight
             </a> */}
             <a
-              href="rules"
+              href="fight_rules"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-              onClick={(e) => handleScroll(e, "rules", 90)}
+              onClick={(e) => handleScroll(e, "fight_rules", 90)}
             >
               Fight Rules
             </a>
