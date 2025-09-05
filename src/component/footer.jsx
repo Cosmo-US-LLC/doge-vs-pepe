@@ -44,14 +44,14 @@ function Footer() {
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
               onClick={(e) => handleScroll(e, "rules", 90)}
             >
-              The 7 Rules
+              Fight Rules
             </a>
             <a
-              href="milestones"
+              href="prize_money"
               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-              onClick={(e) => handleScroll(e, "milestones", 90)}
+              onClick={(e) => handleScroll(e, "prize_money", 90)}
             >
-              Milestones
+              Prize Money
             </a>
             {/* <a
               href="https://example.com"

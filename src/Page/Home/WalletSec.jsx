@@ -8,7 +8,7 @@ import arwbtn1 from "../../assets/walletsec/btnicns (3).svg";
 import arwbtn2 from "../../assets/walletsec/btnicns (1).svg";
 import arwbtn3 from "../../assets/walletsec/btnicns (2).svg";
 
-import coinsw1 from "../../assets/walletsec/coins/tokens (14).svg";
+import coinsw1 from "../../assets/walletsec/coins/tokens (1).svg";
 import coinsw2 from "../../assets/walletsec/coins/tokens (13).svg";
 import coinsw3 from "../../assets/walletsec/coins/tokens (12).svg";
 import coinsw4 from "../../assets/walletsec/coins/tokens (11).svg";
@@ -40,7 +40,7 @@ import TokenSelectDropdown from "../../component/TokenDropdown";
 
 const Buybuttons = [
   { id: "Buy", label: "Buy", img: arwbtn1 },
-  { id: "Transaction ", label: "Transaction ", img: arwbtn3 },
+  { id: "Transactions ", label: "Transactions ", img: arwbtn3 },
 ];
 
 const tokenSelect = [
@@ -49,19 +49,19 @@ const tokenSelect = [
     { id: 2, symbol: "USDT", sub_symbol: "ERC-20", icon: coinsw5 },
   ],
   [
-    { id: 3, symbol: "BNB", sub_symbol: "ERC-20", icon: coinsw13 },
+    { id: 3, symbol: "USDT", sub_symbol: "ERC-20", icon: coinsw5 },
     { id: 4, symbol: "SOL", sub_symbol: "ERC-20", icon: coinsw4 },
   ],
   [
-    { id: 5, symbol: "BTC", sub_symbol: "BITCOIN", icon: coinsw14 },
+    { id: 5, symbol: "BNB", sub_symbol: "BITCOIN", icon: coinsw13 },
     { id: 6, symbol: "AVAX", sub_symbol: "BITCOIN", icon: coinsw6 },
   ],
   [
-    { id: 7, symbol: "USDT", icon: coinsw5 },
+    { id: 7, symbol: "SOL", icon: coinsw4 },
     { id: 8, symbol: "ADA", icon: coinsw10 },
   ],
   [
-    { id: 9, symbol: "XRP", sub_symbol: "ERC-20", icon: coinsw7 },
+    { id: 9, symbol: "USDC", sub_symbol: "ERC-20", icon: coinsw6 },
     { id: 10, symbol: "DOGE", sub_symbol: "ERC-20", icon: coinsw11 },
   ],
   [{ id: 11, symbol: "More" }],
@@ -70,28 +70,33 @@ const tokenSelect = [
 
 const iconsData = [
   {
-    img: coinsw13,
-  },
-  {
     img: coinsw14,
   },
-  {
-    img: coinsw3,
+   {
+    img: coinsw7,
   },
-  {
-    img: coinsw4,
+   {
+    img: coinsw9,
   },
-  {
-    img: coinsw5,
+   {
+    img: coinsw8,
   },
-  {
-    img: coinsw6,
+   {
+    img: coinsw11,
   },
+   {
+    img: coinsw1,
+  },
+  
+   
+
+
 ];
 
 function HeroWalletSec() {
 
   const [activeButton, setActiveButton] = useState("Buy");
+  const [activeButtonPepe, setActiveButtonPepe] = useState("Buy");
 
  
 
@@ -265,7 +270,7 @@ function HeroWalletSec() {
                     <img
                       key={item.id}
                       src={item.img}
-                      className="h-[18px] w-[18px]"
+                      className="max-h-[24px]"
                       alt={`Icon`}
                     />
                   ))}
@@ -506,9 +511,9 @@ function HeroWalletSec() {
               {Buybuttons.map((button) => (
                 <div
                   key={button.id}
-                  onClick={() => setActiveButton(button.id)}
+                  onClick={() => setActiveButtonPepe(button.id)}
                   className={`w-[100%] rounded-[30px] space-x-[4px] flex justify-center items-center cursor-pointer ${
-                    activeButton === button.id
+                    activeButtonPepe === button.id
                       ? "bg-[#4EB52A] border border-black"
                       : "text-[#000]"
                   }`}
@@ -520,7 +525,7 @@ function HeroWalletSec() {
                   />
                   <p
                     className={`text-[18px] font-[Helvetica] font-[700] ${
-                      activeButton === button.id ? "text-[#000]" : "text-[#000]"
+                      activeButtonPepe === button.id ? "text-[#000]" : "text-[#000]"
                     }`}
                   >
                     {button.label}
@@ -631,7 +636,7 @@ function HeroWalletSec() {
                     <img
                       key={item.id}
                       src={item.img}
-                      className="h-[18px] w-[18px]"
+                      className="max-h-[24px]"
                       alt={`Icon`}
                     />
                   ))}
