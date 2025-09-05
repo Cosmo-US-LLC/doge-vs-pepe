@@ -155,7 +155,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="max-w-[90%] xl:max-w-[1031px] w-[100%] mx-auto space-y-[27px]">
+        <div className="max-w-[100%] max-w-[840px] mx-auto space-y-[27px]">
           <p className="text-[18px] font-[400] text-center leading-[119.856%] text-[#fff]">
             Cryptocurrency may be unregulated in your jurisdiction. The value of
             cryptocurrencies may go up as well as down. Profits may be subject

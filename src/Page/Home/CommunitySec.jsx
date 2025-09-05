@@ -137,8 +137,8 @@ function CommunitySec() {
                   e.currentTarget.style.boxShadow = "0px 2px 0px 0px #FFF";
                 }}
               >
-                BUY $DOGE
-                <img className="ml-2" src={arwl} alt="" />
+                <img className="mr-2" src={arwr} alt="" />
+                BUY NOW
               </button>
             </div>
           </div>
@@ -210,7 +210,7 @@ function CommunitySec() {
                   e.currentTarget.style.boxShadow = "0px 2px 0px 0px #FFF";
                 }}
               >
-                BUY $PEPE <img className="ml-2 " src={arwl} alt="" />
+                BUY NOW <img className="ml-2 " src={arwl} alt="" />
               </button>
             </div>
           </div>

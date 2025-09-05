@@ -40,7 +40,7 @@ import TokenSelectDropdown from "../../component/TokenDropdown";
 
 const Buybuttons = [
   { id: "Buy", label: "Buy", img: arwbtn1 },
-  { id: "History", label: "History", img: arwbtn3 },
+  { id: "Transaction ", label: "Transaction ", img: arwbtn3 },
 ];
 
 const tokenSelect = [
