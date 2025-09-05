@@ -30,19 +30,19 @@ function CommunitySec() {
   const pepeRoadmapPhases = [
     {
       description:
-        "<strong>Concept Development:</strong>  Craft the vision for $PEPE, combining Pepe’s iconic status with a thrilling presale.",
+        "<strong>Preparation:</strong>  Rise as the fearless challenger. Unite Pepe fans across the globe and build unstoppable momentum toward the top.  ",
     },
     {
       description:
-        "<strong>Website Launch:</strong>  Launch the $PEPE site with presale details and community tools.",
+        "<strong>The Fight:</strong> Shock the meme world by knocking out Doge and becoming the new Meme Heavyweight Champion.",
     },
     {
       description:
-        "<strong>Community Setup:</strong>  Create Telegram channel and invite Team Pepe fans to join.",
+        "<strong>Victory Launch:</strong> Ignite the scene with a legendary launch event and CEX listings, fueled by explosive community power and massive worldwide attention.",
     },
     {
       description:
-        "<strong>Marketing Kickoff:</strong>  Launch social media campaigns, influencer shoutouts, and press releases to unite the Pepe army.",
+        "<strong>Domination:</strong>  Establish Pepe as the new meme king. Aim for the fastest growth in market cap with millions of believers joining the Pepe movement.",
     },
   ];
 

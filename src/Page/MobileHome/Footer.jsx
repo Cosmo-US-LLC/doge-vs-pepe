@@ -128,7 +128,7 @@ function Footer() {
 
         {/* Footer Text */}
         <div className="mt-16">
-          <p className="text-[16px] font-[400] text-[#B4A5A5] leading-[18px] text-center">
+          <p className="text-[16px] font-[400] text-[#fff] leading-[18px] text-center">
             Cryptocurrency may be unregulated in your jurisdiction. The value of
             cryptocurrencies may go up as well as down. Profits may be subject
             to capital gains or other taxes applicable in your jurisdiction.
