@@ -64,7 +64,9 @@ const tokenSelect = [
     { id: 9, symbol: "USDC", sub_symbol: "ERC-20", icon: coinsw6 },
     { id: 10, symbol: "DOGE", sub_symbol: "ERC-20", icon: coinsw11 },
   ],
-  [{ id: 11, symbol: "More" }],
+  [{ id: 11, symbol: "More", icon: coinsw11 },
+    
+  ],
 ];
 
 
