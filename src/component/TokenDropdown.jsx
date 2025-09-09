@@ -16,6 +16,9 @@ export default function TokenSelectDropdown({ tokens, onChange }) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setOpen(false);
       }
+
+
+      
     }
 
     document.addEventListener("mousedown", handleClickOutside);
