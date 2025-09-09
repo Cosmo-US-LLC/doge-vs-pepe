@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from "react";
 
 export default function TokenSelectDropdown({ tokens, onChange }) {
@@ -27,25 +26,30 @@ export default function TokenSelectDropdown({ tokens, onChange }) {
 
   return (
     <div className="relative w-[100%]" ref={dropdownRef}>
-    
       <button
         onClick={() => setOpen(!open)}
         className="flex items-center justify-between w-full px-2 h-[32px] rounded-[8px] cursor-pointer"
         style={{ background: "rgba(255, 255, 255, 0.20)" }}
       >
-        <span className="flex items-center gap-2 text-[11px] font-[700] font-[Inter]">
-          {selected.icon && (
-            <img
-              src={selected.icon}
-              alt={selected.symbol}
-              className="w-5 h-5"
-            />
-          )}
-          <span className="leading-[8px]">
+        <span className="flex items-center gap-2 text-[11.7px] font-[700] font-[Inter]">
+          <div className="min-w-[20px]">
+            {selected.icon && (
+              <img
+                src={selected.icon}
+                alt={selected.symbol}
+                className="w-5 h-5"
+              />
+            )}
+          </div>
+          <span
+            className={`leading-[8px] ${
+              selected.symbol === "More" ? "text-[14px] " : "text-[14px]"
+            }`}
+          >
             {selected.symbol}
             <br />
             {selected.sub_symbol && (
-              <span className="text-[6px] font-[400]">
+              <span className="text-[6px] leading-[2px] font-[400]">
                 {selected.sub_symbol}
               </span>
             )}
@@ -78,12 +82,14 @@ export default function TokenSelectDropdown({ tokens, onChange }) {
             <button
               key={token.id}
               onClick={() => handleSelect(token)}
-              className="flex items-center gap-2 w-full px-3 py-2 text-[11px] font-[700] font-[Inter] text-left hover:bg-gray-100/80"
+              className="flex items-center gap-2 w-full px-3 py-2 text-[11.7px] font-[700] font-[Inter] text-left hover:bg-gray-100/80"
               style={{
                 background: "rgba(201, 187, 187, 0.47)",
               }}
             >
-              <img src={token.icon} alt={token.symbol} className="w-5 h-5" />
+              {token.icon && (
+                <img src={token.icon} alt={token.symbol} className="w-5 h-5" />
+              )}
               {token.symbol}
             </button>
           ))}

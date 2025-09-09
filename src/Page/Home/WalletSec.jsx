@@ -22,6 +22,7 @@ import coinsw11 from "../../assets/walletsec/coins/tokens (4).svg";
 import coinsw12 from "../../assets/walletsec/coins/tokens (3).svg";
 import coinsw13 from "../../assets/walletsec/coins/tokens (16).svg";
 import coinsw14 from "../../assets/walletsec/coins/tokens (15).svg";
+import tokens from "../../assets/walletsec/coins/tokens.svg";
 
 
 
@@ -50,10 +51,10 @@ const tokenSelect = [
   ],
   [
     { id: 3, symbol: "USDT", sub_symbol: "ERC-20", icon: coinsw5 },
-    { id: 4, symbol: "SOL", sub_symbol: "ERC-20", icon: coinsw4 },
+    { id: 4, symbol: "SOL", sub_symbol: "SOLANA", icon: coinsw4 },
   ],
   [
-    { id: 5, symbol: "BNB", sub_symbol: "BITCOIN", icon: coinsw13 },
+    { id: 5, symbol: "BNB", sub_symbol: "BSC-20", icon: coinsw13 },
     { id: 6, symbol: "AVAX", sub_symbol: "BITCOIN", icon: coinsw6 },
   ],
   [
@@ -64,7 +65,7 @@ const tokenSelect = [
     { id: 9, symbol: "USDC", sub_symbol: "ERC-20", icon: coinsw6 },
     { id: 10, symbol: "DOGE", sub_symbol: "ERC-20", icon: coinsw11 },
   ],
-  [{ id: 11, symbol: "More", icon: coinsw11 },
+  [{ id: 11, symbol: "More" },
     
   ],
 ];
@@ -249,7 +250,7 @@ function HeroWalletSec() {
 
                 <div className="relative min-w-[136px] w-fit inline-block text-left">
                   <div
-                    className="flex items-center justify-start space-x-1 cursor-pointer p-2 rounded-[8px]  w-[100%]"
+                    className="flex items-center justify-start space-x-2 cursor-pointer p-2 rounded-[8px]  w-[100%]"
                     style={{ background: "rgba(255, 255, 255, 0.20)" }}
                   >
                     <img
@@ -268,14 +269,12 @@ function HeroWalletSec() {
                   Accepting
                 </h5>
                 <div className="flex justify-between space-x-1 max-w-[200px] mx-auto">
-                  {iconsData.map((item) => (
+                 
                     <img
-                      key={item.id}
-                      src={item.img}
+                      src={tokens}
                       className="max-h-[24px]"
-                      alt={`Icon`}
+                      alt={`tokens`}
                     />
-                  ))}
                 </div>
               </div>
               <div className="space-y-[10px]">
@@ -615,7 +614,7 @@ function HeroWalletSec() {
 
                 <div className="relative min-w-[136px] w-fit inline-block text-left">
                   <div
-                    className="flex items-center justify-start space-x-1 cursor-pointer p-2 rounded-[8px]  w-[100%]"
+                    className="flex items-center justify-start space-x-2 cursor-pointer p-2 rounded-[8px]  w-[100%]"
                     style={{ background: "rgba(255, 255, 255, 0.20)" }}
                   >
                     <img
@@ -634,14 +633,11 @@ function HeroWalletSec() {
                   Accepting
                 </h5>
                 <div className="flex justify-between space-x-1 max-w-[200px] mx-auto">
-                  {iconsData.map((item) => (
-                    <img
-                      key={item.id}
-                      src={item.img}
+                  <img
+                      src={tokens}
                       className="max-h-[24px]"
-                      alt={`Icon`}
+                      alt={`tokens`}
                     />
-                  ))}
                 </div>
               </div>
               <div className="space-y-[10px]">
