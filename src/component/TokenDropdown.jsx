@@ -42,14 +42,14 @@ export default function TokenSelectDropdown({ tokens, onChange }) {
             )}
           </div>
           <span
-            className={`leading-[8px] ${
-              selected.symbol === "More" ? "text-[14px] " : "text-[14px]"
+            className={`leading-[10px] text-start ${
+              selected.symbol === "More" ? "text-[14px] " : "text-[11.7px]"
             }`}
           >
             {selected.symbol}
             <br />
             {selected.sub_symbol && (
-              <span className="text-[6px] leading-[2px] font-[400]">
+              <span className="text-[9px] leading-[8px] font-[400]">
                 {selected.sub_symbol}
               </span>
             )}
