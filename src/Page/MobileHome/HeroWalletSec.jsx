@@ -42,7 +42,7 @@ const tokenSelect = [
     { id: 4, symbol: "SOL", sub_symbol: "ERC-20", icon: coinsw4 },
   ],
   [
-    { id: 5, symbol: "BNB", sub_symbol: "BITCOIN", icon: coinsw13 },
+    { id: 5, symbol: "BNB", sub_symbol: "BSC-20", icon: coinsw13 },
     { id: 6, symbol: "AVAX", sub_symbol: "BITCOIN", icon: coinsw6 },
   ],
   [
