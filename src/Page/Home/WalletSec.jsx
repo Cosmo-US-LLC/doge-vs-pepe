@@ -258,7 +258,7 @@ function HeroWalletSec() {
                       className="w-[18px] h-[18px]"
                       alt="Selected Icon"
                     />
-                    <h5 className="text-[14px] font-[Helvetica] leading-[100%] font-[400]">
+                    <h5 className="text-[14px] font-[Helvetica] leading-[100%] font-[700]">
                       TEAM DOGE
                     </h5>
                   </div>
@@ -622,7 +622,7 @@ function HeroWalletSec() {
                       className="w-[18px] h-[18px]"
                       alt="Selected Icon"
                     />
-                    <h5 className="text-[14px] font-[Helvetica] leading-[100%] font-[400]">
+                    <h5 className="text-[14px] font-[Helvetica] leading-[100%] font-[700]">
                       TEAM PEPE
                     </h5>
                   </div>
