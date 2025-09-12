@@ -79,6 +79,16 @@ function MobileHeroSection() {
             <img src={bitCoinist} alt="Bitcoinist" className="h-[20px] mx-4" />
             <img src={newsBit} alt="NewsBit" className="h-[20px] mx-4" />
             <img src={ambCrypto} alt="AMB Crypto" className="h-[20px] mx-4" />
+             <img
+              src={coinMarketCop}
+              alt="Coin market cop"
+              className="h-[20px] mx-4"
+            />
+            <img src={ambCrypto} alt="AMB Crypto" className="h-[20px] mx-4" />
+            <img src={cryptoNews} alt="Crypto News" className="h-[20px] mx-4" />
+            <img src={bitCoinist} alt="Bitcoinist" className="h-[20px] mx-4" />
+            <img src={newsBit} alt="NewsBit" className="h-[20px] mx-4" />
+            <img src={ambCrypto} alt="AMB Crypto" className="h-[20px] mx-4" />
           </div>
         </div>
       </div>
