@@ -14,7 +14,7 @@ export default function FightRules({ backgroundUrl }) {
     },
     {
       title: "3. THE RACE TO $1 MILLION",
-      desc: "The presale round ends when the first team hits $1 million. ",
+      desc: "The first team to reach $1 million ends the round. There will be 12 rounds in total, and the team that wins the most rounds will be the winner and launch.",
     },
     {
       title: "4. THE WINNER TAKES ALL",

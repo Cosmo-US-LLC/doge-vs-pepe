@@ -32,7 +32,7 @@ function MobileHeroSection() {
 
   return (
     <div
-      className="w-[100%] bgheromobsec min-h-[100vh] pt-[5rem] pb-[2rem] flex flex-col justify-between relative"
+      className="w-[100%] bgheromobsec min-h-[100vh] pt-[6rem] pb-[2rem] flex flex-col justify-between relative"
       id="what-is"
     >
       <div className=" relative mx-auto px-3">
