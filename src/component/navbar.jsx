@@ -51,7 +51,7 @@ function Navbar() {
           >
             Tokenomics
           </button>
-          <button
+          {/* <button
             onClick={() => handleScroll("roadmap")}
             className="text-[#fff] text-[16px] font-bold font-helvetica leading-[18.72px] bg-transparent border-0 cursor-pointer"
           >
@@ -62,7 +62,19 @@ function Navbar() {
             className="text-[#fff] text-[16px] font-bold font-helvetica leading-[18.72px] bg-transparent border-0 cursor-pointer"
           >
             FAQ
-          </button>
+          </button> */}
+           <button
+              onClick={() => {
+                const el = document.getElementById("wallet");
+                if (el) {
+                  const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                  window.scrollTo({ top: y, behavior: "smooth" });
+                }
+              }}
+              className="px-[37px] py-[10px] font-[Anton] bg-gradient-to-r rounded-[32px] bg-[#0184E2] text-black text-[14px] from-[#FFBF01] to-[#01FE37] font-[400] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105 uppercase"
+            >
+              Join the Presale
+            </button>
         </div>
       </div>
     </div>

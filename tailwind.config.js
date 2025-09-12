@@ -11,14 +11,14 @@ export default {
         "helvetica-light": ["Helvetica", "Arial", "sans-serif"],
         "helvetica-bold": ["Helvetica", "Arial", "sans-serif"],
       },
-      animation: {
-        marquee: "marquee 25s linear infinite",
-      },
       keyframes: {
         marquee: {
-          from: { transform: "translateX(100%)" },
-          to: { transform: "translateX(-100%)" },
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
+      },
+      animation: {
+        marquee: "marquee 20s linear infinite",
       },
     },
   },

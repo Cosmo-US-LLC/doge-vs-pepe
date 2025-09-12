@@ -385,9 +385,9 @@ body {
   background-repeat: no-repeat;
 }
 .bgmobprizsec {
-  background-image: url(./assets/mobile_assets/prizmobbg.png);
+  background-image: url(./assets/mobile_assets/prize_bg.png);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .howitbg {
