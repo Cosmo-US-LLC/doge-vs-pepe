@@ -91,7 +91,7 @@ function HeroWalletSec() {
   return (
     <div className="w-[100%] relative" id="wallet">
       <div className="max-w-[922px] ">
-        <div className="flex flex-col justify-end relative pt-10 pb-[4rem] space-y-[20px] px-4 min-h-[1190px] bgwltsecmobUp ">
+        <div className="flex flex-col justify-end relative pt-10 pb-[4rem] space-y-[20px] px-4 min-h-[1236px] bgwltsecmobUp ">
           <div className="absolute bottom-0 left-0 w-full h-[4rem] bg-gradient-to-t from-black to-black/70"></div>
           <div>
             <h3

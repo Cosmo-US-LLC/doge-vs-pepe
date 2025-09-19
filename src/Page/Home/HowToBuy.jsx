@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../../assets/howtobuy/How-To-Buy.webp";
+import bgImage from "../../assets/howtobuy/How-To-Buy.png";
 
 export default function HowToBuy({ backgroundUrl = "", onCta }) {
   const steps = [
