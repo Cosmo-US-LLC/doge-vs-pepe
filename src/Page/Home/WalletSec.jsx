@@ -33,7 +33,7 @@ import dogeicon from "../../assets/walletsec/coins (2).svg";
 import pepeicon from "../../assets/walletsec/coins (1).svg";
 
 import arw from "../../assets/walletsec/arw.svg";
-import bg_img_doge from "../../assets/walletsec/DOGGGEEEEEE (1).png";
+import bg_img_doge from "../../assets/walletsec/DOGGGEEEEEE.png";
 import bg_img_pepe from "../../assets/walletsec/Pepe Avator.png";
 import downArrow from "../../assets/herosec/down-arrow.svg";
 import WidgetMob from "../../component/Widget/WidgetMob";
