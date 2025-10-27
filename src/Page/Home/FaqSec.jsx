@@ -175,8 +175,8 @@ const FaqSec = () => {
   };
 
   return (
-    <div className="relative" id="faq">
-      <div className="w-[100%] max-w-[1143px] pt-[73px] mx-auto pb-[63px] flex flex-col gap-4">
+    <div className="relative faqs_bg" id="faq">
+      <div className="w-[100%] max-w-[1040px] pt-[73px] mx-auto pb-[63px] flex flex-col gap-4">
         <div className="text-center">
           <h2 className="section_heading pb-[10px]">
             Frequently Asked Questions
