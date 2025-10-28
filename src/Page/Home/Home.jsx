@@ -38,20 +38,11 @@ function Home() {
         <FightRules />
         <WalletSec />
         <HowToBuy />
-        {/* <VIPTicketSec /> */}
-        {/* <FirstEverSec /> */}
-        {/* <TheRulesSec /> */}
-        {/* <MilestonesSec /> */}
-
         <PrizeMoneySec />
-        {/* <RoadmapSec /> */}
         <CommunitySec />
         <HowItSec />
         <TokenSec />
-        {/* <HypeSec /> */}
-        {/* <PressandMediaSec /> */}
         <DogeVSPepeSec />
-        {/* <BiggestSec /> */}
         <TheFightSec />
         <DontWaitSec />
         <FaqSec />

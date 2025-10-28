@@ -1,7 +1,6 @@
 import React from "react";
-import bgImage from "../../assets/howtobuy/How-To-Buy.png";
 
-export default function HowToBuy({ backgroundUrl = "", onCta }) {
+export default function HowToBuy() {
   const steps = [
     {
       step: "Step 1",
@@ -27,55 +26,40 @@ export default function HowToBuy({ backgroundUrl = "", onCta }) {
 
   return (
     <section
-      className="relative isolate w-full h-[700px] flex items-end"
+      className="relative isolate w-full h-[700px] how_to_buy_bg flex "
       aria-label="How to buy section"
       id="how_to_buy"
-      style={{
-        backgroundImage: `url(${backgroundUrl || bgImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
     >
-      <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_140px_60px_rgba(0,0,0,0.75)]" />
-      <div className="relative px-8 pb-24 mx-auto max-w-7xl">
-        {/* Title */}
-        <h2 className="text-center section_heading">HOW TO BUY</h2>
+      <div className="relative mx-auto max-w-[1280px] px-8 md:px-8 flex flex-col items-center justify-center gap-10">
+        <h2 className="text-center pb-16">HOW TO BUY</h2>
 
-        {/* Steps flex container */}
-        <div className="flex flex-row justify-center gap-6 mt-14">
+        <div className="flex flex-wrap justify-center gap-6 ">
           {steps.map((s, i) => (
             <article
               key={i}
-              className="group relative rounded-2xl bg-neutral-900/80 text-white p-7 backdrop-blur-md shadow-[0_10px_40px_rgba(0,0,0,0.5)] ring-1 ring-lime-400/20 hover:ring-lime-300/40 transition-all duration-200 flex-1 max-w-[280px]"
+              className="relative bg-neutral-900/80 text-white p-6 flex-1 basis-[calc(50%-0.75rem)] max-w-[480px] gradient_border"
             >
-              <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-b from-lime-400/0 via-lime-400/0 to-lime-400/0 opacity-0 group-hover:opacity-100 blur-[2px] transition-opacity" />
-
               <div className="relative flex flex-col h-full">
-                <p className="text-[18px] font-helvetica font-[400] leading-[22px]">
-                  {s.step}
-                </p>
-                <h3 className="mt-3 font-anton text-[24px] leading-[28px] uppercase">
-                  {s.title}
-                </h3>
-                <p className="flex-grow mt-4 text-[16px] font-helvetica font-[400] leading-[20px]">
-                  {s.body}
-                </p>
+                <div className="flex flex-row items-center gap-2">
+                  <h4 className="gradient-text">{s.step}</h4>
+                  <h4 className="">{s.title}</h4>
+                </div>
+                <p className="flex-grow mt-3 subtext ">{s.body}</p>
               </div>
             </article>
           ))}
         </div>
 
-        <div className="flex justify-center mt-9">
+        <div className="flex justify-center">
           <button
             onClick={() => {
               document.getElementById("wallet")?.scrollIntoView({
                 behavior: "smooth",
               });
             }}
-            className="w-[457px] h-[65px] mx-auto flex items-center justify-center 
-             text-anton text-[30px] font-normal leading-normal 
-             rounded-[60px] cursor-pointer relative z-10 
-             bg-gradient-to-r from-[#FFBF01] to-[#01FE37]"
+            className="w-[457px] h-[65px] gradient-bg mx-auto flex items-center justify-center 
+              btn-primary relative z-10 
+              "
           >
             JOIN THE PRESALE
           </button>

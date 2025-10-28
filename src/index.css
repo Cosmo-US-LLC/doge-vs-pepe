@@ -68,6 +68,48 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+h2 {
+  font-family: "Anton", serif !important;
+  color: #fff;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 126px */
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+h3 {
+  color: #fff;
+  font-family: Anton;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 72px */
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: #fff;
+  font-family: Anton;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 37.8px */
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+}
+
+.subtext {
+  color: #fff;
+  font-feature-settings: "liga" off;
+  font-family: "Mont", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+}
 
 /* code {
   font-family: "K2D", serif !important;
@@ -84,7 +126,7 @@ body {
 
 /* new use start */
 .hero_bg {
-  background-image: url("./assets/hero/Hero_bg.webp");
+  background-image: url("./assets/hero/v2_hero_bg.webp");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -108,13 +150,13 @@ body {
   background-repeat: no-repeat;
 }
 .dogeVsPepeBG {
-  background-image: url(../src/assets/DogeVSPepeSec/d_v_p_bg.webp);
+  background-image: url(../src/assets/DogeVSPepeSec/v2_is_making_bg.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.fight_mob_bg{
-   background-image: url(../src/assets/mobile_assets/fight_mob_bg.png);
+.fight_mob_bg {
+  background-image: url(../src/assets/mobile_assets/fight_mob_bg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -145,8 +187,8 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.Communitybg {
-  background-image: url(../src/assets/CommunitySec/RoadMap.png);
+.Roadmap_bg {
+  background-image: url(../src/assets/RoadmapSec/v2_roadmap_bg.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -205,7 +247,7 @@ body {
   object-fit: cover;
 }
 .crypbg2mob {
-    background-image: url(../src/assets/mobile_assets//card_dvp_2.png);
+  background-image: url(../src/assets/mobile_assets//card_dvp_2.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -213,7 +255,7 @@ body {
   -webkit-background-size: cover;
 }
 .crypbg3mob {
-    background-image: url(../src/assets/mobile_assets//card_dvp_3.png);
+  background-image: url(../src/assets/mobile_assets//card_dvp_3.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -378,8 +420,8 @@ body {
   background-repeat: no-repeat;
 }
 
-.bgprizsec {
-  background-image: url(./assets/PrizeMoneySec//prixebg.png);
+.prize_money_bg {
+  background-image: url(./assets/PrizeMoneySec/v2_prize_money.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -390,8 +432,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.howitbg {
-  background-image: url(./assets/HowItSec/howbg.png);
+.how_it_all_began_bg {
+  background-image: url(./assets/HowItSec/v2_how_it_all_began.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -402,13 +444,12 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.Tokenomicsbgmob{
- background-image: url(./assets/mobile_assets/tetsom_bg.png);
+.Tokenomicsbgmob {
+  background-image: url(./assets/mobile_assets/tetsom_bg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-
 
 .bgMadebySec {
   background-image: url(./assets/madebySec/baby-bg.png);
@@ -418,10 +459,75 @@ body {
 }
 
 .bgDontWaitSec {
-  background-image: url(./assets/DontWaitSec/Frame_1410116803.png);
+  background-image: url(./assets/DontWaitSec/v2_dont_wait_bg.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+.faqs_bg {
+  background-image: url("./assets/faqs/faqs_bg.webp");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.how_to_buy_bg {
+  background-image: url("./assets/howtobuy/v2_how_to_buy_bg.webp");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.gradient-text {
+  background: linear-gradient(181deg, #dd5b01 22.84%, #02fe2e 99.02%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+  background: linear-gradient(
+    90deg,
+    #dd5b01 5.47%,
+    #e67500 42.62%,
+    #00ff2f 97.22%
+  );
+}
+.gradient_border {
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+      90deg,
+      #dd5b01 5.47%,
+      #e67500 42.62%,
+      #00ff2f 97.22%
+    )
+    1;
+}
+.btn-primary {
+  color: #000;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 12px 24px; /* adjust as needed */
+  border-radius: 150px; /* optional */
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(
+    90deg,
+    #00ff2f 5.47%,
+    #e67500 42.62%,
+    #dd5b01 97.22%
+  );
+  color: #fff;
 }
 
 .gradient-border {

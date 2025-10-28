@@ -1,9 +1,9 @@
-import panel1 from "../../assets/news/dogevspepe_1.webp";
-import panel2 from "../../assets/news/dogevspepe_2.webp";
-import panel3 from "../../assets/news/dogevspepe_3.webp";
-import panel4 from "../../assets/news/dogevspepe_4.webp";
-import panel5 from "../../assets/news/dogevspepe_13.webp";
-import panel6 from "../../assets/news/dogevspepe_6.webp";
+import panel1 from "../../assets/news/v2_img_1.webp";
+import panel2 from "../../assets/news/v2_img_2.webp";
+import panel3 from "../../assets/news/v2_img_3.webp";
+import panel4 from "../../assets/news/v2_img_4.webp";
+import panel5 from "../../assets/news/v2_img_5.webp";
+import panel6 from "../../assets/news/v2_img_6.webp";
 
 function DogeVsPepeNews() {
   const newsPanels = [
@@ -40,14 +40,14 @@ function DogeVsPepeNews() {
   ];
 
   return (
-    <section className="w-full">
-      <div className="flex flex-wrap justify-center">
+    <section className="w-full py-8 md:py-4">
+      <div className="grid grid-cols-3 gap-4 max-w-[1280px] mx-auto px-8 md:px-4">
         {newsPanels.map((panel) => (
-          <div key={panel.id} className="relative flex-1">
+          <div key={panel.id} className="relative">
             <img
               src={panel.image}
               alt={panel.alt}
-              className="object-cover w-full h-64 border-gray-700 transition-all duration-300 hover:border-yellow-400 hover:scale-105"
+              className="object-cover w-full h-64 rounded-[12px] border-gray-700"
             />
           </div>
         ))}

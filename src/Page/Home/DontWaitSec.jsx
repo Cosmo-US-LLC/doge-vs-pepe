@@ -5,40 +5,28 @@ import doge from "../../assets/DontWaitSec/doge-d.webp";
 import pepe from "../../assets/DontWaitSec/pepe-d.webp";
 function DontWaitSec() {
   return (
-    <div className="w-[100%] h-[900px] relative DontWaitSec flex justify-center items-end pb-[40px] overflow-hidden">
-      {/* <div className="absolute top-0 left-0 right-0 w-full h-full">
-        <img className="w-full h-full" src={topShadow} alt="" />
-      </div>
-      <div className="absolute bottom-0 left-0 right-0 z-10 w-full h-full">
-        <img className="w-full h-full" src={bottomShadow} alt="" />
-      </div> */}
-      {/* <div className="w-[562px] h-[545px] absolute bottom-0 left-[-23px]">
-                    <img src={doge} alt="doge-image" className="w-full h-full"/>
-                  </div>
-                  <div className="w-[507px] h-[545px] absolute bottom-0 right-[-10px]">
-                    <img src={pepe} alt="pepe-image" className="w-full h-full"/>
-                  </div> */}
+    <div className="w-[100%] h-[800px] relative DontWaitSec flex justify-center items-end pb-[160px] overflow-hidden">
       <div className="space-y-[35px]">
         <div
-          className="max-w-[987px] px-[22px] py-[40px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative border border-neutral-400 bg-[#0101019f]"
+          className="max-w-[987px] px-[22px] py-[60px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative border border-neutral-400 bg-[#0101019f]"
           style={{ backdropFilter: "blur(0px)" }}
         >
           <div className="space-y-[27px] flex flex-col items-center justify-center">
             <h3 className="text-center section_heading">
-              Don’t Wait, <br /> The Fight Is On!
+              Don’t Wait, The Fight Is On!
             </h3>
             <p className="max-w-[855px] w-[100%] font-[400] mx-auto text-[#fff] font-helvetica leading-[32px] text-[24px] text-center">
               DogevsPepe is fast-paced and competitive. Once the $1 million goal
               is reached, the winner is decided. Will your meme champion rise
               and win this epic fight.
             </p>
-            <h4 className="text-[#fff] max-w-[495px] leading-[32px] font-[700] font-helvetica text-[24px] text-center">
+            <h4 className="text-[#fff] max-w-[855px] leading-[32px] font-[700] font-helvetica text-[24px] text-center">
               Make your choice and support your favorite meme before it is too
               late!
             </h4>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center absolute bottom-[130px] left-0 right-0">
           <button
             style={{
               background:

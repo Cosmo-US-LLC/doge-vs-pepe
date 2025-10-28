@@ -2,8 +2,20 @@ import React from "react";
 
 function TwoLegends() {
   return (
-    <div className="w-[100%] h-[725px] relative flex flex-col justify-center items-center" id="what_is">
+    <div
+      className="w-[100%] h-[725px] relative flex flex-col justify-center items-center"
+      id="what_is"
+    >
       <div className="flex w-[100%] max-w-[1280px] mx-auto px-8 flex-row">
+        <div className="w-[50%] flex justify-center items-end pb-10">
+          <div className="two_legends absolute -z-1 w-[100%] max-w-[905px] top-4 h-[708px]"></div>
+          <div className="flex justify-end w-full">
+            <p className="text-center relative z-9 section_heading pl-6">
+              Two Legends.
+              <br /> One Crown.
+            </p>
+          </div>
+        </div>
         <div className=" w-[50%] relative z-[99]">
           <div className="border-2  border-[#fff] px-[22px] py-[29px] m-4 rounded-[24px] bg-black/20 flex flex-col gap-4">
             <p className="font-[Helvetica] text-[22px] font-[700] leading-[145%] text-center text-[#fff]">
@@ -22,15 +34,6 @@ function TwoLegends() {
               <br /> The choice is yours!
             </p>
           </div>
-        </div>
-        <div className="w-[50%] flex justify-center items-end pb-10">
-          <div className="two_legends absolute -z-1 w-[100%] max-w-[905px] top-4 h-[708px]"></div>
-         <div className="flex justify-end w-full">
-           <p className="text-center relative z-9 section_heading pl-6">
-            Two Legends.
-            <br /> One Crown.
-          </p>
-         </div>
         </div>
       </div>
     </div>
