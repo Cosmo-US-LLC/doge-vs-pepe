@@ -7,7 +7,7 @@ import bnicon5 from "../../assets/banner/bnicns (5).svg";
 
 function BannerSec() {
   return (
-    <div className="w-[100%] h-[109px] overflow-hidden flex items-center justify-center">
+    <div className="w-[100%] h-[109px] overflow-hidden flex items-end justify-center">
       <div className="flex justify-center items-center space-x-[40px] max-w-[1280px] px-8 md:px-4 w-[100%] mx-auto relative">
         <div className="flex justify-center space-x-[30px] items-center">
           <div className="bg-[rgba(255,255,255,0.09)] px-[30px] py-[18px] rounded-[75px]">

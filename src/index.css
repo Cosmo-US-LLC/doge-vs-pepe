@@ -169,7 +169,13 @@ h4 {
 }
 
 .two_legends {
-  background-image: url(../src/assets/twoLegends//two_legends_full_bg.webp);
+  background-image: url(../src/assets/twoLegends/v2_two_legends.webp);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.fight_rules {
+  background-image: url(../src/assets/fightRule/v2_the_fight_rule_dvp.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
