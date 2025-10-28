@@ -1,5 +1,6 @@
 import { useState } from "react";
-import bgImage from "../../assets/fightRule/Fight-rules.webp";
+import bgImage from "../../assets/fightRule/v2_the_fight_rule_bg.webp";
+import fight_rules_msg from "../../assets/fightRule/v2_the_fight_rule_msg.webp";
 import { Plus, Minus } from "lucide-react";
 
 export default function FightRules({ backgroundUrl }) {
@@ -49,13 +50,6 @@ export default function FightRules({ backgroundUrl }) {
       }}
     >
       <div className="flex w-full gap-10 max-w-[1280px]  mx-auto px-8 flex-row">
-        <div className="w-[50%] flex justify-center items-end pb-10">
-          <p className="text-center section_heading">
-            GLORY OR DEFEAT. <br />
-            Pick your Legend.
-          </p>
-        </div>
-
         <div className="h-[800px] flex justify-center items-end w-[50%]">
           <div className="border-2 border-white/25 px-8 py-8 m-4 rounded-lg bg-black/90 flex flex-col gap-4 shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
             <h2 className="text-center section_heading">THE FIGHT RULES</h2>
@@ -67,16 +61,23 @@ export default function FightRules({ backgroundUrl }) {
                   className="py-4 border-b border-white/20 last:border-b-0 "
                   onClick={() => toggleAccordion(index)}
                 >
-                 <div children className="flex justify-between space-x-2 items-center cursor-pointer">
-                   <p className="text-[32px] font-[400] leading-[40px] tracking-wide text-[#fff] uppercase font-anton">
-                    {rule.title}
-                  </p>
-                  {activeIndex === index ? (
-                    <Minus className="text-white w-6 h-6" />
-                  ) : (
-                    <Plus className="text-white w-6 h-6" />
-                  )}
-                 </div>
+                  <div
+                    children
+                    className="flex justify-between space-x-2 items-center cursor-pointer"
+                  >
+                    <p className="text-[32px] font-[400] leading-[40px] tracking-wide text-[#fff] uppercase font-anton">
+                      {rule.title}
+                    </p>
+                    {activeIndex === index ? (
+                      <div className="w-8 h-8 gradient-bg rounded-full flex justify-center items-center">
+                        <img src={Minus} alt="" className="w-6 h-6" />
+                      </div>
+                    ) : (
+                      <div className="w-8 h-8 gradient-bg rounded-full flex justify-center items-center">
+                        <Plus className="text-white w-6 h-6" />
+                      </div>
+                    )}
+                  </div>
                   <div
                     className={`overflow-hidden max-w-[360px] transition-all duration-500 ease-in-out ${
                       activeIndex === index
@@ -94,6 +95,13 @@ export default function FightRules({ backgroundUrl }) {
               ))}
             </div>
           </div>
+        </div>
+        <div className="w-[50%] flex justify-center items-end pb-10 fight_rules relative">
+          <img
+            src={fight_rules_msg}
+            alt=""
+            className="w-[320px] h-auto absolute top-[-20px] left-[120px]"
+          />
         </div>
       </div>
     </section>
