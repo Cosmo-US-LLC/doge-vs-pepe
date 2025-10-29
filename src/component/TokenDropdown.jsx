@@ -16,9 +16,6 @@ export default function TokenSelectDropdown({ tokens, onChange }) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setOpen(false);
       }
-
-
-      
     }
 
     document.addEventListener("mousedown", handleClickOutside);
@@ -31,7 +28,7 @@ export default function TokenSelectDropdown({ tokens, onChange }) {
     <div className="relative w-[100%]" ref={dropdownRef}>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center justify-between w-full border border-[rgba(255, 255, 255, 0.20)] px-2 h-[32px] rounded-[8px] cursor-pointer"
+        className="flex items-center justify-between w-full border border-[rgba(255, 255, 255, 0.20)] px-2 h-[48px] rounded-[8px] cursor-pointer"
         style={{ background: "rgba(255, 255, 255, 0.10)" }}
       >
         <span className="flex items-center gap-2 text-[11.7px] font-[700] font-[Inter]">
@@ -46,7 +43,9 @@ export default function TokenSelectDropdown({ tokens, onChange }) {
           </div>
           <span
             className={`leading-[10px] text-start ${
-              selected.symbol === "More" ? "text-[#fff] text-[14px] " : "text-[#fff] text-[11.7px]"
+              selected.symbol === "More"
+                ? "text-[#fff] text-[14px] "
+                : "text-[#fff] text-[11.7px]"
             }`}
           >
             {selected.symbol}
@@ -59,7 +58,9 @@ export default function TokenSelectDropdown({ tokens, onChange }) {
           </span>
         </span>
         <svg
-          className={`w-4 h-4 text-[#fff] transition-transform ${open ? "rotate-180" : ""}`}
+          className={`w-4 h-4 text-[#fff] transition-transform ${
+            open ? "rotate-180" : ""
+          }`}
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
