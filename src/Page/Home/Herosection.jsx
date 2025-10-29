@@ -81,9 +81,9 @@ function HeroSection() {
             </h1>
           </div>
 
-          <div className="gradient-bg overflow-hidden rounded-[18px] z-30 p-[1px] shadow-[0_-6px_0_rgba(0,0,0,0.7)]">
-            <div className="w-[1240px] mx-auto h-[520px] overflow-hidden rounded-[18px]">
-              <img src={DVPHero} alt="heroSec" className="w-full h-full" />
+          <div className="gradient-bg overflow-hidden rounded-[30px] z-30 p-[1px] shadow-[0_-6px_0_rgba(0,0,0,0.7)]">
+            <div className="w-[1240px] mx-auto h-[520px] overflow-hidden rounded-[30px]">
+              <img src={DVPHero} alt="heroSec" className="w-full " />
             </div>
           </div>
         </div>
