@@ -126,18 +126,11 @@ function HeroWalletSec({
             {/* Main Progress Bar */}
             <div className="relative p-2">
               {/* Background Bar with Glowing Border */}
-              <div
-                className="h-[60px] rounded-[30px] relative overflow-hidden p-[2px]"
-                style={{
-                  background:
-                    "linear-gradient(90deg, #DD5B01 5.47%, #E67500 42.62%, #00FF2F 97.22%)",
-                  boxShadow: "0 0 20px rgba(0, 255, 47, 0.5)",
-                }}
-              >
+              <div className="h-[60px] rounded-[30px] relative overflow-hidden  border-[2px] border-[#E67500]">
                 <div
                   className="w-full h-full rounded-[28px] relative overflow-hidden"
                   style={{
-                    background: "#040404",
+                    background: "",
                   }}
                 >
                   {/* Gradient Fill */}
@@ -335,7 +328,7 @@ function HeroWalletSec({
                 </div>
                 <div className="space-y-[10px]">
                   <div className="flex justify-center">
-                    <button className="bg-[#E67500] text-[#000] font-[Anton] py-[10px] max-w-[100%] mx-auto w-[100%] text-[18px] font-[400] rounded-[8px]">
+                    <button className="bg-[#E67500] text-[#000] font-[Anton] py-[10px] max-w-[100%] mx-auto w-[100%] text-[18px] font-[400] rounded-[30px]">
                       Connect Wallet
                     </button>
                   </div>
@@ -582,7 +575,7 @@ function HeroWalletSec({
                     onClick={() => setActiveButtonPepe(button.id)}
                     className={`w-[100%] rounded-[30px] space-x-[4px] flex justify-center items-center cursor-pointer ${
                       activeButtonPepe === button.id
-                        ? "bg-[#4EB52A] "
+                        ? "bg-[#00FF2F] "
                         : "text-[#000]"
                     }`}
                   >
@@ -615,7 +608,7 @@ function HeroWalletSec({
                     background: "rgba(255, 255, 255, 0.20)",
                   }}
                 >
-                  <div className="bg-[#66FF83] h-[23px] w-[20%] rounded-[30px]"></div>
+                  <div className="bg-[#00FF2F] h-[23px] w-[20%] rounded-[30px]"></div>
                   <span className=" w-[70%] text-[#fff] text-center text-[12px] font-[Helvetica]">
                     Until Presale Round Win
                   </span>
@@ -706,7 +699,7 @@ function HeroWalletSec({
                 </div>
                 <div className="space-y-[10px]">
                   <div className="flex justify-center">
-                    <button className="bg-[#00FF2F] text-[#000] font-[Anton] py-[10px] max-w-[100%] mx-auto w-[100%] text-[18px] font-[400] rounded-[8px]">
+                    <button className="bg-[#00FF2F] text-[#000] font-[Anton] py-[10px] max-w-[100%] mx-auto w-[100%] text-[18px] font-[400] rounded-[30px]">
                       Connect Wallet
                     </button>
                   </div>
