@@ -1,4 +1,7 @@
 import React from "react";
+import dogeDP from "../../assets/tokenomics/v2_doge.webp";
+import pepeDP from "../../assets/tokenomics/v2_pepe.webp";
+
 // Figma assets
 const imgFreepikTheStyleIsCandidImagePhotographyWithNatural360502 =
   "https://www.figma.com/api/mcp/asset/4635f322-2ded-443f-ada3-b9955d9d613c";
@@ -159,9 +162,9 @@ function TokenSec() {
           <div className="flex items-center justify-center space-x-[122px] mb-8">
             {/* Doge Character */}
             <div className="flex flex-col items-center space-y-2">
-              <div className="w-[90px] h-[90px] rounded-full bg-white overflow-hidden">
+              <div className="w-[90px] h-[90px] rounded-full overflow-hidden">
                 <img
-                  src={imgLeftCharacterImage}
+                  src={dogeDP}
                   alt="Doge icon"
                   className="w-full h-full object-cover"
                 />
@@ -178,9 +181,9 @@ function TokenSec() {
 
             {/* Pepe Character */}
             <div className="flex flex-col items-center space-y-2">
-              <div className="w-[90px] h-[90px] rounded-full bg-white overflow-hidden">
+              <div className="w-[90px] h-[90px] rounded-full overflow-hidden">
                 <img
-                  src={imgRightCharacterImage}
+                  src={pepeDP}
                   alt="Pepe icon"
                   className="w-full h-full object-cover"
                 />
