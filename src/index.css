@@ -224,6 +224,13 @@ h4 {
   background-repeat: no-repeat;
 }
 
+.two_legends_bg {
+  background-image: url(../src/assets/twoLegends/v2_two_legends_bg.webp);
+  background-position: top;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 .two_legends {
   background-image: url(../src/assets/twoLegends/v2_two_legends.webp);
   background-position: top;
