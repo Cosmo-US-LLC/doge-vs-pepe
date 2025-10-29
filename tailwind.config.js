@@ -10,6 +10,7 @@ export default {
         helvetica: ["Helvetica", "Arial", "sans-serif"],
         "helvetica-light": ["Helvetica", "Arial", "sans-serif"],
         "helvetica-bold": ["Helvetica", "Arial", "sans-serif"],
+        mont: ["Mont", "sans-serif"],
       },
       keyframes: {
         marquee: {

@@ -23,7 +23,7 @@ const imgEllipse31 =
 
 function TokenSec() {
   return (
-    <div className="relative w-full h-[1057px] overflow-hidden" id="tokenomics">
+    <div className="relative w-full h-[857px] overflow-hidden" id="tokenomics">
       {/* Cinematic Background - Dim Locker Room */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black/90"></div>
@@ -59,7 +59,7 @@ function TokenSec() {
             <div className="space-y-6 w-full">
               {/* Total Supply */}
               <div className="flex items-center space-x-4">
-                <div className="w-[45px] h-[45px] rounded-full bg-[#d3fc00] flex items-center justify-center">
+                <div className="w-[35px] h-[35px] rounded-full bg-[#d3fc00] flex items-center justify-center">
                   <span className="text-[21px]">💰</span>
                 </div>
                 <div className="text-white">
@@ -74,7 +74,7 @@ function TokenSec() {
 
               {/* Blockchain Info */}
               <div className="flex items-center space-x-4">
-                <div className="w-[45px] h-[45px] rounded-full bg-[#d3fc00] flex items-center justify-center">
+                <div className="w-[45px] h-[35px] rounded-full bg-[#d3fc00] flex items-center justify-center">
                   <span className="text-[21px]">⚡️</span>
                 </div>
                 <p className="text-[16px] font-helvetica text-white">
@@ -104,7 +104,7 @@ function TokenSec() {
             <div className="space-y-6 w-full">
               {/* Total Supply */}
               <div className="flex items-center space-x-4">
-                <div className="w-[45px] h-[45px] rounded-full bg-[#d3fc00] flex items-center justify-center">
+                <div className="w-[35px] h-[35px] rounded-full bg-[#d3fc00] flex items-center justify-center">
                   <span className="text-[21px]">💰</span>
                 </div>
                 <div className="text-white">
@@ -119,7 +119,7 @@ function TokenSec() {
 
               {/* Blockchain Info */}
               <div className="flex items-center space-x-4">
-                <div className="w-[45px] h-[45px] rounded-full bg-[#d3fc00] flex items-center justify-center">
+                <div className="w-[45px] h-[35px] rounded-full bg-[#d3fc00] flex items-center justify-center">
                   <span className="text-[21px]">⚡️</span>
                 </div>
                 <p className="text-[16px] font-helvetica text-white">
@@ -133,8 +133,7 @@ function TokenSec() {
 
       {/* Character Images */}
       <div className="absolute inset-0 z-5">
-        {/* Pepe Image - Left */}
-        <div className="absolute left-[-77px] top-0 w-[581px] h-[858px]">
+        <div className="absolute top-[220px] left-[-77px] w-[581px] h-auto">
           <img
             src={imgPepeImage}
             alt="Pepe character"
@@ -143,8 +142,7 @@ function TokenSec() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60"></div>
         </div>
 
-        {/* Doge Image - Right */}
-        <div className="absolute right-[-77px] top-[34px] w-[464px] h-[824px]">
+        <div className="absolute right-[-77px] top-[220px] w-[464px] h-[824px]">
           <img
             src={imgDogeImage}
             alt="Doge character"
@@ -156,7 +154,7 @@ function TokenSec() {
 
       {/* VS Panel - Center */}
       <div className="absolute left-1/2 top-[144px] transform -translate-x-1/2 z-30">
-        <div className="w-[553px] h-[469px] bg-black/10 backdrop-blur-[15px] border-[1.5px] border-[#e67500] rounded-[30px] p-8">
+        <div className="w-[553px] h-[519px] bg-black/10 backdrop-blur-[15px] border-[1.5px] border-[#e67500] rounded-[30px] p-8">
           {/* VS Header */}
           <div className="flex items-center justify-center space-x-[122px] mb-8">
             {/* Doge Character */}

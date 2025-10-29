@@ -1,4 +1,5 @@
 import Logo from "../assets/navbar/navLogo.svg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const handleScroll = (targetId) => {
@@ -14,61 +15,52 @@ function Navbar() {
 
   return (
     <div className="fixed w-full z-[9999] bg-black/10 backdrop-blur-[16px]">
-      <div className="max-w-[1280px] rounded-[18px] relative w-full mx-auto h-[86px] flex justify-between items-center px-8">
+      <div className="max-w-[1280px] md:px-8 px-4 relative w-full mx-auto h-[86px] flex justify-between items-center">
         {/* Logo on the left */}
         <div className="flex items-center">
           <a href="/">
-            <img className="max-w-full" src={Logo} alt="DOGEVSPEPE Logo" />
+            <img className="max-w-full" src={Logo} alt="doge_vs_pepe Logo" />
           </a>
         </div>
 
         {/* Navigation buttons in the center */}
-        <div className="flex gap-12 items-center">
-          <button
+        <div className="flex items-center gap-12">
+          <Link
+            to="/"
             onClick={() => handleScroll("what_is")}
-            className="text-[#fff] text-[16px] font-bold font-helvetica leading-[19px] bg-transparent border-0 cursor-pointer"
+            className="navbar_link"
           >
             What is DogevsPepe?
-          </button>
-          <button
+          </Link>
+          <Link
+            to="/"
             onClick={() => handleScroll("fight_rules")}
-            className="text-[#fff] text-[16px] font-bold font-helvetica leading-[18.72px] bg-transparent border-0 cursor-pointer"
+            className="navbar_link"
           >
             Fight Rules
-          </button>
-          <button
+          </Link>
+          <Link
+            to="/"
             onClick={() => handleScroll("prize_money")}
-            className="text-[#fff] text-[16px] font-bold font-helvetica leading-[18.72px] bg-transparent border-0 cursor-pointer"
+            className="navbar_link"
           >
             Prize Money
-          </button>
-          <button
+          </Link>
+          <Link
+            to="/"
             onClick={() => handleScroll("how_to_buy")}
-            className="text-[#fff] text-[16px] font-bold font-helvetica leading-[18.72px] bg-transparent border-0 cursor-pointer"
+            className="navbar_link"
           >
             How to Buy
-          </button>
-          <button
+          </Link>
+          <Link
+            to="/"
             onClick={() => handleScroll("tokenomics")}
-            className="text-[#fff] text-[16px] font-bold font-helvetica leading-[18.72px] bg-transparent border-0 cursor-pointer"
+            className="navbar_link"
           >
             Tokenomics
-          </button>
-          {/* <button
-            onClick={() => handleScroll("roadmap")}
-            className="text-[#fff] text-[16px] font-bold font-helvetica leading-[18.72px] bg-transparent border-0 cursor-pointer"
-          >
-            Roadmap
-          </button>
-          <button
-            onClick={() => handleScroll("faq")}
-            className="text-[#fff] text-[16px] font-bold font-helvetica leading-[18.72px] bg-transparent border-0 cursor-pointer"
-          >
-            FAQ
-          </button> */}
+          </Link>
         </div>
-
-        {/* Join the Presale button on the right */}
         <div className="flex items-center">
           <button
             onClick={() => {
@@ -78,7 +70,7 @@ function Navbar() {
                 window.scrollTo({ top: y, behavior: "smooth" });
               }
             }}
-            className="px-[37px] py-[10px] font-[Anton] bg-gradient-to-r rounded-[32px] bg-[#0184E2] text-black text-[14px] from-[#FFBF01] to-[#01FE37] font-[400] transition-all duration-300 hover:bg-[#F2B60F] hover:scale-105 uppercase"
+            className="btn-primary gradient-bg !text-[16px] max-w-[170px] "
           >
             Join the Presale
           </button>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import arw from "../../assets/footer/Group 1410124940.svg";
 
 const faqData = [
@@ -132,12 +132,12 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
   return (
     <div>
       <div
-        className={`border faqsbrder flex-col rounded-[15px] border-solid bg-[#181818] ${
-          isOpen ? "border-[#fff]" : "border-[#fff]"
+        className={`border flex-col rounded-[40px] border-solid  bg-[#FFFFFF1A] backdrop-blur-(65px) ${
+          isOpen ? "#FFFFFF33" : "#FFFFFF33"
         }`}
       >
         <div
-          className="flex justify-between items-center px-[34px] py-[30px] gap-[25px] cursor-pointer"
+          className="flex justify-between items-center px-8 pb-2 gap-[25px] cursor-pointer"
           onClick={handleClick}
         >
           <div className="flex items-center justify-center gap-5 xs:pt-[14px]">
@@ -146,13 +146,13 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
             </div>
           </div>
 
-          <h4
-            className={`text-[18px] xs:text-[10px] rounded-full w-[26px] h-[26px] xs:h-[16px] xs:w-[16px] flex items-center justify-center plusIcon ${
-              !isOpen ? "rotate-0" : "rotate-[-180deg]"
+          <div
+            className={`gradient-bg h-[30px] w-[30px] rounded-full flex items-center justify-center transition-transform duration-300 ${
+              !isOpen ? "rotate-0" : "rotate-180"
             }`}
           >
-            <img src={arw} alt="" />
-          </h4>
+            <img src={arw} alt="arrow" className="w-4 h-4" />
+          </div>
         </div>
         <div style={contentStyles}>
           <div className="w-[100%] px-[34px] pb-[20px]">
@@ -176,10 +176,10 @@ const FaqSec = () => {
 
   return (
     <div className="relative faqs_bg" id="faq">
-      <div className="w-[100%] max-w-[1040px] pt-[73px] mx-auto pb-[63px] flex flex-col gap-4">
+      <div className="w-[100%] max-w-[840px] pt-[73px] mx-auto pb-[63px] flex flex-col gap-4">
         <div className="text-center">
-          <h2 className="section_heading pb-[10px]">
-            Frequently Asked Questions
+          <h2 className="pb-[10px]">
+            Frequently <br /> Asked Questions
           </h2>
         </div>
         <div className="2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] mx-auto">

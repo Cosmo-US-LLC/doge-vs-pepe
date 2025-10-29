@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Countdown, {
   zeroPad,
   calcTimeDelta,
@@ -23,8 +23,6 @@ import coinsw12 from "../../assets/walletsec/coins/tokens (3).svg";
 import coinsw13 from "../../assets/walletsec/coins/tokens (16).svg";
 import coinsw14 from "../../assets/walletsec/coins/tokens (15).svg";
 import tokens from "../../assets/walletsec/coins/tokens.svg";
-
-
 
 import doge_icn from "../../assets/mobile_assets/coins (2).png";
 import pepe_icn from "../../assets/mobile_assets/coins (1).png";
@@ -65,55 +63,68 @@ const tokenSelect = [
     { id: 9, symbol: "USDC", sub_symbol: "ERC-20", icon: coinsw6 },
     { id: 10, symbol: "DOGE", sub_symbol: "ERC-20", icon: coinsw11 },
   ],
-  [{ id: 11, symbol: "More" },
-    
-  ],
+  [{ id: 11, symbol: "More" }],
 ];
-
 
 const iconsData = [
   {
     img: coinsw14,
   },
-   {
+  {
     img: coinsw7,
   },
-   {
+  {
     img: coinsw9,
   },
-   {
+  {
     img: coinsw8,
   },
-   {
+  {
     img: coinsw11,
   },
-   {
+  {
     img: coinsw1,
   },
-  
-   
-
-
 ];
 
-function HeroWalletSec() {
-
+function HeroWalletSec({
+  initialHours = 2,
+  initialMinutes = 13,
+  initialSeconds = 54,
+}) {
   const [activeButton, setActiveButton] = useState("Buy");
   const [activeButtonPepe, setActiveButtonPepe] = useState("Buy");
 
- 
+  const [time, setTime] = useState(
+    initialHours * 3600 + initialMinutes * 60 + initialSeconds
+  );
+
+  useEffect(() => {
+    if (time <= 0) return;
+    const interval = setInterval(() => {
+      setTime((prev) => prev - 1);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [time]);
+
+  const formatTime = (secs) => {
+    const h = String(Math.floor(secs / 3600)).padStart(2, "0");
+    const m = String(Math.floor((secs % 3600) / 60)).padStart(2, "0");
+    const s = String(secs % 60).padStart(2, "0");
+    return `${h}:${m}:${s}`;
+  };
 
   return (
     <div
-      className="w-[100%] max-w-[1440px] mx-auto relative py-[80px]"
+      className="w-[100%] max-w-[1440px] h-[100%] mx-auto relative py-[80px] wallet_sec"
       id="wallet"
     >
       <div className="max-w-[1240px] mx-auto flex justify-center space-x-[80px]">
-        <img className="absolute left-0 z-[1]" src={bg_img_doge} alt="" />
-        <div className="flex flex-col w-[100%] relative z-[99] max-w-[404px]  py-10 space-y-[20px] px-4 ">
-          <div>
-            <h3
-              className="text-center text-[56px] leading-[116.667%] text-[#FFBF0C] font-[Anton] font-[400]"
+        {/* <img className="absolute left-0 z-[1]" src={bg_img_doge} alt="" /> */}
+        <div className="flex flex-col w-[47%] relative z-[99] pt-[300px] space-y-[20px] px-4 ">
+          <div className="absolute top-[-50px] left-0 z-0 w-[100%] h-[100%] ">
+            <h2
+              className="text-center !text-[#E67500] !font-[112.5px] !leading-[120%]"
               style={{
                 textShadow: "4.556px -0.57px 17.144px #F1AD03",
                 webkitTextStrokeWidth: "1.09px",
@@ -121,7 +132,7 @@ function HeroWalletSec() {
               }}
             >
               TEAM DOGE
-            </h3>
+            </h2>
           </div>
           <div>
             <div className="flex flex-col space-y-[5px] justify-center ">
@@ -143,26 +154,21 @@ function HeroWalletSec() {
             </div>
           </div>
 
-          <div className="px-4 bg-[#F2B60F] w-[100%] space-y-[10px]  px-[13px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
-            <div className="bg-[#00000040] flex justify-between p-1 rounded-[30px]">
+          <div className="px-4 bg-[#040404] w-[100%] space-y-[10px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
+            <div className="bg-[rgba(255, 255, 255, 0.10)] flex justify-between rounded-[30px] border border-[rgba(255, 255, 255, 0.20)]">
               {Buybuttons.map((button) => (
                 <div
                   key={button.id}
                   onClick={() => setActiveButton(button.id)}
                   className={`w-[100%] rounded-[30px] space-x-[4px] flex justify-center items-center cursor-pointer ${
                     activeButton === button.id
-                      ? "bg-[#EFAB00] border border-black"
+                      ? "bg-[#E67500] border border-black"
                       : "text-[#000]"
                   }`}
                 >
-                  <img
-                    src={button.img}
-                    className="h-[18px]"
-                    alt={button.label}
-                  />
                   <p
                     className={`text-[18px] font-[Helvetica] font-[700] ${
-                      activeButton === button.id ? "text-[#000]" : "text-[#000]"
+                      activeButton === button.id ? "text-[#fff]" : "text-[#fff]"
                     }`}
                   >
                     {button.label}
@@ -170,8 +176,8 @@ function HeroWalletSec() {
                 </div>
               ))}
             </div>
-            <div className="space-y-[8px]">
-              <h3 className="text-[50px] font-[400] font-[Anton] text-center leading-[ 76%] text-[#000]">
+            <div className="space-y-[10px]">
+              <h3 className="text-[50px] font-[400] font-[Anton] text-center leading-[ 76%] text-[#fff]">
                 180,492.39
               </h3>
             </div>
@@ -182,24 +188,24 @@ function HeroWalletSec() {
                   background: "rgba(255, 255, 255, 0.28)",
                 }}
               >
-                <div className="bg-[#F6FF00] h-[23px] w-[20%] rounded-[30px]"></div>
-                <span className=" w-[70%] text-center text-[12px] font-[Helvetica]">
+                <div className="bg-[#E67500] h-[23px] w-[20%] rounded-[30px]"></div>
+                <span className=" w-[70%] text-center text-[12px] text-[#fff] font-[Helvetica]">
                   Until Presale Round Win
                 </span>
               </div>
               <div className="flex justify-between">
-                <h4 className="text-[16px] font-[Anton] font-[400] text-[#000]">
+                <h4 className="text-[16px] font-[Anton] font-[400] text-[#fff]">
                   USD Raised
                 </h4>
-                <h5 className="text-[16px] font-[400] font-[Anton] text-[#000]">
+                <h5 className="text-[16px] font-[400] font-[Anton] text-[#fff]">
                   {" "}
                   $1,000,000
                 </h5>
               </div>
             </div>
-            <div className="border-[1px] p-1 rounded-[13px] space-y-[15px] border-[#fff]">
+            <div className="space-y-[15px]">
               <div>
-                <h3 className="text-[18px] font-[400] font-[Anton] text-center leading-[150%] text-[#000]">
+                <h3 className="text-[18px] font-[400] font-[Anton] text-center leading-[150%] text-[#fff]">
                   1 Team Doge = $0.006
                 </h3>
               </div>
@@ -216,34 +222,33 @@ function HeroWalletSec() {
                   ))}
                 </div>
               </div>
-              <div className="bg-[#D89F02] border-[1px] border-[#000] px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[8px]">
+              <div className="bg-[rgba(255, 255, 255, 0.10)] border-[1px] border-[rgba(255, 255, 255, 0.20)] px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[8px]">
                 <div className="">
-                  <h5 className=" text-[16px] leading-[16px] font-[400] font-[Anton]">
+                  <h5 className=" text-[16px] text-[#fff] leading-[16px] font-[400] font-[Anton]">
                     You pay
                   </h5>
                   <input
                     type="text"
-                    className=" w-[73px] text-[16px] font-[Anton] font-[400] bg-[transparent] outline-none"
+                    className=" w-[73px] text-[16px] text-[#fff] font-[Anton] font-[400] bg-[transparent] outline-none"
                     defaultValue={1}
                   />
                 </div>
 
                 <div className="relative min-w-[136px] w-fit inline-block text-left">
-                   <TokenSelectDropdown
+                  <TokenSelectDropdown
                     tokens={tokenSelect[0]}
                     onChange={(token) => console.log("Selected:", token)}
                   />
-
                 </div>
               </div>
-              <div className="bg-[#D89F02] border-[1px] border-[#000] relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[8px] ">
+              <div className="bg-[rgba(255, 255, 255, 0.10)] border-[1px] border-[rgba(255, 255, 255, 0.20)] relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[8px] ">
                 <div className="w-[50%]">
-                  <h5 className="font-[Anton] text-[16px] leading-[16px] font-[400]">
+                  <h5 className="font-[Anton] text-[#fff] text-[16px] leading-[16px] font-[400]">
                     You receive
                   </h5>
                   <input
                     type="text"
-                    className="text-[16px] font-[400] font-[Anton] bg-[transparent] outline-none"
+                    className="text-[16px] font-[400] text-[#fff] font-[Anton] bg-[transparent] outline-none"
                     defaultValue={`7,414,420`}
                   />
                 </div>
@@ -258,35 +263,30 @@ function HeroWalletSec() {
                       className="w-[18px] h-[18px]"
                       alt="Selected Icon"
                     />
-                    <h5 className="text-[14px] font-[Helvetica] leading-[100%] font-[700]">
+                    <h5 className="text-[14px] text-[#fff] font-[Helvetica] leading-[100%] font-[700]">
                       TEAM DOGE
                     </h5>
                   </div>
                 </div>
               </div>
               <div className=" space-y-[5px]">
-                <h5 className="text-[#000] text-[16px] font-[Helvetica] font-[600] text-center">
+                <h5 className="text-[#fff] text-[16px] font-[Helvetica] font-[600] text-center">
                   Accepting
                 </h5>
                 <div className="flex justify-between space-x-1 max-w-[200px] mx-auto">
-                 
-                    <img
-                      src={tokens}
-                      className="max-h-[24px]"
-                      alt={`tokens`}
-                    />
+                  <img src={tokens} className="max-h-[24px]" alt={`tokens`} />
                 </div>
               </div>
               <div className="space-y-[10px]">
                 <div className="flex justify-center">
-                  <button className="bg-[#FFE100] text-[#000] font-[Anton] py-[10px] max-w-[100%] mx-auto w-[100%] text-[18px] font-[400] rounded-[8px]">
+                  <button className="bg-[#E67500] text-[#000] font-[Anton] py-[10px] max-w-[100%] mx-auto w-[100%] text-[18px] font-[400] rounded-[8px]">
                     Connect Wallet
                   </button>
                 </div>
-                <div className="flex space-x-2  justify-between items-center">
+                <div className="flex items-center justify-between space-x-2">
                   <button
                     style={{
-                      background: "rgba(176, 133, 11, 0.60)",
+                      background: "rgba(255, 255, 255, 0.10)",
                     }}
                     className="flex items-center font-[Helvetica] py-[10px] justify-center text-[#fff] w-[100%] rounded-[4px] text-[10px] font-[400] space-x-1 text-[#fff"
                   >
@@ -352,7 +352,7 @@ function HeroWalletSec() {
                   </button>
                   <button
                     style={{
-                      background: "rgba(176, 133, 11, 0.60)",
+                      background: "rgba(255, 255, 255, 0.10)",
                     }}
                     className="flex items-center font-[Helvetica] py-[10px] w-[100%] justify-center text-[#fff] rounded-[4px] text-[10px] font-[400] text-[#fff"
                   >
@@ -376,7 +376,7 @@ function HeroWalletSec() {
                   </button>
                 </div>
                 <div>
-                  <h4 className="text-[15px] pb-2 font-[400] font-[Anton] text-center leading-[150%] text-[#000]">
+                  <h4 className="text-[15px] pb-2 font-[400] font-[Anton] text-center leading-[150%] text-[#fff]">
                     Max Buy In: $25,000
                   </h4>
                 </div>
@@ -473,11 +473,22 @@ function HeroWalletSec() {
             </div>
           </div>
         </div>
-
-        <div className="flex w-[50%] w-[100%] relative z-[99] max-w-[404px] flex-col py-10 space-y-[20px] px-4  ">
-          <div>
-            <h3
-              className="text-center text-[56px] leading-[116.667%] text-[#00FF2F] font-[Anton] font-[400]"
+        <div className="flex w-[6%] h-auto items-start justify-center">
+          <div className="p-[1.5px] rounded-xl h-auto gradient-bg inline-block mt-[380px]">
+            <div className="bg-[#063b3b] rounded-xl px-6 py-4 text-center">
+              <p className="text-sm font-bold tracking-widest text-white">
+                TIME LEFT:
+              </p>
+              <h2 className="font-mono text-4xl font-bold text-white">
+                {formatTime(time)}
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div className="flex w-[47%] relative z-[99] pt-[300px] flex-col space-y-[20px] px-4  ">
+          <div className="absolute top-[-50px] left-0 z-0 w-[100%] h-[100%]">
+            <h2
+              className="text-center !text-[#00FF2F] !font-[112.5px] !leading-[120%]"
               style={{
                 textShadow: "6.534px -0.817px 24.583px #74FF60",
                 webkitTextStrokeWidth: "1.09px",
@@ -485,7 +496,7 @@ function HeroWalletSec() {
               }}
             >
               TEAM PEPE
-            </h3>
+            </h2>
           </div>
           <div>
             <div className="flex flex-col space-y-[5px] justify-center ">
@@ -507,26 +518,28 @@ function HeroWalletSec() {
             </div>
           </div>
 
-          <div className="px-4 bg-[#4EB52A] w-[100%] space-y-[10px]  px-[13px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
-            <div className="bg-[#00000040] flex justify-between p-1 rounded-[30px]">
+          <div className="px-4 bg-[#040404] w-[100%] space-y-[10px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
+            <div className="bg-[rgba(255, 255, 255, 0.10)] flex justify-between rounded-[30px] border border-[rgba(255, 255, 255, 0.20)]">
               {Buybuttons.map((button) => (
                 <div
                   key={button.id}
                   onClick={() => setActiveButtonPepe(button.id)}
                   className={`w-[100%] rounded-[30px] space-x-[4px] flex justify-center items-center cursor-pointer ${
                     activeButtonPepe === button.id
-                      ? "bg-[#4EB52A] border border-black"
+                      ? "bg-[#4EB52A] "
                       : "text-[#000]"
                   }`}
                 >
-                  <img
+                  {/* <img
                     src={button.img}
                     className="h-[18px]"
                     alt={button.label}
-                  />
+                  /> */}
                   <p
                     className={`text-[18px] font-[Helvetica] font-[700] ${
-                      activeButtonPepe === button.id ? "text-[#000]" : "text-[#000]"
+                      activeButtonPepe === button.id
+                        ? "text-[#fff]"
+                        : "text-[#fff]"
                     }`}
                   >
                     {button.label}
@@ -535,7 +548,7 @@ function HeroWalletSec() {
               ))}
             </div>
             <div className="space-y-[8px]">
-              <h3 className="text-[50px] font-[400] font-[Anton] text-center leading-[ 76%] text-[#000]">
+              <h3 className="text-[50px] font-[400] font-[Anton] text-center leading-[ 76%] text-[#fff]">
                 240,492.39
               </h3>
             </div>
@@ -543,27 +556,27 @@ function HeroWalletSec() {
               <div
                 className="w-[100%] flex  items-center h-[23px] rounded-[30px]   "
                 style={{
-                  background: "rgba(255, 255, 255, 0.28)",
+                  background: "rgba(255, 255, 255, 0.20)",
                 }}
               >
                 <div className="bg-[#66FF83] h-[23px] w-[20%] rounded-[30px]"></div>
-                <span className=" w-[70%] text-center text-[12px] font-[Helvetica]">
+                <span className=" w-[70%] text-[#fff] text-center text-[12px] font-[Helvetica]">
                   Until Presale Round Win
                 </span>
               </div>
               <div className="flex justify-between">
-                <h4 className="text-[16px] font-[Anton] font-[400] text-[#000]">
+                <h4 className="text-[16px] font-[Anton] font-[400] text-[#fff]">
                   USD Raised
                 </h4>
-                <h5 className="text-[16px] font-[400] font-[Anton] text-[#000]">
+                <h5 className="text-[16px] font-[400] font-[Anton] text-[#fff]">
                   {" "}
                   $1,000,000
                 </h5>
               </div>
             </div>
-            <div className="border-[1px] p-1 rounded-[13px] space-y-[15px] border-[#fff]">
+            <div className="space-y-[15px]">
               <div>
-                <h3 className="text-[18px] font-[400] font-[Anton] text-center leading-[150%] text-[#000]">
+                <h3 className="text-[18px] font-[400] font-[Anton] text-center leading-[150%] text-[fff]">
                   1 Team Pepe = $0.006
                 </h3>
               </div>
@@ -580,14 +593,14 @@ function HeroWalletSec() {
                   ))}
                 </div>
               </div>
-              <div className="bg-[#46A326] border-[1px] border-[#000] px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[8px]">
+              <div className="bg-[rgba(255, 255, 255, 0.10)] border-[1px] border-[#fff] px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[8px]">
                 <div className="">
-                  <h5 className=" text-[16px] leading-[16px] font-[400] font-[Anton]">
+                  <h5 className=" text-[16px] text-[#fff] leading-[16px] font-[400] font-[Anton]">
                     You pay
                   </h5>
                   <input
                     type="text"
-                    className=" w-[73px] text-[16px] font-[Anton] font-[400] bg-[transparent] outline-none"
+                    className=" w-[73px] text-[16px] text-[#fff] font-[Anton] font-[400] bg-[transparent] outline-none"
                     defaultValue={1}
                   />
                 </div>
@@ -597,56 +610,51 @@ function HeroWalletSec() {
                     tokens={tokenSelect[0]}
                     onChange={(token) => console.log("Selected:", token)}
                   />
-
                 </div>
               </div>
-              <div className="bg-[#46A326] border-[1px] border-[#000] relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[8px] ">
+              <div className="bg-[rgba(255, 255, 255, 0.10)] border-[1px] border-[rgba(255, 255, 255, 0.20)] relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[8px] ">
                 <div className="w-[50%]">
-                  <h5 className="font-[Anton] text-[16px] leading-[16px] font-[400]">
+                  <h5 className="font-[Anton] text-[16px] text-[#fff] leading-[16px] font-[400]">
                     You receive
                   </h5>
                   <input
                     type="text"
-                    className="text-[16px] font-[400] font-[Anton] bg-[transparent] outline-none"
+                    className="text-[16px] font-[400] text-[#fff] font-[Anton] bg-[transparent] outline-none"
                     defaultValue={`7,414,420`}
                   />
                 </div>
 
                 <div className="relative min-w-[136px] w-fit inline-block text-left">
                   <div
-                    className="flex items-center justify-start space-x-2 cursor-pointer p-2 rounded-[8px]  w-[100%]"
-                    style={{ background: "rgba(255, 255, 255, 0.20)" }}
+                    className="flex items-center justify-start space-x-2 border border-[rgba(255, 255, 255, 0.20)] cursor-pointer p-2 rounded-[8px]  w-[100%]"
+                    style={{ background: "rgba(255, 255, 255, 0.10)" }}
                   >
                     <img
                       src={pepeicon}
                       className="w-[18px] h-[18px]"
                       alt="Selected Icon"
                     />
-                    <h5 className="text-[14px] font-[Helvetica] leading-[100%] font-[700]">
+                    <h5 className="text-[14px] text-[#fff] font-[Helvetica] leading-[100%] font-[700]">
                       TEAM PEPE
                     </h5>
                   </div>
                 </div>
               </div>
               <div className=" space-y-[5px]">
-                <h5 className="text-[#000] text-[16px] font-[Helvetica] font-[600] text-center">
+                <h5 className="text-[#fff] text-[16px] font-[Helvetica] font-[600] text-center">
                   Accepting
                 </h5>
-                <div className="flex justify-between space-x-1 max-w-[200px] mx-auto">
-                  <img
-                      src={tokens}
-                      className="max-h-[24px]"
-                      alt={`tokens`}
-                    />
+                <div className="flex justify-between text-[#fff] space-x-1 max-w-[200px] mx-auto">
+                  <img src={tokens} className="max-h-[24px]" alt={`tokens`} />
                 </div>
               </div>
               <div className="space-y-[10px]">
                 <div className="flex justify-center">
-                  <button className="bg-[#00FF31] text-[#000] font-[Anton] py-[10px] max-w-[100%] mx-auto w-[100%] text-[18px] font-[400] rounded-[8px]">
+                  <button className="bg-[#00FF2F] text-[#000] font-[Anton] py-[10px] max-w-[100%] mx-auto w-[100%] text-[18px] font-[400] rounded-[8px]">
                     Connect Wallet
                   </button>
                 </div>
-                <div className="flex space-x-2  justify-between items-center">
+                <div className="flex items-center justify-between space-x-2">
                   <button
                     style={{
                       background: "rgba(18, 70, 0, 0.60)",
@@ -739,7 +747,7 @@ function HeroWalletSec() {
                   </button>
                 </div>
                 <div>
-                  <h4 className="text-[15px] pb-2 font-[400] font-[Anton] text-center leading-[150%] text-[#000]">
+                  <h4 className="text-[15px] pb-2 font-[400] font-[Anton] text-center leading-[150%] text-[#fff]">
                     Max Buy In: $25,000
                   </h4>
                 </div>
@@ -836,11 +844,10 @@ function HeroWalletSec() {
             </div>
           </div>
         </div>
-        <img className="absolute right-0 z-[1]" src={bg_img_pepe} alt="" />
+        {/* <img className="absolute right-0 z-[1]" src={bg_img_pepe} alt="" /> */}
       </div>
     </div>
   );
 }
 
 export default HeroWalletSec;
-

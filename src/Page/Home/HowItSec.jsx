@@ -79,8 +79,8 @@ function HowItSec() {
 
                     {/* Text Overlay */}
                     <div className="absolute inset-0 bg-black/40 flex items-end">
-                      <div className="p-4">
-                        <p className="subtext text-left !font-[400]">
+                      <div className="p-4 z-20 relative text-[#fff]">
+                        <p className="  text-left text-white !text-[14px] !leading-[157%] !font-[200] z-20">
                           {item.text}
                         </p>
                       </div>
