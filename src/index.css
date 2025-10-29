@@ -136,6 +136,15 @@ h4 {
   line-height: 120%;
   letter-spacing: 0.34px;
 }
+.navbar_link:hover {
+  color: #e67500;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #e67500;
+  text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+}
 
 .footer_link {
   color: #fff;
