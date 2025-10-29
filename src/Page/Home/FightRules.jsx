@@ -6,27 +6,51 @@ import { Plus, Minus } from "lucide-react";
 export default function FightRules({ backgroundUrl }) {
   const rules = [
     {
-      title: "1. CHOOSE YOUR CHAMPION",
+      title: (
+        <p>
+          <span className="text-[#DD5B01]">1. </span> CHOOSE YOUR CHAMPION
+        </p>
+      ),
       desc: "Pick your favorite meme by buying the coin you support.",
     },
     {
-      title: "2. BUY TO SUPPORT YOUR TEAM",
+      title: (
+        <p>
+          <span className="text-[#DD5B01]">2. </span> BUY TO SUPPORT YOUR TEAM
+        </p>
+      ),
       desc: "Every token you buy counts as a vote for your champion and team. ",
     },
     {
-      title: "3. THE RACE TO $1 MILLION",
+      title: (
+        <p>
+          <span className="text-[#DD5B01]">3. </span> THE RACE TO $1 MILLION
+        </p>
+      ),
       desc: "The first team to reach $1 million ends the round. There will be 12 rounds in total, and the team that wins the most rounds will be the winner and launch.",
     },
     {
-      title: "4. THE WINNER TAKES ALL",
+      title: (
+        <p>
+          <span className="text-[#DD5B01]">4. </span> THE WINNER TAKES ALL
+        </p>
+      ),
       desc: "Only the winning coin will remain and officially launch. ",
     },
     {
-      title: "5. PRIZE MONEY",
+      title: (
+        <p>
+          <span className="text-[#DD5B01]">5. </span> PRIZE MONEY
+        </p>
+      ),
       desc: "Everyone will receive the winning coin but only those who backed it will get the exclusive prize money airdropped. ",
     },
     {
-      title: "6. TRANSPARENCY & FAIR PLAY",
+      title: (
+        <p>
+          <span className="text-[#DD5B01]">6. </span> TRANSPARENCY & FAIR PLAY
+        </p>
+      ),
       desc: "Each wallet is capped at $25,000 to ensure fair participation for all. ",
     },
   ];
@@ -39,7 +63,7 @@ export default function FightRules({ backgroundUrl }) {
 
   return (
     <section
-      className="relative w-full max-w-[1440px]  mx-auto flex flex-col justify-center items-center"
+      className="relative w-full    mx-auto flex flex-col justify-center items-center"
       aria-label="fight_rules"
       id="fight_rules"
       style={{
@@ -49,28 +73,25 @@ export default function FightRules({ backgroundUrl }) {
         minHeight: "900px",
       }}
     >
-      <div className="flex w-full gap-10 max-w-[1280px]  mx-auto px-8 flex-row">
-        <div className="h-[800px] flex justify-center items-end w-[50%]">
-          <div className="border-2 border-white/25 px-8 py-8 m-4 rounded-lg bg-black/90 flex flex-col gap-4 shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
-            <h2 className="text-center section_heading">THE FIGHT RULES</h2>
+      <div className="flex w-full gap-10 max-w-[1280px] px-8 mx-auto  flex-row">
+        <div className="h-[800px] flex justify-start items-end w-[60%]">
+          <div className=" flex flex-col gap-4 ">
+            <h2 className="text-center">THE FIGHT RULES</h2>
 
             <div className="flex flex-col gap-4">
               {rules.map((rule, index) => (
                 <div
                   key={index}
-                  className="py-4 border-b border-white/20 last:border-b-0 "
+                  className="py-4 px-8 border border-white/20 last:border-b-0 rounded-[30px]"
                   onClick={() => toggleAccordion(index)}
                 >
-                  <div
-                    children
-                    className="flex justify-between space-x-2 items-center cursor-pointer"
-                  >
+                  <div className="flex justify-between space-x-2 items-center cursor-pointer">
                     <p className="text-[32px] font-[400] leading-[40px] tracking-wide text-[#fff] uppercase font-anton">
                       {rule.title}
                     </p>
                     {activeIndex === index ? (
                       <div className="w-8 h-8 gradient-bg rounded-full flex justify-center items-center">
-                        <img src={Minus} alt="" className="w-6 h-6" />
+                        <Minus className="text-white w-6 h-6" />
                       </div>
                     ) : (
                       <div className="w-8 h-8 gradient-bg rounded-full flex justify-center items-center">
@@ -96,7 +117,7 @@ export default function FightRules({ backgroundUrl }) {
             </div>
           </div>
         </div>
-        <div className="w-[50%] flex justify-center items-end pb-10 fight_rules relative">
+        <div className="w-[40%] flex justify-center items-end pb-10 fight_rules relative">
           <img
             src={fight_rules_msg}
             alt=""

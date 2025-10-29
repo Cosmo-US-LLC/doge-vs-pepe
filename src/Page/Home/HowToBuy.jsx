@@ -35,18 +35,20 @@ export default function HowToBuy() {
 
         <div className="flex flex-wrap justify-center gap-6 ">
           {steps.map((s, i) => (
-            <article
+            <div
+              className="gradient-bg rounded-[30px] z-0 p-[1px] overflow-hidden"
               key={i}
-              className="relative bg-neutral-900/80 text-white p-6 flex-1 basis-[calc(50%-0.75rem)] max-w-[480px] gradient_border"
             >
-              <div className="relative flex flex-col h-full">
-                <div className="flex flex-row items-center gap-2">
-                  <h4 className="gradient-text">{s.step}</h4>
-                  <h4 className="">{s.title}</h4>
+              <div className="relative rounded-[30px] z-20 bg-neutral-900/80 backdrop-blur-[10px] text-white p-6 flex-1 basis-[calc(50%-0.75rem)] h-full max-w-[480px]">
+                <div className="relative flex flex-col h-full">
+                  <div className="flex flex-row items-center gap-2">
+                    <h4 className="gradient-text">{s.step}</h4>
+                    <h4 className="">{s.title}</h4>
+                  </div>
+                  <p className="flex-grow mt-3 subtext ">{s.body}</p>
                 </div>
-                <p className="flex-grow mt-3 subtext ">{s.body}</p>
               </div>
-            </article>
+            </div>
           ))}
         </div>
 

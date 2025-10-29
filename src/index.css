@@ -55,6 +55,22 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/mont/Mont-ExtraLight.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/mont/Mont-Heavy.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   font-family: "Anton", serif !important;
@@ -109,6 +125,37 @@ h4 {
   font-weight: 600;
   line-height: 120%;
   letter-spacing: -0.64px;
+}
+
+.navbar_link {
+  color: #fff;
+  font-family: "Mont", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.34px;
+}
+
+.footer_link {
+  color: #fff;
+  font-family: Anton;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 32.4px */
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+.footer_link:hover {
+  color: #e67500;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #e67500;
+  text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
 
 /* code {
@@ -170,12 +217,18 @@ h4 {
 
 .two_legends {
   background-image: url(../src/assets/twoLegends/v2_two_legends.webp);
-  background-position: center;
+  background-position: top;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .fight_rules {
   background-image: url(../src/assets/fightRule/v2_the_fight_rule_dvp.webp);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.wallet_sec {
+  background-image: url(../src/assets/walletsec//v2_dvp_bg.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -501,6 +554,7 @@ h4 {
 }
 .gradient_border {
   border: 1px solid transparent;
+
   border-image: linear-gradient(
       90deg,
       #dd5b01 5.47%,
@@ -519,8 +573,8 @@ h4 {
   line-height: normal;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  padding: 12px 24px; /* adjust as needed */
-  border-radius: 150px; /* optional */
+  padding: 12px 24px;
+  border-radius: 70px;
   border: none;
   cursor: pointer;
   transition: background 0.3s ease;
@@ -533,7 +587,7 @@ h4 {
     #e67500 42.62%,
     #dd5b01 97.22%
   );
-  color: #fff;
+  /* color: #fff; */
 }
 
 .gradient-border {

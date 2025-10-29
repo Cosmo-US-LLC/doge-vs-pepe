@@ -31,8 +31,8 @@ export default function TokenSelectDropdown({ tokens, onChange }) {
     <div className="relative w-[100%]" ref={dropdownRef}>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center justify-between w-full px-2 h-[32px] rounded-[8px] cursor-pointer"
-        style={{ background: "rgba(255, 255, 255, 0.20)" }}
+        className="flex items-center justify-between w-full border border-[rgba(255, 255, 255, 0.20)] px-2 h-[32px] rounded-[8px] cursor-pointer"
+        style={{ background: "rgba(255, 255, 255, 0.10)" }}
       >
         <span className="flex items-center gap-2 text-[11.7px] font-[700] font-[Inter]">
           <div className="min-w-[20px]">
@@ -46,7 +46,7 @@ export default function TokenSelectDropdown({ tokens, onChange }) {
           </div>
           <span
             className={`leading-[10px] text-start ${
-              selected.symbol === "More" ? "text-[14px] " : "text-[11.7px]"
+              selected.symbol === "More" ? "text-[#fff] text-[14px] " : "text-[#fff] text-[11.7px]"
             }`}
           >
             {selected.symbol}
@@ -59,7 +59,7 @@ export default function TokenSelectDropdown({ tokens, onChange }) {
           </span>
         </span>
         <svg
-          className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""}`}
+          className={`w-4 h-4 text-[#fff] transition-transform ${open ? "rotate-180" : ""}`}
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
@@ -75,7 +75,7 @@ export default function TokenSelectDropdown({ tokens, onChange }) {
 
       {open && (
         <div
-          className="absolute left-0 mt-1 w-full border border-gray-300 rounded-md shadow-md z-10 overflow-hidden"
+          className="absolute left-0 z-10 w-full mt-1 overflow-hidden border border-gray-300 rounded-md shadow-md"
           style={{
             background: "rgba(54, 54, 54, 0)",
             backdropFilter: "blur(5px)",

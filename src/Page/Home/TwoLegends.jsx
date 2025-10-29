@@ -1,6 +1,8 @@
 import React from "react";
 import circle from "../../assets/twoLegends/v2_circle.webp";
 import white_bg from "../../assets/twoLegends/v2_white_bg.webp";
+import dogeDP from "../../assets/twoLegends/v2_doge.webp";
+import pepeDP from "../../assets/twoLegends/v2_pepe.webp";
 
 function TwoLegends() {
   return (
@@ -9,14 +11,14 @@ function TwoLegends() {
       id="what_is"
     >
       <div className="flex w-[100%] max-w-[1280px] mx-auto px-8 flex-row">
-        <div className="w-[36%] h-[525px] two_legends">
-          <img
+        <div className="w-[36%] h-[560px] two_legends">
+          {/* <img
             src={circle}
             alt=""
             className="absolute left-[-300px] top-[100px] "
-          />
+          /> */}
         </div>
-        <div className=" w-[66%]  relative z-[99] flex flex-col gap-4 pt-6 pl-6">
+        <div className=" w-[66%]  relative z-[99] flex flex-col gap-4 pt-6 pl-3">
           <h3>Two Legends. One Crown.</h3>
           <h4 className="max-w-[700px]">
             {" "}
@@ -32,27 +34,29 @@ function TwoLegends() {
           </h4>
           <div className="flex flex-row justify-between gap-4">
             <div className="flex flex-col gap-2 border-2 border-[#DD5B01] p-4 rounded-2xl">
-              <div>
-                {/* <img src={doge} alt="" /> */}
+              <div className="flex flex-row gap-2 items-center">
+                <img src={dogeDP} alt="" className="w-[60px] h-[80px]" />
                 <h4>TEAM DOGE</h4>
               </div>
-              <p className="subtext">
-                Doge, the undefeated OG Meme Heavyweight Champion, dominating
-                for years with his wild, unpredictable style.
+              <p className="subtext !text-[#FFFFFF99]">
+                <span className="text-[#E67500]">Doge </span>, the undefeated OG
+                Meme Heavyweight Champion, dominating for years with his wild,
+                unpredictable style.
               </p>
             </div>
             <div className="flex flex-col gap-2 border-2 border-[#00FF2F] p-4 rounded-2xl">
-              <div>
-                {/* <img src={doge} alt="" /> */}
+              <div className="flex flex-row gap-2 items-center">
+                <img src={pepeDP} alt="" className="w-[60px] h-[80px]" />
                 <h4>TEAM DOGE</h4>
               </div>
-              <p className="subtext">
-                Doge, the undefeated OG Meme Heavyweight Champion, dominating
-                for years with his wild, unpredictable style.
+              <p className="subtext !text-[#FFFFFF99]">
+                <span className="text-[#00FF2F]">Pepe </span>, the fearless
+                rising star, already in the top 3 meme heavyweights, known for
+                his brutal knockouts.
               </p>
             </div>
           </div>
-          <div className="absolute bottom-[-40px] right-[160px] w-[440px] h-[70px] z-[99]">
+          <div className="absolute bottom-[1px] right-[160px] w-[440px] h-[70px] z-[99]">
             <img src={white_bg} alt="" className="w-full h-full" />
             <h4 className="absolute top-[27px] left-[-77px] w-full h-full !text-[14px] !text-[#000] subtext text-center">
               The first to hit $1M wins
