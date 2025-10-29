@@ -1,5 +1,7 @@
 import { useState } from "react";
 import bgImage from "../../assets/fightRule/v2_the_fight_rule_bg.webp";
+import top_shadow from "../../assets/fightRule/top_shadow.webp";
+import bottom_shadow from "../../assets/fightRule/bottom_shadow.webp";
 import fight_rules_msg from "../../assets/fightRule/v2_the_fight_rule_msg.webp";
 import { Plus, Minus } from "lucide-react";
 
@@ -63,7 +65,7 @@ export default function FightRules({ backgroundUrl }) {
 
   return (
     <section
-      className="relative w-full    mx-auto flex flex-col justify-center items-center"
+      className="relative w-full mx-auto flex flex-col justify-center items-center"
       aria-label="fight_rules"
       id="fight_rules"
       style={{
@@ -73,6 +75,12 @@ export default function FightRules({ backgroundUrl }) {
         minHeight: "900px",
       }}
     >
+      <div className="absolute z-20 top-0 left-0 right-0 w-full   ">
+        <img className="w-full h-[100px]" src={top_shadow} alt="" />
+      </div>
+      <div className="absolute z-20 bottom-0 left-0 right-0  w-full">
+        <img className="w-full h-[60px]" src={bottom_shadow} alt="" />
+      </div>
       <div className="flex w-full gap-10 max-w-[1280px] px-8 mx-auto  flex-row">
         <div className="h-[800px] flex justify-start items-end w-[60%]">
           <div className=" flex flex-col gap-4 ">
