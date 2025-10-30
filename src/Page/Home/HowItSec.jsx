@@ -80,7 +80,7 @@ function HowItSec() {
                     {/* Text Overlay */}
                     <div className="absolute inset-0 bg-black/40 flex items-end">
                       <div className="p-4 z-20 relative text-[#fff]">
-                        <p className="  text-left text-white !text-[14px] !leading-[157%] !font-[200] z-20">
+                        <p className="description text-left text-[#fff] z-20">
                           {item.text}
                         </p>
                       </div>
@@ -91,11 +91,11 @@ function HowItSec() {
             ))}
           </Swiper>
 
-          <div className="!h-[35px] !w-[35px] swiper-button-prev3   cursor-pointer  absolute !left-[-80px] !top-[48%] z-10 rotate-180">
-            <img src={awr1} className="!h-[25px] !w-[25px]" alt="Previous" />
+          <div className="!h-[32px] !w-[32px] bg-[#474747] border border-[#474747] rounded-full flex items-center justify-center swiper-button-prev3   cursor-pointer  absolute !left-[-60px] !top-[48%] z-10 rotate-180">
+            <img src={awr1} className="!h-[14px] !w-[14px]" alt="Previous" />
           </div>
-          <div className="!h-[35px] !w-[35px] swiper-button-next3   cursor-pointer  absolute !right-[-80px] !top-[48%] z-10">
-            <img src={awr1} className="!h-[25px] !w-[25px]" alt="Next" />
+          <div className="!h-[32px] !w-[32px] bg-[#474747] border border-[#474747] rounded-full flex items-center justify-center swiper-button-next3   cursor-pointer  absolute !right-[-60px] !top-[48%] z-10">
+            <img src={awr1} className="!h-[14px] !w-[14px]" alt="Next" />
           </div>
         </div>
 
