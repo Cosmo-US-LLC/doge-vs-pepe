@@ -47,7 +47,7 @@ function DogeVsPepeNews() {
             <img
               src={panel.image}
               alt={panel.alt}
-              className="object-cover w-full h-64 rounded-[12px] border-gray-700"
+              className="object-cover h-[340px] w-[400px] rounded-[12px] border-gray-700"
             />
           </div>
         ))}

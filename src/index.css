@@ -57,7 +57,55 @@
 
 @font-face {
   font-family: "Mont";
-  src: url("./assets/fonts/mont/Mont-ExtraLight.otf") format("opentype");
+  src: url("./assets/fonts/Mont/Mont-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -65,9 +113,73 @@
 
 @font-face {
   font-family: "Mont";
-  src: url("./assets/fonts/mont/Mont-Heavy.otf") format("opentype");
+  src: url("./assets/fonts/Mont/Mont-RegularItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-Heavy.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-HeavyItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./assets/fonts/Mont/Mont-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -76,14 +188,6 @@ body {
   font-family: "Anton", serif !important;
 }
 
-.section_heading {
-  font-family: "Anton", serif !important;
-  font-size: 56px;
-  line-height: 64px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
-}
 h1 {
   color: #fff;
   font-family: Anton;
@@ -126,6 +230,17 @@ h4 {
   text-transform: uppercase;
 }
 
+h5 {
+  color: #fff;
+  font-family: Anton;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 37.8px */
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+}
+
 .subtext {
   color: #fff;
   font-feature-settings: "liga" off;
@@ -135,6 +250,17 @@ h4 {
   font-weight: 600;
   line-height: 120%;
   letter-spacing: -0.64px;
+}
+
+.description {
+  color: #fff;
+  text-align: center;
+  font-family: Mont;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.56px;
 }
 
 .navbar_link {
