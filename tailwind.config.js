@@ -1,9 +1,9 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    screens: {
-      xs: "450px",
-    },
+    // screens: {
+    //   xs: "450px",
+    // },
     extend: {
       fontFamily: {
         anton: ["Anton", "sans-serif"],

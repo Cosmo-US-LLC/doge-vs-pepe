@@ -21,9 +21,10 @@ function DontWaitSec() {
       <div className="space-y-[35px] px-4">
         <div
           className="py-[20px] rounded-[26.9px] space-y-[10px] relative border border-neutral-400 bg-[#0101019f]"
-          style={{ 
-            background:"rgba(0, 0, 0, 0.68)",
-            backdropFilter: "blur(0px)" }}
+          style={{
+            background: "rgba(0, 0, 0, 0.68)",
+            backdropFilter: "blur(0px)",
+          }}
         >
           <div className="space-y-[10px] p-[20px] flex flex-col items-center justify-center">
             <h3 className="text-center text-[#fff] text-[32px] font-[400] uppercase font-[Anton]">
@@ -40,21 +41,16 @@ function DontWaitSec() {
             </h4>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center absolute bottom-[4px] left-12 right-12">
           <button
-            style={{
-              background:
-                "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
+            className="w-[100%] mx-auto btn-primary gradient-bg relative z-10"
+            onClick={() => {
+              const el = document.getElementById("wallet");
+              if (el) {
+                const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }
             }}
-            className="w-[100%] leading-normal font-[Anton] mx-auto py-[18px] text-anton text-[16px] font-[400] rounded-[60px] cursor-pointer relative z-10"
-           onClick={() => {
-  const el = document.getElementById("wallet");
-  if (el) {
-    const y = el.getBoundingClientRect().top + window.scrollY - 80; 
-    window.scrollTo({ top: y, behavior: "smooth" });
-  }
-}}
-
           >
             JOIN THE PRESALE
           </button>

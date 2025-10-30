@@ -40,14 +40,14 @@ function DogeVsPepeNews() {
   ];
 
   return (
-    <section className="w-full py-8 md:py-4">
-      <div className="grid grid-cols-3 gap-4 max-w-[1280px] mx-auto px-8 md:px-4">
+    <section className="w-full py-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-[1280px] mx-auto px-4 md:px-8">
         {newsPanels.map((panel) => (
           <div key={panel.id} className="relative">
             <img
               src={panel.image}
               alt={panel.alt}
-              className="object-cover h-[340px] w-[400px] rounded-[12px] border-gray-700"
+              className="   rounded-[12px] border-gray-700"
             />
           </div>
         ))}

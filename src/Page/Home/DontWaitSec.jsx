@@ -28,11 +28,7 @@ function DontWaitSec() {
         </div>
         <div className="flex justify-center absolute bottom-[130px] left-0 right-0">
           <button
-            style={{
-              background:
-                "linear-gradient(90deg, #FFBF01 36%, #01FE37 134.57%)",
-            }}
-            className="w-[457px] leading-normal mx-auto h-[65px] text-anton text-[30px] font-[400] rounded-[60px] cursor-pointer relative z-10"
+            className="w-[457px] btn-primary gradient-bg mx-auto h-[65px]   relative z-10"
             onClick={() => {
               document.getElementById("wallet")?.scrollIntoView({
                 behavior: "smooth",

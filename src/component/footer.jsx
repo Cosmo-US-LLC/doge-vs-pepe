@@ -193,7 +193,7 @@ function Footer() {
     <footer className="w-full pt-10  pb-6 overflow-hidden text-white bg-black">
       <div className="max-w-[1280px] px-4 md:px-8 mx-auto">
         {/* Top Nav */}
-        <nav className="max-w-[1280px] px-4 md:px-8 mx-auto flex flex-wrap justify-between gap-6 text-sm uppercase font-semibold tracking-wide mb-8">
+        <nav className="flex flex-wrap justify-between gap-6 text-sm uppercase font-semibold tracking-wide mb-8">
           <a
             href="what_is"
             onClick={(e) => handleScroll(e, "what_is", 90)}
@@ -258,7 +258,7 @@ function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="max-w-[1280px] mx-auto flex flex-row text-left justify-start items-start gap-6">
+        <div className="flex flex-row text-left justify-start items-start gap-4">
           {/* Left - Join us + socials */}
           <div className="flex-1 flex flex-row gap-3 items-center justify-start">
             <h5 className="">Join Us Now</h5>
@@ -267,7 +267,7 @@ function Footer() {
                 href="https://t.me/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-[40px] h-[40px] rounded-full border-[#fff] border bg-[rgba(255, 255, 255, 0.20] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
+                className="w-[40px] h-[40px] rounded-full border-[#FFFFFF1A] border-2 bg-[#474747] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -286,7 +286,7 @@ function Footer() {
                 href="https://instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-[40px] h-[40px] rounded-full border bg-[rgba(255, 255, 255, 0.20)] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
+                className="w-[40px] h-[40px] rounded-full border-[#FFFFFF1A] border-2 bg-[#474747] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -305,7 +305,7 @@ function Footer() {
                 href="https://x.com/Doge_V_Pepe"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-[40px] h-[40px] rounded-full border bg-[rgba(255, 255, 255, 0.20)] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
+                className="w-[40px] h-[40px] rounded-full border-[#FFFFFF1A] border-2 bg-[#474747] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
