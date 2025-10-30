@@ -84,6 +84,16 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+h1 {
+  color: #fff;
+  font-family: Anton;
+  font-size: 175.566px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.511px;
+  text-transform: uppercase;
+}
 h2 {
   font-family: "Anton", serif !important;
   color: #fff;
