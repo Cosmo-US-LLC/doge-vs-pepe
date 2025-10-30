@@ -173,10 +173,7 @@
 // export default Footer;
 
 import React from "react";
-import cryptoNewsLogo from "../assets/DogeVSPepeSec/v2_dvp_logo.webp";
-import socialicn1 from "../assets/footer/telegram.svg";
-import socialicn2 from "../assets/footer/instagram.svg";
-import socialicn3 from "../assets/footer/twitter.svg";
+import cryptoNewsLogo from "../assets/footer/v2_dvp_footer_logo.svg";
 
 function Footer() {
   const handleScroll = (event, targetId, offset = 90) => {
@@ -256,19 +253,15 @@ function Footer() {
         </nav>
 
         {/* Main Logo Centerpiece */}
-        <div className="mb-8 text-6xl font-extrabold text-center uppercase md:text-7xl">
-          <img
-            src={cryptoNewsLogo}
-            alt="cryptoNewsLogo"
-            className="w-full h-[140px]"
-          />
+        <div className="mb-8 w-full font-extrabold text-center uppercase">
+          <img src={cryptoNewsLogo} alt="cryptoNewsLogo" className="w-full" />
         </div>
 
         {/* Bottom Section */}
-        <div className="max-w-[1296px] mx-auto flex flex-row justify-between items-start md:items-center gap-8 px-4">
+        <div className="max-w-[1280px] mx-auto flex flex-row text-left justify-start items-start gap-6">
           {/* Left - Join us + socials */}
-          <div className="flex flex-col items-start gap-3">
-            <h4 className="text-lg font-bold uppercase">Join Us Now</h4>
+          <div className="flex-1 flex flex-row gap-3 items-center justify-start">
+            <h5 className="">Join Us Now</h5>
             <div className="flex space-x-2">
               <a
                 href="https://t.me/"
@@ -335,31 +328,31 @@ function Footer() {
           </div>
 
           {/* Middle - Disclaimer */}
-          <div className="text-center max-w-[500px] subtext">
-            <p>
+          <div className="flex-2 text-center max-w-[600px]">
+            <p className="description !text-[14px]">
               Cryptocurrency may be unregulated in your jurisdiction. The value
               of cryptocurrencies may go up as well as down. Profits may be
               subject to capital gains or other taxes applicable in your
               jurisdiction.
             </p>
-            <p className="mt-3">
-              Copyright 2025, DogevsPepe | All rights reserved.
-            </p>
           </div>
 
           {/* Right - Email */}
-          <div className="flex flex-col items-start">
-            <h4 className="mb-1 text-[18px] font-[400] leading-[119.856%] uppercase">
-              E-Mail
-            </h4>
-            <a
-              href="mailto:Support@dogevspepe.io"
-              className="text-sm underline hover:opacity-80 underline-offset-2 decoration-white"
-            >
-              Support@dogevspepe.io
-            </a>
+          <div className="flex-1 flex flex-row items-center justify-center gap-2">
+            <h5 className="">E-Mail</h5>
+            <h5>
+              <a
+                href="mailto:Support@dogevspepe.io"
+                className="underline underline-offset-2"
+              >
+                Support@dogevspepe.io
+              </a>
+            </h5>
           </div>
         </div>
+        <p className="description text-center h-[60px] flex items-center justify-center">
+          Copyright 2025, DogevsPepe | All rights reserved.
+        </p>
       </div>
     </footer>
   );
