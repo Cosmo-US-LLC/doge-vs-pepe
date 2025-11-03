@@ -30,6 +30,7 @@
     "react-hot-toast": "^2.5.1",
     "react-router-dom": "^7.9.4",
     "swiper": "^11.1.15",
+    "vaul": "^1.1.2",
     "viem": "^2.22.2"
   },
   "devDependencies": {

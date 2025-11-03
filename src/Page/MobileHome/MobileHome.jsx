@@ -26,6 +26,7 @@ import MobileHowTowBuy from "./MobileHowTowBuy";
 import RoadmapMob from "./Roadmap";
 import DogeVsPepeNews from "../Home/DogeVsPepeNews";
 import CountdownMob from "./CountdownMob";
+import BannerSecMob from "./BannerSecMob";
 
 function MobileHome() {
   return (
@@ -33,6 +34,7 @@ function MobileHome() {
       <div>
         <Navbar />
         <MobileHeroSection />
+        <BannerSecMob />
         <MobileTwoLegends />
         <MobileFightRules />
         <CountdownMob />
