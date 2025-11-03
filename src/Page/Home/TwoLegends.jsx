@@ -1,19 +1,16 @@
 import React from "react";
-import circle from "../../assets/twoLegends/v2_circle.webp";
+import bottom_shadow from "../../assets/twoLegends/bottom_shadow.webp";
 import white_bg from "../../assets/twoLegends/v2_white_bg.webp";
 import dogeDP from "../../assets/twoLegends/v2_doge.webp";
 import pepeDP from "../../assets/twoLegends/v2_pepe.webp";
 
 function TwoLegends() {
   return (
-    <div
-      className="w-[100%] h-[800px] py-14 relative flex flex-col justify-center items-center"
-      id="what_is"
-    >
-      <div className="two_legends_bg w-full h-full max-w-[1440px] mx-auto">
+    <div className=" relative flex flex-col py-14 " id="what_is">
+      <div className="two_legends_bg">
         <div className="flex w-[100%] max-w-[1280px] mx-auto px-8 flex-row ">
-          <div className="w-[36%] h-full "></div>
-          <div className=" w-[66%]  relative z-[99] flex flex-col gap-4 pt-6 pl-3">
+          <div className="w-[36%] relative"></div>
+          <div className=" w-[64%]  relative z-[99] flex flex-col gap-8 pl-2">
             <h3>Two Legends. One Crown.</h3>
             <h4 className="max-w-[700px]">
               {" "}
@@ -30,7 +27,7 @@ function TwoLegends() {
             <div className="flex flex-row justify-between gap-4">
               <div className="flex flex-col gap-2 border-2 border-[#DD5B01] p-4 rounded-2xl">
                 <div className="flex flex-row gap-2 items-center">
-                  <img src={dogeDP} alt="" className="w-[60px] h-[80px]" />
+                  <img src={dogeDP} alt="" className="w-[36px] h-[54px]" />
                   <h4>TEAM DOGE</h4>
                 </div>
                 <p className="subtext !text-[#FFFFFF99]">
@@ -41,8 +38,8 @@ function TwoLegends() {
               </div>
               <div className="flex flex-col gap-2 border-2 border-[#00FF2F] p-4 rounded-2xl">
                 <div className="flex flex-row gap-2 items-center">
-                  <img src={pepeDP} alt="" className="w-[60px] h-[80px]" />
-                  <h4>TEAM DOGE</h4>
+                  <img src={pepeDP} alt="" className="w-[36px] h-[54px]" />
+                  <h4>TEAM PEPE</h4>
                 </div>
                 <p className="subtext !text-[#FFFFFF99]">
                   <span className="text-[#00FF2F]">Pepe </span>, the fearless

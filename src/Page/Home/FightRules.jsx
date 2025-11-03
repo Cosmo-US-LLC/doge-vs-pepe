@@ -81,8 +81,8 @@ export default function FightRules({ backgroundUrl }) {
       <div className="absolute z-20 bottom-0 left-0 right-0  w-full">
         <img className="w-full h-[60px]" src={bottom_shadow} alt="" />
       </div>
-      <div className="flex w-full gap-10 max-w-[1280px] px-8 mx-auto  flex-row">
-        <div className="h-[800px] flex justify-start items-end w-[60%]">
+      <div className="flex w-full gap-10 max-w-[1280px] px-8 mx-auto flex-row">
+        <div className="h-[800px] flex justify-start items-end w-[54%]">
           <div className=" flex flex-col gap-4 ">
             <h2 className="text-center">THE FIGHT RULES</h2>
 
@@ -98,11 +98,11 @@ export default function FightRules({ backgroundUrl }) {
                       {rule.title}
                     </p>
                     {activeIndex === index ? (
-                      <div className="w-8 h-8 gradient-bg rounded-full flex justify-center items-center">
+                      <div className="w-8 h-8 accordion-gradient-bg-arrow rounded-full flex justify-center items-center">
                         <Minus className="text-white w-6 h-6" />
                       </div>
                     ) : (
-                      <div className="w-8 h-8 gradient-bg rounded-full flex justify-center items-center">
+                      <div className="w-8 h-8 accordion-gradient-bg-arrow rounded-full flex justify-center items-center">
                         <Plus className="text-white w-6 h-6" />
                       </div>
                     )}
@@ -125,7 +125,7 @@ export default function FightRules({ backgroundUrl }) {
             </div>
           </div>
         </div>
-        <div className="w-[40%] flex justify-center items-end pb-10 fight_rules relative">
+        <div className="w-[46%] flex justify-center items-end pb-10 fight_rules relative">
           <img
             src={fight_rules_msg}
             alt=""

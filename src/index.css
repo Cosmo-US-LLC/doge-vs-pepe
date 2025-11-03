@@ -387,8 +387,9 @@ h5 {
 .two_legends_bg {
   background-image: url(../src/assets/twoLegends/v2_two_legends_bg.webp);
   background-position: top;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  min-height: 700px;
 }
 
 .two_legends {
@@ -774,6 +775,11 @@ h5 {
     #00ff2f 97.22%
   );
 }
+
+.accordion-gradient-bg-arrow {
+  background: linear-gradient(105deg, #dd5b01 -7.63%, #00ff2f 123.65%);
+}
+
 .gradient_border {
   border: 1px solid transparent;
 
