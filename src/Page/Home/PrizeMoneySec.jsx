@@ -3,11 +3,11 @@ import React from "react";
 function PrizeMoneySec() {
   return (
     <div
-      className="w-[100%] h-[720px] flex justify-center items-center  relative "
+      className="w-[100%] h-[720px] flex justify-center items-center mt-[-110px]  relative "
       id="prize_money"
     >
-      <div className="gradient-bg max-w-[1280px] h-[580px] p-[1px] overflow-hidden rounded-[43px] w-[100%]">
-        <div className="prize_money_bg h-full w-full relative ">
+      <div className="gradient-bg max-w-[1220px] h-[580px] p-[2px] overflow-hidden rounded-[43px] w-[100%]">
+        <div className="prize_money_bg overflow-hidden h-full w-full relative ">
           <div className="flex items-end justify-center h-full relative">
             <div className="absolute rounded-[18px] top-[40%] right-[2%] px-4 py-4 border border-[rgba(255, 255, 255, 0.20)] bg-[rgba(255, 255, 255, 0.10)]">
               <p className="text-center subtext max-w-[360px]">

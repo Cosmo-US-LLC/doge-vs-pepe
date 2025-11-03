@@ -116,19 +116,19 @@ function HeroWalletSec({
 
   return (
     <div
-      className="w-[100%] max-w-[1440px] h-[100%] mx-auto relative py-[80px] wallet_sec"
+      className="w-[100%] h-[100%] mx-auto relative py-[80px] wallet_sec"
       id="wallet"
     >
       <div className="max-w-[1280px] px-4 md:px-8 mx-auto flex flex-col items-center justify-center relative">
         {/* <img className="absolute left-0 z-[1]" src={bg_img_doge} alt="" /> */}
-        <div className="flex w-[100%] max-w-[1240px] mx-auto items-center justify-center absolute top-[300px]">
-          <div className="w-full ax-w-[400px] mx-auto">
+        <div className="flex w-[100%] max-w-[1240px] z-[9999] mx-auto items-center justify-center absolute top-[400px]">
+          <div className="w-full  ax-w-[400px] mx-auto">
             {/* Main Progress Bar */}
-            <div className="relative p-2">
+            <div className="relative z-[99] p-2">
               {/* Background Bar with Glowing Border */}
-              <div className="h-[60px] rounded-[30px] relative overflow-hidden  border-[2px] border-[#E67500]">
+              <div className="h-[60px]  rounded-[30px] relative overflow-hidden  border-[2px] border-[#E67500]">
                 <div
-                  className="w-full h-full rounded-[28px] relative overflow-hidden"
+                  className="w-full h-full rounded-[28px]  relative overflow-hidden"
                   style={{
                     background: "",
                   }}
@@ -167,8 +167,9 @@ function HeroWalletSec({
           </div>
         </div>
         <div className="flex justify-center w-full relative">
-          <div className="flex flex-col w-[40%] relative z-[99] pt-[360px] space-y-[20px] px-4 ">
-            <div className="absolute top-[-50px] left-0 z-0 w-[100%] h-[100%] ">
+          <div className="flex flex-col w-[40%] relative z-[99] pt-[500px]  ">
+            <div className="wallet_doge_bg absolute top-0 left-[-190px]  w-[180%] h-[80%]"></div>
+            <div className="absolute top-[10px] left-0 w-[100%] z-[99] ">
               <h2
                 className="text-center !text-[#E67500] !font-[112.5px] !leading-[120%]"
                 style={{
@@ -201,7 +202,7 @@ function HeroWalletSec({
               </div>
             </div> */}
 
-            <div className="px-4 bg-[#040404] w-[100%] space-y-[10px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
+            <div className="px-4 bg-[#040404] z-[99] w-[100%] space-y-[10px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
               <div className="bg-[rgba(255, 255, 255, 0.10)] flex justify-between rounded-[30px] border border-[rgba(255, 255, 255, 0.20)]">
                 {Buybuttons.map((button) => (
                   <div
@@ -259,7 +260,7 @@ function HeroWalletSec({
                   </h3>
                 </div>
                 <div>
-                  <div className="grid grid-cols-3 gap-2 md:grid-cols-5">
+                  <div className="grid grid-cols-3 gap-2 md:grid-cols-3">
                     {tokenSelect.map((data, index) => (
                       <TokenSelectDropdown
                         key={index}
@@ -523,7 +524,7 @@ function HeroWalletSec({
             </div>
           </div>
           <div className="flex w-[20%] h-auto items-start justify-center">
-            <div className="p-[1.5px] rounded-xl h-auto gradient-bg inline-block mt-[380px]">
+            <div className="p-[1.5px] rounded-xl h-auto gradient-bg inline-block mt-[500px]">
               <div className="bg-[#063b3b] rounded-xl px-6 py-4 text-center">
                 <p className="text-sm font-bold tracking-widest text-white">
                   TIME LEFT:
@@ -534,8 +535,9 @@ function HeroWalletSec({
               </div>
             </div>
           </div>
-          <div className="flex w-[40%] relative z-[99] pt-[360px] flex-col space-y-[20px] px-4  ">
-            <div className="absolute top-[-50px] left-0 z-0 w-[100%] h-[100%]">
+          <div className="flex wallet_pepe_bg w-[40%] relative z-[99] pt-[500px] flex-col  ">
+            <div className="wallet_pepe_bg absolute top-[10px] left-[-190px] w-[180%] h-[80%]"></div>
+            <div className="absolute top-[-10px]  left-0 w-[100%] ">
               <h2
                 className="text-center !text-[#00FF2F] !font-[112.5px] !leading-[120%]"
                 style={{
@@ -567,7 +569,7 @@ function HeroWalletSec({
               </div>
             </div> */}
 
-            <div className="px-4 bg-[#040404] w-[100%] space-y-[10px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
+            <div className="px-4 bg-[#040404] z-[99] w-[100%] space-y-[10px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
               <div className="bg-[rgba(255, 255, 255, 0.10)] flex justify-between rounded-[30px] border border-[rgba(255, 255, 255, 0.20)]">
                 {Buybuttons.map((button) => (
                   <div
@@ -630,7 +632,7 @@ function HeroWalletSec({
                   </h3>
                 </div>
                 <div>
-                  <div className="grid grid-cols-3 gap-2 md:grid-cols-5">
+                  <div className="grid grid-cols-3 gap-2 md:grid-cols-3">
                     {tokenSelect.map((data, index) => (
                       <TokenSelectDropdown
                         key={index}

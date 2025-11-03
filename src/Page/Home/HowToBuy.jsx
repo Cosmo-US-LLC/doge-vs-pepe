@@ -1,4 +1,6 @@
 import React from "react";
+import top_shadow from "../../assets/fightRule/top_shadow.webp";
+import bottom_shadow from "../../assets/fightRule/bottom_shadow.webp";
 
 export default function HowToBuy() {
   const steps = [
@@ -26,12 +28,18 @@ export default function HowToBuy() {
 
   return (
     <section
-      className="relative isolate w-full h-[700px] how_to_buy_bg flex "
+      className="relative isolate w-full h-[800px] how_to_buy_bg flex "
       aria-label="How to buy section"
       id="how_to_buy"
     >
-      <div className="relative mx-auto max-w-[1280px] px-8 md:px-8 flex flex-col items-center justify-center gap-10">
-        <h2 className="text-center pb-16">HOW TO BUY</h2>
+      <img
+        src={top_shadow}
+        alt="top_shadow"
+        className="absolute top-0 left-0 right-0 w-full h-[130px]"
+      />
+
+      <div className="relative mx-auto max-w-[1280px] px-8 md:px-8 flex flex-col items-center pt-[60px] gap-10">
+        <h2 className="text-center pb-8">HOW TO BUY</h2>
 
         <div className="flex flex-wrap justify-center gap-6 ">
           {steps.map((s, i) => (
