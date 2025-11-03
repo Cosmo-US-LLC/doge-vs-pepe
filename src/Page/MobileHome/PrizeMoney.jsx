@@ -3,32 +3,23 @@ import prizeimg from "../../assets/PrizeMoneySec/prize-belt.png";
 
 function PrizeMoney() {
   return (
-    <div className="w-[100%] bgmobprizsec overflow-hidden pt-[60px] pb-[80px] px-4" id="prize-money">
-      <div className="py-6 rounded-[26.9px] space-y-[45px] w-[100%] mx-auto relative min-h-[500px] border boredr-[#fff] bg-[#01010182] px-2" 
-      style={{
-        backdropFilter:"blur(2px)"
-      }}
+    <div className="w-[100%] overflow-hidden pb-[80px] px-4" id="prize-money">
+      <div className="py-2 px-4 bgmobprizsec2 rounded-[30px] space-y-2 w-[100%] flex flex-col justify-end items-center mx-auto min-h-[650px] border boredr-[#fff]"
+      // style={{
+      //   backdropFilter:"blur(2px)"
+      // }}
       >
-        <div className="space-y-[20px]">
-          <h3 className="text-[#FFFCFC] font-[Anton] text-center text-[23px] leading-[104.377%] font-[400]">
-            PRIZE MONEY FOR THE WINNING TEAM
-          </h3>
-          <h4 className="text-center w-full font-[Anton] text-[#fff] text-[50px] font-[400]  ">
-            250’000 USD*
-          </h4>
-          <div className="flex justify-center">
-            <img src={prizeimg} alt="" />
-          </div>
-          <div className="space-y-[20px]">
-            <h4 className="text-center font-[Helvetica] leading-normal text-[18px] text-[#fff] font-[700] max">
-              The prize money will be airdropped and shared among everyone who
-              bought the winning coin.
-            </h4>
-            <p className="text-center font-[Helvetica] text-[14px] text-[#FFFCFC] font-[700]">
-              *Distributed in the winning token <br /> based on your holdings.
-            </p>
-          </div>
+        <div className="font-helvetica relative border border-white/20 bg-white/10 text-white text-center leading-[130%] p-3 rounded-[20px] w-full">
+          The prize money will be airdropped and shared by all token holders of the winning coin.
+          <svg xmlns="http://www.w3.org/2000/svg" className="absolute right-1 bottom-1" width="25" height="25" viewBox="0 0 25 25" fill="none">
+            <circle cx="12.5" cy="12.5" r="9.375" stroke="#E67500" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="12.5" y="8.33398" width="0.0109687" height="0.0109687" stroke="#E67500" stroke-width="1.875" stroke-linejoin="round"/>
+            <path d="M12.5 12.5V16.6667" stroke="#E67500" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </div>
+        <p className="font-helvetica text-center text-sm leading-[130%] text-white px-8">
+          *The prize money will be distributed in the winning token based on your holdings
+        </p>
       </div>
     </div>
   );

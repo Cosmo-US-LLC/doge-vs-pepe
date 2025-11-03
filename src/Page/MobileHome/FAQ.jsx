@@ -40,7 +40,7 @@ const faqData = [
   {
     question: "How do I track the progress of the presale?",
     answer: `
-      <ul className="pl-5 sm:pl-8 text-white list-disc">
+      <ul style="list-style-type: disc; list-style-position: inside">
         <li>Everyone who purchases tokens will receive the winning coin, regardless of which team they supported.</li>
         <li>However, those who backed the winning team will receive extra rewards (see answer below).</li>
       </ul>
@@ -49,12 +49,12 @@ const faqData = [
   {
     question: "What are the rewards for picking the correct team?",
     answer: `
-      <ul className="pl-5 sm:pl-8 text-white list-disc">
+      <ul style="list-style-type: disc; list-style-position: inside">
         <li>
-          <span className="font-semibold">Daily Bonus Coins:</span> 1M coins are added to the winner pool daily while the fight is ongoing and airdropped proportionally based on your holdings.
+          <span className="font-semibold" style="font-size: 14px">Daily Bonus Coins:</span> 1M coins are added to the winner pool daily while the fight is ongoing and airdropped proportionally based on your holdings.
         </li>
         <li>
-          <span className="font-semibold">Early Claim Access:</span> Winners can claim their airdropped coins 24 hours earlier than participants who supported the losing team.
+          <span className="font-semibold" style="font-size: 14px">Early Claim Access:</span> Winners can claim their airdropped coins 24 hours earlier than participants who supported the losing team.
         </li>
       </ul>
     `,
@@ -93,12 +93,12 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
   return (
     <div>
       <div
-        className={`border flex-col rounded-[20px] sm:rounded-[40px] border-solid  bg-[#FFFFFF1A] backdrop-blur-(65px) ${
+        className={`bgBlur border flex-col rounded-[20px] sm:rounded-[40px] border-white/20 bg-[#FFFFFF1A] ${
           isOpen ? "#FFFFFF33" : "#FFFFFF33"
         }`}
       >
         <div
-          className="flex justify-between items-center px-4 sm:px-8 py-2 gap-4 sm:gap-[25px] cursor-pointer"
+          className="flex justify-between items-center px-4 sm:px-8 py-4 gap-4 sm:gap-[25px] cursor-pointer"
           onClick={handleClick}
         >
           <div className="flex items-center justify-center gap-5 xs:pt-[14px]">
@@ -108,17 +108,17 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
           </div>
 
           <div
-            className={`gradient-bg h-[30px] w-[30px] rounded-full flex items-center justify-center transition-transform duration-300 ${
-              !isOpen ? "rotate-0" : "rotate-180"
-            }`}
+            className={`aspect-square h-[30px] w-[30px] rounded-full flex items-center justify-center transition-transform duration-300 ${
+              !isOpen ? "bg-gradient-to-tr" : "bg-gradient-to-br"
+            } from-[#DD5B01] to-[#00FF2F]`}
           >
-            <img src={arw} alt="arrow" className="w-4 h-4" />
+            <img src={arw} alt="arrow" className={`w-4 h-4 ${!isOpen ? "rotate-0" : "rotate-180"}`} />
           </div>
         </div>
         <div style={contentStyles}>
           <div className="w-[100%] px-4 sm:px-[34px] pb-[16px] sm:pb-[20px]">
             <p
-              className="pb-[10px] answer text-[14px] sm:text-[16px] text-[#fff] font-helvetica leading-[20px] sm:leading-[22px] font-[400]"
+              className="pb-[10px] answer !text-[14px] sm:text-[16px] text-[#A4A3A3] font-helvetica leading-[20px] sm:leading-[22px] font-[400]"
               dangerouslySetInnerHTML={createMarkup()}
             />
           </div>
@@ -143,7 +143,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="relative faqs_bg" id="faq">
+    <div className="relative faqs_bg_mob" id="faq">
       <div className="w-[100%] max-w-[840px] pt-10 sm:pt-[73px] px-4 mx-auto pb-10 sm:pb-[63px] flex flex-col gap-4">
         <div className="text-center">
           <h2 className="pb-[10px]">

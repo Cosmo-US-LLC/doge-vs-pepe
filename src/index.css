@@ -330,7 +330,7 @@ h5 {
   background-repeat: no-repeat;
 }
 .DontWaitSecmob {
-  background-image: url(../src/assets/mobile_assets/dont_mob_bg.png);
+  background-image: url(../src/assets/DontWaitSec/bg-mob.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -357,6 +357,24 @@ h5 {
   background-image: url(../src/assets/tokenomics/token_bg_new.webp);
   background-position: center;
   background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.TokenBGMob {
+  background-image: url(../src/assets/tokenomics/mob-bg.png);
+  background-position: 0 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.TokenTicketBg {
+  background-image: url(../src/assets/tokenomics/ticket.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.TokenTicket2Bg {
+  background-image: url(../src/assets/tokenomics/ticket2.png);
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -402,6 +420,18 @@ h5 {
   background-image: url(../src/assets/RoadmapSec/v2_roadmap_bg.webp);
   background-position: center;
   background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Roadmap_Mob_bg {
+  background-image: url(../src/assets/RoadmapSec/doge-mob-bg.png);
+  background-position: 0 180px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.Roadmap_Mob_bg2 {
+  background-image: url(../src/assets/RoadmapSec/pepe-mob-bg.png);
+  background-position: 0 100px;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .Communitybgmob {
@@ -643,6 +673,18 @@ h5 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.bgmobprizsec2 {
+  background-image: url(./assets/PrizeMoneySec/bg-mob.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mobCountdownBg {
+  background-image: url(./assets/Countdown/bg-mob.png);
+  background-position: 0 -60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .how_it_all_began_bg {
   background-image: url(./assets/HowItSec/v2_how_it_all_began.webp);
   background-position: center;
@@ -680,6 +722,28 @@ h5 {
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+.faqs_bg_mob {
+  background-image: url("./assets/faqs/faqs_bg_mob.png");
+  background-position: 0 -500px;
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  background-repeat: no-repeat;
+}
+.fightRules_bg_mob {
+  background-image: url("./assets/fightRule/bg-mob.png");
+  background-position: 0 -70px;
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  background-repeat: no-repeat;
+}
+.bgBlur {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.bgBlurXl {
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
 }
 
 .how_to_buy_bg {
