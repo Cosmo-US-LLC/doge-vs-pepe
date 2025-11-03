@@ -1,58 +1,77 @@
 import React from "react";
 import dogePepeScale from "../../assets/tokenomics/doge-pepe-scale.png";
+import vsCard from "../../assets/tokenomics/vs-card.png";
+import ticket from "../../assets/tokenomics/ticket2.png";
+import mobBg from "../../assets/tokenomics/mob-bg.png";
 import testmo_img_1 from "../../assets/mobile_assets/testmo_img_1.png";
 import testmo_img_2 from "../../assets/mobile_assets/testmo_img_2.png";
 
 function TokenmobSec() {
   return (
-    <div className="relative w-[100%] Tokenomicsbgmob overflow-hidden" id="tokenomics">
-
-      <h3 className="text-[32px] pb-[30px] font-[Anton] text-center leading-[125%] uppercase font-[400] text-[#FFF] uppercase">Tokenomics</h3>
+    <div
+      className="relative w-[100%] TokenBGMob overflow-hidden h-fit"
+      id="tokenomics"
+    >
+      <h3 className="text-[32px] pb-[30px] font-[Anton] text-center leading-[125%] uppercase font-[400] text-[#FFF]">
+        Tokenomics
+      </h3>
       <div className="">
-       <div>
-         <div className="relative space-y-[5px] w-[100%] px-4">
-          <h3
-          style={{
-            WebkitTextStrokeWidth: "0.8px",
-            WebkitTextStrokeColor: "#000",
-          }}
-          className="text-[20px] font-[Anton] text-right leading-[102.804%] font-[400] text-[#FFF] uppercase">
-           TEAM Pepe
-          </h3>
-          <div className="space-y-[5px]">
-            <h5 className="text-[14px] font-[Helvetica] leading-normal text-right font-[700] text-[#FFF] uppercase">
-            tOTAL sUPPLY: 7.89 Billion
-            </h5>
-            <p className="text-[14px] font-[Helvetica] leading-normal text-right font-[400] text-[#FFF] ">
-           Coin will be launched on <br /> Ethereum Blockchain
-            </p>
+        <img src={vsCard} alt="" className="w-[321px] h-[431px] mx-auto" />
+        <div className="h-[348px]" />
+        <div className="h-[334px] w-[361px] mx-auto TokenTicketBg">
+          <h4 className="text-center text-[48px] text-[#E67500] py-6">
+            TEAM DOGE
+          </h4>
+          <br />
+          <div className="space-y-[30px] px-5 pt-3">
+            <div className="flex items-center gap-2.5">
+              <div className="bg-white/10 rounded-full h-[60px] w-[60px] aspect-square flex items-center justify-center text-2xl">
+                💰
+              </div>
+              <div className="text-white/60 text-base font-normal">
+                TOTAL SUPPLY: <br />
+                <span className="text-[#E67500]">8.88 BILLION</span>
+              </div>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <div className="bg-white/10 rounded-full h-[60px] w-[60px] aspect-square flex items-center justify-center text-2xl">
+                ⚡️
+              </div>
+              <div className="text-white/60 text-base font-normal">
+                Coin will be launched on <br />
+                Ethereum Blockchain
+              </div>
+            </div>
           </div>
         </div>
-         <div className="flex justify-end mt-[-35px]"> <img src={testmo_img_1} alt="" /></div>
-       </div>
-        <div>
-          <div className="relative space-y-[5px] w-[100%] mt-[-190px] px-4">
-          <h3
-          style={{
-            WebkitTextStrokeWidth: "0.8px",
-            WebkitTextStrokeColor: "#000",
-          }}
-          className="text-[20px] font-[Anton] text-start leading-[102.804%] font-[400] text-[#FFF] uppercase">
-           TEAM DOge
-          </h3>
-          <div className="space-y-[5px]">
-            <h5 className="text-[14px] font-[Helvetica] leading-normal text-start font-[700] text-[#FFF] uppercase">
-           tOTAL sUPPLY: 8.88 Billion
-            </h5>
-            <p className="text-[14px] font-[Helvetica] leading-normal text-start font-[400] text-[#FFF] ">
-           Coin will be launched on <br /> Ethereum Blockchain
-            </p>
+        <div className="h-[348px]" />
+        <div className="h-[334px] w-[361px] mx-auto TokenTicket2Bg">
+          <h4 className="text-center text-[48px] text-[#4CF72C] py-6">
+            TEAM PEPE
+          </h4>
+          <br />
+          <div className="space-y-[30px] px-5 pt-3">
+            <div className="flex items-center gap-2.5">
+              <div className="bg-white/10 rounded-full h-[60px] w-[60px] aspect-square flex items-center justify-center text-2xl">
+                💰
+              </div>
+              <div className="text-white/60 text-base font-normal">
+                TOTAL SUPPLY: <br />
+                <span className="text-[#00FF2F]">7.89 BILLION</span>
+              </div>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <div className="bg-white/10 rounded-full h-[60px] w-[60px] aspect-square flex items-center justify-center text-2xl">
+                ⚡️
+              </div>
+              <div className="text-white/60 text-base font-normal">
+                Coin will be launched on <br />
+                Ethereum Blockchain
+              </div>
+            </div>
           </div>
-        </div>
-            <img className="mt-[-35px]" src={testmo_img_2} alt="" />
         </div>
       </div>
-     
     </div>
   );
 }

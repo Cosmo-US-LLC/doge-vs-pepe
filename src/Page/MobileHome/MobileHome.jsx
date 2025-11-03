@@ -25,6 +25,7 @@ import MobileFightRules from "./MobileFightRules";
 import MobileHowTowBuy from "./MobileHowTowBuy";
 import RoadmapMob from "./Roadmap";
 import DogeVsPepeNews from "../Home/DogeVsPepeNews";
+import CountdownMob from "./CountdownMob";
 
 function MobileHome() {
   return (
@@ -34,8 +35,9 @@ function MobileHome() {
         <MobileHeroSection />
         <MobileTwoLegends />
         <MobileFightRules />
-        <MobileHowTowBuy />
+        <CountdownMob />
         <HeroWalletSec />
+        <MobileHowTowBuy />
         <PrizeMoney />
         <RoadmapMob />
         <HowItmobSec />
