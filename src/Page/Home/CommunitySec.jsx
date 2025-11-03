@@ -1,5 +1,7 @@
 import dogeBox from "../../assets/RoadmapSec/v2_doge_msg_box.webp";
 import pepeBox from "../../assets/RoadmapSec/v2_pepe_msg_box.webp";
+import top_shadow from "../../assets/fightRule/top_shadow.webp";
+import bottom_shadow from "../../assets/fightRule/bottom_shadow.webp";
 
 function CommunitySec() {
   return (
@@ -7,6 +9,16 @@ function CommunitySec() {
       className="w-[100%] flex justify-center items-center h-[800px] Roadmap_bg overflow-hidden relative"
       id="roadmap"
     >
+      <img
+        src={top_shadow}
+        alt="top_shadow"
+        className="absolute top-0 left-0 right-0 w-full h-[130px]"
+      />
+      <img
+        src={bottom_shadow}
+        alt="bottom_shadow"
+        className="absolute bottom-0 left-0 right-0 w-full h-[130px]"
+      />
       <div className="max-w-[1280px] px-4 md:px-8 w-[100%] h-full mx-auto z-10 relative flex items-center justify-center">
         <div className="w-[33%] min-h-[220px] space-y-[20px]">
           <h3>
@@ -62,7 +74,7 @@ function CommunitySec() {
         </div>
         <div className="w-[33%] min-h-[220px] space-y-[20px]">
           <h3 className="text-right">
-            Team DOGE <span className="text-[#00FF2F]">roadmap</span>
+            Team PEPE <span className="text-[#00FF2F]">roadmap</span>
           </h3>
           <div className="border p-4 border-[#00FF2F] bg-[rgba(255, 255, 255, 0.10)] backdrop-blur-[10px] rounded-[18px]">
             <p className="subtext !text-[#00FF2F]">Preparation:</p>

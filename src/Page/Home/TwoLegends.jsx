@@ -7,7 +7,12 @@ import pepeDP from "../../assets/twoLegends/v2_pepe.webp";
 function TwoLegends() {
   return (
     <div className=" relative flex flex-col py-14 " id="what_is">
-      <div className="two_legends_bg">
+      <div className="two_legends_bg relative">
+        <img
+          src={bottom_shadow}
+          alt=""
+          className="absolute bottom-0 left-0 right-0 w-full"
+        />
         <div className="flex w-[100%] max-w-[1280px] mx-auto px-8 flex-row ">
           <div className="w-[36%] relative"></div>
           <div className=" w-[64%]  relative z-[99] flex flex-col gap-8 pl-2">

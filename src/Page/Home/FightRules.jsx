@@ -1,9 +1,14 @@
-import { useState } from "react";
 import bgImage from "../../assets/fightRule/v2_the_fight_rule_bg.webp";
 import top_shadow from "../../assets/fightRule/top_shadow.webp";
 import bottom_shadow from "../../assets/fightRule/bottom_shadow.webp";
 import fight_rules_msg from "../../assets/fightRule/v2_the_fight_rule_msg.webp";
 import { Plus, Minus } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../../components/ui/accordion";
 
 export default function FightRules({ backgroundUrl }) {
   const rules = [
@@ -57,12 +62,6 @@ export default function FightRules({ backgroundUrl }) {
     },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0); // First open by default
-
-  const toggleAccordion = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
-  };
-
   return (
     <section
       className="relative w-full mx-auto flex flex-col justify-center items-center"
@@ -86,50 +85,48 @@ export default function FightRules({ backgroundUrl }) {
           <div className=" flex flex-col gap-4 ">
             <h2 className="text-center">THE FIGHT RULES</h2>
 
-            <div className="flex flex-col gap-4">
+            <Accordion
+              type="single"
+              collapsible
+              defaultValue="item-0"
+              className="flex flex-col gap-4"
+            >
               {rules.map((rule, index) => (
-                <div
+                <AccordionItem
                   key={index}
-                  className="py-4 px-8 border border-white/20 last:border-b-0 rounded-[30px]"
-                  onClick={() => toggleAccordion(index)}
+                  value={`item-${index}`}
+                  className="py-4 px-8 border bg-[#04040433] border-white/20 last:border-b-0 rounded-[30px]"
                 >
-                  <div className="flex justify-between space-x-2 items-center cursor-pointer">
-                    <p className="text-[32px] font-[400] leading-[40px] tracking-wide text-[#fff] uppercase font-anton">
-                      {rule.title}
-                    </p>
-                    {activeIndex === index ? (
-                      <div className="w-8 h-8 accordion-gradient-bg-arrow rounded-full flex justify-center items-center">
-                        <Minus className="text-white w-6 h-6" />
-                      </div>
-                    ) : (
-                      <div className="w-8 h-8 accordion-gradient-bg-arrow rounded-full flex justify-center items-center">
+                  <AccordionTrigger className="hover:no-underline [&>svg]:hidden group ">
+                    <div className="flex justify-between space-x-2 items-center w-full">
+                      <p className="text-[32px] font-[400] leading-[40px] tracking-wide text-[#fff] uppercase font-anton">
+                        {rule.title}
+                      </p>
+                      <div className="w-8 h-8 accordion-gradient-bg-arrow rounded-full flex justify-center items-center group-data-[state=open]:hidden">
                         <Plus className="text-white w-6 h-6" />
                       </div>
-                    )}
-                  </div>
-                  <div
-                    className={`overflow-hidden max-w-[360px] transition-all duration-500 ease-in-out ${
-                      activeIndex === index
-                        ? "max-h-96 opacity-100 mt-2"
-                        : "max-h-0 opacity-0"
-                    }`}
-                  >
+                      <div className="w-8 h-8 accordion-gradient-bg-arrow rounded-full flex justify-center items-center hidden group-data-[state=open]:flex">
+                        <Minus className="text-white w-6 h-6" />
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="max-w-[360px] mt-2 !pt-0">
                     {rule.desc && (
                       <p className="text-base leading-relaxed font-helvetica font-[700] text-[22px] text-neutral-300">
                         {rule.desc}
                       </p>
                     )}
-                  </div>
-                </div>
+                  </AccordionContent>
+                </AccordionItem>
               ))}
-            </div>
+            </Accordion>
           </div>
         </div>
         <div className="w-[46%] flex justify-center items-end pb-10 fight_rules relative">
           <img
             src={fight_rules_msg}
             alt=""
-            className="w-[320px] h-auto absolute top-[-20px] left-[120px]"
+            className="w-[320px] h-auto absolute top-[-20px] left-[100px]"
           />
         </div>
       </div>

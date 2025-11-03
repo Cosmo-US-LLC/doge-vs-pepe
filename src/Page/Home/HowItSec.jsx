@@ -69,7 +69,7 @@ function HowItSec() {
             {sliderData.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="gradient-bg p-[1px] rounded-[20px] overflow-hidden">
-                  <div className="relative mx-auto max-w-[450px] h-[300px] rounded-[20px] overflow-hidden gradient-bg">
+                  <div className="relative mx-auto max-w-[450px] h-[360px] rounded-[20px] overflow-hidden gradient-bg">
                     {/* Background Image */}
                     <img
                       src={item.img}
