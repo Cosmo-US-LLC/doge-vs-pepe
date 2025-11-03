@@ -2,7 +2,7 @@ import { useState } from "react";
 import bgImage from "../../assets/mobile_assets/mob_two_led_first.png";
 import { Plus, Minus, ChevronDown } from "lucide-react";
 import arw from "../../assets/footer/Group 1410124940.svg";
-import quote from "../../assets/fightRule/quote.png"
+import quote from "../../assets/fightRule/quote.png";
 
 const FaqItem = ({ index, title, desc, isOpen, handleClick }) => {
   const contentStyles = {
@@ -25,7 +25,8 @@ const FaqItem = ({ index, title, desc, isOpen, handleClick }) => {
         >
           <div className="flex items-center justify-center gap-5 xs:pt-[14px]">
             <div className="text-[18px] sm:text-[24px] leading-[28px] sm:leading-[64px] text-[#fff] font-[400] font-anton uppercase">
-              <span className="text-[#DD5B02]">{index+1}. </span>{title}
+              <span className="text-[#DD5B02]">{index + 1}. </span>
+              {title}
             </div>
           </div>
 
@@ -34,14 +35,14 @@ const FaqItem = ({ index, title, desc, isOpen, handleClick }) => {
               !isOpen ? "bg-gradient-to-tr" : "bg-gradient-to-br"
             } from-[#DD5B01] to-[#00FF2F]`}
           >
-            <ChevronDown className={`w-4 h-4 ${!isOpen ? "rotate-0" : "rotate-180"}`} />
+            <ChevronDown
+              className={`w-4 h-4 ${!isOpen ? "rotate-0" : "rotate-180"}`}
+            />
           </div>
         </div>
         <div style={contentStyles}>
           <div className="w-[100%] px-4 sm:px-[34px] pb-[16px] sm:pb-[20px]">
-            <p
-              className="pb-[10px] answer !text-[14px] sm:text-[16px] text-[#A4A3A3] font-helvetica leading-[20px] sm:leading-[22px] font-[400]"
-            />
+            <p className="pb-[10px] answer !text-[14px] sm:text-[16px] text-[#A4A3A3] font-helvetica leading-[20px] sm:leading-[22px] font-[400]" />
             {desc}
           </div>
         </div>
@@ -85,12 +86,10 @@ const MobileFightRules = () => {
   };
 
   return (
-    <div className="relative fightRules_bg_mob" id="faq">
+    <div className="relative fightRules_bg_mob" id="rules">
       <div className="w-[100%] max-w-[840px] pt-10 sm:pt-[73px] px-4 mx-auto pb-10 sm:pb-[63px] flex flex-col gap-4">
         <div className="text-center">
-          <h2 className="pb-[10px]">
-            THE FIGHT RULES
-          </h2>
+          <h2 className="pb-[10px]">THE FIGHT RULES</h2>
           <div className="h-[140px]" />
         </div>
         <div className="w-[100%] mx-auto">
@@ -143,7 +142,7 @@ export default MobileFightRules;
 //     },
 //   ];
 
-//   const [openIndex, setOpenIndex] = useState(0); 
+//   const [openIndex, setOpenIndex] = useState(0);
 
 //   const toggleAccordion = (index) => {
 //     setOpenIndex(openIndex === index ? null : index);
@@ -159,7 +158,7 @@ export default MobileFightRules;
 //     >
 //       <div
 //         className="flex justify-center items-end pb-12 min-h-[500px]"
-       
+
 //       >
 //         <p className="text-center text-[32px] text-[#fff] font-[400] font-[Anton] leading-[125%] uppercase">
 //           GLORY OR DEFEAT. <br />
@@ -179,7 +178,7 @@ export default MobileFightRules;
 //                   key={index}
 //                   className="py-4 border-b border-white/20 last:border-b-0"
 //                 >
-              
+
 //                   <button
 //                     onClick={() => toggleAccordion(index)}
 //                     className="w-full flex items-center justify-between text-left"

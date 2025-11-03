@@ -317,6 +317,12 @@ h5 {
 } */
 
 /* new use start */
+.nav_menu_mob_bg {
+  background-image: url("./assets/navbar/v2_mob_menu_mob.webp");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 .hero_bg {
   background-image: url("./assets/hero/v2_hero_bg.webp");
   background-position: center;
