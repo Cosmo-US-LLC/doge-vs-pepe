@@ -8,6 +8,7 @@ const FaqItem = ({ index, title, desc, isOpen, handleClick }) => {
   const contentStyles = {
     maxHeight: isOpen ? "1000px" : "0",
     opacity: isOpen ? "1" : "0",
+    color: isOpen ? "#ffffff99" : "#ffffff99",
     overflow: "hidden",
     transition: "max-height 0.9s ease, opacity 2s ease",
   };
@@ -42,7 +43,7 @@ const FaqItem = ({ index, title, desc, isOpen, handleClick }) => {
         </div>
         <div style={contentStyles}>
           <div className="w-[100%] px-4 sm:px-[34px] pb-[16px] sm:pb-[20px]">
-            <p className="pb-[10px] answer !text-[14px] sm:text-[16px] text-[#A4A3A3] font-helvetica leading-[20px] sm:leading-[22px] font-[400]" />
+            <p className="pb-[10px] answer !text-[14px] sm:text-[16px] !text-[#ffffff99] font-helvetica leading-[20px] sm:leading-[22px] font-[400]" />
             {desc}
           </div>
         </div>
