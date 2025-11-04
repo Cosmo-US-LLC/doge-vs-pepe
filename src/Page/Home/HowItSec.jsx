@@ -10,12 +10,15 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useRef } from "react";
 
-import img1 from "../../assets/HowItSec/v2_how_it_card1.webp";
-import img2 from "../../assets/HowItSec/v2_how_it_card2.webp";
-import img3 from "../../assets/HowItSec/v2_how_it_card3.webp";
-import img4 from "../../assets/HowItSec/v2_how_it_card1.webp";
-import img5 from "../../assets/HowItSec/v2_how_it_card2.webp";
-import img6 from "../../assets/HowItSec/v2_how_it_card3.webp";
+import img1 from "../../assets/HowItSec/v2_c1.webp";
+import img2 from "../../assets/HowItSec/v2_c2.webp";
+import img3 from "../../assets/HowItSec/v2_c3.webp";
+import img4 from "../../assets/HowItSec/v2_c4.webp";
+import img5 from "../../assets/HowItSec/v2_c5.webp";
+import img6 from "../../assets/HowItSec/v2_c6.webp";
+import img7 from "../../assets/HowItSec/v2_c7.webp";
+import img8 from "../../assets/HowItSec/v2_c8.webp";
+import img9 from "../../assets/HowItSec/v2_c9.webp";
 
 const sliderData = [
   {
@@ -24,23 +27,35 @@ const sliderData = [
   },
   {
     img: img2,
-    text: "🗣 When DOGE and PEPE bumped into each other, it all went downhill quickly. Satoshi Whiskey flew, fists followed, and the cops ended it with handcuffs! 👮🚨",
-  },
-  {
-    img: img3,
     text: "📹 CCTV footage leaked! The Doge vs. Pepe brawl at the MOON Lounge has been caught on camera! See what really went down last night!",
   },
   {
-    img: img4,
+    img: img3,
     text: "🚨 Breaking News: Police have released mugshots! Meme heavyweights Doge and Pepe are set to appear before a judge tomorrow following their arrest after a physical altercation at the MOON Club.",
   },
   {
-    img: img5,
+    img: img4,
     text: "📷 Doge and Pepe being transported to the City County Meme Jail",
   },
   {
-    img: img6,
+    img: img5,
     text: "🔒 Pictures show the famous meme heavyweight champs Doge and Pepe in police custody after the infamous brawl at the Moon Lounge.",
+  },
+  {
+    img: img6,
+    text: "⚖️ Meme heavyweight champions Doge and Pepe have each been sentenced to a 3-year probation period and 100 hours of charitable work following their nightclub altercation.",
+  },
+  {
+    img: img7,
+    text: "Doge and Pepe were spotted leaving the court, both hinting at unfinished business without revealing any details. Rumors are now spreading about a potential fight in the near future.",
+  },
+  {
+    img: img8,
+    text: "🐶 Doge, the undefeated Meme Heavyweight, is back on social media after his release from custody. He shared a gym post captioned Back to Work, fueling more rumors of a potential fight with Pepe.",
+  },
+  {
+    img: img9,
+    text: "🐸 Pepe responds with a post of him casually leaning against a wall, captioned: I'm always ready, especially after the nightclub thing. I saw the dog in his eyes. No more games. Let's fight! This time, no one's saving you!",
   },
 ];
 
@@ -48,7 +63,7 @@ function HowItSec() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
-  const images = [img1, img2, img3, img4, img5, img6];
+  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
   return (
     <div className="w-[100%] h-[700px] flex justify-center items-center how_it_all_began_bg relative overflow-hidden  ">
       <div className="max-w-[1280px] w-[100%] mx-auto relative flex flex-col justify-center items-center gap-[40px]">
