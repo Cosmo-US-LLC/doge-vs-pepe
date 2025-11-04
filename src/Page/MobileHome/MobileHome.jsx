@@ -34,7 +34,6 @@ function MobileHome() {
       <div>
         <Navbar />
         <MobileHeroSection />
-        <BannerSecMob />
         <MobileTwoLegends />
         <MobileFightRules />
         <CountdownMob />

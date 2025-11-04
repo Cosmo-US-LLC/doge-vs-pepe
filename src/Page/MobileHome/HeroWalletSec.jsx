@@ -5,6 +5,17 @@ import arwbtn1 from "../../assets/walletsec/btnicns (3).svg";
 import arwbtn3 from "../../assets/walletsec/btnicns (2).svg";
 
 import coinsw1 from "../../assets/walletsec/coins/tokens (1).svg";
+import dogeicon from "../../assets/walletsec/doge.svg";
+import team_doge from "../../assets/walletsec/team_doge.svg";
+import team_pepe from "../../assets/walletsec/team_pepe.svg";
+
+
+import acc_1 from "../../assets/walletsec/acc_icn (5).svg";
+import acc_2 from "../../assets/walletsec/acc_icn (4).svg";
+import acc_3 from "../../assets/walletsec/acc_icn (3).svg";
+import acc_4 from "../../assets/walletsec/acc_icn (2).svg";
+import acc_5 from "../../assets/walletsec/acc_icn (1).svg";
+
 // import coinsw2 from "../../assets/walletsec/coins/tokens (13).svg";
 import coinsw3 from "../../assets/walletsec/coins/tokens (12).svg";
 import coinsw4 from "../../assets/walletsec/coins/tokens (11).svg";
@@ -22,7 +33,7 @@ import coinsw14 from "../../assets/walletsec/coins/tokens (15).svg";
 import doge_icn from "../../assets/mobile_assets/coins (2).png";
 import pepe_icn from "../../assets/mobile_assets/coins (1).png"
 
-import dogeicon from "../../assets/walletsec/coins (2).svg";
+// import dogeicon from "../../assets/walletsec/coins (2).svg";
 import pepeicon from "../../assets/walletsec/coins (1).svg";
 
 import TokenSelectDropdown from "../../component/TokenDropdown";
@@ -53,33 +64,26 @@ const tokenSelect = [
     { id: 9, symbol: "USDC", sub_symbol: "ERC-20", icon: coinsw6 },
     { id: 10, symbol: "DOGE", sub_symbol: "ERC-20", icon: coinsw11 },
   ],
-  [{ id: 11, symbol: "More", icon: coinsw11}],
+  [{ id: 11, symbol: "More" }],
 ];
 
 
 const iconsData = [
   {
-    img: coinsw14,
+    img: acc_1,
   },
    {
-    img: coinsw7,
+    img: acc_2,
   },
    {
-    img: coinsw9,
+    img: acc_3,
   },
    {
-    img: coinsw8,
+    img: acc_4,
   },
    {
-    img: coinsw11,
+    img: acc_5,
   },
-   {
-    img: coinsw1,
-  },
-  
-   
-
-
 ];
 
 function HeroWalletSec() {
@@ -91,61 +95,31 @@ function HeroWalletSec() {
   return (
     <div className="w-[100%] relative" id="wallet">
       <div className="max-w-[922px] ">
-        <div className="flex flex-col justify-end relative pt-10 pb-[4rem] space-y-[20px] px-4 min-h-[1236px] bgwltsecmobUp ">
-          <div className="absolute bottom-0 left-0 w-full h-[4rem] bg-gradient-to-t from-black to-black/70"></div>
-          <div>
+        <div className="flex flex-col justify-end relative pt-10 pb-[1rem] space-y-[20px] px-4  ">
+          <div className="flex justify-center space-x-2 items-center">
             <h3
-              className="text-center text-[48px] leading-[116.667%] text-[#FFBF0C] font-[Anton] font-[400]"
-              style={{
-                textShadow: "4.556px -0.57px 17.144px #F1AD03",
-                webkitTextStrokeWidth: "1.09px",
-                webkitTextStrokeColor: "#000",
-              }}
+              className="text-center pt-1 text-[42px] leading-[116.667%] text-[#E67500] tracking-[0.84px] font-[Anton] font-[400]"
+              
             >
               TEAM DOGE
             </h3>
+            <img src={team_doge} alt="" />
           </div>
-          <div>
-            <div className="flex flex-col space-y-[5px] justify-center ">
-              <div className="flex items-center space-x-1">
-                <img src={doge_icn} alt="" />
-                <div className="w-[100%] h-[40px] flex items-center rounded-[24px] pl-[2px] border-[#EFAB00] border-[1px]">
-                  <div
-                    className="w-[79px] h-[35px] flex items-center justify-center text-[#0B0101] text-[25.125px] font-[Anton] rounded-[43.445px]"
-                    style={{
-                      background:
-                        "linear-gradient(66deg, #FFC676 25.98%, #FFBF00 65.48%)",
-                      boxShadow: " 0 8.582px 16.091px 0 #615500",
-                    }}
-                  >
-                    18%
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-            <div className="px-4 bg-[#F2B60F] w-[100%] space-y-[10px]  px-[13px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
-                      <div className="bg-[#00000040] flex justify-between p-1 rounded-[30px]">
+            <div className="py-[16px] px-[15px] bg-[#040404] w-[100%] space-y-[10px] rounded-[30px] border border-[#E67500]">
+                      <div className="bg-[#1a1a1a] flex justify-between p-1 rounded-[30px]">
                         {Buybuttons.map((button) => (
                           <div
                             key={button.id}
                             onClick={() => setActiveButton(button.id)}
-                            className={`w-[100%] rounded-[30px] space-x-[4px] flex justify-center items-center cursor-pointer ${
+                            className={`w-[100%] rounded-[30px] space-x-[4px] flex justify-center items-center cursor-pointer h-[37px] ${
                               activeButton === button.id
-                                ? "bg-[#EFAB00] border border-black"
+                                ? "bg-[#E67500] border border-black"
                                 : "text-[#000]"
                             }`}
                           >
-                            <img
-                              src={button.img}
-                              className="h-[18px]"
-                              alt={button.label}
-                            />
                             <p
-                              className={`text-[18px] font-[Helvetica] font-[700] ${
-                                activeButton === button.id ? "text-[#000]" : "text-[#000]"
+                              className={`text-[18px] font-[Anton] font-[400] ${
+                                activeButton === button.id ? "text-[#000]" : "text-[#fff]"
                               }`}
                             >
                               {button.label}
@@ -154,7 +128,7 @@ function HeroWalletSec() {
                         ))}
                       </div>
                       <div className="space-y-[8px]">
-                        <h3 className="text-[50px] font-[400] font-[Anton] text-center leading-[ 76%] text-[#000]">
+                        <h3 className="text-[50px] font-[400] font-[Anton] text-center leading-[ 76%] text-[#fff]">
                           180,492.39
                         </h3>
                       </div>
@@ -162,32 +136,32 @@ function HeroWalletSec() {
                         <div
                           className="w-[100%] flex  items-center h-[23px] rounded-[30px]   "
                           style={{
-                            background: "rgba(255, 255, 255, 0.28)",
+                            background: "#1a1a1a",
                           }}
                         >
-                          <div className="bg-[#F6FF00] h-[23px] w-[20%] rounded-[30px]"></div>
-                          <span className=" w-[70%] text-center text-[12px] font-[Helvetica]">
+                          <div className="bg-[#E67500] h-[23px] w-[25%] rounded-[30px]"></div>
+                          <span className=" w-[60%] text-center text-[#fff] text-[14px] font-[Mont]">
                             Until Presale Round Win
                           </span>
                         </div>
                         <div className="flex justify-between">
-                          <h4 className="text-[16px] font-[Anton] font-[400] text-[#000]">
+                          <h4 className="text-[16px] font-[Mont] font-[500] text-[#fff]">
                             USD Raised
                           </h4>
-                          <h5 className="text-[16px] font-[400] font-[Anton] text-[#000]">
+                          <h5 className="text-[16px] font-[500] font-[Mont] text-[#fff]">
                             {" "}
                             $1,000,000
                           </h5>
                         </div>
                       </div>
-                      <div className="border-[1px] p-1 rounded-[13px] space-y-[15px] border-[#fff]">
+                      <div className="space-y-[15px]">
                         <div>
-                          <h3 className="text-[18px] font-[400] font-[Anton] text-center leading-[150%] text-[#000]">
+                          <h3 className="text-[20px] font-[400] tracking-[0.4px] font-[Anton] text-center leading-[150%] text-[#FFF]">
                             1 Team Doge = $0.006
                           </h3>
                         </div>
                         <div>
-                          <div className="grid grid-cols-3 gap-2 md:grid-cols-5">
+                          <div className="grid grid-cols-2 gap-2 md:grid-cols-5">
                             {tokenSelect.map((data, index) => (
                               <TokenSelectDropdown
                                 key={index}
@@ -199,19 +173,25 @@ function HeroWalletSec() {
                             ))}
                           </div>
                         </div>
-                        <div className="bg-[#D89F02] border-[1px] border-[#000] px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[8px]">
+                        <div className=" px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[8px]"
+                         style={{ background: "rgba(255, 255, 255, 0.10)",
+          border:"1px solid rgba(255, 255, 255, 0.20)",
+         }}
+                        >
                           <div className="">
-                            <h5 className=" text-[16px] leading-[16px] font-[400] font-[Anton]">
+                            <h5 className=" text-[14px] leading-[16px] font-[600] font-[Mont]"
+                            style={{color:"rgba(255, 255, 255, 0.60)"}}
+                            >
                               You pay
                             </h5>
                             <input
                               type="text"
-                              className=" w-[73px] text-[16px] font-[Anton] font-[400] bg-[transparent] outline-none"
+                              className=" w-[73px] text-[16px] text-[#fff] font-[Anton] font-[400] bg-[transparent] outline-none"
                               defaultValue={1}
                             />
                           </div>
           
-                          <div className="relative min-w-[136px] w-fit inline-block text-left">
+                          <div className="relative min-w-[146px] w-fit inline-block text-left">
                              <TokenSelectDropdown
                               tokens={tokenSelect[0]}
                               onChange={(token) => console.log("Selected:", token)}
@@ -219,36 +199,44 @@ function HeroWalletSec() {
           
                           </div>
                         </div>
-                        <div className="bg-[#D89F02] border-[1px] border-[#000] relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[8px] ">
+                        <div className=" relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[8px] "
+                         style={{ background: "rgba(255, 255, 255, 0.10)",
+          border:"1px solid rgba(255, 255, 255, 0.20)",
+         }}
+                        >
                           <div className="w-[50%]">
-                            <h5 className="font-[Anton] text-[16px] leading-[16px] font-[400]">
+                            <h5 className="font-[Mont] text-[14px] leading-[16px] font-[400]"
+                            style={{color:"rgba(255, 255, 255, 0.60)"}}
+                            >
                               You receive
                             </h5>
                             <input
                               type="text"
-                              className="text-[16px] font-[400] font-[Anton] bg-[transparent] outline-none"
+                              className="text-[16px] font-[400] text-[#fff] font-[Anton] bg-[transparent] outline-none"
                               defaultValue={`7,414,420`}
                             />
                           </div>
           
                           <div className="relative min-w-[136px] w-fit inline-block text-left">
                             <div
-                              className="flex items-center justify-start space-x-1 cursor-pointer p-2 rounded-[8px]  w-[100%]"
-                              style={{ background: "rgba(255, 255, 255, 0.20)" }}
+                              className="flex items-center h-[48px] justify-start space-x-1 cursor-pointer p-2 rounded-[20px]  w-[100%]"
+                              style={{ background: "rgba(255, 255, 255, 0.10)",
+          border:"1px solid rgba(255, 255, 255, 0.20)",
+         }}
                             >
                               <img
                                 src={dogeicon}
-                                className="w-[18px] h-[18px]"
+                                className="w-[38px] h-[38px]"
                                 alt="Selected Icon"
                               />
-                              <h5 className="text-[14px] font-[Helvetica] leading-[100%] font-[700]">
+                              <h5 className="text-[22px] font-[Anton] leading-[100%] font-[400]">
                                 TEAM DOGE
                               </h5>
                             </div>
                           </div>
                         </div>
                         <div className=" space-y-[5px]">
-                          <h5 className="text-[#000] text-[16px] font-[Helvetica] font-[600] text-center">
+                          <h5 className="text-[#fff] text-[16px] font-[Mont] font-[600] text-center">
                             Accepting
                           </h5>
                           <div className="flex justify-between space-x-1 max-w-[200px] mx-auto">
@@ -264,111 +252,53 @@ function HeroWalletSec() {
                         </div>
                         <div className="space-y-[10px]">
                           <div className="flex justify-center">
-                            <button className="bg-[#FFE100] text-[#000] font-[Anton] py-[10px] max-w-[100%] mx-auto w-[100%] text-[18px] font-[400] rounded-[8px]">
+                            <button className="bg-[#E67500] text-[#000] font-[Anton] py-[10px] max-w-[100%] mx-auto w-[100%] text-[20px] font-[400] rounded-[50px]">
                               Connect Wallet
                             </button>
                           </div>
                           <div className="flex space-x-2  justify-between items-center">
                             <button
-                              style={{
-                                background: "rgba(176, 133, 11, 0.60)",
-                              }}
-                              className="flex items-center font-[Helvetica] py-[10px] justify-center text-[#fff] w-[100%] rounded-[4px] text-[10px] font-[400] space-x-1 text-[#fff"
+                              style={{ background: "rgba(255, 255, 255, 0.10)",
+          border:"1px solid rgba(255, 255, 255, 0.20)",
+         }}
+                              className="flex items-center font-[Mont] py-[10px] justify-center text-[#fff] w-[100%] rounded-[40px] text-[14px] font-[400] space-x-1 text-[#fff"
                             >
                               <div className="pr-1">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="13"
-                                  height="12"
-                                  viewBox="0 0 13 12"
-                                  fill="none"
-                                >
-                                  <g clip-path="url(#clip0_3505_1005)">
-                                    <path
-                                      d="M8.12969 1.29338C7.12811 0.67527 5.96226 0.376333 4.78683 0.436234C2.65254 0.436234 0.929688 1.20766 0.929688 2.15052C0.929688 2.65623 1.42683 3.11052 2.2154 3.43623"
-                                      stroke="white"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M2.2154 8.57896C1.42683 8.25325 0.929688 7.79896 0.929688 7.29325V2.15039"
-                                      stroke="white"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M2.2154 6.00788C1.42683 5.68217 0.929688 5.22788 0.929688 4.72217"
-                                      stroke="white"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M8.21652 6.42857C10.3465 6.42857 12.0737 5.66143 12.0737 4.71429C12.0737 3.76714 10.3465 3 8.21652 3C6.08652 3 4.35938 3.76714 4.35938 4.71429C4.35938 5.66143 6.08652 6.42857 8.21652 6.42857Z"
-                                      stroke="white"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M4.35938 4.71436V9.85721C4.35938 10.8001 6.07366 11.5715 8.21652 11.5715C10.3594 11.5715 12.0737 10.8001 12.0737 9.85721V4.71436"
-                                      stroke="white"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M12.0737 7.28564C12.0737 8.2285 10.3594 8.99993 8.21652 8.99993C6.07366 8.99993 4.35938 8.2285 4.35938 7.28564"
-                                      stroke="white"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                  </g>
-                                  <defs>
-                                    <clipPath id="clip0_3505_1005">
-                                      <rect
-                                        width="12"
-                                        height="12"
-                                        fill="white"
-                                        transform="translate(0.5)"
-                                      />
-                                    </clipPath>
-                                  </defs>
-                                </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+<path d="M7.29232 5.51021C4.28035 6.40661 2.08398 9.19677 2.08398 12.4999C2.08398 15.8031 4.28035 18.5932 7.29232 19.4896M22.9173 12.4999C22.9173 16.527 19.6527 19.7916 15.6257 19.7916C11.5986 19.7916 8.33398 16.527 8.33398 12.4999C8.33398 8.47284 11.5986 5.20825 15.6257 5.20825C19.6527 5.20825 22.9173 8.47284 22.9173 12.4999Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
                               </div>
                               Apply Bonus
                             </button>
                             <button
-                              style={{
-                                background: "rgba(176, 133, 11, 0.60)",
-                              }}
-                              className="flex items-center font-[Helvetica] py-[10px] w-[100%] justify-center text-[#fff] rounded-[4px] text-[10px] font-[400] text-[#fff"
+                              style={{ background: "rgba(255, 255, 255, 0.10)",
+          border:"1px solid rgba(255, 255, 255, 0.20)",
+         }}
+                              className="flex items-center font-[Mont] py-[10px] w-[100%] justify-center text-[#fff] rounded-[40px] text-[14px] font-[400] text-[#fff]"
                             >
                               <div className="pl-1">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="13"
-                                  height="12"
-                                  viewBox="0 0 13 12"
-                                  fill="none"
-                                >
-                                  <path
-                                    d="M7.10661 4.89337C6.9492 4.73592 6.76232 4.61101 6.55664 4.52579C6.35095 4.44058 6.1305 4.39672 5.90786 4.39672C5.68522 4.39672 5.46476 4.44058 5.25907 4.52579C5.05339 4.61101 4.86651 4.73592 4.70911 4.89337L2.99661 6.60637C2.67874 6.9243 2.5002 7.35548 2.50024 7.80505C2.50029 8.25462 2.67893 8.68576 2.99686 9.00362C3.31478 9.32149 3.74596 9.50003 4.19553 9.49999C4.6451 9.49994 5.07624 9.3213 5.39411 9.00337L5.55461 8.85137M5.39411 6.60637C5.55151 6.76383 5.73839 6.88873 5.94407 6.97395C6.14976 7.05917 6.37022 7.10303 6.59286 7.10303C6.8155 7.10303 7.03595 7.05917 7.24164 6.97395C7.44732 6.88873 7.6342 6.76383 7.79161 6.60637L9.50361 4.89337C9.82153 4.57551 10.0002 4.14437 10.0002 3.6948C10.0003 3.24523 9.82172 2.81405 9.50386 2.49612C9.18599 2.1782 8.75485 1.99956 8.30528 1.99951C7.85571 1.99946 7.42453 2.17801 7.10661 2.49587L6.59261 2.97637"
-                                    stroke="white"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+<path d="M11.324 15.4648C9.88252 15.4648 8.44083 14.9168 7.34276 13.8201C5.14881 11.623 5.14881 8.05168 7.34252 5.85821L10.9303 2.27041C13.1238 0.0766926 16.6952 0.0764508 18.8915 2.27016C19.9546 3.33319 20.5398 4.74709 20.5398 6.2521C20.5398 7.64739 20.0278 8.98349 19.0984 10.0146C18.8236 10.3193 18.3543 10.3433 18.0499 10.069C17.7454 9.79447 17.721 9.32494 17.9955 9.02046C18.6789 8.26264 19.0551 7.27936 19.0551 6.2521C19.0551 5.14364 18.6243 4.10261 17.842 3.32014C16.2249 1.70494 13.5953 1.70494 11.9801 3.32014L8.39225 6.90794C6.7773 8.52314 6.7773 11.1528 8.39274 12.7702C10.0091 14.3846 12.6388 14.3849 14.2542 12.7699L14.3618 12.6624C14.6518 12.3724 15.1215 12.3724 15.4115 12.6624C15.7015 12.9521 15.7015 13.4224 15.4115 13.7121L15.304 13.8197C14.2071 14.9165 12.7657 15.4648 11.324 15.4648Z" fill="white"/>
+<path d="M10.0896 24.3752C8.6481 24.3752 7.20641 23.8269 6.10834 22.73C3.99172 20.611 3.9011 17.2107 5.90125 14.9885C6.17528 14.684 6.64457 14.6586 6.94953 14.9334C7.25425 15.2077 7.2789 15.677 7.00463 15.9817C5.53273 17.6172 5.60015 20.1204 7.15832 21.6803C8.77472 23.2955 11.4044 23.2948 13.0198 21.6801L16.6052 18.0947C17.3891 17.3125 17.8205 16.2714 17.8205 15.1625C17.8205 14.055 17.3891 13.0147 16.6059 12.2334C15.8225 11.4493 14.7822 11.0179 13.6752 11.0179C12.5679 11.0179 11.5269 11.4495 10.7435 12.2327L10.6376 12.3385C10.3472 12.6278 9.87714 12.6273 9.58764 12.3373C9.29814 12.0471 9.29862 11.5771 9.58885 11.2874L9.69421 11.1822C10.7575 10.1192 12.1714 9.5332 13.6752 9.5332C15.179 9.5332 16.5926 10.1192 17.6552 11.1832C18.7189 12.2441 19.3052 13.6577 19.3052 15.1625C19.3052 16.6687 18.7189 18.0831 17.6545 19.1451L14.0696 22.7298C12.9727 23.8267 11.5312 24.3752 10.0896 24.3752Z" fill="white"/>
+<path d="M17.1309 19.3606C16.9409 19.3606 16.751 19.2882 16.606 19.1432C16.316 18.8534 16.316 18.3832 16.606 18.0934C18.2222 16.4773 18.2222 13.8476 16.606 12.2314C14.9894 10.6155 12.3599 10.6155 10.7438 12.2314C10.4538 12.5214 9.98403 12.5214 9.69405 12.2314C9.40407 11.9415 9.40407 11.4715 9.69405 11.1817C11.8892 8.98606 15.4606 8.98655 17.6557 11.1817C19.8509 13.3766 19.8509 16.9482 17.6557 19.1432C17.5108 19.2882 17.3208 19.3606 17.1309 19.3606Z" fill="white"/>
+</svg>
                               </div>
                               Referral Code
                             </button>
                           </div>
-                          <div>
-                            <h4 className="text-[15px] pb-2 font-[400] font-[Anton] text-center leading-[150%] text-[#000]">
+                          
+                        </div>
+                      </div>
+                      <div className="flex flex-col items-center ">
+                        <div>
+                            <h4 className="text-[16px] pb-2 font-[400] font-[Anton] text-center leading-[150%] text-[#fff]">
                               Max Buy In: $25,000
                             </h4>
                           </div>
-                        </div>
-                      </div>
                       <div className="flex items-center justify-center space-x-1">
-                        <h4 className="text-[13px] font-[Helvetica] font-[700]">
+                        <h4 className="text-[12px] capitalize leading-[100%] font-[Mont] font-[700]"
+                        style={{color:"rgba(255, 255, 255, 0.60)"}}
+                        >
                           Audited by
                         </h4>
                         <div className="flex items-center">
@@ -451,67 +381,43 @@ function HeroWalletSec() {
                               </clipPath>
                             </defs>
                           </svg>
-                          <h3 className="pl-1 text-[12px] font-[Inter] font-[600]">
+                          <h3 className="pl-1 text-[12px] capitalize leading-[100%] font-[Mont] font-[600]"
+                          style={{color:"rgba(255, 255, 255, 0.60)"}}
+                          >
                             Coinsult
                           </h3>
                         </div>
                       </div>
+                      </div>
                     </div>
         </div>
 
-        <div className="flex flex-col justify-end py-10 space-y-[20px] px-4 min-h-[1190px] bgwltsecmobDn ">
-          <div>
+        <div className="flex flex-col justify-end py-10 space-y-[20px] px-4 ">
+          <div className="flex justify-center space-x-2 items-center">
             <h3
-              className="text-center text-[48px] leading-[116.667%] text-[#00FF2F] font-[Anton] font-[400]"
-              style={{
-                textShadow: "6.534px -0.817px 24.583px #74FF60",
-                webkitTextStrokeWidth: "1.09px",
-                webkitTextStrokeColor: "#000",
-              }}
+              className="text-center text-[42px] leading-[116.667%] text-[#00FF2F] font-[Anton] font-[400]"
+             
             >
              TEAM PEPE
             </h3>
-          </div>
-          <div>
-            <div className="flex flex-col space-y-[5px] justify-center ">
-              <div className="flex items-center space-x-1">
-                <img src={pepe_icn} alt="" />
-                <div className="w-[100%] h-[40px] flex items-center rounded-[24px] pl-[2px] border-[#0AFC3D] border-[1px]">
-                  <div
-                    className="w-[79px] h-[35px] flex items-center justify-center text-[#0B0101] text-[25.125px] font-[Anton] rounded-[43.445px]"
-                    style={{
-                      background:
-                        "linear-gradient(66deg, #79EC8F 25.98%, #09FC3C 65.48%)",
-                      boxShadow: " 0 8.582px 16.091px 0 #615500",
-                    }}
-                  >
-                    24%
-                  </div>
-                </div>
-              </div>
-            </div>
+             <img src={team_pepe} alt="" />
           </div>
        
-           <div className="px-4 bg-[#4EB52A] w-[100%] space-y-[10px]  px-[13px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
-                      <div className="bg-[#00000040] flex justify-between p-1 rounded-[30px]">
+           <div className="px-4 w-[100%] space-y-[10px]  px-[13px] pb-[15px] pt-[15px] rounded-[30px] border border-[#00FF2F]">
+                      <div className="bg-[#1a1a1a] flex justify-between p-1 rounded-[30px]">
                         {Buybuttons.map((button) => (
                           <div
                             key={button.id}
                             onClick={() => setActiveButtonPepe(button.id)}
-                            className={`w-[100%] rounded-[30px] space-x-[4px] flex justify-center items-center cursor-pointer ${
+                            className={`w-[100%] rounded-[30px] space-x-[4px] py-[5px] flex justify-center items-center cursor-pointer ${
                               activeButtonPepe === button.id
-                                ? "bg-[#4EB52A] border border-black"
+                                ? "bg-[#00FF2F] border border-black"
                                 : "text-[#000]"
                             }`}
                           >
-                            <img
-                              src={button.img}
-                              className="h-[18px]"
-                              alt={button.label}
-                            />
                             <p
-                              className={`text-[18px] font-[Helvetica] font-[700] ${
-                                activeButtonPepe === button.id ? "text-[#000]" : "text-[#000]"
+                              className={`text-[18px] font-[Anton] font-[400] ${
+                                activeButtonPepe === button.id ? "text-[#000]" : "text-[#fff]"
                               }`}
                             >
                               {button.label}
@@ -520,7 +426,7 @@ function HeroWalletSec() {
                         ))}
                       </div>
                       <div className="space-y-[8px]">
-                        <h3 className="text-[50px] font-[400] font-[Anton] text-center leading-[ 76%] text-[#000]">
+                        <h3 className="text-[50px] font-[400] font-[Anton] text-center leading-[76%] text-[#fff]">
                           240,492.39
                         </h3>
                       </div>
@@ -531,29 +437,29 @@ function HeroWalletSec() {
                             background: "rgba(255, 255, 255, 0.28)",
                           }}
                         >
-                          <div className="bg-[#66FF83] h-[23px] w-[20%] rounded-[30px]"></div>
-                          <span className=" w-[70%] text-center text-[12px] font-[Helvetica]">
+                          <div className="bg-[#00FF2F] h-[23px] w-[30%] rounded-[30px]"></div>
+                          <span className=" w-[60%] text-center text-[#fff] text-[14px] font-[Mont]">
                             Until Presale Round Win
                           </span>
                         </div>
                         <div className="flex justify-between">
-                          <h4 className="text-[16px] font-[Anton] font-[400] text-[#000]">
+                          <h4 className="text-[16px] font-[Mont] font-[400] text-[#fff]">
                             USD Raised
                           </h4>
-                          <h5 className="text-[16px] font-[400] font-[Anton] text-[#000]">
+                          <h5 className="text-[16px] font-[400] font-[Mont] text-[#fff]">
                             {" "}
                             $1,000,000
                           </h5>
                         </div>
                       </div>
-                      <div className="border-[1px] p-1 rounded-[13px] space-y-[15px] border-[#fff]">
+                      <div className=" space-y-[15px]">
                         <div>
-                          <h3 className="text-[18px] font-[400] font-[Anton] text-center leading-[150%] text-[#000]">
+                          <h3 className="text-[20px]  tracking-[0.4px] font-[400] font-[Anton] text-center leading-[150%] text-[#fff]">
                             1 Team Pepe = $0.006
                           </h3>
                         </div>
                         <div>
-                          <div className="grid grid-cols-3 gap-2 md:grid-cols-5">
+                          <div className="grid grid-cols-2 gap-2 md:grid-cols-5">
                             {tokenSelect.map((data, index) => (
                               <TokenSelectDropdown
                                 key={index}
@@ -565,14 +471,20 @@ function HeroWalletSec() {
                             ))}
                           </div>
                         </div>
-                        <div className="bg-[#46A326] border-[1px] border-[#000] px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[8px]">
+                        <div className="px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[8px]"
+                        style={{ background: "rgba(255, 255, 255, 0.10)",
+          border:"1px solid rgba(255, 255, 255, 0.20)",
+         }}
+                        >
                           <div className="">
-                            <h5 className=" text-[16px] leading-[16px] font-[400] font-[Anton]">
+                            <h5 className=" text-[14px] leading-[16px] font-[400] font-[Mont]"
+                            style={{color:"rgba(255, 255, 255, 0.60)"}}
+                            >
                               You pay
                             </h5>
                             <input
                               type="text"
-                              className=" w-[73px] text-[16px] font-[Anton] font-[400] bg-[transparent] outline-none"
+                              className=" w-[73px] text-[16px] font-[Anton] font-[400] text-[#fff] bg-[transparent] outline-none"
                               defaultValue={1}
                             />
                           </div>
@@ -585,36 +497,44 @@ function HeroWalletSec() {
           
                           </div>
                         </div>
-                        <div className="bg-[#46A326] border-[1px] border-[#000] relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[8px] ">
+                        <div className=" relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[8px] "
+                         style={{ background: "rgba(255, 255, 255, 0.10)",
+          border:"1px solid rgba(255, 255, 255, 0.20)",
+         }}
+                        >
                           <div className="w-[50%]">
-                            <h5 className="font-[Anton] text-[16px] leading-[16px] font-[400]">
+                            <h5 className=" text-[14px] leading-[16px] font-[400] font-[Mont]"
+                             style={{color:"rgba(255, 255, 255, 0.60)"}}
+                            >
                               You receive
                             </h5>
                             <input
                               type="text"
-                              className="text-[16px] font-[400] font-[Anton] bg-[transparent] outline-none"
+                              className="text-[16px] text-[#FFF] font-[400] font-[Anton] bg-[transparent] outline-none"
                               defaultValue={`7,414,420`}
                             />
                           </div>
           
                           <div className="relative min-w-[136px] w-fit inline-block text-left">
-                            <div
-                              className="flex items-center justify-start space-x-1 cursor-pointer p-2 rounded-[8px]  w-[100%]"
-                              style={{ background: "rgba(255, 255, 255, 0.20)" }}
+                           <div
+                              className="flex items-center h-[48px] justify-start space-x-1 cursor-pointer p-2 rounded-[20px]  w-[100%]"
+                              style={{ background: "rgba(255, 255, 255, 0.10)",
+          border:"1px solid rgba(255, 255, 255, 0.20)",
+         }}
                             >
                               <img
-                                src={pepeicon}
-                                className="w-[18px] h-[18px]"
+                                src={dogeicon}
+                                className="w-[38px] h-[38px]"
                                 alt="Selected Icon"
                               />
-                              <h5 className="text-[14px] font-[Helvetica] leading-[100%] font-[700]">
-                                TEAM PEPE
+                              <h5 className="text-[22px] font-[Anton] leading-[100%] font-[400]">
+                                TEAM DOGE
                               </h5>
                             </div>
                           </div>
                         </div>
                         <div className=" space-y-[5px]">
-                          <h5 className="text-[#000] text-[16px] font-[Helvetica] font-[600] text-center">
+                          <h5 className="text-[#fff] text-[16px] font-[Mont] font-[600] text-center">
                             Accepting
                           </h5>
                           <div className="flex justify-between space-x-1 max-w-[200px] mx-auto">
@@ -630,111 +550,52 @@ function HeroWalletSec() {
                         </div>
                         <div className="space-y-[10px]">
                           <div className="flex justify-center">
-                            <button className="bg-[#00FF31] text-[#000] font-[Anton] py-[10px] max-w-[100%] mx-auto w-[100%] text-[18px] font-[400] rounded-[8px]">
+                            <button className="bg-[#00FF31] text-[#000] font-[Anton] py-[10px] max-w-[100%] mx-auto w-[100%] text-[22px] font-[400] rounded-[40px]">
                               Connect Wallet
                             </button>
                           </div>
                           <div className="flex space-x-2  justify-between items-center">
                             <button
-                              style={{
-                                background: "rgba(18, 70, 0, 0.60)",
-                              }}
-                              className="flex items-center font-[Helvetica] py-[10px] justify-center text-[#fff] w-[100%] rounded-[4px] text-[10px] font-[400] space-x-1 text-[#fff"
+                              style={{ background: "rgba(255, 255, 255, 0.10)",
+          border:"1px solid rgba(255, 255, 255, 0.20)",
+         }}
+                              className="flex items-center font-[Mont] py-[10px] justify-center text-[#fff] w-[100%] rounded-[40px] text-[14px] font-[400] space-x-1 text-[#fff"
                             >
                               <div className="pr-1">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="13"
-                                  height="12"
-                                  viewBox="0 0 13 12"
-                                  fill="none"
-                                >
-                                  <g clip-path="url(#clip0_3505_1005)">
-                                    <path
-                                      d="M8.12969 1.29338C7.12811 0.67527 5.96226 0.376333 4.78683 0.436234C2.65254 0.436234 0.929688 1.20766 0.929688 2.15052C0.929688 2.65623 1.42683 3.11052 2.2154 3.43623"
-                                      stroke="white"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M2.2154 8.57896C1.42683 8.25325 0.929688 7.79896 0.929688 7.29325V2.15039"
-                                      stroke="white"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M2.2154 6.00788C1.42683 5.68217 0.929688 5.22788 0.929688 4.72217"
-                                      stroke="white"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M8.21652 6.42857C10.3465 6.42857 12.0737 5.66143 12.0737 4.71429C12.0737 3.76714 10.3465 3 8.21652 3C6.08652 3 4.35938 3.76714 4.35938 4.71429C4.35938 5.66143 6.08652 6.42857 8.21652 6.42857Z"
-                                      stroke="white"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M4.35938 4.71436V9.85721C4.35938 10.8001 6.07366 11.5715 8.21652 11.5715C10.3594 11.5715 12.0737 10.8001 12.0737 9.85721V4.71436"
-                                      stroke="white"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M12.0737 7.28564C12.0737 8.2285 10.3594 8.99993 8.21652 8.99993C6.07366 8.99993 4.35938 8.2285 4.35938 7.28564"
-                                      stroke="white"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                  </g>
-                                  <defs>
-                                    <clipPath id="clip0_3505_1005">
-                                      <rect
-                                        width="12"
-                                        height="12"
-                                        fill="white"
-                                        transform="translate(0.5)"
-                                      />
-                                    </clipPath>
-                                  </defs>
-                                </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+<path d="M7.29232 5.51021C4.28035 6.40661 2.08398 9.19677 2.08398 12.4999C2.08398 15.8031 4.28035 18.5932 7.29232 19.4896M22.9173 12.4999C22.9173 16.527 19.6527 19.7916 15.6257 19.7916C11.5986 19.7916 8.33398 16.527 8.33398 12.4999C8.33398 8.47284 11.5986 5.20825 15.6257 5.20825C19.6527 5.20825 22.9173 8.47284 22.9173 12.4999Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
                               </div>
                               Apply Bonus
                             </button>
                             <button
-                              style={{
-                                background: "rgba(18, 70, 0, 0.60)",
-                              }}
-                              className="flex items-center font-[Helvetica] py-[10px] w-[100%] justify-center text-[#fff] rounded-[4px] text-[10px] font-[400] text-[#fff"
+                              style={{ background: "rgba(255, 255, 255, 0.10)",
+          border:"1px solid rgba(255, 255, 255, 0.20)",
+         }}
+                              className="flex items-center font-[Mont] py-[10px] w-[100%] justify-center text-[#fff] rounded-[40px] text-[14px] font-[400] text-[#fff]"
                             >
                               <div className="pl-1">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="13"
-                                  height="12"
-                                  viewBox="0 0 13 12"
-                                  fill="none"
-                                >
-                                  <path
-                                    d="M7.10661 4.89337C6.9492 4.73592 6.76232 4.61101 6.55664 4.52579C6.35095 4.44058 6.1305 4.39672 5.90786 4.39672C5.68522 4.39672 5.46476 4.44058 5.25907 4.52579C5.05339 4.61101 4.86651 4.73592 4.70911 4.89337L2.99661 6.60637C2.67874 6.9243 2.5002 7.35548 2.50024 7.80505C2.50029 8.25462 2.67893 8.68576 2.99686 9.00362C3.31478 9.32149 3.74596 9.50003 4.19553 9.49999C4.6451 9.49994 5.07624 9.3213 5.39411 9.00337L5.55461 8.85137M5.39411 6.60637C5.55151 6.76383 5.73839 6.88873 5.94407 6.97395C6.14976 7.05917 6.37022 7.10303 6.59286 7.10303C6.8155 7.10303 7.03595 7.05917 7.24164 6.97395C7.44732 6.88873 7.6342 6.76383 7.79161 6.60637L9.50361 4.89337C9.82153 4.57551 10.0002 4.14437 10.0002 3.6948C10.0003 3.24523 9.82172 2.81405 9.50386 2.49612C9.18599 2.1782 8.75485 1.99956 8.30528 1.99951C7.85571 1.99946 7.42453 2.17801 7.10661 2.49587L6.59261 2.97637"
-                                    stroke="white"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+<path d="M11.324 15.4648C9.88252 15.4648 8.44083 14.9168 7.34276 13.8201C5.14881 11.623 5.14881 8.05168 7.34252 5.85821L10.9303 2.27041C13.1238 0.0766926 16.6952 0.0764508 18.8915 2.27016C19.9546 3.33319 20.5398 4.74709 20.5398 6.2521C20.5398 7.64739 20.0278 8.98349 19.0984 10.0146C18.8236 10.3193 18.3543 10.3433 18.0499 10.069C17.7454 9.79447 17.721 9.32494 17.9955 9.02046C18.6789 8.26264 19.0551 7.27936 19.0551 6.2521C19.0551 5.14364 18.6243 4.10261 17.842 3.32014C16.2249 1.70494 13.5953 1.70494 11.9801 3.32014L8.39225 6.90794C6.7773 8.52314 6.7773 11.1528 8.39274 12.7702C10.0091 14.3846 12.6388 14.3849 14.2542 12.7699L14.3618 12.6624C14.6518 12.3724 15.1215 12.3724 15.4115 12.6624C15.7015 12.9521 15.7015 13.4224 15.4115 13.7121L15.304 13.8197C14.2071 14.9165 12.7657 15.4648 11.324 15.4648Z" fill="white"/>
+<path d="M10.0896 24.3752C8.6481 24.3752 7.20641 23.8269 6.10834 22.73C3.99172 20.611 3.9011 17.2107 5.90125 14.9885C6.17528 14.684 6.64457 14.6586 6.94953 14.9334C7.25425 15.2077 7.2789 15.677 7.00463 15.9817C5.53273 17.6172 5.60015 20.1204 7.15832 21.6803C8.77472 23.2955 11.4044 23.2948 13.0198 21.6801L16.6052 18.0947C17.3891 17.3125 17.8205 16.2714 17.8205 15.1625C17.8205 14.055 17.3891 13.0147 16.6059 12.2334C15.8225 11.4493 14.7822 11.0179 13.6752 11.0179C12.5679 11.0179 11.5269 11.4495 10.7435 12.2327L10.6376 12.3385C10.3472 12.6278 9.87714 12.6273 9.58764 12.3373C9.29814 12.0471 9.29862 11.5771 9.58885 11.2874L9.69421 11.1822C10.7575 10.1192 12.1714 9.5332 13.6752 9.5332C15.179 9.5332 16.5926 10.1192 17.6552 11.1832C18.7189 12.2441 19.3052 13.6577 19.3052 15.1625C19.3052 16.6687 18.7189 18.0831 17.6545 19.1451L14.0696 22.7298C12.9727 23.8267 11.5312 24.3752 10.0896 24.3752Z" fill="white"/>
+<path d="M17.1309 19.3606C16.9409 19.3606 16.751 19.2882 16.606 19.1432C16.316 18.8534 16.316 18.3832 16.606 18.0934C18.2222 16.4773 18.2222 13.8476 16.606 12.2314C14.9894 10.6155 12.3599 10.6155 10.7438 12.2314C10.4538 12.5214 9.98403 12.5214 9.69405 12.2314C9.40407 11.9415 9.40407 11.4715 9.69405 11.1817C11.8892 8.98606 15.4606 8.98655 17.6557 11.1817C19.8509 13.3766 19.8509 16.9482 17.6557 19.1432C17.5108 19.2882 17.3208 19.3606 17.1309 19.3606Z" fill="white"/>
+</svg>
                               </div>
                               Referral Code
                             </button>
                           </div>
-                          <div>
-                            <h4 className="text-[15px] pb-2 font-[400] font-[Anton] text-center leading-[150%] text-[#000]">
+                        </div>
+                      </div>
+                      <div className="flex flex-col items-center ">
+                        <div>
+                            <h4 className="text-[16px] pb-2 font-[400] font-[Anton] text-center leading-[150%] text-[#fff]">
                               Max Buy In: $25,000
                             </h4>
                           </div>
-                        </div>
-                      </div>
                       <div className="flex items-center justify-center space-x-1">
-                        <h4 className="text-[13px] font-[Helvetica] font-[700]">
+                        <h4 className="text-[12px] capitalize leading-[100%] font-[Mont] font-[700]"
+                        style={{color:"rgba(255, 255, 255, 0.60)"}}
+                        >
                           Audited by
                         </h4>
                         <div className="flex items-center">
@@ -817,10 +678,13 @@ function HeroWalletSec() {
                               </clipPath>
                             </defs>
                           </svg>
-                          <h3 className="pl-1 text-[12px] font-[Inter] font-[600]">
+                          <h3 className="pl-1 text-[12px] capitalize leading-[100%] font-[Mont] font-[600]"
+                          style={{color:"rgba(255, 255, 255, 0.60)"}}
+                          >
                             Coinsult
                           </h3>
                         </div>
+                      </div>
                       </div>
                     </div>
         </div>
