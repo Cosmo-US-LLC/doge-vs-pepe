@@ -1,18 +1,19 @@
-import DVPHero from "../../assets/hero/v2_hero_section_dvp.webp";
 import hero_msg from "../../assets/hero/v2_hero_msg.webp";
+import dvp_fight_video from "../../assets/hero/dvp_fight_video.webm";
+import bottom_shadow from "../../assets/fightRule/bottom_shadow.webp";
 
 function HeroSection() {
   return (
     <div className="w-[100%] h-[800px] hero_bg">
       <div className="max-w-[1280px] mx-auto w-[100%] h-full flex items-end relative">
-        <div className="flex items-center justify-center flex-col space-y-3  w-full relative">
+        <div className="flex items-center justify-center flex-col space-y-2  w-full relative">
           <img
             src={hero_msg}
             alt="hero_msg"
             className="absolute top-[-30px] left-[55%] translate-x-[-50%] w-[320px] h-auto z-40"
           />
 
-          <div className="flex items-center justify-center space-x-4 relative z-20">
+          <div className="flex items-center justify-center space-x-4  relative z-20">
             <div className="flex flex-col space-y-2">
               <a
                 href="https://t.me/"
@@ -81,9 +82,21 @@ function HeroSection() {
             </h1>
           </div>
 
-          <div className="gradient-bg overflow-hidden rounded-[30px] z-30 p-[1px] shadow-[0_-6px_0_rgba(0,0,0,0.7)]">
-            <div className="w-[1240px] mx-auto h-[520px] overflow-hidden rounded-[30px]">
-              <img src={DVPHero} alt="heroSec" className="w-full " />
+          <div className="gradient-bg overflow-hidden rounded-[30px] z-30 p-[1px] ">
+            <div className="w-[1240px] mx-auto h-[500px] overflow-hidden rounded-[30px] ">
+              <img
+                src={bottom_shadow}
+                alt="bottom_shadow"
+                className="absolute top-[72px] left-[56px] right-0 w-[920px] mx-auto h-[80px]"
+              />
+              <video
+                src={dvp_fight_video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover object-top"
+              />
             </div>
           </div>
         </div>

@@ -227,7 +227,6 @@ h4 {
   font-weight: 400;
   line-height: 135%; /* 37.8px */
   letter-spacing: 0.84px;
-  text-transform: uppercase;
 }
 
 h5 {
@@ -271,15 +270,33 @@ h5 {
   font-weight: 600;
   line-height: 120%;
   letter-spacing: 0.34px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  /* padding: 10px 10px;
+  margin: 0 10px; */
 }
 .navbar_link:hover {
-  color: #e67500;
+  background: #ffffff1a;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px 20px;
+  margin: 0 10px; */
+
+  cursor: pointer;
+  /* color: #e67500;
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-color: #e67500;
   text-decoration-thickness: 2px;
   text-decoration-style: solid;
-  text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none; */
 }
 
 .footer_link {
@@ -440,7 +457,7 @@ h5 {
 .Roadmap_bg {
   background-image: url(../src/assets/RoadmapSec/v2_roadmap_bg.webp);
   background-position: top;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .Roadmap_Mob_bg {

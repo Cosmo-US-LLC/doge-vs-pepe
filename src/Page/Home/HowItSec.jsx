@@ -1,5 +1,5 @@
 import React from "react";
-import topShadow from "../../assets/tokenomics/rectangle_306.webp";
+import blackShadow from "../../assets/HowItSec/black_shadow.webp";
 import bottomShadow from "../../assets/tokenomics/rectangle_307.webp";
 import awr1 from "../../assets/RoadmapSec/Vector (2).svg";
 
@@ -78,12 +78,17 @@ function HowItSec() {
                     />
 
                     {/* Text Overlay */}
-                    <div className="absolute inset-0 bg-black/40 flex items-end">
+                    <div className="absolute inset-0 flex items-end">
                       <div className="p-4 z-20 relative text-[#fff]">
                         <p className="description text-left text-[#fff] z-20">
                           {item.text}
                         </p>
                       </div>
+                      <img
+                        alt=""
+                        src={blackShadow}
+                        className="absolute bottom-0 left-0 right-0 "
+                      />
                     </div>
                   </div>
                 </div>

@@ -26,11 +26,13 @@ import TwoLegends from "./TwoLegends";
 import FightRules from "./FightRules";
 import HowToBuy from "./HowToBuy";
 import DogeVsPepeNews from "./DogeVsPepeNews";
+import Preloader from "./Preloader";
 
 function Home() {
   return (
     <div className="bg-[black] w-[100%]">
       <div className="overflow-x-hidden">
+        {/* <Preloader /> */}
         <Navbar />
         <HeroSection />
         <BannerSec />

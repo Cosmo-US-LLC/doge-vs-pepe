@@ -55,13 +55,14 @@ function TwoLegends() {
             </div>
             <div className="absolute bottom-[-100px] right-[160px] w-[440px] h-[70px] z-[99]">
               <img src={white_bg} alt="" className="w-full h-full" />
-              <h4 className="absolute top-[27px] left-[-77px] w-full h-full !text-[14px] !text-[#000] subtext text-center">
-                The first to hit $1M wins
+              <h4 className="absolute top-[27px] left-[-77px] w-full h-full !font-bold !text-[16px] !text-[#000] subtext text-center">
+                The first to hit{" "}
+                <span className="text-[#C90F0F] font-bold">$1M</span> wins
               </h4>
-              <h4 className="absolute top-[27px] left-[77px] w-full h-full !text-[14px] !text-[#000] rotate-[8deg] subtext text-center">
+              <h4 className="absolute top-[27px] left-[77px] w-full h-full !font-bold !text-[16px] !text-[#000] rotate-[8deg] subtext text-center">
                 the presale
               </h4>
-              <h4 className="absolute top-[27px] left-[167px] w-full h-full !text-[14px] !text-[#000] rotate-[-8deg] subtext text-center">
+              <h4 className="absolute top-[27px] left-[167px] w-full h-full !font-bold !text-[16px] !text-[#000] rotate-[-8deg] subtext text-center">
                 round
               </h4>
             </div>
