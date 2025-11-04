@@ -1,8 +1,6 @@
-import React from "react";
 import topShadow from "../../assets/DontWaitSec/rectangle_285.webp";
 import bottomShadow from "../../assets/DontWaitSec/rectangle_297.webp";
-import doge from "../../assets/DontWaitSec/doge-d.webp";
-import pepe from "../../assets/DontWaitSec/pepe-d.webp";
+
 function DontWaitSec() {
   return (
     <div className="w-[100%] h-[880px] relative bgDontWaitSec flex justify-center items-end pb-[160px] overflow-hidden">
