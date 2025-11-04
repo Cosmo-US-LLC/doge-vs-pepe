@@ -60,7 +60,7 @@ export default function HowToBuy() {
               <div className="relative rounded-[30px] z-20 bg-neutral-900/80 backdrop-blur-[10px] text-white p-6  h-full">
                 <div className="relative flex flex-col h-full">
                   <div className="flex flex-row items-center gap-2">
-                    <h4 className="gradient-text">{s.step}</h4>
+                    <h4 className="gradient-text uppercase">{s.step}</h4>
                     <h4 className="">{s.title}</h4>
                   </div>
                   <p className="flex-grow mt-3 subtext ">{s.body}</p>

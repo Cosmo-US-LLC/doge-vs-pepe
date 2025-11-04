@@ -157,7 +157,7 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
           </div>
 
           <div
-            className={`gradient-bg h-[30px] w-[30px] rounded-full flex items-center justify-center transition-transform duration-300 ${
+            className={`accordion-gradient-bg-arrow h-[30px] w-[30px] rounded-full flex items-center justify-center transition-transform duration-300 ${
               !isOpen ? "rotate-0" : "rotate-180"
             }`}
           >

@@ -283,7 +283,7 @@ function Footer() {
                 </svg>
               </a>
               <a
-                href="https://instagram.com/"
+                href="https://x.com/Doge_V_Pepe"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-[40px] h-[40px] rounded-full border-[#FFFFFF1A] border-2 bg-[#474747] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
@@ -302,7 +302,7 @@ function Footer() {
                 </svg>
               </a>
               <a
-                href="https://x.com/Doge_V_Pepe"
+                href="https://t.me/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-[40px] h-[40px] rounded-full border-[#FFFFFF1A] border-2 bg-[#474747] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"

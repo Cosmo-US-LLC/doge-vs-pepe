@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed w-full z-[9999] overflow-hidden mt-3">
+    <div className="fixed w-full z-[99999] overflow-hidden mt-3">
       <div className="max-w-[1280px] rounded-[12px] overflow-hidden bg-black/10 backdrop-blur-[16px] md:px-6 px-4 relative w-full mx-auto h-[86px] flex justify-between items-center">
         {/* Logo on the left */}
         <div className="flex items-center">
