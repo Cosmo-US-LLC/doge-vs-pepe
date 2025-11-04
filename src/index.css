@@ -360,7 +360,7 @@ h5 {
   background-repeat: no-repeat;
 }
 .TokenBG {
-  background-image: url(../src/assets/tokenomics/token_bg_new.webp);
+  background-image: url(../src/assets/tokenomics/v2_token_bg.webp);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -439,8 +439,8 @@ h5 {
 }
 .Roadmap_bg {
   background-image: url(../src/assets/RoadmapSec/v2_roadmap_bg.webp);
-  background-position: center;
-  background-size: 100% 100%;
+  background-position: top;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .Roadmap_Mob_bg {
@@ -733,16 +733,17 @@ h5 {
 }
 
 .bgDontWaitSec {
-  background-image: url(./assets/DontWaitSec/v2_dont_wait_bg.webp);
-  background-position: center;
-  background-size: 100% 100%;
+  background-image: url(./assets/DontWaitSec/v2_dont_wait_bg_2.webp);
+  background-position: top;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .faqs_bg {
-  background-image: url("./assets/faqs/faqs_bg.webp");
+  background-image: url("./assets/faqs/v2_faqs_bg_2.webp");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  height: 1800px;
 }
 .faqs_bg_mob {
   background-image: url("./assets/faqs/faqs_bg_mob.png");
@@ -768,9 +769,9 @@ h5 {
 }
 
 .how_to_buy_bg {
-  background-image: url("./assets/howtobuy/v2_how_to_buy_bg.webp");
-  background-position: center;
-  background-size: 100% 100%;
+  background-image: url("./assets/howtobuy/v2_how_to_buy_bg_2.webp");
+  background-position: top;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

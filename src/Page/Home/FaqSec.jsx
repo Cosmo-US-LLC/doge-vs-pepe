@@ -1,5 +1,15 @@
 import { useState } from "react";
 import arw from "../../assets/footer/Group 1410124940.svg";
+import topShadow from "../../assets/DontWaitSec/rectangle_285.webp";
+import bottomShadow from "../../assets/DontWaitSec/rectangle_297.webp";
+import greenC1 from "../../assets/faqs/v2_green_c1.webp";
+import greenC2 from "../../assets/faqs/v2_green_c2.webp";
+import greenC3 from "../../assets/faqs/v2_green_c1.webp";
+import greenC4 from "../../assets/faqs/v2_green_c2.webp";
+import greenG1 from "../../assets/faqs/v2_green_g1.webp";
+import greenG2 from "../../assets/faqs/v2_green_g2.webp";
+import greenG3 from "../../assets/faqs/v2_green_g3.webp";
+import greenG4 from "../../assets/faqs/v2_green_g4.webp";
 
 const faqData = [
   {
@@ -176,7 +186,59 @@ const FaqSec = () => {
 
   return (
     <div className="relative faqs_bg" id="faq">
-      <div className="w-[100%] max-w-[840px] pt-[73px] mx-auto pb-[63px] flex flex-col gap-4">
+      <img
+        src={topShadow}
+        alt="topShadow"
+        className="absolute top-0 left-0 right-0 w-full h-[130px]"
+      />
+      <img
+        src={bottomShadow}
+        alt="bottomShadow"
+        className="absolute bottom-0 left-0 right-0 w-full h-[180px]"
+      />
+      <div className="absolute max-w-[1280px] mx-auto top-0 left-0 right-0 w-full h-full">
+        <img
+          src={greenC1}
+          alt="greenC1"
+          className="absolute top-[160px] left-0 right-0 w-[160px] h-[160px]"
+        />
+        <img
+          src={greenC2}
+          alt="greenC2"
+          className="absolute top-[660px] left-[-110px] right-0 w-[160px] h-[160px]"
+        />
+        <img
+          src={greenC3}
+          alt="greenC3"
+          className="absolute top-[630px] right-[40px] w-[70px] h-[70px]"
+        />
+        <img
+          src={greenC4}
+          alt="greenC4"
+          className="absolute top-[-90px] right-[180px] w-[160px] h-[160px]"
+        />
+        <img
+          src={greenG1}
+          alt="greenG1"
+          className="absolute top-[120px] right-[-40px] w-[160px] h-[160px]"
+        />
+        <img
+          src={greenG2}
+          alt="greenG2"
+          className="absolute top-[400px] right-[-120px] w-[220px] h-[220px]"
+        />
+        <img
+          src={greenG3}
+          alt="greenG3"
+          className="absolute bottom-[600px] right-[20px] w-[120px] h-[120px]"
+        />
+        <img
+          src={greenG4}
+          alt="greenG4"
+          className="absolute bottom-[500px] left-[-40px] right-0 w-[200px] h-[200px]"
+        />
+      </div>
+      <div className="w-[100%] max-w-[740px] pt-[73px] mx-auto pb-[63px] flex flex-col gap-4">
         <div className="text-center">
           <h2 className="pb-[10px]">
             Frequently <br /> Asked Questions

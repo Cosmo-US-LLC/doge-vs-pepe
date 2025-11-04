@@ -5,7 +5,17 @@ import doge from "../../assets/DontWaitSec/doge-d.webp";
 import pepe from "../../assets/DontWaitSec/pepe-d.webp";
 function DontWaitSec() {
   return (
-    <div className="w-[100%] h-[800px] relative DontWaitSec flex justify-center items-end pb-[160px] overflow-hidden">
+    <div className="w-[100%] h-[880px] relative bgDontWaitSec flex justify-center items-end pb-[160px] overflow-hidden">
+      <img
+        src={topShadow}
+        alt="topShadow"
+        className="absolute top-0 left-0 right-0 w-full h-[130px]"
+      />
+      <img
+        src={bottomShadow}
+        alt="bottomShadow"
+        className="absolute bottom-0 left-0 right-0 w-full h-[160px]"
+      />
       <div className="space-y-[35px]">
         <div
           className="max-w-[987px] px-[22px] py-[60px] rounded-[26.9px] space-y-[23px] w-[100%] mx-auto relative border border-neutral-400 bg-[#0101019f]"
