@@ -24,8 +24,8 @@ import coinsw13 from "../../assets/walletsec/coins/tokens (16).svg";
 import coinsw14 from "../../assets/walletsec/coins/tokens (15).svg";
 import tokens from "../../assets/walletsec/coins/tokens.svg";
 
-import doge_icn from "../../assets/mobile_assets/coins (2).png";
-import pepe_icn from "../../assets/mobile_assets/coins (1).png";
+import doge_icn from "../../assets/walletsec/coins/doge_logo.webp";
+import pepe_icn from "../../assets/walletsec/coins/pepe_logo.webp";
 
 import dogeicon from "../../assets/walletsec/coins (2).svg";
 import pepeicon from "../../assets/walletsec/coins (1).svg";
@@ -135,7 +135,7 @@ function HeroWalletSec({
                 >
                   {/* Gradient Fill */}
                   <div
-                    className="absolute inset-3 rounded-[26px]"
+                    className="absolute inset-3 left-[120px] right-[120px] rounded-[26px]"
                     style={{
                       background:
                         "linear-gradient(90deg, #E67500 0%, #FFFFFF 50%, #00FF2F 100%)",
@@ -168,15 +168,15 @@ function HeroWalletSec({
         </div>
         <div className="flex justify-center w-full relative">
           <div className="flex flex-col w-[40%] relative z-[99] pt-[500px]  ">
-            <div className="wallet_doge_bg absolute top-0 left-[-190px]  w-[180%] h-[80%]"></div>
-            <div className="absolute top-[10px] left-0 w-[100%] z-[99] ">
+            <div className="wallet_doge_bg absolute top-0 left-[-190px] z-[99]  w-[180%] h-[80%]"></div>
+            <div className="absolute top-[-4px] left-0 w-[100%] z-[9] ">
               <h2
                 className="text-center !text-[#E67500] !font-[112.5px] !leading-[120%]"
-                style={{
-                  textShadow: "4.556px -0.57px 17.144px #F1AD03",
-                  webkitTextStrokeWidth: "1.09px",
-                  webkitTextStrokeColor: "#000",
-                }}
+                // style={{
+                //   textShadow: "4.556px -0.57px 17.144px #F1AD03",
+                //   webkitTextStrokeWidth: "1.09px",
+                //   webkitTextStrokeColor: "#000",
+                // }}
               >
                 TEAM DOGE
               </h2>
@@ -254,7 +254,7 @@ function HeroWalletSec({
                 </div>
               </div>
               <div className="space-y-[15px]">
-                <div>
+                <div className="border border-[rgba(255, 255, 255, 0.20)] rounded-[8px] p-2">
                   <h3 className="text-[18px] font-[400] font-[Anton] text-center leading-[150%] text-[#fff]">
                     1 Team Doge = $0.006
                   </h3>
@@ -536,15 +536,15 @@ function HeroWalletSec({
             </div>
           </div>
           <div className="flex wallet_pepe_bg w-[40%] relative z-[99] pt-[500px] flex-col  ">
-            <div className="wallet_pepe_bg absolute top-[10px] left-[-190px] w-[180%] h-[80%]"></div>
+            <div className="wallet_pepe_bg absolute z-[99] top-[10px] left-[-190px] w-[180%] h-[80%]"></div>
             <div className="absolute top-[-10px]  left-0 w-[100%] ">
               <h2
                 className="text-center !text-[#00FF2F] !font-[112.5px] !leading-[120%]"
-                style={{
-                  textShadow: "6.534px -0.817px 24.583px #74FF60",
-                  webkitTextStrokeWidth: "1.09px",
-                  webkitTextStrokeColor: "#000",
-                }}
+                // style={{
+                //   textShadow: "6.534px -0.817px 24.583px #74FF60",
+                //   webkitTextStrokeWidth: "1.09px",
+                //   webkitTextStrokeColor: "#000",
+                // }}
               >
                 TEAM PEPE
               </h2>
@@ -626,7 +626,7 @@ function HeroWalletSec({
                 </div>
               </div>
               <div className="space-y-[15px]">
-                <div>
+                <div className="border border-[rgba(255, 255, 255, 0.20)] rounded-[8px] p-2">
                   <h3 className="text-[18px] font-[400] font-[Anton] text-center leading-[150%] text-[fff]">
                     1 Team Pepe = $0.006
                   </h3>

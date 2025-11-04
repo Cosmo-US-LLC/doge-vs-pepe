@@ -5,22 +5,22 @@ import bottom_shadow from "../../assets/fightRule/bottom_shadow.webp";
 export default function HowToBuy() {
   const steps = [
     {
-      step: "Step 1",
+      step: "Step 1.",
       title: "CHOOSE YOUR CHAMPION",
       body: "Pick between Doge or Pepe",
     },
     {
-      step: "Step 2",
+      step: "Step 2.",
       title: "CONNECT YOUR WALLET",
       body: "Use Metamask, Trust Wallet (or any other decentralized wallet) then enter the amount you want to buy.",
     },
     {
-      step: "Step 3",
+      step: "Step 3.",
       title: "CONFIRM TRANSACTION",
       body: "Click 'Buy Now' and approve it in your wallet.",
     },
     {
-      step: "Step 4",
+      step: "Step 4.",
       title: "CLAIM YOUR TOKENS",
       body: "Claim your tokens on this website once the presale ends and the winner is decided.",
     },
@@ -42,9 +42,14 @@ export default function HowToBuy() {
         alt="bottom_shadow"
         className="absolute bottom-0 left-0 right-0 w-full h-[60px]"
       />
+      <img
+        src={bottom_shadow}
+        alt="bottom_shadow"
+        className="absolute bottom-0 left-[200px] right-[200px] w-full h-[200px]"
+      />
 
-      <div className="relative mx-auto max-w-[1280px] px-8 md:px-8 flex flex-col items-center pt-[80px] gap-10">
-        <h2 className="text-center pb-8">HOW TO BUY</h2>
+      <div className="relative mx-auto max-w-[1280px] px-8 md:px-8 flex flex-col items-center pt-[100px] gap-10">
+        <h2 className="text-center pb-11">HOW TO BUY</h2>
 
         <div className="flex flex-wrap justify-center gap-6 ">
           {steps.map((s, i) => (

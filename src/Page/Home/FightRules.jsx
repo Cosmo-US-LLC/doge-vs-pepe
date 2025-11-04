@@ -2,7 +2,7 @@ import bgImage from "../../assets/fightRule/v2_the_fight_rule_bg.webp";
 import top_shadow from "../../assets/fightRule/top_shadow.webp";
 import bottom_shadow from "../../assets/fightRule/bottom_shadow.webp";
 import fight_rules_msg from "../../assets/fightRule/v2_the_fight_rule_msg.webp";
-import { Plus, Minus } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -74,12 +74,17 @@ export default function FightRules({ backgroundUrl }) {
         minHeight: "900px",
       }}
     >
+      <img
+        src={bottom_shadow}
+        alt="top_shadow"
+        className="absolute bottom-0 left-0 right-0 w-full h-[80px]"
+      />
       <div className="absolute z-20 top-0 left-0 right-0 w-full   ">
         <img className="w-full h-[100px]" src={top_shadow} alt="" />
       </div>
-      <div className="absolute z-20 bottom-0 left-0 right-0  w-full">
+      {/* <div className="absolute z-20 bottom-0 left-0 right-0  w-full">
         <img className="w-full h-[60px]" src={bottom_shadow} alt="" />
-      </div>
+      </div> */}
       <div className="flex w-full gap-10 max-w-[1280px] px-8 mx-auto flex-row">
         <div className="h-[800px] flex justify-start items-end w-[54%]">
           <div className=" flex flex-col gap-4 ">
@@ -103,10 +108,10 @@ export default function FightRules({ backgroundUrl }) {
                         {rule.title}
                       </p>
                       <div className="w-8 h-8 accordion-gradient-bg-arrow rounded-full flex justify-center items-center group-data-[state=open]:hidden">
-                        <Plus className="text-white w-6 h-6" />
+                        <ChevronDown className="text-white w-6 h-6" />
                       </div>
                       <div className="w-8 h-8 accordion-gradient-bg-arrow rounded-full flex justify-center items-center hidden group-data-[state=open]:flex">
-                        <Minus className="text-white w-6 h-6" />
+                        <ChevronUp className="text-white w-6 h-6" />
                       </div>
                     </div>
                   </AccordionTrigger>
@@ -122,11 +127,21 @@ export default function FightRules({ backgroundUrl }) {
             </Accordion>
           </div>
         </div>
-        <div className="w-[46%] flex justify-center items-end pb-10 fight_rules relative">
+        <div className="w-[46%] flex justify-center items-end fight_rules relative">
           <img
             src={fight_rules_msg}
             alt=""
             className="w-[320px] h-auto absolute top-[-20px] left-[100px]"
+          />
+          <img
+            src={top_shadow}
+            alt=""
+            className="absolute bottom-[-100px] left-0 right-0 w-full h-[100px]"
+          />
+          <img
+            src={bottom_shadow}
+            alt=""
+            className="absolute bottom-0 left-0 right-0 w-full h-[100px]"
           />
         </div>
       </div>

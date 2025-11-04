@@ -14,17 +14,22 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed w-full z-[9999] bg-black/10 backdrop-blur-[16px]">
-      <div className="max-w-[1280px] md:px-8 px-4 relative w-full mx-auto h-[86px] flex justify-between items-center">
+    <div className="fixed w-full z-[9999] overflow-hidden mt-3">
+      <div className="max-w-[1280px] rounded-[12px] overflow-hidden bg-black/10 backdrop-blur-[16px] md:px-6 px-4 relative w-full mx-auto h-[86px] flex justify-between items-center">
         {/* Logo on the left */}
         <div className="flex items-center">
-          <a href="/">
+          <Link
+            to="/"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
             <img className="max-w-full" src={Logo} alt="doge_vs_pepe Logo" />
-          </a>
+          </Link>
         </div>
 
         {/* Navigation buttons in the center */}
-        <div className="flex items-center gap-12">
+        <div className="flex items-center gap-4">
           <Link
             to="/"
             onClick={() => handleScroll("what_is")}

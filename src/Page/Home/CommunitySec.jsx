@@ -20,7 +20,7 @@ function CommunitySec() {
         className="absolute bottom-0 left-0 right-0 w-full h-[130px]"
       />
       <div className="max-w-[1280px] px-4 md:px-8 w-[100%] h-full mx-auto z-10 relative flex items-center justify-center">
-        <div className="w-[33%] min-h-[220px] space-y-[20px]">
+        <div className="w-[32%] min-h-[220px] space-y-[20px]">
           <h3>
             Team DOGE <span className="text-[#E67500]">roadmap</span>
           </h3>
@@ -55,15 +55,15 @@ function CommunitySec() {
             </p>
           </div>
         </div>
-        <div className="w-[34%] h-full relative">
-          <div className="absolute left-[-60px] top-[50px] w-[260px] h-[136px]">
+        <div className="w-[36%] h-full relative">
+          <div className="absolute left-[-40px] top-[30px] w-[260px] h-[136px]">
             <img src={dogeBox} alt="" className="w-full h-full relative z-10" />
             <p className="text-left subtext !text-[13px] !text-[#C90F0F] !font-[600] absolute left-[30px] top-[30px] w-[200px] z-20">
               Pepe, you’re just a hyped up fair-weather fighter, This will be my
               easiest payday. I’ll show you why I’m the undisputed champ!
             </p>
           </div>
-          <div className="absolute right-[-60px] top-[50px] w-[260px] h-[136px]">
+          <div className="absolute right-[-70px] top-[30px] w-[260px] h-[136px]">
             <img src={pepeBox} alt="" className="w-full h-full relative z-10" />
             <p className="text-left subtext !text-[13px] !text-[#C90F0F] !font-[600] absolute right-[30px] top-[30px] w-[200px] z-20">
               Doge, your time is up. You’re just an old dog now. One punch, and
@@ -72,7 +72,7 @@ function CommunitySec() {
             </p>
           </div>
         </div>
-        <div className="w-[33%] min-h-[220px] space-y-[20px]">
+        <div className="w-[32%] min-h-[220px] space-y-[20px]">
           <h3 className="text-right">
             Team PEPE <span className="text-[#00FF2F]">roadmap</span>
           </h3>

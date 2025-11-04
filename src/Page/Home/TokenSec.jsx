@@ -151,10 +151,10 @@ function TokenSec() {
                 <div className="space-y-6 w-full">
                   {/* Total Supply */}
                   <div className="flex items-center space-x-4">
-                    <div className="w-[35px] h-[35px] rounded-full bg-[#d3fc00] flex items-center justify-center">
-                      <span className="text-[21px]">💰</span>
+                    <div className="w-[40px] h-[40px] rounded-full bg-gray-100/20 flex items-center justify-center">
+                      <span className="text-[20px]">💰</span>
                     </div>
-                    <div className="text-white">
+                    <div className="text-white flex flex-col">
                       <span className="text-[16px] font-helvetica">
                         TOTAL SUPPLY:{" "}
                       </span>
@@ -166,8 +166,8 @@ function TokenSec() {
 
                   {/* Blockchain Info */}
                   <div className="flex items-center space-x-4">
-                    <div className="w-[45px] h-[35px] rounded-full bg-[#d3fc00] flex items-center justify-center">
-                      <span className="text-[21px]">⚡️</span>
+                    <div className="w-[50px] h-[40px] rounded-full bg-gray-100/20 flex items-center justify-center">
+                      <span className="text-[20px]">⚡️</span>
                     </div>
                     <p className="text-[16px] font-helvetica text-white">
                       Coin will be launched on Ethereum Blockchain
@@ -201,10 +201,10 @@ function TokenSec() {
 
                 <div className="space-y-6 w-full">
                   <div className="flex items-center space-x-4">
-                    <div className="w-[35px] h-[35px] rounded-full bg-[#d3fc00] flex items-center justify-center">
+                    <div className="w-[40px] h-[40px] rounded-full bg-gray-100/20 flex items-center justify-center">
                       <span className="text-[21px]">💰</span>
                     </div>
-                    <div className="text-white">
+                    <div className="text-white flex flex-col">
                       <span className="text-[16px] font-helvetica">
                         TOTAL SUPPLY:{" "}
                       </span>
@@ -215,7 +215,7 @@ function TokenSec() {
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <div className="w-[45px] h-[35px] rounded-full bg-[#d3fc00] flex items-center justify-center">
+                    <div className="w-[50px] h-[40px] rounded-full bg-gray-100/20 flex items-center justify-center">
                       <span className="text-[21px]">⚡️</span>
                     </div>
                     <p className="text-[16px] font-helvetica text-white">

@@ -24,18 +24,18 @@ function DogeVSPepeSec() {
           <img
             src={cryptoNewsLogo}
             alt=""
-            className="w-full max-w-[760px] mx-auto h-full"
+            className="w-full max-w-[600px] mx-auto h-full"
           />
           <h2 className="text-center">IS MAKING HEADLINES</h2>
         </div>
         <div className="flex justify-center space-x-[20px]">
           {/* Card 1 - THE OG MEME IS BACK */}
-          <div className="relative w-[400px] h-[400px] rounded-[20px] overflow-hidden border-[8px] border-[#fff]">
+          <div className="relative w-[400px] h-[460px] rounded-[20px] overflow-hidden border-[8px] border-[#fff]">
             {/* Background Image */}
             <img
               src={card1}
               alt="Doge boxing"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full"
             />
 
             {/* Text Overlay */}
@@ -65,12 +65,12 @@ function DogeVSPepeSec() {
           </div>
 
           {/* Card 2 - TWO LEGENDS FACE OFF */}
-          <div className="relative w-[400px] h-[400px] rounded-[20px] overflow-hidden border-[8px] border-[#fff]">
+          <div className="relative w-[400px] h-[460px] rounded-[20px] overflow-hidden border-[8px] border-[#fff]">
             {/* Background Image */}
             <img
               src={card2}
               alt="Doge vs Pepe boxing"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full"
             />
 
             {/* Text Overlay */}
@@ -105,12 +105,12 @@ function DogeVSPepeSec() {
           </div>
 
           {/* Card 3 - THE NEW MEME KING */}
-          <div className="relative w-[400px] h-[400px] rounded-[20px] overflow-hidden border-[8px] border-[#fff]">
+          <div className="relative w-[400px] h-[460px] rounded-[20px] overflow-hidden border-[8px] border-[#fff]">
             {/* Background Image */}
             <img
               src={card3}
               alt="Pepe boxing"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full"
             />
 
             {/* Text Overlay */}

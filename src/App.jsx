@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import Home from "./Page/Home/Home";
 import MobileHome from "./Page/MobileHome/MobileHome";
-import ConnectWalletModal from "./component/ConnectWalletModal"
+import ConnectWalletModal from "./component/ConnectWalletModal";
 import { Toaster } from "react-hot-toast";
 import { loadStoredConnection } from "./presale-gg/web3/connections";
+import Preloader from "./Page/Home/Preloader";
 // import Home from "./Page/Home/Home";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
 
   useEffect(() => {
-	if (localStorage.getItem("connect-wallet-id-v2")) {
-		loadStoredConnection()
-	}
-  })
+    if (localStorage.getItem("connect-wallet-id-v2")) {
+      loadStoredConnection();
+    }
+  });
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,7 +25,7 @@ function App() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  
+
   return (
     <div className="bg-[black] w-[100%]">
       <div>
