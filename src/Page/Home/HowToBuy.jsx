@@ -37,8 +37,13 @@ export default function HowToBuy() {
         alt="top_shadow"
         className="absolute top-0 left-0 right-0 w-full h-[130px]"
       />
+      <img
+        src={bottom_shadow}
+        alt="bottom_shadow"
+        className="absolute bottom-0 left-0 right-0 w-full h-[60px]"
+      />
 
-      <div className="relative mx-auto max-w-[1280px] px-8 md:px-8 flex flex-col items-center pt-[60px] gap-10">
+      <div className="relative mx-auto max-w-[1280px] px-8 md:px-8 flex flex-col items-center pt-[80px] gap-10">
         <h2 className="text-center pb-8">HOW TO BUY</h2>
 
         <div className="flex flex-wrap justify-center gap-6 ">
