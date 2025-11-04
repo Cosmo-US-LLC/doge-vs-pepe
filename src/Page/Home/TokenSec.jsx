@@ -32,7 +32,7 @@ function TokenSec() {
       <img
         src={bottom_shadow}
         alt="bottom_shadow"
-        className="absolute bottom-0 left-0 right-0 w-full h-[130px]"
+        className="absolute bottom-0 left-0 right-0 w-full h-[500px]"
       />
       {/* Main Title - TOKENOMICS */}
       <div className="absolute left-1/2 top-[117px] transform -translate-x-1/2 -translate-y-1/2 z-20">
@@ -237,11 +237,11 @@ function TokenSec() {
 
       {/* VS Panel - Center */}
       <div className="absolute left-1/2 top-[224px] transform -translate-x-1/2 z-30">
-        <div className="w-[553px] h-[450px] bg-black/10 backdrop-blur-[15px] border-[1.5px] border-[#e67500] rounded-[30px] p-8">
+        <div className="w-[503px] h-[500px] bg-black/10 backdrop-blur-[15px] border-[1.5px] border-[#e67500] rounded-[30px] p-8">
           {/* VS Header */}
-          <div className="flex items-center justify-center space-x-[122px] mb-8">
+          <div className="flex items-center justify-center space-x-[122px] mb-10">
             {/* Doge Character */}
-            <div className="flex flex-col items-center s space-y-2">
+            <div className="flex flex-col items-center space-y-4">
               <div className="bg-[#fff]  h-[76px] w-[76px] flex justify-center items-center rounded-full overflow-hidden">
                 <img
                   src={dogeDP}
@@ -275,7 +275,7 @@ function TokenSec() {
           </div>
 
           {/* Stats Comparison */}
-          <div className="space-y-4">
+          <div className="space-y-6">
             {/* Presale */}
             <div className="relative">
               <div className="flex justify-between items-center mb-2">
