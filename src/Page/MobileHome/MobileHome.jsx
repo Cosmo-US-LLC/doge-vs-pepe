@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import Navbar from "../../component/mobile/navbar";
 import MobileHeroSection from "./MobileHeroSection";
 import HeroWalletSec from "./HeroWalletSec";
@@ -20,7 +20,13 @@ import PressandMediamobSec from "./PressandMediamobSec";
 import HypeMobSec from "./HypeMobSec";
 import HowItmobSec from "./HowItmobSec";
 import MadeBy from "./MadeBy";
-
+import MobileTwoLegends from "./MobileTwoLegends";
+import MobileFightRules from "./MobileFightRules";
+import MobileHowTowBuy from "./MobileHowTowBuy";
+import RoadmapMob from "./Roadmap";
+import DogeVsPepeNews from "../Home/DogeVsPepeNews";
+import CountdownMob from "./CountdownMob";
+import BannerSecMob from "./BannerSecMob";
 
 function MobileHome() {
   return (
@@ -28,24 +34,20 @@ function MobileHome() {
       <div>
         <Navbar />
         <MobileHeroSection />
+        <MobileTwoLegends />
+        <MobileFightRules />
+        <CountdownMob />
         <HeroWalletSec />
-        <MobileTicket />
-        <MobileFirstEverSec />
-        <TheRules />
-        <Milestones />
-        <PrizeMoney /> 
+        <MobileHowTowBuy />
+        <PrizeMoney />
+        <RoadmapMob />
         <HowItmobSec />
-        <Roadmap />
-        <Community />
         <Tokenomics />
-        <HypeMobSec />
-        {/* <PressandMediamobSec /> */}
         <DogeVSPepeMobSec />
-        <BiggestMobSec />
-        {/* <MadeBy /> */}
         <TheFightSecMob />
         <DoNotWait />
         <FAQ />
+        <DogeVsPepeNews />
         <Footer />
       </div>
     </div>
