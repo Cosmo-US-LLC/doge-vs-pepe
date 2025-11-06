@@ -1,11 +1,182 @@
+// import React from "react";
+// import Logo from "../assets/footer/logo.svg";
+// import socialicn1 from "../assets/footer/telegram.svg";
+// import socialicn2 from "../assets/footer/instagram.svg";
+// import socialicn3 from "../assets/footer/twitter.svg";
+
+// function Footer() {
+//   const handleScroll = (event, targetId, offset) => {
+//     event.preventDefault();
+//     const targetElement = document.getElementById(targetId);
+//     if (targetElement) {
+//       const elementPosition = targetElement.getBoundingClientRect().top;
+//       const offsetPosition = elementPosition + window.scrollY - offset;
+//       window.scrollTo({
+//         top: offsetPosition,
+//         behavior: "smooth",
+//       });
+//     }
+//     setMenuOpen(false);
+//   };
+//   return (
+//     <div className="w-[100%] z-[99] bg-[#181818] pt-[56px] pb-[36px] overflow-hidden">
+//       <div className="max-w-[1296px]  2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[90%] w-[100%]  mx-auto space-y-[64px]">
+//         <div className="flex justify-between px-4">
+//           <div className="flex flex-col items-center justify-center gap-4">
+//             <img src={Logo} alt="footer logo" className="" />
+//           </div>
+//           <div className="space-y-[10px]">
+//             <a
+//               href="what_is"
+//               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+//               onClick={(e) => handleScroll(e, "what_is", 90)}
+//             >
+//               What is DogevsPepe?
+//             </a>
+//             {/* <a
+//               href="https://example.com"
+//               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+//             >
+//               The First Ever Crypto Meme Fight
+//             </a> */}
+//             <a
+//               href="fight_rules"
+//               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+//               onClick={(e) => handleScroll(e, "fight_rules", 90)}
+//             >
+//               Fight Rules
+//             </a>
+//             <a
+//               href="prize_money"
+//               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+//               onClick={(e) => handleScroll(e, "prize_money", 90)}
+//             >
+//               Prize Money
+//             </a>
+//             {/* <a
+//               href="https://example.com"
+//               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+//             >
+//               The Community Decides{" "}
+//             </a> */}
+//             <a
+//               href="roadmap"
+//               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+//               onClick={(e) => handleScroll(e, "roadmap", 90)}
+//             >
+//               Roadmap
+//             </a>
+//           </div>
+//           <div className="space-y-[10px]">
+//             <a
+//               href="tokenomics"
+//               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+//               onClick={(e) => handleScroll(e, "tokenomics", 90)}
+//             >
+//               $DOGE Tokenomics
+//             </a>
+//             <a
+//               href="tokenomics"
+//               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+//               onClick={(e) => handleScroll(e, "tokenomics", 90)}
+//             >
+//               $PEPE Tokenomics
+//             </a>
+//             {/* <a
+//               href="https://example.com"
+//               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+//             >
+//               Support Your Team On Telegram
+//             </a> */}
+//             {/* <a
+//               href="https://example.com"
+//               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+//             >
+//               Don’t Wait – The Race is On!
+//             </a> */}
+//             <a
+//               href="need-help"
+//               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+//               onClick={(e) => handleScroll(e, "faq", 90)}
+//             >
+//               Need Help?
+//             </a>
+//             <a
+//               href="faq"
+//               className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
+//               onClick={(e) => handleScroll(e, "faq", 90)}
+//             >
+//               FAQ
+//             </a>
+//           </div>
+//           <div className="max-w-fit w-[100%] space-y-[10px] flex flex-col  items-start">
+//             <h4 className="text-[18px] text-[#fff] font-[400] leading-[119.856%]">
+//               Join us now{" "}
+//             </h4>
+//             <div className="flex space-x-2">
+//               <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80">
+//                 <img
+//                   src={socialicn1}
+//                   alt="social 1"
+//                   className="absolute w-full h-full bottom-[2px] "
+//                 />
+//               </div>
+//               {/* <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80">
+//                 <img
+//                   src={socialicn2}
+//                   alt="social 1"
+//                   className="absolute w-full h-full bottom-[2px] "
+//                 />
+//               </div> */}
+//               <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80">
+//                 <a
+//                   href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
+//                   target="_blank"
+//                   rel="noopener noreferrer"
+//                 >
+//                   <img
+//                     src={socialicn3}
+//                     alt="social 1"
+//                     className="absolute w-full h-full bottom-[2px] "
+//                   />
+//                 </a>
+//               </div>
+//             </div>
+//             <div className="w-full pt-6">
+//               <h4 className="text-[18px] text-[#fff] font-[400] leading-[119.856%] text-left mb-1">
+//                 E-mail
+//               </h4>
+//               <a
+//                 href="mailto:Support@dogevspepe.io"
+//                 className="cursor-pointer text-[18px] text-[#fff] font-[400] leading-[119.856%] hover:opacity-80 text-left underline underline-offset-2 decoration-white"
+//               >
+//                 Support@dogevspepe.io
+//               </a>
+//             </div>
+//           </div>
+//         </div>
+//         <div className="max-w-[100%] max-w-[840px] mx-auto space-y-[27px]">
+//           <p className="text-[18px] font-[400] text-center leading-[119.856%] text-[#fff]">
+//             Cryptocurrency may be unregulated in your jurisdiction. The value of
+//             cryptocurrencies may go up as well as down. Profits may be subject
+//             to capital gains or other taxes applicable in your jurisdiction.
+//           </p>
+//           <p className="text-[18px] font-[400] text-center leading-[119.856%] text-[#fff]">
+//             Copyright 2025 DogevsPepe | All rights reserved.
+//           </p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Footer;
+
 import React from "react";
-import Logo from "../assets/footer/logo.svg";
-import socialicn1 from "../assets/footer/telegram.svg";
-import socialicn2 from "../assets/footer/instagram.svg";
-import socialicn3 from "../assets/footer/twitter.svg";
+import cryptoNewsLogo from "../assets/footer/v2_dvp_footer_logo.svg";
 
 function Footer() {
-  const handleScroll = (event, targetId, offset) => {
+  const handleScroll = (event, targetId, offset = 90) => {
     event.preventDefault();
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
@@ -16,157 +187,174 @@ function Footer() {
         behavior: "smooth",
       });
     }
-    setMenuOpen(false);
   };
+
   return (
-    <div className="w-[100%] z-[99] bg-[#181818] pt-[56px] pb-[36px] overflow-hidden">
-      <div className="max-w-[1296px]  2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[90%] w-[100%]  mx-auto space-y-[64px]">
-        <div className="flex justify-between px-4">
-          <div className="flex flex-col items-center justify-center gap-4">
-            <img src={Logo} alt="footer logo" className="" />
-          </div>
-          <div className="space-y-[10px]">
-            <a
-              href="firstever"
-              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-              onClick={(e) => handleScroll(e, "firstever", 90)}
-            >
-              What is DogevsPepe?
-            </a>
-            {/* <a
-              href="https://example.com"
-              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-            >
-              The First Ever Crypto Meme Fight
-            </a> */}
-            <a
-              href="rules"
-              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-              onClick={(e) => handleScroll(e, "rules", 90)}
-            >
-              The 7 Rules
-            </a>
-            <a
-              href="milestones"
-              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-              onClick={(e) => handleScroll(e, "milestones", 90)}
-            >
-              Milestones
-            </a>
-            {/* <a
-              href="https://example.com"
-              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-            >
-              The Community Decides{" "}
-            </a> */}
-            <a
-              href="roadmap"
-              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-              onClick={(e) => handleScroll(e, "roadmap", 90)}
-            >
-              Roadmap
-            </a>
-          </div>
-          <div className="space-y-[10px]">
-            <a
-              href="tokenomics"
-              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-              onClick={(e) => handleScroll(e, "tokenomics", 90)}
-            >
-              $DOGE Tokenomics
-            </a>
-            <a
-              href="tokenomics"
-              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-              onClick={(e) => handleScroll(e, "tokenomics", 90)}
-            >
-              $PEPE Tokenomics
-            </a>
-            {/* <a
-              href="https://example.com"
-              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-            >
-              Support Your Team On Telegram
-            </a> */}
-            {/* <a
-              href="https://example.com"
-              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-            >
-              Don’t Wait – The Race is On!
-            </a> */}
-            <a
-              href="need-help"
-              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-              onClick={(e) => handleScroll(e, "faq", 90)}
-            >
-              Need Help?
-            </a>
-            <a
-              href="faq"
-              className="text-[18px] text-[#fff] font-[400] leading-[119.856%] block"
-              onClick={(e) => handleScroll(e, "faq", 90)}
-            >
-              FAQ
-            </a>
-          </div>
-          <div className="max-w-fit w-[100%] space-y-[10px] flex flex-col  items-start">
-            <h4 className="text-[18px] text-[#fff] font-[400] leading-[119.856%]">
-              Join us now{" "}
-            </h4>
+    <footer className="w-full pt-10  pb-6 overflow-hidden text-white bg-black">
+      <div className="max-w-[1280px] px-4 md:px-8 mx-auto">
+        {/* Top Nav */}
+        <nav className="flex flex-wrap justify-between gap-6 text-sm uppercase font-semibold tracking-wide mb-8">
+          <a
+            href="what_is"
+            onClick={(e) => handleScroll(e, "what_is", 90)}
+            className="footer_link"
+          >
+            What is DogevsPepe?
+          </a>
+          <a
+            href="fight_rules"
+            onClick={(e) => handleScroll(e, "fight_rules", 90)}
+            className="footer_link"
+          >
+            Fight Rules
+          </a>
+          <a
+            href="prize_money"
+            onClick={(e) => handleScroll(e, "prize_money", 90)}
+            className="footer_link"
+          >
+            Prize Money
+          </a>
+          <a
+            href="roadmap"
+            onClick={(e) => handleScroll(e, "roadmap", 90)}
+            className="footer_link"
+          >
+            Roadmap
+          </a>
+          <a
+            href="doge_tokenomics"
+            onClick={(e) => handleScroll(e, "tokenomics", 90)}
+            className="footer_link"
+          >
+            $Doge Tokenomics
+          </a>
+          <a
+            href="pepe_tokenomics"
+            onClick={(e) => handleScroll(e, "tokenomics", 90)}
+            className="footer_link"
+          >
+            $Pepe Tokenomics
+          </a>
+          <a
+            href="need_help"
+            onClick={(e) => handleScroll(e, "faq", 90)}
+            className="footer_link"
+          >
+            Need Help?
+          </a>
+          <a
+            href="faq"
+            onClick={(e) => handleScroll(e, "faq", 90)}
+            className="footer_link"
+          >
+            FAQ
+          </a>
+        </nav>
+
+        {/* Main Logo Centerpiece */}
+        <div className="mb-8 w-full font-extrabold text-center uppercase">
+          <img src={cryptoNewsLogo} alt="cryptoNewsLogo" className="w-full" />
+        </div>
+
+        {/* Bottom Section */}
+        <div className="flex flex-row text-left justify-start items-start gap-4">
+          {/* Left - Join us + socials */}
+          <div className="flex-1 flex flex-row gap-3 items-center justify-start">
+            <h5 className="">Join Us Now</h5>
             <div className="flex space-x-2">
-              <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80">
-                <img
-                  src={socialicn1}
-                  alt="social 1"
-                  className="absolute w-full h-full bottom-[2px] "
-                />
-              </div>
-              {/* <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80">
-                <img
-                  src={socialicn2}
-                  alt="social 1"
-                  className="absolute w-full h-full bottom-[2px] "
-                />
-              </div> */}
-              <div className="w-[32px] h-[32px] bg-[#FFFFFF] rounded-full relative transition-all duration-300 cursor-pointer hover:scale-110 hover:opacity-80">
-                <a
-                  href="https://x.com/Doge_V_Pepe?t=4XlB3j6oNybhEgxK1R5KZw&s=09"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={socialicn3}
-                    alt="social 1"
-                    className="absolute w-full h-full bottom-[2px] "
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="w-full pt-6">
-              <h4 className="text-[18px] text-[#fff] font-[400] leading-[119.856%] text-left mb-1">
-                E-mail
-              </h4>
               <a
-                href="mailto:Support@dogevspepe.io"
-                className="cursor-pointer text-[18px] text-[#fff] font-[400] leading-[119.856%] hover:opacity-80 text-left underline underline-offset-2 decoration-white"
+                href="https://t.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-[40px] h-[40px] rounded-full border-[#FFFFFF1A] border-2 bg-[#474747] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
               >
-                Support@dogevspepe.io
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                >
+                  <path
+                    d="M9.31305 13.6363L9.0153 17.8244C9.44131 17.8244 9.62581 17.6414 9.84707 17.4216L11.8444 15.5128L15.983 18.5437C16.742 18.9667 17.2767 18.7439 17.4815 17.8454L20.1981 5.11609L20.1988 5.11534C20.4396 3.99331 19.7931 3.55455 19.0535 3.82981L3.08565 9.9432C1.99588 10.3662 2.01238 10.9737 2.9004 11.249L6.98275 12.5188L16.4652 6.58537C16.9115 6.28987 17.3172 6.45337 16.9835 6.74888L9.31305 13.6363Z"
+                    fill="#E67500"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://x.com/Doge_V_Pepe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-[40px] h-[40px] rounded-full border-[#FFFFFF1A] border-2 bg-[#474747] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                >
+                  <path
+                    d="M12.9624 9.87177L19.6633 2.25H18.0754L12.2571 8.86788L7.60992 2.25H2.25L9.27738 12.2574L2.25 20.25H3.83799L9.98237 13.2613L14.8901 20.25H20.25L12.9621 9.87177H12.9624ZM10.7875 12.3456L10.0755 11.3491L4.41017 3.41971H6.84922L11.4212 9.81895L12.1332 10.8155L18.0762 19.1335H15.6371L10.7875 12.346V12.3456Z"
+                    fill="#FECF30"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://t.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-[40px] h-[40px] rounded-full border-[#FFFFFF1A] border-2 bg-[#474747] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                >
+                  <path
+                    d="M16.9856 2.25H8.51442C7.53996 2.25 6.75 3.08932 6.75 4.12467V14.6253C6.75 15.6607 7.53996 16.5 8.51442 16.5H16.9856C17.96 16.5 18.75 15.6607 18.75 14.6253V4.12467C18.75 3.08932 17.96 2.25 16.9856 2.25Z"
+                    fill="#00FF2F"
+                  />
+                  <path
+                    d="M15.9 17.5687V17.9719C15.8998 18.5064 15.6874 19.0189 15.3094 19.3969C14.9314 19.7748 14.4189 19.9873 13.8844 19.9875H5.01562C4.48111 19.9873 3.96856 19.7748 3.5906 19.3969C3.21264 19.0189 3.00021 18.5064 3 17.9719V7.4906C3.00021 6.95609 3.21264 6.44353 3.5906 6.06557C3.96856 5.68762 4.48111 5.47519 5.01562 5.47498H5.33018V14.8517C5.33188 15.5717 5.61867 16.2618 6.12783 16.771C6.63698 17.2802 7.32706 17.567 8.04713 17.5687H15.9Z"
+                    fill="#00FF2F"
+                  />
+                </svg>
               </a>
             </div>
           </div>
+
+          {/* Middle - Disclaimer */}
+          <div className="flex-2 text-center max-w-[600px]">
+            <p className="description !text-[14px]">
+              Cryptocurrency may be unregulated in your jurisdiction. The value
+              of cryptocurrencies may go up as well as down. Profits may be
+              subject to capital gains or other taxes applicable in your
+              jurisdiction.
+            </p>
+          </div>
+
+          {/* Right - Email */}
+          <div className="flex-1 flex flex-row items-center justify-center gap-2">
+            <h5 className="">E-Mail</h5>
+            <h5>
+              <a
+                href="mailto:Support@dogevspepe.io"
+                className="underline underline-offset-2"
+              >
+                Support@dogevspepe.io
+              </a>
+            </h5>
+          </div>
         </div>
-        <div className="max-w-[90%] xl:max-w-[1031px] w-[100%] mx-auto space-y-[27px]">
-          <p className="text-[18px] font-[400] text-center leading-[119.856%] text-[#fff]">
-            Cryptocurrency may be unregulated in your jurisdiction. The value of
-            cryptocurrencies may go up as well as down. Profits may be subject
-            to capital gains or other taxes applicable in your jurisdiction.
-          </p>
-          <p className="text-[18px] font-[400] text-center leading-[119.856%] text-[#fff]">
-            Copyright 2025 DogevsPepe | All rights reserved.
-          </p>
-        </div>
+        <p className="description text-center h-[60px] flex items-center justify-center">
+          Copyright 2025, DogevsPepe | All rights reserved.
+        </p>
       </div>
-    </div>
+    </footer>
   );
 }
 

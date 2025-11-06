@@ -1,83 +1,132 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import arw from "../../assets/footer/Group 1410124940.svg";
+import topShadow from "../../assets/DontWaitSec/rectangle_285.webp";
+import bottomShadow from "../../assets/DontWaitSec/rectangle_297.webp";
+import greenC1 from "../../assets/faqs/v2_green_c1.webp";
+import greenC2 from "../../assets/faqs/v2_green_c2.webp";
+import greenC3 from "../../assets/faqs/v2_green_c1.webp";
+import greenC4 from "../../assets/faqs/v2_green_c2.webp";
+import greenG1 from "../../assets/faqs/v2_green_g1.webp";
+import greenG2 from "../../assets/faqs/v2_green_g2.webp";
+import greenG3 from "../../assets/faqs/v2_green_g3.webp";
+import greenG4 from "../../assets/faqs/v2_green_g4.webp";
 
 const faqData = [
   {
-    question: "What is DogevsPepe?",
-    answer: `DogevsPepe is a crypto presale with a twist. It’s a competition between two iconic memes, Doge and Pepe, to determine which one escapes the matrix and launches as a live cryptocurrency. Investors choose your side by purchasing tokens for either team (which raises $1M first wins), and the team with the most funds raised wins.`,
+    question: "What is DogeVsPepe?",
+    answer: `Doge vs Pepe is the ultimate showdown between two legendary memes battling for crypto supremacy.Only one will launch. Only one will be crowned number one. Supporters pick a side by buying tokens, the first team to raise $1 million wins. Your choice decides who takes the throne.`,
   },
   {
     question: "How does the presale work?",
+
     answer: `
       <ul className="pl-8 text-white list-disc">
-        <li>Choose your champion: Team Doge (DODE) or Team Pepe (PEPE).</li>
-        <li>Buy tokens to support your chosen team(s). When the combined presale total hits $1 million, the team with the most funds raised is declared the winner.</li>
+        <li> Pick your team: Doge ($DOGE) or Pepe ($PEPE).</li>
+        <li> Buy tokens to support your chosen champion(s).</li>
+        <li>Once the combined total hits $1 million, the team with the most funds raised is declared the winner.</li>
       </ul>
     `,
   },
+
   {
-    question: "What happens to the losing team’s funds?",
+    question: "Can I invest in both teams?",
     answer:
-      "The losing team’s funds are added to the winning token’s liquidity pool, increasing its value and ensuring a strong launch. If your team loses, you’ll still get the same amount in the winning coin but won’t receive prize money.",
-  },
-  {
-    question: "How many times can i buy?",
-    answer:
-      "You can buy as many times as you like, but the total purchase is capped at $25,000 to ensure fair participation and prevent whales from dominating the presale and holding too much of the total supply.",
-  },
-  {
-    question: "Can I buy into both teams?",
-    answer:
-      "Yes! You can support both Doge and Pepe by purchasing tokens for both teams. However, only one will win, so choose wisely!",
+      "Yes, you can support both teams by purchasing tokens for Doge and Pepe. However, only one will win, so choose your strategy wisely!",
   },
 
   {
-    question: "Is the presale fair and secure?",
+    question: "How many times can I buy tokens?",
     answer:
-      "Absolutely. Both presale contracts are public and fully transparent, so you can see how funds are being allocated.",
+      "You can purchase as many times as you like, but each wallet is capped at $25,000 to attract whales while maintaining fairness and equal participation.",
   },
   {
-    question: "When does the winning token launch?",
+    question: "Is the presale fair and secure?",
     answer: `
-   The launch date for the winning token will be announced within 24 hours of reaching the $1M target and determining the winner. The winning token will be launched on the Solana blockchain and available on Raydium. We recommend using a Phantom Wallet.
+   Yes, both presale contracts are fully public and transparent, allowing everyone to see where the funds are going.
       
     `,
   },
   {
     question: "How do I track the progress of the presale?",
-    answer:
-      "Live stats for the Fight will be displayed on the website, showing how much each team has raised. Stay connected to see if your team is winning!",
+    answer: `<div className="w-[900px]">
+  <ul className="pl-5 text-white list-decimal">
+    <li>
+   
+      <ul className="pl-8 text-white list-disc">
+       
+        <li>Everyone who purchases tokens will receive the winning coin, regardless of which team they supported.</li>
+         <li>However, those who backed the winning team will receive extra rewards (see answer below).</li>
+          
+      </ul>
+    </li>
+ 
+
+  </ul>
+</div>`,
   },
   {
-    question: " How do I join the community?",
+    question: "What are the rewards for picking the correct team?",
     answer: `
 <div className="w-[900px]">
   <ul className="pl-5 text-white list-decimal">
     <li>
-      You can join our community on X and Telegram at the footer to connect and support your team. Don’t wait, join now!
+   
       <ul className="pl-8 text-white list-disc">
-        <li>General Channel: For overall updates and discussions.</li>
-        <li>Team Pepe Channel: For Green Coin supporters</li>
-         <li>Team Doge Channel: For Orange Coin fans.</li>
-          <li>After the Fight ends, all channels merge into one unified community supporting the winning project.</li>
+        <li>1. Daily Bonus Coins:</li>
+        <li>1M coins are added to the winner pool daily while the fight is ongoing.</li>
+         <li>These coins are airdropped proportionally based on the number of tokens you hold.</li>
+          
+      </ul>
+
+      <ul className="pl-8 text-white list-disc">
+        <li>2.Early Claim Access:</li>
+        <li>Winners can claim their airdropped coins 24 hours earlier than participants who supported the losing team.</li>
+          
+          
       </ul>
     </li>
    
   </ul>
 </div>
 
+ 
+
     `,
   },
- 
   {
     question: "What happens if my team loses?",
+    answer: `
+<div className="w-[900px]">
+  <ul className="pl-5 text-white list-decimal">
+    <li>
+   
+      <ul className="pl-8 text-white list-disc">
+        <li>Even if your team loses:</li>
+        <li>You will still receive the winning coin based on the amount of tokens you purchased.</li>
+         <li>Your purchase will contribute to strengthening the liquidity pool of the winning token.</li>
+          
+      </ul>
+    </li>
+   
+  </ul>
+</div>
+
+ 
+
+
+
+    `,
+  },
+
+  {
+    question: "How do I track the progress of the presale?",
     answer:
-      "If your team loses, you’ll still get the same amount in the winning coin but won’t receive prize money.",
+      "Real-time stats showing how much each team has raised will be displayed on the website, so you can stay updated and cheer your team to victory.",
   },
   {
-    question: "Why should I join DogevsPepe?",
+    question: "When does the winning token launch?",
     answer:
-      "DogeVsPepe isn’t just another meme battle but a movement to crown the true Meme Heavyweight Champion. By joining, you are not just supporting your favorite meme coin but becoming part of an exciting and competitive event reshaping crypto history.",
+      "The launch date will be announced as soon as $1M is raised. The winning token will launch within a few days of reaching the $1 million presale goal, with no long waits.",
   },
 ];
 
@@ -93,32 +142,32 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
   return (
     <div>
       <div
-        className={`border faqsbrder flex-col rounded-[15px] border-solid bg-[#181818] ${
-          isOpen ? "border-[#fff]" : "border-[#fff]"
+        className={`border flex-col rounded-[40px] border-solid  bg-[#FFFFFF1A] backdrop-blur-(65px) ${
+          isOpen ? "#FFFFFF33" : "#FFFFFF33"
         }`}
       >
         <div
-          className="flex justify-between items-center px-[34px] py-[30px] gap-[25px] cursor-pointer"
+          className="flex justify-between items-center px-8 pb-2 gap-[25px] cursor-pointer"
           onClick={handleClick}
         >
           <div className="flex items-center justify-center gap-5 xs:pt-[14px]">
-            <div className="text-[22px] text-[#fff] font-[600] font-k2d">
+            <div className="text-[24px] leading-[64px] text-[#fff] font-[400] font-anton uppercase">
               {question}
             </div>
           </div>
 
-          <h4
-            className={`text-[18px] xs:text-[10px] rounded-full w-[26px] h-[26px] xs:h-[16px] xs:w-[16px] flex items-center justify-center plusIcon ${
-              !isOpen ? "rotate-0" : "rotate-[-180deg]"
+          <div
+            className={`accordion-gradient-bg-arrow h-[30px] w-[30px] rounded-full flex items-center justify-center transition-transform duration-300 ${
+              !isOpen ? "rotate-0" : "rotate-180"
             }`}
           >
-            <img src={arw} alt="" />
-          </h4>
+            <img src={arw} alt="arrow" className="w-4 h-4" />
+          </div>
         </div>
         <div style={contentStyles}>
           <div className="w-[100%] px-[34px] pb-[20px]">
             <p
-              className="pb-[10px] answer text-[22px] text-white leading-[150%] font-[600] font-k2d"
+              className="pb-[10px] answer text-[16px] text-[#fff] font-helvetica leading-[22px] font-[400]"
               dangerouslySetInnerHTML={createMarkup()}
             />
           </div>
@@ -136,11 +185,63 @@ const FaqSec = () => {
   };
 
   return (
-    <div className="relative font-k2d" id="faq">
-      <div className="w-[100%] max-w-[1143px] pt-[73px] mx-auto pb-[63px] flex flex-col gap-4">
+    <div className="relative faqs_bg" id="faq">
+      <img
+        src={topShadow}
+        alt="topShadow"
+        className="absolute top-0 left-0 right-0 w-full h-[130px]"
+      />
+      <img
+        src={bottomShadow}
+        alt="bottomShadow"
+        className="absolute bottom-0 left-0 right-0 w-full h-[180px]"
+      />
+      <div className="absolute max-w-[1280px] mx-auto top-0 left-0 right-0 w-full h-full">
+        <img
+          src={greenC1}
+          alt="greenC1"
+          className="absolute top-[160px] left-0 right-0 w-[160px] h-[160px]"
+        />
+        <img
+          src={greenC2}
+          alt="greenC2"
+          className="absolute top-[660px] left-[-110px] right-0 w-[160px] h-[160px]"
+        />
+        <img
+          src={greenC3}
+          alt="greenC3"
+          className="absolute top-[630px] right-[40px] w-[70px] h-[70px]"
+        />
+        <img
+          src={greenC4}
+          alt="greenC4"
+          className="absolute top-[-90px] right-[180px] w-[160px] h-[160px]"
+        />
+        <img
+          src={greenG1}
+          alt="greenG1"
+          className="absolute top-[120px] right-[-40px] w-[160px] h-[160px]"
+        />
+        <img
+          src={greenG2}
+          alt="greenG2"
+          className="absolute top-[400px] right-[-120px] w-[220px] h-[220px]"
+        />
+        <img
+          src={greenG3}
+          alt="greenG3"
+          className="absolute bottom-[600px] right-[20px] w-[120px] h-[120px]"
+        />
+        <img
+          src={greenG4}
+          alt="greenG4"
+          className="absolute bottom-[500px] left-[-40px] right-0 w-[200px] h-[200px]"
+        />
+      </div>
+      <div className="w-[100%] max-w-[740px] pt-[73px] mx-auto pb-[63px] flex flex-col gap-4">
         <div className="text-center">
-          <h2 className="text-[#fff] font-HiJack uppercase text-[42px] font-[400] leading-[142.857%] pb-[10px] font-k2d">
-            Frequently Asked Questions
+          <h2 className="pb-[10px]">
+            Frequently <br /> Asked Questions
           </h2>
         </div>
         <div className="2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] mx-auto">

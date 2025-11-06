@@ -1,275 +1,116 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import awr1 from "../../assets/RoadmapSec/Vector (2).svg";
-import line from "../../assets/RoadmapSec/Line 1.png";
-import verc1 from "../../assets/RoadmapSec/Ellipse 80 (3).png";
-import verc2 from "../../assets/RoadmapSec/Ellipse 81 (1).png";
-import imgrod from "../../assets/RoadmapSec/imgrd.png";
+import cardimg2 from "../../assets/mobile_assets/pepe_rd_mob.png";
+import cardimg1 from "../../assets/mobile_assets/doge_mob.png";
+import vectcard2 from "../../assets/CommunitySec/Ellipse 80.webp";
+import vectcard1 from "../../assets/CommunitySec/Ellipse 81.webp";
+import topShadow from "../../assets/CommunitySec/rectangle_290.webp";
+import bottomShadow from "../../assets/CommunitySec/rectangle_294.webp";
+import arwl from "../../assets/herosec/Arrowlf.svg";
+import arwr from "../../assets/herosec/Arrowrght.svg";
+import pepeRoad from "../../assets/RoadmapSec/pepe-mob-bg.png";
 
-function RoadmapMobile() {
+function RoadmapMob() {
+  const dogeRoadmapPhases = [
+    {
+      title: "Preparation:",
+      description:
+        "Prove once again why Doge is the undefeated champion. Rally millions of loyal fans and build the strongest Doge Army in meme history.",
+    },
+    {
+      title: "The Fight:",
+      description:
+        "Take on Pepe head-to-head. Show the world that an OG Meme Heavyweight never backs down and secure the crown.",
+    },
+    {
+      title: "Victory Launch:",
+      description:
+        "Celebrate the triumph with a massive launch event and CEX listings, powered by global hype and top industry support.",
+    },
+    {
+      title: "Domination:",
+      description:
+        "Lead the Doge movement to the next level. Become the fastest growing meme by market cap with millions of Doge holders driving the legacy forward.",
+    },
+  ];
+
+  const pepeRoadmapPhases = [
+    {
+      title: "Preparation:",
+      description:
+        "Rise as the fearless challenger. Unite Pepe fans across the globe and build unstoppable momentum toward the top.  ",
+    },
+    {
+      title: "The Fight:",
+      description:
+        "Shock the meme world by knocking out Doge and becoming the new Meme Heavyweight Champion.",
+    },
+    {
+      title: "Victory Launch:",
+      description:
+        "Ignite the scene with a legendary launch event and CEX listings, fueled by explosive community power and massive worldwide attention.",
+    },
+    {
+      title: "Domination:",
+      description:
+        "Establish Pepe as the new meme king. Aim for the fastest growth in market cap with millions of believers joining the Pepe movement.",
+    },
+  ];
+
   return (
-    <div className="w-full bgroadmapMob pt-[40px] overflow-hidden bg-black relative" id="roadmap">
-       {/* <div className="absolute inset-0 bg-black pointer-events-none opacity-30"></div> */}
-      <div className="relative z-10 mb-6 text-center">
-        <h3 className="text-[22px] text-white font-HiJack font-[400]">Roadmap</h3>
-      </div>
-      <div className="flex items-center justify-center gap-11 pb-[1rem] relative z-10">
-        <div className="flex w-[152px] h-[28px] justify-center items-center rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600">
-          <span className="text-[#131212] font-inter text-[12px] font-[700] leading-none">
-          The  $DOGE Roadmap
-          </span>
-        </div>
-        <div className="flex w-[153px] h-[28px] justify-center items-center rounded-full bg-gradient-to-r from-green-400 to-green-600">
-          <span className="text-[#131212] font-inter text-[12px] font-[700] leading-none">
-          The  $PEPE Roadmap
-          </span>
-        </div>
-      </div>
-
-      <div className="relative z-10 grid grid-cols-2 gap-10 p-2 px-4">
-        <div className="w-[100%] mx-auto h-[100%]">
-          <Swiper
-            modules={[Navigation]}
-            spaceBetween={20}
-            slidesPerView={1}
-            navigation={{
-              nextEl: ".swiper-button-next1",
-              prevEl: ".swiper-button-prev1",
-            }}
-            pagination={{ clickable: true }}
-            breakpoints={{
-              320: { slidesPerView: 1 },
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 1 },
-              1024: { slidesPerView: 1 },
-            }}
-            loop={false}
-            className="!min-h-[600px]"
-          >
-            <SwiperSlide>
-              <div className="bg-[#181818] !min-h-[547px] !max-h-[600px] rounded-[6px] p-2   text-white relative">
-                <h4 className="text-yellow-400 text-[10px] font-[600] mb-4">
-                The Battle Begins
-                </h4>
-                <ul className="list-disc pl-5 space-y-2 text-[13px]">
-                  <li>
-                    <span className="font-bold">Concept Development:</span>{" "}
-                    Craft the vision for $DOGE, combining Doge’s charm with a
-                    competitive presale.
-                  </li>
-                  <li>
-                    <span className="font-bold">Website Launch:</span> Launch
-                    the $DOGE site with presale details, community channels, and
-                    resources for supporters.
-                  </li>
-                  <li>
-                    <span className="font-bold">Community Setup:</span> Create
-                    Telegram channels for rallying Team Doge fans.
-                  </li>
-                  <li>
-                    <span className="font-bold">Marketing Kickoff:</span> Roll
-                    out social media campaigns, influencer promos, and press
-                    releases to unite Doge fans globally.
-                  </li>
-                </ul>
+    <div
+      className="w-[100%] flex justify-center items-center  h-full bg-black overflow-hidden relative"
+      id="roadmap"
+    >
+      <div className="space-y-[40px]">
+        <div>
+          <div className="Roadmap_Mob_bg p-3 text-center">
+            <h3>TEAM DOGE</h3>
+            <h3 className="text-[#E67500] text-center mb-8  ">
+              ROADMAP
+            </h3>
+            <div className="h-[578px]" />
+            <div className="space-y-6">
+              {dogeRoadmapPhases.map((phase, index) => (
                 <div
-                  className="h-[4.914px] rounded-[19.453px] absolute bottom-0 left-0 w-[100%]"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, #FAC000 0%, #FF9D00 100%)",
-                  }}
-                ></div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-[#181818] rounded-[6px] p-2  !min-h-[547px] !max-h-[600px] text-white relative">
-                <h4 className="text-yellow-400 text-[10px] font-semibold mb-4">
-                  The Presale Showdown
-                </h4>
-                <ul className="list-disc pl-5 space-y-2 text-[13px]">
-                  <li>
-                    <span className="font-bold">Presale Launch:</span> Team Doge
-                    enters as the Orange Coin, rallying positivity and community
-                    spirit.
-                  </li>
-                  <li>
-                    <span className="font-bold">Live Updates:</span> Real-time
-                    funding stats drive $DOGE’s climb.
-                  </li>
-                  <li>
-                    <span className="font-bold">Community Challenges:</span>{" "}
-                    Polls and contests energize Doge supporters.
-                  </li>
-                </ul>
-                <div
-                  className="h-[4.914px] rounded-[19.453px] absolute bottom-0 left-0 w-[100%]"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, #FAC000 0%, #FF9D00 100%)",
-                  }}
-                ></div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-[#181818] rounded-[6px] !min-h-[547px] !max-h-[600px] p-2 text-white relative">
-                <h4 className="text-yellow-400 text-[10px] font-semibold mb-4">
-                  Crowning the Champion
-                </h4>
-                <ul className="list-disc pl-5 space-y-2 text-[13px]">
-                  <li>
-                    <span className="font-bold">Winner Announcement:</span>{" "}
-                    $DOGE is crowned the winning token, showcasing Team Doge’s
-                    dominance.
-                  </li>
-                  <li>
-                    <span className="font-bold">Liquidity Boost:</span> Rival
-                    funds strengthen $DOGE’s liquidity pool.
-                  </li>
-                  <li>
-                    <span className="font-bold">Token Launch:</span> $DOGE goes
-                    live within 24 hours.
-                  </li>
-                </ul>
-                <div
-                  className="h-[4.914px] rounded-[19.453px] absolute bottom-0 left-0 w-[100%]"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, #FAC000 0%, #FF9D00 100%)",
-                  }}
-                ></div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-          <div className="!h-[35px] !w-[35px] swiper-button-prev1 swiper-button-next cursor-pointer  absolute !left-[-2%] !top-[49%] rotate-180">
-            <img src={awr1} className="w-[16px] h-[16px]" alt="Previous" />
+                  key={index}
+                  className={
+                    "border border-[#E67500] rounded-[30px] bg-white/10 py-4 px-[30px]"
+                  }
+                >
+                  <div>
+                    <h4 className="text-[#E67500]">{phase.title}</h4>
+                    <p className="pt-2.5 text-[16px] text-[#fff] font-[400] font-helvetica leading-relaxed">
+                      {phase.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="!h-[35px] !w-[35px] swiper-button-next1 swiper-button-next cursor-pointer  absolute !right-[48%] !top-[49%] ">
-            <img src={awr1} className="w-[16px] h-[16px]" alt="Next" />
-          </div>
-        </div>
 
-        <div className="w-[100%] mx-auto h-[100%]">
-          <Swiper
-            modules={[Navigation]}
-            spaceBetween={20}
-            slidesPerView={1}
-            navigation={{
-              nextEl: ".swiper-button-next2",
-              prevEl: ".swiper-button-prev2",
-            }}
-            pagination={{ clickable: true }}
-            breakpoints={{
-              320: { slidesPerView: 1 },
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 1 },
-              1024: { slidesPerView: 1 },
-            }}
-            loop={false}
-            className="!min-h-[600px]"
-          >
-            <SwiperSlide>
-              <div className="bg-[#181818] rounded-[6px] p-2  !min-h-[547px] !max-h-[600px] text-white relative">
-                <h4 className="text-green-400 text-[10px] font-semibold mb-4">
-                The Battle Begins
-                </h4>
-                <ul className="list-disc pl-5 space-y-2 text-[13px]">
-                  <li>
-                    <span className="font-bold">Concept Development:</span>{" "}
-                    Craft the vision for $PEPE, combining Pepe’s iconic status
-                    with a thrilling presale.
-                  </li>
-                  <li>
-                    <span className="font-bold">Website Launch:</span> Launch
-                    the $PEPE site with presale details and community tools.
-                  </li>
-                  <li>
-                    <span className="font-bold">Community Setup:</span> Create
-                    Telegram channels for rallying Team Pepe believers.
-                  </li>
-                  <li>
-                    <span className="font-bold">Marketing Kickoff:</span> Launch
-                    social media campaigns, influencer shoutouts, and press
-                    releases to unite the Pepe army.
-                  </li>
-                </ul>
+          {/* Right Div - Team Pepe Roadmap */}
+          <div className="Roadmap_Mob_bg2 p-3 text-center">
+            <h3>TEAM PEPE</h3>
+            <h3 className="text-[#4FFF2D] text-center mb-8  ">
+              ROADMAP
+            </h3>
+            <div className="h-[667px]" />
+            <div className="space-y-6">
+              {pepeRoadmapPhases.map((phase, index) => (
                 <div
-                  className="h-[4.914px] rounded-[19.453px] absolute bottom-0 left-0 w-[100%]"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, #5BCC33 0%, #4EB52A 100%)",
-                  }}
-                ></div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-[#181818] rounded-[6px] p-2  !min-h-[547px] !max-h-[600px] text-white relative">
-                <h4 className="text-green-400 text-[10px] font-[600] mb-4">
-                  The Presale Showdown
-                </h4>
-                <ul className="list-disc pl-5 space-y-2 text-[13px]">
-                  <li>
-                    <span className="font-bold">Presale Launch:</span> Team Pepe
-                    takes the lead as the Green Coin, fueled by humor and
-                    resilience.
-                  </li>
-                  <li>
-                    <span className="font-bold">Live Updates:</span> Real-time
-                    stats highlight $PEPE’s progress.
-                  </li>
-                  <li>
-                    <span className="font-bold">Community Challenges:</span>{" "}
-                    Polls and events energize the Pepe army.
-                  </li>
-                </ul>
-                <div
-                  className="h-[4.914px] rounded-[19.453px] absolute bottom-0 left-0 w-[100%]"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, #5BCC33 0%, #4EB52A 100%)",
-                  }}
-                ></div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-[#181818] rounded-[6px] p-2  !min-h-[547px] !max-h-[600px] text-white relative">
-                <h4 className="text-green-400 text-[10px] font-semibold mb-4">
-                  Crowning the Champion
-                </h4>
-                <ul className="list-disc pl-5 space-y-2 text-[13px]">
-                  <li>
-                    <span className="font-bold">Winner Announcement:</span>{" "}
-                    $PEPE is crowned the ultimate meme king, solidifying Pepe’s
-                    legacy.
-                  </li>
-                  <li>
-                    <span className="font-bold">Liquidity Boost:</span> Rival
-                    funds strengthen $PEPE’s market position.
-                  </li>
-                  <li>
-                    <span className="font-bold">Token Launch:</span> $PEPE goes
-                    live for trading within 24 hours.
-                  </li>
-                </ul>
-                <div
-                  className="h-[4.914px] rounded-[19.453px] absolute bottom-0 left-0 w-[100%]"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, #5BCC33 0%, #4EB52A 100%)",
-                  }}
-                ></div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-
-          <div className="!h-[35px] !w-[35px] swiper-button-prev2 swiper-button-next cursor-pointer   absolute !left-[48%] !top-[49%] rotate-180">
-            <img src={awr1} className="w-[16px] h-[16px]" alt="Previous" />
-          </div>
-          <div className="!h-[35px] !w-[35px] swiper-button-next2  swiper-button-next cursor-pointer absolute !right-[-2%] !top-[49%] ">
-            <img src={awr1} alt="Next" className="w-[16px] h-[16px]" />
+                  key={index}
+                  className={
+                    "border border-[#4FFF2D] rounded-[30px] bg-white/10 py-4 px-[30px]"
+                  }
+                >
+                  <div>
+                    <h4 className="text-[#4FFF2D]">{phase.title}</h4>
+                    <p className="pt-2.5 text-[16px] text-[#fff] font-[400] font-helvetica leading-relaxed">
+                      {phase.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -277,4 +118,4 @@ function RoadmapMobile() {
   );
 }
 
-export default RoadmapMobile;
+export default RoadmapMob;

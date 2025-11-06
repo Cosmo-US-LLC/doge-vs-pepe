@@ -1,172 +1,112 @@
-import React from "react";
-import arwl from "../../assets/herosec/Arrowlf.svg";
-import arwr from "../../assets/herosec/Arrowrght.svg";
-import vsimg from "../../assets/herosec/vs.png";
-import vsimgr from "../../assets/herosec/vects (2).png";
-import vsimgl from "../../assets/herosec/vects (1).png";
-import downArrow from "../../assets/herosec/down-arrow.svg";
+import DVPHeromob from "../../assets/hero/v2_hero_section_dvp_mob.webp";
+import hero_msg from "../../assets/hero/v2_hero_msg.webp";
+import BannerSecMob from "./BannerSecMob";
 
-import coinMarketCop from "../../assets/Mobile/coin-market-cop.webp";
-import ambCrypto from "../../assets/Mobile/amb-crypto.webp";
-import cryptoNews from "../../assets/Mobile/cryptonews.webp";
-import bitCoinist from "../../assets/Mobile/bitcoinist.webp";
-import newsBit from "../../assets/Mobile/newsbit.webp";
 
 function MobileHeroSection() {
-  const handleScroll = (event, targetId, offset = 0) => {
-    event.preventDefault();
-    const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-      const scrollY = window.scrollY || document.documentElement.scrollTop;
-      const elementPosition =
-        targetElement.getBoundingClientRect().top + scrollY;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
-    <div
-      className="w-[100%] bgheromobsec pt-[5rem] min-h-[647px] relative"
-      id="what-is"
-    >
-      <div className="w-[90%] relative mx-auto px-3">
-        <div className="max-w-[575px] w-full flex flex-col justify-center items-center mx-auto">
-          <div className="flex items-end justify-center space-x-[15px] text-stroke-2">
-            <h1
-              className="text-[#ffbf0c] text-[50px] font-[400] font-HiJack"
-              style={{
-                WebkitTextStrokeWidth: "2.301823854446411px",
-                WebkitTextStrokeColor: "#000",
-                textShadow: "3.76px -0.47px 14.147px #F1AD03",
-              }}
-            >
-              DOGE
-            </h1>
+    <div className="w-[100%] pt-[150px] hero_bg">
+      <div className="max-w-[1280px] px-2 mx-auto w-[100%] h-full flex items-end relative">
+        <div className="flex items-center justify-center flex-col  w-full relative">
+          <img
+            src={hero_msg}
+            alt="hero_msg"
+            className="absolute top-[-52px] left-[45%] translate-x-[-50%] w-[320px] h-auto z-40"
+          />
 
-            <h4
-              className="text-[#FFF] text-[22.559px] font-[400] font-Lato h-[48px]"
-              style={{
-                textShadow: "0px 0px 4.534px #74FF60",
-                WebkitTextStrokeWidth: "1.2px",
-                WebkitTextStrokeColor: "#000",
-              }}
-            >
-              VS.
-            </h4>
-
-            <h1
-              className="text-[#00FF2F] text-[50px] font-[400] font-HiJack"
-              style={{
-                textShadow: "3.76px -0.47px 14.147px #74FF60",
-                WebkitTextStrokeWidth: "2.301823854446411px",
-                WebkitTextStrokeColor: "#000",
-              }}
-            >
-              PEPE
+          <div className="flex items-center justify-center space-x-4 relative z-20">
+            {/* <div className="flex flex-col space-y-2">
+              <a
+                href="https://t.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-[40px] h-[40px] rounded-full border-[#fff] border bg-[rgba(255, 255, 255, 0.20] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                >
+                  <path
+                    d="M9.31305 13.6363L9.0153 17.8244C9.44131 17.8244 9.62581 17.6414 9.84707 17.4216L11.8444 15.5128L15.983 18.5437C16.742 18.9667 17.2767 18.7439 17.4815 17.8454L20.1981 5.11609L20.1988 5.11534C20.4396 3.99331 19.7931 3.55455 19.0535 3.82981L3.08565 9.9432C1.99588 10.3662 2.01238 10.9737 2.9004 11.249L6.98275 12.5188L16.4652 6.58537C16.9115 6.28987 17.3172 6.45337 16.9835 6.74888L9.31305 13.6363Z"
+                    fill="#E67500"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-[40px] h-[40px] rounded-full border bg-[rgba(255, 255, 255, 0.20)] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                >
+                  <path
+                    d="M12.9624 9.87177L19.6633 2.25H18.0754L12.2571 8.86788L7.60992 2.25H2.25L9.27738 12.2574L2.25 20.25H3.83799L9.98237 13.2613L14.8901 20.25H20.25L12.9621 9.87177H12.9624ZM10.7875 12.3456L10.0755 11.3491L4.41017 3.41971H6.84922L11.4212 9.81895L12.1332 10.8155L18.0762 19.1335H15.6371L10.7875 12.346V12.3456Z"
+                    fill="#FECF30"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://x.com/Doge_V_Pepe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-[40px] h-[40px] rounded-full border bg-[rgba(255, 255, 255, 0.20)] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                >
+                  <path
+                    d="M16.9856 2.25H8.51442C7.53996 2.25 6.75 3.08932 6.75 4.12467V14.6253C6.75 15.6607 7.53996 16.5 8.51442 16.5H16.9856C17.96 16.5 18.75 15.6607 18.75 14.6253V4.12467C18.75 3.08932 17.96 2.25 16.9856 2.25Z"
+                    fill="#00FF2F"
+                  />
+                  <path
+                    d="M15.9 17.5687V17.9719C15.8998 18.5064 15.6874 19.0189 15.3094 19.3969C14.9314 19.7748 14.4189 19.9873 13.8844 19.9875H5.01562C4.48111 19.9873 3.96856 19.7748 3.5906 19.3969C3.21264 19.0189 3.00021 18.5064 3 17.9719V7.4906C3.00021 6.95609 3.21264 6.44353 3.5906 6.06557C3.96856 5.68762 4.48111 5.47519 5.01562 5.47498H5.33018V14.8517C5.33188 15.5717 5.61867 16.2618 6.12783 16.771C6.63698 17.2802 7.32706 17.567 8.04713 17.5687H15.9Z"
+                    fill="#00FF2F"
+                  />
+                </svg>
+              </a>
+            </div> */}
+            <h1 className="text-[#fff] tracking-[-1px] text-[69px] relative z-20 text-center font-anton font-[400] leading-[normal] uppercase ">
+             DOGE vs PEPE
             </h1>
           </div>
 
-          <h3 className="w-[340px] text-[23px] font-HiJack drop-shadow-[0px_0px_15px_rgba(0,0,0)] uppercase leading-[1.13] text-[#FFF] text-center ">
-            THE ULTIMATE showdown
-          </h3>
-          <h4 className="w-[340px] text-[20px] font-semibold drop-shadow-[0px_0px_15px_rgba(0,0,0)] pb-4 leading-[1.3] text-[#FFF] text-center">
-            Who’s Raising $1 Million First?
-            {/* Who’s Raising <span className="text-[#00FF2F]">$1 Million</span> */}
-            {/* &nbsp; First? */}
-          </h4>
-          <p className="text-[14px] max-w-[320px] w-full pb-4 mx-auto font-[700] leading-[1.2] rounded-[15px] px-2 py-4 text-[#FFF] border border-white bg-[#0000009f] text-center drop-shadow-xl shadow-md shadow-neutral-800">
-            Only one will win this epic fight and launch!
-            <br />
-            <br />
-            On one side, we have Doge, the undefeated OG Meme Heavyweight
-            Champion, dominating the meme world for years with his unpredictable
-            style.
-            <br />
-            <br />
-            On the other side, we have Pepe, the fearless rising star, already
-            ranked in the top 3 meme heavyweights and famous for his brutal
-            knockouts.
-            <br />
-            <br />
-            The first to hit $1M wins the championship and launches. The choice
-            is yours!
-          </p>
-        </div>
-
-        <div className="flex items-center justify-center pt-2">
-          <img
-            src={vsimgr}
-            className="h-[294px] w-[153px] object-contain"
-            alt=""
-          />
-          <img
-            src={vsimg}
-            className="w-[63px] h-[55px] object-contain mb-8"
-            alt=""
-          />
-          <img
-            className="h-[283px] w-[131px] object-contain rotate-1 mb-3"
-            src={vsimgl}
-            alt=""
-          />
-        </div>
-      </div>
-
-      <div className="max-w-[618px] w-[100%] flex items-center justify-evenly gap-4 px-6 pb-5">
-        <button
-          className="rounded-[60px] max-w-[112.957px] w-[100%] h-[25px] flex justify-center items-center text-[9px] font-[700] text-[#000] space-x-2"
+          <div 
           style={{
-            background: "linear-gradient(90deg, #FEC576 0%, #FFBF01 100%)",
-            boxShadow: "0px 2px 0px 0px #FFF",
+            boxShadow:"0 -6px 10px 0 rgba(0, 0, 0, 0.60)"
           }}
-        >
-          <img className="mr-2 max-h-[10px]" src={arwr} alt="" />
-          BUY $DOGE
-        </button>
-        <button
-          className=" rounded-[60px] max-w-[112.957px] w-[100%] h-[25px] flex justify-center items-center text-[9px] font-[700] text-[#000] space-x-2"
-          style={{
-            background: "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)",
-            boxShadow: "0px 2px 0px 0px #FFF",
-          }}
-        >
-          BUY $PEPE <img className="ml-2 max-h-[10px]" src={arwl} alt="" />
-        </button>
-      </div>
-      {/* <div className="absolute bottom-[0%] left-0 right-0 flex items-center justify-center z-30">
-        <img
-          className="h-[32px] w-[32px]"
-          src={downArrow}
-          alt=""
-          onClick={(e) => handleScroll(e, "how-to-buy", 50)}
-        />
-      </div> */}
-      <div className="w-full py-4 bg-black">
-        <h2 className="text-[#FFFCFC] text-center text-[22px] font-HiJack font-[400] uppercase mb-2">
-          As Seen On
-        </h2>
-
-        <div className="flex items-center justify-start overflow-hidden whitespace-nowrap">
-          <div className="flex animate-marquee">
-            <img
-              src={coinMarketCop}
-              alt="Coin market cop"
-              className="h-[20px] mx-4"
-            />
-            <img src={ambCrypto} alt="AMB Crypto" className="h-[20px] mx-4" />
-            <img src={cryptoNews} alt="Crypto News" className="h-[20px] mx-4" />
-            <img src={bitCoinist} alt="Bitcoinist" className="h-[20px] mx-4" />
-            <img src={newsBit} alt="NewsBit" className="h-[20px] mx-4" />
-            <img src={ambCrypto} alt="AMB Crypto" className="h-[20px] mx-4" />
+          className="gradient-bg overflow-hidden relative top-[-30px] shadow-[0 -6px 10px 0 rgba(0, 0, 0, 0.60)] rounded-[12px] z-30 p-[1px] ">
+            <div className="overflow-hidden rounded-[12px]">
+              <img src={DVPHeromob} alt="heroSec" className="w-full " />
+            </div>
           </div>
+           <button
+            onClick={() => {
+              const el = document.getElementById("wallet");
+              if (el) {
+                const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }
+            }}
+            className="btn-primary relative top-[-15px] gradient-bg !text-[22px] w-full py-[14px] "
+          >
+            Join the Presale
+          </button>
         </div>
       </div>
+      <BannerSecMob />
     </div>
   );
 }

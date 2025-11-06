@@ -1,180 +1,109 @@
-import React from "react";
-import cardimg2 from "../../assets/CommunitySec/pepe-icon.webp";
-import cardimg1 from "../../assets/CommunitySec/doge-icon.webp";
-import vectcard2 from "../../assets/CommunitySec/Ellipse 80.webp";
-import vectcard1 from "../../assets/CommunitySec/Ellipse 81.webp";
-import arwl from "../../assets/herosec/Arrowlf.svg";
-import arwr from "../../assets/herosec/Arrowrght.svg";
-import topShadow from "../../assets/CommunitySec/rectangle_290.webp";
-import bottomShadow from "../../assets/CommunitySec/rectangle_294.webp";
+import dogeBox from "../../assets/RoadmapSec/v2_doge_msg_box.webp";
+import pepeBox from "../../assets/RoadmapSec/v2_pepe_msg_box.webp";
+import top_shadow from "../../assets/fightRule/top_shadow.webp";
+import bottom_shadow from "../../assets/fightRule/bottom_shadow.webp";
 
 function CommunitySec() {
   return (
-    <div className="w-[100%] flex justify-center items-center  h-[900px] Communitybg overflow-hidden relative">
-       <div className="absolute top-0 left-0 right-0 w-full h-full">
-              <img className="w-full h-full" src={topShadow} alt="" />
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 w-full h-full">
-              <img className="w-full h-full" src={bottomShadow} alt="" />
-            </div>
-      <div className="max-w-[1312px] px-[30px] py-[80px] space-y-[40px] w-[100%] mx-auto z-10 relative"
-       style={{backdropFilter:"blur(9.899999618530273px)",
-        background: "rgba(0, 0, 0, 0.47)",
-        borderRadius: "21.168px",
-       }}
-      >
-        <div>
-          <h3
-            style={{
-              textShadow: "0px 0px 26.2px #000, 0px 0px 14.5px #000",
-            }}
-            className="text-[50px] text-[#FFFCFC] font-HiJack text-center font-[400]"
-          >
-            The Community Decides{" "}
+    <div
+      className="w-[100%] flex justify-center items-center h-[800px] Roadmap_bg overflow-hidden relative"
+      id="roadmap"
+    >
+      <img
+        src={top_shadow}
+        alt="top_shadow"
+        className="absolute top-0 left-0 right-0 w-full h-[130px]"
+      />
+      <img
+        src={bottom_shadow}
+        alt="bottom_shadow"
+        className="absolute bottom-0 left-0 right-0 w-full h-[130px]"
+      />
+      <div className="max-w-[1280px] px-4 md:px-8 w-[100%] h-full mx-auto z-10 relative flex items-center justify-center">
+        <div className="w-[32%] min-h-[220px] space-y-[20px]">
+          <h3>
+            Team DOGE <span className="text-[#E67500]">roadmap</span>
           </h3>
-          <p
-            style={{
-              textShadow: "0px 0px 26.2px #000, 0px 0px 14.5px #000",
-            }}
-            className="text-[20px] font-[400] text-center text-[#FFF]"
-          >
-            This isn’t just about picking a meme <br /> it’s about choosing a
-            winner that you are proud to represent.{" "}
-          </p>
-        </div>
-        <div className="flex justify-between space-x-[15px]">
-          <div
-            className="p-4 relative rounded-[21.168px]"
-            // style={{
-            //   backdropFilter: "blur(25.049999237060547px)",
-            //   background: "rgba(0, 0, 0, 0.47)",
-            //   borderRadius: "21.168px",
-            // }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                backdropFilter: "blur(15px)", // Apply blur here
-                WebkitBackdropFilter: "blur(15px)",
-                backgroundColor: "rgba(0, 0, 0, 0.47)", // Semi-transparent background
-                borderRadius: "21.168px",
-                zIndex: 1,
-              }}
-            ></div>
-            <img
-              src={vectcard1}
-              className="absolute -left-[18%] top-[6%] z-[10]"
-              alt=""
-            />
-            <div className="flex roadborder  relative max-w-[588px] space-x-[2rem]  w-[100%]  px-5 py-11 justify-between ">
-              <div className="w-[38%] min-h-[220px]">
-                <img src={cardimg1} className="h-[220px] absolute left-2 top-2" alt="" />
-              </div>
-              <div className="w-[62%] space-y-[10px]">
-                <div>
-                  <h3 className="text-[22px] text-[#FFF] font-HiJack font-[400]">
-                    TEAM DOGE
-                  </h3>
-                  <hr className="bg-[#F1A900] h-[5px] border-none w-[68px] rounded-full" />
-                </div>
-                <h4 className="text-[20px] text-[#FFF] font-HiJack font-[400]">$DOGE</h4>
-                <p className="text-[18px] text-[#FFF] font-[400] leading-[130%]">
-                "Pepe, you’re just a hyped up fair-weather fighter. This will be my easiest payday. I’ll show you why I’m the undisputed champ!"
-                </p>
-                <button
-                  className="rounded-[60px] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[700] text-[#000] space-x-2 absolute bottom-[-17px] left-[32%] transition-all duration-300 hover:scale-105"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, #FEC576 0%, #FFBF01 100%)",
-                    boxShadow: "0px 2px 0px 0px #FFF",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background =
-                      "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)";
-                    e.currentTarget.style.boxShadow =
-                      "0px 4px 8px rgba(0, 0, 0, 0.25)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background =
-                      "linear-gradient(90deg, #FEC576 0%, #FFBF01 100%)";
-                    e.currentTarget.style.boxShadow = "0px 2px 0px 0px #FFF";
-                  }}
-                >
-                  <img className="mr-2" src={arwr} alt="" />
-                  BUY $DOGE
-                </button>
-              </div>
-            </div>
+          <div className="border p-4 border-[#E67500] bg-[rgba(255, 255, 255, 0.10)]  backdrop-blur-[10px] rounded-[18px]">
+            <p className="subtext !text-[#E67500]">Preparation:</p>
+            <p className="subtext">
+              Prove once again why Doge is the undefeated champion. Rally
+              millions of loyal fans and build the strongest Doge Army in meme
+              history.
+            </p>
           </div>
-          <div
-            className="p-4 relative rounded-[21.168px]"
-            style={{
-              // backdropFilter: "blur(25.049999237060547px)",
-              // background: "rgba(0, 0, 0, 0.47)",
-              // borderRadius: "21.168px",
-            }}
-          > 
-            <div
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                backdropFilter: "blur(15px)", // Apply blur here
-                WebkitBackdropFilter: "blur(15px)",
-                backgroundColor: "rgba(0, 0, 0, 0.47)", // Semi-transparent background
-                borderRadius: "21.168px",
-                zIndex: 1,
-              }}
-            ></div>
-            <img
-              src={vectcard2}
-              className="absolute -right-[40%] -top-[60%]"
-              alt=""
-            />
-            <div className="flex card2border  max-w-[588px] space-x-[2rem]  w-[100%]  px-5 py-11 justify-between ">
-              <div className="w-[38%] min-h-[220px]">
-                <img src={cardimg2} className="h-[220px] absolute left-2 top-2" alt="" />
-              </div>
-              <div className="w-[62%] space-y-[10px]">
-                <div>
-                  <h3 className="text-[22px] font-HiJack text-[#FFF] font-[400]">
-                    TEAM PEPE
-                  </h3>
-                  <hr className="bg-[#4EB52A] h-[5px] border-none w-[68px] rounded-full" />
-                </div>
-                <h4 className="text-[20px] font-HiJack text-[#FFF] font-[400]">$PEPE</h4>
-                <p className="text-[18px] text-[#FFF] font-[400] leading-[130%]">
-                "Doge, your time is up. You’re just an old dog now. One punch, and I’ll have you chasing your tail! This will be your retirement party!"
-                </p>
-                <button
-                  className="rounded-[60px] max-w-[175px] w-[100%] h-[40px] flex justify-center items-center text-[14px] font-[700] text-[#000] space-x-2 absolute bottom-[-17px] left-[32%] transition-all duration-300  hover:scale-105"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)",
-                    boxShadow: "0px 2px 0px 0px #FFF",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background =
-                      "linear-gradient(90deg, #F2B60F 0%, #F7D635 100%)";
-                    e.currentTarget.style.boxShadow =
-                      "0px 4px 8px rgba(0, 0, 0, 0.25)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background =
-                      "linear-gradient(90deg, #7CEC91 0%, #01FE37 100%)";
-                    e.currentTarget.style.boxShadow = "0px 2px 0px 0px #FFF";
-                  }}
-                >
-                  BUY $PEPE <img className="ml-2 " src={arwl} alt="" />
-                </button>
-              </div>
-            </div>
+          <div className="border p-4 border-[#E67500] bg-[rgba(255, 255, 255, 0.10)] backdrop-blur-[10px] rounded-[18px]">
+            <p className="subtext !text-[#E67500]">The Fight:</p>
+            <p className="subtext">
+              Take on Pepe head-to-head. Show the world that an OG Meme
+              Heavyweight never backs down and secure the crown.
+            </p>
+          </div>
+          <div className="border p-4 border-[#E67500] bg-[rgba(255, 255, 255, 0.10)] backdrop-blur-[10px] rounded-[18px]">
+            <p className="subtext !text-[#E67500]">Victory Launch:</p>
+            <p className="subtext">
+              Celebrate the triumph with a massive launch event and CEX
+              listings, powered by global hype and top industry support.
+            </p>
+          </div>
+          <div className="border p-4 border-[#E67500] bg-[rgba(255, 255, 255, 0.10)] backdrop-blur-[10px] rounded-[18px]">
+            <p className="subtext !text-[#E67500]">Domination:</p>
+            <p className="subtext">
+              Lead the Doge movement to the next level. Become the fastest
+              growing meme by market cap with thousands of Doge holders driving
+              the legacy forward.
+            </p>
+          </div>
+        </div>
+        <div className="w-[36%] h-full relative">
+          <div className="absolute left-[-40px] top-[30px] w-[260px] h-[136px]">
+            <img src={dogeBox} alt="" className="w-full h-full relative z-10" />
+            <p className="text-left subtext !text-[13px] !text-[#C90F0F] !font-[600] absolute left-[30px] top-[30px] w-[200px] z-20">
+              Pepe, you’re just a hyped up fair-weather fighter, This will be my
+              easiest payday. I’ll show you why I’m the undisputed champ!
+            </p>
+          </div>
+          <div className="absolute right-[-70px] top-[30px] w-[260px] h-[136px]">
+            <img src={pepeBox} alt="" className="w-full h-full relative z-10" />
+            <p className="text-left subtext !text-[13px] !text-[#C90F0F] !font-[600] absolute right-[30px] top-[30px] w-[200px] z-20">
+              Doge, your time is up. You’re just an old dog now. One punch, and
+              I’ll have you chasing your tail! This will be your retirement
+              party!
+            </p>
+          </div>
+        </div>
+        <div className="w-[32%] min-h-[220px] space-y-[20px]">
+          <h3 className="text-right">
+            Team PEPE <span className="text-[#00FF2F]">roadmap</span>
+          </h3>
+          <div className="border p-4 border-[#00FF2F] bg-[rgba(255, 255, 255, 0.10)] backdrop-blur-[10px] rounded-[18px]">
+            <p className="subtext !text-[#00FF2F]">Preparation:</p>
+            <p className="subtext">
+              Rise as the fearless challenger. Unite Pepe fans across the globe
+              and build unstoppable momentum toward the top.
+            </p>
+          </div>
+          <div className="border p-4 border-[#00FF2F] bg-[rgba(255, 255, 255, 0.10)] backdrop-blur-[10px] rounded-[18px]">
+            <p className="subtext !text-[#00FF2F]">The Fight:</p>
+            <p className="subtext">
+              Shock the meme world by knocking out Doge and becoming the new
+              Meme Heavyweight Champion.
+            </p>
+          </div>
+          <div className="border p-4 border-[#00FF2F] bg-[rgba(255, 255, 255, 0.10)] backdrop-blur-[10px] rounded-[18px]">
+            <p className="subtext !text-[#00FF2F]">Victory Launch:</p>
+            <p className="subtext">
+              Ignite the scene with a legendary launch event and CEX listings,
+              fueled by explosive community power and massive worldwide
+              attention.
+            </p>
+          </div>
+          <div className="border p-4 border-[#00FF2F] bg-[rgba(255, 255, 255, 0.10)] backdrop-blur-[10px] rounded-[18px]">
+            <p className="subtext !text-[#00FF2F]">Domination:</p>
+            <p className="subtext">
+              Establish Pepe as the new meme king. Aim for the fastest growth in
+              market cap with thousands of believers joining the Pepe movement.
+            </p>
           </div>
         </div>
       </div>
