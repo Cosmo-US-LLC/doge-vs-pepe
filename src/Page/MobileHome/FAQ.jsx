@@ -151,7 +151,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="relative faqs_bg_mob" id="faq">
+    <div className="relative overflow-hidden faqs_bg_mob" id="faq">
       <img
         src={greenC1}
         alt="greenC1"
