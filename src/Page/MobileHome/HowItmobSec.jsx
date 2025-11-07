@@ -70,7 +70,7 @@ function HowItmobSec() {
       className="w-[100%] min-h-[658px] flex items-end  overflow-hidden pt-[50px] pb-[40px]"
       id="how-it-all-began"
     >
-      <div className="relative w-full px-4 mx-auto min-h-[578px]">
+      <div className="relative w-full px-4 mx-auto min-h-[558px]">
         <h3 className="text-[#FFFCFC] font-[Anton]  text-center text-[32px] leading-[104.377%] font-[400]">
           How It All Began
         </h3>
@@ -90,14 +90,14 @@ function HowItmobSec() {
             {sliderData.map((item, index) => (
               <SwiperSlide
                 key={index}
-                className="relative p-0  h-[446px] flex flex-col justify-end rounded-[20px] overflow-hidden"
+                className="relative p-0  h-[456px] flex flex-col justify-end rounded-[20px] overflow-hidden"
               >
                 <img
                   src={item.img}
                   alt={`Slide ${index + 1}`}
-                  className="object-cover absolute top-0 left-0 z-0 w-full h-full"
+                  className="absolute top-0 left-0 z-0 object-cover w-full h-full"
                 />
-                <p className="absolute bottom-0 z-10 font-[Helvetica] pb-4 w-[100%] font-[400] mx-auto text-[#fff] leading-[157%] text-[14px] text-center">
+                <p className="absolute bottom-0 z-10 description pb-2 mx-auto text-[#fff] text-center">
                   {item.text}
                 </p>
               </SwiperSlide>
@@ -105,7 +105,7 @@ function HowItmobSec() {
           </Swiper>
         </div>
 
-        <div className="flex gap-2 justify-center items-center pt-6">
+        <div className="flex items-center justify-center gap-2 pt-6">
           <div className="swiper-button-prev4 flex justify-center items-center h-[60px] w-[60px] aspect-square border border-white/10 bg-white/20 rounded-full">
             <ChevronLeft className="text-[#E67500]" />
           </div>

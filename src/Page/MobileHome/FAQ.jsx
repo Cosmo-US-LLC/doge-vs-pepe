@@ -15,7 +15,7 @@ const faqData = [
     question: "How does the presale work?",
 
     answer: `
-      <ul className="pl-5 list-disc text-white sm:pl-8">
+      <ul className="pl-5 text-white list-disc sm:pl-8">
         <li>Pick your team: Doge ($DOGE) or Pepe ($PEPE).</li>
         <li>Buy tokens to support your chosen champion(s).</li>
         <li>Once the combined total hits $1 million, the team with the most funds raised is declared the winner.</li>
@@ -66,7 +66,7 @@ const faqData = [
   {
     question: "What happens if my team loses?",
     answer: `
-      <ul className="pl-5 list-disc text-white sm:pl-8">
+      <ul className="pl-5 text-white list-disc sm:pl-8">
         <li>You will still receive the winning coin based on the amount of tokens you purchased.</li>
         <li>Your purchase will contribute to strengthening the liquidity pool of the winning token.</li>
       </ul>
@@ -152,21 +152,21 @@ const FAQ = () => {
 
   return (
     <div className="relative faqs_bg_mob" id="faq">
-      {/* <img
+      <img
         src={greenC1}
         alt="greenC1"
-        className="absolute top-[160px] left-0 right-0 w-[160px] h-[160px]"
-      /> */}
+        className="absolute top-[-20px] left-[80px] right-0 w-[40px] h-[40px] z-20"
+      />
       <img
         src={greenC2}
         alt="greenC2"
-        className="absolute top-[-50px] left-[80px] right-0 w-[40px] h-[40px]"
+        className="absolute top-[-80px] right-[-50px] w-[120px] h-[120px] z-20"
       />
-      {/* <img
+      <img
         src={top_shadow}
         alt="top_shadow"
-        className="absolute top-0 left-0 w-full h-[100px]"
-      /> */}
+        className="absolute top-0 left-0 w-full h-[60px]"
+      />
       <img
         src={bottom_shadow}
         alt="bottom_shadow"
@@ -222,10 +222,10 @@ export default FAQ;
 //         }`}
 //       >
 //         <div
-//           className="flex gap-3 justify-between items-center px-4 py-3 cursor-pointer"
+//           className="flex items-center justify-between gap-3 px-4 py-3 cursor-pointer"
 //           onClick={handleClick}
 //         >
-//           <div className="flex gap-2 items-center">
+//           <div className="flex items-center gap-2">
 //             <div
 //               dangerouslySetInnerHTML={{ __html: question }}
 //               className={`text-[16px] font-[Anton] text-[#fff] font-[400]`}
@@ -268,7 +268,7 @@ export default FAQ;
 //             Frequently <br /> Asked Questions
 //           </h2>
 //         </div>
-//         <div className="mx-auto w-full">
+//         <div className="w-full mx-auto">
 //           <div className="space-y-3">
 //             {faqData.map((faq, index) => (
 //               <FaqItem
