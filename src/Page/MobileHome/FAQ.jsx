@@ -155,7 +155,7 @@ const FAQ = () => {
       <img
         src={greenC1}
         alt="greenC1"
-        className="absolute top-[-20px] left-[80px] right-0 w-[40px] h-[40px] z-20"
+        className="absolute top-[0px] left-[76px] right-0 w-[40px] h-[40px] z-20"
       />
       <img
         src={greenC2}
@@ -165,14 +165,14 @@ const FAQ = () => {
       <img
         src={top_shadow}
         alt="top_shadow"
-        className="absolute top-0 left-0 w-full h-[60px]"
+        className="absolute top-0 left-0 w-full h-[100px]"
       />
       <img
         src={bottom_shadow}
         alt="bottom_shadow"
         className="absolute bottom-0 left-0 w-full h-[100px]"
       />
-      <div className="w-[100%] max-w-[880px] pt-10 px-4 mx-auto flex flex-col gap-4">
+      <div className="w-[100%] max-w-[880px] pt-12 px-4 mx-auto flex flex-col gap-4">
         <div className="text-center">
           <h2 className="pb-[10px]">
             Frequently <br /> Asked Questions
