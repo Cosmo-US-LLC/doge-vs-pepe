@@ -3,9 +3,16 @@ import topShadow from "../../assets/DontWaitSec/rectangle_285.webp";
 import bottomShadow from "../../assets/DontWaitSec/rectangle_297.webp";
 import doge from "../../assets/DontWaitSec/doge-d.webp";
 import pepe from "../../assets/DontWaitSec/pepe-d.webp";
+import greenC2 from "../../assets/faqs/v2_green_c2.webp";
 function DontWaitSec() {
   return (
     <div className="w-[100%] relative DontWaitSecmob min-h-[620px] px-4 flex justify-center items-end pb-[100px] overflow-hidden">
+      <img
+        src={greenC2}
+        alt="topShadow"
+        className="absolute bottom-[-50px] right-[-54px] w-[120px] h-[120px] z-20"
+      />
+   
       <div className="  gradient-bg p-[1px] rounded-[26.9px]">
         <div
           className="py-[20px] rounded-[26.9px] space-y-[10px] relative border border-neutral-400 "
