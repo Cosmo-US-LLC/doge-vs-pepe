@@ -5,22 +5,10 @@ import doge from "../../assets/DontWaitSec/doge-d.webp";
 import pepe from "../../assets/DontWaitSec/pepe-d.webp";
 function DontWaitSec() {
   return (
-    <div className="w-[100%] relative DontWaitSecmob min-h-[600px] flex justify-center items-end pb-[40px] overflow-hidden">
-      {/* <div className="absolute top-0 left-0 right-0 w-full h-full">
-        <img className="w-full h-full" src={topShadow} alt="" />
-      </div>
-      <div className="absolute bottom-0 left-0 right-0 z-10 w-full h-full">
-        <img className="w-full h-full" src={bottomShadow} alt="" />
-      </div> */}
-      {/* <div className="w-[562px] h-[545px] absolute bottom-0 left-[-23px]">
-                    <img src={doge} alt="doge-image" className="w-full h-full"/>
-                  </div>
-                  <div className="w-[507px] h-[545px] absolute bottom-0 right-[-10px]">
-                    <img src={pepe} alt="pepe-image" className="w-full h-full"/>
-                  </div> */}
-      <div className="space-y-[35px] px-4">
+    <div className="w-[100%] relative DontWaitSecmob min-h-[600px] px-4 flex justify-center items-end pb-[40px] overflow-hidden">
+      <div className="space-y-[35px] gradient-bg p-[1px] rounded-[26.9px]">
         <div
-          className="py-[20px] rounded-[26.9px] space-y-[10px] relative border border-neutral-400 bg-[#0101019f]"
+          className="py-[20px] rounded-[26.9px] space-y-[10px] relative border border-neutral-400 "
           style={{
             background: "rgba(0, 0, 0, 0.68)",
             backdropFilter: "blur(0px)",
@@ -37,8 +25,7 @@ function DontWaitSec() {
             </p>
             <h4 className="text-[#fff] leading-[144.444%] font-helvetica text-[16px] tracking-[-4%] text-center normal-case">
               Make your choice and support your <br />
-              favorite meme before it is too
-              late!
+              favorite meme before it is too late!
             </h4>
           </div>
         </div>

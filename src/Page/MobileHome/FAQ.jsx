@@ -1,6 +1,10 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import arw from "../../assets/footer/Group 1410124940.svg";
+import top_shadow from "../../assets/fightRule/top_shadow.webp";
+import bottom_shadow from "../../assets/fightRule/bottom_shadow.webp";
+import greenC1 from "../../assets/faqs/v2_green_c1.webp";
+import greenC2 from "../../assets/faqs/v2_green_c2.webp";
 
 const faqData = [
   {
@@ -11,7 +15,7 @@ const faqData = [
     question: "How does the presale work?",
 
     answer: `
-      <ul className="pl-5 sm:pl-8 text-white list-disc">
+      <ul className="pl-5 list-disc text-white sm:pl-8">
         <li>Pick your team: Doge ($DOGE) or Pepe ($PEPE).</li>
         <li>Buy tokens to support your chosen champion(s).</li>
         <li>Once the combined total hits $1 million, the team with the most funds raised is declared the winner.</li>
@@ -62,7 +66,7 @@ const faqData = [
   {
     question: "What happens if my team loses?",
     answer: `
-      <ul className="pl-5 sm:pl-8 text-white list-disc">
+      <ul className="pl-5 list-disc text-white sm:pl-8">
         <li>You will still receive the winning coin based on the amount of tokens you purchased.</li>
         <li>Your purchase will contribute to strengthening the liquidity pool of the winning token.</li>
       </ul>
@@ -112,7 +116,11 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
               !isOpen ? "bg-gradient-to-tr" : "bg-gradient-to-br"
             } from-[#DD5B01] to-[#00FF2F]`}
           >
-            <img src={arw} alt="arrow" className={`w-4 h-4 ${!isOpen ? "rotate-0" : "rotate-180"}`} />
+            <img
+              src={arw}
+              alt="arrow"
+              className={`w-4 h-4 ${!isOpen ? "rotate-0" : "rotate-180"}`}
+            />
           </div>
         </div>
         <div style={contentStyles}>
@@ -144,7 +152,27 @@ const FAQ = () => {
 
   return (
     <div className="relative faqs_bg_mob" id="faq">
-      <div className="w-[100%] max-w-[840px] pt-10 sm:pt-[73px] px-4 mx-auto pb-10 sm:pb-[63px] flex flex-col gap-4">
+      {/* <img
+        src={greenC1}
+        alt="greenC1"
+        className="absolute top-[160px] left-0 right-0 w-[160px] h-[160px]"
+      /> */}
+      <img
+        src={greenC2}
+        alt="greenC2"
+        className="absolute top-[-50px] left-[80px] right-0 w-[40px] h-[40px]"
+      />
+      {/* <img
+        src={top_shadow}
+        alt="top_shadow"
+        className="absolute top-0 left-0 w-full h-[100px]"
+      /> */}
+      <img
+        src={bottom_shadow}
+        alt="bottom_shadow"
+        className="absolute bottom-0 left-0 w-full h-[100px]"
+      />
+      <div className="w-[100%] max-w-[880px] pt-10 px-4 mx-auto flex flex-col gap-4">
         <div className="text-center">
           <h2 className="pb-[10px]">
             Frequently <br /> Asked Questions
@@ -194,10 +222,10 @@ export default FAQ;
 //         }`}
 //       >
 //         <div
-//           className="flex items-center justify-between gap-3 px-4 py-3 cursor-pointer"
+//           className="flex gap-3 justify-between items-center px-4 py-3 cursor-pointer"
 //           onClick={handleClick}
 //         >
-//           <div className="flex items-center gap-2">
+//           <div className="flex gap-2 items-center">
 //             <div
 //               dangerouslySetInnerHTML={{ __html: question }}
 //               className={`text-[16px] font-[Anton] text-[#fff] font-[400]`}
@@ -240,7 +268,7 @@ export default FAQ;
 //             Frequently <br /> Asked Questions
 //           </h2>
 //         </div>
-//         <div className="w-full mx-auto">
+//         <div className="mx-auto w-full">
 //           <div className="space-y-3">
 //             {faqData.map((faq, index) => (
 //               <FaqItem

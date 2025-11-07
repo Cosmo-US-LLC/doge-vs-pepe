@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Logo from "../../assets/Mobile/nav-logo.webp";
-import menuIcon from "../../assets/navbar/Group 1410124892.svg";
 import {
   Drawer,
   DrawerContent,
@@ -26,18 +25,18 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed w-[100%]  z-[99] bg-[#000000]">
+    <div className="fixed w-[100%]  z-[99999] bg-transparent backdrop-blur-[16px]">
       <div className="relative w-[100%] mx-auto h-[82px] px-4 flex justify-between items-center">
         <div className="flex items-center w-full">
           <Drawer open={open} onOpenChange={setOpen} direction="right">
-            <DrawerTrigger asChild>
-              <div className="w-full flex items-center justify-between gap-2">
-                <img
-                  src={Logo}
-                  alt="Logo"
-                  className="w-[200px] h-full rounded-full object-contain"
-                />
-                <div className="  cursor-pointer w-[48px] h-[48px] rounded-full flex items-center justify-center bg-[linear-gradient(105deg,#DD5B01_-7.63%,#00FF2F_123.65%)]">
+            <div className="flex gap-2 justify-between items-center w-full">
+              <img
+                src={Logo}
+                alt="Logo"
+                className="w-[200px] h-full rounded-full object-contain"
+              />
+              <DrawerTrigger asChild>
+                <button className="cursor-pointer w-[48px] h-[48px] rounded-full flex items-center justify-center bg-[linear-gradient(105deg,#DD5B01_-7.63%,#00FF2F_123.65%)]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -50,11 +49,11 @@ function Navbar() {
                       fill="#040404"
                     />
                   </svg>
-                </div>
-              </div>
-            </DrawerTrigger>
-            <DrawerContent className="h-full w-full max-w-none right-0 left-0 rounded-none bg-[#0A1E1A] border-none z-[9999]">
-              <div className="flex flex-col h-full nav_menu_mob_bg relative overflow-y-auto">
+                </button>
+              </DrawerTrigger>
+            </div>
+            <DrawerContent className="h-full w-full max-w-none right-0 left-0 rounded-none bg-[#0A1E1A] border-none z-[999999]">
+              <div className="flex overflow-y-auto relative flex-col h-full nav_menu_mob_bg">
                 {/* Header with Logo and Close Button */}
                 <div className="flex justify-between items-center px-6 pt-6 pb-4 border-b border-[rgba(255,255,255,0.1)]">
                   <div className="flex">
@@ -83,14 +82,13 @@ function Navbar() {
                 </div>
 
                 {/* Navigation Links */}
-                <div className="flex justify-center items-center flex-col gap-4 flex-1">
-                  <a
-                    href="#what-is-dogevsPepe"
+                <div className="flex flex-col flex-1 gap-4 justify-center items-center">
+                  <button
                     className="block navbar_link"
-                    onClick={(e) => handleScroll(e, "what-is-dogevsPepe", 90)}
+                    onClick={(e) => handleScroll(e, "what_is", 90)}
                   >
                     WHAT IS DOGEVSPEPE?
-                  </a>
+                  </button>
                   <a
                     href="#rules"
                     className="block navbar_link"
@@ -103,7 +101,7 @@ function Navbar() {
                     className="block navbar_link"
                     onClick={(e) => handleScroll(e, "prize-money", 60)}
                   >
-                    <span className="relative z-10 block">PRIZE MONEY</span>
+                    <span className="block relative z-10">PRIZE MONEY</span>
                   </a>
                   <a
                     href="#roadmap"
@@ -144,7 +142,7 @@ function Navbar() {
 
                 {/* Footer with Social Icons and Copyright */}
                 <div className="px-6 pb-6 pt-4 border-t border-[rgba(255,255,255,0.1)]">
-                  <div className="flex justify-center gap-4 mb-4">
+                  <div className="flex gap-4 justify-center mb-4">
                     {/* Telegram */}
                     <a
                       href="https://t.me/"
@@ -187,7 +185,7 @@ function Navbar() {
                     </a>
                     {/* Discord/Green Square */}
                     <a
-                      href="#"
+                      href="https://t.me/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-[50px] h-[50px] rounded-full bg-[#2A2A2A] flex items-center justify-center hover:bg-[#3A3A3A] transition-colors"
@@ -203,10 +201,14 @@ function Navbar() {
                           d="M16.9856 2.25H8.51442C7.53996 2.25 6.75 3.08932 6.75 4.12467V14.6253C6.75 15.6607 7.53996 16.5 8.51442 16.5H16.9856C17.96 16.5 18.75 15.6607 18.75 14.6253V4.12467C18.75 3.08932 17.96 2.25 16.9856 2.25Z"
                           fill="#00FF2F"
                         />
+                        <path
+                          d="M15.9 17.5687V17.9719C15.8998 18.5064 15.6874 19.0189 15.3094 19.3969C14.9314 19.7748 14.4189 19.9873 13.8844 19.9875H5.01562C4.48111 19.9873 3.96856 19.7748 3.5906 19.3969C3.21264 19.0189 3.00021 18.5064 3 17.9719V7.4906C3.00021 6.95609 3.21264 6.44353 3.5906 6.06557C3.96856 5.68762 4.48111 5.47519 5.01562 5.47498H5.33018V14.8517C5.33188 15.5717 5.61867 16.2618 6.12783 16.771C6.63698 17.2802 7.32706 17.567 8.04713 17.5687H15.9Z"
+                          fill="#00FF2F"
+                        />
                       </svg>
                     </a>
                   </div>
-                  <p className="text-center text-[#FFF] text-[12px] font-[400] leading-[16px]">
+                  <p className="text-center description text-[#FFF]">
                     Copyright 2025 DogevsPepe | All rights reserved.
                   </p>
                 </div>
