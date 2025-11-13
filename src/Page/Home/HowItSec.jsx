@@ -10,9 +10,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useRef } from "react";
 
-import img1 from "../../assets/HowItSec/v2_c1.webp";
-import img2 from "../../assets/HowItSec/v2_c2.webp";
-import img3 from "../../assets/HowItSec/v2_c3.webp";
+import img1 from "../../assets/HowItSec/v3_c1 (3).webp";
+import img2 from "../../assets/HowItSec/v3_c1 (2).webp";
+import img3 from "../../assets/HowItSec/v3_c1 (1).webp";
 import img4 from "../../assets/HowItSec/v2_c4.webp";
 import img5 from "../../assets/HowItSec/v2_c5.webp";
 import img6 from "../../assets/HowItSec/v2_c6.webp";
@@ -27,11 +27,11 @@ const sliderData = [
   },
   {
     img: img2,
-    text: "📹 CCTV footage leaked! The Doge vs. Pepe brawl at the MOON Lounge has been caught on camera! See what really went down last night!",
+    text: `🗣️ "When DOGE and PEPE bumped into each other, it all went downhill quickly. Satoshi Whiskey flew, fists followed, and the cops ended it with handcuffs!" - Anonymous Witness`,
   },
   {
     img: img3,
-    text: "🚨 Breaking News: Police have released mugshots! Meme heavyweights Doge and Pepe are set to appear before a judge tomorrow following their arrest after a physical altercation at the MOON Club.",
+    text: "📹 CCTV footage leaked! The Doge vs. Pepe brawl at the MOON Lounge has been caught on camera! See what really went down last night!",
   },
   {
     img: img4,
@@ -65,7 +65,7 @@ function HowItSec() {
 
   const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
   return (
-    <div className="w-[100%] h-[700px] flex justify-center items-center how_it_all_began_bg relative overflow-hidden  ">
+    <div className="w-[100%] h-[730px] flex justify-center items-center how_it_all_began_bg relative overflow-hidden  ">
       <div className="max-w-[1280px] w-[100%] mx-auto relative flex flex-col justify-center items-center gap-[40px]">
         <h2 className="text-center">HOW IT ALL BEGAN</h2>
 
@@ -121,7 +121,7 @@ function HowItSec() {
 
         <div className="flex justify-center">
           <button
-            className="btn-primary gradient-bg"
+            className="btn-primary gradient-bg min-w-[429.75px] w-[100%] h-[95px] !text-[30px]"
             onClick={() => {
               document.getElementById("wallet")?.scrollIntoView({
                 behavior: "smooth",

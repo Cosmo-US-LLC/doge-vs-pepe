@@ -16,8 +16,13 @@ function DontWaitSec() {
       />
       <div className="space-y-[35px]">
         <div
-          className="w-[987px] h-[330px] flex flex-col justify-center items-center rounded-[26.9px] relative border border-neutral-400 bg-[#0101019f]"
-          style={{ backdropFilter: "blur(0px)" }}
+          className="w-[987px] h-[380px] flex flex-col justify-center items-center rounded-[26.9px] relative "
+          style={{
+            background: "rgba(4, 4, 4, 0.10)",
+            backdropFilter: "blur(15px)",
+            border: "1px solid #00ff2f ",
+               borderRadius: "26.9px",
+          }}
         >
           <div className="space-y-[27px] flex flex-col items-center justify-center">
             <h3 className="text-center section_heading">
@@ -34,9 +39,9 @@ function DontWaitSec() {
             </h4>
           </div>
         </div>
-        <div className="flex justify-center absolute bottom-[126px] left-0 right-0">
+        <div className="flex justify-center absolute bottom-[115px] left-0 right-0">
           <button
-            className="w-[457px] btn-primary gradient-bg mx-auto h-[65px]   relative z-10"
+            className="w-[429.75px] btn-primary gradient-bg mx-auto h-[95px]   relative z-10"
             onClick={() => {
               document.getElementById("wallet")?.scrollIntoView({
                 behavior: "smooth",

@@ -108,10 +108,10 @@ export default function FightRules({ backgroundUrl }) {
                         {rule.title}
                       </p>
                       <div className="w-8 h-8 accordion-gradient-bg-arrow rounded-full flex justify-center items-center group-data-[state=open]:hidden">
-                        <ChevronDown className="text-white w-6 h-6" />
+                        <ChevronDown className="text-[#040404] w-6 h-6" />
                       </div>
                       <div className="w-8 h-8 accordion-gradient-bg-arrow rounded-full flex justify-center items-center hidden group-data-[state=open]:flex">
-                        <ChevronUp className="text-white w-6 h-6" />
+                        <ChevronUp className="text-[#040404] w-6 h-6" />
                       </div>
                     </div>
                   </AccordionTrigger>

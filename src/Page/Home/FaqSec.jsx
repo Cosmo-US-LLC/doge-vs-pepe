@@ -147,11 +147,11 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
         }`}
       >
         <div
-          className="flex justify-between items-center px-8 pb-2 gap-[25px] cursor-pointer"
+          className="flex justify-between items-center px-8 pb-2 gap-[25px] cursor-pointer z-10"
           onClick={handleClick}
         >
-          <div className="flex items-center justify-center gap-5 xs:pt-[14px]">
-            <div className="text-[24px] leading-[64px] text-[#fff] font-[400] font-anton uppercase">
+          <div className="flex items-center justify-center gap-5 xs:pt-[14px]  z-[20] pointer-events-auto">
+            <div className="text-[24px] leading-[64px] text-[#fff] font-[400] font-anton uppercase ">
               {question}
             </div>
           </div>

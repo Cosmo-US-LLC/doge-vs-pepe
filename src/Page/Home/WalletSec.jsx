@@ -126,16 +126,16 @@ function HeroWalletSec({
             {/* Main Progress Bar */}
             <div className="relative z-[99] p-2">
               {/* Background Bar with Glowing Border */}
-              <div className="h-[60px]  rounded-[30px] relative overflow-hidden  border-[2px] border-[#E67500]">
+              <div className="h-[80px]  rounded-[30px] relative overflow-hidden  border-[2px] border-[#E67500]">
                 <div
-                  className="w-full h-full rounded-[28px]  relative overflow-hidden"
+                  className="w-full h-full flex rounded-[28px] relative overflow-hidden"
                   style={{
-                    background: "",
+                    background: "rgba(1, 47, 43, 0.72)",
                   }}
                 >
                   {/* Gradient Fill */}
                   <div
-                    className="absolute inset-3 left-[120px] right-[120px] rounded-[26px]"
+                    className="absolute  h-[30px] inset-3 top-[23.5px] left-[170px] right-[170px] rounded-[26px]"
                     style={{
                       background:
                         "linear-gradient(90deg, #E67500 0%, #FFFFFF 50%, #00FF2F 100%)",
@@ -146,7 +146,7 @@ function HeroWalletSec({
                   <div className="absolute left-0 top-0 h-full flex items-center pl-4 z-10">
                     <div className="flex items-center space-x-3">
                       <img src={doge_icn} alt="Doge" className="w-8 h-8" />
-                      <span className="text-white text-2xl font-bold font-anton">
+                      <span className="text-white text-[48px] font-[400] font-anton">
                         18%
                       </span>
                     </div>
@@ -155,7 +155,7 @@ function HeroWalletSec({
                   {/* Right End - Pepe */}
                   <div className="absolute right-0 top-0 h-full flex items-center pr-4 z-10">
                     <div className="flex items-center space-x-3">
-                      <span className="text-white text-2xl font-bold font-anton">
+                      <span className="text-white text-[48px] font-[400] font-anton">
                         24%
                       </span>
                       <img src={pepe_icn} alt="Pepe" className="w-8 h-8" />

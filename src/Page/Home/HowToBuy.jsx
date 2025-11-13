@@ -28,7 +28,7 @@ export default function HowToBuy() {
 
   return (
     <section
-      className="relative isolate w-full h-[800px] how_to_buy_bg flex "
+      className="relative isolate w-full h-[830px] how_to_buy_bg flex "
       aria-label="How to buy section"
       id="how_to_buy"
     >
@@ -77,7 +77,7 @@ export default function HowToBuy() {
                 behavior: "smooth",
               });
             }}
-            className="w-[457px] h-[65px] gradient-bg mx-auto flex items-center justify-center 
+            className="w-[429.75px] h-[95px] !text-[30px] gradient-bg mx-auto flex items-center justify-center 
               btn-primary relative z-10 
               "
           >
