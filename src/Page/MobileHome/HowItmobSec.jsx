@@ -12,9 +12,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 
-import img1 from "../../assets/HowItSec/v3_c1 (3).webp";
-import img2 from "../../assets/HowItSec/v3_c1 (2).webp";
-import img3 from "../../assets/HowItSec/v3_c1 (1).webp";
+import img1 from "../../assets/HowItSec/v2_c1.webp";
+import img2 from "../../assets/HowItSec/v2_c2.webp";
+import img3 from "../../assets/HowItSec/v2_c3.webp";
 import img4 from "../../assets/HowItSec/v2_c4.webp";
 import img5 from "../../assets/HowItSec/v2_c5.webp";
 import img6 from "../../assets/HowItSec/v2_c6.webp";
@@ -79,7 +79,7 @@ function HowItmobSec() {
           How It All Began
         </h3>
         <br />
-        <div className="howitborder">
+        <div className="gradient-bg overflow-hidden rounded-[20px] p-[1px]">
           <Swiper
             modules={[Navigation]}
             spaceBetween={20}
@@ -89,19 +89,19 @@ function HowItmobSec() {
               nextEl: ".swiper-button-next4",
               prevEl: ".swiper-button-prev4",
             }}
-            className="max-w-[380px] h-[446px]"
+            className="max-w-[350px] h-[426px] rounded-[20px]"
           >
             {sliderData.map((item, index) => (
               <SwiperSlide
                 key={index}
-                className="relative p-0 h-[446px] flex flex-col justify-end rounded-[20px] overflow-hidden"
+                className="relative p-0  h-[456px] flex flex-col justify-end rounded-[20px] overflow-hidden"
               >
                 <img
                   src={item.img}
                   alt={`Slide ${index + 1}`}
-                  className="absolute w-full h-full top-0 left-0 object-cover z-0"
+                  className="absolute top-0 left-0 z-0 object-cover w-full h-full"
                 />
-                <p className="absolute bottom-0 z-10 font-[Helvetica] pb-4 w-[100%] font-[400] mx-auto text-[#fff] leading-[157%] text-[14px] text-center">
+                <p className="absolute bottom-0 z-10 description pb-2 mx-auto text-[#fff] text-center">
                   {item.text}
                 </p>
               </SwiperSlide>
@@ -109,15 +109,11 @@ function HowItmobSec() {
           </Swiper>
         </div>
 
-        <div className="pt-2.5 flex justify-center items-center gap-2">
-          <div
-            className="swiper-button-prev4 flex justify-center items-center h-[60px] w-[60px] aspect-square border border-white/10 bg-white/20 rounded-full"
-          >
+        <div className="flex items-center justify-center gap-2 pt-6">
+          <div className="swiper-button-prev4 flex justify-center items-center h-[60px] w-[60px] aspect-square border border-white/10 bg-white/20 rounded-full">
             <ChevronLeft className="text-[#E67500]" />
           </div>
-          <div
-            className="swiper-button-next4 flex justify-center items-center h-[60px] w-[60px] aspect-square border border-white/10 bg-white/20 rounded-full"
-          >
+          <div className="swiper-button-next4 flex justify-center items-center h-[60px] w-[60px] aspect-square border border-white/10 bg-white/20 rounded-full">
             <ChevronRight className="text-[#E67500]" />
           </div>
         </div>

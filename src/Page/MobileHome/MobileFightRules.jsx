@@ -3,6 +3,7 @@ import bgImage from "../../assets/mobile_assets/mob_two_led_first.png";
 import { Plus, Minus, ChevronDown } from "lucide-react";
 import arw from "../../assets/footer/Group 1410124940.svg";
 import quote from "../../assets/fightRule/quote.png";
+import bottom_shadow from "../../assets/fightRule/bottom_shadow.webp";
 
 const FaqItem = ({ index, title, desc, isOpen, handleClick }) => {
   const contentStyles = {
@@ -10,7 +11,7 @@ const FaqItem = ({ index, title, desc, isOpen, handleClick }) => {
     opacity: isOpen ? "1" : "0",
     color: isOpen ? "#ffffff99" : "#ffffff99",
     overflow: "hidden",
-    transition: "max-height 0.9s ease, opacity 2s ease",
+    transition: "max-height 0.2s ease, opacity 1s ease",
   };
 
   return (
@@ -88,7 +89,7 @@ const MobileFightRules = () => {
 
   return (
     <div className="relative fightRules_bg_mob" id="rules">
-      <div className="w-[100%] max-w-[840px] pt-10 sm:pt-[73px] px-4 mx-auto pb-10 sm:pb-[63px] flex flex-col gap-4">
+      <div className="w-[100%] max-w-[840px] pt-10   px-4 mx-auto pb-4  flex flex-col gap-4">
         <div className="text-center">
           <h2 className="pb-[10px]">THE FIGHT RULES</h2>
           <div className="h-[140px]" />
@@ -107,6 +108,11 @@ const MobileFightRules = () => {
             ))}
           </div>
         </div>
+        <img
+          src={bottom_shadow}
+          alt="bottom_shadow"
+          className="absolute bottom-0 left-0 right-0 w-full h-[40px]"
+        />
         <img src={quote} alt="Quote" className="object-contain w-full h-auto" />
       </div>
     </div>
@@ -182,15 +188,15 @@ export default MobileFightRules;
 
 //                   <button
 //                     onClick={() => toggleAccordion(index)}
-//                     className="w-full flex items-center justify-between text-left"
+//                     className="flex justify-between items-center w-full text-left"
 //                   >
 //                     <p className="text-[24px] font-[400] leading-[133.333%] tracking-wide text-[#fff] uppercase font-anton">
 //                       {rule.title}
 //                     </p>
 //                     {openIndex === index ? (
-//                       <Minus className="text-white w-6 h-6" />
+//                       <Minus className="w-6 h-6 text-white" />
 //                     ) : (
-//                       <Plus className="text-white w-6 h-6" />
+//                       <Plus className="w-6 h-6 text-white" />
 //                     )}
 //                   </button>
 
