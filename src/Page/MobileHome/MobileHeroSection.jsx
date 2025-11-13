@@ -1,7 +1,7 @@
+import DVPHeromob from "../../assets/hero/v2_hero_section_dvp_mob.webp";
 import hero_msg from "../../assets/hero/v2_hero_msg.webp";
-import dvp_fight_video from "../../assets/hero/dvp_fight_video.webm";
-import bottom_shadow from "../../assets/fightRule/bottom_shadow.webp";
 import BannerSecMob from "./BannerSecMob";
+
 
 function MobileHeroSection() {
   return (
