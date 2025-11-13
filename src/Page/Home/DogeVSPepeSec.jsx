@@ -39,9 +39,8 @@ function DogeVSPepeSec() {
             />
 
             {/* Text Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-[#000000] to-transparent flex flex-col justify-end">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end">
               <div className="flex flex-col gap-4 ">
-                 <div className="min-h-[130px]">
                 <h3 className=" px-6 text-[28px] font-bold text-white uppercase font-anton leading-tight">
                   THE OG MEME IS BACK!
                 </h3>
@@ -51,8 +50,6 @@ function DogeVSPepeSec() {
                   strongest community. Will Doge stay on top, or is Pepe set to
                   dethrone him? The battle is on!
                 </p>
-
-                </div>
 
                 <div className="flex justify-between items-center bg-[#fff] h-[60px] p-6">
                   <div className="flex items-center space-x-2">
@@ -77,9 +74,8 @@ function DogeVSPepeSec() {
             />
 
             {/* Text Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-[#000000] to-transparent flex flex-col justify-end">
-              <div className="flex flex-col gap-4">
-                <div className="min-h-[130px]">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end">
+              <div className="flex flex-col gap-2">
                 <h3 className=" px-6 text-[28px] font-bold text-white uppercase font-anton leading-tight">
                   TWO LEGENDS FACE OFF
                 </h3>
@@ -90,7 +86,6 @@ function DogeVSPepeSec() {
                   Backed by two of the most iconic meme coins, this might just
                   be it.
                 </p>
-                </div>
 
                 <div className="flex justify-between items-center bg-[#fff] h-[60px] p-6">
                   <div className="flex items-center space-x-2">
@@ -119,10 +114,9 @@ function DogeVSPepeSec() {
             />
 
             {/* Text Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80  via-[#000000] to-transparent flex flex-col justify-end">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end">
               <div className="flex flex-col gap-4">
-                <div className="min-h-[130px]">
-                  <h3 className=" px-6 text-[28px] font-bold text-white uppercase font-anton leading-tight">
+                <h3 className=" px-6 text-[28px] font-bold text-white uppercase font-anton leading-tight">
                   THE NEW MEME KING?
                 </h3>
 
@@ -131,7 +125,6 @@ function DogeVSPepeSec() {
                   rumors of well-known crypto developers behind the project.
                   This could be the next big thing!
                 </p>
-                </div>
 
                 <div className="flex justify-between items-center bg-[#fff] h-[60px] p-6">
                   <div className="flex items-center space-x-2">

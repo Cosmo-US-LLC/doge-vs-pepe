@@ -30,39 +30,35 @@ const sliderData = [
   },
   {
     img: img2,
-    text: "🗣 When DOGE and PEPE bumped into each other, it all went downhill quickly. Satoshi Whiskey flew, fists followed, and the cops ended it with handcuffs! 👮🚨",
-  },
-  {
-    img: img3,
     text: "📹 CCTV footage leaked! The Doge vs. Pepe brawl at the MOON Lounge has been caught on camera! See what really went down last night!",
   },
   {
-    img: img4,
+    img: img3,
     text: "🚨 Breaking News: Police have released mugshots! Meme heavyweights Doge and Pepe are set to appear before a judge tomorrow following their arrest after a physical altercation at the MOON Club.",
   },
   {
-    img: img5,
+    img: img4,
     text: "📷 Doge and Pepe being transported to the City County Meme Jail",
   },
   {
-    img: img6,
+    img: img5,
     text: "🔒 Pictures show the famous meme heavyweight champs Doge and Pepe in police custody after the infamous brawl at the Moon Lounge.",
   },
   {
-    img: img7,
+    img: img6,
     text: "⚖️ Meme heavyweight champions Doge and Pepe have each been sentenced to a 3-year probation period and 100 hours of charitable work following their nightclub altercation.",
   },
   {
+    img: img7,
+    text: "Doge and Pepe were spotted leaving the court, both hinting at unfinished business without revealing any details. Rumors are now spreading about a potential fight in the near future.",
+  },
+  {
     img: img8,
-    text: "🏛 Doge and Pepe were spotted leaving the court, both hinting at 'unfinished business' without revealing any details. Rumors are now spreading about a potential fight in the near future.",
+    text: "🐶 Doge, the undefeated Meme Heavyweight, is back on social media after his release from custody. He shared a gym post captioned Back to Work, fueling more rumors of a potential fight with Pepe.",
   },
   {
     img: img9,
-    text: "🐶 Doge, the undefeated Meme Heavyweight, is back on social media after his release from custody. He shared a gym post captioned “Back to Work,” fueling more rumors of a potential fight with Pepe.",
-  },
-  {
-    img: img7,
-    text: "🐸 Pepe responds with a post of him casually leaning against a wall, captioned: I’m always ready, especially after the nightclub thing. I saw the dog in his eyes. No more games. Let’s fight! This time, no one’s saving you!",
+    text: "🐸 Pepe responds with a post of him casually leaning against a wall, captioned: I'm always ready, especially after the nightclub thing. I saw the dog in his eyes. No more games. Let's fight! This time, no one's saving you!",
   },
 ];
 
@@ -71,10 +67,10 @@ function HowItmobSec() {
   const nextRef = useRef(null);
   return (
     <div
-      className="w-[100%] min-h-[658px] flex items-end  overflow-hidden pt-[60px] pb-[100px]"
+      className="w-[100%] min-h-[658px] flex items-end  overflow-hidden pt-[50px] pb-[40px]"
       id="how-it-all-began"
     >
-      <div className="relative w-[90%] mx-auto min-h-[578px]">
+      <div className="relative w-full px-4 mx-auto min-h-[558px]">
         <h3 className="text-[#FFFCFC] font-[Anton]  text-center text-[32px] leading-[104.377%] font-[400]">
           How It All Began
         </h3>

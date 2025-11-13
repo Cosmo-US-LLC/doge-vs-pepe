@@ -750,7 +750,6 @@ function HeroWalletSec() {
           </div>
         </div>
       </div>
-    
     </div>
   );
 }
