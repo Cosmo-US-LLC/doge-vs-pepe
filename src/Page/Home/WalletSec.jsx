@@ -38,9 +38,14 @@ import WidgetMob from "../../component/Widget/WidgetMob";
 import TokenSelectDropdown from "../../component/TokenDropdown";
 
 const Buybuttons = [
-  { id: "Buy", label: "Buy", img: arwbtn1 },
+  { id: "Buy", label: "Buy TEAM DOGE", img: arwbtn1 },
   { id: "Transactions ", label: "Transactions ", img: arwbtn3 },
 ];
+const BuybuttonsPepe = [
+  { id: "Buy", label: "Buy TEAM Pepe", img: arwbtn1 },
+  { id: "Transactions ", label: "Transactions ", img: arwbtn3 },
+];
+
 
 const tokenSelect = [
   [
@@ -203,21 +208,26 @@ function HeroWalletSec({
             </div> */}
 
             <div className="px-4 bg-[#040404] z-[99] w-[100%] space-y-[10px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
-              <div className="bg-[rgba(255, 255, 255, 0.10)] flex justify-between rounded-[30px] border border-[rgba(255, 255, 255, 0.20)]">
+              <div className="flex justify-between rounded-[30px]  "
+              style={{
+                background:"rgba(255, 255, 255, 0.10)",
+                border:"1px solid rgba(255, 255, 255, 0.20)"
+              }}
+              >
                 {Buybuttons.map((button) => (
                   <div
                     key={button.id}
                     onClick={() => setActiveButton(button.id)}
-                    className={`w-[100%] rounded-[30px] space-x-[4px] flex justify-center items-center cursor-pointer ${
+                    className={`w-[100%] rounded-[30px] space-x-[4px] p-[4px] flex justify-center items-center cursor-pointer ${
                       activeButton === button.id
                         ? "bg-[#E67500] border border-black"
                         : "text-[#000]"
                     }`}
                   >
                     <p
-                      className={`text-[18px] font-[Helvetica] font-[700] ${
+                      className={`text-[16.5px] uppercase font-[400] ${
                         activeButton === button.id
-                          ? "text-[#fff]"
+                          ? "text-[#000]"
                           : "text-[#fff]"
                       }`}
                     >
@@ -226,7 +236,7 @@ function HeroWalletSec({
                   </div>
                 ))}
               </div>
-              <div className="space-y-[10px]">
+              <div className="space-y-[10px] !mb-4 !mt-4">
                 <h3 className="text-[50px] font-[400] font-[Anton] text-center leading-[ 76%] text-[#fff]">
                   180,492.39
                 </h3>
@@ -272,14 +282,22 @@ function HeroWalletSec({
                     ))}
                   </div>
                 </div>
-                <div className="bg-[rgba(255, 255, 255, 0.10)] border-[1px] border-[rgba(255, 255, 255, 0.20)] px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[8px]">
+                <div className="px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[15px]"
+                  style={{
+                background:"rgba(255, 255, 255, 0.10)",
+                border:"1px solid rgba(255, 255, 255, 0.20)"
+              }}
+                >
                   <div className="">
-                    <h5 className=" text-[16px] text-[#fff] leading-[16px] font-[400] font-[Anton]">
+                    <h5 className="font-[Mont] text-[16px] text-[#fff] leading-[16px] font-[400]"
+                      style={{
+                      color:"rgba(255, 255, 255, 0.60)"
+                    }}>
                       You pay
                     </h5>
                     <input
                       type="text"
-                      className=" w-[73px] text-[16px] text-[#fff] font-[Anton] font-[400] bg-[transparent] outline-none"
+                      className=" w-[73px] text-[24px] text-[#fff] font-[Anton] font-[400] bg-[transparent] outline-none"
                       defaultValue={1}
                     />
                   </div>
@@ -291,14 +309,22 @@ function HeroWalletSec({
                     />
                   </div>
                 </div>
-                <div className="bg-[rgba(255, 255, 255, 0.10)] border-[1px] border-[rgba(255, 255, 255, 0.20)] relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[8px] ">
+                <div className="relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[15px] "
+                style={{
+                background:"rgba(255, 255, 255, 0.10)",
+                border:"1px solid rgba(255, 255, 255, 0.20)"
+              }}
+                >
                   <div className="w-[50%]">
-                    <h5 className="font-[Anton] text-[#fff] text-[16px] leading-[16px] font-[400]">
+                    <h5 className="font-[Mont] text-[16px] text-[#fff] leading-[16px] font-[400]"
+                      style={{
+                      color:"rgba(255, 255, 255, 0.60)"
+                    }}>
                       You receive
                     </h5>
                     <input
                       type="text"
-                      className="text-[16px] font-[400] text-[#fff] font-[Anton] bg-[transparent] outline-none"
+                      className="text-[24px] font-[400] text-[#fff] font-[Anton] bg-[transparent] outline-none"
                       defaultValue={`7,414,420`}
                     />
                   </div>
@@ -526,10 +552,10 @@ function HeroWalletSec({
           <div className="flex w-[20%] h-auto items-start justify-center">
             <div className="p-[1.5px] rounded-xl h-auto gradient-bg inline-block mt-[500px]">
               <div className="bg-[#063b3b] rounded-xl px-6 py-4 text-center">
-                <p className="text-sm font-bold tracking-widest text-white">
+                <p className="text-sm !font-[400] tracking-widest text-white">
                   TIME LEFT:
                 </p>
-                <h2 className="font-mono text-4xl font-bold text-white">
+                <h2 className="font-mono text-4xl !font-[400] text-white">
                   {formatTime(time)}
                 </h2>
               </div>
@@ -570,12 +596,17 @@ function HeroWalletSec({
             </div> */}
 
             <div className="px-4 bg-[#040404] z-[99] w-[100%] space-y-[10px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
-              <div className="bg-[rgba(255, 255, 255, 0.10)] flex justify-between rounded-[30px] border border-[rgba(255, 255, 255, 0.20)]">
-                {Buybuttons.map((button) => (
+              <div className="flex justify-between rounded-[30px]"
+               style={{
+                background:"rgba(255, 255, 255, 0.10)",
+                border:"1px solid rgba(255, 255, 255, 0.20)"
+              }}
+              >
+                {BuybuttonsPepe.map((button) => (
                   <div
                     key={button.id}
                     onClick={() => setActiveButtonPepe(button.id)}
-                    className={`w-[100%] rounded-[30px] space-x-[4px] flex justify-center items-center cursor-pointer ${
+                    className={`w-[100%] rounded-[30px] space-x-[4px] p-[4px] flex justify-center items-center cursor-pointer ${
                       activeButtonPepe === button.id
                         ? "bg-[#00FF2F] "
                         : "text-[#000]"
@@ -587,9 +618,9 @@ function HeroWalletSec({
                     alt={button.label}
                   /> */}
                     <p
-                      className={`text-[18px] font-[Helvetica] font-[700] ${
+                      className={`text-[16.5px] font-[400] uppercase ${
                         activeButtonPepe === button.id
-                          ? "text-[#fff]"
+                          ? "text-[#000]"
                           : "text-[#fff]"
                       }`}
                     >
@@ -598,7 +629,7 @@ function HeroWalletSec({
                   </div>
                 ))}
               </div>
-              <div className="space-y-[8px]">
+              <div className="space-y-[8px] !mb-4 !mt-4">
                 <h3 className="text-[50px] font-[400] font-[Anton] text-center leading-[ 76%] text-[#fff]">
                   240,492.39
                 </h3>
@@ -644,14 +675,23 @@ function HeroWalletSec({
                     ))}
                   </div>
                 </div>
-                <div className="bg-[rgba(255, 255, 255, 0.10)] border-[1px] border-[#fff] px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[8px]">
+                <div className="px-2 flex relative z-[9] justify-between items-center  py-2 rounded-[8px]"
+                style={{
+                background:"rgba(255, 255, 255, 0.10)",
+                border:"1px solid rgba(255, 255, 255, 0.20)"
+              }}
+                >
                   <div className="">
-                    <h5 className=" text-[16px] text-[#fff] leading-[16px] font-[400] font-[Anton]">
+                    <h5 className=" text-[16px]  leading-[16px] font-[400] font-[Mont]"
+                    style={{
+                      color:"rgba(255, 255, 255, 0.60)"
+                    }}
+                    >
                       You pay
                     </h5>
                     <input
                       type="text"
-                      className=" w-[73px] text-[16px] text-[#fff] font-[Anton] font-[400] bg-[transparent] outline-none"
+                      className=" w-[73px] text-[24px] text-[#fff] font-[Anton] font-[400] bg-[transparent] outline-none"
                       defaultValue={1}
                     />
                   </div>
@@ -663,14 +703,23 @@ function HeroWalletSec({
                     />
                   </div>
                 </div>
-                <div className="bg-[rgba(255, 255, 255, 0.10)] border-[1px] border-[rgba(255, 255, 255, 0.20)] relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[8px] ">
+                <div className=" relative z-[1] px-2 flex justify-between items-center  py-2 rounded-[15px] "
+                  style={{
+                background:"rgba(255, 255, 255, 0.10)",
+                border:"1px solid rgba(255, 255, 255, 0.20)"
+              }}
+                >
                   <div className="w-[50%]">
-                    <h5 className="font-[Anton] text-[16px] text-[#fff] leading-[16px] font-[400]">
+                    <h5 className="font-[Mont] text-[16px] text-[#fff] leading-[16px] font-[400]"
+                      style={{
+                      color:"rgba(255, 255, 255, 0.60)"
+                    }}
+                    >
                       You receive
                     </h5>
                     <input
                       type="text"
-                      className="text-[16px] font-[400] text-[#fff] font-[Anton] bg-[transparent] outline-none"
+                      className="text-[24px] font-[400] text-[#fff] font-[Anton] bg-[transparent] outline-none"
                       defaultValue={`7,414,420`}
                     />
                   </div>
