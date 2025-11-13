@@ -41,6 +41,7 @@ function Home() {
         <WalletSec />
         <HowToBuy />
         <PrizeMoneySec />
+        
         <CommunitySec />
         <HowItSec />
         <TokenSec />
