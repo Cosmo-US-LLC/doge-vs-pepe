@@ -40,7 +40,7 @@ function DogeVsPepeNews() {
   ];
 
   return (
-    <section className="w-full py-8 mt-[-400px]">
+    <section className="w-full py-8 ">
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-[1280px] mx-auto px-4 md:px-8">
         {newsPanels.map((panel) => (
           <div key={panel.id} className="relative">
