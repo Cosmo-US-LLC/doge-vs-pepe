@@ -10,9 +10,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useRef } from "react";
 
-import img1 from "../../assets/HowItSec/v2_c1.webp";
-import img2 from "../../assets/HowItSec/v2_c2.webp";
-import img3 from "../../assets/HowItSec/v2_c3.webp";
+import img1 from "../../assets/HowItSec/v3_c1 (3).webp";
+import img2 from "../../assets/HowItSec/v3_c1 (2).webp";
+import img3 from "../../assets/HowItSec/v3_c1 (1).webp";
 import img4 from "../../assets/HowItSec/v2_c4.webp";
 import img5 from "../../assets/HowItSec/v2_c5.webp";
 import img6 from "../../assets/HowItSec/v2_c6.webp";

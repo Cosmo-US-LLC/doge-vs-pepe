@@ -11,10 +11,16 @@ import dogeFight from "../../assets/DogeVSPepeSec/card3-mob.png";
 import pepeFight from "../../assets/mobile_assets/card_dvp_2.png";
 import cryShadow from "../../assets/DogeVSPepeSec/cry-shadow.png";
 import { ChevronRight } from "lucide-react";
+import bottom_shadow from "../../assets/fightRule/bottom_shadow.webp";
 
 function DogeVSPepeMobSec() {
   return (
     <div className="relative w-[100%] pt-[40px] pb-[40px] dogeVsPepeBG overflow-hidden">
+      <img
+        src={bottom_shadow}
+        alt="bottom_shadow"
+        className="absolute bottom-0 left-0 right-0 w-full h-[40px]"
+      />
       <div className=" w-[90%] space-y-[43px] mx-auto ">
         <div className=" w-[100%]">
           <h3 className="text-[32px] text-center font-[Anton] flex flex-col items-center leading-[125%] font-[400] text-[#FFF] uppercase">
@@ -29,7 +35,7 @@ function DogeVSPepeMobSec() {
                 <img
                   alt="doge"
                   src={dogeBox}
-                  className="w-full h-full object-cover"
+                  className="object-cover w-full h-full"
                 />
               </div>
               <div className="relative p-[20px] z-10 flex flex-col w-full space-y-2">
@@ -58,7 +64,7 @@ function DogeVSPepeMobSec() {
                 <img
                   alt="doge"
                   src={dogePepe}
-                  className="w-full h-full object-cover"
+                  className="object-cover w-full h-full"
                 />
               </div>
               <div className="relative p-[20px] z-10 flex flex-col w-full space-y-2">
@@ -88,7 +94,7 @@ function DogeVSPepeMobSec() {
                 <img
                   alt="doge"
                   src={dogeFight}
-                  className="w-full h-full object-cover"
+                  className="object-cover w-full h-full"
                 />
               </div>
               <div className="relative p-[20px] z-10 flex flex-col w-full space-y-2">

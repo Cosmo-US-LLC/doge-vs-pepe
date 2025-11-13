@@ -28,6 +28,7 @@ function App() {
 
   return (
     <div className="bg-[black] w-[100%]">
+      <Preloader />
       <div>
         <div>{isMobile ? <MobileHome /> : <Home />}</div>
         <Toaster position="bottom-center" />

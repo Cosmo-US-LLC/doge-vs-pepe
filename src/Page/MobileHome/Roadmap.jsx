@@ -36,7 +36,7 @@ function RoadmapMob() {
     {
       title: "Preparation:",
       description:
-        "Rise as the fearless challenger. Unite Pepe fans across the globe and build unstoppable momentum toward the top.  ",
+        "Rise as the fearless challenger. Unite Pepe fans across the globe and build unstoppable momentum toward the top. ",
     },
     {
       title: "The Fight:",
@@ -62,11 +62,9 @@ function RoadmapMob() {
     >
       <div className="space-y-[40px]">
         <div>
-          <div className="Roadmap_Mob_bg p-3 text-center">
+          <div className="p-3 text-center Roadmap_Mob_bg">
             <h3>TEAM DOGE</h3>
-            <h3 className="text-[#E67500] text-center mb-8  ">
-              ROADMAP
-            </h3>
+            <h3 className="text-[#E67500] text-center mb-8  ">ROADMAP</h3>
             <div className="h-[578px]" />
             <div className="space-y-6">
               {dogeRoadmapPhases.map((phase, index) => (
@@ -76,7 +74,7 @@ function RoadmapMob() {
                     "border border-[#E67500] rounded-[30px] bg-white/10 py-4 px-[30px]"
                   }
                 >
-                  <div>
+                  <div className="text-left">
                     <h4 className="text-[#E67500]">{phase.title}</h4>
                     <p className="pt-2.5 text-[16px] text-[#fff] font-[400] font-helvetica leading-relaxed">
                       {phase.description}
@@ -88,11 +86,9 @@ function RoadmapMob() {
           </div>
 
           {/* Right Div - Team Pepe Roadmap */}
-          <div className="Roadmap_Mob_bg2 p-3 text-center">
+          <div className="p-3 mt-2 text-center Roadmap_Mob_bg2">
             <h3>TEAM PEPE</h3>
-            <h3 className="text-[#4FFF2D] text-center mb-8  ">
-              ROADMAP
-            </h3>
+            <h3 className="text-[#4FFF2D] text-center mb-8  ">ROADMAP</h3>
             <div className="h-[667px]" />
             <div className="space-y-6">
               {pepeRoadmapPhases.map((phase, index) => (
@@ -102,7 +98,7 @@ function RoadmapMob() {
                     "border border-[#4FFF2D] rounded-[30px] bg-white/10 py-4 px-[30px]"
                   }
                 >
-                  <div>
+                  <div className="text-left">
                     <h4 className="text-[#4FFF2D]">{phase.title}</h4>
                     <p className="pt-2.5 text-[16px] text-[#fff] font-[400] font-helvetica leading-relaxed">
                       {phase.description}

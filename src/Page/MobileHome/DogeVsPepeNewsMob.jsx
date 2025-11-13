@@ -5,7 +5,7 @@ import panel4 from "../../assets/news/v2_img_4.webp";
 import panel5 from "../../assets/news/v2_img_5.webp";
 import panel6 from "../../assets/news/v2_img_6.webp";
 
-function DogeVsPepeNews() {
+function DogeVsPepeNewsMob() {
   const newsPanels = [
     {
       id: 1,
@@ -40,14 +40,14 @@ function DogeVsPepeNews() {
   ];
 
   return (
-    <section className="w-full py-8 ">
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-[1280px] mx-auto px-4 md:px-8">
+    <section className="py-8 w-full">
+      <div className="grid grid-cols-2 gap-4 max-w-[1280px] mx-auto px-4">
         {newsPanels.map((panel) => (
           <div key={panel.id} className="relative">
             <img
               src={panel.image}
               alt={panel.alt}
-              className="   rounded-[12px] border-gray-700"
+              className=" w-[176px] h-[148px] object-cover rounded-[12px] border-gray-700"
             />
           </div>
         ))}
@@ -56,4 +56,4 @@ function DogeVsPepeNews() {
   );
 }
 
-export default DogeVsPepeNews;
+export default DogeVsPepeNewsMob;

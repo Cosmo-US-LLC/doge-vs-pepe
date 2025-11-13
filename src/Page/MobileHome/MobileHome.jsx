@@ -27,6 +27,7 @@ import RoadmapMob from "./Roadmap";
 import DogeVsPepeNews from "../Home/DogeVsPepeNews";
 import CountdownMob from "./CountdownMob";
 import BannerSecMob from "./BannerSecMob";
+import DogeVsPepeNewsMob from "./DogeVsPepeNewsMob";
 
 function MobileHome() {
   return (
@@ -47,7 +48,7 @@ function MobileHome() {
         <TheFightSecMob />
         <DoNotWait />
         <FAQ />
-        <DogeVsPepeNews />
+        <DogeVsPepeNewsMob />
         <Footer />
       </div>
     </div>
