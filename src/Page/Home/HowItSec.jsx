@@ -111,10 +111,10 @@ function HowItSec() {
             ))}
           </Swiper>
 
-          <div className="!h-[32px] !w-[32px] bg-[#474747] border border-[#474747] rounded-full flex items-center justify-center swiper-button-prev3   cursor-pointer  absolute !left-[-60px] !top-[48%] z-10 rotate-180">
+          <div className="!h-[40px] !w-[40px] bg-[#474747] border border-[#474747] rounded-full flex items-center justify-center swiper-button-prev3   cursor-pointer  absolute !left-[-60px] !top-[48%] z-10 rotate-180">
             <img src={awr1} className="!h-[14px] !w-[14px]" alt="Previous" />
           </div>
-          <div className="!h-[32px] !w-[32px] bg-[#474747] border border-[#474747] rounded-full flex items-center justify-center swiper-button-next3   cursor-pointer  absolute !right-[-60px] !top-[48%] z-10">
+          <div className="!h-[40px] !w-[40px] bg-[#474747] border border-[#474747] rounded-full flex items-center justify-center swiper-button-next3   cursor-pointer  absolute !right-[-60px] !top-[48%] z-10">
             <img src={awr1} className="!h-[14px] !w-[14px]" alt="Next" />
           </div>
         </div>
