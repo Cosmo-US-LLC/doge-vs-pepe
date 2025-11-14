@@ -2,6 +2,7 @@ import socialicn1 from "../../assets/footer/telegram.svg";
 import socialicn2 from "../../assets/footer/instagram.svg";
 import socialicn3 from "../../assets/footer/twitter.svg";
 import dogevspepe from "../../assets/footer/v2_dvp_footer_logo.svg";
+import toast from "react-hot-toast";
 
 function Footer() {
   const handleScroll = (event, targetId, offset = 90) => {
@@ -131,10 +132,11 @@ function Footer() {
                   />
                 </svg>
               </a>
-              <a
-                href="https://x.com/Doge_V_Pepe"
-                target="_blank"
-                rel="noopener noreferrer"
+              <div
+               onClick={() => {
+                  navigator.clipboard.writeText("https://t.me/");
+                  toast.success("Link copied!");
+                }}
                 className="w-[50px] h-[50px] rounded-full border-[#FFFFFF1A] border-2 bg-[#474747] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
               >
                 <svg
@@ -153,7 +155,7 @@ function Footer() {
                     fill="#00FF2F"
                   />
                 </svg>
-              </a>
+              </div>
             </div>
           </div>
 

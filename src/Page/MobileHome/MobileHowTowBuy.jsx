@@ -43,16 +43,16 @@ export default function MobileHowTowBuy({ backgroundUrl = "", onCta }) {
       </div>
       <div className="mt-[-66px] inset-0 pointer-events-none shadow-[inset_0_0_140px_60px_rgba(0,0,0,0.75)]" />
       <div className="relative px-4 pb-24 mx-auto max-w-7xl">
-        <div className="flex flex-col justify-center gap-4 w-[100%] mt-6 max-w-[324px] mx-auto">
+        <div className="flex flex-col justify-center gap-4 w-[100%] mt-6 max-w-[100%] mx-auto">
           {steps.map((s, i) => (
             <article
               key={i}
-              className="group relative rounded-2xl bg-black text-white p-5 backdrop-blur-md shadow-[0_10px_40px_rgba(0,0,0,0.5)] ring-1 ring-lime-400/20 hover:ring-lime-300/40 transition-all duration-200 flex-1 max-w-[324px]"
+              className="group relative rounded-[20px] bg-black text-white p-[1px] bg-gradient-to-r from-[#DD5B01] via-[#E67500] to-[#00FF2F] flex-1 max-w-[100%]"
             >
-              <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-b from-lime-400/0 via-lime-400/0 to-lime-400/0 opacity-0 group-hover:opacity-100 blur-[2px] transition-opacity" />
+              <div className="absolute -inset-[1px] rounded-[20px] bg-gradient-to-b from-lime-400/0 via-lime-400/0 to-lime-400/0 opacity-0 group-hover:opacity-100 " />
 
-              <div className="flex relative flex-col h-full">
-                <h3 className="mt-3 font-anton text-[24px] tracking-tight leading-[28px] uppercase">
+              <div className="flex relative flex-col h-full bg-[#000] pb-[30px] px-[20px] pt-[20px] rounded-[20px]">
+                <h3 className="mt-3 font-anton font-[400] text-[24px] tracking-tight leading-[28px] uppercase">
                   <span
                     style={{
                       background:
@@ -76,7 +76,7 @@ export default function MobileHowTowBuy({ backgroundUrl = "", onCta }) {
 
         <div className="w-[100%] mt-6 flex justify-center items-center">
           <button
-            className="bg-gradient-to-r from-[#DD5B01] via-[#E67500] to-[#00FF2F] max-w-[324px] w-[100%] leading-normal !text-[22px] mx-auto h-[60px] text-anton font-[400] rounded-[60px] cursor-pointer relative z-10"
+            className="bg-gradient-to-r from-[#DD5B01] via-[#E67500] to-[#00FF2F] max-w-[100%] w-[100%] leading-normal !text-[22px] mx-auto h-[60px] text-anton font-[400] rounded-[60px] cursor-pointer relative z-10"
             onClick={() => {
               const el = document.getElementById("wallet");
               if (el) {

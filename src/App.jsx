@@ -31,7 +31,9 @@ function App() {
       <Preloader />
       <div>
         <div>{isMobile ? <MobileHome /> : <Home />}</div>
-        <Toaster position="bottom-center" />
+        <Toaster position="bottom-right" containerStyle={{
+          zIndex:"999"
+        }} />
         <ConnectWalletModal />
       </div>
     </div>

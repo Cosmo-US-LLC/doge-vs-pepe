@@ -91,7 +91,7 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
     maxHeight: isOpen ? "1000px" : "0",
     opacity: isOpen ? "1" : "0",
     overflow: "hidden",
-    transition: "max-height 0.9s ease, opacity 2s ease",
+    transition: "max-height 0.4s ease, opacity 3s ease",
   };
 
   return (
@@ -106,7 +106,7 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
           onClick={handleClick}
         >
           <div className="flex items-center justify-center gap-5 xs:pt-[14px]">
-            <div className="text-[18px] sm:text-[24px] leading-[28px] sm:leading-[64px] text-[#fff] font-[400] font-anton uppercase">
+            <div className="text-[18px] sm:text-[24px] leading-[28px] sm:leading-[64px] text-[#fff] !font-[400] font-anton uppercase">
               {question}
             </div>
           </div>
