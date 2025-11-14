@@ -27,7 +27,9 @@ import tokens from "../../assets/walletsec/coins/tokens.svg";
 import doge_icn from "../../assets/walletsec/coins/doge_logo.webp";
 import pepe_icn from "../../assets/walletsec/coins/pepe_logo.webp";
 
-import dogeicon from "../../assets/walletsec/coins (2).svg";
+import dogeicon from "../../assets/walletsec/doge.svg";
+import pepeicon_icn from "../../assets/walletsec/pepe.svg";
+
 import pepeicon from "../../assets/walletsec/coins (1).svg";
 
 import arw from "../../assets/walletsec/arw.svg";
@@ -207,7 +209,7 @@ function HeroWalletSec({
               </div>
             </div> */}
 
-            <div className="px-4 bg-[#040404] z-[99] w-[100%] space-y-[10px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
+            <div className="px-[30px] bg-[#040404] z-[99] w-[100%] space-y-[10px] py-[24px] rounded-[30px] border border-[#E67500]">
               <div className="flex justify-between rounded-[30px]  "
               style={{
                 background:"rgba(255, 255, 255, 0.10)",
@@ -243,28 +245,28 @@ function HeroWalletSec({
               </div>
               <div className=" pb-1 space-y-[10px]">
                 <div
-                  className="w-[100%] flex  items-center h-[23px] rounded-[30px]   "
+                  className="w-[100%] flex  items-center h-[24.75px] rounded-[30px]   "
                   style={{
                     background: "rgba(255, 255, 255, 0.28)",
                   }}
                 >
-                  <div className="bg-[#E67500] h-[23px] w-[20%] rounded-[30px]"></div>
-                  <span className=" w-[70%] text-center text-[12px] text-[#fff] font-[Helvetica]">
+                  <div className="bg-[#E67500] h-[24.75px] w-[20%] rounded-[30px]"></div>
+                  <span className=" w-[70%] text-center text-[14px] text-[#fff] font-[Mont]">
                     Until Presale Round Win
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <h4 className="text-[16px] font-[Anton] font-[400] text-[#fff]">
+                  <h4 className="text-[16.5px] font-[Mont] font-[400] text-[#fff]">
                     USD Raised
                   </h4>
-                  <h5 className="text-[16px] font-[400] font-[Anton] text-[#fff]">
+                  <h5 className="text-[16.5px] font-[400] font-[Mont] text-[#fff]">
                     {" "}
                     $1,000,000
                   </h5>
                 </div>
               </div>
               <div className="space-y-[15px]">
-                <div className="border border-[rgba(255, 255, 255, 0.20)] rounded-[8px] p-2">
+                <div className="">
                   <h3 className="text-[18px] font-[400] font-[Anton] text-center leading-[150%] text-[#fff]">
                     1 Team Doge = $0.006
                   </h3>
@@ -302,7 +304,7 @@ function HeroWalletSec({
                     />
                   </div>
 
-                  <div className="relative min-w-[136px] w-fit inline-block text-left">
+                  <div className="relative min-w-[150px] w-fit inline-block text-left">
                     <TokenSelectDropdown
                       tokens={tokenSelect[0]}
                       onChange={(token) => console.log("Selected:", token)}
@@ -329,17 +331,20 @@ function HeroWalletSec({
                     />
                   </div>
 
-                  <div className="relative min-w-[136px] w-fit inline-block text-left">
+                  <div className="relative min-w-[150px] w-fit inline-block text-left">
                     <div
-                      className="flex items-center justify-start space-x-2 cursor-pointer p-2 rounded-[8px]  w-[100%]"
-                      style={{ background: "rgba(255, 255, 255, 0.20)" }}
+                      className="flex items-center justify-start space-x-2 cursor-pointer px-3 py-2 rounded-[15px]  w-[100%]"
+                       style={{
+                background:"rgba(255, 255, 255, 0.10)",
+                border:"1px solid rgba(255, 255, 255, 0.20)"
+              }}
                     >
                       <img
                         src={dogeicon}
-                        className="w-[18px] h-[18px]"
+                        className="w-[30px] h-[30px]"
                         alt="Selected Icon"
                       />
-                      <h5 className="text-[14px] text-[#fff] font-[Helvetica] leading-[100%] font-[700]">
+                      <h5 className="text-[16px] text-[#fff] font-[Anton] leading-[100%] font-[400]">
                         TEAM DOGE
                       </h5>
                     </div>
@@ -363,6 +368,9 @@ function HeroWalletSec({
                     <button
                       style={{
                         background: "rgba(255, 255, 255, 0.10)",
+                        borderRadius:"75px",
+                        border:"0.75px solid #000"
+
                       }}
                       className="flex items-center font-[Helvetica] py-[10px] justify-center text-[#fff] w-[100%] rounded-[4px] text-[10px] font-[400] space-x-1 text-[#fff"
                     >
@@ -429,6 +437,9 @@ function HeroWalletSec({
                     <button
                       style={{
                         background: "rgba(255, 255, 255, 0.10)",
+                        borderRadius:"75px",
+                        border:"0.75px solid #000"
+
                       }}
                       className="flex items-center font-[Helvetica] py-[10px] w-[100%] justify-center text-[#fff] rounded-[4px] text-[10px] font-[400] text-[#fff"
                     >
@@ -595,7 +606,7 @@ function HeroWalletSec({
               </div>
             </div> */}
 
-            <div className="px-4 bg-[#040404] z-[99] w-[100%] space-y-[10px] pb-[15px] pt-[15px] rounded-[13px] border border-[#fff]">
+            <div className="px-[30px] bg-[#040404] z-[99] w-[100%] space-y-[10px] py-[24px] rounded-[30px] border border-[#00FF2F]">
               <div className="flex justify-between rounded-[30px]"
                style={{
                 background:"rgba(255, 255, 255, 0.10)",
@@ -636,28 +647,28 @@ function HeroWalletSec({
               </div>
               <div className=" pb-1 space-y-[10px]">
                 <div
-                  className="w-[100%] flex  items-center h-[23px] rounded-[30px]   "
+                  className="w-[100%] flex  items-center h-[24.75px] rounded-[30px]   "
                   style={{
                     background: "rgba(255, 255, 255, 0.20)",
                   }}
                 >
-                  <div className="bg-[#00FF2F] h-[23px] w-[20%] rounded-[30px]"></div>
-                  <span className=" w-[70%] text-[#fff] text-center text-[12px] font-[Helvetica]">
+                  <div className="bg-[#00FF2F] h-[24.75px] w-[20%] rounded-[30px]"></div>
+                  <span className=" w-[70%] text-[#fff] text-center text-[14px] font-[Mont]">
                     Until Presale Round Win
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <h4 className="text-[16px] font-[Anton] font-[400] text-[#fff]">
+                  <h4 className="text-[16.5px] font-[Anton] font-[Mont] text-[#fff]">
                     USD Raised
                   </h4>
-                  <h5 className="text-[16px] font-[400] font-[Anton] text-[#fff]">
+                  <h5 className="text-[16.5px] font-[400] font-[Mont] text-[#fff]">
                     {" "}
                     $1,000,000
                   </h5>
                 </div>
               </div>
               <div className="space-y-[15px]">
-                <div className="border border-[rgba(255, 255, 255, 0.20)] rounded-[8px] p-2">
+                <div className="">
                   <h3 className="text-[18px] font-[400] font-[Anton] text-center leading-[150%] text-[fff]">
                     1 Team Pepe = $0.006
                   </h3>
@@ -696,7 +707,7 @@ function HeroWalletSec({
                     />
                   </div>
 
-                  <div className="relative min-w-[136px]">
+                  <div className="relative min-w-[150px]">
                     <TokenSelectDropdown
                       tokens={tokenSelect[0]}
                       onChange={(token) => console.log("Selected:", token)}
@@ -724,17 +735,20 @@ function HeroWalletSec({
                     />
                   </div>
 
-                  <div className="relative min-w-[136px] w-fit inline-block text-left">
+                  <div className="relative min-w-[150px] w-fit inline-block text-left">
                     <div
-                      className="flex items-center justify-start space-x-2 border border-[rgba(255, 255, 255, 0.20)] cursor-pointer p-2 rounded-[8px]  w-[100%]"
-                      style={{ background: "rgba(255, 255, 255, 0.10)" }}
+                      className="flex items-center justify-start space-x-2  cursor-pointer px-3 py-2 rounded-[15px]  w-[100%]"
+                       style={{
+                background:"rgba(255, 255, 255, 0.10)",
+                border:"1px solid rgba(255, 255, 255, 0.20)"
+              }}
                     >
                       <img
-                        src={pepeicon}
-                        className="w-[18px] h-[18px]"
+                        src={pepeicon_icn}
+                        className="w-[30px] h-[30px]"
                         alt="Selected Icon"
                       />
-                      <h5 className="text-[14px] text-[#fff] font-[Helvetica] leading-[100%] font-[700]">
+                      <h5 className="text-[16px] text-[#fff] font-[Anton] leading-[100%] font-[400]">
                         TEAM PEPE
                       </h5>
                     </div>
@@ -756,8 +770,11 @@ function HeroWalletSec({
                   </div>
                   <div className="flex items-center justify-between space-x-2">
                     <button
-                      style={{
-                        background: "rgba(18, 70, 0, 0.60)",
+                       style={{
+                        background: "rgba(255, 255, 255, 0.10)",
+                        borderRadius:"75px",
+                        border:"0.75px solid #000"
+
                       }}
                       className="flex items-center font-[Helvetica] py-[10px] justify-center text-[#fff] w-[100%] rounded-[4px] text-[10px] font-[400] space-x-1 text-[#fff"
                     >
@@ -822,8 +839,11 @@ function HeroWalletSec({
                       Apply Bonus
                     </button>
                     <button
-                      style={{
-                        background: "rgba(18, 70, 0, 0.60)",
+                        style={{
+                        background: "rgba(255, 255, 255, 0.10)",
+                        borderRadius:"75px",
+                        border:"0.75px solid #000"
+
                       }}
                       className="flex items-center font-[Helvetica] py-[10px] w-[100%] justify-center text-[#fff] rounded-[4px] text-[10px] font-[400] text-[#fff"
                     >

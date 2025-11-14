@@ -7,7 +7,7 @@ function PrizeMoneySec() {
       id="prize_money"
     >
       <div className="gradient-bg max-w-[1220px] h-[580px] p-[2px] overflow-hidden rounded-[43px] w-[100%]">
-        <div className="prize_money_bg overflow-hidden h-full w-full relative ">
+        <div className="prize_money_bg overflow-hidden h-full w-full relative rounded-[43px]">
           <div className="flex items-end justify-center h-full relative">
             <div className="absolute rounded-[18px] top-[40%] right-[2%] px-4 py-4 border border-[rgba(255, 255, 255, 0.20)] bg-[rgba(255, 255, 255, 0.10)]">
               <p className="text-center subtext max-w-[360px]">

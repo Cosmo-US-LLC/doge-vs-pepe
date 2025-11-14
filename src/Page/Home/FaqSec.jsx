@@ -136,7 +136,7 @@ const FaqItem = ({ question, answer, isOpen, handleClick }) => {
     maxHeight: isOpen ? "1000px" : "0",
     opacity: isOpen ? "1" : "0",
     overflow: "hidden",
-    transition: "max-height 0.9s ease, opacity 2s ease",
+    transition: "max-height 0.3s ease, opacity 3s ease",
   };
 
   return (
