@@ -6,6 +6,7 @@ import arwbtn3 from "../../assets/walletsec/btnicns (2).svg";
 
 import coinsw1 from "../../assets/walletsec/coins/tokens (1).svg";
 import dogeicon from "../../assets/walletsec/doge.svg";
+import pepeicon_icn from "../../assets/walletsec/pepe.svg";
 import team_doge from "../../assets/walletsec/coins/doge_logo.webp";
 import team_pepe from "../../assets/walletsec/coins/pepe_logo.webp";
 
@@ -553,12 +554,12 @@ function HeroWalletSec() {
                     }}
                   >
                     <img
-                      src={dogeicon}
+                      src={pepeicon_icn}
                       className="w-[38px] h-[38px]"
                       alt="Selected Icon"
                     />
                     <h5 className="text-[22px] font-[Anton] leading-[100%] font-[400]">
-                      TEAM DOGE
+                      TEAM PEPE 
                     </h5>
                   </div>
                 </div>

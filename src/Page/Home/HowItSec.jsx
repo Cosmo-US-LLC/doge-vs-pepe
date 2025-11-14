@@ -10,9 +10,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useRef } from "react";
 
-import img1 from "../../assets/HowItSec/v3_c1 (3).webp";
-import img2 from "../../assets/HowItSec/v3_c1 (2).webp";
-import img3 from "../../assets/HowItSec/v3_c1 (1).webp";
+import img1 from "../../assets/HowItSec/v2_c1.webp";
+import img2 from "../../assets/HowItSec/v2_c2.webp";
+import img3 from "../../assets/HowItSec/v2_c3.webp";
 import img4 from "../../assets/HowItSec/v2_c4.webp";
 import img5 from "../../assets/HowItSec/v2_c5.webp";
 import img6 from "../../assets/HowItSec/v2_c6.webp";
@@ -23,15 +23,16 @@ import img9 from "../../assets/HowItSec/v2_c9.webp";
 const sliderData = [
   {
     img: img1,
-    text: "The rivalry started when Pepe, the rising star, reached #3 among meme heavyweights and began calling out Doge, the undefeated champ. Doge couldn’t let this slide, and after months of trading insults on social media, the two meme legends bumped into each other at MOON, one of the city’s hottest nightclubs. Things quickly escalated, turning into a massive brawl with serious consequences.",
-  },
-  {
-    img: img2,
     text: `🗣️ "When DOGE and PEPE bumped into each other, it all went downhill quickly. Satoshi Whiskey flew, fists followed, and the cops ended it with handcuffs!" - Anonymous Witness`,
   },
   {
+    img: img2,
+    text: `📹 CCTV footage leaked! The Doge vs. Pepe brawl at the MOON Lounge has been caught on camera!
+See what really went down last night!`,
+  },
+  {
     img: img3,
-    text: "📹 CCTV footage leaked! The Doge vs. Pepe brawl at the MOON Lounge has been caught on camera! See what really went down last night!",
+    text: "🚨 Breaking News: Police have released mugshots! Meme heavyweights Doge and Pepe are set to appear before a judge tomorrow following their arrest after a physical altercation at the MOON Club.",
   },
   {
     img: img4,
@@ -47,15 +48,15 @@ const sliderData = [
   },
   {
     img: img7,
-    text: "Doge and Pepe were spotted leaving the court, both hinting at unfinished business without revealing any details. Rumors are now spreading about a potential fight in the near future.",
+    text: `🐶 Doge, the undefeated Meme Heavyweight, is back on social media after his release from custody. He shared a gym post captioned "Back to Work," fueling more rumors of a potential fight with Pepe.`,
   },
   {
     img: img8,
-    text: "🐶 Doge, the undefeated Meme Heavyweight, is back on social media after his release from custody. He shared a gym post captioned Back to Work, fueling more rumors of a potential fight with Pepe.",
+    text: `🐶 Doge, the undefeated Meme Heavyweight, is back on social media after his release from custody. He shared a gym post captioned "Back to Work," fueling more rumors of a potential fight with Pepe.`,
   },
   {
     img: img9,
-    text: "🐸 Pepe responds with a post of him casually leaning against a wall, captioned: I'm always ready, especially after the nightclub thing. I saw the dog in his eyes. No more games. Let's fight! This time, no one's saving you!",
+    text: `🐸 Pepe responds with a post of him casually leaning against a wall, captioned: "I'm always ready, especially after the nightclub thing. I saw the dog in his eyes. No more games. Let's fight! This time, no one's saving you!`,
   },
 ];
 
@@ -102,7 +103,7 @@ function HowItSec() {
                       <img
                         alt=""
                         src={blackShadow}
-                        className="absolute bottom-0 left-0 right-0 "
+                        className="absolute max-h-[150px] bottom-0 left-0 right-0 "
                       />
                     </div>
                   </div>

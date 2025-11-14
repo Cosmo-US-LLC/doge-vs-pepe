@@ -28,7 +28,7 @@ function DontWaitSec() {
             <h3 className="text-center section_heading">
               Don’t Wait, The Fight Is On!
             </h3>
-            <p className="max-w-[655px] mx-auto text-[#fff] text-center description">
+            <p className="max-w-[655px] !font-[400] !font-[Mont] mx-auto text-[#fff] text-center description">
               DogevsPepe is fast-paced and competitive. Once the $1 million goal
               is reached, the winner is decided. Will your meme champion rise
               and win this epic fight.

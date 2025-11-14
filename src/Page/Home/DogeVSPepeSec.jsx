@@ -9,6 +9,8 @@ import arw from "../../assets/DogeVSPepeSec/arw.svg";
 import topShadow from "../../assets/DogeVSPepeSec/top-shadow.webp";
 import bottomShadow from "../../assets/DogeVSPepeSec/bottom-shadow.webp";
 import cryptoNewsLogo from "../../assets/DogeVSPepeSec/v2_dvp_logo.webp";
+import blackShadow from "../../assets/HowItSec/black_shadow.webp";
+
 
 function DogeVSPepeSec() {
   return (
@@ -40,17 +42,22 @@ function DogeVSPepeSec() {
 
             {/* Text Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end">
-              <div className="flex flex-col gap-2 ">
-                <div className="min-h-[120px]">
-                <h3 className=" px-6 text-[28px] font-bold text-white uppercase font-anton leading-tight">
+              <div className="flex flex-col  ">
+                <div className="min-h-[130px] relative pb-2">
+                <h3 className=" px-6 text-[28px] relative z-10 font-[400] text-white uppercase font-anton leading-tight">
                   THE OG MEME IS BACK!
                 </h3>
 
-                <p className="px-6 text-white font-helvetica text-[14px] leading-[20px]">
+                <p className="px-6 text-white relative z-10 font-helvetica text-[14px] leading-[20px]">
                   Doge or Pepe? Fans are rallying to decide who has the
                   strongest community. Will Doge stay on top, or is Pepe set to
                   dethrone him? The battle is on!
                 </p>
+                 <img
+                                        alt=""
+                                        src={blackShadow}
+                                        className="absolute bottom-0 z-0 left-0 right-0 "
+                                      />
                 </div>
 
                 <div className="flex justify-between items-center bg-[#fff] h-[60px] p-6">
@@ -77,18 +84,23 @@ function DogeVSPepeSec() {
 
             {/* Text Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end">
-              <div className="flex flex-col gap-2">
-                <div className="min-h-[120px]">
-                <h3 className=" px-6 text-[28px] font-bold text-white uppercase font-anton leading-tight">
+              <div className="flex flex-col ">
+                <div className="min-h-[130px] pb-2 relative">
+                <h3 className=" px-6 text-[28px] relative z-10 font-[400] text-white uppercase font-anton leading-tight">
                   TWO LEGENDS FACE OFF
                 </h3>
 
-                <p className="px-6  text-white font-helvetica text-[14px] leading-[20px]">
+                <p className="px-6 relative z-10 text-white font-helvetica text-[14px] leading-[20px]">
                   Finding the next winning narrative is the key to hitting big
                   with memes. Two presales, but only one will win and launch!
                   Backed by two of the most iconic meme coins, this might just
                   be it.
                 </p>
+                 <img
+                                        alt=""
+                                        src={blackShadow}
+                                        className="absolute bottom-0 z-0 left-0 right-0 "
+                                      />
                 </div>
 
                 <div className="flex justify-between items-center bg-[#fff] h-[60px] p-6">
@@ -119,17 +131,22 @@ function DogeVSPepeSec() {
 
             {/* Text Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end">
-              <div className="flex flex-col gap-2">
-              <div className="min-h-[120px]">
-                  <h3 className=" px-6 text-[28px] font-bold text-white uppercase font-anton leading-tight">
+              <div className="flex flex-col ">
+              <div className="min-h-[130px] pb-2 relative">
+                  <h3 className=" px-6 relative z-10 text-[28px] font-[400] text-white uppercase font-anton leading-tight">
                   THE NEW MEME KING?
                 </h3>
 
-                <p className="px-6  text-white font-helvetica text-[14px] leading-[20px]">
+                <p className="px-6 relative z-10 text-white font-helvetica text-[14px] leading-[20px]">
                   Two legendary memes face off in an exciting presale, with
                   rumors of well-known crypto developers behind the project.
                   This could be the next big thing!
                 </p>
+                   <img
+                                        alt=""
+                                        src={blackShadow}
+                                        className="absolute bottom-0 z-0 left-0 right-0 "
+                                      />
               </div>
 
                 <div className="flex justify-between items-center bg-[#fff] h-[60px] p-6">
