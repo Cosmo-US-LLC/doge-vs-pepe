@@ -6,6 +6,7 @@ import {
   DrawerTrigger,
   DrawerClose,
 } from "../../components/ui/drawer";
+import toast from "react-hot-toast";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -31,9 +32,12 @@ function Navbar() {
           <Drawer open={open} onOpenChange={setOpen} direction="right">
             <div className="flex gap-2 justify-between items-center w-full">
               <img
+                onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
                 src={Logo}
                 alt="Logo"
-                className="w-[200px] h-full rounded-full object-contain"
+                className="w-[200px]  h-full rounded-full object-contain"
               />
               <DrawerTrigger asChild>
                 <button className="cursor-pointer w-[48px] h-[48px] rounded-full flex items-center justify-center bg-[linear-gradient(105deg,#DD5B01_-7.63%,#00FF2F_123.65%)]">
@@ -184,10 +188,11 @@ function Navbar() {
                       </svg>
                     </a>
                     {/* Discord/Green Square */}
-                    <a
-                      href="https://t.me/"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <div
+                    onClick={() => {
+    navigator.clipboard.writeText("https://t.me/");
+    toast.success("Link copied!");
+  }}
                       className="w-[50px] h-[50px] rounded-full bg-[#2A2A2A] flex items-center justify-center hover:bg-[#3A3A3A] transition-colors"
                     >
                       <svg
@@ -206,7 +211,7 @@ function Navbar() {
                           fill="#00FF2F"
                         />
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <p className="text-center description text-[#FFF]">
                     Copyright 2025 DogevsPepe | All rights reserved.
