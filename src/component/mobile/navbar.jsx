@@ -9,21 +9,29 @@ import {
 import toast from "react-hot-toast";
 
 function Navbar() {
-  const [open, setOpen] = useState(false);
+   const [open, setOpen] = useState(false);
 
   const handleScroll = (event, targetId, offset) => {
-    event.preventDefault();
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+    if (!isIOS) {
+      event.preventDefault();
+    }
+
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY - offset;
+
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth",
       });
     }
-    setOpen(false);
+
+    setTimeout(() => setOpen(false), isIOS ? 200 : 0);
   };
+
 
   return (
     <div className="fixed w-[100%]  z-[99999] bg-transparent backdrop-blur-[16px]">
@@ -89,59 +97,52 @@ function Navbar() {
                 <div className="flex flex-col flex-1 gap-4 justify-center items-center">
                   <button
                     className="block navbar_link"
-                    onClick={(e) => handleScroll(e, "what_is", 90)}
+                   onClick={(e) => handleScroll(e, "what_is", 90)}
                   >
                     WHAT IS DOGEVSPEPE?
                   </button>
-                  <a
-                    href="#rules"
+                  <button
                     className="block navbar_link"
                     onClick={(e) => handleScroll(e, "rules", 60)}
                   >
                     FIGHT RULES
-                  </a>
-                  <a
-                    href="#prize-money"
+                  </button>
+                  <button
                     className="block navbar_link"
                     onClick={(e) => handleScroll(e, "prize-money", 60)}
                   >
                     <span className="block relative z-10">PRIZE MONEY</span>
-                  </a>
-                  <a
-                    href="#roadmap"
+                  </button>
+                  <button
                     className="block navbar_link"
                     onClick={(e) => handleScroll(e, "roadmap", 90)}
                   >
                     ROADMAP
-                  </a>
-                  <a
-                    href="#tokenomics"
+                  </button>
+                  <button
                     className="block navbar_link"
                     onClick={(e) => handleScroll(e, "tokenomics", 90)}
                   >
                     $DOGE TOKENOMICS
-                  </a>
-                  <a
-                    href="#tokenomics"
+                  </button>
+                  <button
                     className="block navbar_link"
                     onClick={(e) => handleScroll(e, "tokenomics", 90)}
                   >
                     $PEPE TOKENOMICS
-                  </a>
-                  <a
-                    href="#how-to-buy"
+                  </button>
+                  <button
                     className="block navbar_link"
                     onClick={(e) => handleScroll(e, "how-to-buy", 60)}
                   >
                     NEED HELP?
-                  </a>
-                  <a
-                    href="#faq"
+                  </button>
+                  <button
                     className="block navbar_link"
                     onClick={(e) => handleScroll(e, "faq", 70)}
                   >
                     FAQ
-                  </a>
+                  </button>
                 </div>
 
                 {/* Footer with Social Icons and Copyright */}

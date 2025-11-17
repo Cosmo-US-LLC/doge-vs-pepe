@@ -1,9 +1,9 @@
 import React from "react";
-import bnicon1 from "../../assets/banner/bnicns1.svg";
-import bnicon2 from "../../assets/banner/bnicns2.svg";
-import bnicon3 from "../../assets/banner/bnicns3.svg";
-import bnicon4 from "../../assets/banner/bnicns4.svg";
-import bnicon5 from "../../assets/banner/bnicns (5).svg";
+import bnicon1 from "../../assets/banner/mob_bn (5).webp";
+import bnicon2 from "../../assets/banner/mob_bn (4).webp";
+import bnicon3 from "../../assets/banner/mob_bn (3).webp";
+import bnicon4 from "../../assets/banner/mob_bn (2).webp";
+import bnicon5 from "../../assets/banner/mob_bn (1).webp";
 
 function BannerSecMob() {
   return (

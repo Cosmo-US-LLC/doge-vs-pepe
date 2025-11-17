@@ -26,7 +26,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const sliderData = [
   {
     img: img1,
-    text: "The rivalry started when Pepe, the rising star, reached #3 among meme heavyweights and began calling out Doge, the undefeated champ. Doge couldn’t let this slide, and after months of trading insults on social media, the two meme legends bumped into each other at MOON, one of the city’s hottest nightclubs. Things quickly escalated, turning into a massive brawl with serious consequences.",
+    text: `🗣️ "When DOGE and PEPE bumped into each other, it all went downhill quickly. Satoshi Whiskey flew, fists followed, and the cops ended it with handcuffs!" - Anonymous Witness`,
   },
   {
     img: img2,
@@ -85,7 +85,7 @@ function HowItmobSec() {
               nextEl: ".swiper-button-next4",
               prevEl: ".swiper-button-prev4",
             }}
-            className="max-w-[350px] h-[426px] rounded-[20px]"
+            className=" h-[426px] rounded-[20px]"
           >
             {sliderData.map((item, index) => (
               <SwiperSlide
