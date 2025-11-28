@@ -11,26 +11,59 @@ import toast from "react-hot-toast";
 function Navbar() {
    const [open, setOpen] = useState(false);
 
-  const handleScroll = (event, targetId, offset) => {
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  // const handleScroll = (event, targetId, offset) => {
+  //   const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
-    if (!isIOS) {
-      event.preventDefault();
-    }
+  //   if (!isIOS) {
+  //     event.preventDefault();
+  //   }
 
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      const elementPosition = targetElement.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - offset;
+  //   const targetElement = document.getElementById(targetId);
+  //   if (targetElement) {
+  //     const elementPosition = targetElement.getBoundingClientRect().top;
+  //     const offsetPosition = elementPosition + window.scrollY - offset;
 
+  //     window.scrollTo({
+  //       top: offsetPosition,
+  //       behavior: "smooth",
+  //     });
+  //   }
+
+  //   setTimeout(() => setOpen(false), isIOS ? 200 : 0);
+  // };
+
+  const handleScroll = (event, targetId, offset = 0) => {
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+  // Prevent default only if not iOS
+  if (!isIOS && event?.preventDefault) {
+    event.preventDefault();
+  }
+
+  const targetElement = document.getElementById(targetId);
+  if (!targetElement) return;
+
+  const elementPosition =
+    targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+
+  // Close drawer first, then scroll (for iOS)
+  if (isIOS) {
+    setOpen(false);
+    setTimeout(() => {
       window.scrollTo({
-        top: offsetPosition,
+        top: elementPosition,
         behavior: "smooth",
       });
-    }
+    }, 300); // wait until drawer animation completes
+  } else {
+    window.scrollTo({
+      top: elementPosition,
+      behavior: "smooth",
+    });
+    setOpen(false);
+  }
+};
 
-    setTimeout(() => setOpen(false), isIOS ? 200 : 0);
-  };
 
 
   return (
