@@ -4,7 +4,7 @@ import prizeimg from "../../assets/PrizeMoneySec/prize-belt.png";
 function PrizeMoney() {
   return (
     <div className="w-[100%] overflow-hidden pb-[80px] px-4" id="prize-money">
-      <div className="py-2 px-4 bgmobprizsec2 rounded-[30px] space-y-2 w-[100%] flex flex-col justify-end items-center mx-auto min-h-[650px] border boredr-[#fff]"
+      <div className="py-2 px-4 bgmobprizsec2 rounded-[30px] space-y-2 w-[100%] flex flex-col justify-end items-center mx-auto min-h-[650px] border border-[#F0CF53]"
       // style={{
       //   backdropFilter:"blur(2px)"
       // }}

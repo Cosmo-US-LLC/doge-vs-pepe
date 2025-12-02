@@ -28,14 +28,14 @@ export default function HowToBuy() {
 
   return (
     <section
-      className="relative isolate w-full h-[800px] how_to_buy_bg flex "
+      className="relative isolate w-full h-[830px] how_to_buy_bg flex "
       aria-label="How to buy section"
       id="how_to_buy"
     >
       <img
         src={top_shadow}
         alt="top_shadow"
-        className="absolute top-0 left-0 right-0 w-full h-[130px]"
+        className="absolute top-0 left-0 right-0 w-full h-[10px]"
       />
       <img
         src={bottom_shadow}
@@ -48,8 +48,8 @@ export default function HowToBuy() {
         className="absolute bottom-0 left-[200px] right-[200px] w-full h-[200px]"
       />
 
-      <div className="relative mx-auto max-w-[1280px] px-8 md:px-8 flex flex-col items-center pt-[100px] gap-10">
-        <h2 className="text-center pb-11">HOW TO BUY</h2>
+      <div className="relative mx-auto max-w-[1280px] px-8 md:px-8 flex flex-col items-center pt-[40px] gap-10">
+        <h2 className="text-center pb-20">HOW TO BUY</h2>
 
         <div className="flex flex-wrap justify-center gap-6 ">
           {steps.map((s, i) => (
@@ -63,7 +63,7 @@ export default function HowToBuy() {
                     <h4 className="gradient-text uppercase">{s.step}</h4>
                     <h4 className="">{s.title}</h4>
                   </div>
-                  <p className="flex-grow mt-3 subtext ">{s.body}</p>
+                  <p className="flex-grow mt-3 !font-[400] subtext ">{s.body}</p>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ export default function HowToBuy() {
                 behavior: "smooth",
               });
             }}
-            className="w-[457px] h-[65px] gradient-bg mx-auto flex items-center justify-center 
+            className="w-[429.75px] h-[95px] !text-[30px] gradient-bg mx-auto flex items-center justify-center 
               btn-primary relative z-10 
               "
           >

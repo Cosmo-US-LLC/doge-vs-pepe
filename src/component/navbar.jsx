@@ -44,6 +44,13 @@ function Navbar() {
           >
             Fight Rules
           </Link>
+           <Link
+            to="/"
+            onClick={() => handleScroll("how_to_buy")}
+            className="navbar_link"
+          >
+            How to Buy
+          </Link>
           <Link
             to="/"
             onClick={() => handleScroll("prize_money")}
@@ -51,13 +58,7 @@ function Navbar() {
           >
             Prize Money
           </Link>
-          <Link
-            to="/"
-            onClick={() => handleScroll("how_to_buy")}
-            className="navbar_link"
-          >
-            How to Buy
-          </Link>
+         
           <Link
             to="/"
             onClick={() => handleScroll("tokenomics")}

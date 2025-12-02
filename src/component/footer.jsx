@@ -174,6 +174,7 @@
 
 import React from "react";
 import cryptoNewsLogo from "../assets/footer/v2_dvp_footer_logo.svg";
+import toast from "react-hot-toast";
 
 function Footer() {
   const handleScroll = (event, targetId, offset = 90) => {
@@ -301,11 +302,12 @@ function Footer() {
                   />
                 </svg>
               </a>
-              <a
-                href="https://t.me/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-[40px] h-[40px] rounded-full border-[#FFFFFF1A] border-2 bg-[#474747] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
+              <div
+               onClick={() => {
+    navigator.clipboard.writeText("https://t.me/");
+    toast.success("Link copied!");
+  }}
+                className="w-[40px] cursor-pointer h-[40px] rounded-full border-[#FFFFFF1A] border-2 bg-[#474747] flex items-center justify-center hover:bg-[rgba(255, 255, 255, 0.30)] transition-colors duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -323,7 +325,7 @@ function Footer() {
                     fill="#00FF2F"
                   />
                 </svg>
-              </a>
+              </div>
             </div>
           </div>
 

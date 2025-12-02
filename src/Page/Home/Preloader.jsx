@@ -14,7 +14,7 @@ export default function Preloader() {
   return (
     <div
       id="preloader"
-      className="fixed inset-0 bg-black z-[9999] overflow-hidden flex items-center justify-center"
+      className="fixed inset-0 bg-black z-[999999] overflow-hidden flex items-center justify-center"
     >
       {/* top half */}
       {/* <div className="pre-box-top absolute top-0 left-0 w-full h-1/2 bg-[#DD5B01]" /> */}

@@ -28,7 +28,7 @@ export default function TokenSelectDropdown({ tokens, onChange }) {
     <div className="relative w-[100%]" ref={dropdownRef}>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center justify-between w-full px-2 h-[48px] rounded-[20px] cursor-pointer"
+        className="flex items-center justify-between w-full px-2 h-[48px] rounded-[15px] cursor-pointer"
         style={{ background: "rgba(255, 255, 255, 0.10)",
           border:"1px solid rgba(255, 255, 255, 0.20)",
          }}

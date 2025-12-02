@@ -763,10 +763,9 @@ h5 {
   height: 1800px;
 }
 .faqs_bg_mob {
-  background-image: url("./assets/faqs/faqs_bg_mob.png");
-  background-position: 0 -500px;
+  background-image: url("./assets/faqs/v2_faq_mob_bg.webp");
+  background-position: top;
   background-size: cover;
-  /* background-size: 100% 100%; */
   background-repeat: no-repeat;
 }
 .fightRules_bg_mob {
@@ -786,7 +785,7 @@ h5 {
 }
 
 .how_to_buy_bg {
-  background-image: url("./assets/howtobuy/v2_how_to_buy_bg_2.webp");
+  background-image: url("./assets/howtobuy/how_to_buy (1).webp");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1144,6 +1143,30 @@ h5 {
     line-height: 120%; /* 50.4px */
     letter-spacing: 0.84px;
     text-transform: uppercase;
+  }
+  .navbar_link {
+    color: #fff;
+    font-family: "Anton", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%;
+    letter-spacing: 0.78px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+  }
+  .navbar_link:hover {
+    background: #ffffff1a;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   }
 }
 
